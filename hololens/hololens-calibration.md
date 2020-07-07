@@ -16,7 +16,6 @@ appliesto:
 - HoloLens 2
 ms.openlocfilehash: 2f2c8afffdc24eedf9cb6b462448f5ed6ffc8d5d
 ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
-ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/26/2020
 ms.locfileid: "10828771"
@@ -56,7 +55,7 @@ Se la calibrazione è stata eseguita correttamente, verrà visualizzata una sche
 
 ### Calibrazione durante la condivisione di un dispositivo o di una sessione
 
-Un dispositivo HoloLens 2 può essere condiviso da più utenti, senza che ciascuno di essi ne esegua la configurazione. Quando un nuovo utente indossa il dispositivo per la prima volta, HoloLens 2 chiede automaticamente a tale utente di calibrare gli indicatori visivi. Quando un utente che ha calibrato in precedenza gli indicatori visivi indossa il dispositivo, lo schermo viene regolato per una qualità ottimale e un'esperienza di visualizzazione confortevole.  
+Un dispositivo HoloLens 2 può essere condiviso da più utenti, senza che ciascuno di essi ne esegua la configurazione. Quando un nuovo utente indossa il dispositivo per la prima volta, HoloLens 2 gli chiede automaticamente di calibrare gli indicatori visivi. Quando un utente che ha calibrato in precedenza gli indicatori visivi indossa il dispositivo, lo schermo viene regolato per una qualità ottimale e un'esperienza di visualizzazione confortevole.  
 
 ### Avvio manuale del processo di calibrazione
 
@@ -88,7 +87,7 @@ Se la calibrazione non riesce, provare quanto segue:
 - Rimuovere eventuali oggetti che potrebbero trovarsi in corrispondenza della visiera (ad esempio, i capelli)
 - Accendere una luce nella stanza o allontanarsi dalla luce diretta del sole
 
-Se sono state seguite tutte le linee guida e la calibrazione ancora non riesce, puoi disabilitare la richiesta di calibrazione nelle Impostazioni. Puoi comunicarcelo anche inviando un tuo feedback tramite l’ [Hub di Feedback](hololens-feedback.md).
+Se sono state seguite tutte le linee guida e la calibrazione ancora non riesce, puoi disabilitare la richiesta di calibrazione nelle Impostazioni. Puoi comunicarcelo anche inviando un tuo feedback tramite l’[Hub di Feedback](hololens-feedback.md).
 
 Tieni presente che l'impostazione della distanza interpupillare non è applicabile per Hololens 2, perché le posizioni degli occhi sono calcolate dal sistema. 
 

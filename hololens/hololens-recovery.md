@@ -14,17 +14,14 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-appliesto:
-- HoloLens (1st gen)
-- HoloLens 2
-ms.openlocfilehash: 5da7f954454b5713823c5aa94742f9c9c0033ca2
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 2c7fa9b8c86900c89bbced1a10f3e9e2bc69bcd0
+ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828600"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10857764"
 ---
-# Reimpostazione e ripristino per HoloLens 2
+# Riavviare, reimpostare o ripristinare HoloLens
 
 ## Ricaricare il dispositivo
 
@@ -60,7 +57,7 @@ In alcuni casi, all’utente può essere richiesto di reimpostare manualmente il
 
 4. Connetti il dispositivo al PC host aprendo Gestione dispositivi (su Windows 10, premi il tasto **“Windows”** e quindi **“x”**, e fai poi clic su “Gestione dispositivi”) verificando che il dispositivo sia correttamente indicato come Microsoft HoloLens, come mostrato nelle immagini seguenti:
 
-![HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLensRecovery.png)
+![HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLens_DeviceManager.png)
 
 ### Procedura di reimpostazione manuale
 

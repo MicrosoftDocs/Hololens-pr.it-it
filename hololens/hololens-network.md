@@ -1,5 +1,5 @@
 ---
-title: Connettersi a una rete
+title: Connettere HoloLens a una rete
 description: Istruzioni su come connettersi a Internet con HoloLens e come identificare l'indirizzo IP del dispositivo.
 ms.assetid: 0895606e-96c0-491e-8b1c-52e56b00365d
 author: mattzmsft
@@ -10,17 +10,14 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: jarrettr
-appliesto:
-- HoloLens (1st gen)
-- HoloLens 2
-ms.openlocfilehash: 0bc5a5f7f3eaf3d811da055a7bda664fd3f0daff
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 734176dcf8a789f130aa8b010f5f3c9ec1d22c72
+ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10829286"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10857794"
 ---
-# Connettersi a una rete
+# Connettere HoloLens a una rete
 
 Per eseguire la maggior parte delle operazioni in HoloLens, è necessario essere connessi a una rete. Questa guida ti aiuterà a:
 

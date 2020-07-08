@@ -10,15 +10,12 @@ ms.prod: hololens
 ms.topic: article
 audience: ITPro
 ms.localizationpriority: high
-appliesto:
-- HoloLens (1st gen)
-- HoloLens 2
-ms.openlocfilehash: d2bec32e118ee1c9307b56fad99b7e8859e2a94d
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 0fa147eb2b1194dacdcabff4995f5141a1b25bde
+ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828681"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10857854"
 ---
 # Considerazioni sull'ambiente per HoloLens
 

@@ -15,15 +15,12 @@ ms.custom:
 - CI 115825
 - CI 111456
 - CSSTroubleshooting
-appliesto:
-- HoloLens (1st gen)
-- HoloLens 2
-ms.openlocfilehash: 3de48a913779f124c1cee21791af256a41bf45f8
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: f8d0c788756b0a24ac8a26b8258b267483f1a890
+ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828620"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10857754"
 ---
 # Gestire gli aggiornamenti di HoloLens
 

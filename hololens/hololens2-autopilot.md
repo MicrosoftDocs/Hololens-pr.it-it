@@ -1,5 +1,5 @@
 ---
-title: Guida alla valutazione di Windows Autopilot per HoloLens 2
+title: Windows Autopilot per HoloLens 2
 description: ''
 author: Teresa-Motiv
 ms.author: v-tea
@@ -13,16 +13,14 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-appliesto:
-- HoloLens 2
-ms.openlocfilehash: 3d98e67e79ae10b606c529adbda95dbb61b8fd15
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 9f7306e1e2f190634df7b25833e22b27089d19de
+ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10829444"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10857784"
 ---
-# Guida alla valutazione di Windows Autopilot per HoloLens 2
+# Windows Autopilot per HoloLens 2
 
 Quando si configurano i dispositivi HoloLens 2 per il programma Windows Autopilot, gli utenti possono seguire una semplice procedura per eseguire il provisioning dei dispositivi dal cloud.
 

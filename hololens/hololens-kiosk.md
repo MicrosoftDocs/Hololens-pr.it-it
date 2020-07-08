@@ -17,12 +17,11 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 0163e028756743922302b46f04309f3d7f738233
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
-ms.translationtype: MT
+ms.openlocfilehash: 7409865f63199dead1779fa183128b30445053aa
+ms.sourcegitcommit: 2b1518675b9962518e08b13c12b43b6d9827fe17
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10829311"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10858000"
 ---
 # Configurare il dispositivo HoloLens come chiosco
 
@@ -99,7 +98,8 @@ Se si usa un sistema di gestione di dispositivi mobili (MDM) o un pacchetto di p
 |Calendar |Microsoft. windowscommunicationsapps \ _8wekyb3d8bbwe \! Microsoft. felici. Calendar |
 |Fotocamera <sup> 1, 2</sup> |HoloCamera \ _cw5n1h2txyewy \ \! HoloCamera |
 |Cortana <sup> 3</sup> |Microsoft. 549981C3F5F10 \ _8wekyb3d8bbwe \! App |
-|Selezione dispositivi |HoloDevicesFlow \ _cw5n1h2txyewy \ \! HoloDevicesFlow |
+|Selezione dispositivo in HoloLens (1a generazione) |HoloDevicesFlow \ _cw5n1h2txyewy \ \! HoloDevicesFlow |
+|Selezione dispositivo in HoloLens 2 |Microsoft. Windows. DevicesFlowHost \ _cw5n1h2txyewy \! Microsoft. Windows. DevicesFlowHost |
 |Dynamics 365 Guides |Microsoft. Dynamics365. Guides \ _8wekyb3d8bbwe \! MicrosoftGuides |
 |Dynamics 365 Remote Assist |Microsoft. MicrosoftRemoteAssist \ _8wekyb3d8bbwe \! Microsoft. RemoteAssist |
 |Hub di feedback &nbsp; |Microsoft. WindowsFeedbackHub \ _8wekyb3d8bbwe \! App |
@@ -358,7 +358,7 @@ Per abilitare l'account **Guest** , aggiungere il frammento di codice seguente a
 
 #### <a id="start-layout-for-hololens"></a>Layout inizio segnaposto per HoloLens
 
-Se si usa un [pacchetto di provisioning](##use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk) per configurare un chiosco multiapp, la procedura richiede un layout Start. La personalizzazione del layout Start non è supportata in Windows Olografic for business. Dovrai quindi usare un layout Start segnaposto.
+Se si usa un [pacchetto di provisioning](#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk) per configurare un chiosco multiapp, la procedura richiede un layout Start. La personalizzazione del layout Start non è supportata in Windows Olografic for business. Dovrai quindi usare un layout Start segnaposto.
 
 > [!NOTE]  
 > Poiché un chiosco di una singola app avvia l'app Kiosk quando un utente accede, non usa un menu Start e non deve avere un layout di inizio.

@@ -1,5 +1,5 @@
 ---
-title: Abilitare la crittografia Bitlocker per HoloLens (HoloLens)
+title: Crittografia BitLocker di HoloLens
 description: Abilitare la crittografia dispositivo Bitlocker per proteggere i file archiviati in HoloLens
 ms.prod: hololens
 ms.mktglfcycl: manage
@@ -11,16 +11,13 @@ ms.localizationpriority: medium
 ms.date: 01/26/2019
 ms.reviewer: ''
 manager: laurawi
-appliesto:
-- HoloLens (1st gen)
-ms.openlocfilehash: 29b9ce346456019dad8e9bc6fd02b104ed4a821d
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
-ms.translationtype: MT
+ms.openlocfilehash: a18d9e890b34f28ffcd8be7546dcdbe08e9934a6
+ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828690"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10857814"
 ---
-# Abilitare la crittografia per HoloLens
+# Crittografia BitLocker di HoloLens
 
 HoloLens (1a generazione) e HoloLens 2 supportano entrambe la crittografia del dispositivo tramite BitLocker, ma BitLocker è sempre abilitato in HoloLens 2.
 

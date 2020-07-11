@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: cb9234556d0b5c654747e0f404d1d10d8a2cd539
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 51cbef57cc3384b7026ae5d0b1ea98fdd942291f
+ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828840"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "10865575"
 ---
 # Domande frequenti sui dispositivi e gli ologrammi di HoloLens
 
@@ -281,7 +281,8 @@ La registrazione è limitata alle tracce che possono essere acquisite in scenari
 
 ## Domande riguardanti la sicurezza dei dispositivi HoloLens
 
-Vedere le [domande frequenti sulla sicurezza dei dispositivi HoloLens](hololens-faq-security.md).
+Vedere [le informazioni sulla sicurezza di HoloLens 2](security-overview.md).
+Per i dispositivi HoloLens 1st Gen, vedere le [domande frequenti](hololens1-faq-security.md).
 
 [Torna all'elenco](#list)
 

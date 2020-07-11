@@ -10,18 +10,21 @@ audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 07/15/2019
-ms.openlocfilehash: 8aa8e0f679ad18a2e47f34c5f1233435a502dc0c
-ms.sourcegitcommit: f3cda6c6b3bfb7ba4be5f4da66d8ed5b03ca807d
+ms.openlocfilehash: e53e6575ef688e01ce2d1f6124f3214b18b05c95
+ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10830130"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "10865565"
 ---
 # Distribuire HoloLens in un ambiente commerciale
 
 È possibile distribuire e configurare HoloLens in scala in un'impostazione commerciale. Questo articolo fornisce istruzioni per la distribuzione di dispositivi HoloLens in un ambiente commerciale. Questa guida presuppone familiarità di base con HoloLens. Seguire la [Guida introduttiva](hololens1-setup.md) per configurare HoloLens per la prima volta.
 
-Questo documento presuppone inoltre che HoloLens sia stato valutato da team di sicurezza come sicuro da usare nella rete aziendale. Le domande di sicurezza più frequenti possono essere trovate [qui](hololens-faq-security.md)
+Questo documento presuppone inoltre che HoloLens sia stato valutato da team di sicurezza come sicuro da usare nella rete aziendale.  
+> [!Tip]
+> Leggi altre informazioni sulla [sicurezza di HoloLens](security-overview.md).
+> Per la sicurezza di HoloLens (1a generazione), consultare le [domande frequenti](hololens1-faq-security.md).
 
 ## Panoramica dei passaggi di distribuzione
 
@@ -32,11 +35,11 @@ Questo documento presuppone inoltre che HoloLens sia stato valutato da team di s
 1. Opzionale [Configurare HoloLens usando un pacchetto di provisioning](hololens-provisioning.md)
 1. [Dispositivo di registrazione](hololens-enroll-mdm.md)
 1. [Configurare gli aggiornamenti basati su anello per HoloLens](hololens-updates.md)
-1. [Abilitare la crittografia dispositivo Bitlocker per HoloLens](hololens-encryption.md)
+1. [Abilitare la crittografia dispositivo Bitlocker per HoloLens](security-encryption-data-protection.md)
 
 ## Passaggio 1. Determinare le informazioni necessarie
 
-Prima di distribuire il HoloLens nell'ambiente, è importante determinare prima quali caratteristiche, app e tipo di identità sono necessarie. È anche importante assicurarsi che il team di sicurezza abbia approvato l'uso della HoloLens nella rete aziendale. Per altre informazioni sulla sicurezza, vedere [domande frequenti sulla sicurezza](hololens-faq-security.md) .
+Prima di distribuire il HoloLens nell'ambiente, è importante determinare prima quali caratteristiche, app e tipo di identità sono necessarie. È anche importante assicurarsi che il team di sicurezza abbia approvato l'uso della HoloLens nella rete aziendale. Per altre informazioni sulla sicurezza, vedere [sicurezza di HoloLens2](security-overview.md) .
 
 ### Tipo di identità
 

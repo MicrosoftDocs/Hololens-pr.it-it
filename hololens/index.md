@@ -16,12 +16,12 @@ ms.custom:
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: ca4256fc38253f6f1618da73f804ab3d4c0e66df
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 977f6b86e545e834bc9f7d5060b55755243531ac
+ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10827519"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "10865545"
 ---
 # Microsoft HoloLens
 
@@ -56,7 +56,7 @@ ms.locfileid: "10827519"
 | [Gestione degli aggiornamenti di HoloLens](hololens-updates.md) | Usare i criteri di gestione dei dispositivi mobili (MDM) per configurare le impostazioni degli aggiornamenti. |
 | [Gestione degli utenti di HoloLens](hololens-multiple-users.md) | Più utenti possono condividere un dispositivo HoloLens usando i propri account Azure Active Directory. |
 | [Gestione dell’accesso alle applicazioni in HoloLens](hololens-kiosk.md) | Gestire l’accesso alle applicazioni per gruppi di utenti differenti.  |
-| [Risoluzione dei problemi e rispristino di HoloLens](https://support.microsoft.com/products/hololens) |  Ottenere i log da HoloLens e ripristinare o reimpostare un dispositivo HoloLens malfunzionante, se necessario. |
+| [Risoluzione dei problemi e rispristino di HoloLens](hololens-recovery.md) |  Informazioni su come riavviare un dispositivo che non funziona correttamente o come ripristinare HoloLens 2, quando necessario. |
 | [Supporto tecnico](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f) | Creare una nuova richiesta di supporto per il team di supporto tecnico. | 
 | [Altre opzioni di supporto](https://support.microsoft.com/products/hololens) | Contattare le risorse di supporto di Microsoft per HoloLens nell'azienda. |
 

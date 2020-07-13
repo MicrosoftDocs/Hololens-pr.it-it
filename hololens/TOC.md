@@ -38,12 +38,27 @@
 ## Pianificazione della distribuzione di HoloLens 2 nell’organizzazione
 ### [Distribuire HoloLens in un ambiente commerciale](hololens-requirements.md)
 ### [Scenari comuni di distribuzione dell'infrastruttura](common-scenarios.md)
+## Sicurezza
+### [Panoramica della sicurezza](security-overview.md)
+### [Architecture](security-architecture.md)
+### [Separazione e isolamento dello stato](security-state-separation-isolation.md)
+### [Sistema operativo senza amministratore ](security-adminless-os.md)
+### [Limitare l'uso delle password](security-limiting-password-use.md)
+### [Sicurezza supportata dall'hardware e attestazione runtime](security-hardware-backed-integrity.md)
+### [Crittografia e protezione dei dati](security-encryption-data-protection.md)
+### [Sicurezza della rete](security-network-security.md)
+### [Wireless e Wi-Fi](security-wireless-wifi.md)
+### [Ingegneria della sicurezza ](security-engineering.md)
+### Sicurezza di HoloLens di prima generazione
+#### [Domande frequenti sulla sicurezza di HoloLens (Prima generazione)](hololens1-faq-security.md)
+#### [Crittografia BitLocker di HoloLens (Prima generazione)](hololens1-encryption.md)
 ## [Requisiti di licenza](hololens-licenses-requirements.md)
 ## Environment
 ### [Considerazioni sull'ambiente per HoloLens](hololens-environment-considerations.md)
 ### [Eseguire il mapping degli spazi fisici con HoloLens](hololens-spaces.md)
 ## [Funzionalità commerciali](hololens-commercial-features.md)
 ## [Sbloccare le funzionalità di Windows Holographic for Business](hololens1-upgrade-enterprise.md)
+
 # Configura
 ## Identità
 ### [Gestire l'identità utente e l'accesso per HoloLens](hololens-identity.md)
@@ -53,9 +68,8 @@
 ### [Connettere HoloLens a una rete](hololens-network.md)
 ### [Gestire gli endpoint di connessione per HoloLens](hololens-offline.md)
 ### [Connessione a dispositivi Bluetooth e USB-C](hololens-connect-devices.md)
-## Sicurezza
-### [Domande frequenti sulla sicurezza](hololens-faq-security.md)
-### [Crittografia BitLocker di HoloLens](hololens-encryption.md)
+
+
 ## Criteri
 ### [Configurare HoloLens utilizzando pacchetti di provisioning](hololens-provisioning.md)
 ### [Configurare il dispositivo HoloLens come chiosco](hololens-kiosk.md)

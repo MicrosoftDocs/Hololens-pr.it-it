@@ -21,16 +21,16 @@ ms.locfileid: "10865816"
 ---
 # Ingegneria della sicurezza
 
-Microsoft dispone di diversi team e risorse dedicati all'ottimizzazione dei protocolli di progettazione aziendale, alla conformità e all'acquisizione della fiducia del cliente. 
+Microsoft ha diversi team e risorse dedicati a migliorare i protocolli di progettazione, gestire la conformità e salvaguardare la fiducia dei clienti. 
 
   * Per ulteriori informazioni sulle procedure relative all'ingegneria della sicurezza di Microsoft, consultare [Security Development Lifecycle (SDL)](https://www.microsoft.com/securityengineering/sdl).
-  * Microsoft, quindi anche HoloLens 2, consente ai clienti di scegliere le modalità di raccolta e utilizzo dei loro dati, che possono essere ulteriormente esplorate nell'[Informativa sulla privacy di Microsoft](https://privacy.microsoft.com/). 
-  * [Microsoft Security Response Center (MSRC)](https://www.microsoft.com/msrc) fa parte della community Defender, fornendo un'esperienza di segnalazione della vulnerabilità ottimizzata caratterizzata da efficaci. 
+  * Microsoft, e quindi anche HoloLens 2, consente ai clienti di scegliere le modalità di raccolta e utilizzo dei loro dati, che possono essere ulteriormente esplorate nell'[Informativa sulla privacy di Microsoft](https://privacy.microsoft.com/). 
+  * [Microsoft Security Response Center (MSRC)](https://www.microsoft.com/msrc) fa parte della community Defender e consente di segnalare le vulnerabilità, classificare i bug e gestirne le soluzioni in modo efficace. 
 
 ## Aggiornamenti e patch
 
-Gli aggiornamenti della sicurezza e le patch vengono rilasciati il secondo martedì di ogni mese. Per conoscere i criteri usati da Microsoft per valutare i passaggi successivi in seguito alla segnalazione di una vulnerabilità, consultare la [pagina Criteri di sicurezza dei servizi](https://www.microsoft.com/msrc/windows-security-servicing-criteria). 
+Gli aggiornamenti della sicurezza e le patch vengono rilasciati il secondo martedì di ogni mese. Per scoprire quali sono i criteri di Microsoft per gestire le segnalazioni delle vulnerabilità, consultare la [pagina Criteri di sicurezza dei servizi](https://www.microsoft.com/msrc/windows-security-servicing-criteria). 
 
-Per informazioni sulla gestione degli aggiornamenti di HoloLens 2 tramite MDM, vedere [Gestire gli aggiornamenti di HoloLens](https://docs.microsoft.com/hololens/hololens-updates). La cadenza degli aggiornamenti del sistema operativo per HoloLens 2 corrisponde a quella di Windows 10. Sono previsti due aggiornamenti all'anno, in primavera e in autunno. Per ulteriori informazioni sul modo in cui i dispositivi sono protetti durante gli aggiornamenti del sistema operativo, vedere [Separazione e isolamento dello stato](security-state-separation-isolation.md). 
+Per informazioni sulla gestione degli aggiornamenti di HoloLens 2 tramite MDM, vedere [Gestire gli aggiornamenti di HoloLens](https://docs.microsoft.com/hololens/hololens-updates). La frequenza degli aggiornamenti del sistema operativo per HoloLens 2 è la stessa di Windows 10. Sono previsti due aggiornamenti all'anno, in primavera e in autunno. Per ulteriori informazioni sul modo in cui i dispositivi sono protetti durante gli aggiornamenti del sistema operativo, vedere [Separazione e isolamento dello stato](security-state-separation-isolation.md). 
 
-Gli amministratori IT possono leggere ulteriori informazioni sulla policy degli aggiornamenti qui [CSP policy - Aggiornamento](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update). 
+Gli amministratori IT possono leggere ulteriori informazioni sui criteri di aggiornamento qui [CSP dei criteri - Aggiornamento](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update). 

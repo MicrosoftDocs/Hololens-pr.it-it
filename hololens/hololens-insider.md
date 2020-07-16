@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b054b61b269522d673be104ffbda9abc1bc85415
-ms.sourcegitcommit: 168a7659420525e5f3e3088d7ce0b5e03c969029
+ms.openlocfilehash: 5cdb7302aec5b37a5071f2192f7c8bc5df760ac7
+ms.sourcegitcommit: 3db43bc4a007b10901d8edb045f66e1e299c57a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "10860606"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882428"
 ---
 # Insider Preview per Microsoft HoloLens
 
@@ -51,11 +51,13 @@ Se non si vuole più ricevere Build Insider di Windows olografico, è possibile 
 Per verificare che HoloLens esegua una build di produzione:
 
 1. Accedere a **impostazioni > sistema > informazioni**e trovare il numero di Build.
-1. [Vedere le note sulla versione per i numeri di build della produzione.](hololens-release-notes.md)
+
+1. [Vedere le note sulla versione per i numeri di build della produzione](hololens-release-notes.md).
 
 Per rifiutare le build Insider:
 
 1. In un HoloLens in cui è in corso una build di produzione, passare a **impostazioni > aggiornare & sicurezza > programma Windows Insider**e selezionare **Interrompi Build Insider**.
+
 1. Seguire le istruzioni per rifiutare il dispositivo.
 
 
@@ -73,10 +75,15 @@ Sei il benvenuto e ti consigliamo di provare a sviluppare le tue applicazioni us
 
 ## Note sulla versione di Windows Insider
 
-Dal nostro [Windows olografico maggio 2020 Update](hololens-release-notes.md) Release tutte le funzionalità di anteprima del rilascio sono ora disponibili in generale. Assicurati di [aggiornare il HoloLens](hololens-update-hololens.md) per ottenere tutte le caratteristiche più recenti.
+Se si sta cercando una caratteristica che non è più elencata, ora è in genere disponibile. Leggere le [Note sulla versione](hololens-release-notes.md) per verificare la funzionalità di compilazione con cui si è soddisfatti. Assicurati di [aggiornare il HoloLens](hololens-update-hololens.md) per ottenere tutte le caratteristiche più recenti.
 
-La pagina verrà aggiornata di nuovo con le nuove funzionalità quando le rilasceremo alle build Insider di Windows.
+Verrà aggiornata di nuovo questa pagina con nuove funzionalità mentre le rilasceremo alle build Insider di Windows.
 
+| Funzionalità                               | Descrizione                                                                                   | Disponibile nelle build Insider |
+|---------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
+| Supporto per la posizione degli occhi automatici             | Trova attivamente le posizioni degli occhi e consente il posizionamento accurato degli ologrammi.                       | 19041.1339 +                 |
+| Accesso assegnato globale                | Configura il dispositivo HoloLens 2 per la modalità Kiosk di più app applicabile a livello di sistema.  | 19041.1346 +                 |
+| Avvio automatico di un'app nel chiosco multi-app | Imposta l'avvio automatico di un'applicazione durante l'accesso a una modalità Kiosk a più app. | 19041.1346 +                 |
 
 ### Supporto per la posizione degli occhi automatici
 
@@ -96,12 +103,29 @@ Ci sono alcune modifiche al comportamento del sistema con la funzionalità posiz
 Per le esperienze che richiedono dati sugli occhi o un posizionamento olografico molto preciso, è consigliabile che gli utenti non calibrati eseguano la calibrazione della verifica degli occhi dalla richiesta di calibrazione degli occhi o lancino l'app Impostazioni dal menu Start e quindi selezionando **sistema > calibrazione > calibrazione degli occhi > eseguire la calibrazione degli**occhi.
 
 **Problemi noti**
-1.  Stiamo esaminando un problema in cui il processo di host del driver dell'eye tracker potrebbe arrestarsi in modo anomalo durante l'esecuzione in un carico di memoria elevato. Il processo host del driver di rilevamento degli occhi deve essere recuperato automaticamente.
+ - Stiamo esaminando un problema in cui il processo di host del driver dell'eye tracker potrebbe arrestarsi in modo anomalo durante l'esecuzione in un carico di memoria elevato. Il processo host del driver di rilevamento degli occhi deve essere recuperato automaticamente.
+
+### Accesso assegnato globale-modalità Kiosk
+Questa nuova funzionalità consente all'amministratore IT di configurare un dispositivo HoloLens 2 per la modalità Kiosk di più app, applicabile a livello di sistema, non ha affinità con alcuna identità nel sistema e si applica a tutti gli utenti che accedono al dispositivo. Per [informazioni dettagliate, vedere](hololens-global-assigned-access-kiosk.md)questa nuova funzionalità.
+
+### Avvio automatico di un'applicazione in modalità Kiosk con più app 
+Si applica solo alla modalità Kiosk in più app e può essere designata solo 1 app per l'avvio automatico con l'attributo evidenziato di seguito nella configurazione di Access assegnati. 
+
+L'applicazione viene avviata automaticamente quando l'utente effettua l'accesso. 
+
+```xml
+<AllowedApps>                     
+    <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
+```
 
 ## FFU download e istruzioni Flash
 Per eseguire il test con un FFU firmato per il volo, è necessario prima di tutto sbloccare il dispositivo prima di infiammare il volo firmato FFU.
-1. Su PC
-    1. Scaricare FFU nel PC da:[https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload)
+1. Nel PC:
+
+    1. Scaricare FFU dal PC [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) .
+    
     1. Installare ARC (Advanced Recovery Companion) da Microsoft Store:[https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8)
-1. In HoloLens-Flight Unlock: Open **Settings**  >  **Update & Security**  >  **Windows Insider Program** quindi iscriviti, riavvia il dispositivo
-1. Flash FFU-ora è possibile flashare il Flight signed FFU usando ARC
+    
+1. In HoloLens-Flight Unlock: Open **Settings**  >  **Update & Security**  >  **Windows Insider Program** , quindi iscriviti, riavvia il dispositivo.
+
+1. Flash FFU-ora è possibile flashare il FFU firmato in anteprima con ARC.

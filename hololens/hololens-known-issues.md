@@ -15,12 +15,12 @@ ms.prod: hololens
 appliesto:
 - HoloLens (1st Gen)
 - HoloLens 2
-ms.openlocfilehash: 330a7fd549a2b847f77715ca90d69f1d4df1fb1d
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: db95edfbadb271b7fc47cf5798e80d9b2cad3c90
+ms.sourcegitcommit: 708da7b390fed1fd3aea1a2b2e50461851052683
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10829295"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10881329"
 ---
 # Problemi noti di HoloLens
 
@@ -47,6 +47,14 @@ Questo è l'elenco corrente dei problemi noti per i dispositivi HoloLens. Contro
 - La caratteristica Anteprima live nell'acquisizione di realtà mista può presentare diversi secondi di latenza.
 - Nella pagina Virtual input i controlli gesture e scroll nella sezione movimenti virtuali non sono funzionali. L'uso di questi elementi non avrà alcun effetto. La tastiera virtuale nella stessa pagina funziona correttamente.
 - Dopo l'abilitazione della modalità sviluppatore in impostazioni, potrebbe essere necessario qualche secondo prima che l'opzione attiva il portale del dispositivo sia abilitata.
+
+### Caricamento della fotocamera OneDrive
+
+L'app OneDrive per HoloLens non supporta il caricamento automatico della videocamera per gli account aziendali o dell'Istituto di istruzione.
+
+Soluzioni alternative
+- Se possibile per la tua azienda, il caricamento automatico della videocamera è supportato sugli account Microsoft Consumer. È possibile accedere al proprio account Microsoft oltre al proprio account di lavoro o dell'Istituto di istruzione (l'app OneDrive supporta l'accesso Dual). Dal profilo dell'account Microsoft in OneDrive è possibile abilitare il caricamento automatico del rotolo della fotocamera in background.
+- Se non è possibile usare in modo sicuro un account Microsoft Consumer per caricare automaticamente le foto, è possibile caricare manualmente le foto nell'account dell'ufficio o dell'Istituto di istruzione dall'app OneDrive. Per farlo, assicurati di avere effettuato l'accesso all'account di lavoro o dell'Istituto di istruzione nell'app OneDrive. Selezionare il **+** pulsante e scegliere **carica**. Trovare le foto o i video da caricare passando alle **immagini > rullo della fotocamera**. Selezionare le foto o i video che si desidera caricare e quindi selezionare il pulsante **Apri** .
 
 ## Problemi noti per i dispositivi HoloLens 2
 

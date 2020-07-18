@@ -13,12 +13,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 53d426b4319dafd0dd976e67111992020507f719
-ms.sourcegitcommit: 563797405f7470f979a27718c604df920efbb368
+ms.openlocfilehash: fef69ee4cd148b82721472436da8dfd627f86ff1
+ms.sourcegitcommit: 708da7b390fed1fd3aea1a2b2e50461851052683
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 07/15/2020
-ms.locfileid: "10881246"
+ms.locfileid: "10881339"
 ---
 # Connessione a dispositivi Bluetooth e USB-C
 
@@ -80,6 +80,8 @@ HoloLens 2 supporta le seguenti categorie di dispositivi USB-C:
 
 > [!NOTE]
 > Alcuni dispositivi mobili con connessioni USB-C si mostrano a HoloLens come adattatori ethernet, e possono perciò essere usati in configurazioni con hotspor personali, a cominciare da Windows Holographic versione 2004. I modem USB LTE che richiedono driver separati e/o l’installazione di applicazioni per la configurazione non sono supportati.
+
+In risposta al riscontro dei clienti, abbiamo abilitato il supporto limitato per la connettività cellulare tramite hotspot collegato a HoloLens via USB-C.   La connettività funziona solo per i dispositivi che supportano l'implementazione generica del driver Microsoft [RNDIS](https://docs.microsoft.com/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-), e non richiedono l'installazione di altri driver o applicazioni.  Questo dispositivo, una volta connesso, viene mostrato automaticamente come una nuova connessione ethernet nell’interfaccia delle impostazioni di rete di HoloLens 2. Per altre informazioni sul supporto del driver generico Microsoft RNDIS, consultare il produttore del dispositivo.
 
 ## Connettersi a Miracast
 

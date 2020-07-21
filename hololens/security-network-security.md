@@ -12,12 +12,12 @@ ms.reviewer: ''
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: c88a9af7369a6a9d6fb115fb820c0a4da13eafdc
-ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
+ms.openlocfilehash: 147401331cb6da732a6fe37e57964d61a10dce99
+ms.sourcegitcommit: 47bc3b696936dd7011b3f9dd683deb872ed25b90
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "10865841"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "10883140"
 ---
 # Sicurezza della rete
 
@@ -26,8 +26,6 @@ ms.locfileid: "10865841"
 L'obsoleto sistema NetBIOS (Network Basic Input/Output System) era ampiamente usato in passato in scenari LAN, spesso per la risoluzione dei nomi in un computer e in cartelle condivise. Nel corso del tempo, infatti, NetBIOS si è rivelato vulnerabile a varie tipologie di attacchi e la sua rilevanza è diminuita in favore di altri protocolli più sicuri. Per rimuovere il problema della vulnerabilità, HoloLens 2 ha eliminato il codice correlato a NetBIOS dal sistema operativo.
 
 I protocolli TLS (Transport Layer Security) si evolvono di continuo. Per stare al passo con i vari exploit di sicurezza che sono stati scoperti in quest'area, il settore informatico è passato a versioni più recenti ed efficaci. A causa del tempo necessario perché tutti gli ambienti server adottino le nuove versioni del protocollo TLS, è possibile implementare un meccanismo di fallback che consenta al client e ai server nelle diverse versioni del protocollo predefinite di comunicare ancora durante il periodo di transizione.
-
-Tuttavia, tali meccanismi di fallback aumentano i rischi correlati alla sicurezza. Una volta compreso questo problema, in HoloLens 2 il fallback da TLS 1.2 a TLS 1.1 o 1.0 è stato disabilitato e non è disponibile un'interfaccia utente per abilitarlo. Inoltre, durante la sincronizzazione TLS, il client richiederà un TLS 1.2 e non consentirà al server di eseguire il downgrade a una versione meno recente.
 
 ## Connettività sicura 
 

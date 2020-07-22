@@ -15,12 +15,12 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8e6ce55630c6ec20b83ca24006acedbe5f949997
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 4574f62e42678ada15e8263e03ca95d388dc8e57
+ms.sourcegitcommit: 223df264cdc812beba88582377002ea3e49d55fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828991"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "10888555"
 ---
 # Domande frequenti sulle pulizia di HoloLens 2
 
@@ -74,7 +74,7 @@ Per pulire il pad della fronte, pulirlo usando un panno inumidito usando acqua e
 
 ## È possibile usare la luce ultravioletta (UV) per igienizzare il dispositivo?
 
-L'irradiazione germicida UV-C non è stata testata su HoloLens 2.
+L'irradiazione UVC con il LED UVC, che opera a 265nm a livello di intensità di 0,5-0,6 mW/cm <sup> 2 </sup> , e non emette ozono, può essere usata per igienizzare HoloLens2. Seguire le specifiche del produttore per la gestione e il tempo di esposizione.
 
 > [!CAUTION]  
 > Alti livelli di esposizione UV-A e UV-B possono degradare la qualità dello schermo del dispositivo e danneggiare il rivestimento della visiera. La sovraesposizione alle radiazioni UV-A e UV-B ha gli effetti seguenti, in ordine alla durata e all'intensità dell'esposizione:
@@ -82,7 +82,7 @@ L'irradiazione germicida UV-C non è stata testata su HoloLens 2.
 > 1. Il pad della sopracciglia e le chiusure dei dispositivi diventano scoloriti.
 > 1. I difetti compaiono nel rivestimento antiriflesso (AR) sulla visiera e sulle finestre del sensore.
 > 1. I difetti compaiono nei materiali base della visiera e sulle finestre dei sensori.
-> 1. Le prestazioni della SRG si degradano.
+> 1. Visualizza degrada le prestazioni.
 
 ## Il pad posteriore è sostituibile?
 

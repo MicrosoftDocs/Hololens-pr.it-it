@@ -11,12 +11,12 @@ metadata:
   ms.author: v-todmc
   ms.date: 5/22/2020
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: 9f2dd2fc798fb66de080e54718aaebb131b3e145
-  ms.sourcegitcommit: fc2ce4d843229bcc9ae6c7a42da559c0f6f558b7
+  ms.openlocfilehash: 9bf3f470a0d48631816f6ee28ac2e0d1f4046d83
+  ms.sourcegitcommit: 5d38af8d17dfcc028e7e0b2bb888c6c9d1e40524
   ms.translationtype: HT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 07/17/2020
-  ms.locfileid: "10883009"
+  ms.lasthandoff: 07/28/2020
+  ms.locfileid: "10899189"
 landingContent:
 - title: Distribuire e gestire
   linkLists:
@@ -58,6 +58,8 @@ landingContent:
       url: hololens-recovery.md
     - text: Risolvere problemi relativi a HoloLens
       url: hololens-troubleshooting.md
+    - text: Raccogliere e usare le informazioni di diagnostica dai dispositivi HoloLens
+      url: hololens-diagnostic-logs.md
 - title: Supporto tecnico
   linkLists:
   - linkListType: reference

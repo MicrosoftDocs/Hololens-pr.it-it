@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f11128c66845f0e062a006855fd75ca66ffc4e5e
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 4c17ac2bf68076978c233db2f2b7156fee447f01
+ms.sourcegitcommit: 5d38af8d17dfcc028e7e0b2bb888c6c9d1e40524
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10829263"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "10899169"
 ---
 # Raccogliere e usare le informazioni di diagnostica dai dispositivi HoloLens
 
@@ -43,6 +43,7 @@ Nella tabella seguente vengono confrontati i tre metodi di raccolta. I nomi dei 
 |[Hub di Feedback](#feedback-hub) |Connessione di rete e Internet<br /><br />App Hub feedback<br /><br />Autorizzazione per caricare file in Microsoft Cloud |Microsoft Cloud<br /><br />Dispositivo HoloLens (facoltativo) |L'utente richiede assistenza, accetta le condizioni per l'uso e carica i dati<br /><br />I dipendenti Microsoft visualizzano i dati, in conformità con le condizioni per l'utilizzo |I dati nel cloud vengono conservati per il periodo definito dalla privacy di nuova generazione (NGP). I dati vengono quindi eliminati automaticamente.<br /><br />I dati del dispositivo possono essere eliminati in qualsiasi momento da un utente con autorizzazioni di **amministratore** o **proprietario del dispositivo** . |
 |[Risoluzione dei problemi di impostazioni](#settings-troubleshooter) |app Impostazioni |Dispositivo HoloLens<br /><br />Computer connesso (facoltativo) |L'utente archivia i dati e solo l'utente accede ai dati, a meno che l'utente non condivida in modo specifico i dati con un altro utente. |I dati vengono mantenuti finché l'utente non la Elimina. * |
 |[CSP DiagnosticLog](#diagnosticlog-csp) |Connessione di rete<br /><br />Ambiente MDM che supporta il CSP DiagnosticLog |L'amministratore configura i percorsi di archiviazione |Nell'ambiente gestito l'utente acconsente implicitamente all'accesso di amministratore ai dati.<br /><br />L'amministratore configura i ruoli e le autorizzazioni di accesso. | L'amministratore configura i criteri di conservazione. |
+|[Diagnostica offline](#offline-diagnostics) |Configurazione dispositivo:<ul><li>Acceso e connesso al computer</li><li>Funzionamento dei pulsanti di alimentazione e di volume</li></ul> |Dispositivo HoloLens<br /><br />Computer connesso |L'utente archivia i dati e solo l'utente accede ai dati, a meno che l'utente non condivida in modo specifico i dati con un altro utente. |I dati vengono mantenuti finché l'utente non la Elimina. | 
 
 
 -   L'utente finale è responsabile della condivisione dei registri in modo responsabile con altri utenti. Questi file sono principalmente utili per contattare il servizio assistenza clienti e il supporto tecnico.  
@@ -116,4 +117,22 @@ L'amministratore IT usa il CSP DiagnosticLog per configurare i criteri di archiv
 - Periodo di conservazione per le informazioni di diagnostica.
 - Autorizzazioni che controllano l'accesso alle informazioni di diagnostica.
 
+## Diagnostica offline
+In situazioni in cui il dispositivo non è in grado di raccogliere la diagnostica tramite hub di feedback o lo strumento di risoluzione dei problemi di impostazione, è possibile raccogliere la diagnostica manualmente. Uno scenario in cui è necessario quando il dispositivo non riesce a connettersi alla rete Wi-Fi. La diagnostica raccoglie i dump e i registri di arresto anomalo del dispositivo che aiutano un ingegnere del supporto tecnico Microsoft a isolare i problemi.
+
+Questa operazione funziona quando il dispositivo viene visualizzato in Esplora file dopo averla collegata a un PC tramite un cavo USB. 
+
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Gathering-Diagnostic-Files-on-HoloLens2/player]
+
+Seguire questa procedura per raccogliere la diagnostica:
+1.  Connettere il dispositivo con un cavo USB al PC.
+2.  In Esplora file nel PC passare a **"questo PC \<hololens-device> \Internal storage"**.
+3.  Se la cartella di **archiviazione interna** non viene visualizzata, il dispositivo attende l'accesso di un utente. Eseguire l'accesso o il ciclo di alimentazione del dispositivo tenendo premuto il pulsante di alimentazione per 10 secondi.
+4.  Premere e rilasciare immediatamente i pulsanti **Power + Volume Down** insieme.
+5.  Attendere un minuto prima che il dispositivo prepari gli archivi zip.
+6.  Aggiornare Esplora file e passare alla cartella **' \Documents '** .
+7.  Copiare i file ZIP di diagnostica e condividerli con il team di supporto Microsoft.
+
+Nota, alcuni file ZIP di diagnostica possono contenere informazioni personali.
 

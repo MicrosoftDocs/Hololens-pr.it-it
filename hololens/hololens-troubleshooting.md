@@ -13,11 +13,12 @@ manager: jarrettr
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
-ms.openlocfilehash: 15998fe11de1e7be4f12087a2724bec7e22337b0
-ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
+ms.openlocfilehash: e00226852f92cf5b3137d8d41cfde0f01394f5bc
+ms.sourcegitcommit: 7c16570839893f4a4432286b13ae6d84c665d376
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857744"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "10902291"
 ---
 # Risoluzione dei problemi
 
@@ -45,13 +46,15 @@ Se gli ologrammi sono instabili, nervosi o non hanno un aspetto corretto, provar
 - Spostarsi e osservare l'ambiente circostante in modo che HoloLens possa analizzarli più completamente.
 - Calibrazione della HoloLens per gli occhi. Accedere alle utilità di sistema **delle impostazioni**  >  **System**  >  **Utilities**. In **Calibrazione**, selezionare **Apri Calibrazione**.
 
-## HoloLens non risponde ai movimenti
+## HoloLens non risponde all'input della mano
 
-Per assicurarsi che HoloLens possa visualizzare i movimenti.  Tieni la mano nel riquadro gestuale: quando HoloLens può vedere la tua mano, il cursore cambia da un punto a un anello.
+Per assicurarti che HoloLens possa vedere le tue mani, devi mantenerle nel riquadro gestuale.  La Home realtà mista fornisce un feedback che consente di sapere quando si tiene traccia delle mani.  Il feedback è diverso nelle diverse versioni di HoloLens:
+- In HoloLens (1a generazione) il cursore dello sguardo cambia da un punto a un anello
+- In HoloLens 2 viene visualizzato un cursore della punta delle dita quando la mano è vicina a una lavagna e viene visualizzato un raggio di mano quando le ardesie sono più lontane
 
-Altre informazioni sull'uso dei movimenti in [HoloLens (1a generazione)](hololens1-basic-usage.md#use-hololens-with-your-hands) o [HoloLens 2](hololens2-basic-usage.md#the-hand-tracking-frame).
+Molte app immersive seguono modelli di input simili a Home realtà mista.  Leggi altre informazioni sull'uso dell'input manuale in [HoloLens (1a generazione)](hololens1-basic-usage.md#use-hololens-with-your-hands) e [HoloLens 2](hololens2-basic-usage.md#the-hand-tracking-frame).
 
-Se l'ambiente è troppo scuro, HoloLens potrebbe non vedere la mano, quindi verificare che ci sia abbastanza luce.
+Se si indossano guanti, tenere presente che alcuni tipi di guanti non funzionano con il rilevamento manuale.  Un esempio comune è il guanto di gomma nera, che tende ad assorbire la luce infrarossa e non viene captato dalla fotocamera di profondità.  Se il lavoro prevede guanti di gomma, è consigliabile provare un colore più chiaro, ad esempio blu o grigio.  Un altro esempio è il grande guanto larghi, che tende ad oscurare la forma della mano. Per ottenere risultati ottimali, è consigliabile usare i guanti più adatti possibile.
 
 Se la visiera ha impronte digitali o macchie, usare il panno in microfibra fornito con il HoloLens per pulire delicatamente la visiera.
 

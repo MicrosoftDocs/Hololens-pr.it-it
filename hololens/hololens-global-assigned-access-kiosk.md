@@ -13,12 +13,12 @@ ms.reviewer: lavinds
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ad7f75ccfcae9fb42974abb43d87f2f1ce1571f8
-ms.sourcegitcommit: 3db43bc4a007b10901d8edb045f66e1e299c57a9
+ms.openlocfilehash: 1a0a3eb8ef3d21b34e13711bcc890af57e5ae2c2
+ms.sourcegitcommit: 7c16570839893f4a4432286b13ae6d84c665d376
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "10882456"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "10902301"
 ---
 # Accesso assegnato globale: chiosco
 
@@ -36,46 +36,7 @@ Questa funzionalità consente di configurare il dispositivo Hololens 2 per la mo
 
 2.  Per il valore, aggiornare e incollare il contenuto seguente: 
 
-    ```xml
-    <?xml version="1.0" encoding="utf-8" ?> 
-    <AssignedAccessConfiguration 
-        xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config" 
-        xmlns:v2="http://schemas.microsoft.com/AssignedAccess/201810/config" 
-        xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config" 
-        xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config" 
-    > 
-        <Profiles> 
-            <Profile Id="{8739C257-184F-45DD-8657-C235819172A3}"> 
-                <AllAppsList> 
-                    <AllowedApps>                     
-                        <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch=”true” /> --> 
-                         <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.settingn_8wekyb3d8bbwe!MicrosoftEdge" /> --> 
-                     </AllowedApps> 
-                </AllAppsList> 
-                <StartLayout> 
-                    <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"> 
-                          <LayoutOptions StartTileGroupCellWidth="6" /> 
-                          <DefaultLayoutOverride> 
-                            <StartLayoutCollection> 
-                              <defaultlayout:StartLayout GroupCellWidth="6"> 
-                                <start:Group Name="Life at a glance"> 
-                                  <!—This AUMID can be of any app and is not used on Hololens but is required for parity, so you can leave it as is. --> 
-                                  <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />                               
-                                </start:Group> 
-                              </defaultlayout:StartLayout> 
-                            </StartLayoutCollection> 
-                          </DefaultLayoutOverride> 
-                        </LayoutModificationTemplate> 
-                    ]]> 
-                </StartLayout> 
-                <Taskbar ShowTaskbar="true"/> 
-            </Profile> 
-        </Profiles> 
-        <Configs> 
-            <v3:GlobalProfile Id="{8739C257-184F-45DD-8657-C235819172A3}"/> 
-        </Configs> 
-    </AssignedAccessConfiguration> 
-    ```
+    :::code language="xml" source="samples/global-assigned-access.xml" highlight="12-13,23":::
 
 ## Uso in Progettazione configurazione di Windows. 
  
@@ -88,28 +49,13 @@ Questa funzionalità consente di configurare il dispositivo Hololens 2 per la mo
 Sì, consultare il BLOB XML di esempio seguente. Il profilo di accesso assegnato globale viene applicato a Hololens quando non ne viene trovato uno specifico per l'utente connesso. Si tratta quindi della configurazione predefinita della modalità chiosco per l’utente connesso. Ecco un esempio di BLOB XML da usare: 
 
 > [!NOTE]
-> Tenere presente le aree contrassegnate con <!- poiché sarà necessario apportare modifiche in base alle proprie preferenze. 
+> Tenere presente le aree evidenziate contrassegnate con <!- poiché sarà necessario apportare modifiche in base alle proprie preferenze. 
 
-```xml
-<?xml version="1.0" encoding="utf-8" ?> 
-<AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config" 
-    xmlns:v2="http://schemas.microsoft.com/AssignedAccess/201810/config" 
-    xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config" 
-    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"> 
-    <Profiles> 
-        <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"> 
-            <!—specify AUMIDs and other nodes as used in example above --> 
-        </Profile> 
-        <Profile Id="{8739C257-184F-45DD-8657-C235819172A3}"> 
-            <!—specify AUMIDs and other nodes as used in example above --> 
-        </Profile> 
-    </Profiles> 
-    <Configs> 
-        <v3:GlobalProfile Id="{8739C257-184F-45DD-8657-C235819172A3}"/> 
-        <Config> 
-           <Account>AzureAD\<!-fully qualified AAD account name></Account> 
-           <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/> 
-        </Config> 
-    </Configs> 
-</AssignedAccessConfiguration> 
-```
+ :::code language="xml" source="samples/exclude-one-aad-user-or-group.xml" highlight="8,11,17":::
+
+## Esclusione di DeviceOwners dal profilo di accesso assegnato globale
+
+Questa funzionalità consente a un utente a cui è stato assegnato il ruolo di "[Proprietario del dispositivo](security-adminless-os.md)" di Hololens di essere escluso dall'accesso assegnato globale. Per sfruttare questa funzionalità, nella configurazione BLOB XML per la configurazione di più app, verificare che le linee evidenziate vengano aggiunte: 
+
+ :::code language="xml" source="samples/exclude-device-owners-from-global.xml" highlight="6,16-18":::
+ 

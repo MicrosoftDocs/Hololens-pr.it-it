@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7eaa08b7d88cac1841573b08d492f6b66b599c37
-ms.sourcegitcommit: bde0c2035638ba48f64ac05ed18595a907a05c6a
+ms.openlocfilehash: 11915bd6b2293be4491af2a7231b258b12d7b314
+ms.sourcegitcommit: 7c16570839893f4a4432286b13ae6d84c665d376
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "10894605"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "10902314"
 ---
 # Insider Preview per Microsoft HoloLens
 
@@ -39,17 +39,19 @@ Se si sta cercando una caratteristica che non è più elencata, ora è in genere
 
 Verrà aggiornata di nuovo questa pagina con nuove funzionalità mentre le rilasceremo alle build Insider di Windows.
 
-|                     Funzionalità                     |                                          Descrizione                                          | Disponibile nelle build Insider |
-|:-----------------------------------------------:|:---------------------------------------------------------------------------------------------:|:---------------------------:|
-| Supporto per la posizione degli occhi automatici                       | Trova attivamente le posizioni degli occhi e consente il posizionamento accurato degli ologrammi.                       | 19041.1339 +                 |
-| Accesso assegnato globale                          | Configura il dispositivo HoloLens 2 per la modalità Kiosk di più app applicabile a livello di sistema.  | 19041.1346 +                 |
-| Avvio automatico di un'app nel chiosco multi-app           | Imposta l'avvio automatico di un'applicazione durante l'accesso a una modalità Kiosk a più app. | 19041.1346 +                 |
-| Nuovi criteri di alimentazione per Hololens 2               | Nuovi criteri supportati per le impostazioni di Power timeout.                                          | 19041.1349 +                 |
-| Visualizzatore certificati                              | Visualizzare i certificati utente e dispositivo nell'app Impostazioni.                                        | 19041.1346 +                 |
-| Nuovi criteri di restrizione dei dispositivi per HoloLens 2  | Criteri di gestione dei dispositivi abilitati per la nuova abilitazione per HoloLens 2.                              | 19041.1349 +                 |
-| Visibilità della pagina impostazioni abilitate per HoloLens 2 | Criteri per selezionare le pagine visualizzate nell'app Impostazioni.                                          | 19041.1349 +                 |
-| Criteri HoloLens                               | Nuovi criteri per i dispositivi di realtà mista.                                                       | 19041.1349 +                 |
-| Criteri di aggiornamento                                 | Criteri appena abilitati che consentono il controllo degli aggiornamenti.                                           | 19041.1352 +                 |
+| Funzionalità                                              | Descrizione                                                                                   | Disponibile nelle build Insider |
+|------------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
+| Supporto per la posizione degli occhi automatici                            | Trova attivamente le posizioni degli occhi e consente il posizionamento accurato degli ologrammi.                       | 19041.1339 +                 |
+| Visualizzatore certificati                                   | Visualizzare i certificati utente e dispositivo nell'app Impostazioni.                                        | 19041.1346 +                 |
+| Criteri HoloLens                                    | Nuovi criteri per i dispositivi di realtà mista.                                                       | 19041.1349 +                 |
+| Appartenenza al gruppo della cache AAD per il chiosco offline         | Criteri per il numero di giorni in cui è consentito usare la cache di appartenenza al gruppo AAD per la modalità Kiosk.     | 19041.1356 +                 |
+| Nuovi criteri di restrizione dei dispositivi per HoloLens 2       | Criteri di gestione dei dispositivi abilitati per la nuova abilitazione per HoloLens 2.                              | 19041.1349 +                 |
+| Nuovi criteri di alimentazione per HoloLens 2                    | Nuovi criteri supportati per le impostazioni di Power timeout.                                          | 19041.1349 +                 |
+| Criteri di aggiornamento                                      | Criteri appena abilitati che consentono il controllo degli aggiornamenti.                                           | 19041.1352 +                 |
+| Visibilità della pagina impostazioni abilitate per HoloLens 2      | Criteri per selezionare le pagine visualizzate nell'app Impostazioni.                                          | 19041.1349 +                 |
+| Accesso assegnato globale                               | Configura il dispositivo HoloLens 2 per la modalità Kiosk di più app applicabile a livello di sistema.  | 19041.1356 +                 |
+| Avvio automatico di un'app nel chiosco multi-app                | Imposta l'avvio automatico di un'applicazione durante l'accesso a una modalità Kiosk a più app. | 19041.1346 +                 |
+| Modifiche al comportamento della modalità Kiosk per la gestione degli errori | Le modifiche apportate al modo in cui viene gestito l'errore della modalità Kiosk.                                             | 19041.1356 +                 |
 
 ### Supporto per la posizione degli occhi automatici
 
@@ -71,31 +73,6 @@ Per le esperienze che richiedono dati sugli occhi o un posizionamento olografico
 **Problemi noti**
  - Stiamo esaminando un problema in cui il processo di host del driver dell'eye tracker potrebbe arrestarsi in modo anomalo durante l'esecuzione in un carico di memoria elevato. Il processo host del driver di rilevamento degli occhi deve essere recuperato automaticamente.
 
-### Accesso assegnato globale-modalità Kiosk
-Questa nuova funzionalità consente all'amministratore IT di configurare un dispositivo HoloLens 2 per la modalità Kiosk di più app, applicabile a livello di sistema, non ha affinità con alcuna identità nel sistema e si applica a tutti gli utenti che accedono al dispositivo. Per [informazioni dettagliate, vedere](hololens-global-assigned-access-kiosk.md)questa nuova funzionalità.
-
-### Avvio automatico di un'applicazione in modalità Kiosk con più app 
-Si applica solo alla modalità Kiosk in più app e può essere designata solo 1 app per l'avvio automatico con l'attributo evidenziato di seguito nella configurazione di Access assegnati. 
-
-L'applicazione viene avviata automaticamente quando l'utente effettua l'accesso. 
-
-```xml
-<AllowedApps>                     
-    <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
-```
-
-### Nuovi criteri di alimentazione per Hololens 2
-Questi nuovi criteri aggiunti consentono agli amministratori di controllare gli Stati di alimentazione, ad esempio il timeout inattivo. Per saperne di più su ogni singolo criterio, fare clic sul collegamento relativo al criterio.
-
-|     Collegamento documentazione criteri                |     Note                                                                                                                                       |
-|----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-|     [DisplayOffTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutonbattery)               |     Valore di esempio da usare in Windows Configuration designer, ovvero  `<enabled/><data   id="EnterVideoDCPowerDownTimeOut" value="100"/>`     |
-|     [DisplayOffTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin)               |     Valore di esempio da usare in Windows Configuration designer, ovvero  `<enabled/><data   id="EnterVideoACPowerDownTimeOut" value="100"/>`     |
-|     [EnergySaverBatteryThresholdOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdonbattery)     |  Valore di esempio da usare in Windows Configuration designer, ovvero 100                                                                             |
-|     [EnergySaverBatteryThresholdPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)     |     Valore di esempio da usare in Windows Configuration designer, ovvero 100                                                                          |
-|     [StandbyTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutonbattery)                  |     Valore di esempio da usare in Windows Configuration designer, ovvero   `<enabled/><data   id="EnterDCStandbyTimeOut" value="100"/>`          |
-|     [StandbyTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutpluggedin)                  |     Valore di esempio da usare in Windows Configuration designer, ovvero  `<enabled/><data   id="EnterACStandbyTimeOut" value="100"/>`           |
-
 ### Visualizzatore certificati
 
 In Windows Insider Build 19041.1346 + aggiungiamo un visualizzatore di certificati nell'app impostazioni di HoloLens 2. Questa caratteristica offre un metodo semplice e intuitivo per verificare i certificati nel dispositivo. Per trovare rapidamente un certificato specifico, sono disponibili opzioni per ordinare in base al nome, allo Store o alla data di scadenza. Gli utenti possono anche cercare direttamente un certificato. Con il nuovo Visualizzatore di certificati, gli amministratori e gli utenti hanno ora strumenti di controllo, diagnosi e convalida migliorati per garantire che i dispositivi rimangano sicuri e conformi.  Per visualizzare altre informazioni su un singolo certificato, selezionare il certificato e fare clic su informazioni.
@@ -111,11 +88,62 @@ Per visualizzare i certificati, scegliere **impostazioni > aggiorna & sicurezza 
 
 ![Visualizzatore certificati nell'app impostazioni](images/hololens-certificate-viewer.png)
 
+### Criteri HoloLens
+I nuovi criteri di realtà mista sono stati creati per i dispositivi HoloLens 2 nelle build 19041.1349 +. Le nuove impostazioni controllabili includono: impostazione della luminosità, impostazione del volume, disabilitazione della registrazione audio in acquisizioni di realtà miste, impostazione quando la diagnostica può essere raccolta e cache dell'appartenenza al gruppo AAD.  
+
+| Nuovi criteri di HoloLens                                | Descrizione                                                                               | Note                                                                |
+|----------------------------------------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
+| MixedReality\BrightnessButtonDisabled              | Consente di disabilitare i pulsanti di luminosità in modo che la pressione non cambi la luminosità.       | 1 Sì, 0 No (impostazione predefinita)                                                |
+| MixedReality\VolumeButtonDisabled                  | Consente di disabilitare i pulsanti del volume in modo da premere il tasto non cambia volume.               | 1 Sì, 0 No (impostazione predefinita)                                                |
+| MixedReality\MicrophoneDisabled                    | Disattiva il microfono in modo che non sia possibile una registrazione audio in HoloLens 2.                      | 1 Sì, 0 No (impostazione predefinita)                                                |
+| MixedReality\FallbackDiagnostics                   | Controlla il comportamento di quando è possibile raccogliere i log diagnostici.                               | 0 disabilitato, 1 abilitato per i proprietari di dispositivi, 2 abilitato per tutti (impostazione predefinita) |
+| MixedReality\HeadTrackingMode                      | Riservato per un uso futuro.                                                                  |                                                                      |
+| MixedReality\AADGroupMembershipCacheValidityInDays | Controlla il numero di giorni in cui viene usata la cache di appartenenza a un gruppo di destinatari per i gruppi AAD. | Vedere di seguito.                                                           |
+
+### Appartenenza al gruppo della cache AAD per il chiosco offline
+
+Questo criterio Controlla il numero di giorni in cui è consentita la cache dell'appartenenza a un gruppo AAD per le configurazioni di accesso assegnate destinate ai gruppi AAD per l'utente connesso. Quando il valore di questo criterio è impostato su un valore maggiore di 0 solo la cache viene usata in caso contrario.  
+
+AADGroupMembershipCacheValidityInDays 
+
+Min-0 giorni  
+Max-60 giorni 
+
+Procedura per usare correttamente questo criterio: 
+1. Creare un profilo di configurazione del dispositivo per il chiosco che designa i gruppi AAD e assegnarlo ai dispositivi HoloLens. 
+1. Crea una configurazione di dispositivo basata su URI OMA personalizzata che imposta il valore di questo criterio sul numero desiderato di giorni (> 0) e assegnalo ai dispositivi HoloLens. 
+1. Registrare i dispositivi HoloLens e verificare che entrambe le configurazioni vengano applicate al dispositivo. 
+1. Consentire all'utente di accedere a AAD 1 quando è disponibile Internet, una volta che l'utente ha eseguito l'accesso e l'appartenenza al gruppo AAD è stata confermata, verrà creata la cache. 
+1. Ora l'utente AAD 1 può prendere offline HoloLens e usarlo per la modalità Kiosk, purché il valore dei criteri consenta un numero X di giorni. 
+1. I passaggi 4 e 5 possono essere ripetuti per qualsiasi altro utente AAD N. il punto chiave è che qualsiasi utente AAD deve effettuare l'accesso al dispositivo tramite Internet, quindi almeno una volta che siamo in grado di determinare di essere membri del gruppo AAD a cui è destinata la configurazione del chiosco. 
+ 
+> [!NOTE]
+> Finché non viene eseguito il passaggio 4 per un utente AAD si verificherà un comportamento di errore di seguito indicato in ambienti "disconnessi". 
+
 ### Nuovi criteri di restrizione dei dispositivi per HoloLens 2
 Criteri appena abilitati che consentono di avere più opzioni di gestione dei dispositivi HoloLens 2. 
 - [AllowAddProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)
 - [AllowRemoveProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage) 
 - [ConfigureTimeZone](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-timelanguagesettings#timelanguagesettings-configuretimezone) 
+
+### Nuovi criteri di alimentazione per Hololens 2
+Questi nuovi criteri aggiunti consentono agli amministratori di controllare gli Stati di alimentazione, ad esempio il timeout inattivo. Per saperne di più su ogni singolo criterio, fare clic sul collegamento relativo al criterio.
+
+|     Collegamento documentazione criteri                |     Note                                                                                                                                       |
+|----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+|     [DisplayOffTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutonbattery)               |     Valore di esempio da usare in Windows Configuration designer, ovvero  `<enabled/><data   id="EnterVideoDCPowerDownTimeOut" value="100"/>`     |
+|     [DisplayOffTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin)               |     Valore di esempio da usare in Windows Configuration designer, ovvero  `<enabled/><data   id="EnterVideoACPowerDownTimeOut" value="100"/>`     |
+|     [EnergySaverBatteryThresholdOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdonbattery)     |  Valore di esempio da usare in Windows Configuration designer, ovvero 100                                                                             |
+|     [EnergySaverBatteryThresholdPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)     |     Valore di esempio da usare in Windows Configuration designer, ovvero 100                                                                          |
+|     [StandbyTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutonbattery)                  |     Valore di esempio da usare in Windows Configuration designer, ovvero   `<enabled/><data   id="EnterDCStandbyTimeOut" value="100"/>`          |
+|     [StandbyTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutpluggedin)                  |     Valore di esempio da usare in Windows Configuration designer, ovvero  `<enabled/><data   id="EnterACStandbyTimeOut" value="100"/>`           |
+
+### Criteri di aggiornamento appena abilitati per HoloLens
+Questi criteri di aggiornamento sono ora abilitati nei dispositivi HoloLens 2:
+-   [Update/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend)
+-   [Update/ActiveHoursMaxRange](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange)
+-   [Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart)
+-   [Update/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)
 
 ### Visibilità della pagina impostazioni abilitate per HoloLens 2
 Ora abbiamo abilitato un criterio che consente agli amministratori IT di impedire che pagine specifiche nell'app impostazioni di sistema siano visibili o accessibili oppure di farlo per tutte le pagine eccetto quelle specificate. Per informazioni su come personalizzare completamente questa caratteristica, fare clic sul collegamento seguente.
@@ -124,22 +152,24 @@ Ora abbiamo abilitato un criterio che consente agli amministratori IT di impedir
  
 ![Screenshot delle ore attive modificate nell'app impostazioni](images/hololens-page-visibility-list.jpg)
 
-### Criteri HoloLens
-I nuovi criteri di realtà mista sono stati creati per i dispositivi HoloLens 2 nelle build 19041.1349 +. Le nuove impostazioni controllabili includono: impostazione della luminosità, impostazione del volume, disabilitazione della registrazione audio in acquisizioni di realtà miste, impostazione quando la diagnostica può essere raccolta.  
+### Accesso assegnato globale-modalità Kiosk
+Questa nuova funzionalità consente all'amministratore IT di configurare un dispositivo HoloLens 2 per la modalità Kiosk di più app, applicabile a livello di sistema, non ha affinità con alcuna identità nel sistema e si applica a tutti gli utenti che accedono al dispositivo. Per [informazioni dettagliate, vedere](hololens-global-assigned-access-kiosk.md)questa nuova funzionalità.
 
-|     Nuovi criteri di HoloLens                   |     Descrizione                                                                            |     Note                                                                |
-|-------------------------------------------|--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-|     MixedReality\BrightnessButtonDisabled |     Consente di disabilitare i pulsanti di luminosità in modo che la pressione non cambi la luminosità.    |     1 Sì, 0 No (impostazione predefinita)                                                |
-|     MixedReality\VolumeButtonDisabled     |     Consente di disabilitare i pulsanti del volume in modo da premere il tasto non cambia volume.            |     1 Sì, 0 No (impostazione predefinita)                                                |
-|     MixedReality\MicrophoneDisabled       |     Disattiva il microfono in modo che non sia possibile una registrazione audio in HoloLens 2.                   |     1 Sì, 0 No (impostazione predefinita)                                                |
-|     MixedReality\FallbackDiagnostics      |     Controlla il comportamento di quando è possibile raccogliere i log diagnostici.                            |     0 disabilitato, 1 abilitato per i proprietari di dispositivi, 2 abilitato per tutti (impostazione predefinita) |
-|     MixedReality\HeadTrackingMode         |     Riservato per un uso futuro.                                                               |                                                                          |
-### Criteri di aggiornamento appena abilitati per HoloLens
-Questi criteri di aggiornamento sono ora abilitati nei dispositivi HoloLens 2:
--   [Update/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend)
--   [Update/ActiveHoursMaxRange](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange)
--   [Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart)
--   [Update/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)
+### Avvio automatico di un'applicazione in modalità Kiosk con più app 
+Si applica solo alla modalità Kiosk in più app e può essere designata solo 1 app per l'avvio automatico con l'attributo evidenziato di seguito nella configurazione di Access assegnati. 
+
+L'applicazione viene avviata automaticamente quando l'utente effettua l'accesso. 
+
+```xml
+<AllowedApps>                     
+    <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
+```
+
+### Modifiche al comportamento della modalità Kiosk per la gestione degli errori
+
+In precedenza, quando si verificano errori nell'applicazione della modalità Kiosk, HoloLens usato per visualizzare tutte le applicazioni nel menu Start. A partire da questa build di Windows Insider, in caso di errori, nessuna app verrà visualizzata nel menu Start, come indicato di seguito: 
+
+![L'immagine della modalità Kiosk ora appare quando non riesce.](images/hololens-kiosk-failure-behavior.png )
 
 ## Iniziare a ricevere compilazioni Insider
 

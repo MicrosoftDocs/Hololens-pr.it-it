@@ -16,12 +16,12 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: a52e8e5bae49973d92efa6ea75391dc44d8b8ddb
-ms.sourcegitcommit: 357094acfd39f7c59a0a62f1dd7918b58c209ef7
+ms.openlocfilehash: de53f8f2cccfe3ece8900c88c5379adf2fb55a7b
+ms.sourcegitcommit: 5d38af8d17dfcc028e7e0b2bb888c6c9d1e40524
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "10861161"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "10899179"
 ---
 # Riavviare, ripristinare o recuperare HoloLens (prima generazione)
 
@@ -91,7 +91,7 @@ Se riscontri ancora problemi sul tuo HoloLens dopo il riavvio, prova a ripristin
 
 Se si ripristina il dispositivo, tutti i dati personali, le app e le impostazioni verranno eliminati, compreso il ripristino del TPM. Durante il ripristino viene soltanto installata l’ultima versione di Windows Holographic, e dovrai completare di nuovo tutte le operazioni di inizializzazione (calibrazione, connessione Wi-Fi, creazione di un account utente, scaricamento delle app, e così via).
 
-1. Lancia l’app Impostazioni e seleziona **Aggiorna** > **Ripristina**.
+1. Lancia l’app Impostazioni e seleziona **Aggiorna** > **Ripristino**.
 1. Seleziona l’opzione **Ripristina dispositivo** e leggi il messaggio di conferma.
 1. Se accetti di ripristinare il dispositivo, questo si riavvierà e mostrerà una serie di ingranaggi rotanti con un indicatore di stato.
 1. Attendi circa 30 minuti per il completamento del processo.

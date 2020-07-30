@@ -14,11 +14,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 2f2c8afffdc24eedf9cb6b462448f5ed6ffc8d5d
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: a4a5478f396dff9eef84540286e0fa9672172076
+ms.sourcegitcommit: 9197b9d507d8b9b195bdf512d1b832888b53162d
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828771"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "10899098"
 ---
 # Migliorare la qualità visiva e il comfort
 
@@ -88,6 +89,8 @@ Se la calibrazione non riesce, provare quanto segue:
 - Accendere una luce nella stanza o allontanarsi dalla luce diretta del sole
 
 Se sono state seguite tutte le linee guida e la calibrazione ancora non riesce, puoi disabilitare la richiesta di calibrazione nelle Impostazioni. Puoi comunicarcelo anche inviando un tuo feedback tramite l’[Hub di Feedback](hololens-feedback.md).
+
+Consulta anche le informazioni correlate sulla [risoluzione dei problemi relativi a colore dell'immagine o luminosità.](hololens2-fit-comfort-faq.md#hologram-image-color-or-brightness-does-not-look-right)
 
 Tieni presente che l'impostazione della distanza interpupillare non è applicabile per Hololens 2, perché le posizioni degli occhi sono calcolate dal sistema. 
 

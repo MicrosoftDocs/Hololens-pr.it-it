@@ -14,12 +14,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 054c4ded7496957671c055e3161a1297de7abc1a
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 1dd6c2e6cde980b86ac810f82d27b3b88f20f336
+ms.sourcegitcommit: 7edbb99e0972d3d857e5e87c062c3c64cacc1f41
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828691"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "10903222"
 ---
 # Registrare HoloLens in MDM
 
@@ -31,6 +31,21 @@ Puoi gestire più dispositivi Microsoft HoloLens simultaneamente usando soluzion
 ## Requisiti
 
  L'organizzazione dovrà configurare la gestione di dispositivi mobili (MDM) per la gestione dei dispositivi HoloLens. Il provider MDM può essere Microsoft Intune o un provider di terze parti che usa le API di Microsoft MDM.
+ 
+## Diversi modi per iscriversi
+
+A seconda del tipo di identità scelto durante la configurazione OOBE o post-accesso sono disponibili diversi metodi di registrazione. Per altre informazioni su ogni tipo di identità in HoloLens, visitare [Questa pagina](hololens-identity.md).
+
+- Se Identity è AAD, è possibile che durante l'accesso all'app OOBE o **le impostazioni**di  ->  **Access o**il pulsante School  ->  **Connect** .
+    - Per AAD, la registrazione automatica MDM si verifica solo se AAD è stato configurato con gli URL di registrazione.
+- Se l'identità è AAD e il dispositivo è stato pre-registrato con Intune MDM server con il profilo di configurazione specifico assegnato, quindi AAD-join e registrazione si verificheranno automaticamente durante la configurazione guidata.
+    - Chiamato anche [flusso Autopilot](hololens2-autopilot.md) disponibile in [19041.1103 + Build](hololens-release-notes.md#windows-holographic-version-2004).
+- Se l'identità è MSA, usare **le impostazioni**di  ->  **accesso all'app o al pulsante School**  ->  **Connect** .
+    - Denominato anche flusso di Add work account (AWA).
+- Se l'identità è un utente locale, usare **le impostazioni**  ->  di accesso all'app**o dell'Istituto**  ->  **di istruzione per la registrazione solo in collegamento Gestione dispositivi** .
+    - Chiamata anche flusso di registrazione MDM puro.
+
+Una volta che il dispositivo è stato registrato con il server MDM, l'app Impostazioni rifletterà ora che il dispositivo è registrato in gestione dispositivi.
 
 ## Registrazione automatica in MDM
 
@@ -38,16 +53,6 @@ Se l'organizzazione usa Azure Active Directory (Azure AD) e una soluzione MDM ch
 
 Quando è abilitata la registrazione automatica, non è necessaria alcuna registrazione manuale aggiuntiva. Quando l'utente accede con un account Azure AD, il dispositivo viene registrato in MDM dopo aver completato l'esperienza di prima esecuzione.
 
-## Effettuare la registrazione tramite l'app Impostazioni
-
- Quando il dispositivo non è registrato in MDM durante l'esperienza di prima esecuzione, l'utente può registrare manualmente il dispositivo con il server MDM dell'organizzazione mediante l'app Impostazioni.
-
-1. Andare a **Impostazioni** > **Account** > **Accesso società**.
-1. Selezionare **Registrati per la gestione dei dispositivi** e immettere l'account dell'organizzazione. Si verrà reindirizzati nella pagina di accesso dell'organizzazione.
-1. Dopo l'autenticazione riuscita al server MDM, viene visualizzato un messaggio di conferma.
-
-Il dispositivo è ora registrato nel server MDM. L'app Impostazioni rifletterà ora la registrazione del dispositivo nella gestione dei dispositivi.
-
 ## Annullare la registrazione di HoloLens da Intune
 
-Non puoi [annullare la registrazione](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows) HoloLens da Intune in modalità remota. Se l'amministratore annulla la registrazione del dispositivo tramite MDM, il dispositivo verrà eliminato dal dashboard di Intune.
+Per ulteriori informazioni su come annullare la registrazione di un dispositivo, visitare [Questa pagina](https://docs.microsoft.com/windows/client-management/mdm/disconnecting-from-mdm-unenrollment). 

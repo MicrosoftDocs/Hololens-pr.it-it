@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8c3d9a10533432b3e8489ffa297c16061abb9eaf
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: a0ba32e3caff7695cd284ee3752bb91d80da2194
+ms.sourcegitcommit: 7edbb99e0972d3d857e5e87c062c3c64cacc1f41
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828971"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "10903242"
 ---
 # Configurare il dispositivo HoloLens 2
 
@@ -69,12 +69,12 @@ HoloLens 2 ti guiderà nei passaggi seguenti:
 > Tieni inoltre presente che durante l'installazione di HoloLens si verifica un timeout delle credenziali di due minuti. Nome utente/password devono essere immessi entro due minuti, altrimenti il campo nome utente verrà cancellato automaticamente.
 
 1. Accedi al tuo account utente. Potrai scegliere tra **Appartiene all'azienda o all'istituto di istruzione** e **Appartiene a me**.
-    - Quando scegli **Appartiene all'azienda o all'istituto di istruzione**, accedi con un account Azure AD. Se l'organizzazione usa Azure AD Premium e ha configurato la registrazione automatica MDM, HoloLens si registra automaticamente in MDM. Se l'organizzazione non usa Azure AD Premium, la registrazione MDM automatica non è disponibile. In questo caso, dovrai [registrare manualmente HoloLens in gestione dispositivi](hololens-enroll-mdm.md#enroll-through-settings-app).
+    - Quando scegli **Appartiene all'azienda o all'istituto di istruzione**, accedi con un account Azure AD. Se l'organizzazione usa Azure AD Premium e ha configurato la registrazione automatica MDM, HoloLens si registra automaticamente in MDM. Se l'organizzazione non usa Azure AD Premium, la registrazione MDM automatica non è disponibile. In questo caso, dovrai [registrare manualmente HoloLens in gestione dispositivi](hololens-enroll-mdm.md#different-ways-to-enroll).
         1. Immetti le informazioni sull'account aziendale.
         1. Accetta l'Informativa sulla privacy e il Contratto di licenza con l'utente finale.
         1. Accedi usando le credenziali di Azure AD. Potresti essere reindirizzato alla pagina di accesso dell'organizzazione.
         1. Continua a configurare il dispositivo.
-    - Quando scegli **Appartiene a me**, accedi con un account Microsoft. Al termine della configurazione, puoi [registrare manualmente HoloLens in gestione dispositivi](hololens-enroll-mdm.md#enroll-through-settings-app).
+    - Quando scegli **Appartiene a me**, accedi con un account Microsoft. Al termine della configurazione, puoi [registrare manualmente HoloLens in gestione dispositivi](hololens-enroll-mdm.md#different-ways-to-enroll).
         1. Immetti le informazioni sull'account Microsoft.
         2. Immetti la password. Se l'account Microsoft richiede la [verifica in due passaggi (2FA)](https://blogs.technet.microsoft.com/microsoft_blog/2013/04/17/microsoft-account-gets-more-secure/), completa il processo di verifica.
 

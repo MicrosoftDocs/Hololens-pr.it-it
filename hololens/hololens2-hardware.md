@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 477693dd0d4a3ce63bfe29df166e171b9292aea4
-ms.sourcegitcommit: c0c8b57bb03a2fc724c051ad42ea5a3fb911ba71
+ms.openlocfilehash: 5b1df54ea5112109a175f6d7172635042262ca14
+ms.sourcegitcommit: e85a55c110e729a4836b8a59aa29d786c74ed6bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "10894052"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "10903331"
 ---
 # Hardware HoloLens 2
 
@@ -144,6 +144,23 @@ Per mantenere/accrescere la percentuale di carica della batteria interna mentre 
 
 ### Informazioni normative
 [Normative HoloLens](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information): includono le informazioni sulla temperatura, lo smaltimento, le interferenze radiofoniche e televisive e altro ancora.
+
+## Dimensioni del pacchetto
+
+|      Misura               |      Sistema metrico     |      Sistema imperiale     |
+|--------------------------------|-----------------------|-------------------------|
+|     Lunghezza unità                |     378,97 mm          |     14,920 pollici       |
+|     Larghezza unità                 |     247,90 mm          |     9,760 pollici        |
+|     Profondità unità                 |     163,07 mm          |     6,420 pollici        |
+|     Peso unità                |     2,878 kg           |     6,344 lb.           |
+|     Lunghezza confezione esterna    |     446 mm          |     17,559 pollici       |
+|     Larghezza confezione esterna     |     257,99 mm          |     10,157 pollici       |
+|     Spessore confezione esterna     |     172,01 mm          |     6,772 pollici        |
+|     Peso confezione esterna    |     3,284 kg           |     7,240 lb.           |
+
+Note:
+- Unità: HoloLens 2 venduto nella scatola nera in stile articolo al dettaglio.
+- Confezione esterna: imballaggio di protezione intorno all'unità.
 
 ## Passaggio successivo
 

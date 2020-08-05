@@ -15,27 +15,28 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: cb4296413fdf31376ff0d11f1fa807c190af81f4
-ms.sourcegitcommit: 563797405f7470f979a27718c604df920efbb368
+ms.openlocfilehash: fa2c4b5562c27e8d80b765c4acce0191de54a545
+ms.sourcegitcommit: 2122490074adb7f63edfc3576441980caa22695f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10881236"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "10915954"
 ---
 # Note sulla versione di HoloLens 2
 
-Per assicurarti di avere un'esperienza produttiva con i tuoi dispositivi HoloLens, continuiamo a rilasciare gli aggiornamenti relativi a funzionalità, bug e sicurezza. In questa pagina è possibile scoprire le novità di HoloLens ogni mese. Se si vuole scaricare l'ultima versione di HoloLens 2 FFU per flashare il dispositivo tramite [Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device) , è possibile scaricarlo da [qui](https://aka.ms/hololens2download). Il file FFU viene tenuto aggiornato, e corrisponde alla build più recente disponibile. 
+Per assicurarti di avere un'esperienza produttiva con i tuoi dispositivi HoloLens, continuiamo a rilasciare gli aggiornamenti relativi a funzionalità, bug e sicurezza. In questa pagina è possibile vedere le novità di HoloLens ogni mese. Per ottenere il più recente aggiornamento di HoloLens 2 Full Flash (FFU) per [flashare il dispositivo tramite il compagno di ripristino avanzato](hololens-recovery.md#clean-reflash-the-device), [scaricalo qui](https://aka.ms/hololens2download). Il download viene mantenuto aggiornato e fornisce la build più recente in generale disponibile.
 
-Le note sulla versione di HoloLens Emulator possono essere trovate [qui](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
+>[!NOTE]
+> Per leggere le note sulla versione dell'emulatore HoloLens, [visita l'archivio](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
 
 ## Windows olografico, versione 2004-luglio 2020 Update
 - Build 19041,1109
 
 Miglioramenti e correzioni nell'aggiornamento:
 
-- Gli sviluppatori possono scegliere tra l'abilitazione o la disabilitazione di Device Portal che richiede una connessione sicura.
-- Miglioramenti dell'affidabilità per i lanci dell'applicazione dopo gli aggiornamenti del sistema operativo.
-- Modificare la luminosità predefinita della posta in arrivo in 100%.
+- Gli sviluppatori possono ora scegliere tra l'abilitazione o la disabilitazione con Device Portal richiede una connessione sicura.
+- Affidabilità migliorata per i lanci delle applicazioni dopo gli aggiornamenti del sistema operativo.
+- Modifica della luminosità predefinita della posta in arrivo in 100%.
 - È stato risolto un problema relativo all'inoltro HTTPS per Windows Device Portal in HoloLens 2.
 
 ## Windows olografico, versione 1903-luglio 2020 Update
@@ -43,8 +44,8 @@ Miglioramenti e correzioni nell'aggiornamento:
 
 Miglioramenti e correzioni nell'aggiornamento:
 
-- Risolve un problema che potrebbe causare la scomparsa degli ologrammi nelle applicazioni Unity quando si perde e/o si riprende il rilevamento.
-- È stato risolto un problema che causava l'arresto anomalo delle app Hololens esclusive nella shell durante l'uso dell'emulatore Hololens con accelerazione hardware su determinati dispositivi.
+- È stato risolto un problema che potrebbe causare la scomparsa degli ologrammi nelle applicazioni Unity quando si perde o si riprende il rilevamento.
+- È stato risolto un problema che causava l'arresto anomalo delle app HoloLens esclusive nella shell durante l'uso dell'emulatore HoloLens con accelerazione hardware su determinati dispositivi.
 - È stato risolto un problema relativo all'inoltro HTTPS per Windows Device Portal in HoloLens 2.
 
 ## Windows olografico, versione 2004-giugno 2020 Update
@@ -52,25 +53,25 @@ Miglioramenti e correzioni nell'aggiornamento:
 
 Miglioramenti e correzioni nell'aggiornamento:
 
-- I registratori MRC personalizzati hanno nuovi valori predefiniti per determinate proprietà, se non sono specificati.
-  - Nell'effetto video MRC:
+- I registratori MRC personalizzati ora hanno nuovi valori predefiniti per determinate proprietà, se non sono specificati.
+  - Nell' *effetto video MRC*:
     - PreferredHologramPerspective (1 PhotoVideoCamera)
     - GlobalOpacityCoefficient (0,9 (HoloLens) 1,0 (auricolare immersiva))
-  - Sull'effetto audio MRC:
+  - Sull' *effetto audio MRC*:
     - LoopbackGain (il valore di "guadagno dell'app audio" corrente nella pagina di acquisizione di realtà mista in Windows Device Portal)
     - MicrophoneGain (il valore "MIC Audio Gain" corrente nella pagina di acquisizione di realtà mista in Windows Device Portal)
-- Questo aggiornamento contiene una correzione di bug che migliora la qualità audio negli scenari di acquisizione di realtà mista. In particolare, dovrebbe eliminare qualsiasi glitch audio nella registrazione quando viene visualizzato il menu Start.
+- È stato risolto un bug per migliorare la qualità audio negli scenari di acquisizione di realtà mista. In particolare, questa correzione deve eliminare il glitch audio nella registrazione quando viene visualizzato il menu **Start** .
 - Migliorata la stabilità degli ologrammi nei video registrati.
-- Risolve un problema in cui l'acquisizione di realtà mista non può registrare il video dopo che il dispositivo viene lasciato in stato di standby per più giorni.
-- L'API HolographicSpace. UserPresence è in genere disabilitata per le applicazioni Unity per evitare un problema che causa la sospensione di alcune app quando la visiera è capovolta, anche se l'impostazione per l'esecuzione in background è abilitata. L'API è ora abilitata per le versioni 2018.4.18 e successive di Unity e 2019.3.4 e successive.
-- Quando si accede a Device Portal tramite una connessione Wi-Fi, un Web browser potrebbe impedire l'accesso a causa di un certificato non valido, segnalando un errore come "ERR_SSL_PROTOCOL_ERROR", anche se il certificato del dispositivo è stato precedentemente considerato attendibile.  In questo caso, non è possibile passare a Device Portal come opzioni per ignorare gli avvisi di sicurezza non disponibili.  Questo aggiornamento risolve il problema.  Se il certificato del dispositivo è stato precedentemente scaricato e considerato attendibile in un PC per rimuovere gli avvisi di sicurezza del browser e si è verificato l'errore SSL, il nuovo certificato dovrà essere scaricato e considerato attendibile per indirizzare gli avvisi di sicurezza del browser.
-- Possibilità di creare un pacchetto di provisioning di runtime che consente di installare un'app usando i pacchetti di MSIX.
-- Nuova impostazione che gli utenti possono trovare in impostazioni > sistema > gli ologrammi, che consente agli utenti di rimuovere automaticamente tutti gli ologrammi dalla Home realtà mista quando il dispositivo si arresta.
+- Risolto un problema per cui l'acquisizione di realtà mista non poteva registrare il video dopo che il dispositivo è stato lasciato in standby per più giorni.
+- L'API HolographicSpace. UserPresence è in genere disabilitata per le applicazioni Unity. Questo comportamento evita un problema che ha causato la sospensione di alcune app quando la visiera è stata capovolta, anche se l'impostazione "Esegui in background" è stata abilitata. L'API è ora abilitata per le versioni 2018.4.18 e successive di Unity e 2019.3.4 e versioni successive.
+- Quando si accede a Device Portal tramite una connessione Wi-Fi, un Web browser può impedire l'accesso a causa di un certificato non valido. Il browser potrebbe segnalare un errore, ad esempio "ERR_SSL_PROTOCOL_ERROR", anche se il certificato del dispositivo è stato considerato attendibile in precedenza. In questo caso, non è possibile passare a Device Portal, perché non è possibile ignorare gli avvisi di sicurezza. Questo aggiornamento ha risolto il problema. Se il certificato del dispositivo è stato precedentemente scaricato e considerato attendibile in un PC per rimuovere gli avvisi di sicurezza del browser e si verifica l'errore SSL, il nuovo certificato deve essere scaricato e considerato attendibile per indirizzare gli avvisi di sicurezza del browser.
+- È stata abilitata la possibilità di creare un pacchetto di provisioning di runtime in grado di installare un'app usando i pacchetti MSIX.
+- Aggiunta di un'impostazione nel sistema di **Impostazioni**  >  **System**  >  **olografici** che consente agli utenti di rimuovere automaticamente tutti gli ologrammi dalla realtà mista Home quando il dispositivo si arresta.
 - È stato risolto un problema che causava le app HoloLens che modificano il formato pixel per il rendering nero nell'emulatore HoloLens.
-- Corretto un bug che causava un arresto anomalo durante l'accesso a Iris.
-- Risolve un problema relativo ai download ripetuti dello Store per le app già aggiornate.
-- È stato risolto un bug per impedire alle app immersive di lanciare più volte Edge.
-- Risolve un problema intorno all'avvio dell'app Foto in stivali iniziali dopo l'aggiornamento dalla versione di 1903.
+- È stato risolto un bug che causava un arresto anomalo durante l'accesso a Iris.
+- È stato risolto un problema relativo ai download ripetuti dello Store per le app già aggiornate.
+- È stato risolto un bug per evitare che le app immersive potessero aprire più volte Microsoft Edge.
+- È stato risolto un problema con l'avvio dell'app Foto in stivali iniziali dopo l'aggiornamento dalla versione di 1903.
 - Prestazioni e affidabilità migliorate.
 
 ## Windows olografico, versione 1903-giugno 2020 Update
@@ -79,80 +80,82 @@ Miglioramenti e correzioni nell'aggiornamento:
 Miglioramenti e correzioni nell'aggiornamento:
 
 - I registratori MRC personalizzati hanno nuovi valori predefiniti per determinate proprietà, se non sono specificati.
-  - Nell'effetto video MRC:
+  - Nell' *effetto video MRC*:
     - PreferredHologramPerspective (1 PhotoVideoCamera)
     - GlobalOpacityCoefficient (0,9 (HoloLens) 1,0 (auricolare immersiva))
-  - Sull'effetto audio MRC:
+  - Sull' *effetto audio MRC*:
     - LoopbackGain (il valore di "guadagno dell'app audio" corrente nella pagina di acquisizione di realtà mista in Windows Device Portal)
     - MicrophoneGain (il valore "MIC Audio Gain" corrente nella pagina di acquisizione di realtà mista in Windows Device Portal)
-- L'API HolographicSpace. UserPresence è in genere disabilitata per le applicazioni Unity per evitare un problema che causa la sospensione di alcune app quando la visiera è capovolta, anche se l'impostazione per l'esecuzione in background è abilitata. L'API è ora abilitata per le versioni 2018.4.18 e successive di Unity e 2019.3.4 e successive.
+- L'API HolographicSpace. UserPresence è in genere disabilitata per le applicazioni Unity. Questo comportamento evita un problema che causa la sospensione di alcune app quando la visiera è capovolta, anche se l'impostazione per l'esecuzione in background è abilitata. L'API è ora abilitata per le versioni 2018.4.18 e successive di Unity e 2019.3.4 e versioni successive.
 - È stato risolto un problema che causava le app HoloLens che modificano il formato pixel per il rendering nero nell'emulatore HoloLens.
-- Risolve un problema intorno all'avvio dell'app Foto in stivali iniziali dopo l'aggiornamento dalla versione di 1903.
+- È stato risolto un problema relativo all'avvio dell'app Foto in stivali iniziali dopo l'aggiornamento dalla versione di 1903.
 
 ## Windows olografico, versione 2004  
-Build-19041,1103
+- Build-19041,1103
 
-Siamo lieti di annunciare il nostro aggiornamento software principale di maggio 2020 per HoloLens 2, **Windows olografico, versione 2004**. Questa versione include una serie di nuove interessanti funzionalità, come il supporto per il pilota automatico Windows, la modalità Dark app, il supporto USB Ethernet per gli hotspot 5G/LTE e molto altro. Per eseguire l'aggiornamento alla versione più recente, aprire l' **app Impostazioni**, quindi fare clic su **Aggiorna & sicurezza**e quindi selezionare il pulsante **Controlla aggiornamenti**   . 
+L'aggiornamento software principale di maggio 2020 per HoloLens 2, *Windows olografico, versione 2004* include numerose nuove funzionalità, come il supporto per il pilota automatico Windows, la modalità Dark app, il supporto USB Ethernet per gli hotspot 5g/LTE e molto altro. Per eseguire l'aggiornamento alla versione più recente, aprire l'app **Impostazioni**   , fare clic su **Aggiorna & sicurezza**e selezionare il pulsante **Controlla aggiornamenti**   . 
 
 |             Funzionalità                              |          Descrizione                                                                                              |
 |--------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-|       Windows Autopilot                          |          Pre-configurare e configurare in maniera trasparente nuovi dispositivi per la produzione, con Autopilot Windows                 |
+|       Windows Autopilot                          |          Pre-configurare e configurare in maniera trasparente nuovi dispositivi per la produzione usando il pilota automatico di Windows                 |
 |       Supporto di FIDO 2                             |          Supporto per le chiavi di sicurezza di FIDO2 per abilitare l'autenticazione veloce e sicura per i dispositivi condivisi            |
 |       Miglioramento del provisioning                      |          Applicare senza problemi un pacchetto di provisioning da un'unità USB al proprio HoloLens                              |
-|       Stato di installazione dell'applicazione                 |          Verificare che lo stato di installazione per le app sia stato inserito in HoloLens 2 tramite MDM, nell'app impostazioni              |
-|       Provider di servizi di configurazione (CSP)   |          Sono stati aggiunti nuovi provider di servizi di configurazione per migliorare le funzionalità di controllo dell'amministratore.                 |
+|       Stato di installazione dell'applicazione                 |          Verificare che lo stato di installazione nell'app impostazioni per le app sia stato inserito in HoloLens 2 tramite MDM               |
+|       Provider di servizi di configurazione (CSP)   |          Sono stati aggiunti nuovi provider di servizi di configurazione per migliorare le funzionalità di controllo dell'amministratore                 |
 |       Supporto per USB 5G/LTE                       |          La funzionalità Ethernet USB espansa consente il supporto per 5G/LTE                                    |
-|       Modalità app scura                              |          Modalità app scure per le app che supportano le modalità buio e luce, il miglioramento dell'esperienza di visualizzazione        |
-|       Comandi vocali                             |          Supporto per comandi vocali di sistema aggiuntivi per controllare HoloLens, vivavoce                           |
+|       Modalità app scura                              |          Modalità app scure disponibile per le app che supportano le modalità buio e luce, il miglioramento dell'esperienza di visualizzazione        |
+|       Comandi vocali                             |          Supporto per comandi vocali di sistema aggiuntivi per controllare HoloLens Hands-Free                           |
 |       Miglioramenti per il rilevamento delle mani                 |          Miglioramenti per il rilevamento delle mani rende più accurate i pulsanti e le interazioni in ardesia 2D                        |
 |       Miglioramenti e correzioni di qualità                 |          Diversi miglioramenti delle prestazioni e dell'affidabilità del sistema in tutta la piattaforma                            |
 
-### Supporto per il pilota automatico di Windows 
+### Supporto per il pilota automatico di Windows
 
-Windows Autopilot per HoloLens 2 consente al canale di vendita del dispositivo di pre-registrare HoloLens nel tenant di Intune.  Quando arrivano i dispositivi, sono pronti a eseguire la distribuzione automatica come dispositivi condivisi sotto il tenant. Per sfruttare la distribuzione automatica, i dispositivi dovranno connettersi a una rete durante la prima schermata della configurazione usando un dongle USB-C o Ethernet o un dongle USB-C per LTE. 
+Windows Autopilot per HoloLens 2 consente al canale di vendita del dispositivo di pre-registrare HoloLens nel tenant di Intune. Quando arrivano i dispositivi, sono pronti a eseguire la distribuzione automatica come dispositivi condivisi sotto il tenant. Per sfruttare la distribuzione automatica, il dispositivo deve connettersi a una rete durante la prima schermata del programma di installazione usando un dongle USB-C-to-Ethernet o USB-C-to-LTE.
 
-Quando viene avviato il processo di distribuzione automatica di Autopilot, vengono seguiti i passaggi seguenti: 
+Dopo che un utente ha avviato il processo di distribuzione automatica del pilota automatico, il processo completa i passaggi seguenti:
 
-1. Aggiungere il dispositivo ad Azure Active Directory (Azure AD) 
-1. Utilizzare Azure AD per registrare il dispositivo in Microsoft Intune (o in un altro servizio MDM). 
-1. Eseguire il download dei criteri, dei certificati e dei profili di rete di destinazione del dispositivo. 
-1. Eseguire il provisioning del dispositivo. 
-1. Presentare la schermata di accesso all'utente. 
+1. Aggiungere il dispositivo ad Azure Active Directory (Azure AD)
+1. Utilizzare Azure AD per registrare il dispositivo in Microsoft Intune (o in un altro servizio MDM).
+1. Eseguire il download dei criteri, dei certificati e dei profili di rete di destinazione del dispositivo.
+1. Eseguire il provisioning del dispositivo.
+1. Presentare la schermata di accesso all'utente.
 
 Altre informazioni sulla [Guida alla valutazione di Windows Autopilot per HoloLens 2](https://docs.microsoft.com/hololens/hololens2-autopilot).
 
-**Contatta il tuo account Manager per partecipare all'anteprima del pilota automatico ora. I dispositivi pronti per il pilota automatico inizieranno presto la spedizione.**
+*Contatta il tuo account Manager per partecipare all'anteprima del pilota automatico ora. I dispositivi pronti per il pilota automatico inizieranno presto la spedizione.*
 
-### Supporto della chiave di sicurezza FIDO2 
+### Supporto della chiave di sicurezza FIDO2
 
-Molti di voi condividono un dispositivo HoloLens con molte persone in un ambiente lavorativo o scolastico. Se i dispositivi vengono condivisi tra studenti in un'aula o estratti da un armadietto dei dispositivi, è importante essere in grado di cambiare gli utenti in modo rapido e semplice senza digitare nomi e password lunghi. 
+Alcuni utenti condividono un dispositivo HoloLens con altre persone in un ambiente lavorativo o scolastico. Quindi è importante che gli utenti possano facilmente senza digitare nomi utente e password lunghi. Fast Identity online (FIDO) consente a tutti gli utenti dell'organizzazione (Azure AD tenant) di accedere facilmente a HoloLens senza immettere un nome utente o una password.
 
-FIDO consente a tutti gli utenti dell'organizzazione (tenant) di accedere a HoloLens senza immettere un nome utente o una password. 
+Le chiavi di sicurezza di FIDO2 sono un metodo di autenticazione senza password basato su standard "unphishable" che può rientrare in qualsiasi fattore di forma. FIDO è uno standard aperto per l'autenticazione con password. Consente agli utenti e alle organizzazioni di accedere alle proprie risorse senza un nome utente o una password. Usano invece una chiave di sicurezza esterna o una chiave della piattaforma incorporata in un dispositivo.
 
-Le chiavi di sicurezza di FIDO2 sono un metodo di autenticazione senza password basato su standard unphishable che può rientrare in qualsiasi fattore di forma. Fast Identity online (FIDO) è uno standard aperto per l'autenticazione con password. FIDO consente agli utenti e alle organizzazioni di sfruttare lo standard per accedere alle proprie risorse senza un nome utente o una password usando una chiave di sicurezza esterna o una chiave della piattaforma incorporata in un dispositivo. 
+Per iniziare, vedere [abilitare l'accesso tramite chiave di sicurezza senza password](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-passwordless-security-key).
 
-Leggere i [documenti di sicurezza con password](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-passwordless-security-key) per iniziare. 
+### Registrazione MDM migliorata tramite il pacchetto di provisioning
 
-### Registrazione MDM migliorata tramite il pacchetto di provisioning 
+I pacchetti di provisioning consentono di impostare la configurazione di HoloLens tramite un file di configurazione anziché tramite l'esperienza di HoloLens out-of-box. In precedenza, i pacchetti di provisioning dovevano essere copiati nella memoria interna di HoloLens. Ora possono essere su un'unità USB in modo che siano più facili da riutilizzare su più dispositivi HoloLens ed è possibile eseguire il provisioning di dispositivi in parallelo. I pacchetti di provisioning ora supportano anche un campo per la registrazione in gestione dispositivi, quindi non è disponibile alcuna configurazione manuale dopo il provisioning.
 
-I pacchetti di provisioning consentono di impostare la configurazione di HoloLens tramite un file di configurazione invece di passare all'esperienza di HoloLens fuori scatola. In precedenza, i pacchetti di provisioning dovevano essere copiati nella memoria interna di HoloLens, ora possono essere su un'unità USB in modo che siano più facili da riutilizzare in più HoloLens e quindi più persone possono eseguire il provisioning di HoloLens in parallelo.  Inoltre, i pacchetti di provisioning supportano un nuovo campo per la registrazione in gestione dispositivi, quindi non è disponibile la configurazione manuale del post-provisioning. 
+Per provare:
 
-1. Per provarlo, Scarica la versione più recente di Windows Configuration designer da Windows Store nel PC. 
-1. Selezionare **provision HoloLens devices** > selezionare **provision HoloLens 2 Devices** 
-1. Creare il profilo di configurazione e, al termine, copiare tutti i file creati in un dispositivo di archiviazione USB-C. 
-1. Collegarlo a qualsiasi HoloLens appena balenato e premere **volume giù + Power** per applicare il pacchetto di provisioning. 
+1. Scaricare la versione più recente di Windows Configuration designer da Windows Store nel PC.
+1. Selezionare **provision HoloLens Devices**  >  **provision HoloLens 2 Devices**.
+2. Creare il profilo di configurazione. Copiare quindi tutti i file creati in un dispositivo di archiviazione USB-C.
+3. Inserire il dispositivo USB-C in qualsiasi HoloLens appena balenato. Quindi premere i **volume down**  +  pulsanti di**accensione** del volume per applicare il pacchetto di provisioning.
 
-### Stato di installazione dell'applicazione line-of-business 
+### Stato di installazione dell'applicazione line-of-business
 
-La distribuzione e la gestione delle app MDM per le app line of business (LOB) sono fondamentali per i clienti. Gli amministratori e gli utenti devono essere in grado di visualizzare lo stato di installazione dell'app per scopi di controllo e diagnosi. In questa versione verranno aggiunti altri dettagli in **impostazioni > account > l'accesso al lavoro o all'Istituto di istruzione > fare clic sul proprio account > info.**
+La distribuzione e la gestione delle app MDM per le app line of business sono fondamentali per HoloLens. Gli amministratori e gli utenti devono visualizzare lo stato di installazione dell'app per il controllo e la diagnosi. In questa versione sono stati aggiunti altri **dettagli negli**  >  **account**di  >  **accesso o nell'Istituto di istruzione**,  >  **fare clic sulle informazioni dell'account**  >  **Info**.
 
-### CSP e criteri aggiuntivi 
+### CSP e criteri aggiuntivi
 
-Un [provider di servizi di configurazione (CSP)](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference?redirectedfrom=MSDN) è un'interfaccia per leggere, impostare, modificare o eliminare le impostazioni di configurazione in un dispositivo. In questa versione aggiungiamo il supporto per altri criteri, aumentando gli amministratori dei controlli sui dispositivi HoloLens distribuiti. Per l'elenco dei CSP supportati da HoloLens, visitare questo [collegamento](https://docs.microsoft.com/windows/client-management/mdm/networkqospolicy-csp). Novità di questa versione:
+Un [provider di servizi di configurazione (CSP)](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference?redirectedfrom=MSDN) è un'interfaccia per leggere, impostare, modificare o eliminare le impostazioni di configurazione in un dispositivo. In questa versione aggiungiamo il supporto per altri criteri per aumentare gli amministratori dei controlli con i dispositivi HoloLens distribuiti. Per l'elenco dei CSP supportati da HoloLens, vedere [CSP di NetworkQoSPolicy](https://docs.microsoft.com/windows/client-management/mdm/networkqospolicy-csp).
+
+Novità di questa versione:
 
 **CSP Policy** 
 
-Il provider di servizi di configurazione dei criteri consente all'organizzazione di configurare i criteri nei dispositivi Windows. In questa versione verranno aggiunti nuovi criteri per HoloLens, elencati di seguito. [Qui](https://docs.microsoft.com/windows/client-management/mdm/policies-supported-by-hololens2)è possibile ottenere ulteriori informazioni sui criteri supportati.  
+Il provider di servizi di configurazione dei criteri consente all'organizzazione di configurare i criteri nei dispositivi Windows. In questa versione sono stati aggiunti nuovi criteri per HoloLens, elencati qui. Per altre informazioni, vedere [CSP dei criteri supportato da HoloLens 2](https://docs.microsoft.com/windows/client-management/mdm/policies-supported-by-hololens2).  
 
 - LetAppsAccessCamera_ForceAllowTheseApps  
 - LetAppsAccessCamera_ForceDenyTheseApps  
@@ -166,25 +169,29 @@ Il provider di servizi di configurazione dei criteri consente all'organizzazione
 - LetAppsAccessMicrophone_UserInControlOfTheseApps 
 - AllowWiFi 
 
-**NETWORKQOSPOLICY CSP** Il provider di servizi di configurazione NetworkQoSPolicy Crea criteri QoS (Network Quality of Service). Un criterio QoS esegue un set di azioni sul traffico di rete basato su un set di condizioni corrispondenti. Per ulteriori [informazioni, vedere](https://docs.microsoft.com/windows/client-management/mdm/networkqospolicy-csp)questo criterio. 
+**CSP NetworkQoSPolicy**
+
+Il provider di servizi di configurazione NetworkQoSPolicy Crea criteri QoS (Quality of Service) di rete. Un criterio QoS esegue un set di azioni sul traffico di rete basato su un set di condizioni corrispondenti. Per altre informazioni, Vedi [CSP di NetworkQoSPolicy](https://docs.microsoft.com/windows/client-management/mdm/networkqospolicy-csp).
 
 ### Supporto Ethernet USB espanso per dispositivi cablati 5G/LTE
 
-È stato aggiunto il supporto per consentire a determinati dispositivi mobili a banda larga, come i telefoni 5G/LTE e i minestroni WiFi quando sono collegati al HoloLens 2 tramite USB. Questi dispositivi verranno visualizzati nelle impostazioni di rete come un'altra connessione Ethernet. I dispositivi mobili a banda larga che richiedono un driver esterno non sono supportati. Ciò consente connessioni ad alta larghezza di banda in scenari in cui il WiFi non è disponibile e il Tethering WiFi non è abbastanza performanti. Per altre informazioni sui dispositivi USB supportati, vedere [qui](https://docs.microsoft.com/hololens/hololens-connect-devices).  
+È stato aggiunto il supporto per consentire ad alcuni dispositivi mobili a banda larga, come i telefoni 5G/LTE e Wi-Fi minestroni, quando sono collegati al HoloLens 2 tramite USB. Questi dispositivi sono ora visualizzati in **impostazioni di rete** come un'altra connessione Ethernet. I dispositivi mobili a banda larga che richiedono un driver esterno non sono supportati. Questa funzionalità consente connessioni a larghezza di banda elevata quando la connessione Wi-Fi non è disponibile e il tethering Wi-Fi non è sufficiente. Per altre informazioni sui dispositivi USB supportati, vedere [connettersi a dispositivi Bluetooth e USB-C](https://docs.microsoft.com/hololens/hololens-connect-devices).  
 
 ### Miglioramenti per il rilevamento delle mani
 
-Il rilevamento delle mani ha ricevuto diversi miglioramenti in questa versione. 
+Questa versione include diversi miglioramenti per il rilevamento delle mani:
 
-- **Puntamento della stabilità della posa:** Il sistema ora resisterà a piegare il dito indice quando viene nascosto dal palmo.  Questo migliora la precisione quando si spingono i pulsanti, digitando, scorrendo il contenuto e altro ancora! 
-- **Riduzione di rubinetti accidentali:** È stato migliorato il rilevamento del gesto AirTap.  Ora ci sono meno attivazioni accidentali in diversi casi comuni, ad esempio per far cadere le mani al fianco. 
-- **Cambiare l'affidabilità dell'utente:** Il sistema è ora più veloce e affidabile per aggiornare le dimensioni delle mani quando si condivide un dispositivo in avanti e indietro. 
-- **Sottrazione a mano ridotta:** È stata migliorata la gestione dei casi in cui sono presenti più di due mani in vista dei sensori.  Se più persone stanno lavorando insieme, ora c'è una probabilità molto inferiore che la mano rilevata salterà dall'utente alla mano di qualcun altro nella scena. 
-- **Affidabilità del sistema:** È stato risolto un problema che causava il rilevamento manuale per evitare di funzionare per un periodo se il dispositivo è a carico elevato. 
+- **Puntamento della stabilità della posa:** Il sistema ora resiste a piegare il dito indice quando viene nascosto dal palmo. Questa modifica migliora la precisione quando si preme un pulsante, si digita, si scorre il contenuto e altro ancora. 
+- **Rubinetti ad aria accidentali ridotti:** È stata migliorata la rilevazione del gesto di tocco dell'aria. Ci sono ora meno attivazioni accidentali in diversi scenari comuni, ad esempio quando si rilasciano le mani verso i lati.
+- **Cambiare l'affidabilità dell'utente:** Il sistema è ora più veloce e affidabile per l'aggiornamento delle dimensioni delle mani quando si condivide un dispositivo.
+- **Sottrazione a mano ridotta:** È stata migliorata la gestione dei casi in cui sono presenti più di due mani in vista dei sensori. Se più persone stanno lavorando insieme, c'è una probabilità molto inferiore che la mano rilevata "salterà" dall'utente alla mano di qualcun altro nella scena.
+- **Affidabilità del sistema:** È stato risolto un problema che causava il rilevamento delle mani per evitare di funzionare quando il dispositivo è a carico elevato.
 
 ### Modalità scuro
 
-Molte app di Windows ora supportano sia la modalità Dark che la luce e HoloLens 2 i clienti possono scegliere la modalità predefinita per le app che supportano entrambe. Una volta aggiornata, la modalità app predefinita sarà "scura", ma può essere modificata facilmente. Passare a impostazioni > sistema > colori per trovare "Scegli la modalità app predefinita". Ecco alcune delle app in-box che supportano la modalità Dark: 
+Molte app di Windows ora supportano sia le modalità buio che la luce. HoloLens 2 gli utenti possono scegliere la modalità predefinita per le app che supportano entrambe. Dopo l'aggiornamento, la modalità app predefinita è "scura", ma è possibile modificare facilmente questa impostazione: passare a **Impostazioni**di  >  **sistema**  >  **colori**  >  **scegliere la modalità app predefinita**. 
+
+Queste app "in-box" supportano la modalità oscura: 
 
 - Impostazioni 
 - Microsoft Store 
@@ -201,48 +208,47 @@ Molte app di Windows ora supportano sia la modalità Dark che la luce e HoloLens
 
 ### Comandi vocali di sistema
 
-È ora possibile accedere e usare rapidamente i comandi con la voce durante l'uso di qualsiasi app nel dispositivo. Se si sta usando un sistema con una lingua diversa, provare i comandi appropriati in quella lingua. Per altri dettagli sui comandi e su come usarli, vedi la nostra documentazione [qui](https://docs.microsoft.com/hololens/hololens-cortana).  
+Ora puoi usare i comandi vocali con qualsiasi app nel dispositivo. Per altre informazioni, vedere [usare la voce per gestire HoloLens](https://docs.microsoft.com/hololens/hololens-cortana). Vedere anche [lingue supportate per HoloLens 2](https://docs.microsoft.com/hololens/hololens2-language-support).  
 
-### Aggiornamenti di Cortana 
+### Aggiornamenti di Cortana
 
-L'app aggiornata si integra con Microsoft 365, attualmente disponibile solo in inglese (Stati Uniti), per aiutarti a migliorare l'uso nei tuoi dispositivi. In HoloLens 2, Cortana non supporterà più alcuni comandi specifici per il dispositivo, come la regolazione del volume o il riavvio del dispositivo, che ora sono supportati con i nuovi comandi vocali di sistema menzionati in precedenza. Leggi altre informazioni sulla nuova app Cortana e sulla sua direzione nel nostro [Blog.](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/) 
+L'app aggiornata si integra con Microsoft 365 per aiutarti a migliorare l'uso dei tuoi dispositivi (attualmente solo in inglese USA). In HoloLens 2 Cortana non supporta più alcuni comandi specifici del dispositivo, ad esempio la regolazione del volume o il riavvio. Queste opzioni sono ora supportate dai nuovi comandi vocali di sistema. Leggi altre informazioni sulla nuova app Cortana nel [Blog](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/).
 
-### Miglioramenti e correzioni di qualità 
+### Miglioramenti e correzioni di qualità
 
 Miglioramenti e correzioni anche nell'aggiornamento:  
-- L'aggiornamento introduce un sistema di calibrazione dello schermo attivo. In questo modo si migliora la stabilità e l'allineamento degli ologrammi, che li aiutano a rimanere in posizione quando si sposta la testa a lato. 
-- È stato risolto un bug in cui lo streaming Wi-Fi in HoloLens viene interrotto periodicamente. Se un'applicazione indica che è necessario lo streaming a bassa latenza, questa correzione può essere eseguita chiamando [questa funzione](https://docs.microsoft.com/windows/win32/api/socketapi/nf-socketapi-setsocketmediastreamingmode). 
-- È stato risolto un problema in cui il dispositivo poteva bloccarsi durante lo streaming in modalità ricerca. 
-- Corretto un bug in cui in alcuni casi l'utente corretto non viene visualizzato nella schermata di accesso durante la ripresa della sessione. 
-- È stato risolto un problema per cui gli utenti non potevano esportare i log MDM tramite le impostazioni. 
-- È stato risolto un problema per cui l'accuratezza del rilevamento degli occhi subito dopo la configurazione fuori scatola potrebbe essere inferiore alla specifica. 
-- È stato risolto un problema per cui il sottosistema di rilevamento degli occhi non avrebbe inizializzato e/o eseguito la calibrazione in determinate condizioni. 
-- È stato risolto un problema per cui la calibrazione degli occhi veniva richiesta per un utente già calibrato. 
-- È stato risolto un problema per cui il driver si arrestava durante la calibrazione degli occhi. 
-- È stato risolto un problema per cui le pressioni ripetute del pulsante di alimentazione possono causare un arresto anomalo del sistema e un secondo 60. 
-- Stabilità migliorata per i buffer di profondità. 
-- Aggiunto il pulsante "Condividi" nell'hub di feedback, in modo che gli utenti possano condividere più facilmente il feedback. 
-- È stato risolto un bug in cui RoboRaid non è stato installato correttamente. 
+- È stato introdotto un sistema di calibrazione display attivo. Questa caratteristica migliora la stabilità e l'allineamento degli ologrammi. Ora restano in posizione quando si sposta la testa da un lato all'altro.
+- È stato risolto un bug in cui lo streaming Wi-Fi in HoloLens è stato interrotto periodicamente. Se un'applicazione indica che è necessario un flusso a bassa latenza, implementare la correzione chiamando la [funzione SetSocketMediaStreamingMode](https://docs.microsoft.com/windows/win32/api/socketapi/nf-socketapi-setsocketmediastreamingmode).
+- È stato risolto un blocco del dispositivo che si è verificato durante lo streaming in modalità ricerca.
+- È stato risolto un bug in cui in alcuni casi l'utente corretto non veniva visualizzato nella schermata di accesso quando si riprende una sessione.
+- È stato risolto un problema per cui gli utenti non potevano esportare i log MDM tramite **le impostazioni**.
+- È stato risolto un problema per cui l'accuratezza del rilevamento degli occhi subito dopo la configurazione fuori casella potrebbe essere inferiore al previsto.
+- È stato risolto un problema per cui il sottosistema di rilevamento degli occhi non è riuscito ad inizializzare o eseguire la calibrazione in determinate condizioni.
+- È stato risolto un problema per cui la calibrazione degli occhi veniva richiesta per un utente già calibrato.
+- È stato risolto un problema per cui il driver si arrestava durante la calibrazione degli occhi.
+- È stato risolto un problema per cui le pressioni ripetute del pulsante di alimentazione potrebbero causare un arresto anomalo del sistema di 60 secondi e Shell.
+- Stabilità migliorata per i buffer di profondità.
+- È stato aggiunto un pulsante **Condividi** nell'hub di feedback in modo che gli utenti possano condividere più facilmente il feedback.
+- È stato risolto un bug in cui RoboRaid WAN è stato installato correttamente.
 
 ### Problemi noti
 
-- Stiamo esaminando un problema relativo all'uso del linguaggio di sistema zh-CN che impedisce ai comandi vocali di acquisire un'acquisizione di realtà mista o di visualizzare l'indirizzo IP del dispositivo.
-- Stiamo esaminando un problema che richiede di avviare l'app Cortana dopo l'avvio del dispositivo per usare l'attivazione vocale "Hey Cortana" e, se è stato aggiornato da una build di 18362, potrebbe essere visualizzato un secondo riquadro dell'app per la versione precedente dell'app Cortana in Start che non funziona più. 
+- Un problema con il linguaggio di sistema zh-CN impedisce ai comandi vocali di acquisire un'acquisizione di realtà mista o di visualizzare l'indirizzo IP del dispositivo.
+- Un problema richiede l'avvio dell'app Cortana dopo l'avvio del dispositivo per l'uso dell'attivazione vocale "Hey Cortana". Se l'aggiornamento è stato aggiornato da una build di 18362, è possibile che venga visualizzato anche un secondo riquadro dell'app per la versione precedente dell'app Cortana che non funziona più in **Start**.
 
 ## Windows olografico, versione 1903-maggio 2020 Update 
 - Build 18362,1061
 
-Questo aggiornamento di qualità mensile non contiene alcuna modifica della nota perché il team è stato focalizzato sulla fornitura dell'aggiornamento delle funzionalità di qualità più elevata ora disponibile in Windows olografico, la versione 2004 può essere aggiornata in dettaglio. Approfitta di questa opportunità per passare all'aggiornamento delle funzionalità più recente per ottenere una tonnellata di nuove interessanti modifiche.
+Questo aggiornamento di qualità mensile non contiene modifiche importanti perché il team stava lavorando alla versione olografica di Windows 2004 può essere aggiornato, come descritto in precedenza.
 
 ## Windows olografico, versione 1903-aprile 2020 Update
 - Build 18362,1059
 
 **Modalità oscura per le app supportate** 
 
-Molte app di Windows supportano sia la modalità Dark che la luce e presto HoloLens 2 i clienti possono scegliere la modalità predefinita per le app che supportano entrambe le combinazioni di colori. In base al feedback dei clienti in modo estremamente positivo, con questo aggiornamento impostiamo la modalità app predefinita su "scuro", ma è possibile modificare facilmente questa impostazione in qualsiasi momento.
-Passare a **impostazioni > sistema > colori** per trovare **"Scegli la modalità app predefinita".**
+Molte app di Windows supportano sia la modalità oscura che quella Light. HoloLens 2 i clienti possono ora scegliere la modalità predefinita per le app che supportano entrambe le combinazioni di colori. In base al feedback dei clienti, la modalità app predefinita viene impostata su "scuro", ma è possibile modificare facilmente questa impostazione in qualsiasi momento: passare a **impostazioni > sistema > colori** per trovare **"Scegli la modalità app predefinita".**
 
-Ecco alcune delle app in-box che supportano la modalità Dark:
+Queste app "in-box" supportano la modalità oscura:
 - Impostazioni
 - Microsoft Store
 - Mail
@@ -255,55 +261,53 @@ Ecco alcune delle app in-box che supportano la modalità Dark:
 - Film e TV
 
 **Miglioramenti e correzioni anche nell'aggiornamento:** 
-- Verificare che le sovrapposizioni di shell siano incluse in acquisizioni di realtà miste.
-- Gli sviluppatori irreali ora possono usare la pagina visualizzazione 3D in Device Portal per testare ed eseguire il debug delle proprie applicazioni.
-- Migliorare la stabilità degli ologrammi nell'acquisizione di realtà mista quando viene usato l'algoritmo DepthReprojection HolographicDepthReprojectionMethod.
-- Risolto l'errore di classe API IStreamSocketListener WinRT non registrata nell'app ARM a 32 bit.
+- Assicurati che le sovrapposizioni di shell siano incluse in acquisizioni di realtà miste.
+- Gli sviluppatori irreali ora possono usare la pagina della visualizzazione 3D in Device Portal per testare e eseguire il debug delle proprie applicazioni.
+- Migliorata la stabilità degli ologrammi nell'acquisizione di realtà mista quando viene usato l'algoritmo *DepthReprojection HolographicDepthReprojectionMethod* .
+- È stato risolto l'errore "WinRT IStreamSocketListener API non registrata" nelle app ARM a 32 bit.
 
 ## Windows olografico, versione 1903-marzo 2020 Update 
 - Build 18362,1056
 
 Miglioramenti e correzioni nell'aggiornamento:
 
-- Migliorare la stabilità degli ologrammi nell'acquisizione di realtà mista quando viene usato l'algoritmo autoplanare HolographicDepthReprojectionMethod.
-- Assicura che il sistema di coordinate allegato a un campione di profondità MF sia coerente con la documentazione pubblica.
-- Miglioramento della produttività degli sviluppatori consentendo ai clienti di incollare grandi quantità di testo tramite Device Portal.
+- Migliorata la stabilità degli ologrammi nell'acquisizione di realtà mista quando viene usato l'algoritmo *Autoplanare HolographicDepthReprojectionMethod* .
+- Verificare che il sistema di coordinate allegato a un esempio di profondità MF sia coerente con la documentazione pubblica.
+- Migliorata la produttività degli sviluppatori, consentendo ai clienti di incollare grandi quantità di testo attraverso il portale dei dispositivi.
 
 ## Windows olografico, versione 1903-febbraio 2020 Update 
 - Build 18362,1053
 
 Miglioramenti e correzioni nell'aggiornamento:
 
-- Temporaneamente disabilitato l'API HolographicSpace. UserPresence per le applicazioni Unity per evitare un problema che causa la sospensione di alcune app quando la visiera è capovolta, anche se l'impostazione per l'esecuzione in background è abilitata.
-- È stato risolto un arresto anomalo di HUP a mano, in cui l'utente noterà un blocco dell'interfaccia utente e poi torna alla shell dopo alcuni secondi.
-- È stato migliorato il rilevamento delle mani in modo che, mentre frugando con il dito indice, la parte superiore del dito sia meno probabile che si arricciasse inaspettatamente.
+- Disabilita temporaneamente l'API HolographicSpace. UserPresence per le applicazioni Unity. Questa modifica evita un problema che ha causato la sospensione di alcune app quando la visiera è stata capovolta, anche se l'impostazione "Esegui in background" è stata abilitata.
+- È stato risolto un arresto anomalo di HUP causato dal rilevamento manuale, in cui l'utente ha notato un blocco dell'interfaccia utente e poi torna alla shell dopo alcuni secondi.
+- Migliorate il rilevamento delle mani in modo che quando si tocca il dito indice, la parte superiore del dito è meno probabile che si arriccia improvvisamente.
 - Maggiore affidabilità del rilevamento della testa, del mapping spaziale e di altri Runtime.
 
 ## Windows olografico, versione 1903-gennaio 2020 Update 
 - Build 18362,1043
+ 
+Miglioramenti e correzioni nell'aggiornamento:
 
-Miglioramento dell'aggiornamento:
-
-- Miglioramenti della stabilità per le app esclusive quando si lavora con l'emulatore di HoloLens 2.
+- Stabilità migliorata per le app esclusive quando si lavora con l'emulatore di HoloLens 2.
 
 ## Windows olografico, versione 1903-dicembre 2019 Update 
 - Build 18362,1042
 
 Miglioramenti e correzioni nell'aggiornamento:
 
-- Introduce le correzioni di LSR (ultima fase di riproduzione). Migliora il rendering visivo degli ologrammi per comparire più stabile e nitido con una contabilità più accurata per la profondità. Questa operazione sarà più evidente se le app non impostano correttamente la profondità degli ologrammi, dopo questo aggiornamento.
-- Risolve la stabilità delle app esclusive e lo spostamento tra app esclusive.
-- Risolve un problema in cui l'acquisizione di realtà mista non può registrare il video dopo che il dispositivo viene lasciato in stato di standby per più giorni.
-- Migliora la stabilità degli ologrammi.
+- È stata introdotta la riproduzione di ultima fase (LSR). È stato migliorato il rendering visivo degli ologrammi per apparire più stabile e nitido con una contabilità più accurata per la profondità. Questo sintomo sarà più evidente dopo questo aggiornamento se le app non impostano correttamente la profondità degli ologrammi.
+- Stabilità fissa delle app esclusive e spostamento tra app esclusive.
+- Risolto un problema per cui l'acquisizione di realtà mista non poteva registrare il video dopo che il dispositivo era in stato di standby per diversi giorni.
+- Migliorata la stabilità degli ologrammi.
 
 ## Windows olografico, versione 1903-novembre 2019 Update 
 - Build 18362,1039
 
 Miglioramenti e correzioni nell'aggiornamento:
 
-- Correzioni per i comandi vocali **"Seleziona"** durante la configurazione iniziale per en-CA e en-au.
-- Miglioramenti della qualità visiva degli oggetti posizionati in modo distante nelle versioni più recenti Unity e MRTK.
-- Risolve i problemi relativi alle applicazioni olografiche bloccate in uno stato in pausa all'avvio finché il pannello pin non viene più allontanato.
+- Funzionalità fisse di **selezionare** i comandi vocali durante la configurazione iniziale per en-CA e en-au.
+- Migliorata la qualità visiva degli oggetti collocati in modo distante nelle versioni più recenti Unity e Mixed Reality Toolkit (MRTK).
+- Problemi di indirizzamento corretti con le applicazioni olografiche che si bloccano in uno stato in pausa all'avvio fino all'apertura del menu Start e quindi chiuse.
 - Correzioni e miglioramenti alla conformità di runtime di OpenXR per HoloLens 2 e l'emulatore.
-
-

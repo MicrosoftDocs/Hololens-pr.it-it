@@ -13,12 +13,12 @@ manager: jarrettr
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
-ms.openlocfilehash: e00226852f92cf5b3137d8d41cfde0f01394f5bc
-ms.sourcegitcommit: 7c16570839893f4a4432286b13ae6d84c665d376
+ms.openlocfilehash: 469848cf306675fcfb99247b5c91b159c204a5fe
+ms.sourcegitcommit: 2122490074adb7f63edfc3576441980caa22695f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "10902291"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "10915946"
 ---
 # Risoluzione dei problemi
 
@@ -28,7 +28,7 @@ Questo articolo descrive come risolvere diversi problemi di HoloLens comuni.
 
 Se il HoloLens non si avvia:
 
-- Se i LED accanto al pulsante di alimentazione non si accendono o un solo LED lampeggia brevemente, potrebbe essere necessario [caricare il HoloLens.](hololens-recovery.md#charging-the-device)
+- Se i LED accanto al pulsante di alimentazione non si accendono o un solo LED lampeggia brevemente, potrebbe essere necessario [caricare il HoloLens.](hololens-recovery.md#charge-the-device)
 - Se i LED si accendono quando si preme il pulsante di alimentazione, ma non si riesce a vedere nulla sugli schermi, [preformare un ripristino rigido del dispositivo](hololens-recovery.md#hard-reset-procedure).
 
 Se il HoloLens diventa bloccato o non risponde:

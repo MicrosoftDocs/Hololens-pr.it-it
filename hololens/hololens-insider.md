@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 11915bd6b2293be4491af2a7231b258b12d7b314
-ms.sourcegitcommit: 7c16570839893f4a4432286b13ae6d84c665d376
+ms.openlocfilehash: 5394e56882c0847333186cbbe25670231293ba4f
+ms.sourcegitcommit: 8b56f4b9b5f9c928fc361f18efcbea729055a0b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "10902314"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "10919147"
 ---
 # Insider Preview per Microsoft HoloLens
 
@@ -104,7 +104,7 @@ I nuovi criteri di realtà mista sono stati creati per i dispositivi HoloLens 2 
 
 Questo criterio Controlla il numero di giorni in cui è consentita la cache dell'appartenenza a un gruppo AAD per le configurazioni di accesso assegnate destinate ai gruppi AAD per l'utente connesso. Quando il valore di questo criterio è impostato su un valore maggiore di 0 solo la cache viene usata in caso contrario.  
 
-AADGroupMembershipCacheValidityInDays 
+Nome: valore URI AADGroupMembershipCacheValidityInDays:./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
 
 Min-0 giorni  
 Max-60 giorni 
@@ -112,6 +112,8 @@ Max-60 giorni
 Procedura per usare correttamente questo criterio: 
 1. Creare un profilo di configurazione del dispositivo per il chiosco che designa i gruppi AAD e assegnarlo ai dispositivi HoloLens. 
 1. Crea una configurazione di dispositivo basata su URI OMA personalizzata che imposta il valore di questo criterio sul numero desiderato di giorni (> 0) e assegnalo ai dispositivi HoloLens. 
+    1. Il valore URI deve essere immesso nella casella di testo OMA-URI come./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
+    1. Il valore può essere compreso tra min/max consentita.
 1. Registrare i dispositivi HoloLens e verificare che entrambe le configurazioni vengano applicate al dispositivo. 
 1. Consentire all'utente di accedere a AAD 1 quando è disponibile Internet, una volta che l'utente ha eseguito l'accesso e l'appartenenza al gruppo AAD è stata confermata, verrà creata la cache. 
 1. Ora l'utente AAD 1 può prendere offline HoloLens e usarlo per la modalità Kiosk, purché il valore dei criteri consenta un numero X di giorni. 

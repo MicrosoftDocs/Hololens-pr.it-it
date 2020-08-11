@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: d14c397c4783acd88dcd922a92b0ffe6437a6473
-ms.sourcegitcommit: c2040b967f2f884a22f4b93a173224163e37da1f
+ms.openlocfilehash: b3071c2c66bf1e9c07ba2481b3e22a0d5125bc6d
+ms.sourcegitcommit: 8b56f4b9b5f9c928fc361f18efcbea729055a0b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "10918597"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "10919137"
 ---
 # Raccogliere e usare le informazioni di diagnostica dai dispositivi HoloLens
 

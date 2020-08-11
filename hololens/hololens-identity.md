@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: d21f6be272d0b731b881b69576ae0631aec604ea
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 9829b90445be7f73cfdc0e330d9d57af1ef0a44b
+ms.sourcegitcommit: 8b56f4b9b5f9c928fc361f18efcbea729055a0b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10829365"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "10919119"
 ---
 # Gestire l'identità utente e l'accesso per HoloLens
 

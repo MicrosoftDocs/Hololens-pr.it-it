@@ -14,12 +14,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: a4a5478f396dff9eef84540286e0fa9672172076
-ms.sourcegitcommit: 9197b9d507d8b9b195bdf512d1b832888b53162d
+ms.openlocfilehash: 627631ee7070af6cb6c60e91890f05472ce0f6be
+ms.sourcegitcommit: 8b56f4b9b5f9c928fc361f18efcbea729055a0b2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "10899098"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "10919157"
 ---
 # <span data-ttu-id="230b2-105">Migliorare la qualità visiva e il comfort</span><span class="sxs-lookup"><span data-stu-id="230b2-105">Improve visual quality and comfort</span></span>
 

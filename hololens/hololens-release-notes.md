@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: fa2c4b5562c27e8d80b765c4acce0191de54a545
-ms.sourcegitcommit: 2122490074adb7f63edfc3576441980caa22695f
+ms.openlocfilehash: deddd753c22095532c1a4e3f8e896e2e881a1ad5
+ms.sourcegitcommit: 763896af822b247ee8ee981c2dec3b1abf61bf6f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "10915954"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "10924258"
 ---
 # Note sulla versione di HoloLens 2
 
@@ -28,6 +28,20 @@ Per assicurarti di avere un'esperienza produttiva con i tuoi dispositivi HoloLen
 
 >[!NOTE]
 > Per leggere le note sulla versione dell'emulatore HoloLens, [visita l'archivio](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
+
+## Windows olografico, versione 2004-agosto 2020 Update
+- Build 19041,1113
+
+Miglioramenti e correzioni nell'aggiornamento:
+
+- L'app impostazioni non seguirà più l'utente nella registrazione dell'iride o nelle esperienze di calibrazione degli occhi.
+- È stato risolto un bug in cui l'applicazione di un pacchetto di provisioning durante la configurazione di un file che rinomina il dispositivo ed esegue altre azioni, ad esempio la connessione a una rete, non eseguirà le altre azioni dopo il riavvio del dispositivo a causa di ridenominazione.
+- Combinazione di colori modificata dei flussi di configurazione del dispositivo iniziali per migliorare la qualità visiva.
+
+## Windows olografico, versione 1903-agosto 2020 Update
+- Build 18362,1074
+
+Questo aggiornamento mensile di qualità non contiene modifiche importanti, ti invitiamo a provare le nostre build più recenti per Windows olografico, versione 2004.
 
 ## Windows olografico, versione 2004-luglio 2020 Update
 - Build 19041,1109

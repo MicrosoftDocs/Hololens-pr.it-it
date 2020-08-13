@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 3a9f44c6210dd6a60b0ee60cf42ab068bac7ebc8
-ms.sourcegitcommit: 763896af822b247ee8ee981c2dec3b1abf61bf6f
+ms.openlocfilehash: 0ca085cfcf96a07b5c022b308a513c895795e945
+ms.sourcegitcommit: 81ea187bfd244fb8f489cd8b37c0cc7f6a8bc1cb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "10924248"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926601"
 ---
 # Insider Preview per Microsoft HoloLens
 
@@ -179,6 +179,13 @@ In precedenza, quando si verificano errori nell'applicazione della modalità Kio
 
 ## Iniziare a ricevere compilazioni Insider
 
+> [!NOTE]
+> Se non è stato aggiornato di recente, riavviare il dispositivo per aggiornare lo stato e ottenere la build più recente.
+> - Il comando vocale "dispositivo di riavvio" funziona bene. 
+> - È anche possibile scegliere il pulsante Riavvia in Impostazioni/programma Insider di Windows.
+>
+> Abbiamo avuto un bug sul back-end che potresti aver incontrato e questo ti riporterà in carreggiata.
+
 In un dispositivo HoloLens 2 passa a **Impostazioni**di  >  **aggiornamento &**  >  **programma sicurezza Windows Insider** e selezionare per **iniziare**. Collegare l'account usato per la registrazione come Windows Insider.
 
 Selezionare quindi **lo sviluppo attivo di Windows**, scegliere se si vuole ricevere le build del canale **dev** o del canale **beta** e rivedere le condizioni del programma.
@@ -191,7 +198,7 @@ Per eseguire il test con un FFU firmato per il volo, è necessario prima di tutt
 
     1. Scaricare FFU dal PC [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) .
     
-    1. Installare ARC (Advanced Recovery Companion) da Microsoft Store:[https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8)
+    1. Installare ARC (Advanced Recovery Companion) da Microsoft Store: [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8)
     
 1. In HoloLens-Flight Unlock: Open **Settings**  >  **Update & Security**  >  **Windows Insider Program** , quindi iscriviti, riavvia il dispositivo.
 

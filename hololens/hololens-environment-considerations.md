@@ -10,12 +10,12 @@ ms.prod: hololens
 ms.topic: article
 audience: ITPro
 ms.localizationpriority: high
-ms.openlocfilehash: 0fa147eb2b1194dacdcabff4995f5141a1b25bde
-ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
+ms.openlocfilehash: 2632c5bfd82feab4e21ee9c393f8c22efda28c42
+ms.sourcegitcommit: 458e07c0dcad66616fa98cfef125eb217713d89c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857854"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "10927840"
 ---
 # Considerazioni sull'ambiente per HoloLens
 
@@ -117,7 +117,10 @@ Per accedere all'app Calibrazione, vai a **Impostazioni** > **Sistema** > **Util
 
 Se qualcun altro sta usando il tuo dispositivo HoloLens, dovrebbe prima eseguire l'app Calibrazione in modo che il dispositivo sia configurato correttamente.
 
-## Vedi anche
+### Temperatura e informazioni normative
+[Normative HoloLens](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information): includono le informazioni sulla temperatura, lo smaltimento, le interferenze radiofoniche e televisive e altro ancora.
+
+## Vedere anche
 
 - [Progettazione della mappatura spaziale](https://docs.microsoft.com/windows/mixed-reality/spatial-mapping)
 - [Ologrammi](https://docs.microsoft.com/windows/mixed-reality/hologram)

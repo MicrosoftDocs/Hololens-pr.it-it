@@ -13,12 +13,12 @@ ms.reviewer: jarrettr
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 594f51897502847251adcbe8c32beb0c55d71098
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 17b55ef165cbb9df47f822f742141f4460cd9c6b
+ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10829414"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "10929842"
 ---
 # Domande frequenti su come indossare in modo confortevole HoloLens 2
 
@@ -50,12 +50,7 @@ Prova a regolare la posizione della visiera del dispositivo in modo che il fotog
 
 ## Il colore o la luminosità dell'immagine dell'ologramma non sono corretti
 
-Per HoloLens 2, eseguire le operazioni seguenti per garantire la massima qualità visiva degli ologrammi presentati sugli schermi:
-
-- **Aumenta la luminosità dello schermo.** Gli ologrammi sono migliori quando lo schermo ha un livello di luminosità più elevato.
-- **Avvicina la visiera ai tuoi occhi.** Sposta la visiera verso il basso fino alla posizione più vicina agli occhi.
-- **Sposta la visiera verso il basso.** Prova a spostare il cuscinetto della fronte verso il basso, in modo che la visiera si sposti più vicino al naso.
-- **Eseguire la calibrazione oculare.** Lo schermo usa la tua distanza interpupillaree lo sguardo fisso per ottimizzare le immagini sullo schermo. Se non esegui la calibrazione oculare, la qualità dell'immagine potrebbe essere peggiore.
+Vedere i [passaggi per la risoluzione dei problemi del display](hololens2-display.md) di HoloLens 2.
 
 ## Il dispositivo scorre in basso quando lo uso o devo stringere troppo la fascia per fissarla
 

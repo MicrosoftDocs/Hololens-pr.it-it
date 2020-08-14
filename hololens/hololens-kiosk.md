@@ -17,11 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 7409865f63199dead1779fa183128b30445053aa
-ms.sourcegitcommit: 2b1518675b9962518e08b13c12b43b6d9827fe17
+ms.openlocfilehash: f5c45477ab33064afe30e275f8b0003bc6022eac
+ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10858000"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "10929852"
 ---
 # Configurare il dispositivo HoloLens come chiosco
 
@@ -251,7 +252,7 @@ I passaggi successivi variano a seconda del tipo di chiosco desiderato. Per altr
 
 Per altre informazioni su come creare un profilo di configurazione Kiosk, vedere [impostazioni del dispositivo Windows 10 e Windows olografico per le aziende per l'esecuzione come chiosco dedicato con Intune](https://docs.microsoft.com/intune/configuration/kiosk-settings).
 
-### <a id="mdmconfigsingle"></a>MDM, passaggio 3 (Single-app) &ndash; configurare le impostazioni per un chiosco di app singole
+### <a id="mdmconfigsingle"></a>MDM, passaggio 3 (Single-app) &ndash;  configurare le impostazioni per un chiosco di app singole
 
 Questa sezione riepiloga le impostazioni richieste da un chiosco per app singole. Per altri dettagli, vedere gli articoli seguenti:
 
@@ -445,7 +446,7 @@ L'articolo "Configura HoloLens usando un pacchetto di provisioning" fornisce ist
 
 - È possibile [applicare inizialmente un pacchetto di provisioning a HoloLens durante l'installazione](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup).
 
-- È anche possibile [applicare un pacchetto di provisioning a HoloLens dopo l'installazione](hololens-provisioning.md#4-apply-a-provisioning-package-to-hololens-after-setup).
+- È anche possibile [applicare un pacchetto di provisioning a HoloLens dopo l'installazione](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-after-setup).
 
 ## Usare Windows Device Portal per configurare un chiosco di app singole
 

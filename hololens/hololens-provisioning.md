@@ -16,12 +16,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 2b34cc642aa08adf5bb875588c9e4458df0034e1
-ms.sourcegitcommit: f3cda6c6b3bfb7ba4be5f4da66d8ed5b03ca807d
+ms.openlocfilehash: 0a2edd0c516234a433a93c0cff806153726678fd
+ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10830160"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "10929862"
 ---
 # Configurare HoloLens usando un pacchetto di provisioning
 
@@ -152,7 +152,9 @@ Al termine, selezionare **Crea**. L'operazione richiede solo pochi secondi. Al t
 
 ## Applicare un pacchetto di provisioning a HoloLens durante l'installazione
 
-1. Usare il cavo USB per connettere il dispositivo a un PC, quindi avviare il dispositivo. Non continuare oltre la prima pagina del **momento interattivo** di Oobe.   
+HoloLens 2 dispositivi nella build [19041,1103](hololens-release-notes.md#windows-holographic-version-2004) o versione successiva, possono usare un'unità USB per applicare un pacchetto di provisioning. Basta copiare il file con estensione ppkg nella radice dell'unità USB. I pacchetti di provisioning verranno applicati solo se sono nella radice dell'unità USB. Il pacchetto di provisioning multiplo presente verrà applicato in sequenza.
+
+1. Usare il cavo USB per connettere il dispositivo a un PC (o un'unità USB per HoloLens 2 come accennato in precedenza), quindi avviare il dispositivo. Non continuare oltre la prima pagina del **momento interattivo** di Oobe.   
     - In HoloLens (1a generazione) Questa pagina contiene una casella blu. 
     - In HoloLens 2 Questa pagina contiene il colibrì.
 
@@ -162,7 +164,7 @@ Al termine, selezionare **Crea**. L'operazione richiede solo pochi secondi. Al t
 
 4. In Esplora File, trascinare e rilasciare il pacchetto di provisioning (.ppkg) nell'archiviazione del dispositivo.
 
-5. Premi brevemente e rilascia nuovamente i pulsanti di **abbassamento del volume** e **Alimentazione** simultaneamente mentre sei nella pagina **adatta**.
+5. Premere brevemente e rilasciare di nuovo contemporaneamente i pulsanti **volume giù** e **Power** mentre nella **prima pagina del momento interattivo** della configurazione guidata.
 
 6. Il dispositivo chiede se si ritiene attendibile il pacchetto e si desidera applicarlo. Confermare che consideri attendibile il pacchetto.
 
@@ -171,7 +173,7 @@ Al termine, selezionare **Crea**. L'operazione richiede solo pochi secondi. Al t
 > [!NOTE]
 > Se il dispositivo è stato acquistato prima di agosto 2016, è necessario accedere al dispositivo usando un account Microsoft, ottenere l'aggiornamento più recente del sistema operativo e quindi reimpostare il sistema operativo per applicare il pacchetto di provisioning.
 
-### 4. applicare un pacchetto di provisioning a HoloLens dopo l'installazione
+### Applicare un pacchetto di provisioning a HoloLens dopo l'installazione
 
 > [!NOTE]
 > Questa procedura si applica solo a Windows 10, versione 1809.

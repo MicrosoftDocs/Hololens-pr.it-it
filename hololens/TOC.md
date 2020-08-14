@@ -7,6 +7,7 @@
 ### [Preparare HoloLens 2 per l'uso](hololens2-setup.md)
 ### [Configurare HoloLens 2](hololens2-start.md)
 ### [Domande frequenti su come indossare comodamente HoloLens 2](hololens2-fit-comfort-faq.md)
+### [Display HoloLens 2](hololens2-display.md)
 ### [Domande frequenti sulle pulizia di HoloLens 2](hololens2-maintenance.md)
 ### [Lingue supportate per HoloLens 2](hololens2-language-support.md)
 ### [Utilizzo di HoloLens 2](hololens2-basic-usage.md)

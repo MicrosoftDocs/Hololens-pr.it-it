@@ -7,16 +7,16 @@ metadata:
   ms.prod: hololens
   ms.subservice: subservice
   ms.topic: landing-page
-  author: todmccoy
+  author: mccoybot
   ms.author: v-todmc
   ms.date: 5/22/2020
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: 9bf3f470a0d48631816f6ee28ac2e0d1f4046d83
-  ms.sourcegitcommit: 5d38af8d17dfcc028e7e0b2bb888c6c9d1e40524
+  ms.openlocfilehash: 10588713cc7670fb8e7f9601b504e327c3462aed
+  ms.sourcegitcommit: 5e9c558ff1c9c12eb17a7343a7571f710993e386
   ms.translationtype: HT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 07/28/2020
-  ms.locfileid: "10899189"
+  ms.lasthandoff: 08/17/2020
+  ms.locfileid: "10932119"
 landingContent:
 - title: Distribuire e gestire
   linkLists:

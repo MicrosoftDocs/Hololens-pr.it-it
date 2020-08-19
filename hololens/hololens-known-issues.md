@@ -15,12 +15,12 @@ ms.prod: hololens
 appliesto:
 - HoloLens (1st Gen)
 - HoloLens 2
-ms.openlocfilehash: db95edfbadb271b7fc47cf5798e80d9b2cad3c90
-ms.sourcegitcommit: 708da7b390fed1fd3aea1a2b2e50461851052683
+ms.openlocfilehash: 6947fe2232701fb9451291bd07e1c896979861d5
+ms.sourcegitcommit: 77eb85608066d9a4ed01b3862afe356f7e54d583
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10881329"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "10940196"
 ---
 # Problemi noti di HoloLens
 
@@ -28,7 +28,7 @@ Questo è l'elenco corrente dei problemi noti per i dispositivi HoloLens. Contro
 
 >[!NOTE]
 > - Se viene individuato un problema che non sta bloccando, è necessario segnalarlo nel dispositivo HoloLens tramite [Hub di feedback](hololens-feedback.md).
-> - Se il problema che si sta affrontando sta bloccando l'utente, in aggiunta a presentare un feedback, inviare [una richiesta di supporto](https://aka.ms/hlsupport).
+> - Se il problema che si sta affrontando sta bloccando l'utente, in aggiunta a presentare un feedback, inviare  [una richiesta di supporto](https://aka.ms/hlsupport).
 
 - [Problemi noti per tutte le generazioni HoloLens](#known-issues-for-all-hololens-generations)
 - [Problemi noti per i dispositivi HoloLens 2](#known-issues-for-hololens-2-devices)
@@ -57,6 +57,20 @@ Soluzioni alternative
 - Se non è possibile usare in modo sicuro un account Microsoft Consumer per caricare automaticamente le foto, è possibile caricare manualmente le foto nell'account dell'ufficio o dell'Istituto di istruzione dall'app OneDrive. Per farlo, assicurati di avere effettuato l'accesso all'account di lavoro o dell'Istituto di istruzione nell'app OneDrive. Selezionare il **+** pulsante e scegliere **carica**. Trovare le foto o i video da caricare passando alle **immagini > rullo della fotocamera**. Selezionare le foto o i video che si desidera caricare e quindi selezionare il pulsante **Apri** .
 
 ## Problemi noti per i dispositivi HoloLens 2
+
+### La tastiera non passa ai caratteri speciali
+
+Si è verificato un problema durante la configurazione guidata, in cui quando l'utente ha scelto un account dell'ufficio o dell'Istituto di istruzione e sta immettendo la password, provando a passare ai caratteri speciali sulla tastiera toccando il pulsante &123 non viene modificato in caratteri speciali. 
+
+Work-intorno:
+-   Chiudere la tastiera e riaprirla toccando il campo di testo.
+-   Immettere erroneamente la password. Quando la tastiera viene riavviata la prossima volta, il lavoro verrà eseguito come previsto.
+- Autenticazione Web, chiudere la tastiera e selezionare **Accedi da un altro dispositivo**. 
+-   Se si immettono solo numeri, un utente può tenere premuti alcuni tasti per aprire un menu espanso.
+-   Uso di una tastiera USB.
+
+Questo non ha effetto:
+- Utenti che scelgono di usare un account personale.
 
 ### Schermata blu visualizzata dopo la disattivazione della registrazione dalle compilazioni di anteprima insider su un dispositivo reflashed con una build Insider
 
@@ -98,7 +112,7 @@ Il nostro team sta attualmente lavorando a una correzione. Nel frattempo, è pos
 1. Assegnare un nome al progetto (ad esempio "HoloLensDeploymentFix") e verificare che il Framework sia impostato su almeno .NET Framework 4,5, quindi scegliere **OK**.
 1. Fare clic con il pulsante destro del mouse sul nodo **riferimenti** in Esplora soluzioni e aggiungere i riferimenti seguenti (selezionare la sezione **Sfoglia** e selezionare **Sfoglia**):
 
-    ```CMD
+    ```console
     C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86\Microsoft.Tools.Deploy.dll
     C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86\Microsoft.Tools.Connectivity.dll
     C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86\SirepInterop.dll
@@ -113,7 +127,7 @@ Il nostro team sta attualmente lavorando a una correzione. Nel frattempo, è pos
 1. Individuare e selezionare entrambi i file in Esplora soluzioni (dovrebbero essere nella parte inferiore dell'elenco dei file) e modificare la **copia nella directory di output** nella finestra **Proprietà** per **copiare sempre**.
 1. Nella parte superiore del file aggiungere il codice seguente all'elenco di `using` istruzioni esistente:
 
-    ```CMD
+    ```console
     using Microsoft.Tools.Deploy;
     using System.Net;
     ```

@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 9829b90445be7f73cfdc0e330d9d57af1ef0a44b
-ms.sourcegitcommit: 8b56f4b9b5f9c928fc361f18efcbea729055a0b2
+ms.openlocfilehash: 17d55d8cd5540c9beaf4b7348688c362b079f5da
+ms.sourcegitcommit: ab9e70e68d546cc6965e1569e5d914995fa508da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "10919119"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "10955448"
 ---
 # Gestire l'identità utente e l'accesso per HoloLens
 
@@ -60,12 +60,14 @@ Il collegamento degli account non separa i dati utente creati nel dispositivo, a
 
 ### Configurazione del supporto multi-utente (solo AAD)
 
-> [!NOTE]
-> **HoloLens (1a generazione)** ha iniziato a supportare più utenti AAD nell' [aggiornamento di windows 10 aprile 2018](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018) come parte di [Windows olografico for business](hololens-upgrade-enterprise.md).
-
 HoloLens supporta più utenti dello stesso tenant di AAD. Per usare questa caratteristica, devi usare un account che appartiene all'organizzazione per configurare il dispositivo. Successivamente, gli altri utenti dello stesso tenant possono accedere al dispositivo dalla schermata di accesso o toccando il riquadro dell'utente nel pannello Start. È possibile eseguire l'accesso a un solo utente alla volta. Quando un utente accede, HoloLens firma l'utente precedente.  
 
 Tutti gli utenti possono usare le app installate nel dispositivo. Tuttavia, ogni utente ha i propri dati e preferenze dell'app. La rimozione di un'app dal dispositivo lo rimuove per tutti gli utenti.  
+
+I dispositivi impostati con gli account AAD non consentiranno l'accesso al dispositivo con un account Microsoft. Tutti gli account successivi usati devono essere account AAD dello stesso tenant del dispositivo. È comunque possibile [accedere con un account Microsoft alle app](hololens-identity.md#setting-up-multi-user-support-aad-only) che la supportano, ad esempio Microsoft Store. Per passare dall'uso degli account AAD agli account Microsoft per l'accesso al dispositivo, è necessario [reflashare il dispositivo](hololens-recovery.md#clean-reflash-the-device).
+
+> [!NOTE]
+> **HoloLens (1a generazione)** ha iniziato a supportare più utenti AAD nell' [aggiornamento di windows 10 aprile 2018](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018) come parte di [Windows olografico for business](hololens-upgrade-enterprise.md).
 
 ## Rimozione di utenti
 
@@ -73,7 +75,7 @@ Tutti gli utenti possono usare le app installate nel dispositivo. Tuttavia, ogni
 
 ## Uso di Single Sign-on all'interno di un'app
 
-Come sviluppatore di app, puoi sfruttare le identità collegate in HoloLens usando le [API di Windows account manager](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Core), proprio come in altri dispositivi Windows. In [questo](https://go.microsoft.com/fwlink/p/?LinkId=620621)articolo sono disponibili alcuni esempi di codice per queste API.
+Come sviluppatore di app, puoi sfruttare le identità collegate in HoloLens usando le [API di Windows account manager](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Core), proprio come in altri dispositivi Windows. Alcuni esempi di codice per queste API sono disponibili in GitHub: [esempio di gestione degli account Web](https://go.microsoft.com/fwlink/p/?LinkId=620621).
 
 Eventuali interruzioni di account che potrebbero verificarsi, ad esempio per richiedere il consenso dell'utente per informazioni sull'account, l'autenticazione a due fattori e così via, devono essere gestite quando l'app richiede un token di autenticazione.
 

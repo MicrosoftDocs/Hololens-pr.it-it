@@ -16,12 +16,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 0a2edd0c516234a433a93c0cff806153726678fd
-ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
+ms.openlocfilehash: 917e9fd0e8bf69eb0b7c53165029cb8e42904582
+ms.sourcegitcommit: ab9e70e68d546cc6965e1569e5d914995fa508da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "10929862"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "10955458"
 ---
 # <span data-ttu-id="28860-103">Configurare HoloLens usando un pacchetto di provisioning</span><span class="sxs-lookup"><span data-stu-id="28860-103">Configure HoloLens by using a provisioning package</span></span>
 
@@ -173,7 +173,7 @@ ms.locfileid: "10929862"
 > [!NOTE]
 > <span data-ttu-id="28860-224">Se il dispositivo è stato acquistato prima di agosto 2016, è necessario accedere al dispositivo usando un account Microsoft, ottenere l'aggiornamento più recente del sistema operativo e quindi reimpostare il sistema operativo per applicare il pacchetto di provisioning.</span><span class="sxs-lookup"><span data-stu-id="28860-224">If the device was purchased before August 2016, you will need to sign in to the device by using a Microsoft account, get the latest operating system update, and then reset the operating system in order to apply the provisioning package.</span></span>
 
-### <span data-ttu-id="28860-225">Applicare un pacchetto di provisioning a HoloLens dopo l'installazione</span><span class="sxs-lookup"><span data-stu-id="28860-225">Apply a provisioning package to HoloLens after setup</span></span>
+## <span data-ttu-id="28860-225">Applicare un pacchetto di provisioning a HoloLens dopo l'installazione</span><span class="sxs-lookup"><span data-stu-id="28860-225">Apply a provisioning package to HoloLens after setup</span></span>
 
 > [!NOTE]
 > <span data-ttu-id="28860-226">Questa procedura si applica solo a Windows 10, versione 1809.</span><span class="sxs-lookup"><span data-stu-id="28860-226">These steps apply only toWindows 10, version 1809.</span></span>

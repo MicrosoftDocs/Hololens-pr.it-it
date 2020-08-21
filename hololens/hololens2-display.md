@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.reviewer: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: bf0f293fac531045e50bee9a9dd153eb9dd2b377
-ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
+ms.openlocfilehash: 80ac6348dd2cba932316b690cafc4c5dc0331353
+ms.sourcegitcommit: 77eb85608066d9a4ed01b3862afe356f7e54d583
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "10929909"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "10940206"
 ---
 # Display HoloLens 2
 
@@ -30,7 +30,7 @@ Per HoloLens 2, eseguire le operazioni seguenti per garantire la massima qualit�
 * **Aumenta la luminosità dello schermo.** Gli ologrammi sono migliori quando lo schermo ha un livello di luminosità più elevato.
 * **Avvicina la visiera ai tuoi occhi.** Sposta la visiera verso il basso fino alla posizione più vicina agli occhi.
 * **Sposta la visiera verso il basso.** Prova a spostare il cuscinetto della fronte verso il basso, in modo che la visiera si sposti più vicino al naso.
-* **Eseguire la calibrazione oculare.** Lo schermo usa la distanza interpupillare e lo sguardo fisso per ottimizzare le immagini sul display. Se non esegui la calibrazione oculare, la qualità dell'immagine potrebbe essere peggiore. Per eseguire la calibrazione oculare, vai a **Impostazioni** ➔ **Sistema** ➔ **Calibrazione** ➔ **Esegui calibrazione oculare**.
+* **Eseguire la calibrazione oculare.** Lo schermo usa la distanza interpupillare e lo sguardo fisso per ottimizzare le immagini sul display. Se non esegui la calibrazione oculare, la qualità dell'immagine potrebbe essere peggiore. Per eseguire la calibrazione oculare, vai a **Impostazioni** > **Sistema,** > **Calibrazione,** > **Eseguire la calibrazione oculare**.
 
 ## Domande frequenti
 
@@ -77,11 +77,14 @@ Gli aggiornamenti del sistema operativo vengono recapitati automaticamente. È a
 
 ### Quali indicazioni sono disponibili per gli sviluppatori che vogliono applicare principi di progettazione in modalità scura?
 
-Microsoft sta preparando le indicazioni per gli sviluppatori sui principi di progettazione in modalità scura. Le indicazioni saranno presto disponibili su [documentazione per sviluppatori](https://docs.microsoft.com/windows/mixed-reality/). Riepilogo dei consigli:
+Gli utenti avranno l'esperienza migliore quando si evitano sfondi bianchi. La modalità scura è un principio di progettazione usato dalle app per usare sfondi neri o scuri. Le impostazioni di sistema predefinite per la modalità scura possono essere modificate passando a **Impostazioni** > **Sistema** > **Colore**.
 
-* Utilizzare colori scuri per lo sfondo dell'interfaccia utente
-* Usare il semigrassetto o il grassetto
-* Usare il materiale del Toolkit per realtà mista relativo a HolographicBackplate
+Agli sviluppatori si consiglia di seguire le indicazioni per la progettazione in modalità scura:
+
+* [Linee guida per sviluppatori per la progettazione di display HoloLens](https://docs.microsoft.com/windows/mixed-reality/designing-content-for-holographic-display#design-guidelines)
+* [Dimensioni del carattere consigliate](https://docs.microsoft.com/windows/mixed-reality/typography#recommended-font-size)
+
+Se un ologramma richiede uno sfondo bianco, mantenere le dimensioni dell'ologramma inferiori al campo di visualizzazione completo del display. Questa dimensione consente agli utenti di posizionare l'ologramma al centro dello schermo.
 
 ### Come si pulisce il display di HoloLens 2?
 

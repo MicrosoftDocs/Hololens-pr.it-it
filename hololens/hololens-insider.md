@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1e6b8fcfad1dab49823f38c722de33654b361f58
-ms.sourcegitcommit: 16d61083a1da8007278aed7e11eb6d44f7a90952
+ms.openlocfilehash: d51616f23a63c1f45fe5ed7da88be4b5429c36eb
+ms.sourcegitcommit: 238d41844116ab94d347a2ffd0fbfa18b8a81947
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "10941708"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "10956772"
 ---
 # Insider Preview per Microsoft HoloLens
 
@@ -34,8 +34,7 @@ Ecco l'elenco delle caratteristiche future che puoi provare oggi in Windows Insi
 | Funzionalità                                                | Descrizione                                                                                    | Disponibile nelle build Insider |
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
 | [Supporto per la posizione degli occhi automatici](hololens-insider.md#auto-eye-position-support)                              | Trova attivamente le posizioni degli occhi e consente il posizionamento accurato degli ologrammi.                        | 19041.1339 +                 |
-| [Visualizzatore certificati](hololens-insider.md#certificate-viewer)                                     | Visualizzare i certificati utente e dispositivo nell'app Impostazioni.                                         | 19041.1346 +                 |
-| [Installare e rimuovere i certificati](hololens-insider.md#install-and-remove-certificates)                        | Gli utenti possono installare e rimuovere i certificati tramite il Visualizzatore certificati.                        | 19041.1361 +                 |
+| [Gestione certificati](hololens-insider.md#certificate-manager)                                     | Gli utenti possono visualizzare, installare e rimuovere certificati gli utenti correnti e i certificati del computer locale nell'app Impostazioni.                                         | 19041.1361 +                 |
 | [Avvio automatico del provisioning da USB](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE rileva automaticamente i pacchetti di provisioning sulle unità USB.                                | 19041.1361 +                 |
 | [Convalidare automaticamente i pacchetti di provisioning in OOBE](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | Applicare automaticamente i pacchetti di provisioning in OOBE.                                             | 19041.1361 +                 |
 | [Uso di Autopilot con connessione Wi-Fi](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | Usare il pilota automatico da Wi-Fi per dispositivi senza bisogno di un adattatore Ethernet.                             | 19041.1364 +                 |
@@ -72,41 +71,40 @@ Per le esperienze che richiedono dati sugli occhi o un posizionamento olografico
 **Problemi noti**
  - Stiamo esaminando un problema in cui il processo di host del driver dell'eye tracker potrebbe arrestarsi in modo anomalo durante l'esecuzione in un carico di memoria elevato. Il processo host del driver di rilevamento degli occhi deve essere recuperato automaticamente.
 
-### Visualizzatore certificati
+### Gestione certificati
 
-In Windows Insider Build 19041.1346 + aggiungiamo un visualizzatore di certificati nell'app impostazioni di HoloLens 2. L'installazione del certificato supporta attualmente i file con estensione CER e CRT. I proprietari di dispositivi possono installare i certificati nel computer locale e nell'utente corrente;  tutti gli altri utenti possono essere installati solo nell'utente corrente. Gli utenti possono rimuovere solo i certificati installati direttamente dall'interfaccia utente delle impostazioni. Se un certificato è stato installato con altri mezzi, deve essere rimosso anche dallo stesso meccanismo.
+In Windows Insider Build 19041.1361 + aggiungiamo un gestore di certificati nell'app impostazioni di HoloLens 2. Accedere a **impostazioni > aggiornare i certificati di > di sicurezza &**. Questa funzionalità consente di visualizzare, installare e rimuovere certificati nel dispositivo in modo semplice e intuitivo. Con il nuovo gestore di certificati, gli amministratori e gli utenti hanno ora strumenti di controllo, diagnosi e convalida migliorati per garantire che i dispositivi rimangano sicuri e conformi. 
 
 -   **Controllo:** Possibilità di verificare che un certificato sia distribuito correttamente o per verificare che sia stato rimosso in modo appropriato. 
 -   **Diagnosi:** In caso di problemi, verifica che i certificati appropriati esistano nel dispositivo per risparmiare tempo e consente di risolvere i problemi. 
--   **Convalida:** Verificare che il certificato serva allo scopo previsto ed è funzionale, può risparmiare tempo significativo, in particolare in ambienti commerciali prima di distribuire i certificati su scala più ampia.
+-   **Convalida:** Verificare che un certificato serva lo scopo previsto ed è funzionale, può risparmiare tempo significativo, in particolare in ambienti commerciali prima di distribuire i certificati su scala più ampia.
 
-Per visualizzare i certificati, scegliere **impostazioni > aggiorna & sicurezza > certificati**.
+Per trovare rapidamente un certificato specifico nell'elenco, sono disponibili opzioni per ordinare in base al nome, all'archivio o alla data di scadenza. Gli utenti possono anche cercare direttamente un certificato. Per visualizzare le singole proprietà del certificato, selezionare il certificato e fare clic su **informazioni**. 
 
-![Visualizzatore certificati nell'app impostazioni](images/certificate-viewer-device.jpg)
+L'installazione del certificato supporta attualmente i file con estensione CER e CRT. I proprietari di dispositivi possono installare i certificati nel computer locale e nell'utente corrente;  tutti gli altri utenti possono essere installati solo nell'utente corrente. Gli utenti possono rimuovere solo i certificati installati direttamente dall'interfaccia utente delle impostazioni. Se un certificato è stato installato con altri mezzi, deve essere rimosso anche dallo stesso meccanismo.
 
-### Installare e rimuovere i certificati
-A partire da Windows Insider Release 19041.1361 + è possibile installare e rimuovere i certificati direttamente in HoloLens 2, tramite l'app Impostazioni. L'installazione del certificato supporta attualmente i file con estensione CER e CRT. I proprietari di dispositivi possono installare i certificati nel computer locale e nell'utente corrente;  tutti gli altri utenti possono essere installati solo nell'utente corrente. Gli utenti possono rimuovere solo i certificati installati direttamente dall'interfaccia utente delle impostazioni. Se un certificato è stato installato con altri mezzi, deve essere rimosso anche dallo stesso meccanismo.
+#### Per installare un certificato: 
 
-#### Per installare un certificato usando il Visualizzatore certificati: 
-1. Passare ai **Settings App**  ->  certificati di**aggiornamento e sicurezza**dell'app impostazioni  ->  **Certificates**e selezionare **installa un certificato**. 
-1. Selezionare un file con estensione cer dall'esperienza di selezione file.
-1. Selezionare computer locale (o il proprio certificato).
-1. Selezionare **radice** come archivio certificati o in quale archivio si vuole inserire il certificato. 
-1. Fai clic su **Installa**.
+1.  Connettere il HoloLens 2 a un PC.
+1.  Posizionare il file di certificato che si vuole installare in un percorso di HoloLens 2.
+1.  Passare all' **app impostazioni > aggiornare i certificati di & sicurezza >** e selezionare installa un certificato.
+1.  Fare clic su **Importa file** e passare alla posizione in cui è stato salvato il certificato.
+1.  Selezionare **posizione archivio**.
+1.  Selezionare **archivio certificati**.
+1.  Fai clic su **Installa**.
 
 Il certificato dovrebbe ora essere installato nel dispositivo.
 
-#### Per rimuovere un certificato usando il Visualizzatore certificati: 
-1. Passare ai **Settings App**  ->  certificati di**aggiornamento e sicurezza**delle app impostazioni  ->  **Certificates**.
+#### Per rimuovere un certificato: 
+1. Passare all' **app impostazioni > aggiornamento e sicurezza > certificati**.
 1. Cercare il certificato per nome nella casella di ricerca.
 1. Selezionare il certificato.
 1. Fare clic su **Rimuovi**
-1. Selezionare Sì quando richiesto e quando viene richiesto di confermare.
+1. Selezionare **Sì** quando viene richiesto di confermare.
+
+![Visualizzatore certificati nell'app impostazioni](images/certificate-viewer-device.jpg)
 
 ![Immagine che Mostra come usare l'interfaccia utente del certificato per installare un certificato](images/certificate-device-install.jpg)
-
-#### Problemi noti 
-Stiamo esaminando un problema in cui durante il flusso di installazione, dopo aver selezionato un certificato da selezione file, l'interfaccia utente della finestra di dialogo di installazione non Mostra il file di certificato selezionato, anche se è stato selezionato. Dopo aver selezionato il file, è possibile procedere con l'installazione anche se il file non viene visualizzato nella finestra di dialogo. 
 
 ### Avvio automatico del provisioning da USB
 Prima che gli utenti della build dovessero avviare manualmente la schermata di provisioning durante la configurazione guidata per il provisioning tramite una combinazione di pulsanti. Ora gli utenti possono ignorare la combinazione di pulsanti usando un pacchetto di provisioning in un'unità di archiviazione USB. 

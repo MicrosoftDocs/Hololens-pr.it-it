@@ -14,12 +14,12 @@ manager: bradke
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 18a583f407b19c5b86870a49b8182d45f46a45f5
-ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
+ms.openlocfilehash: 3ac86512755620ebb6159dd4d845b488e203dbad
+ms.sourcegitcommit: 238d41844116ab94d347a2ffd0fbfa18b8a81947
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857804"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "10956762"
 ---
 # Requisiti di licenza
 
@@ -31,9 +31,9 @@ Se si prevede di usare Intune come sistema MDM, [qui](https://docs.microsoft.com
 
 ## Identificare le licenze necessarie per lo scenario e i prodotti
 
-### Requisiti di licenza di HoloLens
+### Requisiti di licenza di HoloLens (prima generazione)
 
-Potrebbe essere necessario aggiornare il dispositivo di prima generazione HoloLens a Windows Holographic for Business. (Per determinare se è necessario eseguire l'aggiornamento, vedere [Funzionalità commerciali di HoloLens](holoLens-commercial-features.md#feature-comparison-between-editions)).
+Potrebbe essere necessario aggiornare il dispositivo HoloLens (prima generazione) a Windows Holographic for Business. (Per determinare se è necessario eseguire l'aggiornamento, vedere [Funzionalità commerciali di HoloLens](holoLens-commercial-features.md#feature-comparison-between-editions)).
 
  In tale caso, si dovranno eseguire le operazioni seguenti:
 
@@ -45,6 +45,7 @@ Potrebbe essere necessario aggiornare il dispositivo di prima generazione HoloLe
 Assicurarsi di avere le licenze e i dispositivi necessari. I requisiti di licenza e di prodotto aggiornati sono disponibili [qui](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements).
 
 1. [Licenza di Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist)
+    1. Altrimenti, provare la [versione di valutazione di Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/try-remote-assist)
 1. [Teams Freemium/Teams](https://products.office.com/microsoft-teams/free)
 1. [Licenza di Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
 

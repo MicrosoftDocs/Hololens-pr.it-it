@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e819dfb95a6735d0eae6287d97f5856856a33526
-ms.sourcegitcommit: 7f48e7103f869a22a0d20a54dc8f9b708b22484c
+ms.openlocfilehash: 843e0ecf393a922be80d4a0c9d9c8be84bd8c553
+ms.sourcegitcommit: 98d6c4e63636c5d8707011d0044014fbc4b84495
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "10963678"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "10965077"
 ---
 # <span data-ttu-id="1cd12-103">Insider Preview per Microsoft HoloLens</span><span class="sxs-lookup"><span data-stu-id="1cd12-103">Insider preview for Microsoft HoloLens</span></span>
 
@@ -178,7 +178,7 @@ ms.locfileid: "10963678"
 
 ```xml
 <AllowedApps>                     
-    <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
+    <!--TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
 ```
 
 ### <span data-ttu-id="1cd12-281">Accesso automatico visitatori per chioschi multimediali</span><span class="sxs-lookup"><span data-stu-id="1cd12-281">Visitor Auto logon for Kiosks</span></span>

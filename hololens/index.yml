@@ -11,12 +11,12 @@ metadata:
   ms.author: v-todmc
   ms.date: 5/22/2020
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: 544582762cb950d319f96647fc41a75507389059
-  ms.sourcegitcommit: e17e3449d22e770ce45e9e7b9ad55396a1c7360c
+  ms.openlocfilehash: e867f5963f0f81261935b4ea6fc045200a48b61d
+  ms.sourcegitcommit: 85f0263ab0329477c423e92842c45fb465f2a466
   ms.translationtype: HT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 08/28/2020
-  ms.locfileid: "10978633"
+  ms.lasthandoff: 08/31/2020
+  ms.locfileid: "10978949"
 landingContent:
 - title: Panoramica di HoloLens
   linkLists:
@@ -74,7 +74,7 @@ landingContent:
       url: hololens2-autopilot.md
     - text: Panoramica di gestione applicazioni
       url: app-deploy-overview.md
-    - text: Microsoft Store per le aziende
+    - text: Portale aziendale Intune
       url: app-deploy-intune.md
     - text: Microsoft Store per le aziende
       url: app-deploy-store-business.md

@@ -16,12 +16,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 917e9fd0e8bf69eb0b7c53165029cb8e42904582
-ms.sourcegitcommit: ab9e70e68d546cc6965e1569e5d914995fa508da
+ms.openlocfilehash: da783756c271c589f67efca0c229ad0f777857e2
+ms.sourcegitcommit: ccdd628cdbb5b89741f5dbc971143cb2fd2e451b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "10955458"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10990905"
 ---
 # Configurare HoloLens usando un pacchetto di provisioning
 
@@ -205,5 +205,9 @@ In Progettazione configurazione di Windows, quando crei un pacchetto di provisio
 | **EditionUpgrade** | [Aggiornamento a Windows Holographic for Business.](hololens1-upgrade-enterprise.md)  |
 | **Criteri** | Consentire o impedire la modalità sviluppatore in HoloLens. [Criteri supportati da Windows Holographic for Business](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#hololenspolicies) |
 
+## Installare app tramite il pacchetto di provisioning
+
+Le app possono essere installate tramite pacchetti di provisioning nei dispositivi HoloLens 2. Questo consente un pacchetto facilmente riutilizzabile che puoi usare per aiutarti a distribuire le tue app. Leggere le istruzioni complete per la [distribuzione delle app tramite il provisioning dei pacchetti](app-deploy-provisioning-package.md).  
+
 > [!NOTE]
-> HoloLens attualmente non supporta l'installazione di app (**UniversalAppInstall**) usando un pacchetto di provisioning.
+> HoloLens (1st Gen) non supporta l'installazione di app (**UniversalAppInstall**) usando un pacchetto di provisioning.

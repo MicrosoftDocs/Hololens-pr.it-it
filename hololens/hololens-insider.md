@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1ade83e263a8dcf7fbf0a6723f14e09befbd49f9
-ms.sourcegitcommit: 2b1de9c8f8a212a797fb0cb6056856dd4ff716a1
+ms.openlocfilehash: 1f7e2be19f525863a64ec7652e2418029a98cdca
+ms.sourcegitcommit: f79d8a6e863cebf18270d33a26548ba4ffdcf6b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10985862"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10994429"
 ---
 # Insider Preview per Microsoft HoloLens
 
@@ -38,7 +38,7 @@ Ecco l'elenco delle caratteristiche future che puoi provare oggi in Windows Insi
 | [Avvio automatico del provisioning da USB](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE rileva automaticamente i pacchetti di provisioning sulle unità USB.                                | 19041.1361 +                 |
 | [Convalidare automaticamente i pacchetti di provisioning in OOBE](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | Applicare automaticamente i pacchetti di provisioning in OOBE.                                             | 19041.1361 +                 |
 | [Uso di Autopilot con connessione Wi-Fi](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | Usare il pilota automatico da Wi-Fi per dispositivi senza bisogno di un adattatore Ethernet.                             | 19041.1364 +                 |
-|[Tenantlockdown CSP e Autopilot](hololens-insider.md#tenantlockdown-csp-and-autopilot) | Dopo la registrazione del tenant e l'applicazione di policiy, il dispositivo può essere registrato solo in qualsiasi momento in cui il dispositivo viene reimpostato o reinizializzato. | 19041.1366 +|
+|[Tenantlockdown CSP e Autopilot](hololens-insider.md#tenantlockdown-csp-and-autopilot) | Dopo la registrazione del tenant e il criterio viene applicato, il dispositivo può essere registrato solo in tale tenant ogni volta che il dispositivo viene reimpostato o reinizializzato. | 19041.1366 +|
 | [Accesso assegnato globale](hololens-insider.md#global-assigned-access--kiosk-mode)                                 | Configura il dispositivo HoloLens 2 per la modalità Kiosk di più app applicabile a livello di sistema. | 19041.1356 +                 |
 | [Avvio automatico di un'app nel chiosco multi-app](hololens-insider.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                  | Imposta l'avvio automatico di un'applicazione durante l'accesso a una modalità Kiosk a più app.     | 19041.1346 +                 |
 | [Accesso automatico dei visitatori per i chioschi](hololens-insider.md#visitor-auto-logon-for-kiosks)                          | Consente di usare l'accesso automatico agli account dei visitatori per le modalità Kiosk.                         | 19041.1361 +                 |

@@ -10,12 +10,12 @@ ms.prod: hololens
 ms.topic: article
 audience: ITPro
 ms.localizationpriority: high
-ms.openlocfilehash: 2632c5bfd82feab4e21ee9c393f8c22efda28c42
-ms.sourcegitcommit: 458e07c0dcad66616fa98cfef125eb217713d89c
+ms.openlocfilehash: dc8182d04a8cdc8a8ec3775a8e453a41d29486d3
+ms.sourcegitcommit: 0abe53295191e22299d5be49f2cef4e85744d0fd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "10927840"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993646"
 ---
 # Considerazioni sull'ambiente per HoloLens
 
@@ -117,8 +117,17 @@ Per accedere all'app Calibrazione, vai a **Impostazioni** > **Sistema** > **Util
 
 Se qualcun altro sta usando il tuo dispositivo HoloLens, dovrebbe prima eseguire l'app Calibrazione in modo che il dispositivo sia configurato correttamente.
 
-### Temperatura e informazioni normative
-[Normative HoloLens](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information): includono le informazioni sulla temperatura, lo smaltimento, le interferenze radiofoniche e televisive e altro ancora.
+## Temperatura e informazioni normative
+
+[Informazioni normative di HoloLens](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information): includono le informazioni sulla temperatura, lo smaltimento, le interferenze radiofoniche e televisive e altro ancora.
+
+Di seguito sono elencate alcune linee guida per l'uso del dispositivo:
+
+1. Archiviare il dispositivo in un ambiente con temperatura compresa nell'intervallo (in modalità standby o spento) per un'ora prima di usarlo.
+1. Usare il dispositivo in un ambiente con temperatura compresa nell'intervallo.
+1. Usare il dispositivo al coperto.
+1. Usare il dispositivo all'ombra; anche al coperto, evitare l'esposizione alla luce solare diretta attraverso finestre o lucernari.
+1. Se si verificano problemi di surriscaldamento pur seguendo le linee guida di cui sopra, assicurarsi che la telemetria completa sia abilitata prima di inviare il [feedback](hololens-feedback.md).
 
 ## Vedere anche
 

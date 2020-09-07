@@ -14,18 +14,18 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-ms.openlocfilehash: 9c9dd12b596d8fafdfe575797193f18e7b96919c
-ms.sourcegitcommit: 2122490074adb7f63edfc3576441980caa22695f
+ms.openlocfilehash: 8c028ed39cf0925ebff18ca69889de2d87f1e7eb
+ms.sourcegitcommit: e3056a433aeebb8bc45dc3f6db9a75f212fdf53b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "10915958"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "10996414"
 ---
 # Riavviare, reimpostare o ripristinare HoloLens 2
 
 ## Caricare il dispositivo
 
-Prima di avviare una procedura di risoluzione dei problemi, accertarsi che il dispositivo sia caricato almeno dal 20 al 40% della capacità della batteria, se possibile. Assicurarsi di usare il caricabatterie e i cavi USB di tipo C forniti insieme al dispositivo HoloLens 2. Ove questi non fossero disponibili, assicurarsi che il caricabatterie disponibile possa supportare almeno 15 W di potenza.
+Prima di avviare una procedura di risoluzione dei problemi, accertarsi che il dispositivo sia caricato almeno dal 20 al 40% della capacità della batteria, se possibile. Assicurarsi di usare il caricabatterie e i cavi USB di tipo C forniti insieme al dispositivo HoloLens 2. L'alimentatore e il cavo USB da C a C forniti con il dispositivo sono il modo migliore per ricaricare HoloLens 2. Il caricabatterie fornisce 18 W di alimentazione (9V a 2A). Ove questi non fossero disponibili, assicurarsi che il caricabatterie disponibile possa supportare almeno 15 W di potenza.
 
 > [!NOTE]
 > Se possibile, evitare di usare un PC per caricare il dispositivo tramite USB, visto che tale processo sarebbe lento.
@@ -34,11 +34,15 @@ Se il dispositivo viene avviato correttamente ed è in esecuzione, è possibile 
 
 - Dal menu principale dell’interfaccia utente di HoloLens.
 - Controllare il LED che si trova vicino al tasto di accensione (con il 40% di carica, si dovrebbero vedere almeno due LED fissi). 
-- Aprire Esplora File sul proprio PC host, e cercare il dispositivo HoloLens 2 a sinistra, sotto **Questo PC**. Fare clic con il pulsante destro del mouse sul dispositivo e selezionare **Proprietà**. Una finestra di dialogo mostrerà il livello di carica della batteria.
+    - Quando il dispositivo è in carica, l'indicatore della batteria si illumina per indicare il livello di carica corrente.  L'ultima luce si accenderà e spegnerà per indicare che la ricarica è attiva.
+    - Quando il dispositivo HoloLens è acceso, l'indicatore della batteria mostra il livello di batteria in cinque incrementi.
+    - Quando solo una delle cinque luci è accesa, il livello della batteria è inferiore al 20%.
+    - Se il livello della batteria è molto basso e tenti di accendere il dispositivo, una luce lampeggia per un breve periodo, quindi scompare.
+- Aprire **Esplora file** sul proprio PC host, e cercare il dispositivo HoloLens 2 a sinistra, sotto **Questo PC**. Fare clic con il pulsante destro del mouse sul dispositivo e selezionare **Proprietà**. Una finestra di dialogo mostrerà il livello di carica della batteria.
 
    ![Schermata delle proprietà di HoloLens 2 che mostra il livello di variazione della batteria](images/ResetRecovery2.png)
 
-Se il dispositivo non riesce a eseguire il boot al menu di avvio, prendere nota dell'aspetto del LED e dell'elenco dei dispositivi sul PC host. Seguire quindi le [istruzioni per la risoluzione dei problemi](https://docs.microsoft.com/hololens/hololens-troubleshooting). Se lo stato del dispositivo non rientra tra quelli elencati nella guida alla risoluzione dei problemi, eseguire la *procedura di reimpostazione forzata* connettendo il dispositivo all’alimentazione anzichè al PC host. Attendere almeno un’ora che il dispositivo si ricarichi.
+Se il dispositivo non riesce a eseguire il boot al menu di avvio, prendere nota dell'aspetto del LED e dell'elenco dei dispositivi sul PC host. Seguire quindi le [istruzioni per la risoluzione dei problemi](https://docs.microsoft.com/hololens/hololens-troubleshooting). Se lo stato del dispositivo non rientra tra quelli elencati nella guida alla risoluzione dei problemi, eseguire la [procedura di reimpostazione forzata](hololens-recovery.md#hard-reset-procedure) connettendo il dispositivo all’alimentazione anziché al PC host. Attendere almeno un’ora che il dispositivo si ricarichi.
 
 ## Reimpostare il dispositivo
 
@@ -70,7 +74,14 @@ Se la procedura di reimpostazione standard non funziona, è possibile usare la p
 
 ## Riconfigurare il dispositivo
 
-In situazioni straordinarie potrebbe essere necessario riconfigurare HoloLens 2. Ci sono due modi per riconfigurare il dispositivo. Per entrambi, è necessario prima di tutto installare [l’Advanced Recovery Companion dal Windows Store](https://www.microsoft.com/store/productId/9P74Z35SFRS8).
+In situazioni straordinarie potrebbe essere necessario riconfigurare HoloLens 2. Tenere presente che la riconfigurazione non condiziona questi problemi:
+- [Uniformità del colore dello schermo](hololens2-display.md)
+- Avvio con i suoni ma senza segnale video
+- [Pattern LED 1-3-5](hololens2-setup.md#lights-to-indicate-problems)
+- [Surriscaldamento](hololens-environment-considerations.md#temperature-and-regulatory-information) 
+- Arresti anomali del sistema operativo (distinti dagli arresti delle applicazioni)
+
+Ci sono due modi per riconfigurare il dispositivo. Per entrambi, è necessario prima di tutto installare [l’Advanced Recovery Companion dal Windows Store](https://www.microsoft.com/store/productId/9P74Z35SFRS8).
 
 >[!WARNING]
 >Se si riconfigura il dispositivo, tutti i dati personali, le app e le impostazioni verranno eliminate, comprese le informazioni sul ripristino del TPM.

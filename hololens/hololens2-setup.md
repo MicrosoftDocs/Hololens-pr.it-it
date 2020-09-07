@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 943cc5af8f5be337a9cfcc0d3e4a4640aa307e72
-ms.sourcegitcommit: 14c30f412cd17058d0316444215f878ba1ee422f
+ms.openlocfilehash: b2d95839ff394d61eec8f5c76baf9a151855794a
+ms.sourcegitcommit: e3056a433aeebb8bc45dc3f6db9a75f212fdf53b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "10905623"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "10996404"
 ---
 # Preparare il dispositivo HoloLens 2
 
@@ -33,6 +33,8 @@ La velocità di carica possono variare a seconda dell'ambiente in cui il disposi
 - Quando il dispositivo HoloLens è acceso, l'indicatore della batteria mostra il livello di batteria in incrementi.
 - Quando solo una delle cinque luci è accesa, il livello della batteria è inferiore al 20%.
 - Se il livello della batteria è molto basso e tenti di accendere il dispositivo, una luce lampeggia per un breve periodo, quindi scompare.
+
+In caso fossero necessarie ulteriori informazioni, è possibile leggere i [dettagli completi sulla ricarica del dispositivo qui](hololens-recovery.md#charge-the-device). 
 
 ## Regolare la misura
 
@@ -108,7 +110,7 @@ Non sai cosa indicano gli indicatori luminosi sul dispositivo HoloLens? Vuoi sap
 | - | - | - |
 | Premi il pulsante di alimentazione. | Una luce lampeggia cinque volte, quindi si spegne. | Il livello delle batteria di HoloLens è estremamente basso. Carica il dispositivo HoloLens. |
 | Premi il pulsante di alimentazione. | Tutte e cinque le luci lampeggiano cinque volte, quindi si spengono. |  HoloLens non può essere avviato correttamente e si trova in uno stato di errore. [Reinstallare il sistema operativo](hololens-recovery.md) per recuperare il dispositivo. |
-| Premi il pulsante di alimentazione. | La prima, terza e quinta luce lampeggiano insieme continuamente. |  Su HoloLens potrebbe essersi verificato un errore hardware. Per essere certo, [reinstalla il sistema operativo](hololens-recovery.md) e riprova. Dopo aver reinstallato il sistema operativo, se il modello di flash luminoso persiste, contatta il [supporto](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapid=3ec35c62-022f-466b-3a1e-dbbb7b9a55fb). |
+| Premi il pulsante di alimentazione. | La prima, terza e quinta luce lampeggiano insieme continuamente. |  Su HoloLens potrebbe essersi verificato un errore hardware. Contattare il [supporto](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapid=3ec35c62-022f-466b-3a1e-dbbb7b9a55fb). |
 
 ## Sicurezza e comfort
 

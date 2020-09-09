@@ -1,6 +1,6 @@
 ---
 title: Note sulla versione di HoloLens 2
-description: Informazioni sugli aggiornamenti in ogni nuova versione di HoloLens.
+description: Informazioni sugli aggiornamenti in ogni nuova versione di HoloLens 2.
 author: scooley
 ms.author: scooley
 manager: laurawi
@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 3e2bb1a6f8de93faa1a1157b3d05ff671d0b0a45
-ms.sourcegitcommit: 5799ce0f3d8f1d231823cff6c9c013ce933b8f3b
+ms.openlocfilehash: 0fe78d4b668523de4faa66a64f54c14760a81b12
+ms.sourcegitcommit: bddd470ac475dd8fc7b69e8904d18082a83f39e0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "10926329"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "10997217"
 ---
 # Note sulla versione di HoloLens 2
 
@@ -28,6 +28,25 @@ Per assicurarti di avere un'esperienza produttiva con i tuoi dispositivi HoloLen
 
 >[!NOTE]
 > Per leggere le note sulla versione dell'emulatore HoloLens, [visita l'archivio](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
+
+## Windows olografico, versione 2004-settembre 2020 Update
+- Build 19041,1117
+
+Miglioramenti e correzioni nell'aggiornamento:
+
+- Risolve un problema che impediva a Visual Studio di eseguire il debug di un'applicazione quando SupportsMultipleInstances = "true" è presente in appxmanifest.
+- Questa versione include la correzione del rilevamento proxy di NCSI per risolvere il rilevamento di Internet non riuscito tramite proxy di rete. NCSI può usare il proxy del computer e il proxy per profilo per il rilevamento della connettività Internet. Il proxy per utente sarà supportato da NCSI in versione futura.
+- Nella maggior parte dei dispositivi di realtà mista di Windows, il vettore di direzione in avanti è parallelo al suolo quando la testa dell'utente si trova in posizione neutrale in attesa. Tuttavia, le versioni precedenti di HoloLens 2 hanno allineato il vettore in modo che sia perpendicolare ai pannelli visualizzati, che è inclinato verso il basso di alcuni gradi rispetto all'orientamento ideale. Le versioni più recenti di HoloLens 2 hanno corretto questa operazione per garantire la coerenza semantica tra i fattori di forma.
+- Migliorata la robustezza del monitoraggio delle mani che causa meno perdite di rilevamento in scenari specifici.
+- Questa versione contiene una correzione per migliorare la qualità timestamp audio che potrebbe aver contribuito a problemi di acquisizione video.
+
+## Windows olografico, versione 1903-settembre 2020 Update
+- Build 18362,1079
+
+Miglioramenti e correzioni nell'aggiornamento:
+
+- Nella maggior parte dei dispositivi di realtà mista di Windows, il vettore di direzione in avanti è parallelo al suolo quando la testa dell'utente si trova in posizione neutrale in attesa. Tuttavia, le versioni precedenti di HoloLens 2 hanno allineato il vettore in modo che sia perpendicolare ai pannelli visualizzati, che è inclinato verso il basso di alcuni gradi rispetto all'orientamento ideale. Le versioni più recenti di HoloLens 2 hanno corretto questa operazione per garantire la coerenza semantica tra i fattori di forma.
+- Migliorata la robustezza del monitoraggio delle mani che causa meno perdite di rilevamento in scenari specifici.
 
 ## Windows olografico, versione 2004-agosto 2020 Update
 - Build 19041,1113
@@ -210,7 +229,7 @@ Queste app "in-box" supportano la modalità oscura:
 - Impostazioni 
 - Microsoft Store 
 - Mail 
-- Calendar 
+- Calendario 
 - Esplora file 
 - Hub di Feedback 
 - OneDrive 
@@ -266,7 +285,7 @@ Queste app "in-box" supportano la modalità oscura:
 - Impostazioni
 - Microsoft Store
 - Mail
-- Calendar
+- Calendario
 - Esplora file
 - Hub di Feedback
 - OneDrive

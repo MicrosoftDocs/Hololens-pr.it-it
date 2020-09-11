@@ -10,12 +10,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: jarrettr
-ms.openlocfilehash: 0f46ff4a1bef95d153d9fa93c746c8977dc49771
-ms.sourcegitcommit: 47bc3b696936dd7011b3f9dd683deb872ed25b90
+ms.openlocfilehash: 0db64ffb4113ff948651c708c28b91da535cb09b
+ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "10883150"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009524"
 ---
 # Connettere HoloLens a una rete
 
@@ -29,6 +29,8 @@ Leggi altre informazioni sull'[uso di HoloLens offline](hololens-offline.md).
 ## Connessione per la prima volta
 
 La prima volta che usi HoloLens, dovrai seguire le istruzioni per la connessione a una rete Wi-Fi. In caso di problemi di connessione a una rete Wi-Fi durante l'installazione, verifica che la rete sia aperta, protetta da password o captive portal. Verifica che la rete non richieda l'uso di un certificato per la connessione. Dopo la configurazione, potrai connetterti ad altri tipi di reti Wi-Fi.
+
+Sui dispositivi HoloLens 2 un utente potrebbe anche [usare un adattatore USB-C per Ethernet](hololens-connect-devices.md#hololens-2-connect-usb-c-devices) per collegarsi direttamente al Wi-Fi e facilitare la configurazione del dispositivo. Dopo aver configurato il dispositivo, l'utente può continuare a usare l'adattatore, oppure potrebbe scollegare il dispositivo dalla scheda e [connettersi a una rete Wi-Fi dopo la configurazione](hololens-network.md#connecting-to-wi-fi-after-setup). 
 
 ## Connessione alla rete Wi-Fi dopo la configurazione
 

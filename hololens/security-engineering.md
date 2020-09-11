@@ -1,23 +1,24 @@
 ---
 title: Ingegneria della sicurezza
 description: Ingegneria della sicurezza
-author: jbennett
+author: evmill
+ms.author: v-evmill
+ms.reviewer: tagran
 ms.date: 6/30/2020
 ms.topic: article
 keywords: sicurezza, hololens, sicurezza, ingegneria
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
-ms.reviewer: ''
-manager: yannisl
+manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 60b11e93ec68e7899403aeec17bba0da7f2ca391
-ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
+ms.openlocfilehash: cecc556841033ee394f36915f4cae8839dad08df
+ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "10865816"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009534"
 ---
 # Ingegneria della sicurezza
 

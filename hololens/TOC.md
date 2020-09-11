@@ -72,6 +72,7 @@
 
 ## Criteri
 ### [Configurare HoloLens utilizzando pacchetti di provisioning](hololens-provisioning.md)
+### [Usare MDM per gestire i dispositivi HoloLens](hololens-mdm-configure.md)
 ### [Configurare il dispositivo HoloLens come chiosco](hololens-kiosk.md)
 # Distribuisci
 ## Registrazione

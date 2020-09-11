@@ -1,23 +1,24 @@
 ---
 title: Crittografia e protezione dei dati
 description: Crittografia e protezione dei dati
-author: jbennett
+author: evmill
+ms.author: v-evmill
+ms.reviewer: tagran
 ms.date: 6/30/2020
 ms.topic: article
 keywords: sicurezza, hololens, crittografia, protezione dei dati, dispositivo BitLocker, BitLocker, bitlocker, crittografia bitlocker, integrazione di azure
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
-ms.reviewer: ''
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: edf37e9e1461b69c1ae708f9c9e11985bb0480fd
-ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
+ms.openlocfilehash: 6f67e43eaf3a20a7f6948a448af2e5efdaa83821
+ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "10865833"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009544"
 ---
 # Crittografia e protezione dei dati
 

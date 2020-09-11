@@ -2,24 +2,27 @@
 title: Panoramica-gestione delle app
 description: app, gestione, gestione app
 keywords: HoloLens, utente, account, app, gestione applicazioni,
-author: v-jodben
+author: evmill
+ms.author: v-evmill
+ms.reviewer: tagran
 ms.date: 6/22/2020
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
 ms.localizationpriority: medium
 audience: ITPro
-manager: yannisl
+manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: eeed478970d08eff8789a9decd084f1863c6d7f9
-ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
+ms.openlocfilehash: e73a56e5a2fcef14e85f5f552e264dd8d796cc8f
+ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857954"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009454"
 ---
-# Gestione delle app: Panoramica
+# Gestione dell'app: panoramica
 
 È possibile distribuire le app in quattro percorsi diversi: **MDM (Mobile Device Management)**, **Microsoft Store per le aziende**, **Microsoft Store**o installarli tramite **provisioning**. 
 

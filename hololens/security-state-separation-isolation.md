@@ -1,23 +1,24 @@
 ---
 title: Isolamento e separazione di stato
 description: Isolamento e separazione di stato
-author: jbennett
+author: evmill
+ms.author: v-evmill
+ms.reviewer: tagran
 ms.date: 6/30/2020
 ms.topic: article
 keywords: sicurezza, hololens, separazione di stato, isolamento e separazione di stato, hololens 2, sicurezza hololens2, panoramica della sicurezza, architettura di sicurezza, architettura, architettura hololens 2
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
-ms.reviewer: ''
-manager: yannisl
+manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e92e2fcbc13ad5c9e5748b1d619e387ae9a4d147
-ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
+ms.openlocfilehash: 702b713b7a930a2e4909dffaa895856d918d11c9
+ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "10865879"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009414"
 ---
 # Isolamento e separazione di stato
 

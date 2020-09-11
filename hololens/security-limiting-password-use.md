@@ -1,24 +1,25 @@
 ---
 title: Limitazione dell'uso delle password
 description: limitazione dell'uso delle password per HoloLens
-author: jbennett
+author: evmill
+ms.author: v-evmill
+ms.reviewer: tagran
 ms.date: 6/30/2020
 ms.topic: article
 keywords: sicurezza, hololens, limitazione dell'uso delle password, password, password hololens, accesso, accedere, windows hello, hello, gestione account windows, accesso FIDO2, FIDO 2, WEBAUTHN, account locale, sicurezza hololens
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
-ms.reviewer: ''
-manager: yannisl
+manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 61330e77bc3aca5b0b21b58f18d087f7d5c06f3b
-ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
+ms.openlocfilehash: d577bc23089650e47159a8a77004a984059b095e
+ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "10865840"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009514"
 ---
 # Limitazione dell'uso delle password
 

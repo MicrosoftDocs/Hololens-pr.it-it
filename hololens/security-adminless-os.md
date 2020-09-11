@@ -1,22 +1,24 @@
 ---
 title: sistema operativo senza amministratore e sicurezza
 description: sistema operativo senza amministratore e sicurezza di hololens
-author: jbennett
+author: evmill
+ms.author: v-evmill
+ms.reviewer: tagran
 ms.date: 6/30/2020
+ms.prod: hololens
 ms.topic: article
 keywords: sicurezza, hololens, senza amministratore, sistema operativo, sistema operativo senza amministratore, OS amministratore, OS senza amministratore, hololens 2, sicurezza hololens2,
 ms.localizationpriority: high
-ms.reviewer: ''
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 9243c6376348cfc3e0c44a049435a0f4b47fc6f7
-ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
+ms.openlocfilehash: e8a10a32d30206877eb79d53c90e59307b3990ab
+ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "10865766"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009564"
 ---
 # Sistema operativo senza amministratore
 

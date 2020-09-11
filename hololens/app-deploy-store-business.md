@@ -2,25 +2,29 @@
 title: Microsoft Store per le aziende
 description: Microsoft Store for business, msfb,
 keywords: Microsoft Store for business, msfb, distribuzione di app, Store
-author: v-jodben
+author: evmill
+ms.author: v-evmill
 ms.date: 6/22/2020
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
 ms.localizationpriority: medium
 audience: HoloLens
-manager: yannisl
-ms.openlocfilehash: 57f2c75fd8b9f1295fd7380792bb8154888abb07
-ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
+manager: yannisle
+ms.openlocfilehash: 82748301ccb6306c61e8a6f32ee126629221646a
+ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857898"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009494"
 ---
 # Microsoft Store per le aziende
 
 Microsoft Store for business è progettato principalmente per i responsabili decisionali e gli amministratori di aziende e organizzazioni con un modo flessibile per trovare, acquisire, gestire e distribuire app gratuite e a pagamento nei dispositivi di selezione dei mercati di Windows 10 in volume. 
 
 È possibile gestire le app di Microsoft Store e le app line-of-business private in un unico inventario e assegnare e riutilizzare le licenze in base alle esigenze. È anche possibile scegliere il metodo di distribuzione migliore per l'organizzazione: assegnare direttamente le app a singoli e team, pubblicare app in pagine private in Microsoft Store o connettersi a soluzioni di gestione per altre opzioni.
+
+Quando Microsoft Store for business viene usato da un utente finale, l'app Microsoft Store verrà avviata. Dopo aver lanciato l'utente sarà in grado di selezionare la scheda con il nome dell'organizzazione, verranno presentate le app disponibili per il dispositivo.
 
 > [!Note] 
 > Microsoft Store per le aziende non Scarica automaticamente (push) le app nei dispositivi. Tuttavia, le app di Microsoft Store per le aziende possono essere associate al server di gestione dei dispositivi (MDM) per la destinazione e la sincronizzazione delle app nei dispositivi.

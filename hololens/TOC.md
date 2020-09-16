@@ -66,6 +66,7 @@
 ## Connettività di rete
 ### [Configurare la rete per HoloLens](hololens-commercial-infrastructure.md)
 ### [Connettere HoloLens a una rete](hololens-network.md)
+### [Preparare certificati e profili di rete per HoloLens 2](hololens-certificates-network.md)
 ### [Gestire gli endpoint di connessione per HoloLens](hololens-offline.md)
 ### [Connessione a dispositivi Bluetooth e USB-C](hololens-connect-devices.md)
 

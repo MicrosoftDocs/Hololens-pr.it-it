@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f5c45477ab33064afe30e275f8b0003bc6022eac
-ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
+ms.openlocfilehash: c6b2bf3d48da642e91b8709cfdf35d03a7913ac4
+ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "10929852"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "11016690"
 ---
 # Configurare il dispositivo HoloLens come chiosco
 
@@ -31,7 +31,9 @@ Puoi configurare un dispositivo HoloLens in modo che funzioni come dispositivo a
 Questo articolo fornisce informazioni sugli aspetti della configurazione del chiosco specifici per i dispositivi HoloLens. Per informazioni generali sui diversi tipi di chioschi multimediali basati su Windows e su come configurarli, vedere [configurare i chioschi e i segni digitali nelle edizioni desktop di Windows](https://docs.microsoft.com/windows/configuration/kiosk-methods).  
 
 > [!IMPORTANT]  
-> La modalità Kiosk determina quali app sono disponibili quando un utente accede al dispositivo. La modalità Kiosk tuttavia non è un metodo di sicurezza. Non interrompe un'app "consentita" dall'aprire un'altra app non consentita. Per bloccare le app o i processi da aprire, usare il [CSP WDAC (Windows Defender Application Control)](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) per creare criteri appropriati.  
+> La modalità Kiosk determina quali app sono disponibili quando un utente accede al dispositivo. La modalità Kiosk tuttavia non è un metodo di sicurezza. Non interrompe un'app "consentita" dall'aprire un'altra app non consentita. Per bloccare le app o i processi da aprire, usare il [CSP WDAC (Windows Defender Application Control)](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) per creare criteri appropriati.
+>
+> Leggi altre informazioni sui servizi Microsoft per offrire agli utenti un livello di sicurezza avanzato che HoloLens 2 USA, per saperne di più su [separazione e isolamento dello stato-protezioni difensore](security-state-separation-isolation.md#defender-protections). Per informazioni su come [usare WDAC e Windows PowerShell per consentire o bloccare le app su dispositivi HoloLens 2 con Microsoft Intune](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens).
 
 Puoi usare la modalità Kiosk in una configurazione Single-app o multi-app ed è possibile usare uno dei tre processi per configurare e distribuire la configurazione del chiosco.
 
@@ -96,7 +98,7 @@ Se si usa un sistema di gestione di dispositivi mobili (MDM) o un pacchetto di p
 |Nome dell'app |AUMID |
 | --- | --- |
 |Visualizzatore 3D |Microsoft. Microsoft3DViewer \ _8wekyb3d8bbwe \! Microsoft. Microsoft3DViewer |
-|Calendar |Microsoft. windowscommunicationsapps \ _8wekyb3d8bbwe \! Microsoft. felici. Calendar |
+|Calendario |Microsoft. windowscommunicationsapps \ _8wekyb3d8bbwe \! Microsoft. felici. Calendar |
 |Fotocamera <sup> 1, 2</sup> |HoloCamera \ _cw5n1h2txyewy \ \! HoloCamera |
 |Cortana <sup> 3</sup> |Microsoft. 549981C3F5F10 \ _8wekyb3d8bbwe \! App |
 |Selezione dispositivo in HoloLens (1a generazione) |HoloDevicesFlow \ _cw5n1h2txyewy \ \! HoloDevicesFlow |

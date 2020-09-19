@@ -1,6 +1,6 @@
 ---
-title: Impostazioni URI
-description: Elenco degli URI supportati da HoloLens per PageVisibilityList
+title: Visibilità impostazioni pagina
+description: Elenco degli URI supportati da HoloLens per PageVisibilityList e guida
 author: evmill
 ms.author: v-evmill
 ms.date: 09/16/2020
@@ -13,14 +13,14 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 17959fa25763d2c6b89d0956f29b9999b3012e60
-ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
+ms.openlocfilehash: 7a24d64b0b60be9f922260b7145d04c2c13951ed
+ms.sourcegitcommit: 8b5e349990ba5566bcc6a2a72ff83d1a21b099b8
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 09/17/2020
-ms.locfileid: "11016700"
+ms.locfileid: "11026939"
 ---
-# Impostazioni URI
+# Visibilità impostazioni pagina
 
 L’uso di [criteri Impostazioni/pageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) per limitare le pagine visualizzate all’interno dell’app, è una delle funzionalità gestibili per i dispositivi HoloLens. PageVisibilityList è un criterio che consente agli amministratori IT di impedire che pagine specifiche nelle impostazioni di sistema siano visibili o accessibili oppure di farlo per tutte le pagine ad accezioni di quelle specificate. 
 
@@ -122,8 +122,7 @@ I dispositivi HoloLens e i dispositivi Windows 10 hanno una selezione di pagine 
 | Windows Update - Verifica la disponibilità di aggiornamenti | ms-settings:windowsupdate-action          |
 | Opzioni avanzate                    | ms-settings:windowsupdate-options         |
 
-> [!NOTE]
->  1 I due URI seguenti non portano alle Opzioni Avanzate o la pagina Opzioni, bloccano/mostrano solo la pagina principale di Windows Update. 
+>  <sup>1 </sup> I due URI seguenti non portano alle **Opzioni Avanzate** o alla pagina **Opzioni**, bloccano/mostrano solo la pagina principale di Windows Update. 
 > - ms-settings:windowsupdate-options
 > - ms-settings:windowsupdate-restartoptions 
 

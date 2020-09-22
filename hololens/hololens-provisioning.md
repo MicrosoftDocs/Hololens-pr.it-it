@@ -16,12 +16,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: da783756c271c589f67efca0c229ad0f777857e2
-ms.sourcegitcommit: ccdd628cdbb5b89741f5dbc971143cb2fd2e451b
+ms.openlocfilehash: c10f07a6caeae6f2e8ace41d345c3ad11901621a
+ms.sourcegitcommit: 89ce6cdc0fc6d70a88217791c5f6d613778af614
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10990905"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11052645"
 ---
 # Configurare HoloLens usando un pacchetto di provisioning
 
@@ -210,4 +210,4 @@ In Progettazione configurazione di Windows, quando crei un pacchetto di provisio
 Le app possono essere installate tramite pacchetti di provisioning nei dispositivi HoloLens 2. Questo consente un pacchetto facilmente riutilizzabile che puoi usare per aiutarti a distribuire le tue app. Leggere le istruzioni complete per la [distribuzione delle app tramite il provisioning dei pacchetti](app-deploy-provisioning-package.md).  
 
 > [!NOTE]
-> HoloLens (1st Gen) non supporta l'installazione di app (**UniversalAppInstall**) usando un pacchetto di provisioning.
+> HoloLens (1a generazione) ha un supporto limitato per l'installazione di app (**UniversalAppInstall**) usando un pacchetto di provisioning. I dispositivi HoloLens (1a Gen) supportano solo l'installazione di un'app tramite PPKG solo durante la configurazione guidata e solo con le installazioni di contesto utente.

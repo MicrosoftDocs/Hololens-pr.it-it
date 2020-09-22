@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 604e1e54999f7fb76a3a6a31223c3d59b7e4161f
-ms.sourcegitcommit: 4ad9b6c73913808175b1a448d2be9e33592f65af
+ms.openlocfilehash: 64e31a03eb3c8cf1c0e6112fd0605aaebb26ba64
+ms.sourcegitcommit: 89ce6cdc0fc6d70a88217791c5f6d613778af614
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "11027443"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11052635"
 ---
 # Insider Preview per Microsoft HoloLens
 
@@ -43,7 +43,6 @@ Ecco l'elenco delle caratteristiche future che puoi provare oggi in Windows Insi
 |[Tenantlockdown CSP e Autopilot](hololens-insider.md#tenantlockdown-csp-and-autopilot) | Dopo la registrazione del tenant e il criterio viene applicato, il dispositivo può essere registrato solo in tale tenant ogni volta che il dispositivo viene reimpostato o reinizializzato. | 19041.1366 +|
 | [Accesso assegnato globale](hololens-insider.md#global-assigned-access--kiosk-mode)                                 | Configura il dispositivo HoloLens 2 per la modalità Kiosk di più app applicabile a livello di sistema. | 19041.1356 +                 |
 | [Avvio automatico di un'app nel chiosco multi-app](hololens-insider.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                  | Imposta l'avvio automatico di un'applicazione durante l'accesso a una modalità Kiosk a più app.     | 19041.1346 +                 |
-| [Accesso automatico dei visitatori per i chioschi](hololens-insider.md#visitor-auto-logon-for-kiosks)                          | Consente di usare l'accesso automatico agli account dei visitatori per le modalità Kiosk.                         | 19041.1361 +                 |
 | [Modifiche al comportamento della modalità Kiosk per la gestione degli errori](hololens-insider.md#kiosk-mode-behavior-changes-for-handling-of-failures) | Le modifiche apportate al modo in cui viene gestito l'errore della modalità Kiosk.                                              | 19041.1356 +                 |
 | [Criteri HoloLens](hololens-insider.md#hololens-policies)                                      | Nuovi criteri per i dispositivi di realtà mista.                                                        | 19041.1349 +                 |
 | [Appartenenza al gruppo della cache AAD per il chiosco offline](hololens-insider.md#cache-aad-group-membership-for-offline-kiosk)           | Criteri per il numero di giorni in cui è consentito usare la cache di appartenenza al gruppo AAD per la modalità Kiosk.    | 19041.1356 +                 |
@@ -212,18 +211,6 @@ L'applicazione viene avviata automaticamente quando l'utente effettua l'accesso.
 <AllowedApps>                     
     <!--TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
 ```
-
-### Accesso automatico visitatori per chioschi multimediali
-Questa nuova funzionalità consente di usare l'accesso automatico agli account del visitatore per le modalità Kiosk. 
-
-Per una configurazione non AAD, per configurare un dispositivo per l'autologo del visitatore:
-1.  Creare un pacchetto di provisioning che:
-    1.  Configura **le impostazioni di runtime/AssignedAccess** per consentire agli account del visitatore.
-    1.  Facoltativamente, il dispositivo viene registrato in MDM **(impostazioni di runtime/area di lavoro/iscrizioni)** in modo che possa essere gestito in un secondo momento.
-    1.  Non creare un account locale
-1.  [Applicare il pacchetto di provisioning](hololens-provisioning.md).
-
-Per una configurazione AAD, gli utenti possono ottenere qualcosa di simile a questo oggi senza questo cambiamento. I dispositivi collegati a AAD configurati per la modalità Kiosk possono accedere a un account del visitatore con un singolo tocco di pulsante della schermata di accesso. Dopo aver eseguito l'accesso all'account del visitatore, il dispositivo non richiederà più di accedere finché il visitatore non viene esplicitamente disconnesso dal menu Start o il dispositivo viene riavviato.
 
 ### Modifiche al comportamento della modalità Kiosk per la gestione degli errori
 

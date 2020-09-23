@@ -3,7 +3,7 @@ title: Accesso assegnato globale
 description: Guida all'uso di URI OMA per chioschi di Accesso assegnato globale
 author: evmill
 ms.author: v-evmill
-ms.date: 7/13/2020
+ms.date: 9/21/2020
 ms.topic: article
 keywords: hololens, hololens 2, accesso assegnato, chiosco
 ms.prod: hololens
@@ -13,12 +13,12 @@ ms.reviewer: lavinds
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1a0a3eb8ef3d21b34e13711bcc890af57e5ae2c2
-ms.sourcegitcommit: 7c16570839893f4a4432286b13ae6d84c665d376
+ms.openlocfilehash: c2be1123d0e8a09d6955fb6e5da782daebc96bcf
+ms.sourcegitcommit: 89ce6cdc0fc6d70a88217791c5f6d613778af614
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "10902301"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11052625"
 ---
 # Accesso assegnato globale: chiosco
 
@@ -44,7 +44,7 @@ Questa funzionalità consente di configurare il dispositivo Hololens 2 per la mo
 
 2.  Seguire la procedura descritta in [Uso di un pacchetto di provisioning per la configurazione di un chiosco multimediale con una o più app](https://docs.microsoft.com/hololens/hololens-kiosk#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk) e in particolare la sezione "Pacchetto di provisioning, passaggio 2: Aggiunta del file XML di configurazione del chiosco al pacchetto di provisioning” e fare riferimento al file XML salvato nel passaggio precedente. 
 
-## È possibile creare una configurazione in cui l’accesso globale si applica a tutti gli utenti, ad eccezione di 1 account AAD o un gruppo AAD? 
+## È possibile creare una configurazione in cui l’accesso globale si applica a tutti gli utenti e una configurazione separata si applica a 1 account AAD o un gruppo AAD? 
 
 Sì, consultare il BLOB XML di esempio seguente. Il profilo di accesso assegnato globale viene applicato a Hololens quando non ne viene trovato uno specifico per l'utente connesso. Si tratta quindi della configurazione predefinita della modalità chiosco per l’utente connesso. Ecco un esempio di BLOB XML da usare: 
 

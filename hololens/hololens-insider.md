@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 8/21/2020
+ms.date: 9/23/2020
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 64e31a03eb3c8cf1c0e6112fd0605aaebb26ba64
-ms.sourcegitcommit: 89ce6cdc0fc6d70a88217791c5f6d613778af614
+ms.openlocfilehash: c5e050fefc9a6a0717dea2258ada39df302f2e45
+ms.sourcegitcommit: 8c036f12a341a063eb7827ee7b70784402dad57f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11052635"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "11077693"
 ---
 # Insider Preview per Microsoft HoloLens
 
@@ -35,8 +35,6 @@ Ecco l'elenco delle caratteristiche future che puoi provare oggi in Windows Insi
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
 | [Supporto per la posizione degli occhi automatici](hololens-insider.md#auto-eye-position-support)                              | Trova attivamente le posizioni degli occhi e consente il posizionamento accurato degli ologrammi.                        | 19041.1339 +                 |
 | [Gestione certificati](hololens-insider.md#certificate-manager)                                     | Gli utenti possono visualizzare, installare e rimuovere certificati gli utenti correnti e i certificati del computer locale nell'app Impostazioni.                                         | 19041.1361 +                 |
-| [Programma di installazione app](hololens-insider.md#install-apps-on-hololens-2-via-app-installer) | Nell'interfaccia utente del dispositivo per installare le app da file appx. | 19041.1377 + |
-| [Installazione di app da una pagina Web](hololens-insider.md#installing-apps-from-a-web-page) | Configurare le app da scaricare e installare dal browser. | 19041.1366 + | 
 | [Avvio automatico del provisioning da USB](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE rileva automaticamente i pacchetti di provisioning sulle unità USB.                                | 19041.1361 +                 |
 | [Convalidare automaticamente i pacchetti di provisioning in OOBE](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | Applicare automaticamente i pacchetti di provisioning in OOBE.                                             | 19041.1361 +                 |
 | [Uso di Autopilot con connessione Wi-Fi](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | Usare il pilota automatico da Wi-Fi per dispositivi senza bisogno di un adattatore Ethernet.                             | 19041.1364 +                 |
@@ -108,22 +106,6 @@ Il certificato dovrebbe ora essere installato nel dispositivo.
 ![Visualizzatore certificati nell'app impostazioni](images/certificate-viewer-device.jpg)
 
 ![Immagine che Mostra come usare l'interfaccia utente del certificato per installare un certificato](images/certificate-device-install.jpg)
-
-### Installare app in HoloLens 2 tramite il programma di installazione di app
-Ora gli utenti possono installare le app tramite bundle appx, senza la necessità di abilitare la modalità sviluppatore o usare Device Portal. Questa esperienza è semplice per l'installazione di app su dispositivi locali o per la condivisione di un'app con un altro utente che non ha familiarità con altri metodi di installazione dell'app in HoloLens.
-
-Si tratta di un metodo semplice per distribuire un'app completamente integrata. Indipendentemente dal fatto che tu voglia semplicemente provare la tua app a un altro utente con un HoloLens o desideri distribuire l'app in scala questo metodo funzionerà per entrambi.
-
-Leggere il processo completo di [installazione delle app in HoloLens 2 con il programma di installazione dell'app](app-deploy-app-installer.md).  
-
-![Installazione di esempi di MRTK tramite il programma di installazione dell'app](images/hololens-app-installer-picture.jpg)
-
-### Installazione di app da una pagina Web
-Ora in Windows Insider Builds 19041.1366 + gli utenti possono installare un'app direttamente da un server Web. 
-
-I pacchetti appx ora in creazione possono essere ospitati in una pagina Web. In combinazione con la distribuzione del certificato questo metodo di distribuzione delle app può essere molto utile per la distribuzione dell'app.
-
-Informazioni sul processo completo di [installazione delle app in HoloLens 2 da una pagina Web](app-deploy-web-installer.md)
 
 ### Avvio automatico del provisioning da USB
 Prima che gli utenti della build dovessero avviare manualmente la schermata di provisioning durante la configurazione guidata per il provisioning tramite una combinazione di pulsanti. Ora gli utenti possono ignorare la combinazione di pulsanti usando un pacchetto di provisioning in un'unità di archiviazione USB. 
@@ -260,7 +242,10 @@ Criteri appena abilitati che consentono di avere più opzioni di gestione dei di
 - [AllowAddProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)
 - [AllowRemoveProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage) 
 - [ConfigureTimeZone](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-timelanguagesettings#timelanguagesettings-configuretimezone)
-- [RemoteLock](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp)
+- [RemoteLock](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp) *
+
+>[!NOTE]
+> Per quanto riguarda [RemoteLock](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp), HoloLens sosterrà solo la configurazione di/vendor/MSFT/RemoteLock/Lock. Le configurazioni che gestiscono il PIN, ad esempio Reset e ripristino, non sono supportate.
 
 ### Nuovi criteri di alimentazione per Hololens 2
 Questi nuovi criteri aggiunti consentono agli amministratori di controllare gli Stati di alimentazione, ad esempio il timeout inattivo. Per saperne di più su ogni singolo criterio, fare clic sul collegamento relativo al criterio.

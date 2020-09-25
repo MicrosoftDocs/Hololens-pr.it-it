@@ -11,12 +11,12 @@ metadata:
   ms.author: v-todmc
   ms.date: 5/22/2020
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: e867f5963f0f81261935b4ea6fc045200a48b61d
-  ms.sourcegitcommit: 85f0263ab0329477c423e92842c45fb465f2a466
+  ms.openlocfilehash: 7afce81a15745b6ece3707972e6f8b5d82ba17ff
+  ms.sourcegitcommit: 44de31c6d3534b6e0b73ddc2a9336147daf7a41d
   ms.translationtype: HT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 08/31/2020
-  ms.locfileid: "10978949"
+  ms.lasthandoff: 09/25/2020
+  ms.locfileid: "11078374"
 landingContent:
 - title: Panoramica di HoloLens
   linkLists:
@@ -131,4 +131,4 @@ landingContent:
     - text: Introduzione allo sviluppo della realtà mista
       url: https://docs.microsoft.com/windows/mixed-reality/development?tabs=unity
     - text: Supporto tecnico
-      url: https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f
+      url: https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=e9391227-fa6d-927b-0fff-f96288631b8f

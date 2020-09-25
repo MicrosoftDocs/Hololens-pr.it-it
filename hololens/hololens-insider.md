@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: c5e050fefc9a6a0717dea2258ada39df302f2e45
-ms.sourcegitcommit: 8c036f12a341a063eb7827ee7b70784402dad57f
+ms.openlocfilehash: caf860ad5926c03d1e87e829f04838531510df51
+ms.sourcegitcommit: 44de31c6d3534b6e0b73ddc2a9336147daf7a41d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "11077693"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "11078384"
 ---
 # Insider Preview per Microsoft HoloLens
 
@@ -258,6 +258,9 @@ Questi nuovi criteri aggiunti consentono agli amministratori di controllare gli 
 |     [EnergySaverBatteryThresholdPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)     |     Valore di esempio da usare in Windows Configuration designer, ovvero 100                                                                          |
 |     [StandbyTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutonbattery)                  |     Valore di esempio da usare in Windows Configuration designer, ovvero   `<enabled/><data   id="EnterDCStandbyTimeOut" value="100"/>`          |
 |     [StandbyTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutpluggedin)                  |     Valore di esempio da usare in Windows Configuration designer, ovvero  `<enabled/><data   id="EnterACStandbyTimeOut" value="100"/>`           |
+
+> [!NOTE]
+> Per un'esperienza coerente su HoloLens 2, assicurati che i valori di DisplayOffTimeoutOnBattery e StandbyTimeoutOnBattery siano impostati come stesso valore. Lo stesso vale per DisplayOffTimeoutPluggedIn e StandbyTimeoutPluggedIn. Per altri dettagli sulla modalità standby moderna, vedere [visualizzare, dormire e sospendere i timer di ozio](https://docs.microsoft.com/windows-hardware/design/device-experiences/display--sleep--and-hibernate-idle-timers) .
 
 ### Criteri di aggiornamento appena abilitati per HoloLens
 Questi criteri di aggiornamento sono ora abilitati nei dispositivi HoloLens 2:

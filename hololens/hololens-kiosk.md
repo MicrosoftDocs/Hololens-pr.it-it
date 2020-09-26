@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 8844f691ec5395f9c69bce7df44125da9c838f14
-ms.sourcegitcommit: 7bf0f92aaf1683c7c39ed6b17ac47231c5088365
+ms.openlocfilehash: 920ba7e84b1bb4818aef4efdee60be004d8a3300
+ms.sourcegitcommit: e6885d03c980b33dd0bab5c418cbd1892d5ff123
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11072793"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "11080445"
 ---
 # Configurare il dispositivo HoloLens come chiosco
 
@@ -90,8 +90,10 @@ Se usi Windows Device Portal per configurare un chiosco di app singole, selezion
 
 Se si usa un sistema di gestione di dispositivi mobili (MDM) o un pacchetto di provisioning per configurare la modalità Kiosk, è possibile usare il [provider del servizio di configurazione di AssignedAccess](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) per specificare le applicazioni. Il CSP usa l' [ID del modello utente (aumid) Application](https://docs.microsoft.com/windows/configuration/find-the-application-user-model-id-of-an-installed-app) per identificare le applicazioni. Nella tabella seguente sono elencate le Aumid di alcune applicazioni in-box che è possibile usare in un chiosco multiapp.
 
-> [!CAUTION]
-> Non è possibile selezionare l'app shell come app Kiosk. Inoltre, ti consigliamo di **non** selezionare Microsoft Edge, Microsoft Store o Esplora file come app Kiosk.  
+> [!IMPORTANT]
+> La modalità Kiosk determina quali app sono disponibili quando un utente accede al dispositivo. La modalità Kiosk tuttavia non è un metodo di sicurezza. Non interrompe un'app "consentita" dall'aprire un'altra app non consentita. Poiché non limitiamo questo comportamento, le app possono ancora essere avviate da Edge, Esplora file e dalle app di Microsoft Store. Se sono presenti app specifiche che non si vogliono avviare da un chiosco, usare il [CSP WDAC (Windows Defender Application Control)](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) per creare criteri appropriati. 
+> 
+> Inoltre, la Home realtà mista non è in grado di essere impostata come app Kiosk.
 
 <a id="aumids"></a>
 

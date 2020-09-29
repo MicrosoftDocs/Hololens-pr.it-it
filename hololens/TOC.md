@@ -39,6 +39,8 @@
 ## Pianificazione della distribuzione di HoloLens 2 nell’organizzazione
 ### [Distribuire HoloLens in un ambiente commerciale](hololens-requirements.md)
 ### [Scenari comuni di distribuzione dell'infrastruttura](common-scenarios.md)
+## Scenari comuni
+### [Protezione offline](hololens-common-scenarios-offline-secure.md)
 ## Sicurezza
 ### [Panoramica della sicurezza](security-overview.md)
 ### [Architecture](security-architecture.md)

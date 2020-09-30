@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: caf860ad5926c03d1e87e829f04838531510df51
-ms.sourcegitcommit: 44de31c6d3534b6e0b73ddc2a9336147daf7a41d
+ms.openlocfilehash: 439ae9ddfbc6e7a83807e85c445f3d9f4cd2e182
+ms.sourcegitcommit: fa2e551e3294ee49677035f5461b28861b20170f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "11078384"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "11088610"
 ---
 # Insider Preview per Microsoft HoloLens
 
@@ -33,7 +33,7 @@ Ecco l'elenco delle caratteristiche future che puoi provare oggi in Windows Insi
 
 | Funzionalità                                                | Descrizione                                                                                    | Disponibile nelle build Insider |
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
-| [Supporto per la posizione degli occhi automatici](hololens-insider.md#auto-eye-position-support)                              | Trova attivamente le posizioni degli occhi e consente il posizionamento accurato degli ologrammi.                        | 19041.1339 +                 |
+| [Supporto per la posizione degli occhi automatici](hololens-insider.md#auto-eye-position-support)                              | Calcola attivamente le posizioni degli occhi e consente il posizionamento accurato degli ologrammi.                        | 19041.1339 +                 |
 | [Gestione certificati](hololens-insider.md#certificate-manager)                                     | Gli utenti possono visualizzare, installare e rimuovere certificati gli utenti correnti e i certificati del computer locale nell'app Impostazioni.                                         | 19041.1361 +                 |
 | [Avvio automatico del provisioning da USB](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE rileva automaticamente i pacchetti di provisioning sulle unità USB.                                | 19041.1361 +                 |
 | [Convalidare automaticamente i pacchetti di provisioning in OOBE](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | Applicare automaticamente i pacchetti di provisioning in OOBE.                                             | 19041.1361 +                 |
@@ -68,9 +68,6 @@ Ci sono alcune modifiche al comportamento del sistema con la funzionalità posiz
  Se l'utente passa da un'applicazione abilitata senza lo sguardo a quella che accede ai dati sugli sguardi, verrà visualizzata la richiesta di calibrazione. Non verrà modificato il flusso di esperienza fuori scatola. 
  
 Per le esperienze che richiedono dati sugli occhi o un posizionamento olografico molto preciso, è consigliabile che gli utenti non calibrati eseguano la calibrazione della verifica degli occhi dalla richiesta di calibrazione degli occhi o lancino l'app Impostazioni dal menu Start e quindi selezionando **sistema > calibrazione > calibrazione degli occhi > eseguire la calibrazione degli**occhi.
-
-**Problemi noti**
- - Stiamo esaminando un problema in cui il processo di host del driver dell'eye tracker potrebbe arrestarsi in modo anomalo durante l'esecuzione in un carico di memoria elevato. Il processo host del driver di rilevamento degli occhi deve essere recuperato automaticamente.
 
 ### Gestione certificati
 

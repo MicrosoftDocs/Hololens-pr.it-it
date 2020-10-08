@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: 33463685818c3e864c698160776c76ec7d8cbefd
-ms.sourcegitcommit: 9197b9d507d8b9b195bdf512d1b832888b53162d
+ms.openlocfilehash: 68e7b86259d4837be5bfa634c6ada4aa5b8006a1
+ms.sourcegitcommit: 5877c3e51de49f949b35ab840a3312a009a4487a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "10899108"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "11102345"
 ---
 # Windows Autopilot per HoloLens 2
 
@@ -199,6 +199,9 @@ La Pagina dello stato di registrazione (ESP) visualizza lo stato del processo di
 ## Esperienza utente di Windows Autopilot per HoloLens 2
 
 Dopo aver completato la procedura indicata in precedenza, gli utenti HoloLens 2 eseguiranno il provisioning dei dispositivi HoloLens tramite l'esperienza seguente:  
+
+> [!NOTE]
+> Se si usa Autopilot, si avrà un effetto sul [proprietario del dispositivo](security-adminless-os.md#device-owner).
 
 1. Come accennato in precedenza, nella versione corrente, i dispositivi devono essere connessi a Internet prima di attivare HoloLens e avviare il processo di provisioning di Autopilot. Connettere il dispositivo a Ethernet tramite le schede "USB C a Ethernet" per la connettività internet cablata o le schede "USB C a WiFi" per la connettività Internet wireless.
    

@@ -13,12 +13,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: ea35012e63f4c0d8868f9604809c1552c3212e72
-ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
+ms.openlocfilehash: c7c54c624fe2e1c48eee468e2d30fe3460f7e786
+ms.sourcegitcommit: 5877c3e51de49f949b35ab840a3312a009a4487a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "11016640"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "11102315"
 ---
 # Sistema operativo senza amministratore
 
@@ -29,6 +29,8 @@ Queste funzionalità dell'applicazione continuano ad avere il modello di classif
   * Windows
 
 I componenti di Windows possono anche usare la sandbox AppContainer con la piattaforma UWP di sistema. Per altre informazioni sulla piattaforma UWP (Universal Windows Platform), vedere la [Documentazione della piattaforma UWP (Universal Windows Platform)](https://docs.microsoft.com/windows/uwp/). Inoltre, i componenti di Windows con maggiori esigenze di riduzione dei privilegi, ad esempio le pagine di contenuti del browser e i parser, usano la sandbox LPAC (Less Privileged AppContainer), che interrompe l'accesso al set di risorse accessibile a tutti gli AppContainer.
+
+## Proprietario del dispositivo
 
 Infine, l'esecuzione di specifiche operazioni a livello di dispositivo, come l'aggiunta del dispositivo a un tenant o la gestione utenti, è consentita solo per i proprietari dei dispositivi. Questo gruppo viene popolato dagli utenti nel dispositivo attraverso una di queste operazioni:
   * Il primo utente nel dispositivo è sempre designato come proprietario. 

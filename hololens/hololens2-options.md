@@ -1,7 +1,7 @@
 ---
-title: Setting up your HoloLens 2 edition
-description: How each HoloLens 2 option is the same or different and what to do after getting one.
-keywords: Hololens 2 purchasing options, HoloLens options, Developer Edition
+title: Configurazione della HoloLens 2 Edition
+description: In che modo ogni opzione di HoloLens 2 è uguale o diversa e cosa fare dopo averne ottenuto uno.
+keywords: Hololens 2 opzioni di acquisto, opzioni HoloLens, versione per sviluppatori
 author: evmill
 ms.author: v-evmill
 ms.reviewer: sekerawa
@@ -14,27 +14,27 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1c4729b5e4cf39889058ce18b61f4a458a32cbac
-ms.sourcegitcommit: 5877c3e51de49f949b35ab840a3312a009a4487a
+ms.openlocfilehash: f5e13a150cea439228233c11173996f38aea2a9d
+ms.sourcegitcommit: 6927a5666c7232bd53164eec017f8364626e752b
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/07/2020
-ms.locfileid: "11102365"
+ms.locfileid: "11103877"
 ---
-# HoloLens 2 Overview
+# Panoramica di HoloLens 2
 
-HoloLens is a mixed reality device with apps and solutions that enhance collaboration, *powered by holograms*. With HoloLens 2, experience new heights of productivity and innovation – with purpose – to work smarter.
+HoloLens è un dispositivo di realtà mista *alimentato da ologrammi* e offre app e soluzioni che migliorano la collaborazione. Con HoloLens 2, sperimenta nuove altezze di produttività e innovazione, con lo scopo, per lavorare in modo più intelligente.
 
-Whether you are an [IT professional](https://www.microsoft.com/hololens/apps) looking for your next industry solution, a [developer](https://www.microsoft.com/hololens/developers) seeking to create experiences for a new reality, or a [business decision maker](https://www.microsoft.com/hololens/apps) thinking about your next innovation – HoloLens 2 is your new reality for computing. 
+Che tu sia un [professionista IT che](https://www.microsoft.com/hololens/apps) cerca la tua prossima soluzione di settore, uno [sviluppatore](https://www.microsoft.com/hololens/developers) che cerca di creare esperienze per una nuova realtà o un [decisore aziendale](https://www.microsoft.com/hololens/apps) che pensa alla tua prossima innovazione-HoloLens 2 è la tua nuova realtà per l'informatica. 
 
-## Options Overview
+## Panoramica delle opzioni
 
-**HoloLens 2 (device only)** - HoloLens 2 offers the most comfortable and immersive mixed reality experience available — enhanced by the reliability, security, and scalability of cloud and AI services from Microsoft.
+**HoloLens 2 (solo dispositivo)** -HoloLens 2 offre l'esperienza di realtà mista più comoda ed immersiva disponibile, migliorata dall'affidabilità, dalla sicurezza e dalla scalabilità dei servizi cloud e ai di Microsoft.
 
-**HoloLens 2 with Dynamics 365 Remote Assist** - Get started on day one with HoloLens 2 and the ultimate mixed reality communication app from Microsoft, available together. Help your whole company be more productive and innovate with more purpose. Experience mixed reality now with Dynamics 365 and solutions from industry partners.
+**HoloLens 2 con Dynamics 365 Remote Assist** -iniziare il primo giorno con HoloLens 2 e l'app di comunicazione di realtà mista finale di Microsoft, disponibile insieme. Aiutare l'intera azienda ad essere più produttiva e a innovare con più finalità. Esperienza di realtà mista ora con le dinamiche 365 e le soluzioni dei partner del settore.
 
-## Get started with HoloLens 2 options
-Select a tab to learn more about your HoloLens journey. 
+## Introduzione alle opzioni di HoloLens 2
+Selezionare una scheda per ottenere maggiori informazioni sul viaggio di HoloLens. 
 
 [!INCLUDE[](includes/options-overview.md)]
 

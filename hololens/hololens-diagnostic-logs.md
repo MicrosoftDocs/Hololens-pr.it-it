@@ -1,9 +1,9 @@
 ---
 title: Raccogliere e usare le informazioni di diagnostica dai dispositivi HoloLens
-description: ''
+description: Raccogliere e usare le informazioni di diagnostica dai dispositivi HoloLens
 author: Teresa-Motiv
 ms.author: v-tea
-ms.date: 03/23/2020
+ms.date: 10/15/2020
 ms.prod: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: b3071c2c66bf1e9c07ba2481b3e22a0d5125bc6d
-ms.sourcegitcommit: 8b56f4b9b5f9c928fc361f18efcbea729055a0b2
+ms.openlocfilehash: 8e72bef1ad82faeb734123828050de5273bc6505
+ms.sourcegitcommit: fba9bdbb9b9326f522d5078e776b68ac6c94b6a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "10919137"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "11119946"
 ---
 # Raccogliere e usare le informazioni di diagnostica dai dispositivi HoloLens
 
@@ -122,6 +122,12 @@ In situazioni in cui il dispositivo non è in grado di raccogliere la diagnostic
 
 Questa operazione funziona quando il dispositivo viene visualizzato in Esplora file dopo averla collegata a un PC tramite un cavo USB. 
 
+> [!NOTE]
+> La diagnostica offline è abilitata solo quando l'utente sta attraversando il valore dei criteri OOBE o [System\AllowTelemetry](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) è impostato su Full (il valore predefinito è Basic in Hololens). 
+>
+> Per disabilitare la diagnostica offline, vai alla pagina **Impostazioni App > privacy** e seleziona **Basic** in **dati di diagnostica**.
+
+Guarda questo video per saperne di più. 
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Gathering-Diagnostic-Files-on-HoloLens2/player]
 
@@ -134,5 +140,8 @@ Seguire questa procedura per raccogliere la diagnostica:
 6.  Aggiornare Esplora file e passare alla cartella **' \Documents '** .
 7.  Copiare i file ZIP di diagnostica e condividerli con il team di supporto Microsoft.
 
-Nota, alcuni file ZIP di diagnostica possono contenere informazioni personali.
+> [!NOTE]
+> Alcuni file ZIP di diagnostica possono contenere informazioni personali.
+
+
 

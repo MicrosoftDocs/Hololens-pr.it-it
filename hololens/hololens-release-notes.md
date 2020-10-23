@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 23ec5478c35977d1fd1fa20a33827e441d4b5c12
-ms.sourcegitcommit: 264c8ff6726f702c3770525d774e0c1d263a2705
+ms.openlocfilehash: 85bba3c955c26bcfdb7e80a24be0befa1e06289e
+ms.sourcegitcommit: 8fb914cf6512c67444e0ead2050cf1c82bd5decc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "11117771"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "11134425"
 ---
 # Note sulla versione di HoloLens 2
 
@@ -155,7 +155,7 @@ L'aggiornamento software principale di maggio 2020 per HoloLens 2, *Windows olog
 
 ### Supporto per il pilota automatico di Windows
 
-Windows Autopilot per HoloLens 2 consente al canale di vendita del dispositivo di pre-registrare HoloLens nel tenant di Intune. Quando arrivano i dispositivi, sono pronti a eseguire la distribuzione automatica come dispositivi condivisi sotto il tenant. Per sfruttare la distribuzione automatica, il dispositivo deve connettersi a una rete durante la prima schermata del programma di installazione usando un dongle USB-C-to-Ethernet o USB-C-to-LTE.
+Windows Autopilot per HoloLens 2 consente al canale di vendita del dispositivo di pre-registrare HoloLens nel tenant di Intune. Quando arrivano i dispositivi, sono pronti a eseguire la distribuzione automatica come dispositivi condivisi sotto il tenant. Per sfruttare la distribuzione automatica, il dispositivo deve connettersi a una rete durante la prima schermata del programma di installazione usando un USB-C-to-Ethernet.
 
 Dopo che un utente ha avviato il processo di distribuzione automatica del pilota automatico, il processo completa i passaggi seguenti:
 

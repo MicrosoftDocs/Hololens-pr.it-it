@@ -13,12 +13,12 @@ manager: jarrettr
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 6183a478a9eee8a5ab6212443ea2955605754a21
-ms.sourcegitcommit: 7bf0f92aaf1683c7c39ed6b17ac47231c5088365
+ms.openlocfilehash: 8eef05c3d9f47fbbc86647ccf22c7de88bacc687
+ms.sourcegitcommit: b33dd8accef641578142e5234b9ad2d0222694ec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11072783"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "11134678"
 ---
 # Hardware HoloLens (prima generazione)
 
@@ -167,6 +167,22 @@ Per pulire la visiera, rimuovere la polvere usando un pennello per l'obiettivo p
 Per pulire il resto del dispositivo, inclusi l'archetto e i bracci del dispositivo, usare un panno senza pelucchi inumidito con acqua e sapone neutro. Far asciugare completamente il HoloLens prima di riusarlo.
 
 ![Immagine che mostra come pulire la visiera](images/hololens-cleaning-visor.png)
+
+## Ricerca del numero seriale
+
+Il numero seriale per i dispositivi HoloLens (1a Gen) viene stampato sotto l'obiettivo destro.
+1. Tenere il dispositivo davanti a sé come se si stesse per indossarlo.
+1. Con la lente ancora rivolta in avanti, capovolgere la deivce in modo da vedere la parte inferiore.
+1. La lente destra sarà ora a sinistra, stampata sotto l'obiettivo della banda è il numero seriale. 
+
+Il numero seriale può essere trovato anche tramite un PC connesso:
+
+1. Collegare il dispositivo
+1. Passare a **questo PC** in Esplora file
+1. Fare clic con il pulsante destro del mouse e scegliere **Proprietà** del dispositivo HoloLens
+1. Verrà visualizzato il numero di serie del dispositivo. Come questa schermata seguente.
+
+<img src="images/hl1-serial-number.png" width="400" height="600" />
 
 > [!div class="nextstepaction"]
 > [Configurare e avviare il HoloLens (1a generazione)](hololens1-setup.md)

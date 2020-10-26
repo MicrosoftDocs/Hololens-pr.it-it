@@ -2,7 +2,7 @@
 title: Hardware HoloLens 2
 description: Struttura dei componenti che costituiscono Microsoft HoloLens 2, l'ultima evoluzione del computer olografico Microsoft completamente autonomo che esegue Windows 10.
 ms.assetid: 651d0430-bfbc-4685-a4fd-db7c33ce9325
-ms.date: 9/17/2019
+ms.date: 10/20/2020
 keywords: hololens
 ms.prod: hololens
 ms.sitesec: library
@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 74afa9c39b66437e94aaf8f777ddc0347144b974
-ms.sourcegitcommit: 7bf0f92aaf1683c7c39ed6b17ac47231c5088365
+ms.openlocfilehash: 5299f56429adb6212074c16b67d2f10d418129f4
+ms.sourcegitcommit: b33dd8accef641578142e5234b9ad2d0222694ec
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11072773"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "11134654"
 ---
 # Hardware HoloLens 2
 
@@ -170,6 +170,25 @@ Per mantenere/accrescere la percentuale di carica della batteria interna mentre 
 Note:
 - Unità: HoloLens 2 venduto nella scatola nera in stile articolo al dettaglio.
 - Confezione esterna: imballaggio di protezione intorno all'unità.
+
+## Trovare il numero di serie
+
+Nei dispositivi HoloLens 2 il numero di serie è stampato sotto la visiera.
+1. Solleva la visiera del dispositivo.
+1. Cerca vicino al cuscinetto della fronte.
+1. Puoi trovare il numero di serie vicino alla cerniera. 
+
+
+<img src="images/serial-number-diagram-hl2.png" width="625" height="903" />
+
+È possibile recuperare il numero di serie anche tramite un PC connesso:
+
+1. Collega il dispositivo
+1. Passa a **Questo PC** in Esplora file
+1. Fai clic con il pulsante destro del mouse e seleziona **Proprietà** del dispositivo HoloLens
+1. Verrà visualizzato il numero di serie del dispositivo. Allo stesso modo della schermata seguente.
+
+<img src="images/ResetRecovery2.png" width="400" height="600" />
 
 ## Passaggio successivo
 

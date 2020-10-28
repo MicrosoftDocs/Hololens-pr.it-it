@@ -15,21 +15,23 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 1
-ms.openlocfilehash: f610de413c9990bd3f8bc4df63fa8c7ed821e32b
-ms.sourcegitcommit: 8c036f12a341a063eb7827ee7b70784402dad57f
+ms.openlocfilehash: ab67962efdafe3f39097210d60589dc6db715837
+ms.sourcegitcommit: c870802ea75a9dd602319c59fedb124f80c19b71
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "11077673"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "11136171"
 ---
 # Note sulla versione di HoloLens 1st (gen)
 
 ## Manutenzione a lungo termine di HoloLens (1a generazione)
 HoloLens (1a generazione) ha immesso lo stato Long Term Servicing (LTS). Gli aggiornamenti futuri si consentiranno di risolvere i problemi e le correzioni di sicurezza, mantenendo la parità di funzionalità con la versione olografica di Windows 10, Release 1809 per HoloLens (1a generazione).
 
+Per gli sviluppatori, ciò significa che le app HoloLens (1a Gen) non supportano l'API OpenXR.  Questi auricolari restano supportati in Unity 2019 LTS con il backend per l'API WinRT per il ciclo di vita completo di Unity 2019 LTS fino alla metà di 2022.
+
 ### Windows 10 olografico, versione 1809
 
-> **Si applica a:** Hololens (1a generazione)
+> **Si applica a:** HoloLens (1a generazione)
 
 | Funzionalità | Dettagli |
 |---|---|
@@ -63,7 +65,7 @@ HoloLens (1a generazione) ha immesso lo stato Long Term Servicing (LTS). Gli agg
 
 ### Windows 10, versione 1803 per Microsoft HoloLens
 
-> **Si applica a:** Hololens (1a generazione)
+> **Si applica a:** HoloLens (1a generazione)
 
 Windows 10, versione 1803, è il primo aggiornamento delle funzionalità di Windows olografico per le aziende sin dalla sua pubblicazione in Windows 10, versione 1607. Questo aggiornamento introduce le modifiche seguenti:
 
@@ -80,7 +82,7 @@ Windows 10, versione 1803, è il primo aggiornamento delle funzionalità di Wind
 
 - In precedenza, dopo avere effettuato l'accesso al dispositivo con un account di Azure Active Directory (Azure AD), è stato quindi necessario **aggiungere l'accesso al lavoro** nelle **Impostazioni** per accedere alle risorse aziendali. A questo punto, accedi con un account di Azure AD e la registrazione avviene automaticamente.
 
-- Prima di accedere, è possibile scegliere l'icona di rete sotto il campo password per scegliere un'altra rete Wi-Fi a cui connettersi. È anche possibile connettersi a una rete Guest, ad esempio in un hotel, un centro conferenze o un'azienda.
+- Prima di accedere, è possibile scegliere l'icona di rete sotto il campo password per scegliere una rete di Wi-Fi diversa a cui connettersi. È anche possibile connettersi a una rete Guest, ad esempio in un hotel, un centro conferenze o un'azienda.
 
 - Ora puoi condividere facilmente [HoloLens con più persone](hololens-multiple-users.md) usando gli account di Azure ad.
 

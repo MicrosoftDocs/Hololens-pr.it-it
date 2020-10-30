@@ -3,7 +3,7 @@ title: Trovare, installare e disinstallare le applicazioni
 description: Microsoft Store è la tua fonte per le app e i giochi compatibili con HoloLens.  Impara di più su come trovare, installare e disinstallare le app olografiche.
 ms.assetid: cbe9aa3a-884f-4a92-bf54-8d4917bc3435
 ms.reviewer: v-miegge
-ms.date: 08/31/2020
+ms.date: 10/27/2020
 manager: jarrettr
 keywords: Hololens, Store, piattaforma UWP, app, installa
 ms.prod: hololens
@@ -15,12 +15,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: fd818054fbe692363d411373a6a12ad1057d1be7
-ms.sourcegitcommit: 2b1de9c8f8a212a797fb0cb6056856dd4ff716a1
+ms.openlocfilehash: d64d0a18fbbf6570173c4bd80bc4f036f4408e08
+ms.sourcegitcommit: a51f2e409f0207fc7457e97403b5298f1e0ad7dc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10985842"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "11145637"
 ---
 # Trovare, installare e disinstallare le applicazioni su Microsoft Store
 
@@ -35,6 +35,15 @@ Per maggiori informazioni sull'installazione e l'esecuzione di app personalizzat
 ## Trova le app
 
 Apri Microsoft Store dal menu **Start**. Quindi scorri le app e i giochi. È possibile usare i [comandi vocali](hololens-cortana.md) per cercando pronunciando la parola "Cerca", dicendo "Avvia dettatura" quando si apre la finestra di ricerca, quindi pronunciando i termini di ricerca quando richiesto.
+
+> [!NOTE]
+> Il 12 gennaio 2021 le app seguenti raggiungeranno la fine del supporto nei dispositivi HoloLens. Ti invitiamo a utilizzare il seguente collegamento sul tuo dispositivo per utilizzare la versione Web dell'app.
+
+| App        | Link                                          |
+|------------|-----------------------------------------------|
+| Excel Mobile      | https://office.live.com/start/Excel.aspx      |
+| Word Mobile       | https://office.live.com/start/Word.aspx       |
+| PowerPoint Mobile | https://office.live.com/start/PowerPoint.aspx |
 
 ## Installazione delle app
 

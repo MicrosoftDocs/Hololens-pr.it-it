@@ -14,29 +14,26 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 4e2256f1086c92cdf0e788ba9dddf5b74a733116
-ms.sourcegitcommit: 72ae5a270f869393872eac160e43076eaa35fe4c
+ms.openlocfilehash: 415733bb2809b7ae2808edc097423f8928910c57
+ms.sourcegitcommit: c4fd9a87bb7c728c73418f95a1b15dd93b0af7c6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "11135527"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "11150917"
 ---
 # Installare app in HoloLens 2 tramite il programma di installazione di app
-
-In Windows Insider Release aggiungiamo **una nuova funzionalità (programma di installazione delle app) per consentire l'installazione di applicazioni più agevolmente** nei dispositivi HoloLens 2.  Ora è possibile installare le app senza dover abilitare la modalità sviluppatore o usando Device Portal.  È sufficiente scaricare (tramite USB o Edge) il bundle appx nel dispositivo e passare al bundle appx in Esplora file per richiedere di avviare l'installazione.  In alternativa, [avviare un'installazione da una pagina Web](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web).  Proprio come le app installate da Microsoft Store o trasferire localmente usando la funzionalità di distribuzione dell'app LOB di MDM, le app devono essere firmate digitalmente con lo [strumento Sign](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) e il [certificato usato per firmare deve essere considerato attendibile](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) dal dispositivo HoloLens prima che l'app possa essere distribuita.   
-
-Questo aggiornamento è allineato al desktop [in cui sideload è abilitato per impostazione predefinita](https://blogs.windows.com/windows-insider/2019/08/07/announcing-windows-10-insider-preview-build-18956/)
 
 > [!IMPORTANT]
 > Questa caratteristica è attualmente solo avalible in Windows Insider Build 19041.1377 +. [Altre informazioni su come iscriversi alle build di Windows Insider](hololens-insider.md).
 
-> [!NOTE]
-> Per gli amministratori IT che desiderano disabilitare questa funzionalità, usare il nome della famiglia di pacchetti seguente come parte dei [criteri di WDAC](windows-defender-application-control-wdac.md). In questo modo si bloccherà solo l'app del programma di installazione delle app e non le app installate da altre origini, ad esempio Microsoft Store o dalla soluzione MDM.
-```
-Microsoft.DesktopAppInstaller_8wekyb3d8bbwe
-```
-> [!NOTE]
-> È consigliabile usare i [criteri di WDAC](windows-defender-application-control-wdac.md) per controllare le app, ma se vuoi consentire solo alle app di Microsoft Store, i dispositivi configurati per impostare esplicitamente i criteri [ApplicationManagement/AllowAllTrustedApps](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps) su "non consentire" consentiranno l'installazione delle app solo da Microsoft Store. 
+In Windows Insider Release aggiungiamo **una nuova funzionalità (programma di installazione delle app) per consentire l'installazione di applicazioni più agevolmente** nei dispositivi HoloLens 2. La funzionalità sarà **attivata per impostazione predefinita per i dispositivi non gestiti**. Per evitare interruzioni alle aziende, il programma di installazione **delle app non sarà disponibile per i dispositivi gestiti** in questo momento.  
+
+Un dispositivo viene considerato "gestito **" Se una delle opzioni** seguenti è vera:
+- MDM [registrato](hololens-enroll-mdm.md)
+- Configurato con il [pacchetto di provisioning](hololens-provisioning.md)
+- L' [identità](hololens-identity.md) dell'utente è AAD
+
+Ora è possibile installare le app senza dover abilitare la modalità sviluppatore o usando Device Portal.  È sufficiente scaricare (tramite USB o Edge) il bundle appx nel dispositivo e passare al bundle appx in Esplora file per richiedere di avviare l'installazione.  In alternativa, [avviare un'installazione da una pagina Web](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web).  Proprio come le app installate da Microsoft Store o trasferire localmente usando la funzionalità di distribuzione dell'app LOB di MDM, le app devono essere firmate digitalmente con lo [strumento Sign](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) e il [certificato usato per firmare deve essere considerato attendibile](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) dal dispositivo HoloLens prima che l'app possa essere distribuita.   
 
 ## Requisiti
 
@@ -60,6 +57,7 @@ Le app installate tramite questo metodo devono essere firmate digitalmente. È n
 
 ## Metodo di installazione
 
+1.  Verificare che il dispositivo non sia considerato gestito.
 1.  Verificare che il dispositivo HoloLens 2 sia acceso e che sia stato effettuato l'accesso.
 1.  Nel PC passare all'app personalizzata e copiare YourApp. appxbundle in yourdevicename\Internal Storage\Downloads. 
     Una volta completata la copia del file, è possibile scollegare il dispositivo e completare l'installazione in un secondo momento.

@@ -7,7 +7,7 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 04/27/2020
+ms.date: 10/27/2020
 ms.custom:
 - CI 115262
 - CI 111456
@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 920ba7e84b1bb4818aef4efdee60be004d8a3300
-ms.sourcegitcommit: e6885d03c980b33dd0bab5c418cbd1892d5ff123
+ms.openlocfilehash: c4c4b533538ab7998f8438d7cc0c2f3d88143ec6
+ms.sourcegitcommit: 4e168380c23e8463438aa8a1388baf8d5ac1a1ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "11080445"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "11154188"
 ---
 # Configurare il dispositivo HoloLens come chiosco
 
@@ -41,6 +41,13 @@ Puoi usare la modalità Kiosk in una configurazione Single-app o multi-app ed è
 > Eliminando la configurazione multiapp vengono rimossi i profili di blocco degli utenti creati dalla funzionalità di accesso assegnata. Tuttavia, non ripristina tutte le modifiche ai criteri. Per ripristinare questi criteri, è necessario reimpostare il dispositivo sulle impostazioni di fabbrica.
 
 ## Pianificare la distribuzione di Kiosk
+
+Quando si pianifica il chiosco, è necessario essere in grado di rispondere alle domande seguenti. Ecco alcune decisioni su cui riflettere durante la lettura di questa pagina e alcune considerazioni per queste domande.
+1. **Chi utilizzerà il chiosco e quali [tipi di account](hololens-identity.md) useranno?** Questa è una decisione che probabilmente hai già fatto e che non dovrebbe essere regolata per il tuo chiosco, ma influirà sul modo in cui il chiosco verrà assegnato in seguito.
+1. **È necessario avere diversi chioschi per utente/gruppo o un chiosco non abilitato per alcuni?** In questo caso, è possibile creare il chiosco tramite XML. 
+1. **Quante app saranno presenti nel chiosco?** Se hai più di 1 app, dovrai avere un chiosco multi-app. 
+1. **Quali app saranno presenti nel chiosco?** Usa il nostro elenco di Aumid di seguito per aggiungere qualsiasi app In-Box in aggiunta alla tua.
+1. **Come si prevede di distribuire il chiosco?** Se si sta eseguendo la registrazione di un dispositivo in MDM, è consigliabile usare MDM per distribuire il chiosco. Se non si usa MDM, è disponibile la distribuzione con il pacchetto di provisioning.  
 
 ### Requisiti per la modalità Kiosk
 
@@ -62,7 +69,7 @@ Nella tabella seguente sono elencate le funzionalità delle funzionalità delle 
 | &nbsp; |Menu Start |Menu azioni rapide |Fotocamera e video |Miracast |Cortana |Comandi vocali predefiniti |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |Chiosco Single-app |Disabilitato |Disabilitato   |Disabilitato |Disabilitato   |Disabilitato |Abilitato <sup> 1</sup> |
-|Chiosco multi-app |Abilitato |Abilitato <sup> 2</sup> |Disponibile <sup> 2</sup> |Disponibile <sup> 2</sup> |Disponibile <sup> 2, 3</sup>  |Abilitato <sup> 1</sup> |
+|Chiosco con più app |Abilitato |Abilitato <sup> 2</sup> |Disponibile <sup> 2</sup> |Disponibile <sup> 2</sup> |Disponibile <sup> 2, 3</sup>  |Abilitato <sup> 1</sup> |
 
 > <sup>1 i </sup> comandi vocali correlati alle funzionalità disabilitate non funzioneranno.  
 > <sup>2 </sup> per altre informazioni su come configurare queste funzionalità, vedere [selezionare app Kiosk](#plan-kiosk-apps).  
@@ -73,7 +80,7 @@ Nella tabella seguente sono elencate le caratteristiche di supporto degli utenti
 | &nbsp; |Tipi di utenti supportati | Accesso automatico | Più livelli di accesso |
 | --- | --- | --- | --- |
 |Chiosco Single-app |Account del servizio gestito (MSA) in Azure Active Directory (AAD) o account locale |Sì |No |
-|Chiosco multi-app |Account AAD |No |Sì |
+|Chiosco con più app |Account AAD |No |Sì |
 
 Per esempi su come usare queste funzionalità, vedere la tabella seguente.
 
@@ -109,7 +116,7 @@ Se si usa un sistema di gestione di dispositivi mobili (MDM) o un pacchetto di p
 |Dynamics 365 Remote Assist |Microsoft. MicrosoftRemoteAssist \ _8wekyb3d8bbwe \! Microsoft. RemoteAssist |
 |Hub di feedback &nbsp; |Microsoft. WindowsFeedbackHub \ _8wekyb3d8bbwe \! App |
 |Esplora file |c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy!App |
-|Mail |Microsoft. windowscommunicationsapps_8wekyb3d8bbwe! Microsoft. felici. mail |
+|Mail |microsoft.windowscommunicationsapps_8wekyb3d8bbwe! Microsoft. felici. mail |
 |Microsoft Store |Microsoft.WindowsStore_8wekyb3d8bbwe!App |
 |Miracast <sup> 4</sup> |&nbsp; |
 |Film e TV |Microsoft. ZuneVideo \ _8wekyb3d8bbwe \! Microsoft. ZuneVideo |
@@ -126,71 +133,24 @@ Se si usa un sistema di gestione di dispositivi mobili (MDM) o un pacchetto di p
 > <sup>3 </sup> anche se non si Abilita Cortana come app Kiosk, i comandi vocali incorporati sono abilitati. Tuttavia, i comandi correlati alle funzionalità disabilitate non hanno effetto.  
 > <sup>4 </sup> non è possibile abilitare direttamente Miracast. Per abilitare Miracast come app Kiosk, Abilita l'app videocamera e l'app selezione dispositivi.
 
-### Pianificare i gruppi di utenti e dispositivi
+### Pianificare i profili di Kiosk per utenti o gruppi
 
-In un ambiente MDM si usano i gruppi per gestire le configurazioni dei dispositivi e l'accesso degli utenti. 
+Quando crei il file XML o usi l'interfaccia utente di Intune per configurare un chiosco è necessario considerare chi sarà l'utente il chiosco. Una configurazione Kiosk può essere limitata a un singolo account o a gruppi di annunci Azure. 
 
-Il profilo configurazione Kiosk include l'impostazione del **tipo di accesso utente** . Il **tipo di accesso utente** identifica l'utente (o il gruppo che contiene gli utenti) che può usare l'app o i apps aggiunti. Se un utente accede usando un account che non è incluso nel profilo di configurazione, l'utente non può usare le app nel chiosco.  
+In genere i chioschi sono abilitati per un utente o un gruppo di utenti. Tuttavia, se si prevede di scrivere il proprio chiosco XML, è possibile prendere in considerazione l'accesso assegnato globale, in cui il chiosco viene applicato a livello di dispositivo indipendentemente dall'identità. Se questo ti piace [, Leggi altre informazioni sui chioschi di Access assegnati a livello globale.](hololens-global-assigned-access-kiosk.md)
 
-> [!NOTE]  
-> Il **tipo di accesso utente** di un chiosco Single-app specifica un singolo account utente. Questo è il contesto utente in cui viene eseguito il chiosco. Il **tipo di accesso utente** di un chiosco multiapp può specificare uno o più account utente o gruppi che possono usare il chiosco.
+#### Se si sta creando un file XML:
+-   Molti creano più profili Kiosk e li assegnano a utenti/gruppi diversi. Ad esempio un chiosco per il gruppo AAD che contiene molte app e un visitatore che ha un chiosco di più app con un'app singola.
+-   La configurazione del chiosco sarà denominata **ID profilo** e avrà un GUID.
+-   Il profilo verrà assegnato nella sezione configs specificando il tipo di utente e usando lo stesso GUID per l' **ID DefaultProfile**.
+- Un file XML può essere creato ma ancora applicato a un dispositivo tramite MDM creando un profilo di configurazione del dispositivo URI OMA personalizzato e applicarlo al gruppo di dispositivi HoloLens usando il valore URI:./Device/Vendor/MSFT/AssignedAccess/Configuration
 
-Prima di poter distribuire la configurazione del chiosco in un dispositivo, è necessario *assegnare* il profilo di configurazione Kiosk a un gruppo che contiene il dispositivo o un utente che può accedere al dispositivo. Questa impostazione produce un comportamento come il seguente.
-
-- Se il dispositivo è un membro del gruppo assegnato, la configurazione del chiosco viene distribuita al dispositivo la prima volta che un utente accede al dispositivo.  
-- Se il dispositivo non è un membro del gruppo assegnato, ma un utente che fa parte di tale gruppo effettua l'accesso, la configurazione del chiosco viene distribuita al dispositivo in quel momento.
-
-Per una descrizione completa degli effetti dell'assegnazione dei profili di configurazione in Intune, vedere [assegnare profili utente e di dispositivo in Microsoft Intune](https://docs.microsoft.com/intune/configuration/device-profile-assign).
-
-> [!NOTE]  
-> Gli esempi seguenti descrivono i chioschi multimediali per le app. I chioschi Single-app si comportano in modo simile, ma solo un account utente ottiene l'esperienza del chiosco.
-
-**Esempio 1**
-
-Si usa un singolo gruppo (gruppo 1) per i dispositivi e gli utenti. Un dispositivo e gli utenti A, B e C sono membri di questo gruppo. Configurare il profilo di configurazione del chiosco nel modo seguente:  
-
-- **Tipo di accesso utente**: gruppo 1
-- **Gruppo assegnato**: gruppo 1
-
-Indipendentemente dal fatto che l'utente accede prima al dispositivo (e passa attraverso l'esperienza di fuori casella o la configurazione guidata), viene distribuita al dispositivo. Gli utenti A, B e C possono accedere al dispositivo e ottenere l'esperienza del chiosco.
-
-**Esempio 2**
-
-I dispositivi sono contraenti per due fornitori diversi che hanno bisogno di esperienze Kiosk diverse. Entrambi i fornitori hanno utenti e si vuole consentire a tutti gli utenti di accedere ai chioschi sia dal proprio fornitore che dall'altro fornitore. I gruppi vengono configurati come segue:
-
-- Gruppo di dispositivi 1:
-  - Dispositivo 1 (fornitore 1)
-  - Dispositivo 2 (fornitore 1)
-
-- Gruppo di dispositivi 2:
-  - Dispositivo 3 (Vendor 2)
-  - Dispositivo 4 (Vendor 2)
-
-- Gruppo utenti:
-  - Utente A (fornitore 1)
-  - Utente B (Vendor 2)
-
-Si creano due profili di configurazione Kiosk con le impostazioni seguenti:
-
-- Kiosk profile 1:
-   - **Tipo di accesso utente**: gruppo utenti
-   - **Gruppo assegnato**: gruppo di dispositivi 1
-
-- Kiosk profile 2:
-   - **Tipo di accesso utente**: gruppo utenti
-   - **Gruppo assegnato**: gruppo di dispositivi 2
-
-Queste configurazioni producono i risultati seguenti:
-
-- Quando un utente accede al dispositivo 1 o al dispositivo 2, Intune distribuisce Kiosk profile 1 a tale dispositivo.
-- Quando un utente accede al dispositivo 3 o al dispositivo 4, Intune distribuisce Kiosk profile 2 al dispositivo.
-- L'utente A e l'utente B possono accedere a uno dei quattro dispositivi. Se accede al dispositivo 1 o al dispositivo 2, Visualizza l'esperienza del chiosco di vendor 1. Se accedono al dispositivo 3 o al dispositivo 4, vedranno l'esperienza del chiosco di vendor 2.
-
-#### Conflitti di profilo
-
-Se due o più profili di configurazione di Kiosk sono destinati allo stesso dispositivo, sono in conflitto. Nel caso dei dispositivi gestiti da Intune, Intune non applica alcuno dei profili in conflitto.
-
-Altri tipi di profili e criteri, ad esempio le restrizioni dei dispositivi non correlati al profilo di configurazione Kiosk, non sono in conflitto con il profilo di configurazione del chiosco.
+#### Se si sta creando un chiosco in Intune.
+-   Ogni dispositivo può ricevere un singolo profilo Kiosk, altrimenti creerà un conflitto e non riceverà alcuna configurazione Kiosk. 
+    -   Altri tipi di profili e criteri, ad esempio le restrizioni dei dispositivi non correlati al profilo di configurazione Kiosk, non sono in conflitto con il profilo di configurazione del chiosco.
+-   Il chiosco sarà abilitato per tutti gli utenti che fanno parte del tipo di accesso utente, questo sarà impostato con un utente o un gruppo AAD. 
+-   Dopo aver impostato la configurazione del chiosco e il **tipo di accesso utente** (gli utenti che possono accedere al chiosco) e le app sono selezionati, la configurazione del dispositivo deve comunque essere assegnata a un gruppo. I gruppi assegnati determinano quali dispositivi ricevono la configurazione del dispositivo Kiosk, ma non interagiscono con se il chiosco è abilitato o meno. 
+    - Per una descrizione completa degli effetti dell'assegnazione dei profili di configurazione in Intune, vedere [assegnare profili utente e di dispositivo in Microsoft Intune](https://docs.microsoft.com/intune/configuration/device-profile-assign).
 
 ### Selezionare un metodo di distribuzione
 
@@ -215,8 +175,8 @@ Nella tabella seguente sono elencate le funzionalità e i vantaggi di ognuno dei
 |Distribuire usando la modalità sviluppatore |Obbligatorio       | Non necessario            | Non necessario   |
 |Distribuire usando Azure Active Directory (AAD)  | Non necessario            | Non necessario                   | Obbligatorio  |
 |Distribuzione automatica      | No            | No                   | Sì  |
-|Velocità di distribuzione            | Più veloce       | Velocità                 | Lento |
-|Distribuire in scala | Non raccomandato    | Non raccomandato        | Consigliato |
+|Velocità di distribuzione            | Velocità       | Velocità                 | Lento |
+|Distribuire in scala | Non raccomandato    | Consigliato        | Consigliato |
 
 ## Usare Microsoft Intune o un altro MDM per configurare un chiosco Single-app o multi-app
 
@@ -252,7 +212,7 @@ Per altre informazioni su come eseguire la registrazione dei dispositivi, vedere
 I passaggi successivi variano a seconda del tipo di chiosco desiderato. Per altre informazioni, selezionare una delle opzioni seguenti:  
 
 - [Chiosco Single-app](#mdmconfigsingle)
-- [Chiosco multi-app](#mdmconfigmulti)
+- [Chiosco con più app](#mdmconfigmulti)
 
 Per altre informazioni su come creare un profilo di configurazione Kiosk, vedere [impostazioni del dispositivo Windows 10 e Windows olografico per le aziende per l'esecuzione come chiosco dedicato con Intune](https://docs.microsoft.com/intune/configuration/kiosk-settings).
 
@@ -487,3 +447,19 @@ Per configurare la modalità Kiosk tramite Windows Device Portal, eseguire la pr
 
 Guarda come configurare un chiosco usando un pacchetto di provisioning.  
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/fa125d0f-77e4-4f64-b03e-d634a4926884?autoplay=false]
+
+## Esempi di codice del chiosco XML per HoloLens
+
+### Modalità Kiosk di più app destinate a un gruppo AAD. 
+Questo chiosco distribuisce un chiosco che, per gli utenti del gruppo AAD, avrà un chiosco abilitato che include le 3 app: impostazioni, assistenza remota e hub feedback. Per modificare l'esempio da usare immediatamente, assicurarsi di modificare il GUID evidenziato di seguito in modo che corrisponda a un gruppo di AAD. 
+
+
+:::code language="xml" source="samples/kiosk-sample-multi-aad-group.xml" highlight="20":::
+
+
+### Modalità Kiosk di più app che designa l'account AAD.
+Questo chiosco distribuisce un chiosco per un singolo utente, ma avrà un chiosco abilitato che include le 3 app: impostazioni, assistenza remota e hub feedback. Per modificare l'esempio da usare immediatamente, assicurarsi di cambiare l'account evidenziato di seguito in modo che corrisponda a un account AAD. 
+
+
+:::code language="xml" source="samples/kiosk-sample-multi-aad-account.xml" highlight="20":::
+

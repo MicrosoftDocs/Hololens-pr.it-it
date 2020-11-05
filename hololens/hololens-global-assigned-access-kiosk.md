@@ -13,12 +13,12 @@ ms.reviewer: lavinds
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9c411811376d34b4399db76c76364cd1254910c4
-ms.sourcegitcommit: a59ce1cf68785c8e08c5ea94046ba04291ee1a55
+ms.openlocfilehash: 8777c64b4d4ca08bf3b103d7d92bbb99d6978bdc
+ms.sourcegitcommit: 4e168380c23e8463438aa8a1388baf8d5ac1a1ab
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "11094974"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "11154197"
 ---
 # Accesso assegnato globale: chiosco
 
@@ -64,3 +64,14 @@ Questa funzionalità consente a un utente a cui è stato assegnato il ruolo di "
 
  :::code language="xml" source="samples/exclude-device-owners-from-global.xml" highlight="6,16-18":::
  
+## Ulteriori esempi di Accesso assegnato globale
+
+Questo è un chiosco di Accesso assegnato globale per il quale, quando un utente accede avrà un chiosco multi-app con l'app Impostazioni, Hub di Feedback ed Edge.
+
+:::code language="xml" source="samples/kiosk-sample-global-assigned-access.xml":::
+
+Questo è un chiosco di Accesso assegnato globale che esclude il proprietario del dispositivo, quando qualsiasi altro utente AAD accede avrà un chiosco multi-app con l'app Impostazioni, Hub di Feedback ed Edge. Questo chiosco include anche una configurazione chiosco secondario per un account visitatore, a cui può accedere chiunque nella schermata di blocco. Quando un utente accede all'account del visitatore, avrà un chiosco multi-app che include solo l'app Hub Feedback.
+
+:::code language="xml" source="samples/kiosk-sample-global-assigned-access-visitor-exclude.xml":::
+
+

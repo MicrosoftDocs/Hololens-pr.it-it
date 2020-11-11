@@ -8,7 +8,7 @@ ms.author: v-tea
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: high
-ms.date: 07/09/2020
+ms.date: 10/13/2020
 ms.reviewer: jarrettr
 manager: jarrettr
 ms.custom:
@@ -16,12 +16,12 @@ ms.custom:
 - CI 115825
 - CI 111456
 - CSSTroubleshooting
-ms.openlocfilehash: 384d33e72effd298e1874e5723e9c418061c3287
-ms.sourcegitcommit: 0d4e67d8e21d34885e0eaee08646e28426c4f641
+ms.openlocfilehash: 3a2246296c5ab8aa86dfaa419ed02aa5a961dbfc
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "10861909"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163137"
 ---
 # Gestire gli aggiornamenti di HoloLens
 
@@ -76,6 +76,21 @@ Per configurare come e quando saranno applicati gli aggiornamenti, usa questi cr
   - Valori: 0–23 (0 = mezzanotte, 23 = 11 PM)
   - Valore predefinito: 3 PM
 
+#### Configurare l'orario di attività.
+A partire da [Windows Holographic, versione 20H2](hololens-release-notes.md#windows-holographic-version-20h2) un amministratore IT può specificare l'intervallo di ore di attività per i dispositivi HoloLens 2.
+
+L’orario di attività identifica il periodo di tempo durante il quale si prevede che il dispositivo sia in uso. I riavvi automatici dopo un aggiornamento verranno eseguiti al di fuori dell'orario di attività. L'intervallo specificato verrà calcolato dall'ora di inizio dell'orario di attività. È possibile usare MDM, come descritto in [Configurazione dell'orario di attività con MDM](https://docs.microsoft.com/windows/deployment/update/waas-restart#configuring-active-hours-with-mdm). MDM usa le impostazioni Update/ActiveHoursStart e Update/ActiveHoursEnd e Update/ActiveHoursMaxRange nel CSP del criterio per configurare le ore di attivà.
+
+-   [Update/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend) - questo valore imposta l'ora di fine. È disponibile un massimo di 12 ore dall'ora di inizio.
+    -   I valori supportati sono 0-23, dove 0 è 12 AM, 1 è 1 AM e così via.
+    -   Il valore predefinito è 17 (5 PM).
+-   [Update/ActiveHoursMaxRange](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange) - questo valore imposta il numero massimo di ore di attività dall'ora di inizio.
+    -   I valori supportati sono 8-18.
+    -   Il valore predefinito è 18 (ore).
+-   [Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart) - questo valore imposta l'ora di inizio. C'è un massimo di 12 ore dall'ora di fine.
+    -   I valori supportati sono 0-23, dove 0 è 12 AM, 1 è 1 AM e così via.
+    -   Il valore predefinito è 8 (8 AM).
+
 #### Solo per i dispositivi che eseguono Windows 10, versione 1607
 
 Puoi usare i seguenti criteri aggiornati per configurare i dispositivi in modo da ricevere aggiornamenti da Windows Server Update Service (WSUS), invece di Windows Update:
@@ -116,6 +131,15 @@ Puoi configurare posticipazioni differenti per gli aggiornamenti delle funzional
 | --- | --- | --- |
 |Aggiornamenti delle funzionalità |DeferFeatureUpdatesPeriodInDays |365 giorni |
 |Aggiornamenti qualitativi |DeferQualityUpdatesPeriodInDays |30 days |
+
+#### Sospendere gli aggiornamenti tramite dispositivo
+
+Se un utente non ha accesso a MDM, può sospendere manualmente gli aggiornamenti per un massimo di 35 giorni su un dispositivo HoloLens 2 nella build [Windows Holographic, versione 2004](hololens-release-notes.md#windows-holographic-version-2004) o successiva. Gli utenti possono raggiungere questa impostazione passando a **Impostazioni -> Aggiornamenti e sicurezza -> Opzioni avanzate** scorrendo verso il basso per **Sospendi aggiornamenti** e selezionando la data in cui verranno sospesi gli aggiornamenti. Una volta che un utente ha raggiunto il limite di sospensione, il dispositivo dovrà ottenere nuovi aggiornamenti per effettuare una nuova sospensione. 
+
+A partire da [Windows Holographic, versione 20H2](hololens-release-notes.md#windows-holographic-version-20h2), la funzione di pausa degli aggiornamenti può essere gestita per i dispositivi HoloLens 2. 
+- [Update/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess).
+    - 0 (impostazione predefinita) - abilitato
+    - 1 - disabilitato
 
 #### Funzioni di gestione degli aggiornamenti di Intune supportate da HoloLens
 

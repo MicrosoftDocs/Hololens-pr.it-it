@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.reviewer: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 80ac6348dd2cba932316b690cafc4c5dc0331353
-ms.sourcegitcommit: 77eb85608066d9a4ed01b3862afe356f7e54d583
+ms.openlocfilehash: 0001ff627b150a9ba79e76f8d995231186c46917
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "10940206"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163012"
 ---
 # Display HoloLens 2
 
@@ -59,9 +59,9 @@ Detto ciò, è comunque possibile per le fotocamere industriali acquisire immagi
 
 Il display HoloLens 2 esegue attivamente la correzione del colore sulle immagini in base alla posizione degli occhi dell'utente. [La calibrazione oculare](hololens-calibration.md) fornisce due importanti input: (1) la distanza interpupillare dell’utente, e (2) la direzione in cui guardano gli occhi. Senza calibrazione oculare, il sistema usa automaticamente una posizione simbolica senza tenere conto dei movimenti oculari. La differenza tra la correzione del colore attiva e nessuna correzione dipende dalla fisiologia dell'utente stesso. Ad esempio, gli utenti che hanno la stessa distanza interpupillare del sistema predefinito vedranno meno miglioramenti legati alla correzione del colore. Mentre gli utenti che hanno una distanza interpupillare più ristretta o più ampia rispetto a quella predefinita del sistema vedranno più modifiche all'immagine sul display.
 
-Nota: una nuova funzionalità in seguito a un aggiornamento futuro del sistema operativo rileverà [automaticamente la posizione oculare](hololens-insider.md#auto-eye-position-support). Gli utenti che vogliono provare questa nuova funzionalità possono registrarsi a [insider preview](hololens-insider.md).
+Nota, una nuova funzionalità in [Windows Holographic versione 20H2](hololens-release-notes.md#windows-holographic-version-20h2) inizierà a [rilevare automaticamente la posizione degli occhi](hololens-calibration.md#auto-eye-position-support). 
 
-### Che differenze hanno i display di HoloLens (prima generazione) e HoloLens 2?
+### Che differenze hanno i display di HoloLens di prima generazione e HoloLens 2?
 
 Le principali richieste degli utenti ricevute da Microsoft dopo aver utilizzato HoloLens 1 sono state (1) aumentare il campo visivo e (2) aumentare la luminosità. Gli sviluppi tecnologici hanno consentito a Microsoft di produrre guide d’onda che raddoppiano l'area del campo visivo e producono proiettori di luce con un display tre volte più luminoso. L'hardware imposta la linea di base per un trio di compromessi per la qualità dell'immagine sul display: (1) campo visivo, (2) luminosità e (3) uniformità dei colori. Il progresso tecnologico continuo consente miglioramenti in tutte le aree senza sacrificarne nessuna. Nel frattempo, la tecnologia esistente imposta i limiti per questi compromessi.
 

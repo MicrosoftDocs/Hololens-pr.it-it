@@ -3,7 +3,7 @@ title: Visibilità impostazioni pagina
 description: Elenco degli URI supportati da HoloLens per PageVisibilityList e guida
 author: evmill
 ms.author: v-evmill
-ms.date: 09/16/2020
+ms.date: 10/13/2020
 ms.topic: article
 keywords: hololens, hololens 2, accesso assegnato, chiosco, pagina impostazioni
 ms.prod: hololens
@@ -13,19 +13,19 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7a24d64b0b60be9f922260b7145d04c2c13951ed
-ms.sourcegitcommit: 8b5e349990ba5566bcc6a2a72ff83d1a21b099b8
+ms.openlocfilehash: 8cd336ce64cf7d4549b031a7977f592ca82dd6e4
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "11026939"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163140"
 ---
 # Visibilità impostazioni pagina
 
 L’uso di [criteri Impostazioni/pageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) per limitare le pagine visualizzate all’interno dell’app, è una delle funzionalità gestibili per i dispositivi HoloLens. PageVisibilityList è un criterio che consente agli amministratori IT di impedire che pagine specifiche nelle impostazioni di sistema siano visibili o accessibili oppure di farlo per tutte le pagine ad accezioni di quelle specificate. 
 
-> [!IMPORTANT]
-> Questa funzionalità è attualmente disponibile solo nelle [build di Windows Insider](hololens-insider.md). Assicurarsi che i dispositivi che si intende usare siano presenti nella build 19041.1349+.
+> [!NOTE]
+> Questa funzionalità è disponibile solo in [Windows Holographic, versione 20H2](hololens-release-notes.md#windows-holographic-version-20h2) per i dispositivi HoloLens 2. Assicurarsi che i dispositivi per cui si intende utilizzarlo siano aggiornati.
 
 L'esempio seguente illustra un criterio che consente l'accesso solo alle pagine Informazioni e Bluetooth, che hanno rispettivamente l'URI "ms-settings:network-wifi" e "ms-settings:bluetooth":
 - showonly:network-wifi;network-proxy;bluetooth

@@ -13,12 +13,12 @@ audience: ITPro
 manager: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 460b6f42de7413e77eaec041a5ab6141ed959cf4
-ms.sourcegitcommit: 9944fd2040fc1267ace1da1bd62ef36b68c7f318
+ms.openlocfilehash: b5fe64a1843db5ba8dc31f3c17776f0717264fe1
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015523"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11162982"
 ---
 # Preparare certificati e profili di rete per HoloLens 2
 
@@ -45,18 +45,20 @@ Per distribuire certificati e profili, eseguire le operazioni seguenti:
 1.  Creare un profilo per ognuno dei certificati radice e intermedi. vedere [Creare profili di certificati attendibili](https://docs.microsoft.com/intune/protect/certificates-configure#create-trusted-certificate-profiles). Ognuno di questi profili deve contenere una descrizione che includa una data di scadenza nel formato gg/MM/AAAA. **I profili di certificato senza data di scadenza non verranno distribuiti.**
 1.  Creare un profilo per ognuno dei certificati SCEP o PKCS. vedere [Creare un profilo di certificato SCEP attendibile](https://docs.microsoft.com/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile). Ognuno di questi profili deve contenere una descrizione che includa una data di scadenza nel formato gg/MM/AAAA. **I profili di certificato senza data di scadenza non verranno distribuiti.**
 
-> [!NOTE]
-> Quando HoloLens 2 viene considerato come un dispositivo condiviso, più utenti per dispositivo, è consigliabile distribuire i certificati per dispositivi anziché i certificati utente per l'autenticazione Wi-Fi, se possibile.
+    > [!NOTE]
+    > Quando HoloLens 2 viene considerato come un dispositivo condiviso, più utenti per dispositivo, è consigliabile distribuire i certificati per dispositivi anziché i certificati utente per l'autenticazione Wi-Fi, se possibile.
 
 3.  Creare un profilo per ogni rete Wi-Fi aziendale (vedere [le impostazioni Wi-Fi per Windows 10 e i dispositivi successivi](https://docs.microsoft.com/intune/wi-fi-settings-windows)). 
-> [!NOTE]
-> Se possibile, è consigliabile il profilo Wi-Fi[assegnato](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign) ai gruppi di dispositivi anziché ai gruppi di utenti. 
+    > [!NOTE]
+    > Se possibile, è consigliabile il profilo Wi-Fi[assegnato](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign) ai gruppi di dispositivi anziché ai gruppi di utenti. 
 
-> [!TIP]
-> È anche possibile esportare un profilo Wi-Fi funzionante da un PC con Windows 10 nella rete aziendale. Questa esportazione crea un file XML con tutte le impostazioni correnti. Quindi, importare il file in Intune e usarlo come profilo Wi-Fi per i dispositivi HoloLens 2. Per i dispositivi Windows, vedere [Esportare e importare le impostazioni di Wi-Fi.](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-import-windows-8-1)
+    > [!TIP]
+    > È anche possibile esportare un profilo Wi-Fi funzionante da un PC con Windows 10 nella rete aziendale. Questa esportazione crea un file XML con tutte le impostazioni correnti. Quindi, importare il file in Intune e usarlo come profilo Wi-Fi per i dispositivi HoloLens 2. Per i dispositivi Windows, vedere [Esportare e importare le impostazioni di Wi-Fi.](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-import-windows-8-1)
 
 4.  Creare un profilo per ogni VPN aziendale (vedere [Impostazioni dei dispositivi olografici per Windows 10 e Windows per aggiungere connessioni VPN con Intune](https://docs.microsoft.com/intune/vpn-settings-windows-10)).
 
+## Risoluzione dei problemi relativi ai certificati
 
+Se è necessario verificare che un certificato sia distribuito correttamente, usare [Gestione certificati](certificate-manager.md) nel dispositivo per controllare che il certificato sia presente.  
 
 

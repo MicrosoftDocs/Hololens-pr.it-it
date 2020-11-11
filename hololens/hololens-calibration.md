@@ -14,12 +14,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 627631ee7070af6cb6c60e91890f05472ce0f6be
-ms.sourcegitcommit: 8b56f4b9b5f9c928fc361f18efcbea729055a0b2
+ms.openlocfilehash: f466d64da8ef122ce2917117a74ab904a573b4e3
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "10919157"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163052"
 ---
 # Migliorare la qualità visiva e il comfort
 
@@ -40,19 +40,19 @@ HoloLens 2 richiede a un utente di calibrare il dispositivo nei seguenti casi:
 - Il dispositivo viene tolto e ripristinato e si applicano le circostanze precedenti 
 
 
-![Richiesta di calibrazione](./images/07-et-adjust-for-your-eyes.png)
+![Richiesta di calibrazione per la regolazione degli occhi.](./images/07-et-adjust-for-your-eyes.png)
 
 Durante questo processo, dovrai guardare una serie di obiettivi (gemme). Durante la calibrazione, puoi battere le palpebre, ma cerca di rimanere concentrato sulle gemme anziché su altri oggetti presenti nella stanza.  HoloLens usa questo processo per ottenere informazioni sulla posizione degli occhi, per garantire un rendering ottimale del mondo olografico.
 
-![Richiesta di calibrazione](./images/07-et-hold-head-still.png)
+![Richiesta di calibrazione che indica all'utente di mantenere la testa ferma e di seguire i punti con gli occhi.](./images/07-et-hold-head-still.png)
 
-![Richiesta di calibrazione](./images/08-et-gems.png)
+![Richiesta di calibrazione con esempio della gemma.](./images/08-et-gems.png)
 
-![Richiesta di calibrazione](./images/09-et-adjusting.png)
+![Regolazione richiesta di calibrazione.](./images/09-et-adjusting.png)
 
 Se la calibrazione è stata eseguita correttamente, verrà visualizzata una schermata di successo.  In caso contrario, leggi altre informazioni sulla diagnosi degli errori di calibrazione [qui](#troubleshooting-hololens-2-calibration).
 
-![Richiesta di calibrazione](./images/10-et-success.png)
+![Esito positivo della calibrazione.](./images/10-et-success.png)
 
 ### Calibrazione durante la condivisione di un dispositivo o di una sessione
 
@@ -65,6 +65,28 @@ Un dispositivo HoloLens 2 può essere condiviso da più utenti, senza che ciascu
 1. Seleziona **Impostazioni**, quindi **Sistema** > **Calibrazione** > **Calibrazione occhi** > **Esegui calibrazione occhi**.
 
    ![L'app Impostazioni con l'opzione per eseguire la calibrazione degli occhi](./images/C-Settings.Calibration.png)
+
+### Supporto per Posizione automatica degli occhi
+- Ora forniamo una maggiore precisione per quanto riguarda il posizionamento dell'ologramma tramite il supporto Posizione automatica degli occhi, per un comfort di visualizzazione elevato e una migliore qualità di visualizzazione. 
+
+In HoloLens 2, le posizioni degli occhi consentono un posizionamento accurato dell'ologramma, un'esperienza visiva confortevole e una migliore qualità di visualizzazione. Le posizioni degli occhi vengono calcolate come parte del risultato del tracciamento oculare. Tuttavia, ciò richiede che ogni utente esegua la calibrazione del tracciamento oculare, anche quando l'esperienza non richieda tale input.
+
+**Posizione automatica degli occhi** consente di calcolare la posizione degli occhi per l'utente, in una modalità priva di interazione.  Posizione automatica degli occhi inizia a funzionare automaticamente in background dal momento in cui l'utente accende il dispositivo. Se l'utente non ha effettuato una calibrazione del tracciamento oculare in precedenza, Posizione automatica degli occhi inizierà a fornire le posizioni degli occhi dell'utente al sistema di visualizzazione dopo un breve tempo di elaborazione. Il tempo di elaborazione è in genere compreso tra 20 e i 60 secondi. I dati dell'utente non vengono conservati sul dispositivo e quindi questo processo viene ripetuto se l'utente toglie e rimette il dispositivo o se il dispositivo si riavvia o si riattiva dalla modalità sospensione.  
+
+Quando un utente non calibrato indossa il dispositivo, ci sono alcune modifiche al comportamento del sistema della funzionalità Posizione automatica degli occhi. Quando si parla di utente non calibrato, ci si riferisce a qualcuno che non ha eseguito in precedenza il processo di calibrazione del tracciamento oculare sul dispositivo.
+
+|     Applicazione attiva                           |     Comportamento precedente                                   |     Comportamento per Windows Holographic, dalla versione 20H2 in poi                                                     |
+|--------------------------------------------------|--------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+|     App non abilitata allo sguardo fisso o Holographic Shell    |     Viene visualizzata la richiesta di calibrazione del tracciamento oculare.    |     Non viene visualizzato alcuna richiesta.                                                                                |
+|     App sguardo fisso abilitata                             |     Viene visualizzata la richiesta di calibrazione del tracciamento oculare.    |     La richiesta di calibrazione del rilevamento degli occhi viene visualizzata solo quando l'applicazione accede al flusso dello sguardo degli occhi.     |
+
+ Se l'utente passa da un'applicazione non abilitata allo sguardo fisso a una che accede ai dati sullo sguardo, verrà visualizzata una richiesta di calibrazione. Non verrà modificato il flusso dell’esperienza di Configurazione guidata. 
+ 
+Per le esperienze che richiedono dati sullo sguardo o un posizionamento dell'ologramma molto preciso, consigliamo agli utenti non calibrati di eseguire la calibrazione del posizionamento degli oculare dal richiesta di calibrazione del rilevamento degli occhi o avviando l'app Impostazioni dal menu Start, quindi selezionando **Sistema> Calibrazione> Calibrazione oculare> Esegui calibrazione oculare**.
+
+**Problemi noti**
+ - Stiamo indagando su un problema in cui il processo host del driver tracciatore oculare potrebbe bloccarsi durante l'esecuzione con un carico di memoria elevato. Il processo host del driver del tracciamento oculare deve essere recuperato automaticamente.
+
 
 ### Risoluzione dei problemi relativi alla calibrazione di HoloLens 2
 

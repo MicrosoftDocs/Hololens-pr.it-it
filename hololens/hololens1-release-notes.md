@@ -8,19 +8,16 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 05/12/2020
-ms.custom:
-- CI 111456
-- CSSTroubleshooting
+ms.date: 10/13/2020
 audience: ITPro
 appliesto:
 - HoloLens 1
-ms.openlocfilehash: ab67962efdafe3f39097210d60589dc6db715837
-ms.sourcegitcommit: c870802ea75a9dd602319c59fedb124f80c19b71
+ms.openlocfilehash: 0fb6c9ed1cd8d3ecc23975052eed54512a465bfb
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "11136171"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163105"
 ---
 # <span data-ttu-id="91f47-103">Note sulla versione di HoloLens 1st (gen)</span><span class="sxs-lookup"><span data-stu-id="91f47-103">HoloLens 1st (gen) release notes</span></span>
 

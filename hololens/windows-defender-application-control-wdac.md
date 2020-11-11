@@ -12,16 +12,18 @@ ms.reviewer: ''
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: dc1deb2b159d3d41b1a1f73c33f1cd44731f8e4d
-ms.sourcegitcommit: 72ae5a270f869393872eac160e43076eaa35fe4c
+ms.openlocfilehash: b12079142049cce28ec00803ad0a1f8dc92333e1
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "11135572"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163127"
 ---
 # Controllo di applicazioni di Windows Defender - WDAC
 
 WDAC consente a un amministratore IT di configurare i propri dispositivi in modo da bloccare il lancio delle app nei dispositivi. Questo è diverso dai metodi di restrizione del dispositivo, ad esempio la modalità Kiosk, in cui l'utente viene presentato con un'interfaccia utente che nasconde le app nel dispositivo, ma possono comunque essere avviate. Mentre WDAC è implementato, le app sono ancora visibili nell'elenco tutte le app, ma WDAC arresta le app e i processi da poter essere avviati dall'utente del dispositivo.
+
+A un dispositivo può essere assegnato più di un criterio WDAC. Se in un sistema sono impostati più criteri di WDAC, i più restrittivi avranno effetto. 
 
 > [!NOTE]
 > Quando gli utenti finali tentano di avviare un'app bloccata da WDAC, in HoloLens non riceveranno una notifica per non essere in grado di avviare l'app.
@@ -74,29 +76,11 @@ Ecco un elenco delle app comunemente usate e In-Box per i dispositivi HoloLens 2
 Se un'app non è presente nell'elenco, un utente può usare Device Portal, connesso a un HoloLens 2 che ha installato l'app che ha voluto essere bloccata, per determinare la PackageRelativeID e da lì ottenere il PackageFamilyName.
 
 1. Installare l'app nel dispositivo HoloLens 2. 
-1. Aprire Impostazioni-> gli aggiornamenti & Securtiy-> per gli sviluppatori e abilitare la **modalità sviluppatore** e quindi **Device Portal**. 
+1. Aprire Impostazioni-> gli aggiornamenti & sicurezza > per gli sviluppatori e abilitare la **modalità sviluppatore** e quindi **Device Portal**. 
     1. Altre informazioni dettagliate per altre informazioni [, vedere Configurazione e uso di Device Portal](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal).
 1. Una volta connesso Device Portal, passa alle **visualizzazioni** e quindi alle **app**. 
 1. Nel pannello app installate usare l'elenco a discesa per selezionare l'app installata. 
 1. Individuare il PackageRelativeID. 
 1. Copiare i caratteri dell'app prima del!, questo sarà il PackageFamilyName.
 
-## Esempio di installazione dell'app di blocco
 
-Ad esempio, potresti voler bloccare l'app del [programma di installazione dell'app](app-deploy-app-installer.md) . Per questo esempio è stato incluso un codice di esempio. Scaricare questi [esempi di codice per questo esempio](https://aka.ms/HoloLensDocs-Sample-WDAC-App-Installer). Nel file zip troverai:
-
-| File | Uso |
-|-|-|
-| compiledPolicy. bin | [Creato nel passaggio 9, usato nel passaggio finale 10.](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens) |
-| mergedPolicy.xml | [Creato nel passaggio 6.](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens) |
-| WDAC_Set. SyncML | Non usato in WDAC ma può essere usato per per [ENTERPRISEMODERNAPPMANAGEMENT CSP](https://docs.microsoft.com/windows/client-management/mdm/enterprisemodernappmanagement-csp) |
-
-Se vuoi provare a bloccare immediatamente un'app, in questo caso l'app di installazione dell'app, quindi usa il file compiledPolicy. bin e passa al passaggio 10 nel link precedente. In questo modo potrai testare i criteri personalizzati e verificare che le assegnazioni di gruppo e la configurazione dei criteri siano corrette. 
-
-Se vuoi combinare i criteri di WDAC per bloccare il programma di installazione delle app con altre app nell'elenco precedente o in qualsiasi altra app, puoi usare il file mergedPolicy.xml e continuare a unire nuovi criteri. Come indicato sopra, i criteri di WDAC sono additivi, quindi non è necessario. 
-
-Dato che l'app di installazione dell'app viene avviata tramite il tentativo di aprire un file verrà visualizzata una richiesta. Come indicato sopra, le app bloccate da WDAC non presentano una richiesta di blocco, tuttavia, dato che l'utente sta provando ad aprire un file nel dispositivo, viene visualizzato un messaggio di errore per l'apertura del file. 
-
-![Installazione dell'app bloccata da WDAC](images\wdac-app-installer-no-launch.jpg)
-
-Se non si vuole usare WDAC, è possibile usare [ENTERPRISEMODERNAPPMANAGEMENT CSP](https://docs.microsoft.com/windows/client-management/mdm/enterprisemodernappmanagement-csp) in alternativa per rimuovere il programma di installazione dell'app UX, che è un'app dopo tutto. Il risultato è che l'app del programma di installazione dell'app verrà disinstallata dal dispositivo. . appx,. msix,. msixbundle e altre estensioni di file, oltre al protocollo per l'avvio da Web a app, non verranno più gestite dall'app di installazione dell'app. L'utente riceverà una richiesta per cercare un gestore per l'estensione del file/protocollo nello Store e non troverà l'app perché non è elencata.

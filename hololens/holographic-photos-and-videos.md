@@ -15,12 +15,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 4da70e73cd5949c77bc77a73f57f788ed51eff90
-ms.sourcegitcommit: 973b0e71ebceeb2c614aea3dd3a1fbb90d7daed9
+ms.openlocfilehash: 452164caaad09f2caecf7c4a51cda6242d805d7f
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "11100271"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163108"
 ---
 # Creare foto e video in realtà mista
 
@@ -155,8 +155,18 @@ Dopo aver acquisito una foto o un video di realtà mista, verrà visualizzata un
 ## Limitazioni dell'acquisizione di realtà mista
 
 - Mentre si usa l'acquisizione di realtà mista, il framerate di HoloLens sarà dimezzato a 30 Hz.
-- I video hanno una lunghezza massima di cinque minuti.
 - La risoluzione di foto e video può essere ridotta se la foto/videocamera è già in uso da un'altra applicazione, mentre il live streaming o quando le risorse di sistema sono basse.
+
+### Lunghezza massima di registrazione
+
+Nei dispositivi HoloLens 2 prima della versione olografica di Windows i video di 20H2 registrati nel dispositivo sono limitati alla lunghezza massima di cinque minuti.
+
+A causa del feedback dei clienti abbiamo aumentato la lunghezza della registrazione delle [acquisizioni di realtà miste](holographic-photos-and-videos.md). Le acquisizioni di realtà miste non saranno più limitate a 5 minuti per impostazione predefinita, ma calcolerà la lunghezza massima di registrazione in base allo spazio disponibile su disco. Il dispositivo stimerà la durata massima della registrazione video in base allo spazio disponibile su disco fino al 80% dello spazio totale sul disco.
+
+> [!NOTE]
+> HoloLens utilizzerà la lunghezza predefinita della registrazione video (5 minuti) se si verifica una delle operazioni seguenti:
+> - La durata stimata della registrazione max è inferiore ai 5 minuti predefiniti.
+> - Lo spazio disponibile su disco è inferiore al 20% dello spazio totale su disco.
 
 ## Formato di file e risoluzione predefiniti
 

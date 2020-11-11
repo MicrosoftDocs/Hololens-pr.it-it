@@ -5,7 +5,7 @@ keywords: gestione app, app, hololens, app Installer
 author: evmill
 ms.author: v-evmill
 ms.reviewer: qizho
-ms.date: 10/26/2020
+ms.date: 11/10/2020
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
@@ -14,17 +14,20 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 415733bb2809b7ae2808edc097423f8928910c57
-ms.sourcegitcommit: c4fd9a87bb7c728c73418f95a1b15dd93b0af7c6
+ms.openlocfilehash: eba1fd00215ef197f9e32949e958bdbded089d6d
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "11150917"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11162897"
 ---
 # Installare app in HoloLens 2 tramite il programma di installazione di app
 
+
+Spediremo la funzionalità di installazione dell'app subito dopo l'aggiornamento di Windows olografico, versione 20H2. Aggiungiamo **una nuova funzionalità (Installer delle app) per consentire l'installazione delle applicazioni in modo più trasparente** nei dispositivi HoloLens 2. La funzionalità sarà **attivata per impostazione predefinita per i dispositivi non gestiti**. Per evitare interruzioni alle aziende, il programma di installazione **delle app non sarà disponibile per i dispositivi gestiti** in questo momento.  
+
 > [!IMPORTANT]
-> Questa caratteristica è attualmente solo avalible in Windows Insider Build 19041.1377 +. [Altre informazioni su come iscriversi alle build di Windows Insider](hololens-insider.md).
+> Questa funzionalità è attualmente disponibile solo nelle build di Windows Insider. [Altre informazioni su come iscriversi alle build di Windows Insider](hololens-insider.md).
 
 In Windows Insider Release aggiungiamo **una nuova funzionalità (programma di installazione delle app) per consentire l'installazione di applicazioni più agevolmente** nei dispositivi HoloLens 2. La funzionalità sarà **attivata per impostazione predefinita per i dispositivi non gestiti**. Per evitare interruzioni alle aziende, il programma di installazione **delle app non sarà disponibile per i dispositivi gestiti** in questo momento.  
 
@@ -38,8 +41,7 @@ Ora è possibile installare le app senza dover abilitare la modalità sviluppato
 ## Requisiti
 
 ### Per i dispositivi: 
-> [!NOTE]
-> Questa caratteristica è attualmente solo avalible in Windows Insider Build 19041.1377 +. [Altre informazioni su come iscriversi alle build di Windows Insider](hololens-insider.md).
+Questo è attualmente avalible in [Windows Insider Builds](hololens-insider.md) for HoloLens 2 Devices. Assicurati che i dispositivi che usano questo metodo vengano [aggiornati](hololens-update-hololens.md). 
 
 ### Per le tue app: 
 La configurazione della soluzione della tua app deve essere **Master** o **Release** perché il programma di installazione dell'app userà le dipendenze dallo Store. Vedere altre informazioni sulla [creazione di pacchetti di app](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs).
@@ -53,7 +55,7 @@ Le app installate tramite questo metodo devono essere firmate digitalmente. È n
 **Selezionare un metodo di distribuzione del certificato.** 
 - I [pacchetti di provisioning](hololens-provisioning.md) possono essere applicati ai dispositivi locali.
 - MDM può essere usato per [applicare certificati con configurazioni di dispositivi](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
-- Usare il [gestore certificati](hololens-insider.md#certificate-manager)per dispositivi. 
+- Usare il [gestore certificati](certificate-manager.md)per dispositivi. 
 
 ## Metodo di installazione
 

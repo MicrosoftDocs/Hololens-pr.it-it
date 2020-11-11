@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: e1302a3d482648b1ebbf7fee71ceec3ca4261d23
-ms.sourcegitcommit: 87d503434339fc6c9b41aa9473e35ddfde845cac
+ms.openlocfilehash: b0a068bb50d033544b4bf44100d005dfedc1d94d
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "11120147"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11162939"
 ---
 # Raccogliere e usare le informazioni di diagnostica dai dispositivi HoloLens
 
@@ -123,9 +123,17 @@ In situazioni in cui il dispositivo non è in grado di raccogliere la diagnostic
 Questa operazione funziona quando il dispositivo viene visualizzato in Esplora file dopo averla collegata a un PC tramite un cavo USB. 
 
 > [!NOTE]
-> La diagnostica offline è abilitata solo quando l'utente sta attraversando il valore dei criteri OOBE o [System\AllowTelemetry](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) è impostato su Full (il valore predefinito è Basic in Hololens). 
+> La generazione e la gestione della diagnostica offline sono controllate in modo diverso a seconda della versione del sistema operativo. In precedenza era controllato dall'impostazione di telemetria, ma ora è controllato direttamente tramite criteri. 
 
-Se il dispositivo è bloccato, i log non verranno visualizzati. Per disabilitare la diagnostica offline, vai alla pagina **Impostazioni App > privacy** e seleziona **Basic** in **dati di diagnostica**. Nelle build in cui la diagnostica offline dipende dall'impostazione di telemetria, l'effetto si verifica solo se i registri vengono raccolti o meno. Non influisce sui file raccolti.
+Comportamento prima di [Windows olografico, versione 20H2](hololens-release-notes.md#windows-holographic-version-20h2):
+ - La diagnostica offline è abilitata solo quando l'utente sta attraversando il valore dei criteri OOBE o [System\AllowTelemetry](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) è impostato su Full (il valore predefinito è Basic in HoloLens). 
+- Per disabilitare la diagnostica offline, vai alla pagina **Impostazioni App > privacy** e seleziona **Basic** in **dati di diagnostica**. Nelle build in cui la diagnostica offline dipende dall'impostazione di telemetria, l'effetto si verifica solo se i registri vengono raccolti o meno. Non influisce sui file raccolti.
+- Se il dispositivo è bloccato, i log non verranno visualizzati.
+
+In Build [Windows olografico, versione 20H2](hololens-release-notes.md#windows-holographic-version-20h2) e versioni precedenti:
+- Quando la diagnostica di fallback è abilitata, verrà controllata da specifici criteri di MDM con l'impostazione corrispondente [MixedReality/FallbackDiagnostics](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-fallbackdiagnostics)
+- Se il dispositivo è bloccato, i log non verranno visualizzati.
+
 
 Guarda questo video per saperne di più. 
 

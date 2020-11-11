@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: b0b7609f1caac20ff0c47251b1f85a26d7fe1de8
-ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
+ms.openlocfilehash: 36d86e24cc10d6b8457cfb415528398a8d43aa27
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "11016650"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11162865"
 ---
 # Gestione dell'app: panoramica
 
@@ -65,7 +65,18 @@ Per altre informazioni, visita le [app dello Store olografico](https://docs.micr
 I [pacchetti di provisioning](app-deploy-provisioning-package.md) consentono di installare app personalizzate o di linea di business, consentendo ai professionisti IT e agli amministratori di installare rapidamente le app in un dispositivo locale tramite USB. Questa operazione può essere eseguita senza una connessione Internet e per qualsiasi tipo di identità.
     
 L'installazione tramite pacchetti di provisioning è applicabile per: 
-* Linea di app business (non pubbliche)
+* Linea di app business/self developed (non pubbliche)
 * App pubbliche (se è disponibile il programma di installazione offline)
 * Solo caricamento laterale USB
 * Nessun aggiornamento automatico (richiede aggiornamenti manuali tramite il pacchetto di provisioning)
+
+## Installare app in HoloLens 2 tramite il programma di installazione di app
+L'uso degli utenti del [programma di installazione dell'app](app-deploy-app-installer.md) può avere un'esperienza semplice per l'installazione di app nei dispositivi locali o per la condivisione di un'app con un altro utente che non ha familiarità con altri metodi di installazione dell'app in HoloLens. Questa operazione può essere eseguita senza la necessità di abilitare la modalità sviluppatore o usare Device Portal. Si tratta di un metodo semplice per distribuire un'app completamente integrata. Indipendentemente dal fatto che tu voglia semplicemente provare la tua app a un altro utente con un HoloLens o desideri distribuire l'app, questo metodo funziona facilmente.
+
+L'installazione tramite App Installer è applicabile per: 
+* Linea di app business/self developed (non pubbliche)
+* Solo caricamento laterale
+* Non richiede la modalità sviluppatore o Device Portal
+* Facile da installare per l'utente finale
+
+

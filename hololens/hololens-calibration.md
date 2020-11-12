@@ -14,12 +14,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f466d64da8ef122ce2917117a74ab904a573b4e3
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: d14d33ea01a3fe649f7125e050dd1b0a16426e6c
+ms.sourcegitcommit: 681e8e03e1a0250368f1f50cef6fbc3c99bac3af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11163052"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "11165032"
 ---
 # Migliorare la qualità visiva e il comfort
 
@@ -67,26 +67,32 @@ Un dispositivo HoloLens 2 può essere condiviso da più utenti, senza che ciascu
    ![L'app Impostazioni con l'opzione per eseguire la calibrazione degli occhi](./images/C-Settings.Calibration.png)
 
 ### Supporto per Posizione automatica degli occhi
-- Ora forniamo una maggiore precisione per quanto riguarda il posizionamento dell'ologramma tramite il supporto Posizione automatica degli occhi, per un comfort di visualizzazione elevato e una migliore qualità di visualizzazione. 
 
-In HoloLens 2, le posizioni degli occhi consentono un posizionamento accurato dell'ologramma, un'esperienza visiva confortevole e una migliore qualità di visualizzazione. Le posizioni degli occhi vengono calcolate come parte del risultato del tracciamento oculare. Tuttavia, ciò richiede che ogni utente esegua la calibrazione del tracciamento oculare, anche quando l'esperienza non richieda tale input.
+In HoloLens 2, le posizioni degli occhi consentono un posizionamento accurato dell'ologramma, un'esperienza visiva confortevole e una migliore qualità di visualizzazione. Le posizioni degli occhi vengono calcolate internamente come parte del calcolo del tracciamento oculare. Tuttavia, questo richiede a ogni utente di passare alla calibrazione della verifica degli occhi, anche quando l'esperienza potrebbe non richiedere l'input sguardo fisso.
 
-**Posizione automatica degli occhi** consente di calcolare la posizione degli occhi per l'utente, in una modalità priva di interazione.  Posizione automatica degli occhi inizia a funzionare automaticamente in background dal momento in cui l'utente accende il dispositivo. Se l'utente non ha effettuato una calibrazione del tracciamento oculare in precedenza, Posizione automatica degli occhi inizierà a fornire le posizioni degli occhi dell'utente al sistema di visualizzazione dopo un breve tempo di elaborazione. Il tempo di elaborazione è in genere compreso tra 20 e i 60 secondi. I dati dell'utente non vengono conservati sul dispositivo e quindi questo processo viene ripetuto se l'utente toglie e rimette il dispositivo o se il dispositivo si riavvia o si riattiva dalla modalità sospensione.  
+**Posizione automatica degli occhi** consente di calcolare la posizione degli occhi per l'utente, in una modalità priva di interazione. Posizione automatica degli occhi inizia a funzionare automaticamente in background dal momento in cui l'utente accende il dispositivo. Se l'utente non ha una calibrazione preventiva degli occhi, Posizione automatica degli occhi inizierà a fornire le posizioni degli occhi dell'utente al sistema di visualizzazione dopo un tempo di elaborazione di 20-30 secondi. I dati dell'utente non vengono conservati sul dispositivo e quindi questo processo viene ripetuto se l'utente toglie e rimette il dispositivo o se il dispositivo si riavvia o si riattiva dalla modalità sospensione.
 
-Quando un utente non calibrato indossa il dispositivo, ci sono alcune modifiche al comportamento del sistema della funzionalità Posizione automatica degli occhi. Quando si parla di utente non calibrato, ci si riferisce a qualcuno che non ha eseguito in precedenza il processo di calibrazione del tracciamento oculare sul dispositivo.
+Quando un utente non calibrato indossa il dispositivo, ci sono alcune modifiche al comportamento del sistema della funzionalità Posizione automatica degli occhi. In questo contesto, un utente non calibrato fa riferimento a una persona che non ha superato il processo di calibrazione del rilevamento degli occhi nel dispositivo in precedenza.
 
-|     Applicazione attiva                           |     Comportamento precedente                                   |     Comportamento per Windows Holographic, dalla versione 20H2 in poi                                                     |
-|--------------------------------------------------|--------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-|     App non abilitata allo sguardo fisso o Holographic Shell    |     Viene visualizzata la richiesta di calibrazione del tracciamento oculare.    |     Non viene visualizzato alcuna richiesta.                                                                                |
-|     App sguardo fisso abilitata                             |     Viene visualizzata la richiesta di calibrazione del tracciamento oculare.    |     La richiesta di calibrazione del rilevamento degli occhi viene visualizzata solo quando l'applicazione accede al flusso dello sguardo degli occhi.     |
+| Applicazione attiva | Comportamento precedente | Comportamento da Windows Holographic, versione 20H2 Update |
+|:-------------------|:-----------------|:-----------------------------------|
+| App sguardo fisso non abilitata o Holographic Shell |Viene visualizzata la finestra di dialogo di richiesta della calibrazione degli occhi. | Non viene visualizzata alcuna richiesta. |
+| App sguardo fisso abilitata | Viene visualizzata la finestra di dialogo di richiesta della calibrazione degli occhi. | La richiesta di calibrazione degli occhi viene visualizzata solo quando l'applicazione accede al flusso dello sguardo fisso. |
 
- Se l'utente passa da un'applicazione non abilitata allo sguardo fisso a una che accede ai dati sullo sguardo, verrà visualizzata una richiesta di calibrazione. Non verrà modificato il flusso dell’esperienza di Configurazione guidata. 
- 
-Per le esperienze che richiedono dati sullo sguardo o un posizionamento dell'ologramma molto preciso, consigliamo agli utenti non calibrati di eseguire la calibrazione del posizionamento degli oculare dal richiesta di calibrazione del rilevamento degli occhi o avviando l'app Impostazioni dal menu Start, quindi selezionando **Sistema> Calibrazione> Calibrazione oculare> Esegui calibrazione oculare**.
+Se l'utente passa da un'applicazione non abilitata allo sguardo fisso a una che accede ai dati sullo sguardo fisso, verrà visualizzata una richiesta di calibrazione. 
 
-**Problemi noti**
- - Stiamo indagando su un problema in cui il processo host del driver tracciatore oculare potrebbe bloccarsi durante l'esecuzione con un carico di memoria elevato. Il processo host del driver del tracciamento oculare deve essere recuperato automaticamente.
+Tutti gli altri comportamenti del sistema saranno simili a quando l'utente corrente non ha una calibrazione attiva per la verifica degli occhi. Ad esempio, il gesto iniziale con una sola mano non verrà abilitato. Per la configurazione iniziale, non ci sarà alcun cambiamento nell'esperienza di configurazione guidata.
 
+Per le esperienze che richiedono dati sullo sguardo fisso o un posizionamento olografico molto preciso, è consigliabile che gli utenti non calibrati eseguano la calibrazione del tracciamento oculare. È accessibile dalla richiesta di calibrazione degli occhi o avviando l'app Impostazioni dal menu Start, quindi selezionando **Sistema > Calibrazione > Calibrazione degli occhi > Esegui calibrazione degli occhi**.
+
+#### Richiesta di calibrazione posticipata
+
+Con Posizione automatica degli occhi, la finestra di dialogo della richiesta di calibrazione degli occhi viene rinviata finché un'applicazione non richiede i dati sullo sguardo fisso. In questo modo, non viene inviata alcuna richiesta all'utente quando l'applicazione attiva non richiede lo sguardo fisso. Se l'applicazione richiede dati sullo sguardo fisso e l'utente corrente non è calibrato, all'utente viene inviata una richiesta di calibrazione. Questo comportamento può essere usato per visualizzare la richiesta di calibrazione degli occhi in un momento appropriato per l'esperienza. Questo metodo è consigliato per i seguenti motivi
+
+1.  La finestra di dialogo della richiesta di calibrazione degli occhi fornisce all'utente i dettagli sul motivo per cui è necessario il monitoraggio degli occhi.
+2.  Presenta all'utente un modo per rifiutare la calibrazione degli occhi.
+
+Se l'utente sceglie di avviare la calibrazione degli occhi, lo stato di avanzamento dovrebbe tornare all'applicazione originale dopo il completamento della calibrazione. 
 
 ### Risoluzione dei problemi relativi alla calibrazione di HoloLens 2
 

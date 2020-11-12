@@ -8,23 +8,23 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 10/13/2020
+ms.date: 11/10/2020
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0825e3fd2d0a4e6328eaa617e4233639f481e8cb
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: df8d6e2c00bd8ff8507be4a2fd58c773d8833c11
+ms.sourcegitcommit: 20ff249e3570c74f62cdf6339c8be76c401d9f4a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11163148"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "11165969"
 ---
 # Note sulla versione di HoloLens 2
 
-Per assicurarti di avere un'esperienza produttiva con i tuoi dispositivi HoloLens, continuiamo a rilasciare gli aggiornamenti relativi a funzionalità, bug e sicurezza. In questa pagina è possibile vedere le novità di HoloLens ogni mese. Per ottenere il più recente aggiornamento di HoloLens 2 Full Flash (FFU) per [flashare il dispositivo tramite il compagno di ripristino avanzato](hololens-recovery.md#clean-reflash-the-device), [scaricalo qui](https://aka.ms/hololens2download). Il download viene mantenuto aggiornato e fornisce la build più recente in generale disponibile.
+Per assicurarti di avere un'esperienza produttiva con i tuoi dispositivi HoloLens, continuiamo a rilasciare gli aggiornamenti relativi a funzionalità, bug e sicurezza. In questa pagina è possibile vedere le novità di HoloLens ogni mese. Per ottenere l'aggiornamento più recente di HoloLens 2, è possibile [verificare la disponibilità di aggiornamenti e aggiornare manualmente](hololens-update-hololens.md#check-for-updates-and-manually-update) o ottenere l'aggiornamento completo in Flash (FFU) per [flashare il dispositivo tramite il compagno di ripristino avanzato](hololens-recovery.md#clean-reflash-the-device), [scaricarlo qui](https://aka.ms/hololens2download). Il download viene mantenuto aggiornato e fornisce la build più recente in generale disponibile.
 
 >[!NOTE]
 > Per leggere le note sulla versione dell'emulatore HoloLens, [visita l'archivio](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
@@ -40,7 +40,7 @@ Questa ultima versione è un aggiornamento mensile della versione 2004, ma quest
 
 | Funzionalità                                              | Descrizione                                                                                                                                     |
 |------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Supporto per la posizione degli occhi automatici](hololens-release-notes.md#auto-eye-position-support) | Calcola attivamente le posizioni degli occhi senza che gli utenti debbano eseguire la calibrazione attiva.   |
+| [Supporto per Posizione automatica degli occhi](hololens-release-notes.md#auto-eye-position-support) | Calcola attivamente le posizioni degli occhi senza che gli utenti stiano usando la calibrazione degli occhi.   |
 | [Gestione certificati](hololens-release-notes.md#certificate-manager)   | Consente di installare e rimuovere i certificati dall'app impostazioni per nuovi metodi più semplici.     |
 | [Avvio automatico del provisioning da USB](hololens-release-notes.md#auto-launch-provisioning-from-usb)                    | Il provisioning dei pacchetti sulle unità USB richiede automaticamente la pagina di provisioning in OOBE.                                                         |
 | [Convalidare automaticamente i pacchetti di provisioning in OOBE](hololens-release-notes.md#auto-confirm-provisioning-packages-in-oobe)           | I pacchetti di provisioning vengono applicati automaticamente durante la configurazione guidata dalla pagina provisioning.                                                         |
@@ -60,24 +60,24 @@ Questa ultima versione è un aggiornamento mensile della versione 2004, ma quest
 | [Lunghezza della registrazione aumentata](hololens-release-notes.md#recording-length-increased) | Le registrazioni MRC non sono più limitate a 5 minuti. |
 | [Miglioramenti e correzioni nell'aggiornamento](hololens-release-notes.md#improvements-and-fixes-in-the-update)                 | Correzioni aggiuntive nell'aggiornamento.   |
 
-### Supporto per la posizione degli occhi automatici
+### Supporto per Posizione automatica degli occhi
 
-- Ora forniamo maggiore precisione per il posizionamento degli ologrammi attraverso il supporto della posizione degli occhi automatici per un comfort di visualizzazione elevato e una qualità di visualizzazione migliorata. 
+In HoloLens 2, le posizioni degli occhi consentono un posizionamento accurato dell'ologramma, un'esperienza visiva confortevole e una migliore qualità di visualizzazione. Le posizioni degli occhi vengono calcolate internamente come parte del calcolo degli Eye Tracking. Tuttavia, questo richiede a ogni utente di passare alla calibrazione della verifica degli occhi, anche quando l'esperienza potrebbe non richiedere l'input dello sguardo oculare.
 
-In HoloLens 2 le posizioni degli occhi permettono un posizionamento accurato degli ologrammi, un'esperienza di visualizzazione confortevole e una qualità di visualizzazione migliorata. Le posizioni degli occhi vengono calcolate come parte del risultato del rilevamento degli occhi. Tuttavia, questo richiede a ogni utente di passare alla calibrazione della verifica degli occhi, anche quando l'esperienza non richiede l'input dello sguardo oculare.
+**Posizione automatica degli occhi** consente di calcolare la posizione degli occhi per l'utente, in una modalità priva di interazione. Posizione automatica degli occhi inizia a funzionare automaticamente in background dal momento in cui l'utente accende il dispositivo. Se l'utente non ha una calibrazione preventiva degli occhi, la posizione degli occhi automatici inizierà a fornire le posizioni degli occhi dell'utente al sistema di visualizzazione dopo un tempo di elaborazione di 20-30 secondi. I dati dell'utente non vengono conservati sul dispositivo e quindi questo processo viene ripetuto se l'utente toglie e rimette il dispositivo o se il dispositivo si riavvia o si riattiva dalla modalità sospensione.
 
-La **posizione degli occhi automatici (AEP)** consente a questi scenari di calcolare le posizioni degli occhi per l'utente in modo libero da interazioni.  La posizione degli occhi automatici inizia a lavorare in background automaticamente dal momento in cui l'utente inserisce il dispositivo. Se l'utente non ha una calibrazione preventiva degli occhi, la posizione degli occhi automatici inizierà a fornire le posizioni degli occhi dell'utente al sistema di visualizzazione dopo un breve periodo di elaborazione. Questo tempo di elaborazione è in genere compreso tra 20-60 secondi. I dati dell'utente non vengono mantenuti nel dispositivo e quindi questo processo viene ripetuto se l'utente decolla e riattiva il dispositivo o se il dispositivo si riavvia o si risveglia dal sonno.  
+Quando un utente non calibrato indossa il dispositivo, ci sono alcune modifiche al comportamento del sistema della funzionalità Posizione automatica degli occhi. In questo contesto, un utente non calibrato fa riferimento a una persona che non ha superato il processo di calibrazione del rilevamento degli occhi nel dispositivo in precedenza.
 
-Ci sono alcune modifiche al comportamento del sistema con la funzionalità posizione occhio automatico quando un utente non calibrato inserisce il dispositivo. Un utente non calibrato fa riferimento a una persona che non ha superato il processo di calibrazione del rilevamento degli occhi nel dispositivo in precedenza.
+| Applicazione attiva | Comportamento precedente | Comportamento da Windows olografico, versione 20H2 Update |
+|:-------------------|:-----------------|:-----------------------------------|
+| App non abilitata allo sguardo fisso o Holographic Shell |Viene visualizzata la finestra di dialogo richiesta di calibrazione degli occhi. | Non viene visualizzato alcuna richiesta. |
+| App sguardo fisso abilitata | Viene visualizzata la finestra di dialogo richiesta di calibrazione degli occhi. | La richiesta di calibrazione degli occhi viene visualizzata solo quando l'applicazione accede al flusso dello sguardo oculare. |
 
-|     Applicazione attiva                           |     Comportamento precedente                                   |     Comportamento per la versione olografica di Windows 20H2 in avanti                                                     |
-|--------------------------------------------------|--------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-|     App o Shell olografica abilitata per gli occhi non consentiti    |     Viene visualizzata la richiesta di calibrazione del rilevamento degli occhi.    |     Non viene visualizzato alcun messaggio.                                                                                |
-|     App sguardo abilitato                             |     Viene visualizzata la richiesta di calibrazione del rilevamento degli occhi.    |     La richiesta di calibrazione degli occhi viene visualizzata solo quando l'applicazione accede al flusso dello sguardo oculare.     |
+Se l'utente passa da un'applicazione non abilitata allo sguardo fisso a una che accede ai dati sullo sguardo, verrà visualizzata una richiesta di calibrazione. 
 
- Se l'utente passa da un'applicazione abilitata senza lo sguardo a quella che accede ai dati sugli sguardi, verrà visualizzata la richiesta di calibrazione. Non verrà modificato il flusso di esperienza fuori scatola. 
- 
-Per le esperienze che richiedono dati sugli occhi o un posizionamento olografico molto preciso, è consigliabile che gli utenti non calibrati eseguano la calibrazione della verifica degli occhi dalla richiesta di calibrazione degli occhi o lancino l'app Impostazioni dal menu Start e quindi selezionando **sistema > calibrazione > calibrazione degli occhi > eseguire la calibrazione degli**occhi.
+Tutti gli altri comportamenti del sistema saranno simili a quando l'utente corrente non ha una calibrazione attiva per la verifica degli occhi. Ad esempio, il gesto iniziale con una sola mano non verrà abilitato. Per la configurazione iniziale non ci sarà alcun cambiamento nell'esperienza di out-of-box.
+
+Per le esperienze che richiedono dati sugli occhi o un posizionamento olografico molto preciso, è consigliabile che gli utenti non calibrati eseguano la calibrazione della verifica degli occhi. È accessibile dalla richiesta di calibrazione degli occhi o lanciando l'app Impostazioni dal menu Start e quindi selezionando **sistema > calibrazione > calibrazione > eseguire**la calibrazione degli occhi.
 
 Queste informazioni possono essere trovate in seguito con [altre informazioni sulla calibrazione](hololens-calibration.md#auto-eye-position-support). 
 
@@ -165,50 +165,50 @@ Queste informazioni possono essere trovate più avanti [qui.](hololens-provision
 Ora, durante la configurazione di OOBE, dopo la connessione di HoloLens 2 con WiFi, OOBE verificherà il profilo di un pilota automatico per il dispositivo. Se ne viene trovata una, verrà usata per completare il resto del flusso di partecipazione e registrazione di AAD. In altre parole, l'uso di Ethernet a USB-C o Wi-Fi all'adattatore USB-C non è più un requisito, ma continueranno a funzionare se forniti all'inizio della configurazione guidata. Leggi altre informazioni su [Autopilot per dispositivi HoloLens 2](hololens2-autopilot.md).
 
 ### Tenantlockdown CSP e Autopilot
-- Mantiene i dispositivi nel tenant dell'organizzazione tramite il blocco al tenant anche tramite reset del dispositivo o reflash. Con ulteriore sicurezza, non è consentito la creazione di account in via provisioning. 
+- Mantiene i dispositivi nel tenant dell'organizzazione bloccandoli al tenant anche tramite il ripristino o l’esecuzione del flashing del dispositivo, con maggiore sicurezza, impedendo la creazione di account tramite provisioning. 
 
 I dispositivi HoloLens 2 supportano ora TenantLockdown CSP come [versione olografica di Windows 20H2](hololens-release-notes.md#windows-holographic-version-20h2). 
 
-[TenantLockdown](https://docs.microsoft.com/windows/client-management/mdm/tenantlockdown-csp) CSP consente a HoloLens 2 di essere collegato alla registrazione MDM usando solo il pilota automatico. Una volta che il nodo RequireNetworkInOOBE di CSP di TenantLockdown è impostato su true o false (inizialmente impostato) su HoloLens 2, il valore rimane nel dispositivo nonostante il relampeggio, gli aggiornamenti del sistema operativo e così via. 
+[TenantLockdown](https://docs.microsoft.com/windows/client-management/mdm/tenantlockdown-csp) CSP consente a HoloLens 2 di essere collegato alla registrazione MDM usando solo Autopilot. Una volta che il nodo RequireNetworkInOOBE del CSP TenantLockdown è impostato sul valore true o false (inizialmente impostato) su HoloLens 2, quel valore rimane sul dispositivo nonostante la riesecuzione del flashing, gli aggiornamenti del sistema operativo e così via. 
 
-Una volta che il nodo RequireNetworkInOOBE CSP di TenantLockdown è impostato su true in HoloLens 2, OOBE attende a tempo indeterminato che il profilo del pilota automatico venga scaricato e applicato correttamente, dopo la connettività di rete. 
+Una volta che il nodo RequireNetworkInOOBE del CSP TenantLockdown è impostato su true in HoloLens 2, la Configurazione guidata attende a tempo indefinito che il profilo Autopilot venga scaricato e applicato correttamente, dopo la connettività di rete. 
 
-Una volta che il nodo RequireNetworkInOOBE CSP di TenantLockdown è impostato su true in HoloLens 2, le operazioni seguenti non sono consentite in OOBE: 
-- Creazione di un utente locale con il provisioning di runtime 
-- Esecuzione dell'operazione AAD join tramite provisioning di runtime 
-- Selezione di chi possiede il dispositivo nell'esperienza di configurazione guidata 
+Una volta che il nodo RequireNetworkInOOBE del CSP TenantLockdown è impostato su true in HoloLens 2, le seguenti operazioni non sono consentite in Configurazione guidata: 
+- creazione di un utente locale usando il provisioning di runtime 
+- esecuzione dell'operazione di aggiunta AAD join tramite provisioning di runtime 
+- selezione di chi possiede il dispositivo nell'esperienza di Configurazione guidata 
 
-#### Come impostare l'uso di Intune? 
-1. Crea un profilo di configurazione del dispositivo URI OMA personalizzato e specifica true per il nodo RequireNetworkInOOBE, come illustrato di seguito.
-Il valore URI OMA deve essere./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
+#### Come impostarlo usando Intune? 
+1. Creare un profilo di configurazione del dispositivo URI OMA personalizzato e specificare true per il nodo RequireNetworkInOOBE come mostrato di seguito.
+Il valore OMA-URI deve essere ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
 
    > [!div class="mx-imgBorder"]
-   > ![Impostazione del blocco di Tennant tramite OMA-URI](images/hololens-tenant-lockdown.png)
+   > ![Impostazione del blocco del tenant tramite OMA-URI](images/hololens-tenant-lockdown.png)
 
 1. Creare un gruppo e assegnare il profilo di configurazione del dispositivo al gruppo di dispositivi. 
 
-1. Impostare il membro del dispositivo HoloLens 2 del gruppo creato nel passaggio precedente e attivare la sincronizzazione.  
+1. Rendere il dispositivo HoloLens 2 membro del gruppo creato nel passaggio precedente e attivare la sincronizzazione.  
 
-Verificare nel portale di Intune che la configurazione del dispositivo sia stata applicata correttamente. Una volta che questa configurazione del dispositivo si applica correttamente al dispositivo Hololens 2, gli effetti di TenantLockdown saranno attivi.
+Verificare nel portale di Intune che la configurazione del dispositivo sia stata applicata correttamente. Una volta che questa configurazione del dispositivo si applica correttamente al dispositivo HoloLens 2, gli effetti di TenantLockdown saranno attivi.
 
-#### Come si annulla la RequireNetworkInOOBE di TenantLockdown in HoloLens 2 usando Intune? 
-1. Rimuovere il HoloLens 2 dal gruppo di dispositivi a cui è stata assegnata la configurazione di dispositivo precedente. 
+#### Come si annulla RequireNetworkInOOBE di TenantLockdown in HoloLens 2 usando Intune? 
+1. Rimuovere HoloLens 2 dal gruppo di dispositivi a cui è stata assegnata la configurazione di dispositivo precedente. 
 
-1. Crea un profilo di configurazione del dispositivo basato su URI OMA personalizzato e specifica false per RequireNetworkInOOBE, come illustrato di seguito. Il valore URI OMA deve essere./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
+1. Creare un profilo di configurazione del dispositivo basato su URI OMA personalizzato e specificare false per RequireNetworkInOOBE come mostrato di seguito. Il valore OMA-URI deve essere ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
 
    > [!div class="mx-imgBorder"]
-   > ![Screenshot dell'impostazione di RequireNetworkInOOBE su false tramite URI OMA in Intune](images/hololens-tenant-lockdown-false.png)
+   > ![Screenshot dell'impostazione di RequireNetworkInOOBE su false tramite OMA URI in Intune](images/hololens-tenant-lockdown-false.png)
 
 1. Creare un gruppo e assegnare il profilo di configurazione del dispositivo al gruppo di dispositivi. 
 
-1. Impostare il membro del dispositivo HoloLens 2 del gruppo creato nel passaggio precedente e attivare la sincronizzazione.
+1. Rendere il dispositivo HoloLens 2 membro del gruppo creato nel passaggio precedente e attivare la sincronizzazione.
 
-Verificare nel portale di Intune che la configurazione del dispositivo sia stata applicata correttamente. Una volta che questa configurazione del dispositivo si applica correttamente al dispositivo Hololens 2, gli effetti di TenantLockdown saranno inattivi. 
+Verificare nel portale di Intune che la configurazione del dispositivo sia stata applicata correttamente. Una volta che questa configurazione del dispositivo si applica correttamente al dispositivo HoloLens 2, gli effetti di TenantLockdown saranno inattivi. 
 
-#### Cosa succede durante la configurazione guidata, se il profilo Autopilot non è assegnato in un HoloLens dopo che TenantLockdown è stato impostato su true? 
-Il file OOBE attenderà in modo indefinito il download del profilo del pilota automatico e la finestra di dialogo seguente verrà presentata. Per rimuovere gli effetti di TenantLockdown, il dispositivo deve essere registrato con il suo tenant originale usando solo il pilota automatico e RequireNetworkInOOBE deve essere annullato, come descritto nel passaggio precedente, prima che le restrizioni introdotte da TenantLockdown CSP vengano rimosse. 
+#### Cosa succederebbe durante la Configurazione guidata, se il profilo di Autopilot non viene assegnato a HoloLens dopo che TenantLockdown è stato impostato su true? 
+La Configurazione guidata attenderà a tempo indefinito il download del profilo di Autopilot e verrà visualizzata la seguente finestra di dialogo. Per rimuovere gli effetti di TenantLockdown, il dispositivo deve essere registrato con il suo tenant originale usando solo Autopilot e RequireNetworkInOOBE deve essere disattivato, come descritto nel passaggio precedente, prima che le restrizioni introdotte da TenantLockdown CSP vengano rimosse. 
 
-![Visualizzazione in un dispositivo per quando il criterio viene applicato al dispositivo.](images/hololens-autopilot-lockdown.png)
+![Visualizzazione nel dispositivo per quando il criterio viene applicato al dispositivo.](images/hololens-autopilot-lockdown.png)
 
 Queste informazioni ora possono essere trovate insieme al resto del pilota automatico in [TENANTLOCKDOWN CSP e Autopilot](hololens2-autopilot.md#tenantlockdown-csp-and-autopilot).
 
@@ -284,7 +284,7 @@ Criteri appena abilitati che consentono di avere più opzioni di gestione dei di
 
 Queste due nuove polizie per AllowAddProvisioningPackage e AllowRemoveProvisioningPackage vengono aggiunte alle [restrizioni dei dispositivi comuni](hololens-common-device-restrictions.md).
 
-### Nuovi criteri di alimentazione per Hololens 2
+### Nuovi criteri di alimentazione per HoloLens 2
 - Altre opzioni per quando HoloLens dorme o si blocca con i criteri di alimentazione. 
 
 Questi nuovi criteri aggiunti consentono agli amministratori di controllare gli Stati di alimentazione, ad esempio il timeout inattivo. Per saperne di più su ogni singolo criterio, fare clic sul collegamento relativo al criterio.

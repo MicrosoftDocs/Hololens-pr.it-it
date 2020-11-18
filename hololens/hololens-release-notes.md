@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: df8d6e2c00bd8ff8507be4a2fd58c773d8833c11
-ms.sourcegitcommit: 20ff249e3570c74f62cdf6339c8be76c401d9f4a
+ms.openlocfilehash: 3cf2797d4c01f66b6433aaf327e31061a8dd2f3e
+ms.sourcegitcommit: 307e313f05243b6d94f9bfc0cb4e316a00a8005c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "11165969"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "11176908"
 ---
 # Note sulla versione di HoloLens 2
 
@@ -62,22 +62,22 @@ Questa ultima versione è un aggiornamento mensile della versione 2004, ma quest
 
 ### Supporto per Posizione automatica degli occhi
 
-In HoloLens 2, le posizioni degli occhi consentono un posizionamento accurato dell'ologramma, un'esperienza visiva confortevole e una migliore qualità di visualizzazione. Le posizioni degli occhi vengono calcolate internamente come parte del calcolo degli Eye Tracking. Tuttavia, questo richiede a ogni utente di passare alla calibrazione della verifica degli occhi, anche quando l'esperienza potrebbe non richiedere l'input dello sguardo oculare.
+In HoloLens 2, le posizioni degli occhi consentono un posizionamento accurato dell'ologramma, un'esperienza visiva confortevole e una migliore qualità di visualizzazione. Le posizioni degli occhi vengono calcolate internamente come parte del calcolo del tracciamento oculare. Tuttavia, questo richiede a ogni utente di passare alla calibrazione della verifica degli occhi, anche quando l'esperienza potrebbe non richiedere l'input sguardo fisso.
 
-**Posizione automatica degli occhi** consente di calcolare la posizione degli occhi per l'utente, in una modalità priva di interazione. Posizione automatica degli occhi inizia a funzionare automaticamente in background dal momento in cui l'utente accende il dispositivo. Se l'utente non ha una calibrazione preventiva degli occhi, la posizione degli occhi automatici inizierà a fornire le posizioni degli occhi dell'utente al sistema di visualizzazione dopo un tempo di elaborazione di 20-30 secondi. I dati dell'utente non vengono conservati sul dispositivo e quindi questo processo viene ripetuto se l'utente toglie e rimette il dispositivo o se il dispositivo si riavvia o si riattiva dalla modalità sospensione.
+**Posizione automatica degli occhi** consente di calcolare la posizione degli occhi per l'utente, in una modalità priva di interazione. Posizione automatica degli occhi inizia a funzionare automaticamente in background dal momento in cui l'utente accende il dispositivo. Se l'utente non ha una calibrazione preventiva degli occhi, Posizione automatica degli occhi inizierà a fornire le posizioni degli occhi dell'utente al sistema di visualizzazione dopo un tempo di elaborazione di 20-30 secondi. I dati dell'utente non vengono conservati sul dispositivo e quindi questo processo viene ripetuto se l'utente toglie e rimette il dispositivo o se il dispositivo si riavvia o si riattiva dalla modalità sospensione.
 
 Quando un utente non calibrato indossa il dispositivo, ci sono alcune modifiche al comportamento del sistema della funzionalità Posizione automatica degli occhi. In questo contesto, un utente non calibrato fa riferimento a una persona che non ha superato il processo di calibrazione del rilevamento degli occhi nel dispositivo in precedenza.
 
-| Applicazione attiva | Comportamento precedente | Comportamento da Windows olografico, versione 20H2 Update |
+| Applicazione attiva | Comportamento precedente | Comportamento da Windows Holographic, versione 20H2 Update |
 |:-------------------|:-----------------|:-----------------------------------|
-| App non abilitata allo sguardo fisso o Holographic Shell |Viene visualizzata la finestra di dialogo richiesta di calibrazione degli occhi. | Non viene visualizzato alcuna richiesta. |
-| App sguardo fisso abilitata | Viene visualizzata la finestra di dialogo richiesta di calibrazione degli occhi. | La richiesta di calibrazione degli occhi viene visualizzata solo quando l'applicazione accede al flusso dello sguardo oculare. |
+| App sguardo fisso non abilitata o Holographic Shell |Viene visualizzata la finestra di dialogo di richiesta della calibrazione degli occhi. | Non viene visualizzata alcuna richiesta. |
+| App sguardo fisso abilitata | Viene visualizzata la finestra di dialogo di richiesta della calibrazione degli occhi. | La richiesta di calibrazione degli occhi viene visualizzata solo quando l'applicazione accede al flusso dello sguardo fisso. |
 
-Se l'utente passa da un'applicazione non abilitata allo sguardo fisso a una che accede ai dati sullo sguardo, verrà visualizzata una richiesta di calibrazione. 
+Se l'utente passa da un'applicazione non abilitata allo sguardo fisso a una che accede ai dati sullo sguardo fisso, verrà visualizzata una richiesta di calibrazione. 
 
-Tutti gli altri comportamenti del sistema saranno simili a quando l'utente corrente non ha una calibrazione attiva per la verifica degli occhi. Ad esempio, il gesto iniziale con una sola mano non verrà abilitato. Per la configurazione iniziale non ci sarà alcun cambiamento nell'esperienza di out-of-box.
+Tutti gli altri comportamenti del sistema saranno simili a quando l'utente corrente non ha una calibrazione attiva per la verifica degli occhi. Ad esempio, il gesto iniziale con una sola mano non verrà abilitato. Per la configurazione iniziale, non ci sarà alcun cambiamento nell'esperienza di configurazione guidata.
 
-Per le esperienze che richiedono dati sugli occhi o un posizionamento olografico molto preciso, è consigliabile che gli utenti non calibrati eseguano la calibrazione della verifica degli occhi. È accessibile dalla richiesta di calibrazione degli occhi o lanciando l'app Impostazioni dal menu Start e quindi selezionando **sistema > calibrazione > calibrazione > eseguire**la calibrazione degli occhi.
+Per le esperienze che richiedono dati sullo sguardo fisso o un posizionamento olografico molto preciso, è consigliabile che gli utenti non calibrati eseguano la calibrazione del tracciamento oculare. È accessibile dalla richiesta di calibrazione degli occhi o avviando l'app Impostazioni dal menu Start, quindi selezionando **Sistema > Calibrazione > Calibrazione degli occhi > Esegui calibrazione degli occhi**.
 
 Queste informazioni possono essere trovate in seguito con [altre informazioni sulla calibrazione](hololens-calibration.md#auto-eye-position-support). 
 
@@ -189,7 +189,7 @@ Il valore OMA-URI deve essere ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE
 
 1. Rendere il dispositivo HoloLens 2 membro del gruppo creato nel passaggio precedente e attivare la sincronizzazione.  
 
-Verificare nel portale di Intune che la configurazione del dispositivo sia stata applicata correttamente. Una volta che questa configurazione del dispositivo si applica correttamente al dispositivo HoloLens 2, gli effetti di TenantLockdown saranno attivi.
+Verificare nel portale di Intune che la configurazione del dispositivo sia stata applicata correttamente. Una volta che la configurazione del dispositivo viene applicata correttamente al dispositivo HoloLens 2, gli effetti di TenantLockdown saranno attivi.
 
 #### Come si annulla RequireNetworkInOOBE di TenantLockdown in HoloLens 2 usando Intune? 
 1. Rimuovere HoloLens 2 dal gruppo di dispositivi a cui è stata assegnata la configurazione di dispositivo precedente. 
@@ -203,7 +203,7 @@ Verificare nel portale di Intune che la configurazione del dispositivo sia stata
 
 1. Rendere il dispositivo HoloLens 2 membro del gruppo creato nel passaggio precedente e attivare la sincronizzazione.
 
-Verificare nel portale di Intune che la configurazione del dispositivo sia stata applicata correttamente. Una volta che questa configurazione del dispositivo si applica correttamente al dispositivo HoloLens 2, gli effetti di TenantLockdown saranno inattivi. 
+Verificare nel portale di Intune che la configurazione del dispositivo sia stata applicata correttamente. Una volta che la configurazione del dispositivo viene applicata correttamente al dispositivo HoloLens 2, gli effetti di TenantLockdown saranno inattivi. 
 
 #### Cosa succederebbe durante la Configurazione guidata, se il profilo di Autopilot non viene assegnato a HoloLens dopo che TenantLockdown è stato impostato su true? 
 La Configurazione guidata attenderà a tempo indefinito il download del profilo di Autopilot e verrà visualizzata la seguente finestra di dialogo. Per rimuovere gli effetti di TenantLockdown, il dispositivo deve essere registrato con il suo tenant originale usando solo Autopilot e RequireNetworkInOOBE deve essere disattivato, come descritto nel passaggio precedente, prima che le restrizioni introdotte da TenantLockdown CSP vengano rimosse. 
@@ -283,6 +283,9 @@ Criteri appena abilitati che consentono di avere più opzioni di gestione dei di
 - [RemoteLock](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp)
 
 Queste due nuove polizie per AllowAddProvisioningPackage e AllowRemoveProvisioningPackage vengono aggiunte alle [restrizioni dei dispositivi comuni](hololens-common-device-restrictions.md).
+
+> [!NOTE]
+> Per quanto riguarda [RemoteLock](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp), HoloLens sosterrà solo la configurazione di/vendor/MSFT/RemoteLock/Lock. Le configurazioni che gestiscono il PIN, ad esempio Reset e ripristino, non sono supportate.
 
 ### Nuovi criteri di alimentazione per HoloLens 2
 - Altre opzioni per quando HoloLens dorme o si blocca con i criteri di alimentazione. 

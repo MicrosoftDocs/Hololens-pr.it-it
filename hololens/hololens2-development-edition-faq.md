@@ -14,14 +14,14 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7d9568e6498c9b73fdee7110248a51253540a7eb
-ms.sourcegitcommit: ef25b0470ad789fbf41591be64d737ff7ea43d1f
+ms.openlocfilehash: 7ef5fd06f4d77f541047a934056cffd863962c73
+ms.sourcegitcommit: 307e313f05243b6d94f9bfc0cb4e316a00a8005c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "11151118"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "11176868"
 ---
-# Domande frequenti su HoloLens Development Edition
+# Domande frequenti su HoloLens 2 Development Edition
 
 ## Generale
 

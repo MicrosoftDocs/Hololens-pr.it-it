@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: be9da0ec2f301705a0691bcfc9dcf9d75eac8922
-ms.sourcegitcommit: cfbcdf562f949eef9cd797bbb08dfdf9f29e8fcd
+ms.openlocfilehash: 429f955777eae5cbe94c710ca4c17e03091fb99e
+ms.sourcegitcommit: 307e313f05243b6d94f9bfc0cb4e316a00a8005c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "11168535"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "11176898"
 ---
 # Windows Autopilot per HoloLens 2
 
@@ -325,8 +325,8 @@ La Configurazione guidata attenderà a tempo indefinito il download del profilo 
 
 ## Problemi noti
 
-- L'installazione dell'applicazione basata sul contesto del dispositivo configurata in Intune non funziona ancora.
-- Durante la configurazione dell'Autopilot tramite Wi-Fi, potrebbe esserci un'istanza in cui il profilo Autopilot non viene scaricato quando viene stabilita la prima connessione Internet e viene presentato il Contratto di licenza con l'utente finale (EULA). In questo caso l'utente ha la possibilità di procedere con l’esperienza di installazione non-Autopilot. Per ritentare la configurazione con Autopilot, porre il dispositivo in modalità di sospensione e quindi accenderlo, oppure riavviare il dispositivo e riprovare.
+- L'installazione dell'applicazione basata sul contesto del dispositivo configurata in Intune non funziona ancora. [Scopri di più sul contesto del dispositivo e sulle installazioni di contesto utente.](https://docs.microsoft.com/mem/intune/apps/apps-windows-10-app-deploy#install-apps-on-windows-10-devices)
+-   Durante la configurazione di Autopilot tramite Wi-Fi, potrebbe essere presente un'istanza in cui il profilo di Autopilot non viene scaricato quando viene stabilita la connessione Internet per la prima volta. In questo caso viene presentato il contratto di licenza con l'utente finale (EULA) e l'utente può scegliere se procedere con l'esperienza di configurazione senza Autopilot. Per ritentare la configurazione con Autopilot, porre il dispositivo in modalità di sospensione e quindi accenderlo, oppure riavviare il dispositivo e riprovare.
 
 ### Risoluzione dei problemi
 

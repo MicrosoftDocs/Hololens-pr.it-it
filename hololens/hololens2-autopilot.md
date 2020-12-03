@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: 5090a433b3d06e92cd36bdadbfbae3758432bb41
-ms.sourcegitcommit: 8656379a4871e118b9e06e72eab1dbcc8eb3cd42
+ms.openlocfilehash: f5405e0ae5096d23b791f18f04b842b2a577a9d5
+ms.sourcegitcommit: c77b2704e87f13b8513d198ce7df7dc0da6075b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "11182447"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "11192446"
 ---
 # Windows Autopilot per HoloLens 2
 
@@ -223,11 +223,8 @@ Dopo aver completato la procedura indicata in precedenza, gli utenti HoloLens 2 
     
     - Connettere il dispositivo con adattatori "da USB-C a Wi-Fi" per una connettività Internet wireless e lasciare che HoloLens 2 completi l'esperienza Autopilot automaticamente.
 
-       > [!NOTE]
-       > L’uso di Autopilot avrà un effetto sul [proprietario del dispositivo](security-adminless-os.md#device-owner).
-   
-       > [!IMPORTANT]  
-       > I dispositivi che tentano di usare reti Wi-Fi in OOBE per il Autopilot devono essere in [Windows Holographic, versione 20H2](hololens-release-notes.md#windows-holographic-version-20h2).
+        > [!IMPORTANT]  
+       > I dispositivi che tentano di usare reti Wi-Fi in OOBE per Autopilot devono essere in [Windows Holographic, versione 20H2](hololens-release-notes.md#windows-holographic-version-20h2).
        >
        > Per i dispositivi che utilizzano adattatori Ethernet, è necessario connettere il dispositivo alla rete prima dell'avvio della Configurazione guidata. Il dispositivo determina se il provisioning avviene su un dispositivo di Autopilot mentre si trova nella prima schermata della Configurazione guidata. Se il dispositivo non riesce a connettersi alla rete o se si sceglie di non eseguire il provisioning come dispositivo di Autopilot, non sarà possibile passare al provisioning di Autopilot in un secondo momento. In alternativa, è necessario avviare questa procedura per eseguire il provisioning del dispositivo come dispositivo di Autopilot.
 

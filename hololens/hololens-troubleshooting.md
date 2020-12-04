@@ -13,12 +13,12 @@ manager: jarrettr
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
-ms.openlocfilehash: 469848cf306675fcfb99247b5c91b159c204a5fe
-ms.sourcegitcommit: 2122490074adb7f63edfc3576441980caa22695f
+ms.openlocfilehash: 4f077a8bb2592ab9b650e2e8021c97d3d8524dcc
+ms.sourcegitcommit: d20f610edd7db452ccc2ac554fc8d21bd89b0b99
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "10915946"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "11195282"
 ---
 # Risoluzione dei problemi
 
@@ -45,6 +45,17 @@ Se gli ologrammi sono instabili, nervosi o non hanno un aspetto corretto, provar
 - Aumentare la luce in camera.
 - Spostarsi e osservare l'ambiente circostante in modo che HoloLens possa analizzarli più completamente.
 - Calibrazione della HoloLens per gli occhi. Accedere alle utilità di sistema **delle impostazioni**  >  **System**  >  **Utilities**. In **Calibrazione**, selezionare **Apri Calibrazione**.
+ 
+### Segnalazione di problemi in cui gli ologrammi sono instabili o non hanno un aspetto corretto
+ 
+1. Registrare e un [video di acquisizione di realtà mista](holographic-photos-and-videos.md#capture-a-mixed-reality-video) del problema. Questo video può essere caricato in seguito tramite hub feedback come file allegato.  
+1. Abilitare la telemetria completa tramite l'app **Impostazioni** -> la diagnostica **sulla privacy**  ->  **& feedback** e in **dati di diagnostica facoltativi** verificare che l'attivazione sia impostata **su** attivato
+1. Ottenere gli ultimi aggiornamenti della scala e della stabilità degli ologrammi aggiornando il [sistema operativo Windows olografico più recente (20H2 o versione successiva)](hololens-release-notes.md#windows-holographic-version-20h2). Dopo l'aggiornamento, eseguire le operazioni seguenti:
+    1. Rimuovere tutti gli ologrammi tramite l'app **Impostazioni** - **System**  ->  **ologrammi** del sistema >-> quindi selezionare **Rimuovi tutti gli ologrammi** e iniziare con una nuova mappa.
+    1. Crea una nuova mappa dello spazio indossando il HoloLens e camminando per la tua stanza e guardando tutte le aree e le superfici nello spazio. Eseguire questa operazione per 2-3 minuti.
+    1. Eseguire la calibrazione di dpi. Accedere alle utilità di sistema **delle impostazioni**  >  **System**  >  **Utilities**. In **Calibrazione**, selezionare **Apri Calibrazione**.
+    1. Ripetere il test dello scenario e verificare se è ancora persistente.
+1. Se l'aggiornamento non risolve il problema, inviare un [problema di hub di feedback](hololens-feedback.md). Dopo aver completato il feedback, è possibile usare il pulsante **Condividi** per creare un collegamento facile da condividere che può essere inviato durante il contatto con il supporto.
 
 ## HoloLens non risponde all'input della mano
 
@@ -67,7 +78,7 @@ Se Cortana non risponde ai comandi vocali, verificare che Cortana sia attivato. 
 Se HoloLens non riesce a mappare o caricare lo spazio, entra in modalità limitata e non sarà possibile inserire gli ologrammi o vedere gli ologrammi inseriti. Ecco alcune soluzioni possibili:
 
 - Assicurarsi che nell'ambiente sia presente abbastanza luce in modo che HoloLens possa visualizzare e mappare lo spazio.
-- Assicurarsi di essere connessi a una rete Wi-Fi. Se non si è connessi a una rete Wi-Fi, HoloLens non riesce a identificare e caricare uno spazio noto.
+- Assicurarsi di essere connessi a una rete di Wi-Fi. Se non si è connessi a una rete Wi-Fi, HoloLens non riesce a identificare e caricare uno spazio noto.
 - Se è necessario creare un nuovo spazio, connettersi a Wi-Fi e quindi riavviare il HoloLens.
 - Per verificare se lo spazio corretto è attivo o per caricare manualmente uno spazio, passa a spazi del sistema di **Impostazioni**  >  **System**  >  **Spaces**.
 - Se viene caricato lo spazio corretto e si verificano ancora problemi, lo spazio potrebbe essere danneggiato. Per risolvere il problema, selezionare lo spazio e quindi scegliere **Rimuovi**. Dopo aver rimosso lo spazio, HoloLens inizia a mappare l'ambiente circostante e a creare un nuovo spazio.
@@ -76,7 +87,7 @@ Se HoloLens non riesce a mappare o caricare lo spazio, entra in modalità limita
 
 Se il HoloLens non riesce a identificare e caricare lo spazio in cui ci si trova automaticamente, verificare i fattori seguenti:
 
-- Verificare di essere connessi a una rete Wi-Fi
+- Assicurarsi di essere connessi a Wi-Fi
 - Verificare che nella sala sia presente molta luce
 - Verificare che non siano state apportate modifiche importanti all'ambiente circostante.
 

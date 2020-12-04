@@ -15,12 +15,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: d64d0a18fbbf6570173c4bd80bc4f036f4408e08
-ms.sourcegitcommit: a51f2e409f0207fc7457e97403b5298f1e0ad7dc
+ms.openlocfilehash: 06768203459827a83d8b6e891dfc8c46e33c3da2
+ms.sourcegitcommit: 1f37a06cde037f3acdc4ef3767a9384953d97c33
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "11145637"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "11194866"
 ---
 # Trovare, installare e disinstallare le applicazioni su Microsoft Store
 
@@ -37,7 +37,12 @@ Per maggiori informazioni sull'installazione e l'esecuzione di app personalizzat
 Apri Microsoft Store dal menu **Start**. Quindi scorri le app e i giochi. È possibile usare i [comandi vocali](hololens-cortana.md) per cercando pronunciando la parola "Cerca", dicendo "Avvia dettatura" quando si apre la finestra di ricerca, quindi pronunciando i termini di ricerca quando richiesto.
 
 > [!NOTE]
-> Il 12 gennaio 2021 le app seguenti raggiungeranno la fine del supporto nei dispositivi HoloLens. Ti invitiamo a utilizzare il seguente collegamento sul tuo dispositivo per utilizzare la versione Web dell'app.
+> I requisiti di sistema per i dispositivi HoloLens si basano sull'architettura della build dell'app. Se una build dell’app per HoloLens (1a generazione) non è stata aggiornata nello Store a una piattaforma UWP più recente in modo che includa il pacchetto dell’architettura ARM, questa non sarà disponibile per i dispositivi HoloLens 2. Analogamente, se un'app HoloLens 2 non include il pacchetto di architettura x86, questa non sarà disponibile per i dispositivi HoloLens (1a generazione). Architetture dei dispositivi HoloLens:
+> - x86 = HoloLens (1a generazione)
+> - ARM = HoloLens 2
+
+> [!NOTE]
+> Il 12 gennaio 2021, le app seguenti raggiungeranno la fine del supporto nei dispositivi HoloLens. Ti invitiamo a utilizzare il seguente collegamento sul tuo dispositivo per utilizzare la versione Web dell'app.
 
 | App        | Link                                          |
 |------------|-----------------------------------------------|

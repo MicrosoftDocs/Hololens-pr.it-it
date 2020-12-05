@@ -10,13 +10,13 @@ ms.reviewer: aboeger
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 09/30/2020
-ms.openlocfilehash: b7523b8ab38cfc37795ea6c99f9b22953baffe47
-ms.sourcegitcommit: 30e910348f5d5b68e914219c8eadb34d93770eab
+ms.date: 11/04/2020
+ms.openlocfilehash: 5f24d62193f083f96144b7e8c3518dc97c14be68
+ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "11099805"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "11195589"
 ---
 # Distribuzione e gestione di HoloLens 2 Enterprise
 
@@ -48,9 +48,9 @@ HoloLens 2 è progettato in modo specifico per essere gestito da sistemi di gest
 Microsoft ha progettato il servizio Windows Update for Business per fornire agli amministratori IT altre funzionalità di gestione basate su Windows Update, ad esempio la possibilità di distribuire gli aggiornamenti a gruppi di dispositivi e di definire finestre di manutenzione per l'installazione degli aggiornamenti. I dettagli per la gestione degli aggiornamenti di HoloLens 2 possono essere trovati [qui](https://docs.microsoft.com/hololens/hololens-updates).
 
 ### Certificati
-HoloLens 2 supporta la distribuzione di certificati tramite MDM se l'ambiente richiede certificati per l'autenticazione di rete Wi-Fi di Corp o l'accesso ad altre risorse. Alcune configurazioni dell'infrastruttura MDM possono essere necessarie per abilitare le distribuzioni di certificati a HoloLens 2. Informazioni su come [preparare i certificati e i profili di rete per HoloLens 2](https://docs.microsoft.com/hololens/hololens-certificates-network). I dettagli di Intune possono essere trovati [qui](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
+HoloLens 2 supporta la distribuzione di certificati tramite MDM se l'ambiente richiede certificati per l'autenticazione di rete Wi-Fi Corp o l'accesso ad altre risorse. Alcune configurazioni dell'infrastruttura MDM possono essere necessarie per abilitare le distribuzioni di certificati a HoloLens 2. Informazioni su come [preparare i certificati e i profili di rete per HoloLens 2](https://docs.microsoft.com/hololens/hololens-certificates-network). I dettagli di Intune possono essere trovati [qui](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
 
-## Configura
+## Configurazione
 
 Gli amministratori MDM possono definire e implementare le impostazioni dei criteri in qualsiasi dispositivo aziendale registrato in un sistema MDM. Le impostazioni di configurazione usate saranno diverse in base allo scenario di distribuzione. In Windows 10, i provider di servizi di configurazione (CSP) sono un'interfaccia per leggere, impostare, modificare o eliminare le impostazioni di configurazione nel dispositivo. Queste impostazioni corrispondono a chiavi del Registro di sistema o file. Per altre informazioni sui CSP per la gestione dei dispositivi di Windows 10 per HoloLens 2, vedere l'elenco completo dei [CSP supportati nei dispositivi HoloLens](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens).
 
@@ -75,7 +75,7 @@ Di seguito sono riportati alcuni servizi comuni di HoloLens 2 che richiedono ult
 
 ### Distribuzione di certificati
 
-Se sono necessari certificati per l'accesso alle reti Wi-Fi aziendali o ad altri servizi all'interno dell'organizzazione, HoloLens 2 supporta la distribuzione di certificati utente e dispositivi tramite MDM. Nota: la soluzione MDM può richiedere un'ulteriore configurazione dell'infrastruttura per distribuire i certificati ai dispositivi Windows 10.
+Se sono necessari certificati per l'accesso alle reti aziendali Wi-Fi o ad altri servizi all'interno dell'organizzazione, HoloLens 2 supporta la distribuzione di certificati utente e dispositivi tramite MDM. Nota: la soluzione MDM può richiedere un'ulteriore configurazione dell'infrastruttura per distribuire i certificati ai dispositivi Windows 10.
 
 ### Revisione della sicurezza
 
@@ -88,8 +88,8 @@ Quando si distribuiscono dispositivi HoloLens 2 in un ambiente aziendale, sono d
 | Impostazione del dispositivo | Breve descrizione.                                                                              |
 |----------------|-------------------------------------------------------------------------------------------------|
 | [Restrizioni hardware](hololens-requirements.md#hardware-restrictions)               | Le restrizioni hardware riducono la connettività e facilitano la protezione dei dati.                        |
-| [Profili Wi-Fi](hololens-requirements.md#wi-fi-profiles)               | Configurare i profili Wi-Fi senza l'intervento dell'utente o l'interazione.                              |
-| [Certificati](hololens-requirements.md#certificates-1)               | Fornisci account e/o l'autenticazione Wi-Fi, la crittografia VPN e la crittografia SSL del contenuto Web. |
+| [Profili Wi-Fi](hololens-requirements.md#wi-fi-profiles)               | Configurare i profili Wi-Fi senza l'intervento o l'interazione dell'utente.                              |
+| [Certificati](hololens-requirements.md#certificates-1)               | Fornisci account e/o Wi-Fi l'autenticazione, la crittografia VPN e la crittografia SSL del contenuto Web. |
 | [Proxy](hololens-requirements.md#proxy)              | Gestire il traffico interno.                                                                        |
 |  [VPN](hololens-requirements.md#vpn)              | Controllare l'accesso alle app e alle risorse nell'Intranet della società.                               |
 | [Modalità tutto schermo](hololens-requirements.md#kiosk-mode) | Limita le applicazioni presentate agli utenti tramite l'interfaccia utente. |
@@ -108,9 +108,9 @@ Per altre informazioni, vedere altre [restrizioni sui dispositivi comuni.](https
 
 #### Profili Wi-Fi
 
-La maggior parte delle reti Wi-Fi aziendali richiede certificati e altre informazioni complesse per limitare e proteggere l'accesso degli utenti. Questa informazione avanzata Wi-Fi è difficile da configurare per gli utenti tipici, ma i sistemi MDM possono configurare completamente questi profili Wi-Fi senza l'intervento dell'utente. Puoi creare più profili Wi-Fi nel sistema MDM.
+La maggior parte delle reti Wi-Fi aziendali richiede certificati e altre informazioni complesse per limitare e proteggere l'accesso degli utenti. Queste informazioni di Wi-Fi avanzate sono difficili da configurare per gli utenti tipici, ma i sistemi MDM possono configurare questi profili di Wi-Fi senza l'intervento dell'utente. Puoi creare più profili Wi-Fi nel sistema MDM.
 
-Per altre informazioni sulle impostazioni Wi-Fi per Windows 10, vedere [impostazioni di WiFi per il profilo aziendale](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile).
+Per altre informazioni sulle impostazioni di Wi-Fi per Windows 10, vedere [impostazioni di WiFi per il profilo aziendale](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile).
 
 #### Certificati
 
@@ -169,7 +169,7 @@ Microsoft consentirà inoltre di distribuire e installare gli aggiornamenti per 
 
 I clienti aziendali possono gestire l'esperienza di aggiornamento e il processo su HoloLens 2S usando un sistema MDM. Nella maggior parte dei casi, i criteri per gestire il processo di aggiornamento verranno applicati sia agli aggiornamenti della funzionalità che agli aggiornamenti di qualità. Ulteriori informazioni sulla [configurazione di MDM per gli aggiornamenti di HoloLens](https://docs.microsoft.com/hololens/hololens-updates).
 
-### Gestione delle applicazioni 
+### Gestione delle applicazioni
 
 Gli amministratori IT possono controllare quali app sono consentite per l'installazione in HoloLens 2 e come devono essere mantenute aggiornate.
 
@@ -188,3 +188,6 @@ HoloLens 2 supporta 3 metodi per pulire il dispositivo
 **Reimpostazione del dispositivo dall'interno delle impostazioni:** Gli utenti finali possono reimpostare manualmente il HoloLens 2 nell'app impostazioni nel dispositivo. Cancella tutti i dati archiviati nel dispositivo.
 
 **Complemento avanzato di ripristino (Arc):** Da un PC che gestisce lo strumento ARC, un utente o un amministratore può flashare un HoloLens 2 collegato al PC tramite cavo USB. Cancella tutti i dati archiviati nel dispositivo.
+
+> [!div class="nextstepaction"]
+> [Scenari di distribuzione comuni](common-scenarios.md)

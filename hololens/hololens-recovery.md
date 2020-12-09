@@ -14,12 +14,12 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-ms.openlocfilehash: 8c028ed39cf0925ebff18ca69889de2d87f1e7eb
-ms.sourcegitcommit: e3056a433aeebb8bc45dc3f6db9a75f212fdf53b
+ms.openlocfilehash: 872e9d3445df2601579ae81f4190458289fa2eea
+ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "10996414"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "11195599"
 ---
 # Riavviare, reimpostare o ripristinare HoloLens 2
 
@@ -57,7 +57,7 @@ In alcuni casi, all’utente può essere richiesto di reimpostare manualmente il
 
 4. Connettere il dispositivo al PC host e quindi aprire Gestione Dispositivo. (Per Windows 10, premere il tasto **Windows** e quindi il tasto **X**, selezionando successivamente **Gestione Dispositivo**.) Verificare che il dispositivo sia correttamente indicato come *Microsoft HoloLens* come mostrato nell’immagine seguente:
 
-   ![HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLens_DeviceManager.png)
+   ![HoloLens 2 MicrosoftHoloLensRecovery device manager](images/MicrosoftHoloLens_DeviceManager.png)
 
 ### Procedura di reimpostazione manuale
 
@@ -70,7 +70,7 @@ Se la procedura di reimpostazione standard non funziona, è possibile usare la p
 4. Connettere il dispositivo al PC host.
 5. Aprire Gestione Dispositivo (per Windows 10 premere il tasto **Windows** e quindi **X** e successivamente selezionare **Gestione Dispositivo**). Verificare che il dispositivo sia correttamente indicato come *Microsoft HoloLens* come mostrato nell’immagine seguente:
 
-   ![HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLens_DeviceManager.png)
+   ![HoloLens 2 MicrosoftHoloLensRecovery device manager 2](images/MicrosoftHoloLens_DeviceManager.png)
 
 ## Riconfigurare il dispositivo
 
@@ -81,12 +81,12 @@ In situazioni straordinarie potrebbe essere necessario riconfigurare HoloLens 2.
 - [Surriscaldamento](hololens-environment-considerations.md#temperature-and-regulatory-information) 
 - Arresti anomali del sistema operativo (distinti dagli arresti delle applicazioni)
 
-Ci sono due modi per riconfigurare il dispositivo. Per entrambi, è necessario prima di tutto installare [l’Advanced Recovery Companion dal Windows Store](https://www.microsoft.com/store/productId/9P74Z35SFRS8).
+Ci sono due modi per riconfigurare il dispositivo. Per entrambi,è necessario installare prima [Advanced Recovery Companion da Windows Store](https://www.microsoft.com/store/productId/9P74Z35SFRS8).
 
 >[!WARNING]
 >Se si riconfigura il dispositivo, tutti i dati personali, le app e le impostazioni verranno eliminate, comprese le informazioni sul ripristino del TPM.
 
-Di default, l’Advanced Recovery Companion è attualmente impostato per scaricare la build di[Windows Holographic 2004](hololens-release-notes.md#windows-holographic-version-2004). Per ottenere l'ultima versione di HoloLens 2 Full Flash Update (FFU) e riconfigurare il dispositivo tramite l’Advanced Recovery Companion, [scaricarlo qui](https://aka.ms/hololens2download). Questa versione è generalmente la build più recente disponibile.
+Per impostazione predefinita, Advanced Recovery Companion è impostato per scaricare la build dell'ultimo release funzionale, controllare qui per leggere le [Note sulla versione](hololens-release-notes.md#) per informazioni sull'ultimo release funzionale. Per ottenere il pacchetto più recente di HoloLens 2 Full Flash Update (FFU) per reflashare il dispositivo tramite Advanced Recovery Companion, [fare clic qui per scaricare l'ultima immagine mensile di HoloLens 2](https://aka.ms/hololens2download). Questa versione è generalmente la build più recente disponibile.
 
 Prima di avviare la procedura di riconfigurazione, assicurarsi che l’app sia installata ed in esecuzione su un PC dotato di Windows 10 e pronto a rilevare il dispositivo.
 
@@ -134,8 +134,8 @@ Per abilitare il percorso di distribuzione, seguire questa procedura:
 1. Passare al [Microsoft Store per le aziende](https://businessstore.microsoft.com) ed accedere usando un'identità Azure Active Directory.
 
 1. Passare a **Gestione-impostazioni**. Attivare **Mostra le app offline** **nell’esperienza Shopping**. 
-1. Andare a **negozio per il mio gruppo** e cerca [***Advanced Recovery Companion***](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8).
-1. Cambiare il **Tipo di Licenza** su***offline*** e fare clic su **Gestione**.
+1. Accedere a **Shop for My Group**e cercare [ * *_Advanced Recovery Companion_*_](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8).
+1. Cambiare il _ *tipo di licenza** in **_offline_*_ e selezionare _ * Manage * *.
 1. In **Scarica il pacchetto per l’uso offline**, selezionare il pulsante **Download**. Verificare che l’estensione del file sia *.appxbundle*.
 
     - A questo punto, se il PC è connesso a internet, un doppio clic sul pacchetto avvierà l’installazione dell’app.

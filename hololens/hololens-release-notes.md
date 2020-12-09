@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 3cf2797d4c01f66b6433aaf327e31061a8dd2f3e
-ms.sourcegitcommit: 307e313f05243b6d94f9bfc0cb4e316a00a8005c
+ms.openlocfilehash: fcc13150df796290cac3f9397a9ec6bda120037b
+ms.sourcegitcommit: 74e9989240dc0c324df35e8651b2f307f9d42148
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "11176908"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "11201380"
 ---
 # Note sulla versione di HoloLens 2
 
@@ -28,6 +28,52 @@ Per assicurarti di avere un'esperienza produttiva con i tuoi dispositivi HoloLen
 
 >[!NOTE]
 > Per leggere le note sulla versione dell'emulatore HoloLens, [visita l'archivio](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
+
+
+## Windows olografico, versione 20H2-aggiornamento di 2020 dicembre
+- Build 19041,1131
+
+### Installare app in HoloLens 2 tramite il programma di installazione di app
+
+Aggiungiamo **una nuova funzionalità (Installer delle app) per consentire l'installazione delle applicazioni in modo più trasparente** nei dispositivi HoloLens 2. La funzionalità sarà **attivata per impostazione predefinita per i dispositivi non gestiti**. Per evitare interruzioni alle aziende, il programma di installazione **delle app non sarà disponibile per i dispositivi gestiti** in questo momento.  
+
+Un dispositivo viene considerato "gestito **" Se una delle opzioni** seguenti è vera:
+- MDM [registrato](hololens-enroll-mdm.md)
+- Configurato con il [pacchetto di provisioning](hololens-provisioning.md)
+- L' [identità](hololens-identity.md) dell'utente è Azure ad
+
+Ora è possibile installare le app senza dover abilitare la modalità sviluppatore o usando Device Portal.  È sufficiente scaricare (tramite USB o Edge) il bundle appx nel dispositivo e passare al bundle appx in Esplora file per richiedere di avviare l'installazione.  In alternativa, [avviare un'installazione da una pagina Web](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web).  Proprio come le app installate da Microsoft Store o trasferire localmente usando la funzionalità di distribuzione dell'app LOB di MDM, le app devono essere firmate digitalmente con lo [strumento Sign](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) e il [certificato usato per firmare deve essere considerato attendibile](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) dal dispositivo HoloLens prima che l'app possa essere distribuita.
+
+**Istruzioni per l'installazione dell'applicazione.**
+
+1.  Verificare che il dispositivo non sia considerato gestito
+1.  Verificare che il dispositivo HoloLens 2 sia acceso e connesso al PC
+1.  Verificare di avere effettuato l'accesso al dispositivo HoloLens 2
+1.  Nel PC passare all'app personalizzata e copiare YourApp. appxbundle in yourdevicename\Internal Storage\Downloads.   Dopo aver completato la copia del file, è possibile disconnettere il dispositivo
+1.  Dal dispositivo HoloLens 2 aprire il menu Start, selezionare tutte le app e avviare l'app Esplora file.
+1.  Passare alla cartella Downloads. Potrebbe essere necessario nel pannello sinistro dell'app selezionare prima questo dispositivo, quindi passare a download.
+1.  Selezionare il file YourApp. appxbundle.
+1.  Verrà avviato il programma di installazione dell'app. Selezionare il pulsante Installa per installare la tua app.
+L'app installata verrà avviata automaticamente al termine dell'installazione.
+
+Puoi trovare app di esempio in [Windows Universal Samples GitHub](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples) per testare questo flusso.
+
+Leggere il processo completo di [installazione delle app in HoloLens 2 con il programma di installazione dell'app](app-deploy-app-installer.md).  
+
+![Installazione di esempi di MRTK tramite il programma di installazione dell'app](images/hololens-app-installer-picture.jpg)
+
+### Miglioramenti e correzioni nell'aggiornamento:
+
+- Il rilevamento delle mani ora mantiene il rilevamento in molti nuovi casi in cui la mano precedente sarebbe stata persa.  In alcuni di questi nuovi casi, solo la posizione delle palme continua ad essere aggiornata in base alla mano reale dell'utente, mentre le altre articolazioni vengono dedotte in base a una posa precedente.  Questa modifica consente di migliorare il rilevamento della coerenza dei movimenti, ad esempio schiaffi, lanci, scoop e applausi.  Aiuta anche nei casi in cui la mano è vicina a una superficie o in possesso di un oggetto.  Quando le articolazioni delle mani vengono desunte, il valore di [precisione per comune](https://docs.microsoft.com/uwp/api/windows.perception.people.jointposeaccuracy?view=winrt-19041&preserve-view=true) verrà impostato su "approssimativa" invece di "alto".
+- È stato risolto un problema per cui il PIN reset per gli account di Azure AD Mostra un errore "qualcosa è andato storto.
+- Gli utenti dovrebbero vedere molto meno la configurazione del file OOBE di post-boot durante l'avvio di ET, Iris from Settings app, nuovo utente o avviso popup.
+- Gli utenti devono avere il fuso orario corretto uscendo da OOBE.
+
+## Windows olografico, versione 1903-dicembre 2020 Update
+- Build 18362,1088
+
+Questo aggiornamento mensile di qualità non contiene modifiche importanti, ti invitiamo a provare l'aggiornamento più recente di Windows olografico, versione 20H2-dicembre 2020 e la nuova funzionalità di installazione dell'app aggiunta nella build.
+
 
 ## Windows olografico, versione 20H2
 - Build 19041,1128

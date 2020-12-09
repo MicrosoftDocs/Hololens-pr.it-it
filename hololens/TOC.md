@@ -39,10 +39,15 @@
 ## [Aggiornare HoloLens](hololens-update-hololens.md)
 
 # Preparare
-## Pianificazione della distribuzione di HoloLens 2 nell’organizzazione
-### [Distribuire HoloLens in un ambiente commerciale](hololens-requirements.md)
-### [Scenari comuni di distribuzione dell'infrastruttura](common-scenarios.md)
-## Scenari comuni
+## [Distribuire HoloLens in un ambiente commerciale](hololens-requirements.md)
+## Scenari di distribuzione comuni
+### [Scenari di distribuzione dell'infrastruttura](common-scenarios.md)
+### Distribuzione con assistenza remota di HoloLens 2 nel cloud
+#### [Panoramica della distribuzione nel cloud](hololens2-cloud-connected-overview.md)
+#### [Preparazione nel cloud](hololens2-cloud-connected-prepare.md)
+#### [Configurazione nel cloud](hololens2-cloud-connected-configure.md)
+#### [Distribuzione nel cloud](hololens2-cloud-connected-deploy.md)
+#### [Mantenimento nel cloud](hololens2-cloud-connected-maintain.md)
 ### [Protezione offline](hololens-common-scenarios-offline-secure.md)
 ## Sicurezza
 ### [Panoramica della sicurezza](security-overview.md)

@@ -14,22 +14,22 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: eba1fd00215ef197f9e32949e958bdbded089d6d
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: 53937881d6569e6aaa17d7e60083381b13502b87
+ms.sourcegitcommit: 74e9989240dc0c324df35e8651b2f307f9d42148
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11162897"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "11201370"
 ---
 # Installare app in HoloLens 2 tramite il programma di installazione di app
 
 
-Spediremo la funzionalità di installazione dell'app subito dopo l'aggiornamento di Windows olografico, versione 20H2. Aggiungiamo **una nuova funzionalità (Installer delle app) per consentire l'installazione delle applicazioni in modo più trasparente** nei dispositivi HoloLens 2. La funzionalità sarà **attivata per impostazione predefinita per i dispositivi non gestiti**. Per evitare interruzioni alle aziende, il programma di installazione **delle app non sarà disponibile per i dispositivi gestiti** in questo momento.  
+Aggiungiamo **una nuova funzionalità (Installer delle app) per consentire l'installazione delle applicazioni in modo più trasparente** nei dispositivi HoloLens 2. La funzionalità sarà **attivata per impostazione predefinita per i dispositivi non gestiti**. Per evitare interruzioni alle aziende, il programma di installazione **delle app non sarà disponibile per i dispositivi gestiti** in questo momento.  
 
-> [!IMPORTANT]
-> Questa funzionalità è attualmente disponibile solo nelle build di Windows Insider. [Altre informazioni su come iscriversi alle build di Windows Insider](hololens-insider.md).
+> [!NOTE]
+> Questa caratteristica è stata resa disponibile in [Windows olografico, versione 20H2-dicembre 2020 Update](hololens-release-notes.md). Verificare che il dispositivo sia [aggiornato](hololens-update-hololens.md) per usare questa caratteristica.
 
-In Windows Insider Release aggiungiamo **una nuova funzionalità (programma di installazione delle app) per consentire l'installazione di applicazioni più agevolmente** nei dispositivi HoloLens 2. La funzionalità sarà **attivata per impostazione predefinita per i dispositivi non gestiti**. Per evitare interruzioni alle aziende, il programma di installazione **delle app non sarà disponibile per i dispositivi gestiti** in questo momento.  
+È stata **aggiunta una nuova funzionalità (programma di installazione delle app) per consentire l'installazione di applicazioni più agevolmente** nei dispositivi HoloLens 2. La funzionalità sarà **attivata per impostazione predefinita per i dispositivi non gestiti**. Per evitare interruzioni alle aziende, il programma di installazione **delle app non sarà disponibile per i dispositivi gestiti** in questo momento.  
 
 Un dispositivo viene considerato "gestito **" Se una delle opzioni** seguenti è vera:
 - MDM [registrato](hololens-enroll-mdm.md)

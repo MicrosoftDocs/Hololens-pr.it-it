@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 5963e71bd6fdd084ca442995b02d99fc40da9d43
-ms.sourcegitcommit: 5877c3e51de49f949b35ab840a3312a009a4487a
+ms.openlocfilehash: 818f6c2be594b1d709acf7daef1d124c6b410ea4
+ms.sourcegitcommit: 74e9989240dc0c324df35e8651b2f307f9d42148
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "11102335"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "11201360"
 ---
 # Gestire l'identità utente e l'accesso per HoloLens
 
@@ -36,11 +36,14 @@ HoloLens supporta diversi tipi di identità utente. È possibile usare uno o pi�
 
 | Tipo di identità | Account per dispositivo | Opzioni di autenticazione |
 | --- | --- | --- |
-| [Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/) | 64 | <ul><li>Provider di credenziali Web di Azure</li><li>App Azure Authenticator</li><li>Solo HoloLens 2 (Iris) biometrico &ndash;</li><li>PIN &ndash; facoltativo per HoloLens (1a generazione), obbligatorio per HoloLens 2</li><li>Password</li></ul> |
+| [Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/) | 64 | <ul><li>Provider di credenziali Web di Azure</li><li>App Azure Authenticator</li><li>Biometrico (Iris) &ndash; HoloLens 2 solo <sup> 1</sup> </li><li>PIN &ndash; facoltativo per HoloLens (1a generazione), obbligatorio per HoloLens 2</li><li>Password</li></ul> |
 | [Account Microsoft (MSA)](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts) | 1 | <ul><li>Solo HoloLens 2 (Iris) biometrico &ndash;</li><li>PIN &ndash; facoltativo per HoloLens (1a generazione), obbligatorio per HoloLens 2</li><li>Password</li></ul> |
 | [Account locale](https://docs.microsoft.com/windows/security/identity-protection/access-control/local-accounts) | 1 | Password |
 
 Gli account connessi al cloud (AAD e MSA) offrono più funzionalità perché possono usare i servizi di Azure.  
+
+> [!NOTE]
+> 1-mentre un dispositivo HoloLens 2 può supportare fino agli account di 64 Azure AD, solo 10 di questi account possono eseguire la registrazione nell'autenticazione di Iris. Questa operazione è allineata ad altre opzioni di autenticazione biometrica per Windows Hello for business. [Per altre informazioni, vedere.](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer)
 
 ## Configurazione degli utenti
 

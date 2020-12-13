@@ -2,7 +2,7 @@
 title: Gestire le app personalizzate per HoloLens
 description: Caricamento laterale di app personalizzate in HoloLens. Leggi altre informazioni su come installare e disinstallare le app olografiche.
 ms.assetid: 6bd124c4-731c-4bcc-86c7-23f9b67ff616
-ms.date: 07/01/2019
+ms.date: 12/10/2020
 manager: v-miegge
 keywords: hololens, trasferire localmente, carico laterale, carico laterale, Store, UWP, app, install
 ms.prod: hololens
@@ -16,19 +16,25 @@ ms.custom:
 - CSSTroubleshooting
 appliesto:
 - HoloLens (1st gen)
-- HoloLens 2
-ms.openlocfilehash: 12c5eedfab580be8acea48c1fc19b56c1ead08ac
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 67a857eb35126435f5642ee60168128300401394
+ms.sourcegitcommit: cd2071c12eaabe46c829b53c22d13e21b8af5b53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828861"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "11218633"
 ---
 # Gestire le app personalizzate per HoloLens
 
-HoloLens supporta molte applicazioni esistenti provenienti da Microsoft Store, nonché nuove app create appositamente per HoloLens. Questo articolo è dedicato alle applicazioni olografiche personalizzate.  
+HoloLens supporta molte attuali applicazioni disponibili su Microsoft Store, nonché nuove app create specificamente per HoloLens. Questo articolo è dedicato alle applicazioni olografiche personalizzate.  
 
 Per altre informazioni sulle app dello Store, Vedi [gestire le app con lo Store](holographic-store-apps.md).
+
+> [!IMPORTANT]
+> Le informazioni seguenti sono state create per HoloLens (1a generazione), detta anche HoloLens Developer Edition in quel momento. In questo modo, le app sideload tramite Device Portal e l'installazione di app tramite Visual Studio erano comuni. Per le distribuzioni aziendali, non è consigliabile abilitare la modalità sviluppatore, che usano entrambi i metodi. Se si è interessati a un metodo di distribuzione delle app sicure, vedere la [sezione gestione delle app: Panoramica](app-deploy-overview.md).
+>
+> Se stai cercando un metodo per gli sviluppatori per l'installazione di app per dispositivi HoloLens 2, consulta:
+> - [Device Portal: installare un'app](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app)
+> - [Uso di Visual Studio per la distribuzione e il debug delle app](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-visual-studio)
 
 ## Installare app personalizzate
 

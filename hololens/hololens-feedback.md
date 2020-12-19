@@ -4,7 +4,7 @@ description: È possibile creare feedback per gli sviluppatori di realtà miste 
 ms.assetid: b9b24c72-ff86-44a9-b30d-dd76c49479a9
 author: mattzmsft
 ms.author: mazeller
-ms.date: 05/14/2020
+ms.date: 12/17/2020
 ms.custom:
 - CI 116157
 - CSSTroubleshooting
@@ -17,24 +17,24 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f922104658378239c6f94a20d22913f11a56c347
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: f8704b7e1b75cd08bc282eb0c2df22b8266cb9fd
+ms.sourcegitcommit: e44f1f1ab708e5bd6c4c5b85ec449db2bc798be2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828570"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "11237276"
 ---
 # Feedback per HoloLens
 
 Usa l'hub feedback per comunicare le caratteristiche che ami, le caratteristiche che puoi eseguire senza e il modo migliore. Il team di progettazione USA lo stesso meccanismo internamente per tenere traccia e correggere i bug, quindi usa hub feedback per segnalare eventuali bug visualizzati. Stiamo ascoltando!
 
-Hub di feedback è un ottimo modo per avvisare il team di ingegneri per i bug e per assicurarsi che gli aggiornamenti futuri siano più sani e sempre più esenti da bug. Tuttavia, l'hub di feedback non offre una risposta. Se hai bisogno di assistenza immediata, invia il tuo feedback, prendi nota del riepilogo che hai fornito per il tuo feedback e quindi segui il [supporto di HoloLens](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f).
+Hub di feedback è un ottimo modo per avvisare il team di ingegneri per i bug e per assicurarsi che gli aggiornamenti futuri siano più sani e sempre più esenti da bug. Tuttavia, l'hub di feedback non offre una risposta. Se hai bisogno di assistenza immediata, invia il tuo feedback, prendi nota del riepilogo che hai fornito per il tuo feedback e quindi segui il [supporto di HoloLens](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f) -usa la caratteristica **Condividi** nell'hub feedback per condividere un collegamento diretto all'URL. L'hub di feedback riceve molti dati ogni giorno: l'URL consente di identificare rapidamente il feedback.
 
 > [!NOTE]  
 >  
 > - Verificare di avere la versione corrente dell'hub feedback. A tale scopo, selezionare **Avvia**  >  **Microsoft Store**e quindi selezionare i puntini di sospensione (**...**). Quindi, selezionare **download e aggiornamenti per**  >  **ottenere gli aggiornamenti**.  
 >  
-> - Per ottenere i dati migliori per la risoluzione dei problemi, è consigliabile impostare la telemetria **completa**per il dispositivo. Puoi impostare questo valore durante l'esperienza di out-of-box (OOBE) oppure usando l'app Impostazioni. Per eseguire questa operazione usando impostazioni, selezionare **Avvia**  >  **Impostazioni**per la diagnostica delle  >  **Privacy**  >  **app**  >  **sulla**privacy.
+> - Per ottenere i dati migliori per la risoluzione dei problemi, è consigliabile impostare la telemetria del dispositivo su **facoltativo**. Puoi impostare questo valore durante l'esperienza di out-of-box (OOBE) oppure usando l'app Impostazioni. Per eseguire questa operazione usando impostazioni, selezionare **Avvia**  >  **Impostazioni**per la diagnostica delle  >  ****  >  **app**  >  **sulla**privacy.
 
 ## Usare l'hub di feedback
 
@@ -87,3 +87,5 @@ Hub di feedback è un ottimo modo per avvisare il team di ingegneri per i bug e 
      1. Selezionare **Interrompi registrazione**. Dopo l'interruzione della registrazione, è possibile visualizzare i dati allegati al feedback per il team di progettazione.
 
 1. Verificare di avere una connessione Internet attiva in modo da poter ricevere il feedback. Selezionare **Invia**e termina.
+
+1. Usare il pulsante **Condividi** per condividere l'URL ridotto con il supporto Microsoft o i colleghi.

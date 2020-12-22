@@ -17,16 +17,16 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 55e2b15808e52bb80e8114e215bc0cef52358842
-ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
+ms.openlocfilehash: 7fcd65d5e49fa9cdd771828401749a0a41e50238
+ms.sourcegitcommit: d319ac257b9ace484acf5dcfb16c9d4e19ea50a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "11016669"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "11247218"
 ---
 # Portale aziendale Intune
 
-Con la gestione di dispositivi mobili (MDM), puoi usare le tue app personalizzate tramite [Microsoft Endpoint Manager (Intune)](https://docs.microsoft.com/intune/windows-holographic-for-business) per distribuirlo direttamente nei dispositivi HoloLens. Microsoft Intune è un servizio basato su cloud che si occupa di gestione di dispositivi mobili (MDM) e gestione di applicazioni mobili (MAM). Intune è incluso nella[famiglia Enterprise Mobility + Security (EMS)](https://www.microsoft.com/microsoft-365/enterprise-mobility-security)di Microsoft e consente agli utenti di essere produttivi mantenendo i dati dell'organizzazione protetti. Per altre informazioni su Intune, leggere il contenuto di [Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune).
+Con la gestione di dispositivi mobili (MDM), puoi usare le tue app personalizzate tramite [Microsoft Endpoint Manager (Intune)](https://docs.microsoft.com/intune/windows-holographic-for-business) per distribuirlo direttamente nei dispositivi HoloLens. Microsoft Intune è un servizio basato su cloud che si occupa di gestione di dispositivi mobili (MDM) e gestione di applicazioni mobili (MAM). Intune è incluso nella [famiglia Enterprise Mobility + Security (EMS)](https://www.microsoft.com/microsoft-365/enterprise-mobility-security)di Microsoft e consente agli utenti di essere produttivi mantenendo i dati dell'organizzazione protetti. Per altre informazioni su Intune, vedere [che cos'è Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune).
 
 ## Installazione
 
@@ -50,7 +50,7 @@ Dopo aver configurato la configurazione su Intune, è possibile che gli utenti f
 Seguire questa procedura per ottenere automaticamente le app:
 1. Registrare il dispositivo con il tenant. 
 2. Una volta che il dispositivo ha completato la registrazione, dovresti ricevere l'app nel dispositivo. 
-3. Se l'app non viene visualizzata immediatamente, passare a account **delle impostazioni**  >  **Accounts**  >  **o a School**  >  **paginaaccount** info e scorrere verso il basso per visualizzare le informazioni sullo stato dell'app installata.
+3. Se l'app non viene visualizzata immediatamente, passare a account **delle impostazioni**  >  ****  >  **o a School**  >  **paginaaccount** info e scorrere verso il basso per visualizzare le informazioni sullo stato dell'app installata.
 
 Come passare alle app attraverso il portale aziendale:
 1. Aprire il **menu Start** e selezionare **Microsoft Store**. 

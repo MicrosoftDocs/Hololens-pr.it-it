@@ -14,12 +14,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: d14d33ea01a3fe649f7125e050dd1b0a16426e6c
-ms.sourcegitcommit: 681e8e03e1a0250368f1f50cef6fbc3c99bac3af
+ms.openlocfilehash: 748475cb3e3c51e36904109ecfe03e65bdad6c1e
+ms.sourcegitcommit: 6446a80bece77d67077f36a390f13b8ce59af26e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "11165032"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "11252531"
 ---
 # Migliorare la qualità visiva e il comfort
 
@@ -42,7 +42,7 @@ HoloLens 2 richiede a un utente di calibrare il dispositivo nei seguenti casi:
 
 ![Richiesta di calibrazione per la regolazione degli occhi.](./images/07-et-adjust-for-your-eyes.png)
 
-Durante questo processo, dovrai guardare una serie di obiettivi (gemme). Durante la calibrazione, puoi battere le palpebre, ma cerca di rimanere concentrato sulle gemme anziché su altri oggetti presenti nella stanza.  HoloLens usa questo processo per ottenere informazioni sulla posizione degli occhi, per garantire un rendering ottimale del mondo olografico.
+Durante questo processo, dovrai guardare una serie di obiettivi (gemme). Durante la calibrazione, puoi battere le palpebre, ma cerca di rimanere concentrato sulle gemme anziché su altri oggetti presenti nella stanza.  La focalizzazione sulle gemme consente a HoloLens di conoscere la posizione degli occhi per il rendering del mondo olografico.
 
 ![Richiesta di calibrazione che indica all'utente di mantenere la testa ferma e di seguire i punti con gli occhi.](./images/07-et-hold-head-still.png)
 

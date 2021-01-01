@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: b0a068bb50d033544b4bf44100d005dfedc1d94d
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: 24f9fc142581de5017e498b2c4591cdb8f79d533
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11162939"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253153"
 ---
 # Raccogliere e usare le informazioni di diagnostica dai dispositivi HoloLens
 
@@ -34,7 +34,7 @@ Gli utenti e gli amministratori di HoloLens possono scegliere tra quattro metodi
 - app Impostazioni
 
 > [!IMPORTANT]  
-> I log di diagnostica del dispositivo contengono informazioni personali, ad esempio i processi o le applicazioni che l'utente avvia durante le operazioni tipiche. Quando più utenti condividono un dispositivo HoloLens, ad esempio gli utenti accedono allo stesso dispositivo usando diversi account di Microsoft Azure Active Directory (AAD), i log di diagnostica potrebbero contenere informazioni personali che si applicano a più utenti. Per altre informazioni, vedere l'informativa [sulla privacy Microsoft](https://privacy.microsoft.com/privacystatement).
+> I log di diagnostica del dispositivo contengono informazioni personali, ad esempio i processi o le applicazioni che l'utente avvia durante le operazioni tipiche. Quando più utenti condividono un dispositivo HoloLens, ad esempio gli utenti accedono allo stesso dispositivo usando diversi account di Microsoft Azure Active Directory (Azure AD), i log di diagnostica potrebbero contenere informazioni personali che si applicano a più utenti. Per altre informazioni, vedere l'informativa [sulla privacy Microsoft](https://privacy.microsoft.com/privacystatement).
 
 Nella tabella seguente vengono confrontati i tre metodi di raccolta. I nomi dei metodi si collegano a informazioni più dettagliate nelle sezioni che seguono la tabella.
 
@@ -53,7 +53,7 @@ Nella tabella seguente vengono confrontati i tre metodi di raccolta. I nomi dei 
 Un utente di HoloLens può usare l'app desktop Microsoft Feedback hub per inviare informazioni di diagnostica al supporto Microsoft. Per informazioni dettagliate e istruzioni complete, vedere [inviare commenti e suggerimenti](hololens-feedback.md).  
 
 > [!NOTE]  
-> **Utenti commerciali o aziendali:** Se usi l'app hub di feedback per segnalare un problema che si riferisce a MDM, provisioning o qualsiasi altro aspetto di gestione dei dispositivi, modifica la categoria **Enterprise Management**dell'app in  >  **Categoria dispositivo**di gestione aziendale.
+> **Utenti commerciali o aziendali:** Se usi l'app hub di feedback per segnalare un problema che si riferisce a MDM, provisioning o qualsiasi altro aspetto di gestione dei dispositivi, modifica la categoria **** dell'app in  >  **Categoria dispositivo**di gestione aziendale.
 
 ### Prerequisiti
 
@@ -70,11 +70,11 @@ L'hub di feedback offre due posizioni per l'utente per archiviare le informazion
    > [!NOTE]  
    > Questi requisiti si applicano ai dati in tutte le categorie di hub di feedback.
 
-- **Il dispositivo HoloLens**. Durante l'archiviazione di un report nell'hub di feedback, l'utente può selezionare **Salva una copia locale di diagnostica e allegati creati quando si dà un feedback**. Se l'utente seleziona questa opzione, l'hub di feedback archivia una copia delle informazioni di diagnostica nel dispositivo HoloLens. Queste informazioni restano accessibili per l'utente (o tutti gli utenti che usano quell'account per accedere a HoloLens). Per eliminare queste informazioni, un utente deve avere il **proprietario del dispositivo** o le autorizzazioni di **amministratore** per il dispositivo. Un utente con le autorizzazioni appropriate può accedere all'hub di feedback, selezionare i **Settings**  >  **registri di diagnostica della visualizzazione**impostazioni ed eliminare le informazioni.
+- **Il dispositivo HoloLens**. Durante l'archiviazione di un report nell'hub di feedback, l'utente può selezionare **Salva una copia locale di diagnostica e allegati creati quando si dà un feedback**. Se l'utente seleziona questa opzione, l'hub di feedback archivia una copia delle informazioni di diagnostica nel dispositivo HoloLens. Queste informazioni restano accessibili per l'utente (o tutti gli utenti che usano quell'account per accedere a HoloLens). Per eliminare queste informazioni, un utente deve avere il **proprietario del dispositivo** o le autorizzazioni di **amministratore** per il dispositivo. Un utente con le autorizzazioni appropriate può accedere all'hub di feedback, selezionare i ****  >  **registri di diagnostica della visualizzazione**impostazioni ed eliminare le informazioni.
 
 ## Risoluzione dei problemi di impostazioni
 
-Un utente di HoloLens può usare l'app impostazioni nel dispositivo per risolvere i problemi e raccogliere informazioni di diagnostica. A tale scopo, effettua quanto segue:
+Un utente di HoloLens può usare l'app impostazioni nel dispositivo per risolvere i problemi e raccogliere informazioni di diagnostica. A tale scopo, procedere come segue:
 
 1. Aprire l'app Impostazioni e selezionare **Aggiorna &**  >  pagina**risoluzione dei problemi** di sicurezza.
 1. Selezionare l'area appropriata e selezionare **Avvia**.

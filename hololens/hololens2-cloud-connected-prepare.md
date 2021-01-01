@@ -14,16 +14,16 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0e9222df2c387fab8f61a585d3a7f3966b9ecd31
-ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
+ms.openlocfilehash: a4e99740d985a709683595cd5afef76094faaf76
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "11196326"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253053"
 ---
 # Preparare-guida connessa al cloud
 
-Alla fine di questo articolo sarà necessario configurare AAD, MDM e capire di più sull'uso degli account AAD e dei requisiti di rete. Questa sezione della guida aiuta l'utente e l'organizzazione a preparare la distribuzione di HoloLens 2 al cloud e a usare Dynamics 365 Remote assist. Verrà rilevata l'importanza di ogni parte dell'infrastruttura, oltre a fornire collegamenti alle guide che consentono di configurare i pezzi in base alle esigenze.
+Alla fine di questo articolo sarà necessario configurare Azure AD, MDM e altre informazioni sull'uso degli account di Azure AD e dei requisiti di rete. Questa sezione della guida aiuta l'utente e l'organizzazione a preparare la distribuzione di HoloLens 2 al cloud e a usare Dynamics 365 Remote assist. Verrà rilevata l'importanza di ogni parte dell'infrastruttura, oltre a fornire collegamenti alle guide che consentono di configurare i pezzi in base alle esigenze.
 
 ## Elementi essenziali dell'infrastruttura
 
@@ -40,11 +40,11 @@ Azure AD è un servizio directory basato su cloud che offre funzionalità di ges
 
 I dipendenti possono usare un solo account per inizializzare un dispositivo in modo che&#39;s imperativo che l'organizzazione controlli per primo quale account è abilitato. L'account scelto determinerà chi controlla il dispositivo e influirà sulle funzionalità di gestione.
 
-In questa guida abbiamo scelto che per l' [identità](https://docs.microsoft.com/hololens/hololens-identity) usata useremo gli account AAD o gli account di Azure Active Directory. Ci sono diversi vantaggi per gli account AAD che si vogliono usare, ad esempio:
+In questa guida abbiamo scelto che per l' [identità](https://docs.microsoft.com/hololens/hololens-identity) usata useremo gli account di Azure ad o gli account di Azure Active Directory. Ci sono diversi vantaggi per gli account di Azure AD da usare, ad esempio:
 
-- I dipendenti usano l'account di Azure ad per registrare il dispositivo in Azure AD e registrarlo automaticamente con l'organizzazione&#39;la soluzione MDM (AAD + MDM-richiede Azure AD Premium).
-- Gli account AAD supportano [Single Sign-on](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on). Quando un utente si iscrive in assistenza remota, la sua identità dall'utente firmato in AAD verrà riconosciuta e l'utente verrà connesso all'app per un'esperienza semplificata.
-- Gli account AAD hanno [Opzioni di autenticazione](https://docs.microsoft.com/hololens/hololens-identity) aggiuntive tramite [Windows Hello for business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification). Oltre agli utenti di log-in Iris, è possibile accedere da un altro dispositivo o usare le chiavi di sicurezza FIDO.
+- I dipendenti usano l'account di Azure ad per registrare il dispositivo in Azure AD e registrarlo automaticamente con l'organizzazione&#39;la soluzione MDM (Azure AD + MDM-richiede Azure AD Premium).
+- Gli account di Azure AD supportano [Single Sign-on](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on). Quando un utente accede a Remote Assist, la sua identità dall'utente firmato in Azure AD verrà riconosciuta e l'utente verrà connesso all'app per un'esperienza semplificata.
+- Gli account di Azure AD hanno [Opzioni di autenticazione](https://docs.microsoft.com/hololens/hololens-identity) aggiuntive tramite [Windows Hello for business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification). Oltre agli utenti di log-in Iris, è possibile accedere da un altro dispositivo o usare le chiavi di sicurezza FIDO.
 
 ### Gestione dei dispositivi mobili
 

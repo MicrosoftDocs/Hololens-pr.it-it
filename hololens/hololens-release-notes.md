@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: fcc13150df796290cac3f9397a9ec6bda120037b
-ms.sourcegitcommit: 74e9989240dc0c324df35e8651b2f307f9d42148
+ms.openlocfilehash: e1bdc6292dc016dde78c781db79505e2b64b0d6d
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "11201380"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253063"
 ---
 # Note sulla versione di HoloLens 2
 
@@ -97,7 +97,7 @@ Questa ultima versione è un aggiornamento mensile della versione 2004, ma quest
 | [Avvio automatico di un'app nel chiosco multi-app](hololens-release-notes.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                | Imposta l'avvio automatico di un'applicazione durante l'accesso a una modalità Kiosk a più app.                                                        |
 | [Modifiche al comportamento della modalità Kiosk per la gestione degli errori](hololens-release-notes.md#kiosk-mode-behavior-changes-for-handling-of-failures) | L'errore della modalità Kiosk ora ha un fallback restrittivo.                                                                                                |
 | [Criteri HoloLens](hololens-release-notes.md#hololens-policies)                                    | Nuovi criteri per HoloLens.     |
-| [Appartenenza al gruppo della cache AAD per il chiosco offline](hololens-release-notes.md#cache-aad-group-membership-for-offline-kiosk)         | I nuovi criteri consentono agli utenti di utilizzare la cache di appartenenza ai gruppi per usare la modalità Kiosk offline per il numero impostato di giorni.                                        |
+| [Appartenenza al gruppo cache Azure AD per il chiosco offline](hololens-release-notes.md#cache-azure-ad-group-membership-for-offline-kiosk)         | I nuovi criteri consentono agli utenti di utilizzare la cache di appartenenza ai gruppi per usare la modalità Kiosk offline per il numero impostato di giorni.                                        |
 | [Nuovi criteri di restrizione dei dispositivi per HoloLens 2](hololens-release-notes.md#new-device-restriction-policies-for-hololens-2)       | Criteri di gestione dei dispositivi abilitati per la nuova abilitazione per HoloLens 2.                                                                                |
 | [Nuovi criteri di alimentazione per HoloLens 2](hololens-release-notes.md#new-power-policies-for-hololens-2)       | Nuovi criteri supportati per le impostazioni di Power timeout.  |
 | [Criteri di aggiornamento](hololens-release-notes.md#newly-enabled-update-policies-for-hololens)        | Criteri appena abilitati che consentono il controllo degli aggiornamenti.           |
@@ -221,7 +221,7 @@ Una volta che il nodo RequireNetworkInOOBE del CSP TenantLockdown è impostato s
 
 Una volta che il nodo RequireNetworkInOOBE del CSP TenantLockdown è impostato su true in HoloLens 2, le seguenti operazioni non sono consentite in Configurazione guidata: 
 - creazione di un utente locale usando il provisioning di runtime 
-- esecuzione dell'operazione di aggiunta AAD join tramite provisioning di runtime 
+- Eseguire l'operazione di join di Azure AD tramite il provisioning di runtime 
 - selezione di chi possiede il dispositivo nell'esperienza di Configurazione guidata 
 
 #### Come impostarlo usando Intune? 
@@ -294,12 +294,12 @@ I nuovi criteri di realtà mista sono stati creati per i dispositivi HoloLens 2 
 | MixedReality\MicrophoneDisabled                    | Disattiva il microfono in modo che non sia possibile una registrazione audio in HoloLens 2.                      | 1 Sì, 0 No (impostazione predefinita)                                                |
 | MixedReality\FallbackDiagnostics                   | Controlla il comportamento di quando è possibile raccogliere i log diagnostici.                               | 0 disabilitato, 1 abilitato per i proprietari di dispositivi, 2 abilitato per tutti (impostazione predefinita) |
 | MixedReality\HeadTrackingMode                      | Riservato per un uso futuro.                                                                  |                                                                      |
-| MixedReality\AADGroupMembershipCacheValidityInDays | Controlla il numero di giorni in cui viene usata la cache di appartenenza a un gruppo di destinatari per i gruppi AAD. | Vedere di seguito.                                                           |
+| MixedReality\AADGroupMembershipCacheValidityInDays | Controlla il numero di giorni in cui viene usata la cache di appartenenza ai gruppi di Azure AD per i chioschi di Azure AD. | Vedere di seguito.                                                           |
 
-### Appartenenza al gruppo della cache AAD per il chiosco offline
+### Appartenenza al gruppo cache Azure AD per il chiosco offline
 - Sono stati abilitati i chioschi offline per essere usati con i gruppi AAD per un massimo di 60 giorni.
 
-Questo criterio Controlla il numero di giorni in cui è consentita la cache dell'appartenenza a un gruppo AAD per le configurazioni di accesso assegnate destinate ai gruppi AAD per l'utente connesso. Quando il valore di questo criterio è impostato su un valore maggiore di 0 solo la cache viene usata in caso contrario.  
+Questo criterio Controlla il numero di giorni in cui è consentita la cache delle appartenenze ai gruppi di Azure AD per le configurazioni di Access assegnate per gli utenti di Azure AD per signed. Quando il valore di questo criterio è impostato su un valore maggiore di 0 solo la cache viene usata in caso contrario.  
 
 Nome: valore URI AADGroupMembershipCacheValidityInDays:./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
 
@@ -307,17 +307,17 @@ Min-0 giorni
 Max-60 giorni 
 
 Procedura per usare correttamente questo criterio: 
-1. Creare un profilo di configurazione del dispositivo per il chiosco che designa i gruppi AAD e assegnarlo ai dispositivi HoloLens. 
+1. Crea un profilo di configurazione del dispositivo per i gruppi di Azure AD e assegnalo ai dispositivi HoloLens. 
 1. Crea una configurazione di dispositivo basata su URI OMA personalizzata che imposta il valore di questo criterio sul numero desiderato di giorni (> 0) e assegnalo ai dispositivi HoloLens. 
     1. Il valore URI deve essere immesso nella casella di testo OMA-URI come./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
     1. Il valore può essere compreso tra min/max consentita.
 1. Registrare i dispositivi HoloLens e verificare che entrambe le configurazioni vengano applicate al dispositivo. 
-1. Consentire all'utente di accedere a AAD 1 quando è disponibile Internet, una volta che l'utente ha eseguito l'accesso e l'appartenenza al gruppo AAD è stata confermata, verrà creata la cache. 
-1. Ora l'utente AAD 1 può prendere offline HoloLens e usarlo per la modalità Kiosk, purché il valore dei criteri consenta un numero X di giorni. 
-1. I passaggi 4 e 5 possono essere ripetuti per qualsiasi altro utente AAD N. il punto chiave è che qualsiasi utente AAD deve effettuare l'accesso al dispositivo tramite Internet, quindi almeno una volta che siamo in grado di determinare di essere membri del gruppo AAD a cui è destinata la configurazione del chiosco. 
+1. Consentire l'accesso dell'utente AD Azure AD 1 quando Internet è disponibile, una volta che la registrazione dell'utente e l'appartenenza al gruppo Azure AD è stata confermata, verrà creata la cache. 
+1. Ora Azure AD User 1 può prendere offline HoloLens e usarlo per la modalità Kiosk, purché il valore dei criteri consenta un numero X di giorni. 
+1. I passaggi 4 e 5 possono essere ripetuti per qualsiasi altro utente di Azure AD N. il punto chiave in questo caso è che qualsiasi utente di Azure AD deve effettuare l'accesso al dispositivo tramite Internet, quindi almeno una volta che si può determinare di essere membri del gruppo di Azure AD a cui è destinata la configurazione di Kiosk. 
  
 > [!NOTE]
-> Finché non viene eseguito il passaggio 4 per un utente AAD si verificherà un comportamento di errore menzionato in ambienti "disconnessi". 
+> Finché non viene eseguito il passaggio 4 per un utente di Azure AD si verificherà un comportamento di errore menzionato in ambienti "disconnessi". 
 
 ### Nuovi criteri di restrizione dei dispositivi per HoloLens 2
 - Consente agli utenti di gestire specifici criteri di gestione dei dispositivi, ad esempio bloccare l'aggiunta o la rimozione di pacchetti di provisioning.
@@ -401,7 +401,7 @@ Queste informazioni possono essere trovate di nuovo [qui](holographic-photos-and
 - Criteri aggiornati per disabilitare l'enumerazione delle funzioni USB tramite MDM per NCM per AllowUsbConnection.
 - È stato risolto un problema che impediva a un dispositivo HoloLens di essere visualizzato in Esplora file tramite il protocollo MTP (Media Transfer Protocol) quando il dispositivo è configurato come [chiosco di app singole](hololens-kiosk.md). Tieni presente che MTP (e la connessione USB in generale) possono comunque essere disabilitati usando i criteri di [AllowUSBConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) .
 - È stato risolto un problema per cui le icone nel menu Start venivano ridimensionate correttamente in modalità Kiosk.
-- È stato risolto un problema dovuto alla memorizzazione nella cache HTTP che interferiva con la modalità Kiosk mirata ai gruppi AAD.
+- È stato risolto un problema dovuto alla memorizzazione nella cache HTTP che interferiva con la modalità Kiosk mirata ai gruppi di Azure AD.
 - È stato risolto un problema per cui gli utenti non erano in grado di usare il pulsante Pair dopo l'abilitazione della modalità sviluppatore con il provisioning dei pacchetti, a meno che non fossero disabilitati e riabilitati.
 
 ## Windows olografico, versione 1903-novembre 2020 Update
@@ -491,7 +491,7 @@ Miglioramenti e correzioni nell'aggiornamento:
 - L'API HolographicSpace. UserPresence è in genere disabilitata per le applicazioni Unity. Questo comportamento evita un problema che ha causato la sospensione di alcune app quando la visiera è stata capovolta, anche se l'impostazione "Esegui in background" è stata abilitata. L'API è ora abilitata per le versioni 2018.4.18 e successive di Unity e 2019.3.4 e versioni successive.
 - Quando si accede a Device Portal tramite una connessione Wi-Fi, un Web browser può impedire l'accesso a causa di un certificato non valido. Il browser potrebbe segnalare un errore, ad esempio "ERR_SSL_PROTOCOL_ERROR", anche se il certificato del dispositivo è stato considerato attendibile in precedenza. In questo caso, non è possibile passare a Device Portal, perché non è possibile ignorare gli avvisi di sicurezza. Questo aggiornamento ha risolto il problema. Se il certificato del dispositivo è stato precedentemente scaricato e considerato attendibile in un PC per rimuovere gli avvisi di sicurezza del browser e si verifica l'errore SSL, il nuovo certificato deve essere scaricato e considerato attendibile per indirizzare gli avvisi di sicurezza del browser.
 - È stata abilitata la possibilità di creare un pacchetto di provisioning di runtime in grado di installare un'app usando i pacchetti MSIX.
-- Aggiunta di un'impostazione nel sistema di **Impostazioni**  >  **System**  >  **olografici** che consente agli utenti di rimuovere automaticamente tutti gli ologrammi dalla realtà mista Home quando il dispositivo si arresta.
+- Aggiunta di un'impostazione nel sistema di **Impostazioni**  >  ****  >  **olografici** che consente agli utenti di rimuovere automaticamente tutti gli ologrammi dalla realtà mista Home quando il dispositivo si arresta.
 - È stato risolto un problema che causava le app HoloLens che modificano il formato pixel per il rendering nero nell'emulatore HoloLens.
 - È stato risolto un bug che causava un arresto anomalo durante l'accesso a Iris.
 - È stato risolto un problema relativo ai download ripetuti dello Store per le app già aggiornate.
@@ -566,11 +566,11 @@ Per provare:
 1. Scaricare la versione più recente di Windows Configuration designer da Windows Store nel PC.
 1. Selezionare **provision HoloLens Devices**  >  **provision HoloLens 2 Devices**.
 2. Creare il profilo di configurazione. Copiare quindi tutti i file creati in un dispositivo di archiviazione USB-C.
-3. Inserire il dispositivo USB-C in qualsiasi HoloLens appena balenato. Quindi premere i **volume down**  +  pulsanti di**accensione** del volume per applicare il pacchetto di provisioning.
+3. Inserire il dispositivo USB-C in qualsiasi HoloLens appena balenato. Quindi premere i ****  +  pulsanti di**accensione** del volume per applicare il pacchetto di provisioning.
 
 ### Stato di installazione dell'applicazione line-of-business
 
-La distribuzione e la gestione delle app MDM per le app line of business sono fondamentali per HoloLens. Gli amministratori e gli utenti devono visualizzare lo stato di installazione dell'app per il controllo e la diagnosi. In questa versione sono stati aggiunti altri **dettagli negli**  >  **account**di  >  **accesso o nell'Istituto di istruzione**,  >  **fare clic sulle informazioni dell'account**  >  **Info**.
+La distribuzione e la gestione delle app MDM per le app line of business sono fondamentali per HoloLens. Gli amministratori e gli utenti devono visualizzare lo stato di installazione dell'app per il controllo e la diagnosi. In questa versione sono stati aggiunti altri **dettagli negli**  >  **account**di  >  **accesso o nell'Istituto di istruzione**,  >  **fare clic sulle informazioni dell'account**  >  ****.
 
 ### CSP e criteri aggiuntivi
 

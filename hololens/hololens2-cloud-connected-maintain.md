@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: beee64159415c0635812463f81c0b5565e44e4a8
-ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
+ms.openlocfilehash: 8117c73516d2775ec67f37bad524bcf377ece2e5
+ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "11196322"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "11252697"
 ---
 # Manutenzione-guida connessa al cloud
 
@@ -33,7 +33,7 @@ L'assistenza remota è un'app In-Box e può essere aggiornata tramite l'app Micr
 
 ## Piano di supporto
 
-Un piano di supporto è un'ottima cosa da avere in posizione. È utile avere un utente o un gruppo addestrato alla risoluzione dei problemi del processo di registrazione sui dispositivi HoloLens e anche l'uso generale del dispositivo HoloLens all'interno dell'organizzazione. Per consentire agli utenti di avere la risoluzione più rapida dei loro problemi, suggeriamo che il processo di escalation venga gestito in modo simile a questo:
+Un piano di supporto è un'ottima cosa da avere in posizione. È utile avere un utente o un gruppo addestrato alla risoluzione dei problemi del processo di registrazione sui dispositivi HoloLens e anche l'uso generale del dispositivo HoloLens all'interno dell'organizzazione. Per consentire agli utenti di avere la risoluzione più rapida dei loro problemi, suggeriamo che il processo di escalation venga gestito in modo simile a questo ordine:
 
 1. Supporto tecnico.
 2. Il team di esperti di HoloLens
@@ -52,7 +52,7 @@ Se si&#39;ancora per creare una propria app line-of-business o ancora in fase di
 
 Mentre questa guida ha parlato della configurazione di gestione di dispositivi mobili (MDM), non è stato usato per applicare le restrizioni dei dispositivi o i criteri sono stati applicati alle periferiche. La gestione dei dispositivi può essere usata sia per consentire l'accesso premendo i certificati o limitare l'accesso con una varietà di restrizioni per i dispositivi. 
 
-In molti casi i dispositivi possono avere restrizioni di connettività come Bluetooth, VPN, USB o disattivazione dell'accesso alla videocamera o al microfono. Se uno di questi interessi ti interessa, ti invitiamo a leggere la [pagina delle restrizioni sui dispositivi comuni](hololens-common-device-restrictions.md).
+In molti casi i dispositivi possono avere restrizioni di connettività come Bluetooth, VPN, USB o disattivazione dell'accesso alla videocamera o al microfono. Se uno di questi interessi ti interessa, ti invitiamo a leggere la [pagina delle restrizioni dei dispositivi comuni](hololens-common-device-restrictions.md).
 
 Ci sono altre restrizioni di dispositivi più complesse che puoi usare. Ad esempio:
 
@@ -60,7 +60,7 @@ Ci sono altre restrizioni di dispositivi più complesse che puoi usare. Ad esemp
 - Usa la [modalità Kiosk](hololens-kiosk.md) per limitare l'interfaccia utente presentata agli utenti in un dispositivo. Puoi impostare i chioschi per mostrare una singola app o più app con una pagina iniziale personalizzata. I chioschi possono anche presentare esperienze diverse a utenti diversi.  
 - [Windows Application Control (WDAC)](windows-defender-application-control-wdac.md) per consentire l'avvio totale di app o processi specifici.
 
-Per informazioni sui metodi più diversi per la gestione dei dispositivi o le restrizioni sui dispositivi, eseguire il passaggio successivo e leggere la panoramica sulla gestione di dispositivi.
+Per informazioni sui metodi più diversi per la gestione di dispositivi o le restrizioni dei dispositivi, eseguire il passaggio successivo e leggere la panoramica sulla gestione di dispositivi.
 
 ## Passaggio successivo
 

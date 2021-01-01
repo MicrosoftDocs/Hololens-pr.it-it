@@ -17,12 +17,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 7fcd65d5e49fa9cdd771828401749a0a41e50238
-ms.sourcegitcommit: d319ac257b9ace484acf5dcfb16c9d4e19ea50a9
+ms.openlocfilehash: 7871d5113b6803a3f702bf8d64f16fabc1c5a9bb
+ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "11247218"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "11252657"
 ---
 # Portale aziendale Intune
 
@@ -32,28 +32,29 @@ Con la gestione di dispositivi mobili (MDM), puoi usare le tue app personalizzat
 
 1. Caricare un'app in una riga di business o caricare un'app personalizzata nel tenant di Intune. Vedere anche: [gestione delle app Enterprise](https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management).
 
-2. [Assegna la tua app a un gruppo](https://docs.microsoft.com/mem/intune/apps/apps-deploy). In base al tipo di assegnazione che scegli puoi far recapitare l'app automaticamente o disponibile per essere facilmente abbattute se hai una selezione di app. 
+2. [Assegna la tua app a un gruppo](https://docs.microsoft.com/mem/intune/apps/apps-deploy). In base al tipo di attività che scegli, l'app può essere recapitata automaticamente o disponibile per essere facilmente abbattute se hai una selezione di app.
 
-> [!NOTE] 
+> [!NOTE]
 > Quando crei il tuo bundle appx, assicurati di includere l'architettura per il dispositivo o i dispositivi a cui stai distribuendo. HoloLens 2 è ARM64 e HoloLens (1a generazione) è x86. Se si prevede di avere un ambiente con dispositivi misti, è possibile includere sia in un singolo bundle di appx.
 
 ## Tipi di assegnazione
 
-Se preferisci che la tua app sia installata automaticamente nel dispositivo dopo l'iscrizione, devi selezionare **obbligatoria** per i gruppi.
-Se preferisci rendere la tua app disponibile per il download a quelle iscritte nel portale aziendale, seleziona **disponibile per i dispositivi registrati**.
+Per installare automaticamente la tua app nel dispositivo dopo la registrazione, devi selezionare **obbligatoria** per i gruppi...
+Per rendere la tua app disponibile per il download nei dispositivi registrati tramite il portale aziendale, seleziona **disponibile per i dispositivi registrati**.
 
+## End-User esperienza
 
-## Esperienza utente finale
-
-Dopo aver configurato la configurazione su Intune, è possibile che gli utenti finali ricevano le app selezionate.
+Dopo aver configurato la configurazione in Intune, si è pronti per gli utenti finali a ricevere le app selezionate.
 
 Seguire questa procedura per ottenere automaticamente le app:
-1. Registrare il dispositivo con il tenant. 
-2. Una volta che il dispositivo ha completato la registrazione, dovresti ricevere l'app nel dispositivo. 
-3. Se l'app non viene visualizzata immediatamente, passare a account **delle impostazioni**  >  ****  >  **o a School**  >  **paginaaccount** info e scorrere verso il basso per visualizzare le informazioni sullo stato dell'app installata.
+
+1. Registrare il dispositivo con il tenant.
+2. Una volta che il dispositivo ha completato la registrazione, dovresti ricevere l'app nel dispositivo.
+3. Se l'app non viene visualizzata immediatamente, passare a account **delle impostazioni**  >  ****  >  **o a scuola**  >  *le informazioni dell'account* e scorrere verso il basso per visualizzare le informazioni sullo stato dell'app installata.
 
 Come passare alle app attraverso il portale aziendale:
-1. Aprire il **menu Start** e selezionare **Microsoft Store**. 
+
+1. Aprire il **menu Start** e selezionare **Microsoft Store**.
 2. Cercare il **portale aziendale** e scaricare l'app.
 3. Accedere al proprio account.
 4. Selezionare l'app che si vuole ricevere e scaricarla.

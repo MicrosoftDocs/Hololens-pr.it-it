@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7ef5fd06f4d77f541047a934056cffd863962c73
-ms.sourcegitcommit: 307e313f05243b6d94f9bfc0cb4e316a00a8005c
+ms.openlocfilehash: d2f3a58766baf9850f5af38c8e94acc8cb4877d6
+ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "11176868"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "11252787"
 ---
 # Domande frequenti su HoloLens 2 Development Edition
 
@@ -29,7 +29,7 @@ ms.locfileid: "11176868"
 
 HoloLens 2 Development Edition include un HoloLens 2, $500 in Azure Credits, una versione di valutazione di 3 mesi di Unity Pro e una versione di valutazione di un plug-in Pixyz di 3 mesi.
 
-### Qual è la differenza tra HoloLens 2 e HoloLens 2 Development Edition? 
+### Qual è la differenza tra HoloLens 2 e HoloLens 2 Development Edition?
 
 Si può usare solo l'edizione di sviluppo HoloLens 2 per la creazione interna e il test delle applicazioni aziendali da usare in connessione con la HoloLens 2 (Commercial Edition) in un'impostazione di produzione. Durante l'acquisto della versione di sviluppo, Microsoft può, a sua esclusiva discrezione, avere determinati diritti identificati durante il processo di checkout, ad esempio il diritto di riscattare determinati crediti di sconto o l'accesso di prova a determinati servizi o strumenti Microsoft o di terze parti per un periodo di tempo limitato. [Scopri di più](hololens2-options.md?tabs=developeredition#1-learn-about-the-development-edition)
 
@@ -43,13 +43,13 @@ I crediti di sconto o l'accesso di prova saranno inviati al messaggio di posta e
 
 ### È possibile "aggiornare" il dispositivo HoloLens 2 (solo dispositivo) alla versione di sviluppo di HoloLens 2 per ottenere i crediti di valutazione?
 
-No, non offriamo piani di trasferimento del dispositivo. Non è possibile eseguire il trasferimento da qualsiasi edizione a qualsiasi altra edizione. 
+No, non offriamo piani di trasferimento del dispositivo. Non è possibile eseguire il trasferimento da qualsiasi edizione a qualsiasi altra edizione.
 
-### Che cos'è Unity Pro? 
+### Che cos'è Unity Pro?
 
 Unity Pro è una piattaforma 3D in tempo reale per studi/aziende di piccole e medie dimensioni. È progettato per i team con una combinazione di competenze tecniche e non tecniche. [Scopri di più](https://store.unity.com/products/unity-pro)
 
-### Che cos'è il plug-in Pixyz? 
+### Che cos'è il plug-in Pixyz?
 
 Il plug-in Pixyz legge e converte quasi tutti i formati, lo ottimizza e lo inserisce in Unity e lo mette in fase per creare asset pronti per l'uso per le applicazioni in tempo reale. [Scopri di più](https://unity.com/products/pixyz)
 
@@ -59,7 +59,7 @@ I finanziamenti per HoloLens 2 Development Edition saranno disponibili all'inizi
 
 ### Chi è il contatto con le domande sui diritti di HoloLens 2 Development Edition?
 
-Per qualsiasi domanda relativa a diritti, contattare lo specialista di vendita in 866-425-4709, lun-ven, dalle 6 alle 18, PST.
+Per qualsiasi domanda relativa a diritti, contattare lo specialista di vendita a 866-425-4709, lun-ven, dalle 6 alle 18, PST.
 
 ### La società può acquistare più dispositivi HoloLens 2 Development Edition? 
 
@@ -117,7 +117,7 @@ Ottenere supporto [qui.](https://support.serviceshub.microsoft.com/supportforbus
 
 ### Cosa è incluso nella versione di valutazione di Unity?
 
-La versione di valutazione di Unity Pro mese 3-calendario consente l'accesso alla soluzione completa di Unity&#39;s per i professionisti per creare, gestire e monetizzare. La versione di valutazione di Unity Pro correlata non ha scadenze per riscattare.
+Una versione di valutazione di tre mesi di Unity Pro consente l'accesso alla soluzione completa di Unity&#39;s per i professionisti per creare, gestire e monetizzare. La versione di valutazione di Unity Pro correlata non ha scadenze per riscattare.
 
 Questa offerta è per i nuovi utenti e non si applica agli abbonamenti di Unity Pro stabiliti. La versione di valutazione di Unity Pro può essere soggetta a condizioni aggiuntive che verranno messe a disposizione al riscatto. Rivedere [ &amp; le condizioni](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0) e i [criteri di privacy](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0)applicabili.
 
@@ -127,8 +127,8 @@ Istruzioni per riscattare
 
 1. Visitare id.unity.com
 2. Accedere con l'ID unità o creare un account
-3. Fare clic &#39;riscattare un codice prodotto&#39;
-4. Immettere il codice prodotto e fare clic su &#39;riscattare un codice prodotto&#39;
+3. Selezionare &#39;riscattare un codice prodotto&#39;
+4. Immettere il codice prodotto e selezionare &#39;riscattare un codice prodotto&#39;
 
 Visitare la documentazione di HoloLens 2 Development Edition per [altre informazioni](https://docs.microsoft.com/hololens/hololens2-options?tabs=device)
 
@@ -144,7 +144,7 @@ Per ottenere assistenza per eventuali domande su ID unità, account, organizzazi
 
 ### Cosa è incluso nella versione di valutazione di Pixyz plug-in?
 
-Una versione di valutazione di Pixyz plug-in di 3 calendari che consente l'accesso a Pixyz per creare asset pronti per l'uso con mesh tassellati perfette, numero limitato di poligoni e UV automatico. La versione di valutazione relativa a Pixyz plug-in non ha scadenze per riscattare.
+Una versione di valutazione di Pixyz plug-in di tre calendari che consente l'accesso a Pixyz per creare asset pronti per l'uso con mesh tassellati perfette, numero limitato di poligoni e UV automatico. La versione di valutazione relativa a Pixyz plug-in non ha scadenze per riscattare.
 
 Questa offerta è per i nuovi utenti e non viene impilata in abbonamenti a Pixyz stabiliti. Il plug-in di Pixyz può essere soggetto a condizioni aggiuntive che verranno effettuate al riscatto. Rivedere [ &amp; le condizioni](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0) e i [criteri di privacy](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0)applicabili.
 

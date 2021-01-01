@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ba3f826360f999a72e671166af7a19d19ce9c567
-ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
+ms.openlocfilehash: 7d954347c7c274b844d436c0d6fc96e8bbc59f10
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "11196328"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253183"
 ---
 # Guida alla distribuzione-cloud connected HoloLens 2 con Remote Assist-Panoramica
 
@@ -29,19 +29,19 @@ Durante la guida verrà illustrato come registrare i dispositivi nella gestione 
 
 ## In questa guida
 
-Questa guida ha l'obiettivo specifico di configurare l'assistenza remota all'interno dell'organizzazione nei dispositivi HoloLens. Riguarderemo le necessità necessarie per raggiungere questo obiettivo. Per mantenere lo stato attivo su questo obiettivo, alcuni preparati e configurazioni verranno preselezionati per ottimizzare la distribuzione o per ridurre gli elementi necessari per la configurazione. Sarai informato di queste opzioni e potrai personalizzare la distribuzione in base alle tue esigenze aziendali.
+Questa guida ha l'obiettivo specifico di configurare l'assistenza remota all'interno dell'organizzazione nei dispositivi HoloLens. Riguarderemo le necessità necessarie per raggiungere questo obiettivo. Per mantenere lo stato attivo su questo obiettivo, la preparazione e la configurazione verranno preselezionate in modo da ottimizzare la distribuzione o ridurre gli elementi necessari per la configurazione. Sarai informato di queste opzioni e potrai personalizzare la distribuzione in base alle tue esigenze aziendali.
 
-Si tratta di una configurazione simile allo [scenario a: distribuire ai dispositivi Cloud Connect](https://docs.microsoft.com/hololens/common-scenarios#scenario-a), che è una buona opzione per molti strumenti di prova per le distribuzioni di concetti che includono:
+Si tratta di una configurazione simile allo [scenario a: distribuire ai dispositivi Cloud Connect](https://docs.microsoft.com/hololens/common-scenarios#scenario-a), che è una buona opzione per molti strumenti di prova per le distribuzioni di concetti, che includono:
 
 - Le reti di Wi-Fi sono in genere completamente aperte a Internet e ai servizi cloud
 - Join di Azure AD con registrazione automatica MDM--MDM (Intune) Managed
-- Accesso degli utenti con il proprio account aziendale (AAD)
+- Accesso degli utenti con il proprio account aziendale (Azure AD)
   - Singoli o più utenti per dispositivo supportati
 - I vari livelli di configurazioni di blocco dei dispositivi vengono applicati in base a casi di utilizzo specifici, dal chiosco completamente aperto al singolo app
 
 ![Scenario connesso al cloud](./images/cloud-connected-deployment-chart.png)
 
-In questa guida non verranno applicate ulteriori limitazioni o configurazioni di dispositivi, ma ti invitiamo ad esplorare queste opzioni dopo la fine.
+In questa guida non verranno applicate altre limitazioni o configurazioni di dispositivo, ma ti invitiamo ad esplorare queste opzioni dopo la fine.
 
 ## Informazioni sull'assistenza remota
 
@@ -55,8 +55,8 @@ Preparare
 
 > [!div class="checklist"]
 > - [Informazioni sull'infrastruttura Essentials per i dispositivi HoloLens 2.](hololens2-cloud-connected-prepare.md#infrastructure-essentials)
-> - [Leggi altre informazioni su AAD e impostane una se non si ha&#39;t.](hololens2-cloud-connected-prepare.md#azure-active-directory)
-> - [Informazioni sulla gestione delle identità e sulla configurazione ottimale degli account AAD.](hololens2-cloud-connected-prepare.md#identity-management)
+> - [Leggi altre informazioni su Azure AD e impostane una se non ne hai&#39;.](hololens2-cloud-connected-prepare.md#azure-active-directory)
+> - [Informazioni sulla gestione delle identità e sulla configurazione ottimale degli account di Azure AD.](hololens2-cloud-connected-prepare.md#identity-management)
 > - [Leggi altre informazioni su MDM e configura con Intune se Don&#39;t ne hai già uno pronto.](hololens2-cloud-connected-prepare.md#mobile-device-management)
 > - [Informazioni sui requisiti di rete di Remote assist.](hololens2-cloud-connected-prepare.md#network)
 > - [Facoltativamente: VPN per connettersi alle risorse dell'organizzazione](/hololens2-cloud-connected-prepare.md#optional-connect-your-hololens-to-vpn)
@@ -65,7 +65,7 @@ Configurare
 
 > [!div class="checklist"]
 > - [Come creare utenti e gruppi.](hololens2-cloud-connected-configure.md#azure-users-and-groups)
-> - [Come configurare la registrazione automatica all'interno di AAD.](hololens2-cloud-connected-configure.md#auto-enrollment-on-hololens-2)
+> - [Come configurare la registrazione automatica in Azure AD.](hololens2-cloud-connected-configure.md#auto-enrollment-on-hololens-2)
 > - [Come assegnare le licenze dell'applicazione.](hololens2-cloud-connected-configure.md#application-licenses)
 
 Distribuire

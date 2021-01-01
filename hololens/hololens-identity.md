@@ -1,7 +1,7 @@
 ---
 title: Gestire l'identità utente e l'accesso per HoloLens
 description: Gestire l'identità, la sicurezza e l'accesso degli utenti per HoloLens.
-keywords: HoloLens, utente, account, AAD, ADFS, account Microsoft, MSA, credenziali, riferimento
+keywords: HoloLens, User, account, AAD, Azure AD, ADFS, account Microsoft, MSA, credenziali, riferimento
 ms.assetid: 728cfff2-81ce-4eb8-9aaa-0a3c3304660e
 author: scooley
 ms.author: scooley
@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 818f6c2be594b1d709acf7daef1d124c6b410ea4
-ms.sourcegitcommit: 74e9989240dc0c324df35e8651b2f307f9d42148
+ms.openlocfilehash: 96e3b90a24d297631d39a1eb62888e4f4aa1098e
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "11201360"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253223"
 ---
 # Gestire l'identità utente e l'accesso per HoloLens
 
@@ -36,11 +36,11 @@ HoloLens supporta diversi tipi di identità utente. È possibile usare uno o pi�
 
 | Tipo di identità | Account per dispositivo | Opzioni di autenticazione |
 | --- | --- | --- |
-| [Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/) | 64 | <ul><li>Provider di credenziali Web di Azure</li><li>App Azure Authenticator</li><li>Biometrico (Iris) &ndash; HoloLens 2 solo <sup> 1</sup> </li><li>PIN &ndash; facoltativo per HoloLens (1a generazione), obbligatorio per HoloLens 2</li><li>Password</li></ul> |
+| [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/) | 64 | <ul><li>Provider di credenziali Web di Azure</li><li>App Azure Authenticator</li><li>Biometrico (Iris) &ndash; HoloLens 2 solo <sup> 1</sup> </li><li>PIN &ndash; facoltativo per HoloLens (1a generazione), obbligatorio per HoloLens 2</li><li>Password</li></ul> |
 | [Account Microsoft (MSA)](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts) | 1 | <ul><li>Solo HoloLens 2 (Iris) biometrico &ndash;</li><li>PIN &ndash; facoltativo per HoloLens (1a generazione), obbligatorio per HoloLens 2</li><li>Password</li></ul> |
 | [Account locale](https://docs.microsoft.com/windows/security/identity-protection/access-control/local-accounts) | 1 | Password |
 
-Gli account connessi al cloud (AAD e MSA) offrono più funzionalità perché possono usare i servizi di Azure.  
+Gli account connessi al cloud (Azure AD e MSA) offrono più funzionalità perché possono usare i servizi di Azure.  
 
 > [!NOTE]
 > 1-mentre un dispositivo HoloLens 2 può supportare fino agli account di 64 Azure AD, solo 10 di questi account possono eseguire la registrazione nell'autenticazione di Iris. Questa operazione è allineata ad altre opzioni di autenticazione biometrica per Windows Hello for business. [Per altre informazioni, vedere.](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer)
@@ -61,20 +61,20 @@ Come nella versione desktop di Windows, è possibile collegare altre credenziali
 
 Il collegamento degli account non separa i dati utente creati nel dispositivo, ad esempio immagini o download.  
 
-### Configurazione del supporto multi-utente (solo AAD)
+### Configurazione del supporto multi-utente (solo Azure AD)
 
-HoloLens supporta più utenti dello stesso tenant di AAD. Per usare questa caratteristica, devi usare un account che appartiene all'organizzazione per configurare il dispositivo. Successivamente, gli altri utenti dello stesso tenant possono accedere al dispositivo dalla schermata di accesso o toccando il riquadro dell'utente nel pannello Start. È possibile eseguire l'accesso a un solo utente alla volta. Quando un utente accede, HoloLens firma l'utente precedente. Il primo utente nel dispositivo è considerato il proprietario del dispositivo, tranne nel caso di AAD join, [Leggi altre informazioni sui proprietari di dispositivi](security-adminless-os.md#device-owner).
+HoloLens supporta più utenti dello stesso tenant di Azure AD. Per usare questa caratteristica, devi usare un account che appartiene all'organizzazione per configurare il dispositivo. Successivamente, gli altri utenti dello stesso tenant possono accedere al dispositivo dalla schermata di accesso o toccando il riquadro dell'utente nel pannello Start. È possibile eseguire l'accesso a un solo utente alla volta. Quando un utente accede, HoloLens firma l'utente precedente. Il primo utente nel dispositivo è considerato il proprietario del dispositivo, tranne nel caso di Azure AD join, [Leggi altre informazioni sui proprietari di dispositivi](security-adminless-os.md#device-owner).
 
 Tutti gli utenti possono usare le app installate nel dispositivo. Tuttavia, ogni utente ha i propri dati e preferenze dell'app. La rimozione di un'app dal dispositivo lo rimuove per tutti gli utenti.  
 
-I dispositivi impostati con gli account AAD non consentiranno l'accesso al dispositivo con un account Microsoft. Tutti gli account successivi usati devono essere account AAD dello stesso tenant del dispositivo. È comunque possibile [accedere con un account Microsoft alle app](hololens-identity.md#setting-up-multi-user-support-aad-only) che la supportano, ad esempio Microsoft Store. Per passare dall'uso degli account AAD agli account Microsoft per l'accesso al dispositivo, è necessario [reflashare il dispositivo](hololens-recovery.md#clean-reflash-the-device).
+I dispositivi impostati con gli account di Azure AD non consentiranno l'accesso al dispositivo con un account Microsoft. Tutti gli account successivi usati devono essere account di Azure AD dello stesso tenant del dispositivo. È comunque possibile [accedere con un account Microsoft alle app](hololens-identity.md#setting-up-multi-user-support-azure-ad-only) che la supportano, ad esempio Microsoft Store. Per passare dall'uso degli account di Azure AD agli account Microsoft per l'accesso al dispositivo, è necessario [reflashare il dispositivo](hololens-recovery.md#clean-reflash-the-device).
 
 > [!NOTE]
-> **HoloLens (1a generazione)** ha iniziato a supportare più utenti AAD nell' [aggiornamento di windows 10 aprile 2018](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018) come parte di [Windows olografico for business](hololens-upgrade-enterprise.md).
+> **HoloLens (1st Gen)** ha iniziato a supportare più utenti di Azure ad in [windows 10 April 2018 Update](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018) come parte di [Windows olografico for business](hololens-upgrade-enterprise.md).
 
 ## Rimozione di utenti
 
-È possibile rimuovere un utente dal dispositivo accedendo agli account **delle impostazioni**di  >  **Accounts**  >  **altri utenti**. Questa azione recupera anche lo spazio rimuovendo tutti i dati dell'app dell'utente dal dispositivo.  
+È possibile rimuovere un utente dal dispositivo accedendo agli account **delle impostazioni**di  >  ****  >  **altri utenti**. Questa azione recupera anche lo spazio rimuovendo tutti i dati dell'app dell'utente dal dispositivo.  
 
 ## Uso di Single Sign-on all'interno di un'app
 
@@ -103,7 +103,7 @@ Windows Hello for business (che supporta l'uso di un PIN per l'accesso) è suppo
 1. In HoloLens l'utente può quindi usare **le**  >  **Opzioni**  >  di accesso alle impostazioni**Aggiungi pin** per configurare un PIN.
 
 > [!NOTE]
-> Gli utenti che accedono tramite un account Microsoft possono anche configurare un PIN nelle opzioni di accesso **delle impostazioni**per l'  >  **Sign-in Options**  >  **aggiunta di pin**. Questo PIN è associato a [Windows Hello](https://support.microsoft.com/help/17215/windows-10-what-is-hello), invece che [a Windows Hello for business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview).
+> Gli utenti che accedono tramite un account Microsoft possono anche configurare un PIN nelle opzioni di accesso **delle impostazioni**per l'  >  ****  >  **aggiunta di pin**. Questo PIN è associato a [Windows Hello](https://support.microsoft.com/help/17215/windows-10-what-is-hello), invece che [a Windows Hello for business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview).
 
 ### Come viene implementata l'autenticazione biometrica di Iris in HoloLens 2?
 

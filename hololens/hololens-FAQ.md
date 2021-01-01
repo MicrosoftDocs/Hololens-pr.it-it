@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 51cbef57cc3384b7026ae5d0b1ea98fdd942291f
-ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
+ms.openlocfilehash: 72b976560664c89b7ae3cd9270c57ead438679cd
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "10865575"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253123"
 ---
 # Domande frequenti sui dispositivi e gli ologrammi di HoloLens
 
@@ -256,7 +256,7 @@ No. È necessario utilizzare un sistema MDM per gestire i dispositivi HoloLens.
 
 ### Posso utilizzare Active Directory Domain Services (Ad DS) per gestire gli account utente di HoloLens?
 
-No. È necessario utilizzare Azure Active Directory (AAD) per gestire gli account utente per i dispositivi HoloLens.
+No. È necessario usare Azure Active Directory (Azure AD) per gestire gli account utente per i dispositivi HoloLens.
 
 ### HoloLens è in grado di registrare automaticamente Automated Data Capture System (ADCS)?
 
@@ -271,7 +271,7 @@ No.
 No. Tuttavia, è possibile risolvere questo problema tramite uno dei seguenti approcci:
 
 - Creare un'app personalizzata, quindi [abilitare la modalità tutto schermo](hololens-kiosk.md). L'app può essere personalizzata e può lanciare altre app (come Remote Assist).  
-- Modificare tutte le immagini del profilo utente in AAD con il logo dell'azienda (questa soluzione potrebbe non essere adatta a tutte le situazioni).
+- Modificare tutte le immagini del profilo utente in Azure AD per il logo della società. (questa soluzione potrebbe non essere adatta a tutte le situazioni).
 
 ### Quali funzionalità di registrazione sono disponibili in HoloLens (1ª generazione) e HoloLens 2?
 

@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f560dae725cbce8658bdf2a135c5061b5332f797
-ms.sourcegitcommit: 456a88907d606f4c4532b153d5a848e214b6b8e1
+ms.openlocfilehash: 777c90c4be397e176281ee72cb684a561ba78cfa
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "11182007"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253033"
 ---
 # Configurare il dispositivo HoloLens come chiosco
 
@@ -82,8 +82,8 @@ Nella tabella seguente sono elencate le caratteristiche di supporto degli utenti
 
 | &nbsp; |Tipi di utenti supportati | Accesso automatico | Più livelli di accesso |
 | --- | --- | --- | --- |
-|Chiosco Single-app |Account del servizio gestito (MSA) in Azure Active Directory (AAD) o account locale |Sì |No |
-|Chiosco con più app |Account AAD |No |Sì |
+|Chiosco Single-app |Account del servizio gestito (MSA) in Azure Active Directory (Azure AD) o account locale |Sì |No |
+|Chiosco con più app |Account Azure AD |No |Sì |
 
 Per esempi su come usare queste funzionalità, vedere la tabella seguente.
 
@@ -143,7 +143,7 @@ Quando crei il file XML o usi l'interfaccia utente di Intune per configurare un 
 In genere i chioschi sono abilitati per un utente o un gruppo di utenti. Tuttavia, se si prevede di scrivere il proprio chiosco XML, è possibile prendere in considerazione l'accesso assegnato globale, in cui il chiosco viene applicato a livello di dispositivo indipendentemente dall'identità. Se questo ti piace [, Leggi altre informazioni sui chioschi di Access assegnati a livello globale.](hololens-global-assigned-access-kiosk.md)
 
 #### Se si sta creando un file XML:
--   Molti creano più profili Kiosk e li assegnano a utenti/gruppi diversi. Ad esempio un chiosco per il gruppo AAD che contiene molte app e un visitatore che ha un chiosco di più app con un'app singola.
+-   Molti creano più profili Kiosk e li assegnano a utenti/gruppi diversi. Ad esempio un chiosco per il tuo gruppo di Azure AD che contiene molte app e un visitatore che ha un chiosco di più app con un'app singola.
 -   La configurazione del chiosco sarà denominata **ID profilo** e avrà un GUID.
 -   Il profilo verrà assegnato nella sezione configs specificando il tipo di utente e usando lo stesso GUID per l' **ID DefaultProfile**.
 - Un file XML può essere creato ma ancora applicato a un dispositivo tramite MDM creando un profilo di configurazione del dispositivo URI OMA personalizzato e applicarlo al gruppo di dispositivi HoloLens usando il valore URI:./Device/Vendor/MSFT/AssignedAccess/Configuration
@@ -151,7 +151,7 @@ In genere i chioschi sono abilitati per un utente o un gruppo di utenti. Tuttavi
 #### Se si sta creando un chiosco in Intune.
 -   Ogni dispositivo può ricevere un singolo profilo Kiosk, altrimenti creerà un conflitto e non riceverà alcuna configurazione Kiosk. 
     -   Altri tipi di profili e criteri, ad esempio le restrizioni dei dispositivi non correlati al profilo di configurazione Kiosk, non sono in conflitto con il profilo di configurazione del chiosco.
--   Il chiosco sarà abilitato per tutti gli utenti che fanno parte del tipo di accesso utente, questo sarà impostato con un utente o un gruppo AAD. 
+-   Il chiosco sarà abilitato per tutti gli utenti che fanno parte del tipo di accesso utente, questo sarà impostato con un utente o un gruppo di annunci Azure. 
 -   Dopo aver impostato la configurazione del chiosco e il **tipo di accesso utente** (gli utenti che possono accedere al chiosco) e le app sono selezionati, la configurazione del dispositivo deve comunque essere assegnata a un gruppo. I gruppi assegnati determinano quali dispositivi ricevono la configurazione del dispositivo Kiosk, ma non interagiscono con se il chiosco è abilitato o meno. 
     - Per una descrizione completa degli effetti dell'assegnazione dei profili di configurazione in Intune, vedere [assegnare profili utente e di dispositivo in Microsoft Intune](https://docs.microsoft.com/intune/configuration/device-profile-assign).
 
@@ -176,7 +176,7 @@ Nella tabella seguente sono elencate le funzionalità e i vantaggi di ognuno dei
 |Distribuire chioschi multimediali per più app    | No            | Sì                  | Sì  |
 |Distribuire solo ai dispositivi locali | Sì           | Sì                  | No   |
 |Distribuire usando la modalità sviluppatore |Obbligatorio       | Non necessario            | Non necessario   |
-|Distribuire usando Azure Active Directory (AAD)  | Non necessario            | Non necessario                   | Obbligatorio  |
+|Distribuire usando Azure Active Directory (Azure AD)  | Non necessario            | Non necessario                   | Obbligatorio  |
 |Distribuzione automatica      | No            | No                   | Sì  |
 |Velocità di distribuzione            | Velocità       | Velocità                 | Lento |
 |Distribuire in scala | Non raccomandato    | Consigliato        | Consigliato |
@@ -209,7 +209,7 @@ Per altre informazioni su come eseguire la registrazione dei dispositivi, vedere
 1. Selezionare **Platform**  >  **Windows 10 e versioni successive**e quindi selezionare **il tipo di profilo restrizioni per il**  > **dispositivo**.
 1. Selezionare **Configura**  >  **Kiosk**e quindi selezionare una delle opzioni seguenti:
    - Per creare un chiosco Single-app, seleziona Kiosk in **modalità Kiosk**  >  **Single-app**.
-   - Per creare un chiosco multiapp, selezionare Kiosk **Kiosk Mode**  >  **multi-app**in modalità Kiosk.
+   - Per creare un chiosco multiapp, selezionare Kiosk ****  >  **multi-app**in modalità Kiosk.
 1. Per iniziare a configurare il chiosco, selezionare **Aggiungi**.
 
 I passaggi successivi variano a seconda del tipo di chiosco desiderato. Per altre informazioni, selezionare una delle opzioni seguenti:  
@@ -227,10 +227,10 @@ Questa sezione riepiloga le impostazioni richieste da un chiosco per app singole
 - Per altre informazioni sulle impostazioni disponibili per i chioschi per le app singole in Intune, vedere [singoli chioschi di app a schermo intero](https://docs.microsoft.com/intune/configuration/kiosk-settings-holographic#single-full-screen-app-kiosks)
 - Per altri servizi MDM, vedere le istruzioni nella documentazione del provider. Se devi usare una configurazione XML personalizzata per configurare un chiosco nel servizio MDM, [Crea un file XML che definisce la configurazione del chiosco](#ppkioskconfig).
 
-1. Selezionare **User logon type**l'  >  **account utente locale**tipo di accesso utente e quindi immettere il nome utente dell'account locale (dispositivo) o dell'account Microsoft (MSA) che può accedere al chiosco.
+1. Selezionare **** l'  >  **account utente locale**tipo di accesso utente e quindi immettere il nome utente dell'account locale (dispositivo) o dell'account Microsoft (MSA) che può accedere al chiosco.
    > [!NOTE]  
    > I tipi di account utente di **Autologon** non sono supportati in Windows olografico for business.
-1. Selezionare **Application type**  >  **App Store**tipo applicazione e quindi selezionare un'app nell'elenco.
+1. Selezionare ****  >  **App Store**tipo applicazione e quindi selezionare un'app nell'elenco.
 
 Il passaggio successivo consiste nell' [assegnare](#mdmassign) il profilo a un gruppo.
 
@@ -390,11 +390,11 @@ Salvare l'esempio seguente come file XML. Puoi usare questo file quando configur
 
    ![Screenshot del campo MultiAppAssignedAccessSettings in Progettazione configurazione di Windows](./images/multiappassignedaccesssettings.png)
 
-1. **Facoltativo**. Se si vuole applicare il pacchetto di provisioning dopo la configurazione iniziale del dispositivo e un utente di amministratore è già disponibile nel dispositivo Kiosk, ignorare questo passaggio. Selezionare utenti account **delle impostazioni di runtime** &gt; **Accounts** &gt; **Users**e quindi creare un account utente. Specificare un nome utente e una password e quindi selezionare **UserGroup**  >  **amministratori**di UserGroup.  
+1. **Facoltativo**. Se si vuole applicare il pacchetto di provisioning dopo la configurazione iniziale del dispositivo e un utente di amministratore è già disponibile nel dispositivo Kiosk, ignorare questo passaggio. Selezionare utenti account **delle impostazioni di runtime** &gt; **** &gt; **** e quindi creare un account utente. Specificare un nome utente e una password e quindi selezionare ****  >  **amministratori**di UserGroup.  
   
      Usando questo account, è possibile visualizzare lo stato di provisioning e i registri.  
-1. **Facoltativo**. Se si ha già un account non amministratore nel dispositivo Kiosk, ignorare questo passaggio. Selezionare utenti account **delle impostazioni di runtime** &gt; **Accounts** &gt; **Users**e quindi creare un account utente locale. Verificare che il nome utente sia lo stesso dell'account specificato nel codice XML di configurazione. Selezionare **UserGroup**  >  **utenti standard**di UserGroup.
-1. Selezionare **File**  >  **Salva**file.
+1. **Facoltativo**. Se si ha già un account non amministratore nel dispositivo Kiosk, ignorare questo passaggio. Selezionare utenti account **delle impostazioni di runtime** &gt; **** &gt; **** e quindi creare un account utente locale. Verificare che il nome utente sia lo stesso dell'account specificato nel codice XML di configurazione. Selezionare ****  >  **utenti standard**di UserGroup.
+1. Selezionare ****  >  **Salva**file.
 1. Selezionare **Esporta**  >  **pacchetto di provisioning**e quindi selezionare **proprietario**  >  **amministratore IT**. In questo articolo viene impostata la precedenza di questo pacchetto di provisioning superiore al provisioning dei pacchetti applicati a questo dispositivo da altre origini.
 1. Seleziona **Avanti**.
 1. Nella pagina di **sicurezza del pacchetto di provisioning** selezionare un'opzione di sicurezza.
@@ -475,10 +475,10 @@ In precedenza, quando si verificano errori nell'applicazione della modalità Kio
 
 ![L'immagine della modalità Kiosk ora appare quando non riesce.](images/hololens-kiosk-failure-behavior.png )
 
-### Appartenenza al gruppo della cache AAD per il chiosco offline
-- Sono stati abilitati i chioschi offline per essere usati con i gruppi AAD per un massimo di 60 giorni.
+### Appartenenza al gruppo cache Azure AD per il chiosco offline
+- Sono stati abilitati i chioschi offline da usare con i gruppi di Azure AD per un massimo di 60 giorni.
 
-Questo criterio Controlla il numero di giorni in cui è consentita la cache dell'appartenenza a un gruppo AAD per le configurazioni di accesso assegnate destinate ai gruppi AAD per l'utente connesso. Quando il valore di questo criterio è impostato su un valore maggiore di 0 solo la cache viene usata in caso contrario.  
+Questo criterio Controlla il numero di giorni in cui è consentita la cache delle appartenenze ai gruppi di Azure AD per le configurazioni di Access assegnate per gli utenti di Azure AD per signed. Quando il valore di questo criterio è impostato su un valore maggiore di 0 solo la cache viene usata in caso contrario.  
 
 Nome: valore URI AADGroupMembershipCacheValidityInDays:./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
 
@@ -486,30 +486,30 @@ Min-0 giorni
 Max-60 giorni 
 
 Procedura per usare correttamente questo criterio: 
-1. Creare un profilo di configurazione del dispositivo per il chiosco che designa i gruppi AAD e assegnarlo ai dispositivi HoloLens. 
+1. Crea un profilo di configurazione del dispositivo per i gruppi di Azure AD e assegnalo ai dispositivi HoloLens. 
 1. Crea una configurazione di dispositivo basata su URI OMA personalizzata che imposta il valore di questo criterio sul numero desiderato di giorni (> 0) e assegnalo ai dispositivi HoloLens. 
     1. Il valore URI deve essere immesso nella casella di testo OMA-URI come./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
     1. Il valore può essere compreso tra min/max consentita.
 1. Registrare i dispositivi HoloLens e verificare che entrambe le configurazioni vengano applicate al dispositivo. 
-1. Consentire all'utente di accedere a AAD 1 quando è disponibile Internet, una volta che l'utente ha eseguito l'accesso e l'appartenenza al gruppo AAD è stata confermata, verrà creata la cache. 
-1. Ora l'utente AAD 1 può prendere offline HoloLens e usarlo per la modalità Kiosk, purché il valore dei criteri consenta un numero X di giorni. 
-1. I passaggi 4 e 5 possono essere ripetuti per qualsiasi altro utente AAD N. il punto chiave è che qualsiasi utente AAD deve effettuare l'accesso al dispositivo tramite Internet, quindi almeno una volta che siamo in grado di determinare di essere membri del gruppo AAD a cui è destinata la configurazione del chiosco. 
+1. Consentire l'accesso dell'utente AD Azure AD 1 quando Internet è disponibile, una volta che la registrazione dell'utente e l'appartenenza al gruppo Azure AD è stata confermata, verrà creata la cache. 
+1. Ora Azure AD User 1 può prendere offline HoloLens e usarlo per la modalità Kiosk, purché il valore dei criteri consenta un numero X di giorni. 
+1. I passaggi 4 e 5 possono essere ripetuti per qualsiasi altro utente di Azure AD N. il punto chiave in questo caso è che qualsiasi utente di Azure AD deve effettuare l'accesso al dispositivo tramite Internet, quindi almeno una volta che si può determinare di essere membri del gruppo di Azure AD a cui è destinata la configurazione di Kiosk. 
  
 > [!NOTE]
-> Finché non viene eseguito il passaggio 4 per un utente AAD si verificherà un comportamento di errore menzionato in ambienti "disconnessi". 
+> Finché non viene eseguito il passaggio 4 per un utente di Azure AD si verificherà un comportamento di errore menzionato in ambienti "disconnessi". 
 
 
 ## Esempi di codice del chiosco XML per HoloLens
 
-### Modalità Kiosk di più app destinate a un gruppo AAD. 
-Questo chiosco distribuisce un chiosco che, per gli utenti del gruppo AAD, avrà un chiosco abilitato che include le 3 app: impostazioni, assistenza remota e hub feedback. Per modificare l'esempio da usare immediatamente, assicurarsi di modificare il GUID evidenziato di seguito in modo che corrisponda a un gruppo di AAD. 
+### Più modalità Kiosk delle app destinate a un gruppo di Azure AD. 
+Questo chiosco distribuisce un chiosco che per gli utenti nel gruppo Azure AD avranno un chiosco abilitato che include le 3 app: impostazioni, assistenza remota e hub feedback. Per modificare l'esempio da usare immediatamente, assicurarsi di modificare il GUID evidenziato di seguito in modo che corrisponda a un gruppo di Azure AD. 
 
 
 :::code language="xml" source="samples/kiosk-sample-multi-aad-group.xml" highlight="20":::
 
 
-### Modalità Kiosk di più app che designa l'account AAD.
-Questo chiosco distribuisce un chiosco per un singolo utente, ma avrà un chiosco abilitato che include le 3 app: impostazioni, assistenza remota e hub feedback. Per modificare l'esempio da usare immediatamente, assicurarsi di cambiare l'account evidenziato di seguito in modo che corrisponda a un account AAD. 
+### Modalità Kiosk di più app destinata all'account Azure AD.
+Questo chiosco distribuisce un chiosco per un singolo utente, ma avrà un chiosco abilitato che include le 3 app: impostazioni, assistenza remota e hub feedback. Per modificare l'esempio da usare immediatamente, assicurarsi di modificare l'account evidenziato di seguito in modo che corrisponda a un account di Azure AD. 
 
 
 :::code language="xml" source="samples/kiosk-sample-multi-aad-account.xml" highlight="20":::

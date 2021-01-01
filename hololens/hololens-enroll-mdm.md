@@ -14,12 +14,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 5adc1b48c4603f3a9d3145bef4f1d8aa1867a9d1
-ms.sourcegitcommit: 5877c3e51de49f949b35ab840a3312a009a4487a
+ms.openlocfilehash: 7c17cbf88fc2e7a6dcd9aa600ad6e6910edb29a8
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "11102325"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253233"
 ---
 # Registrare HoloLens in MDM
 
@@ -36,9 +36,9 @@ Puoi gestire più dispositivi Microsoft HoloLens simultaneamente usando soluzion
 
 A seconda del tipo di identità scelto durante la configurazione OOBE o post-accesso sono disponibili diversi metodi di registrazione. Per altre informazioni su ogni tipo di identità in HoloLens, visitare [Questa pagina](hololens-identity.md).
 
-- Se Identity è AAD, è possibile che durante l'accesso all'app OOBE o **le impostazioni**di  ->  **Access o**il pulsante School  ->  **Connect** .
-    - Per AAD, la registrazione automatica MDM si verifica solo se AAD è stato configurato con gli URL di registrazione.
-- Se l'identità è AAD e il dispositivo è stato pre-registrato con Intune MDM server con il profilo di configurazione specifico assegnato, quindi AAD-join e registrazione si verificheranno automaticamente durante la configurazione guidata.
+- Se Identity è Azure ad, è possibile che sia durante l'accesso all'app OOBE o **le impostazioni**di  ->  **Access o**il pulsante School  ->  **Connect** .
+    - Per Azure AD, la registrazione automatica MDM si verifica solo se Azure AD è stato configurato con gli URL di registrazione.
+- Se Identity è Azure AD e Device è stato pre-registrato con il server di Intune MDM con il profilo di configurazione specifico assegnato, quindi Azure AD-Join e la registrazione si verificheranno automaticamente durante la configurazione guidata.
     - Chiamato anche [flusso Autopilot](hololens2-autopilot.md) disponibile in [19041.1103 + Build](hololens-release-notes.md#windows-holographic-version-2004).
 - Se l'identità è MSA, usare **le impostazioni**di  ->  **accesso all'app o al pulsante School**  ->  **Connect** .
     - Denominato anche flusso di Add work account (AWA).
@@ -49,11 +49,11 @@ Una volta che il dispositivo è stato registrato con il server MDM, l'app Impost
 
 ## Registrazione automatica in MDM
 
-Se l'organizzazione usa Azure Active Directory (Azure AD) e una soluzione MDM che accetta un token AAD per l'autenticazione (attualmente supportato solo in Microsoft Intune e AirWatch), l'amministratore IT può configurare Azure AD in modo da consentire automaticamente la registrazione MDM dopo l'accesso dell'utente con l'account Azure AD. [Informazioni su come configurare la registrazione di Azure AD.](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)
+Se l'organizzazione USA Azure Active Directory (Azure AD) e una soluzione MDM che accetta un token di Azure AD per l'autenticazione (attualmente supportato solo in Microsoft Intune e nell'orologio), l'amministratore IT può configurare Azure AD per consentire automaticamente l'iscrizione a MDM dopo che l'utente ha eseguito l'accesso con il proprio account di Azure AD. [Informazioni su come configurare la registrazione di Azure AD.](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)
 
 Quando è abilitata la registrazione automatica, non è necessaria alcuna registrazione manuale aggiuntiva. Quando l'utente accede con un account Azure AD, il dispositivo viene registrato in MDM dopo aver completato l'esperienza di prima esecuzione.
 
-Quando un dispositivo è collegato ad AAD, può influire su chi ha considerato il [proprietario del dispositivo](security-adminless-os.md#device-owner).
+Quando un dispositivo è collegato AD Azure AD, può influire su chi ha considerato il [proprietario del dispositivo](security-adminless-os.md#device-owner).
 
 ## Annullare la registrazione di HoloLens da Intune
 

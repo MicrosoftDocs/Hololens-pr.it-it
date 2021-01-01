@@ -1,5 +1,5 @@
 ---
-title: Controllo di applicazioni di Windows Defender - WDAC
+title: Controllo applicazioni di Windows Defender
 description: Panoramica sulle caratteristiche di WDAC e su come usare la gestione di dispositivi HoloLens.
 ms.prod: hololens
 ms.sitesec: library
@@ -12,14 +12,14 @@ ms.reviewer: ''
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b12079142049cce28ec00803ad0a1f8dc92333e1
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: d337f9856eaeac433524d7bb8b60e9a24e264b80
+ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11163127"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "11252647"
 ---
-# Controllo di applicazioni di Windows Defender - WDAC
+# Controllo applicazioni di Windows Defender
 
 WDAC consente a un amministratore IT di configurare i propri dispositivi in modo da bloccare il lancio delle app nei dispositivi. Questo è diverso dai metodi di restrizione del dispositivo, ad esempio la modalità Kiosk, in cui l'utente viene presentato con un'interfaccia utente che nasconde le app nel dispositivo, ma possono comunque essere avviate. Mentre WDAC è implementato, le app sono ancora visibili nell'elenco tutte le app, ma WDAC arresta le app e i processi da poter essere avviati dall'utente del dispositivo.
 
@@ -30,7 +30,7 @@ A un dispositivo può essere assegnato più di un criterio WDAC. Se in un sistem
 
 Di seguito è riportata una guida per gli utenti per informazioni su come [usare WDAC e Windows PowerShell per consentire o bloccare le app su dispositivi HoloLens 2 con Microsoft Intune](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens).
 
-Quando gli utenti cercano le app installate nel PC Windows 10 usando il primo passaggio di esempio, potrebbero essere necessari alcuni tentativi per limitare i risultati.
+Quando gli utenti cercano le app installate nel PC Windows 10 usando il primo passaggio di esempio, potrebbero essere necessario eseguire alcuni tentativi per limitare i risultati.
 
 ```powershell
 $package1 = Get-AppxPackage -name *<applicationname>*
@@ -38,7 +38,7 @@ $package1 = Get-AppxPackage -name *<applicationname>*
 
 Se non si conosce il nome completo del pacchetto, potrebbe essere necessario eseguire "Get-AppxPackage-Name \ * YourBestGuess \ *" alcune volte per trovarlo. Dopo aver eseguito il nome "$package 1 = Get-AppxPackage-Name actual. PackageName"
 
-Ad esempio, eseguendo le operazioni seguenti per Edge verrà restituito più di un risultato, ma da tale elenco puoi identificare che il nome completo che ti serve è Microsoft. MicrosoftEdge. 
+Ad esempio, eseguendo le operazioni seguenti per Microsoft Edge verrà restituito più di un risultato, ma da tale elenco puoi identificare che il nome completo che ti serve è Microsoft. MicrosoftEdge.
 
 ```powershell
 Get-AppxPackage -name *edge*
@@ -46,7 +46,7 @@ Get-AppxPackage -name *edge*
 
 ## Pacchetto di nomi di famiglia per le app in HoloLens
 
-Nella Guida collegata sopra è possibile modificare manualmente newPolicy.xml e aggiungere regole per le applicazioni installate solo in HoloLens con i loro nomi di famiglia di pacchetti. Talvolta è possibile usare app che non sono presenti nel PC desktop che si vuole aggiungere ai criteri. 
+Nella Guida collegata sopra è possibile modificare manualmente newPolicy.xml e aggiungere regole per le applicazioni installate solo in HoloLens con i loro nomi di famiglia di pacchetti. Talvolta è possibile usare app che non sono presenti nel PC desktop che si vuole aggiungere ai criteri.
 
 Ecco un elenco delle app comunemente usate e In-Box per i dispositivi HoloLens 2.
 
@@ -81,6 +81,6 @@ Se un'app non è presente nell'elenco, un utente può usare Device Portal, conne
 1. Una volta connesso Device Portal, passa alle **visualizzazioni** e quindi alle **app**. 
 1. Nel pannello app installate usare l'elenco a discesa per selezionare l'app installata. 
 1. Individuare il PackageRelativeID. 
-1. Copiare i caratteri dell'app prima del!, questo sarà il PackageFamilyName.
+1. Copiare i caratteri dell'app prima del!, questi caratteri saranno i PackageFamilyName.
 
 

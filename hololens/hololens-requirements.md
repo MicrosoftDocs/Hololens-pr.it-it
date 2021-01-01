@@ -11,12 +11,12 @@ audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 11/04/2020
-ms.openlocfilehash: 5f24d62193f083f96144b7e8c3518dc97c14be68
-ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
+ms.openlocfilehash: 082064acd075451e7a8d55352249a0776cd19d76
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "11195589"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253213"
 ---
 # Distribuzione e gestione di HoloLens 2 Enterprise
 
@@ -140,7 +140,7 @@ Per altre informazioni sulla configurazione di un HoloLens 2 in modalità Kiosk,
 
 ### Registrazione di un dispositivo MDM
 
-Per le distribuzioni aziendali, è consigliabile [registrare i dispositivi](https://docs.microsoft.com/hololens/hololens-enroll-mdm) in MDM come dispositivi aziendali solo con Azure ad join e registrazione automatica MDM (AAD + MDM). Questo richiede Azure AD Premium e supporta l'iscrizione automatica a diversi provider MDM, tra cui Intune.
+Per le distribuzioni aziendali, è consigliabile [registrare i dispositivi](https://docs.microsoft.com/hololens/hololens-enroll-mdm) in MDM come dispositivi aziendali solo con Azure ad join e la registrazione automatica MDM (Azure ad + MDM). Questo richiede Azure AD Premium e supporta l'iscrizione automatica a diversi provider MDM, tra cui Intune.
 
 Leggi altre informazioni sul metodo [autopilota](https://docs.microsoft.com/hololens/hololens2-autopilot)di registrazione automatica.
 

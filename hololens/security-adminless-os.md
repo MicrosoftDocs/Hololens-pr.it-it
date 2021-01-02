@@ -13,12 +13,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: c7c54c624fe2e1c48eee468e2d30fe3460f7e786
-ms.sourcegitcommit: 5877c3e51de49f949b35ab840a3312a009a4487a
+ms.openlocfilehash: 79429c960b065e401ef18520350a199704981938
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "11102315"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253083"
 ---
 # Sistema operativo senza amministratore
 
@@ -34,9 +34,9 @@ I componenti di Windows possono anche usare la sandbox AppContainer con la piatt
 
 Infine, l'esecuzione di specifiche operazioni a livello di dispositivo, come l'aggiunta del dispositivo a un tenant o la gestione utenti, è consentita solo per i proprietari dei dispositivi. Questo gruppo viene popolato dagli utenti nel dispositivo attraverso una di queste operazioni:
   * Il primo utente nel dispositivo è sempre designato come proprietario. 
-    * Se il dispositivo è aggiunto ad AAD, tuttavia, l'utente che ha eseguito l'aggiunta diventa il proprietario del dispositivo. Questo si applica, ad esempio, nel caso in cui un dispositivo viene aggiunto ad AAD tramite Autopilot, nel qual caso il primo utente che effettua l'accesso al dispositivo non ha aggiunto il dispositivo ad ADD e quindi non diventa il proprietario del dispositivo. Per comprendere meglio chi diventa il proprietario di un dispositivo aggiunto ad ADD, vedere la [documentazione sull'assegnazione dell'amministratore locale](https://docs.microsoft.com/azure/active-directory/devices/assign-local-admin) (sostituendo "amministratore locale" con "proprietario del dispositivo", dato che in HoloLens non esiste l'amministratore).
-  * Quando un utente elevato a Proprietario dall'esperienza utente Impostazioni da un altro Proprietario nel dispositivo.
-  * Se il proprietario del dispositivo non è più disponibile, ad esempio se lascia la società, e il dispositivo è stato aggiunto ad AAD, l'amministratore tenant può designare un altro utente come proprietario del dispositivo nel Portale di Azure.
+    * Se il dispositivo è aggiunto ad Azure AD, tuttavia, l'utente che ha eseguito l'aggiunta diventa il proprietario del dispositivo. Questo si applica, ad esempio, nel caso in cui un dispositivo viene aggiunto ad Azure AD tramite Autopilot: in questo caso il primo utente che effettua l'accesso al dispositivo non ha aggiunto il dispositivo ad Azure AD, quindi non ne diventa il proprietario. Per comprendere meglio chi diventa il proprietario di un dispositivo aggiunto ad Azure AD, vedere la [documentazione sull'assegnazione dell'amministratore locale](https://docs.microsoft.com/azure/active-directory/devices/assign-local-admin) (sostituendo "amministratore locale" con "proprietario del dispositivo", dato che in HoloLens non esiste l'amministratore).
+  * Quando un utente è innalzato al livello di proprietario nell'esperienza utente Impostazioni da un altro proprietario nel dispositivo.
+  * Se il proprietario del dispositivo non è più disponibile, ad esempio ha lasciato l’azienda, e il dispositivo è stato aggiunto ad Azure AD, l'amministratore tenant può designare un altro utente come proprietario del dispositivo nel Portale di Azure.
 Gli amministratori globali di un tenant di Azure AD sono connessi in modo implicito come Proprietari nel dispositivo, senza necessità di eseguire le operazioni indicate sopra. 
 
 Gli amministratori IT possono gestire ciò a cui le app possono accedere tramite i criteri di [privacy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-privacy). 

@@ -13,12 +13,12 @@ audience: ITPro
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2b0ed266389ccc5a21117a604a6eb0abd214d4d1
-ms.sourcegitcommit: 1793f53f9e1cc63ac40edc09e65bb4beb80a4575
+ms.openlocfilehash: 3e06540dd7dca8892cd69abaf9a318d46ca0f3f2
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "11093236"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253143"
 ---
 # Registrazione dei dispositivi HoloLens in ambienti Wi-Fi aziendali con accesso limitato in base all'indirizzo MAC
 
@@ -26,7 +26,7 @@ Questo documento descrive uno scenario comune identificato negli ambienti dei cl
 
 ## Scenario di esempio:
 
-Molti clienti in ambienti sicuri hanno limitato l'accesso alle reti wireless o cablate solo per i dispositivi approvati, in base ai loro indirizzi MAC e tramite il filtro degli indirizzi MAC su un punto di accesso wireless o un server DHCP. Inoltre, alcune reti wireless possono essere protette con PEAP, che richiede l'applicazione di un certificato ai dispositivi prima di potersi autenticare correttamente alla rete wireless.
+Molti clienti di ambienti sicuri hanno restrizioni sulle reti wireless o cablate che consentono solo la connessione dei dispositivi approvati, in base ai loro indirizzi MAC, tramite il filtro degli indirizzi MAC su un punto di accesso wireless o un server DHCP. Inoltre, alcune reti wireless possono essere protette con PEAP, che richiede l'applicazione di un certificato ai dispositivi prima di potersi autenticare correttamente alla rete wireless.
 
 Possono emergere due problematiche che causano ritardi e richiedono l'intervento manuale per accedere alla rete con i dispositivi HoloLens.  
 
@@ -41,12 +41,12 @@ Le principali sfide sono:
 
 ## Soluzioni
 
-Esistono numerosi modi per migliorare questa situazione, a seconda dell'infrastruttura disponibile nel proprio ambiente.
+Esistono molti modi per migliorare questa situazione, a seconda dell'infrastruttura disponibile nel proprio ambiente.
 
 | Soluzione | Vantaggi | Requisiti |
 | --- | --- | --- |
-| Pacchetto di provisioning con adattatore Ethernet | Migliora l'esperienza di configurazione guidata e consente interventi tecnici più rapidi. | Hub USB-C compatibile con HoloLensIl tecnico deve comunque interagire con il dispositivo per recuperare l'indirizzo MAC e finalizzare la configurazione guidata |
-| Registrazione di Autopilot con Intune tramite ethernet | Connessione a singolo passaggio e registrazione del dispositivo nell'ambiente del clienteIl recupero dell'indirizzo MAC può essere completato senza interagire con il dispositivo | Intune abilitato per il tenant AAD del clienteAdattatore di rete USB-C compatibile con HoloLens |
+| Pacchetto di provisioning con adattatore Ethernet | Migliora l'esperienza di configurazione guidata e consente interventi tecnici più rapidi. | Hub USB-C compatibile con HoloLens, il tecnico deve comunque interagire con il dispositivo per recuperare l'indirizzo MAC e finalizzare la configurazione guidata |
+| Registrazione di Autopilot con Intune tramite ethernet | Connessione a singolo passaggio e registrazione del dispositivo nell'ambiente del clienteIl recupero dell'indirizzo MAC può essere completato senza interagire con il dispositivo | Intune abilitato per Azure AD del cliente, adattatore di rete USB-C compatibile con HoloLens |
 | Rilevamento automatico degli indirizzi MAC | Quando i dispositivi sono stati registrati nel tenant di Intune, l'indirizzo MAC viene segnalato tramite script al tecnico. | Cmdlet di PowerShell in Intune |
 
 ## Pacchetto di provisioning con adattatore Ethernet
@@ -60,7 +60,7 @@ Esistono numerosi modi per migliorare questa situazione, a seconda dell'infrastr
 - Hub USB-C compatibile con HoloLens e contenente un adattatore ethernet. Qualsiasi hub che non richiede di installare applicazioni o driver aggiuntivi dovrebbe essere idoneo.
 - Pacchetto di provisioning contenente:
   - Informazioni e certificati per la rete wireless
-  - Informazioni per la registrazione dell'app Azure AD aziendale (facoltativo)
+  - Informazioni per la registrazione dell'app Azure AD aziendale&#39;s (facoltativo)
   - Qualsiasi altra impostazione di provisioning necessaria
 
 ### Process
@@ -89,7 +89,7 @@ Se sul dispositivo è installato un sistema operativo precedente all'[aggiorname
 
 Ciò consente il &quot;Tocco singolo&quot; sul dispositivo per applicare il pacchetto di provisioning corretto e recuperare l'indirizzo MAC del dispositivo. [I pacchetti di provisioning possono essere creati seguendo queste indicazioni.](https://docs.microsoft.com/hololens/hololens-provisioning)
 
-## Registrazione per Autopilot con Intune
+## Autopilot con registrazione Intune
 
 ### Requisiti
 
@@ -117,7 +117,7 @@ I prerequisiti aggiuntivi sono i seguenti:
 3. Il dispositivo dovrebbe connettersi automaticamente a internet tramite configurazione attraverso l'adattatore ethernet, rilevare la configurazione di Autopilot, e registrarsi automaticamente in Azure AD e Intune
 4. Il dispositivo applica le configurazioni e gli altri certificati Wi-Fi necessari tramite Intune
 5. Al termine, il tecnico potrà caricare il portale Intune (Endpoint Manager) e accedere alla pagine delle proprietà del dispositivo passando a **Home -> Dispositivi -> Nome dispositivo -> Hardware**
-6. L'indirizzo MAC sarà visibile nel portale Intune
+6. L'indirizzo MAC Wi-Fi sarà visibile nel portale Intune
 
 ![Indirizzo MAC con Intune](images/mac-address-intune.jpg)
 
@@ -125,14 +125,14 @@ I prerequisiti aggiuntivi sono i seguenti:
 
 ### Vantaggi
 
-Offre al tecnico un'esperienza di distribuzione &quot;senza intervento manuale&quot;, in cui il dispositivo passa dalla cassetta alla registrazione in AAD e Intune senza che il tecnico debba indossare il dispositivo o interagire manualmente on l'ambiente di HoloLens.
+Ciò offre al tecnico un'esperienza di distribuzione &quot;diretta&quot;, in cui il dispositivo passa dalla scatola alla registrazione in Azure AD e Intune senza che il tecnico debba indossare il dispositivo o interagire manualmente con l'ambiente di HoloLens.
 
 ## Segnalazione degli indirizzi MAC al tecnico
 
 ### Requisiti
 
-- Autorizzazione di &quot;Intune Graph Powershell&quot; nel tenant del cliente
-- Installazione di Intune Graph PowerShell nella macchine dei tecnici.
+- Autorizzazione di &quot;Intune Graph PowerShell&quot; nel tenant del cliente
+- Installazione di Intune Graph PowerShell nel computer dei tecnici.
 - [https://www.powershellgallery.com/packages/Microsoft.Graph.Intune/6.1907.1.0](https://www.powershellgallery.com/packages/Microsoft.Graph.Intune/6.1907.1.0)
 - Accesso in lettura agli elementi &quot;Dispositivi gestiti&quot; di Intune. (Operatore Help desk o superiore, oppure un ruolo su misura)
 

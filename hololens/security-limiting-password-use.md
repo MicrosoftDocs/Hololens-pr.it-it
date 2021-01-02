@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: d577bc23089650e47159a8a77004a984059b095e
-ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.openlocfilehash: 417412e6b7854d9d985faa13bcf072b98e17f264
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009514"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11252973"
 ---
 # Limitazione dell'uso delle password
 
@@ -62,17 +62,17 @@ L'autenticazione tramite riconoscimento dell'iride utilizza il PIN. Per configur
 
 ## Single Sign-on con Gestione account Web 
 
-Single Sign-on (SSO) consente agli utenti senza password di accedere al dispositivo usando un account personale o un account aziendale o dell'Istituto di istruzione. L'utente viene autorizzato automaticamente con SSO per tutte le app e i servizi integrati tramite le [API di Gestione account Web](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Provider?view=winrt-19041).
+Single Sign-on (SSO) consente agli utenti senza password di accedere al dispositivo usando un account personale o un account aziendale o dell'Istituto di istruzione. L'utente viene autorizzato automaticamente con SSO per tutte le app e i servizi integrati tramite le [API di Gestione account Web](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Provider?view=winrt-19041&preserve-view=true).
 
 Dopo l'aggiunta di un'identità tramite una sola applicazione, con il consenso dell'utente potrà essere resa disponibile a tutte le app e a tutti i servizi usando l'integrazione a livello di sistema. Questo semplifica notevolmente la procedura di accesso alle app e offre agli utenti un'esperienza coerente per l'identità.
 
 Per altre informazioni sull'implementazione delle API di Gestione account Web, passa a [Implementazione delle API di Gestione account Web](https://docs.microsoft.com/windows/uwp/security/web-account-manager).
 
-  ![Accesso con Windows Hello](images/security-api-img.png)
+  ![API di sicurezza](images/security-api-img.png)
   
 Per le suite di app con requisiti di autenticazione specifici, il framework di Gestione account Web è estensibile ai provider di identità personalizzati. Gli utenti possono scaricare il provider di identità personalizzato, disponibile in pacchetto come app della piattaforma UWP (Universal Windows Platform) su Microsoft Store, per abilitare SSO su altre app integrate con quel provider di identità. 
 
-Per altre informazioni sull'implementazione dei provider di identità WAM personalizzati, vedere la documentazione di [riferimento all'API del provider di identità WAM personalizzato](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Provider?view=winrt-19041).
+Per altre informazioni sull'implementazione dei provider di identità WAM personalizzati, vedere la documentazione di [riferimento all'API del provider di identità WAM personalizzato](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Provider?view=winrt-19041&preserve-view=true).
 
 ## Accesso Windows Hello e FIDO2 con WebAuthn
 
@@ -83,7 +83,7 @@ HoloLens 2 può usare le credenziali utente senza password (come le chiavi di si
 
 Come per Windows Hello, quando l'utente crea e registra una credenziale FIDO2, il dispositivo (chiave di sicurezza HoloLens 2 o FIDO2) genera una chiave privata e pubblica nel dispositivo. La chiave privata viene archiviata in modo sicuro nel dispositivo e può essere usata solo dopo che è stata sbloccata con un movimento locale, ad esempio una biometria o un PIN. Una volta archiviata la chiave privata, la chiave pubblica viene inviata al sistema dell'account Microsoft nel cloud e registrata con l'account utente associato.
 
-Dopo avere eseguito l'accesso con un account MSA e AAD, il sistema invia una variabile numerica o di dati generata al dispositivo HoloLens 2 o FIDO2. HoloLens 2 o il dispositivo usa la chiave privata per firmare l'identificazione. L'identificazione firmata e i metadati vengono inviati di nuovo al sistema dell'account Microsoft e verificati usando la chiave pubblica.
+Dopo avere eseguito l'accesso con un account MSA e Azure AD, il sistema invia una variabile numerica o di dati generata al dispositivo HoloLens 2 o FIDO2. HoloLens 2 o il dispositivo usa la chiave privata per firmare l'identificazione. L'identificazione firmata e i metadati vengono inviati di nuovo al sistema dell'account Microsoft e verificati usando la chiave pubblica.
 
 I dispositivi Windows Hello e FIDO2 implementano le credenziali in base al dispositivo HoloLens, in particolare un enclave sicuro Trusted Platform Module integrato. Il gruppo TPM archivia la chiave privata e richiede una biometria o un PIN per lo sblocco. Analogamente, una chiave di sicurezza FIDO2 è un piccolo dispositivo esterno con un enclave sicuro integrato che archivia la chiave privata e richiede una biometria o un PIN per lo sblocco.
 
@@ -91,7 +91,7 @@ Entrambe le opzioni offrono l'autenticazione a due fattori in un unico passaggio
 
   ![FIDO img](images/security-fido2-whfb.png)
 
-MSA e AAD sono tra le prime relying party a supportare l'autenticazione senza password implementando WebAuthn. 
+MSA e Azure AD sono tra le prime relying party a supportare l'autenticazione senza password tramite l’implementazione di WebAuthn. 
 
 Per altre informazioni sull'uso di WebAuthn con applicazioni e/o SDK, passare a [API WebAuthn per l'autenticazione senza password in Windows 10](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/webauthnapis).
 

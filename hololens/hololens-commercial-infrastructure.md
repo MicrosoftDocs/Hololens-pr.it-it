@@ -1,6 +1,6 @@
 ---
 title: Linee guida sull'infrastruttura per HoloLens
-description: ''
+description: Linee guida sull'infrastruttura per i dispositivi HoloLens
 ms.prod: hololens
 ms.sitesec: library
 author: pawinfie
@@ -14,12 +14,12 @@ manager: bradke
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 1031eaeaf2767f8aa982d74bb282bc1fb086051b
-ms.sourcegitcommit: 77eb85608066d9a4ed01b3862afe356f7e54d583
+ms.openlocfilehash: a67aaa5df4c74531b5bed88abaa266b00de5c406
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "10940216"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253163"
 ---
 # Configurare la rete per HoloLens
 
@@ -35,7 +35,7 @@ HoloLens è, in sostanza, un dispositivo mobile di Windows integrato in Azure.  
 
 I servizi cloud critici includono:
 
-- Azure Active Directory (AAD)
+- Azure Active Directory (Azure AD)
 - Windows Update (WU)
 
 I clienti commerciali avranno bisogno di un'infrastruttura di gestione della mobilità aziendale (EMM, Enterprise Mobility Management) o gestione dei dispositivi mobili (MDM, Mobile Device Management) per gestire i dispositivi HoloLens in scala.  Questa guida usa [Microsoft Intune](https://www.microsoft.com/enterprise-mobility-security/microsoft-intune) come esempio, anche se qualsiasi provider con supporto completo per Microsoft Policy può supportare HoloLens.  Chiedere al provider di gestione di dispositivi mobili se supporta HoloLens 2.

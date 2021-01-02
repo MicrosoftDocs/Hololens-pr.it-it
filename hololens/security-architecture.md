@@ -1,23 +1,24 @@
 ---
 title: Architettura di sicurezza di HoloLens
 description: Architettura di sicurezza
-author: jbennett
+author: evmill
+ms.author: v-evmill
+ms.reviewer: tagran
 ms.date: 6/30/2020
 ms.topic: article
 keywords: sicurezza, hololens, hololens 2, sicurezza hololens2, panoramica della sicurezza, architettura di sicurezza, architettura, architettura hololens 2
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
-ms.reviewer: ''
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8045f534926e0719bd2f8e448809b5a2965346c4
-ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
+ms.openlocfilehash: d8e68f73d05db397a7ee088382e82dfa762177b0
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "10865796"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253253"
 ---
 # Panoramica e architettura di sicurezza
 
@@ -31,9 +32,9 @@ L'architettura di Windows HoloLens 2 e del sistema operativo offre le seguenti f
   
   * **Protezione dei dati**: se il dispositivo di un utente viene smarrito o rubato, HoloLens 2 impedisce alle applicazioni non autorizzate di leggere le informazioni sensibili grazie all’uso della crittografia dei dati BitLocker. 
   
-  * **Sistema operativo senza password**: i sistemi operativi più vecchi con autenticazione della password potevano inavvertitamente esporre gli utenti a minacce di phishing e spesso erano responsabili degli account compromessi. Windows Holographic for Business elimina l'uso delle password per l'accesso MSA e AAD e rafforza la protezione dell'identità dell'utente con l'accesso Windows Hello™ e FIDO2. 
+  * **Sistema operativo senza password**: i sistemi operativi meno recenti con autenticazione basata su password potevano inavvertitamente esporre gli utenti a minacce di phishing e spesso erano responsabili della compromissione degli account. Windows Holographic for Business elimina l'uso delle password per l'accesso MSA e Azure AD e rafforza la protezione dell'identità degli utenti con l'accesso Windows Hello™ e FIDO2. 
   
     > [!NOTE]
-    > Per avere il supporto FIDO2, il deve usare la build 19041 o quelle successive. 
+    > Per disporre del supporto FIDO2, il dispositivo deve eseguire build 19041 o successive. 
 
   * **Sicurezza della rete**: HoloLens 2 offre all'utente una sicurezza di rete maggiore grazie a protocolli migliorati e impostazioni predefinite.

@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: 95f187b2a4b6a86b59e05f3b12414c84ca0f6460
-ms.sourcegitcommit: fac3e62c1fd4dd531c2c8620870213cd570980dc
+ms.openlocfilehash: 23a850022a686389669e96e987274cc6481b936e
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "11205768"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253243"
 ---
 # Windows Autopilot per HoloLens 2
 
@@ -255,7 +255,7 @@ Una volta che il nodo RequireNetworkInOOBE del CSP TenantLockdown è impostato s
 
 Una volta che il nodo RequireNetworkInOOBE del CSP TenantLockdown è impostato su true in HoloLens 2, le seguenti operazioni non sono consentite in Configurazione guidata: 
 - creazione di un utente locale usando il provisioning di runtime 
-- esecuzione dell'operazione di aggiunta AAD join tramite provisioning di runtime 
+- esecuzione dell'operazione di aggiunta Azure AD tramite provisioning di runtime 
 - selezione di chi possiede il dispositivo nell'esperienza di Configurazione guidata 
 
 #### Come impostarlo usando Intune? 

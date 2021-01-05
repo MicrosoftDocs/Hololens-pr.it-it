@@ -14,18 +14,18 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-ms.openlocfilehash: 872e9d3445df2601579ae81f4190458289fa2eea
-ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
+ms.openlocfilehash: ad162d1f415430e22e683280089cacf2e1cef02a
+ms.sourcegitcommit: 3827d244426ffecb517f6cfa714eeef9363c062d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "11195599"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "11253582"
 ---
 # Riavviare, reimpostare o ripristinare HoloLens 2
 
 ## Caricare il dispositivo
 
-Prima di avviare una procedura di risoluzione dei problemi, accertarsi che il dispositivo sia caricato almeno dal 20 al 40% della capacità della batteria, se possibile. Assicurarsi di usare il caricabatterie e i cavi USB di tipo C forniti insieme al dispositivo HoloLens 2. L'alimentatore e il cavo USB da C a C forniti con il dispositivo sono il modo migliore per ricaricare HoloLens 2. Il caricabatterie fornisce 18 W di alimentazione (9V a 2A). Ove questi non fossero disponibili, assicurarsi che il caricabatterie disponibile possa supportare almeno 15 W di potenza.
+Prima di avviare una procedura di risoluzione dei problemi, accertarsi che il dispositivo sia caricato almeno dal 20 al 40% della capacità della batteria, se possibile. Assicurarsi di usare il caricabatterie e i cavi USB di tipo C forniti insieme al dispositivo HoloLens 2. L'alimentatore e il cavo USB da C a C forniti con il dispositivo sono il modo migliore per ricaricare HoloLens 2. Il caricabatterie fornisce 18 W di alimentazione (9V a 2A). Con il caricabatterie a parete in dotazione, i dispositivi HoloLens 2 possono caricare completamente la batteria in meno di 65 minuti quando il dispositivo è in standby. In caso questi non fossero disponibili, assicurarsi che il caricabatterie disponibile possa supportare almeno 15 W di potenza.
 
 > [!NOTE]
 > Se possibile, evitare di usare un PC per caricare il dispositivo tramite USB, visto che tale processo sarebbe lento.

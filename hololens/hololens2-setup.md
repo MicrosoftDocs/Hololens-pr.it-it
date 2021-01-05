@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b2d95839ff394d61eec8f5c76baf9a151855794a
-ms.sourcegitcommit: e3056a433aeebb8bc45dc3f6db9a75f212fdf53b
+ms.openlocfilehash: 44b66d001e7a6f4bcd5fde9261a225f6aa21b666
+ms.sourcegitcommit: 3827d244426ffecb517f6cfa714eeef9363c062d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "10996404"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "11253563"
 ---
 # Preparare il dispositivo HoloLens 2
 
@@ -25,9 +25,9 @@ Le procedure riportate di seguito ti consentiranno di configurare un dispositivo
 
 ## Caricare il dispositivo HoloLens
 
-Collega l'alimentatore alla porta di ricarica usando il cavo USB-C (incluso). Collega l'alimentatore a una presa elettrica. L'alimentatore e il cavo USB da C a C forniti con il dispositivo sono il modo migliore per ricaricare HoloLens 2. Il caricabatterie fornisce 18 W di alimentazione (9V a 2A).
+Collega l'alimentatore alla porta di ricarica usando il cavo USB-C (incluso). Collega l'alimentatore a una presa elettrica. L'alimentatore e il cavo USB da C a C forniti con il dispositivo sono il modo migliore per ricaricare HoloLens 2. Il caricabatterie fornisce 18 W di alimentazione (9V a 2A). Con il caricabatterie a parete in dotazione, i dispositivi HoloLens 2 possono caricare completamente la batteria in meno di 65 minuti quando il dispositivo è in standby.
 
-La velocità di carica possono variare a seconda dell'ambiente in cui il dispositivo è in esecuzione.
+La tasso di carica e la velocità possono variare a seconda dell'ambiente in cui il dispositivo è in esecuzione.
 
 - Quando il dispositivo è in carica, l'indicatore della batteria si illumina per indicare il livello di carica corrente.  L'ultima luce si accenderà e spegnerà per indicare che la ricarica è attiva.
 - Quando il dispositivo HoloLens è acceso, l'indicatore della batteria mostra il livello di batteria in incrementi.

@@ -5,12 +5,13 @@ author: hferrone
 ms.author: mattwoj
 ms.date: 01/04/2021
 ms.topic: article
-ms.openlocfilehash: d17d9e30ca3699a7bd6c69b75043c6974a2bde1f
-ms.sourcegitcommit: 3827d244426ffecb517f6cfa714eeef9363c062d
+ms.prod: hololens
+ms.openlocfilehash: 311da6bc52098d5ba16e4684f68fec9a01e7c23b
+ms.sourcegitcommit: 8cea4c04c6d2e22225f4de43e10c05dab840736a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/05/2021
-ms.locfileid: "11253655"
+ms.locfileid: "11253840"
 ---
 # Contribuire alla documentazione di HoloLens
 
@@ -51,19 +52,26 @@ Il sistema editoriale è collegato a GitHub, quindi questi passaggi sono importa
 Usare il flusso di lavoro seguente per apportare aggiornamenti a *un articolo esistente* tramite GitHub in un Web browser:
 
 1. Passare all'articolo che si vuole modificare nella cartella "Mixed-Reality-docs".
+
 2. Selezionare il pulsante modifica (icona a forma di matita) nell'angolo in alto a destra, che si biforca automaticamente in un ramo monouso dal ramo "Master".
 
    ![Modificare un articolo.](images/editpage.png)
+   
 3. Modificare il contenuto dell'articolo in base alle ["Nozioni di base su Markdown"](#markdown-basics).
+
 4. Aggiornare i metadati nella parte superiore di ogni articolo:
+
    * **titolo**: titolo della pagina visualizzato nella scheda del browser quando l'articolo viene visualizzato. I titoli di pagina vengono usati per SEO e indicizzazione, quindi non modificare il titolo se non necessario (anche se è meno importante prima che la documentazione venga pubblica).
    * **Descrizione**: scrivere una breve descrizione del contenuto dell'articolo, che aumenta la SEO e l'individuazione.
    * **autore**: se si è il proprietario principale della pagina, aggiungere qui il proprio alias github.
    * **ms. Author**: se si è il proprietario principale della pagina, aggiungere il proprio alias Microsoft qui (non è necessario @microsoft. com, solo l'alias).
    * **ms. Data**: consente di aggiornare la data se si sta aggiungendo contenuto principale alla pagina, ma non per le correzioni, ad esempio per chiarimenti, formattazione, grammatica o ortografia.
    * **parole chiave**: assistenza per le parole chiave in SEO (Search Engine Optimization). Aggiungere parole chiave, separate da una virgola e uno spazio, specifiche per l'articolo, ma senza punteggiatura dopo l'ultima parola chiave nell'elenco. Non è necessario aggiungere parole chiave globali che si applicano a tutti gli articoli, perché sono gestite altrove. 
+   
 5. Dopo aver completato le modifiche dell'articolo, scorrere verso il basso e selezionare **Proponi modifica file**.
+
 6. Nella pagina successiva selezionare **Crea richiesta di pull** per unire la filiale creata automaticamente in "Master".
+
 7. Ripetere i passaggi descritti sopra per l'articolo successivo che si vuole modificare.
 
 ## Ridenominazione o eliminazione di un articolo esistente
@@ -83,7 +91,9 @@ Per aggiungere un reindirizzamento a .openpublishing.redirection.js, aggiungere 
 ```
 
 - Il `source_path` percorso del repository relativo al vecchio articolo che si sta rimuovendo. Assicurarsi che il percorso inizi con `mixed-reality-docs` e termina con `.md` .
+
 - `redirect_url`È l'URL pubblico relativo del vecchio articolo del nuovo articolo. Assicurarsi che l'URL **non** contenga `mixed-reality-docs` o `.md` , poiché fa riferimento all'URL pubblico e non al percorso del repository. Il collegamento a una sezione all'interno del nuovo articolo in uso `#section` è consentito. È anche possibile usare un percorso assoluto per un altro sito, se necessario.
+
 - `redirect_document_id` indica se si vuole conservare l'ID documento dal file precedente. Il valore predefinito è `false` . Usare `true` se si vuole mantenere il `ms.documentid` valore dell'attributo dall'articolo reindirizzato. Se si mantiene l'ID documento, i dati, ad esempio le visualizzazioni di pagina e le classifiche, verranno trasferiti nell'articolo di destinazione. Eseguire questa operazione se il reindirizzamento è principalmente una ridenominazione e non un puntatore a un articolo diverso che copre solo alcuno dello stesso contenuto.
 
 Se si aggiunge un reindirizzamento, assicurarsi di eliminare anche il vecchio file.
@@ -95,10 +105,12 @@ Usare il flusso di lavoro seguente per *creare nuovi articoli* nel repository de
 1. Crea una forchetta al di fuori del ramo "Master" di MicrosoftDocs/Mixed-Reality (usando il pulsante della **forcella** in alto a destra).
 
    ![Fork del ramo master.](images/forkbranch.png)
+   
 2. Nella cartella "Mixed-Reality-docs" selezionare **Crea nuovo file** in alto a destra.
+
 3. Creare un nome di pagina per l'articolo (usare i trattini invece degli spazi e non usare segni di punteggiatura o apostrofi) e aggiungere ". MD"
 
-   ![Assegnare un nome alla nuova pagina.](images/newpagetitle.PNG)
+   ![Assegnare un nome alla nuova pagina.](images/newpagetitle.png)
    
    >[!IMPORTANT]
    >Assicurati di creare il nuovo articolo nella cartella "Mixed-Reality-docs". È possibile confermare questa operazione selezionando "/Mixed-Reality-docs/" nella nuova riga nome file.
@@ -118,19 +130,22 @@ Usare il flusso di lavoro seguente per *creare nuovi articoli* nel repository de
    ```
 
 5. Compilare i campi relativi ai metadati per le istruzioni nella [sezione precedente](#editing-an-existing-article).
+
 6. Scrivere contenuto articolo usando le [nozioni di base di Markdown](#markdown-basics).
+
 7. Aggiungere una `## See also` sezione nella parte inferiore dell'articolo con collegamenti ad altri articoli rilevanti.
+
 8. Al termine, selezionare **Salva nuovo file**.
+
 9. Selezionare **nuova richiesta di pull** e unire il ramo "Master" della forcella in MicrosoftDocs/Mixed-Reality ' Master ' (verificare che la freccia indichi il modo corretto).
 
-   ![Creare una richiesta di pull dalla forcella in MicrosoftDocs/Mixed-Reality](images/pr_to_master.PNG)
+   ![Creare una richiesta di pull dalla forcella in MicrosoftDocs/Mixed-Reality](images/pr-to-master.png)
 
 ## Nozioni di base su Markdown
 
 Le risorse seguenti ti aiuteranno a scoprire come modificare la documentazione usando la lingua markdown:
 
 - [Nozioni di base su Markdown](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
-- [Poster di riferimento Markdown-at-a-Glant](images/MarkdownPoster.pdf)
 - [Risorse aggiuntive per la scrittura di Markdown per docs.microsoft.com](https://docs.microsoft.com/contribute/how-to-write-use-markdown)
 
 ### Aggiunta di tabelle
@@ -200,26 +215,32 @@ Usare il flusso di lavoro seguente per apportare modifiche alla documentazione c
 >Tutte le linee guida per la [modifica](#editing-an-existing-article) e la [creazione](#creating-a-new-article) di articoli e le [nozioni di base per la modifica di Markdown](#markdown-basics), si applicano anche quando si usa il codice di Visual Studio.
 
 1. Verificare che la forcella clonata sia aggiornata con il repo ufficiale.
+
    1. In un Web browser, creare una richiesta di pull per sincronizzare le recenti modifiche da altri collaboratori in MicrosoftDocs/Mixed-Reality ' Master ' alla forcella (verificare che la freccia sia rivolta nel modo giusto).
       
-      ![Sincronizzare le modifiche da MicrosoftDocs/Mixed-Reality alla tua forcella](images/sync_repos.PNG)
+      ![Sincronizzare le modifiche da MicrosoftDocs/Mixed-Reality alla tua forcella](images/sync-repos.png)
+      
    2. Nel codice di Visual Studio selezionare il pulsante Sincronizza per sincronizzare il fork appena aggiornato con il clone locale.
       
-      ![Fare clic sull'immagine del pulsante di sincronizzazione](images/sync_clone.png)
+      ![Fare clic sull'immagine del pulsante di sincronizzazione](images/sync-clone.png)
+      
 2. Creare o modificare articoli nel repo clonato usando il codice di Visual Studio.
+
    1. Modificare uno o più articoli (se necessario, aggiungere immagini alla cartella "immagini").
+   
    2. **Salvare** le modifiche in **Esplora risorse**.
       
-      ![Scegliere "Salva tutto" in Esplora risorse](images/explorer_save.png)
+      ![Scegliere "Salva tutto" in Esplora risorse](images/explorer-save.png)
+      
    3. Eseguire il **commit di tutte** le modifiche nel **controllo del codice sorgente** (messaggio di scrittura commit quando richiesto).
       
-      ![Scegliere "Commit all" nel controllo del codice sorgente](images/source_control_commit.png)
    4. Selezionare il pulsante **Sincronizza** per sincronizzare di nuovo le modifiche all'origine (la forcella su GitHub).
       
-      ![Fare clic sul pulsante Sincronizza](images/sync_back.png)
+      ![Fare clic sul pulsante Sincronizza](images/sync-back.png)
+      
 3. In un Web browser, crea una richiesta di pull per sincronizzare le nuove modifiche nella tua forcella in MicrosoftDocs/Mixed-Reality "Master" (assicurati che la freccia indichi il modo corretto).
 
-   ![Creare una richiesta di pull dalla forcella in MicrosoftDocs/Mixed-Reality](images/pr_to_master.PNG)
+   ![Creare una richiesta di pull dalla forcella in MicrosoftDocs/Mixed-Reality](images/pr-to-master.png)
 
 ### Estensioni utili
 

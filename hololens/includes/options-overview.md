@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 5995c0a1eaa7dad4e22791e9be5bf7d97b04a7ad
-ms.sourcegitcommit: d4eee928a39492b2d2d37e3ebf3a65e7b6f7cb63
+ms.openlocfilehash: 3af593ead9a6a3a18013852ac64d9991834b1250
+ms.sourcegitcommit: 8cea4c04c6d2e22225f4de43e10c05dab840736a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "11146146"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "11253932"
 ---
 # [HoloLens 2](#tab/device)
 
@@ -23,18 +23,18 @@ Questa sezione consente di preparare l'utente e l'organizzazione a distribuire d
 | Considerare la [distribuzione dell'infrastruttura](../common-scenarios.md).  | È stata valutata l'infrastruttura.  |
 | Considera l' [identità](../hololens-identity.md) usata dai tuoi dispositivi.  | Si conosce l'identità selezionata e le limitazioni.   |
 
-### Configura
+### Configurazione
 | Checkpoint     | Risultato  |
 |---|---|
 | Configurare la [rete per HoloLens](../hololens-commercial-infrastructure.md).  | Configurare la rete.  |
-| Preparare la [rete ceritifcates](../hololens-certificates-network.md).  | Sono stati preparati i certificati.   |
+| Preparare i [certificati di rete](../hololens-certificates-network.md).  | Sono stati preparati i certificati.   |
 | Scegliere una [soluzione di gestione dei dispositivi](https://docs.microsoft.com/hololens/hololens-csp-policy-overview) e prendere in considerazione le [restrizioni relative ai dispositivi](https://docs.microsoft.com/hololens/hololens-csp-policy-overview) da usare.  | Si sceglie una soluzione di gestione dei dispositivi.   |
 
 ### Distribuisci
 | Checkpoint  | Risultato  |
 |---|---|
 | [Registrare](../hololens-enroll-mdm.md) i dispositivi.   | Hai capito come registrare i tuoi dispositivi.   |
-| Distribuire le [applicazioni](../app-deploy-overview.md).  | Puoi comprendere tutti i metodi di distribuzione delle applicazioni avalible e selezionarne uno.  |
+| Distribuire le [applicazioni](../app-deploy-overview.md).  | Puoi comprendere tutti i metodi di distribuzione delle applicazioni disponibili e selezionarne uno.  |
 
 ### Gestione
 | Checkpoint  |  Risultato  |
@@ -77,15 +77,17 @@ Ogni HoloLens 2 Edition ha lo stesso hardware, lo stesso [contenuto nella case
 
 ## 2. Ecco cosa fare dopo con il HoloLens 2 con Dynamics 365 Remote Assist Edition
 
+È stata creata una guida specifica per facilitare la distribuzione di dispositivi HoloLens in scala con la configurazione end-to-end da configurare Azure Active Directory per la convalida di una chiamata assistita remota. Consultare questa ** [Guida alla distribuzione-cloud connected HoloLens 2 con Remote Assist](https://docs.microsoft.com/hololens/hololens2-cloud-connected-overview).**
+
 | Checkpoint  | Risultato                                |
 |-------------|----------------------------------------|
 | [Informazioni di base](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/overview-hololens) | Iniziare a usare assistenza remota.        |
-| [Liscene](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/deploy-remote-assist#add-and-assign-licenses)     | Riscattare la licenza per assistenza remota.      |
+| [Licenza](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/deploy-remote-assist#add-and-assign-licenses)     | Riscattare la licenza per assistenza remota.      |
 | [Connetti](https://docs.microsoft.com/hololens/hololens-network)     | Connettere il dispositivo o i dispositivi a Wi-Fi.       |
 | [Registra](https://docs.microsoft.com/hololens/hololens-enroll-mdm)      | Registrare i dispositivi con l'organizzazione. |
 
 ## 3. distribuire i dispositivi HoloLens per l'organizzazione
-Questa sezione consente di preparare l'utente e l'organizzazione a distribuire dispositivi HoloLens. 
+Questa sezione consente di preparare l'utente e l'organizzazione a distribuire dispositivi HoloLens.
 
 ### Preparare
 | Checkpoint  | Risultato  |
@@ -94,7 +96,7 @@ Questa sezione consente di preparare l'utente e l'organizzazione a distribuire d
 | Considerare la [distribuzione dell'infrastruttura](../common-scenarios.md).  | È stata valutata l'infrastruttura.  |
 | Considera l' [identità](../hololens-identity.md) usata dai tuoi dispositivi.  | Si conosce l'identità selezionata e le limitazioni.   |
 
-### Configura
+### Configurazione
 | Checkpoint     | Risultato  |
 |---|---|
 | Configurare la [rete per HoloLens](../hololens-commercial-infrastructure.md).  | Configurare la rete.  |
@@ -127,7 +129,7 @@ Questa sezione consente di preparare l'utente e l'organizzazione a distribuire d
 
 ## 1. informazioni su Development Edition
 
-> [!NOTE] 
+> [!NOTE]
 > L'edizione di sviluppo non è consentita per la distribuzione con una soluzione distribuita commercialmente. L'edizione di sviluppo può essere distribuita per favorire lo sviluppo e/o il testing delle applicazioni in un contesto commerciale.  
 
 HoloLens 2 Development Edition include un HoloLens 2, $500 in Azure Credits, una versione di valutazione di Unity Pro di 3 mesi e una versione di valutazione di 3 mesi di PiXYZ plug-in:
@@ -143,21 +145,21 @@ Ogni HoloLens 2 Edition ha lo stesso hardware, lo stesso [contenuto nella case
 ## 2. riscattare i crediti
 
 ### Unity
-Si riceverà un codice univoco. Istruzioni per riscattare la versione di valutazione Unity Pro: 
-1. Visitare [ID.Unity.com](http://id.unity.com/) 
+Si riceverà un codice univoco. Istruzioni per riscattare la versione di valutazione Unity Pro:
+1. Visitare [ID.Unity.com](http://id.unity.com/)
 1. Accedere con l'ID unità o crearne uno
-1. Fare clic su **riscattare un codice prodotto** 
+1. Fare clic su **riscattare un codice prodotto**
 1. Immettere il codice prodotto e fare clic su **Riscatta un codice prodotto**
 
 Altre informazioni su [come attivare una licenza di Unity](https://support.unity3d.com/hc/articles/211438683-How-do-I-activate-my-license-). Contattare il supporto per l' [unità](https://support.unity3d.com/hc) per assistenza in base alle esigenze.  
 
 ### Pixyz
-Si riceverà un codice univoco. Indicazioni per riscattare la versione di valutazione di Pixyz plugin: 
+Si riceverà un codice univoco. Indicazioni per riscattare la versione di valutazione di Pixyz plugin:
 1. Visitare [ID.Unity.com](http://id.unity.com/)
 1. Fare clic su **riscattare un codice prodotto**
 1. Immettere il codice prodotto del plug-in Pixyz e fare clic su **riscattare un codice prodotto**
 
-Altre informazioni su come [riscattare la licenza di Pixyz.](https://www.pixyz-software.com/documentations/html/2020.1/review/TrialLicense.html) Contattare il [supporto di Pixyz](https://www.pixyz-software.com/support/) per assistenza in base alle esigenze. 
+Altre informazioni su come [riscattare la licenza di Pixyz.](https://www.pixyz-software.com/documentations/html/2020.1/review/TrialLicense.html) Contattare il [supporto di Pixyz](https://www.pixyz-software.com/support/) per assistenza in base alle esigenze.
 
 ### Azure
 Ecco alcuni [prodotti Azure comuni per la realtà mista](https://azure.microsoft.com/topic/mixed-reality/) a cui potresti voler riscattare il credito di Azure.
@@ -170,20 +172,18 @@ Come riscattare Azure Credits: per riscattare i crediti di $500 Azure, riscattar
 
 Scegliere il motore, scaricare gli strumenti e rispolverare la tastiera. Benvenuti nell'ecosistema della realtà mista-è il momento di creare.
 
-|     Checkpoint                              |     Risultato                                                                                                                    | 
+|     Checkpoint                              |     Risultato                                                                                                                    |
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
 |     [Avviare la progettazione e la creazione di prototipi](https://docs.microsoft.com/windows/mixed-reality/design/design)         |     Inizia la tua avventura nella progettazione di applicazioni di realtà miste tra concetti di base, modelli di interazione e elementi UX.     |
 |     [Iniziare a sviluppare per una realtà mista](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity)    |     Scegliere il motore, scaricare gli strumenti, aggiungere blocchi predefiniti principali e iniziare a costruire oggi stesso.                                  |
 |     [Esplorare i servizi cloud di Azure](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services)            |     Creare interessanti esperienze immersive con il rendering remoto di Azure e gli ancoraggi di Azure Spatial.                                 |
 
 ## Risorse aggiuntive
-- [Assicurarsi di installare gli strumenti per lo sviluppo di HoloLens.](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity) 
+
+- [Assicurarsi di installare gli strumenti per lo sviluppo di HoloLens.](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity)
 - Informazioni [su come sviluppare per HoloLens 2 con Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2).
 - Informazioni [su come combinare MRTK con Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/mrtk-getting-started).
-- [Informazioni su come distribuire le app costruite](https://docs.microsoft.com/hololens/app-deploy-overview). 
+- [Informazioni su come distribuire le app costruite](https://docs.microsoft.com/hololens/app-deploy-overview).
 - [Esplorare tutte le possibilità di una realtà mista](https://docs.microsoft.com/windows/mixed-reality/).
 - [Informazioni su come sviluppare per HoloLens 2 con irreale.](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=mrtk%2Casa)
 - [Contatta i tuoi colleghi sviluppatori nel nostro canale HoloDevelopers Slack](https://holodevelopersslack.azurewebsites.net/).
-
-
-

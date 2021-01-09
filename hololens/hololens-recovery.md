@@ -14,12 +14,12 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-ms.openlocfilehash: ad162d1f415430e22e683280089cacf2e1cef02a
-ms.sourcegitcommit: 3827d244426ffecb517f6cfa714eeef9363c062d
+ms.openlocfilehash: 7845a00d1141fb721683c4e3f2a884ed0c37c735
+ms.sourcegitcommit: 33911e3b405732d0d31a27039c8f590d52b647c4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "11253582"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "11254833"
 ---
 # Riavviare, reimpostare o ripristinare HoloLens 2
 
@@ -49,6 +49,7 @@ Se il dispositivo non riesce a eseguire il boot al menu di avvio, prendere nota 
 In alcuni casi, all’utente può essere richiesto di reimpostare manualmente il dispositivo, senza l’utilizzo dell’interfaccia utente del software.
 
 ### Procedura standard
+
 1. Scollegare il dispositivo dall’alimentatore o dal PC host scollegando il cavo di Tipo C.
 
 2. Tenere premuto il pulsante di **accensione** per 15 secondi. Tutti i LED devono essere spenti.
@@ -88,7 +89,7 @@ Ci sono due modi per riconfigurare il dispositivo. Per entrambi,è necessario in
 
 Per impostazione predefinita, Advanced Recovery Companion è impostato per scaricare la build dell'ultimo release funzionale, controllare qui per leggere le [Note sulla versione](hololens-release-notes.md#) per informazioni sull'ultimo release funzionale. Per ottenere il pacchetto più recente di HoloLens 2 Full Flash Update (FFU) per reflashare il dispositivo tramite Advanced Recovery Companion, [fare clic qui per scaricare l'ultima immagine mensile di HoloLens 2](https://aka.ms/hololens2download). Questa versione è generalmente la build più recente disponibile.
 
-Prima di avviare la procedura di riconfigurazione, assicurarsi che l’app sia installata ed in esecuzione su un PC dotato di Windows 10 e pronto a rilevare il dispositivo.
+Prima di avviare la procedura di riconfigurazione, assicurarsi che l’app sia installata ed in esecuzione su un PC dotato di Windows 10 e pronto a rilevare il dispositivo. Inoltre, assicurarsi che HoloLens sia caricato almeno al 40%.
 
 ![Schermata di riconfigurazione di HoloLens 2](images/ARC1.png)
 
@@ -126,22 +127,21 @@ Se HoloLens 2 non si avvia correttamente, potrebbe essere necessario attivare la
 
 Se l’ambiente IT impedisce l'uso dell’app Windows Store o limita l'accesso al negozio online, gli amministratori IT possono rendere disponibile l’app attraverso altri percorsi di distribuzione offline.
 
- >[!NOTE] 
+ >[!NOTE]
  > - Gli amministratori IT possono anche distribuire l’app attraverso il System Center Configuration Manager (SCCM) o Intune.
  > - Questa guida si concentra sull’Advanced Recovery Companion, ma è possibile utilizzare lo stesso processo per altre app “offline”.
 
 Per abilitare il percorso di distribuzione, seguire questa procedura:
 1. Passare al [Microsoft Store per le aziende](https://businessstore.microsoft.com) ed accedere usando un'identità Azure Active Directory.
 
-1. Passare a **Gestione-impostazioni**. Attivare **Mostra le app offline** **nell’esperienza Shopping**. 
+1. Passare a **Gestione-impostazioni**. Attivare **Mostra le app offline** **nell’esperienza Shopping**.
 1. Accedere a **Shop for My Group**e cercare [ * *_Advanced Recovery Companion_*_](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8).
 1. Cambiare il _ *tipo di licenza** in **_offline_*_ e selezionare _ * Manage * *.
 1. In **Scarica il pacchetto per l’uso offline**, selezionare il pulsante **Download**. Verificare che l’estensione del file sia *.appxbundle*.
 
     - A questo punto, se il PC è connesso a internet, un doppio clic sul pacchetto avvierà l’installazione dell’app.
 
-
-    - Se il PC non è connesso a Internet, procedere come segue: 
+    - Se il PC non è connesso a Internet, procedere come segue:
        1. Selezionare la licenza decodificata e quindi selezionare **Crea licenza**.
        2. In **Framework Necessari**, selezionare **Download**.
        3. Usare DISM per applicare al pacchetto la dipendenza e la licenza. Da un prompt dei comandi con privilegi di amministratore, eseguire il seguente comando:
@@ -153,7 +153,7 @@ Per abilitare il percorso di distribuzione, seguire questa procedura:
             > Il numero della versione di questo codice d’esempio potrebbe non corrispondere alla versione attualmente disponibile. Si potrebbe aver scelto anche un percorso di download diverso da quello mostrato nell’esempio. Modificare il comando in base alle proprie esigenze.
 
 > [!TIP]
-> Se si prevede di usare l’Advanced Recovery Companion per installare una FFU offline, può essere utile scaricare l'immagine flash. [**Scaricare l'immagine corrente per HoloLens 2**](https://aka.ms/hololens2download). 
+> Se si prevede di usare l’Advanced Recovery Companion per installare una FFU offline, può essere utile scaricare l'immagine flash. [**Scaricare l'immagine corrente per HoloLens 2**](https://aka.ms/hololens2download).
 
 Altre risorse
 - [Distribuire app offline](https://docs.microsoft.com/microsoft-store/distribute-offline-apps) 

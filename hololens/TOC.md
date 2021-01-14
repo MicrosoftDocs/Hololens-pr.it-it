@@ -48,6 +48,7 @@
 #### [Configurazione nel cloud](hololens2-cloud-connected-configure.md)
 #### [Distribuzione nel cloud](hololens2-cloud-connected-deploy.md)
 #### [Mantenimento nel cloud](hololens2-cloud-connected-maintain.md)
+### [Distribuzione di HoloLens 2 a client esterni con assistenza remota](hololens2-deployment-guide.md)
 ### [Protezione offline](hololens-common-scenarios-offline-secure.md)
 ## Sicurezza
 ### [Panoramica della sicurezza](security-overview.md)

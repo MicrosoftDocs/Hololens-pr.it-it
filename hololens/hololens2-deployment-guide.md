@@ -1,24 +1,24 @@
 ---
-title: Guida alla distribuzione
-description: Guida alla distribuzione per HoloLens 2 (con assistenza remota come esempio)
+title: Guida alla distribuzione di client esterni
+description: Guida alla distribuzione di HoloLens 2 per client esterni (ad esempio, con assistenza remota)
 ms.prod: hololens
 ms.sitesec: library
 author: pawinfie
 ms.author: pawinfie
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 1/7/2021
+ms.date: 1/12/2021
 ms.custom: ''
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0cd75fdbe5f6a4e6da87770768ce9f22bce491c0
-ms.sourcegitcommit: 58bffba63ed581351d80d13b1437aca74d7ed64a
+ms.openlocfilehash: c0ea468df2188700af408803ae1c55b9d0e4c763
+ms.sourcegitcommit: ea5fa6c970756025b77c00b4ea600d60ce033106
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "11266371"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "11268002"
 ---
 # Distribuzione di HoloLens 2 a client esterni con assistenza remota
 

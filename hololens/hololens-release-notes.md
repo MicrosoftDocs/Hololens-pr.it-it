@@ -8,27 +8,41 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 11/10/2020
+ms.date: 1/12/2021
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e1bdc6292dc016dde78c781db79505e2b64b0d6d
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: 7c93f567921a634e5a75c274304819ec9e81b933
+ms.sourcegitcommit: e26aa9059a7d8e73914205e80a89ea9637926e74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253063"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "11269417"
 ---
 # Note sulla versione di HoloLens 2
 
 Per assicurarti di avere un'esperienza produttiva con i tuoi dispositivi HoloLens, continuiamo a rilasciare gli aggiornamenti relativi a funzionalità, bug e sicurezza. In questa pagina è possibile vedere le novità di HoloLens ogni mese. Per ottenere l'aggiornamento più recente di HoloLens 2, è possibile [verificare la disponibilità di aggiornamenti e aggiornare manualmente](hololens-update-hololens.md#check-for-updates-and-manually-update) o ottenere l'aggiornamento completo in Flash (FFU) per [flashare il dispositivo tramite il compagno di ripristino avanzato](hololens-recovery.md#clean-reflash-the-device), [scaricarlo qui](https://aka.ms/hololens2download). Il download viene mantenuto aggiornato e fornisce la build più recente in generale disponibile.
 
+Siamo entusiasti di iniziare a volare nuove funzionalità per i partecipanti al programma Windows Insider. Per gli aggiornamenti più recenti sarà possibile eseguire il volo per il canale dev. Continueremo le nostre [Note Insider di HoloLens](hololens-insider.md) mentre aggiungiamo altre funzionalità e aggiornamenti alle nostre Build Insider di Windows. Diventa entusiasta e pronto a combinare questi aggiornamenti nella tua realtà. 
+
 >[!NOTE]
 > Per leggere le note sulla versione dell'emulatore HoloLens, [visita l'archivio](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
 
+## Windows olografico, versione 20H2-aggiornamento di 2021 gennaio
+- Build 19041,1134
+
+Miglioramenti e correzioni nell'aggiornamento:
+
+- Prestazioni migliorate durante l'avvio, il riavvio e la commutazione utente quando sono presenti molti utenti nel dispositivo.
+- È stato aggiunto il supporto ARM32 per la [modalità ricerca](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/research-mode).
+
+## Windows olografico, versione 1903-gennaio 2021 Update
+- Build 18362,1091
+
+Questo aggiornamento mensile di qualità non contiene modifiche importanti, ti invitiamo a provare le nostre build più recenti per Windows olografico, versione 2004.
 
 ## Windows olografico, versione 20H2-aggiornamento di 2020 dicembre
 - Build 19041,1131
@@ -221,7 +235,7 @@ Una volta che il nodo RequireNetworkInOOBE del CSP TenantLockdown è impostato s
 
 Una volta che il nodo RequireNetworkInOOBE del CSP TenantLockdown è impostato su true in HoloLens 2, le seguenti operazioni non sono consentite in Configurazione guidata: 
 - creazione di un utente locale usando il provisioning di runtime 
-- Eseguire l'operazione di join di Azure AD tramite il provisioning di runtime 
+- esecuzione dell'operazione di aggiunta Azure AD tramite provisioning di runtime 
 - selezione di chi possiede il dispositivo nell'esperienza di Configurazione guidata 
 
 #### Come impostarlo usando Intune? 

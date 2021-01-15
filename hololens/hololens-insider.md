@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 06c3faf573adabe158a72a66fc4b8a45afec48fb
-ms.sourcegitcommit: e26aa9059a7d8e73914205e80a89ea9637926e74
+ms.openlocfilehash: 5da96d2838cbe1a02956a3e567c6ecf6da9d6b10
+ms.sourcegitcommit: c93f23fe7c27dfa45fef300a4fc91aa811bc8126
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/14/2021
-ms.locfileid: "11269397"
+ms.locfileid: "11269481"
 ---
 # Insider Preview per Microsoft HoloLens
 
@@ -103,7 +103,7 @@ Dato che il nuovo Microsoft Edge è un'app Win32 nativa con un nuovo layer di ad
 
 ### App nuove impostazioni
 
-Con questa versione, stiamo introducendo una nuova versione dell'app Impostazioni. L'app nuove impostazioni include le nuove caratteristiche e le impostazioni estese per HoloLens 2 nelle aree seguenti: dispositivi audio di input/output, volume dell'app individuale, alimentazione e sospensione, adattatore Ethernet, facilità di accesso, modalità aereo e app predefinite.
+Con questa versione, stiamo introducendo una nuova versione dell'app Impostazioni. L'app nuove impostazioni include le nuove caratteristiche e le impostazioni espanse per HoloLens 2 nelle aree seguenti: audio, Power & Sleep, Network & Internet, app, account, facilità di accesso e altro ancora.
 
 > [!NOTE]
 > Dato che l'app nuove impostazioni è diversa dall'app impostazioni legacy, tutte le finestre delle impostazioni precedentemente inserite intorno all'ambiente verranno rimosse dopo l'aggiornamento.
@@ -112,17 +112,18 @@ Con questa versione, stiamo introducendo una nuova versione dell'app Impostazion
 
 **Nuove funzionalità e impostazioni**
 - Ricerca impostazioni: cercare le impostazioni dalla Home page delle impostazioni usando le parole chiave o il nome dell'impostazione
-- Audio
+- Sistema > audio:
   - Dispositivi audio di input e output: scegliere in modo indipendente i dispositivi audio di input e output, ad esempio ascoltare l'audio tramite auricolari Bluetooth o usare un microfono USB-C per l'input audio. Nota: i microfoni Bluetooth non sono supportati da HoloLens 2.
   - Volume dell'app: modificare in modo indipendente il volume di ogni app
-- Risparmio batteria: abilitare manualmente la modalità risparmio batteria o impostare una soglia della batteria a cui si attiva automaticamente la modalità risparmio batteria
-- Power & Sleep: scegliere quando il dispositivo deve andare a dormire dopo un periodo di inattività
-- USB: è possibile disabilitare le connessioni USB per impostazione predefinita
+- Sistema > Power & Sleep: scegliere quando il dispositivo deve andare a dormire dopo un periodo di inattività
+- Sistema > batteria: abilitare manualmente la modalità risparmio batteria o impostare una soglia di batteria a cui si attiva automaticamente la modalità risparmio batteria del punto
+- Dispositivi > USB: è possibile disabilitare le connessioni USB per impostazione predefinita
 - Rete & Internet:
   - Le schede Ethernet USB-C compariranno ora in rete & Internet
   - Le impostazioni della scheda Ethernet USB-C sono ora disponibili, incluso il relativo indirizzo IP
   - Ora è possibile abilitare la modalità aereo in HoloLens 2
 - App: puoi reimpostare le app predefinite usate per i tipi di file e collegamenti. Per altre informazioni, vedere [selezione delle app predefinite](#default-app-picker) .
+- Account > altri utenti: i proprietari di dispositivi possono aggiungere utenti, aggiornare gli utenti standard ai proprietari dei dispositivi, declassare i proprietari dei dispositivi agli utenti standard e rimuovere gli utenti.
 - Accesso facilitato: modificare le dimensioni del testo e alcuni effetti visivi
 
 **Problemi noti**

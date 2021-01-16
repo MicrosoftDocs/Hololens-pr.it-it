@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7d954347c7c274b844d436c0d6fc96e8bbc59f10
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: fe83333c99f8dbf23b211c9b5155db256dcd20b3
+ms.sourcegitcommit: 50e4d61a31b94d5007776064b4012e26cf9ecbbb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253183"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271675"
 ---
 # Guida alla distribuzione-cloud connected HoloLens 2 con Remote Assist-Panoramica
 
@@ -39,7 +39,7 @@ Si tratta di una configurazione simile allo [scenario a: distribuire ai disposit
   - Singoli o più utenti per dispositivo supportati
 - I vari livelli di configurazioni di blocco dei dispositivi vengono applicati in base a casi di utilizzo specifici, dal chiosco completamente aperto al singolo app
 
-![Scenario connesso al cloud](./images/cloud-connected-deployment-chart.png)
+![Scenario connesso al cloud](./images/cloud-connected-guide-diagram.png)
 
 In questa guida non verranno applicate altre limitazioni o configurazioni di dispositivo, ma ti invitiamo ad esplorare queste opzioni dopo la fine.
 

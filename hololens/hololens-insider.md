@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5da96d2838cbe1a02956a3e567c6ecf6da9d6b10
-ms.sourcegitcommit: c93f23fe7c27dfa45fef300a4fc91aa811bc8126
+ms.openlocfilehash: 6df24d3a8640edeb9196834f940500aa51e85af7
+ms.sourcegitcommit: 50e4d61a31b94d5007776064b4012e26cf9ecbbb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "11269481"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271713"
 ---
 # Insider Preview per Microsoft HoloLens
 
@@ -29,7 +29,7 @@ Benvenuti alle build di insider Preview più recenti per HoloLens! È facile [in
 
 ## Note sulla versione di Windows Insider
 
-Siamo entusiasti di iniziare a volare nuove funzionalità per i partecipanti al programma Windows Insider. Per gli aggiornamenti più recenti sarà possibile eseguire il volo per il canale dev. Continueremo ad aggiornare questa pagina man mano che aggiungiamo altre funzionalità e aggiornamenti alle nostre Build Insider di Windows.  Diventa entusiasta e pronto a combinare questi aggiornamenti nella tua realtà. 
+Siamo entusiasti di iniziare a volare nuove funzionalità per i partecipanti al programma Windows Insider. Per gli aggiornamenti più recenti sarà possibile eseguire il volo per il canale dev. Continueremo ad aggiornare questa pagina man mano che aggiungiamo altre funzionalità e aggiornamenti alle nostre Build Insider di Windows.  Diventa entusiasta e pronto a combinare questi aggiornamenti nella tua realtà.
 
 | Nome caratteristica                                              | Descrizione breve                                                                      | Disponibile nella build |
 |-----------------------------------------------------------|----------------------------------------------------------------------------------------|--------------------|
@@ -38,12 +38,16 @@ Siamo entusiasti di iniziare a volare nuove funzionalità per i partecipanti al 
 | [Selezione app predefinita](#default-app-picker)                 | Scegliere l'app che deve essere avviata per ogni file o tipo di collegamento                                      | 20279,1006 |
 | [Office Web App](#office-web-app)                         | Un collegamento a Office Web App è ora elencato in "tutte le app"                                   | 20279,1006 |
 | [Scorrere rapidamente verso il tipo](#swipe-to-type)                           | Usare la punta del dito per "scorrere rapidamente" le parole sulla tastiera olografica                        | 20279,1006 |
+| [Supporto per microfono esterno USB-C](#usb-c-external-microphone-support) | Usare microfoni USB-C per app e/o assistenza remota.| 20279,1006 |
+| [Nuovo Aumid per le nuove app in modalità Kiosk](#use-the-new-settings-and-edge-apps-in-kiosk-modes) | Aumid per le nuove impostazioni e le app Edge | 20279,1006 |
+| [Miglioramento della modalità di mancato funzionamento del chiosco](#kiosk-mode-behavior-changes-for-handling-of-failures) | La modalità Kiosk cerca l'accesso assegnato globale prima del menu Start vuoto. | 20279,1006 |
+| [Configurare la diagnostica di fallback](#configuring-fallback-diagnostics-via-settings-app) | Impostazione del comportamento di diagnostica di fallback nell'app impostazioni | 20279,1006 |
 
 ### Introduzione al nuovo Microsoft Edge
 
 ![Animazione del logo legacy Microsoft Edge con il nuovo logo Microsoft Edge](images/new-edge.gif)
 
-Il nuovo Microsoft Edge [adotta il progetto open source Chromium](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) per creare una migliore compatibilità per i clienti e una minore frammentazione del Web per gli sviluppatori Web. 
+Il nuovo Microsoft Edge [adotta il progetto open source Chromium](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) per creare una migliore compatibilità per i clienti e una minore frammentazione del Web per gli sviluppatori Web.
 
 Con questa anteprima Insider, il nuovo Microsoft Edge è disponibile per i clienti di HoloLens 2 per la prima volta. Mentre il nuovo Microsoft Edge rimpiazzerà Microsoft Edge legacy in HoloLens 2, entrambi i browser saranno attualmente disponibili per i partecipanti al programma Insider. Condividere feedback e bug con il team tramite la caratteristica **Invia feedback** nel nuovo Microsoft Edge o tramite [Hub feedback](hololens-feedback.md).
 
@@ -51,16 +55,17 @@ Con questa anteprima Insider, il nuovo Microsoft Edge è disponibile per i clien
 
 #### Avvio del nuovo Microsoft Edge
 
-Esistono due versioni di Microsoft Edge disponibili per i partecipanti al programma Insider: la nuova icona Microsoft Edge ![ New Microsoft Edge ](images/new_edge_logo.png) (rappresentata da un'icona di turbinio blu e verde) e il bordo Microsoft legacy (rappresentato dall'icona "e" bianca). Il nuovo Microsoft Edge viene aggiunto al menu Start e viene avviato automaticamente quando si attiva un collegamento Web. Se si vuole ripristinare l'uso di Microsoft Edge legacy come Web browser predefinito, vedere le istruzioni seguenti per [reimpostare le app predefinite](#default-app-picker).
+Esistono due versioni di Microsoft Edge disponibili per i partecipanti al programma Insider: la nuova icona Microsoft Edge nuovo Microsoft bordo ![ ](images/new_edge_logo.png) (rappresentata da un'icona di turbinio blu e verde) e Microsoft Edge Legacy (rappresentato dall'icona "e" bianca). Il nuovo Microsoft Edge viene aggiunto al menu Start e viene avviato automaticamente quando si attiva un collegamento Web. Se si vuole ripristinare l'uso di Microsoft Edge legacy come Web browser predefinito, vedere le istruzioni seguenti per [reimpostare le app predefinite](#default-app-picker).
 
 > [!NOTE]
 > La prima volta che si avvia il nuovo Microsoft Edge in HoloLens 2, le impostazioni e i dati verranno importati da Microsoft Edge legacy. Se si continua a usare Microsoft Edge legacy dopo l'avvio del nuovo Microsoft Edge, i nuovi dati non verranno sincronizzati da Microsoft Edge legacy al nuovo Microsoft Edge.
 
 #### Configurazione delle impostazioni dei criteri per il nuovo Microsoft Edge
 
-Il nuovo Microsoft Edge offre ai professionisti IT un set molto più ampio di criteri per i browser in HoloLens 2 rispetto a quelli precedentemente disponibili con Microsoft Edge legacy. 
+Il nuovo Microsoft Edge offre agli amministratori IT un set molto più ampio di criteri per i browser in HoloLens 2 rispetto a quelli precedentemente disponibili con Microsoft Edge legacy.
 
 Ecco alcune risorse utili per saperne di più sulla gestione delle impostazioni dei criteri per il nuovo Microsoft Edge:
+
 - [Configurare le impostazioni dei criteri di Microsoft Edge con Microsoft Intune.](https://docs.microsoft.com/deployedge/configure-edge-with-intune)
 - [Mapping dei criteri della versione legacy di Microsoft Edge a Microsoft Edge](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge)
 - [Mapping dei criteri di Google Chrome a Microsoft Edge](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-chrome-to-newedge)
@@ -92,8 +97,10 @@ Dato che il nuovo Microsoft Edge è un'app Win32 nativa con un nuovo layer di ad
 **Scenari e funzionalità disponibili in breve:**
 - Estensione del Visualizzatore WebXR e 360
 - Ripristino del contenuto per correggere la finestra durante l'esplorazione tra più finestre inserite nell'ambiente
-- Audio spaziale per più finestre con flussi audio simultanei
 - Partecipare a una chiamata di Microsoft teams tramite il browser con video, acquisizione di realtà mista o condivisione dello schermo (partecipare alle chiamate con audio funziona bene)
+
+**Scenari e funzionalità che non si prevede di utilizzare:**
+- Audio spaziale proveniente da più finestre con flussi audio simultanei
 - "Vedi, Dillo"
 - Stampa
 
@@ -134,7 +141,7 @@ Con questa versione, stiamo introducendo una nuova versione dell'app Impostazion
 
 ### Selezione app predefinita
 
-Quando si attiva un collegamento ipertestuale o si apre un tipo di file con più app installate che la supportano, viene visualizzata una nuova finestra che chiede di selezionare l'app installata deve gestire il tipo di file o di collegamento. In questa finestra puoi anche scegliere se l'app selezionata può gestire il file o il tipo di collegamento "once" o "Always". 
+Quando si attiva un collegamento ipertestuale o si apre un tipo di file con più app installate che la supportano, viene visualizzata una nuova finestra che chiede di selezionare l'app installata deve gestire il tipo di file o di collegamento. In questa finestra puoi anche scegliere se l'app selezionata può gestire il file o il tipo di collegamento "once" o "Always".
 
 ![Finestra di selezione delle app](images/default-app-picker.png)
 
@@ -149,6 +156,69 @@ Office Web App è stato aggiunto all'elenco "tutte le app" nel menu Start. Quest
 Alcuni clienti trovano più veloce "digitare" sulle tastiere virtuali scorrendo rapidamente la forma della parola che intendono digitare e si sta eseguendo l'anteprima di questa caratteristica per la tastiera olografica. È possibile scorrere rapidamente una parola alla volta passando la punta del dito attraverso il piano della tastiera olografica, scorrendo rapidamente la forma della parola e quindi ritirando la punta del dito dal piano della tastiera. Puoi scorrere rapidamente le parole di completamento senza dover premere la barra spaziatrice rimuovendo il dito dalla tastiera tra le parole. Si saprà che la funzionalità sta funzionando se viene visualizzata una traccia di scorrimento rapido seguendo il movimento del dito sulla tastiera.
 
 Tieni presente che questa caratteristica può essere difficile da usare e padroneggiare a causa della natura di una tastiera olografica in cui non si sente resistenza al dito (a differenza di uno schermo di un cellulare). Stiamo valutando questa funzionalità per il rilascio pubblico, quindi il feedback è importante; Se la funzionalità è utile o si ha un feedback costruttivo, fatecelo sapere tramite hub di [feedback](hololens-feedback.md).
+
+### Supporto per microfono esterno USB-C
+
+> [!IMPORTANT]
+> Il collegamento di **un microfono USB non viene impostato automaticamente come dispositivo di input**. Quando si collega un set di cuffie USB-C, gli utenti osserveranno che l'audio della cuffia viene reindirizzato automaticamente alle cuffie, ma il sistema operativo HoloLens privilegia la matrice microfono interna sopra qualsiasi altro dispositivo di input. **Per usare un microfono USB-C, seguire i passaggi seguenti.**
+
+Gli utenti possono ora selezionare i microfoni esterni collegati tramite USB-C usando il pannello impostazioni **audio** . In questo modo gli utenti possono usare il proprio microfono collegato ma USB in registrazione e app. I microfoni USB-C sono facili da abilitare e usare.
+
+Aprire l'app **Impostazioni** e selezionare **sistema**  ->  **audio**.
+
+![Impostazioni audio](images/usbc-mic-1.jpg)
+
+> [!IMPORTANT]
+> Per usare i microfoni esterni con **assistenza remota**, gli utenti dovranno fare clic sul collegamento ipertestuale "Gestisci dispositivi audio".
+>
+> Quindi usa l'elenco a discesa per impostare il microfono esterno come predefinito **o per** le **comunicazioni predefinite.** La scelta **predefinita** indica che il microfono esterno verrà usato ovunque.
+>
+> La scelta delle **comunicazioni predefinite** indica che il microfono esterno verrà usato nelle app Remote assist e altre comunicazioni, ma la matrice HoloLens MIC può essere ancora usata per altre attività.
+
+![Gestire i dispositivi audio](images/usbc-mic-2.png)
+
+<br>
+
+![Impostare l'impostazione predefinita del microfono](images/usbc-mic-3.jpg)
+
+#### Informazioni sul supporto del microfono Bluetooth
+
+Purtroppo i microfoni Bluetooth non sono ancora supportati in HoloLens 2.
+
+#### Risoluzione dei problemi relativi ai microfoni USB-C
+
+Tieni presente che alcuni microfoni USB-C si riferiscono erroneamente sia come microfono *che* come altoparlante. Si tratta di un problema con il microfono e non con HoloLens. Quando si collega uno di questi microfoni in HoloLens, è possibile che il suono vada perduto. Fortunatamente c'è una semplice correzione.  
+
+In **Impostazioni**  ->  **sistema**  ->  **audio**, imposta esplicitamente gli altoparlanti incorporati **(driver audio di funzionalità analogica)** come **dispositivo predefinito**. HoloLens deve ricordare questa impostazione anche se il microfono viene rimosso e riconnesso in un secondo momento.
+
+![Risoluzione dei problemi relativi ai microfoni USB-C](images/usbc-mic-4.png)
+
+### Usare le nuove app Impostazioni e Edge in modalità Kiosk
+
+Quando Includi app in [chioschi multimediali](hololens-kiosk.md), un amministratore IT spesso aggiunge l'app al chiosco, ma usando l'ID del modello utente dell'app (AUMID). Poiché sia l'app impostazioni che l'app Microsoft Edge sono considerate nuove app e diverse che le app meno recenti che usano Aumid per queste app dovranno essere aggiornate per usare il nuovo AUMID.
+
+Quando modifichi un chiosco per includere le nuove app, ti consigliamo di aggiungere il nuovo AUMID e di uscire da quello precedente. In questo modo è possibile creare una transizione semplice quando gli utenti aggiornano il sistema operativo e non devono ricevere nuovi criteri per usare il chiosco come previsto.
+
+| App                    | AUMID                                                  |
+|------------------------|--------------------------------------------------------|
+| App Impostazioni obsolete       | HolographicSystemSettings_cw5n1h2txyewy. App            |
+| App nuove impostazioni       | BAEAEF15-9BAB-47FC-800B-ACECAD2AE94B_cw5n1h2txyewy! App |
+| App Microsoft Edge precedente | Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge    |
+| Nuova app Microsoft Edge | Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe. MSEDGE    |
+
+### Modifiche al comportamento della modalità Kiosk per la gestione degli errori
+
+Nelle build meno recenti, se un dispositivo dispone di una configurazione Kiosk, che è una combinazione di accesso assegnato sia a livello globale che ad accesso assegnato ai membri del gruppo AAD, se la determinazione dell'appartenenza al gruppo AAD non è riuscita, l'utente vedrebbe il menu "[niente visualizzato in Start](https://docs.microsoft.com/hololens/hololens-kiosk#kiosk-mode-behavior-changes-for-handling-of-failures)".
+
+A partire da Windows Insider release, l'esperienza del chiosco si ripiego alla configurazione del chiosco globale (se presente) in caso di errori durante la modalità Kiosk del gruppo AAD.
+
+### Configurazione della diagnostica di fallback tramite l'app impostazioni
+
+Ora, nell'app Impostazioni, un utente può configurare il comportamento della [diagnostica di fallback](hololens-diagnostic-logs.md). Nella pagina Impostazioni passare alla ****  ->  pagina relativa alla**risoluzione dei problemi** di privacy per configurare questa impostazione.
+
+> [!NOTE]
+> Se è configurato un criterio MDM per il dispositivo, l'utente non sarà in grado di eseguire l'override di tale comportamento.  
+
 
 
 

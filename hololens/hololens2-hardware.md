@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5299f56429adb6212074c16b67d2f10d418129f4
-ms.sourcegitcommit: b33dd8accef641578142e5234b9ad2d0222694ec
+ms.openlocfilehash: 8678e238ca17ad66873d4e4ea72ebef161ee6315
+ms.sourcegitcommit: d261604bf9e7ef04c2a947611715d0bec78b4f92
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "11134654"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "11270725"
 ---
 # Hardware HoloLens 2
 
@@ -68,6 +68,11 @@ Per mantenere/accrescere la percentuale di carica della batteria interna mentre 
 | Intensità | Sensore intensità tempo di volo 1MP |
 | Unità di misura inerziale (IMU) | Accelerometro, giroscopio, magnetometro |
 | Fotocamera | Fermo immagine 8MP, video 1080p30 |
+
+![Sensori di HoloLens 2](images/hl2-sensors.png)
+
+> [!NOTE]
+> Non coprire nessuno dei sensori mostrati nell'immagine. Le fotocamere per il tracciamento della testa hanno un campo visivo molto ampio, devono essere prive di ostacoli e non devono essere ostruite.
 
 ### Audio e comandi vocali
 

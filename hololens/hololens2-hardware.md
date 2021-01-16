@@ -12,16 +12,16 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8678e238ca17ad66873d4e4ea72ebef161ee6315
-ms.sourcegitcommit: d261604bf9e7ef04c2a947611715d0bec78b4f92
+ms.openlocfilehash: 41508b8cdc2e8e34545c1e07136b69eea2e3aa48
+ms.sourcegitcommit: e97b2b8f47ac5ec2e3be3e5d69d8e026b6f21111
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/15/2021
-ms.locfileid: "11270725"
+ms.locfileid: "11271173"
 ---
 # <span data-ttu-id="1091f-104">Hardware HoloLens 2</span><span class="sxs-lookup"><span data-stu-id="1091f-104">HoloLens 2 hardware</span></span>
 
-![Vista laterale di HoloLens 2](images/hololens2-exploded-medium.png)
+![Vista laterale di HoloLens 2](images/hololens2-breakdown.png)
 
 <span data-ttu-id="1091f-106">Microsoft HoloLens 2 è un computer olografico autonomo.</span><span class="sxs-lookup"><span data-stu-id="1091f-106">Microsoft HoloLens 2 is an untethered holographic computer.</span></span>  <span data-ttu-id="1091f-107">Perfeziona il percorso di elaborazione olografico iniziato da HoloLens (prima generazione) per creare un'esperienza più comoda e immersiva associata ad altre opzioni per la collaborazione in realtà mista.</span><span class="sxs-lookup"><span data-stu-id="1091f-107">It refines the holographic computing journey started by HoloLens (1st gen) to provide a more comfortable and immersive experience paired with more options for collaborating in mixed reality.</span></span>
 
@@ -69,7 +69,7 @@ ms.locfileid: "11270725"
 | <span data-ttu-id="1091f-154">Unità di misura inerziale (IMU)</span><span class="sxs-lookup"><span data-stu-id="1091f-154">Inertial measurement unit (IMU)</span></span> | <span data-ttu-id="1091f-155">Accelerometro, giroscopio, magnetometro</span><span class="sxs-lookup"><span data-stu-id="1091f-155">Accelerometer, gyroscope, magnetometer</span></span> |
 | <span data-ttu-id="1091f-156">Fotocamera</span><span class="sxs-lookup"><span data-stu-id="1091f-156">Camera</span></span> | <span data-ttu-id="1091f-157">Fermo immagine 8MP, video 1080p30</span><span class="sxs-lookup"><span data-stu-id="1091f-157">8-MP stills, 1080p30 video</span></span> |
 
-![Sensori di HoloLens 2](images/hl2-sensors.png)
+![Sensori di HoloLens 2](images/hololens2-front-view.png)
 
 > [!NOTE]
 > <span data-ttu-id="1091f-159">Non coprire nessuno dei sensori mostrati nell'immagine.</span><span class="sxs-lookup"><span data-stu-id="1091f-159">Do no cover any of the sensors that are called out in the picture.</span></span> <span data-ttu-id="1091f-160">Le fotocamere per il tracciamento della testa hanno un campo visivo molto ampio, devono essere prive di ostacoli e non devono essere ostruite.</span><span class="sxs-lookup"><span data-stu-id="1091f-160">The head tracking cameras have a very wide FOV, nothing should be around them in addition to not covering them.</span></span>

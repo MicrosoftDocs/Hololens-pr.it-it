@@ -42,7 +42,7 @@ HoloLens 2 richiede a un utente di calibrare il dispositivo nei seguenti casi:
 
 ![Richiesta di calibrazione per la regolazione degli occhi.](./images/07-et-adjust-for-your-eyes.png)
 
-Durante questo processo, dovrai guardare una serie di obiettivi (gemme). Durante la calibrazione, puoi battere le palpebre, ma cerca di rimanere concentrato sulle gemme anziché su altri oggetti presenti nella stanza.  La focalizzazione sulle gemme consente a HoloLens di conoscere la posizione degli occhi per il rendering del mondo olografico.
+Durante questo processo, dovrai guardare una serie di obiettivi (gemme). Durante la calibrazione, puoi battere le palpebre, ma cerca di rimanere concentrato sulle gemme anziché su altri oggetti presenti nella stanza.  Quando si guardano le gemme HoloLens analizza la posizione degli occhi per il rendering dell’ambiente olografico.
 
 ![Richiesta di calibrazione che indica all'utente di mantenere la testa ferma e di seguire i punti con gli occhi.](./images/07-et-hold-head-still.png)
 

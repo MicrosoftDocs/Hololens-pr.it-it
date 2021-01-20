@@ -1,6 +1,6 @@
 ---
 title: Limitazione dell'uso delle password
-description: limitazione dell'uso delle password per HoloLens
+description: limitazione dell'uso di password per HoloLens
 author: evmill
 ms.author: v-evmill
 ms.reviewer: tagran
@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 417412e6b7854d9d985faa13bcf072b98e17f264
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: 2d9527c9fee2818dfe8aa1f88a2f193415323bb1
+ms.sourcegitcommit: 37910c10f0f98aa9cbdc29124cd8f14ee0af3fbd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11252973"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "11280665"
 ---
 # Limitazione dell'uso delle password
 
@@ -97,8 +97,8 @@ Per altre informazioni sull'uso di WebAuthn con applicazioni e/o SDK, passare a 
 
 ## Account locali
 
-È possibile configurare un singolo account locale per le distribuzioni in modalità offline. Gli account locali non sono abilitati per impostazione predefinita e devono essere configurati durante il provisioning del dispositivo. Devono eseguire l'accesso con una password e non supportano metodi di autenticazione alternativi, come [Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview) o [Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello). 
+È possibile configurare un singolo account locale per le distribuzioni in modalità offline. Gli account locali non sono abilitati per impostazione predefinita e devono essere configurati durante il provisioning del dispositivo. Devono eseguire l'accesso usando una password e non supportare metodi di autenticazione alternativi, ad esempio [Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview) o [Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello). 
 
 Per altre informazioni sugli account utente di HoloLens, vedere [Identità HoloLens](https://docs.microsoft.com/hololens/hololens-identity). 
 
-Gli amministratori IT definiscono se l'utente può usare un account MSA per l'autenticazione e i servizi di connessione non correlati all'e-mail tramite [AllowMicrosoftAccountConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-accounts#accounts-allowmicrosoftaccountconnection). Per i criteri di configurazione delle password, i criteri di inattività e i criteri della schermata di blocco, vedere [DeviceLock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock). 
+Gli amministratori IT definiscono se l'utente può usare un account MSA per l'autenticazione e i servizi di connessione non correlati all'e-mail tramite [AllowMicrosoftAccountConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-accounts#accounts-allowmicrosoftaccountconnection). Per i criteri di configurazione delle password, i criteri di inattività e quelli della schermata di blocco, vedere [Blocco dispositivo](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock). 

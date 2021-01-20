@@ -14,16 +14,14 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e52cc2f031c284b619c61ffa04f259f76397faf5
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: ab0c58d5a97d5dbaf83adf321d1f9fbc01b3ad03
+ms.sourcegitcommit: 37910c10f0f98aa9cbdc29124cd8f14ee0af3fbd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253093"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "11280655"
 ---
 # Installare app in HoloLens 2 tramite il programma di installazione di app
-
-Aggiungiamo **una nuova funzionalità (Installer delle app) per consentire l'installazione delle applicazioni in modo più trasparente** nei dispositivi HoloLens 2. La funzionalità sarà **attivata per impostazione predefinita per i dispositivi non gestiti**. Per evitare interruzioni alle aziende, il programma di installazione **delle app non sarà disponibile per i dispositivi gestiti** in questo momento.  
 
 > [!NOTE]
 > Questa caratteristica è stata resa disponibile in [Windows olografico, versione 20H2-dicembre 2020 Update](hololens-release-notes.md). Verificare che il dispositivo sia [aggiornato](hololens-update-hololens.md) per usare questa caratteristica.
@@ -78,7 +76,7 @@ L'app installata verrà avviata automaticamente dopo il completamento dell'insta
 
 ### Risoluzione dei problemi di installazione
 
-Se la tua app non è riuscita a installare, controlla quanto segue per risolvere i problemi:
+Se l'app non è stata installata, controllare quanto segue per risolvere i problemi:
 
 - La tua app è una build master o release.
 - Il dispositivo viene aggiornato a una build in cui è disponibile questa funzionalità.

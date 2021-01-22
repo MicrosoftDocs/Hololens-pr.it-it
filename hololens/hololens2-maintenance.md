@@ -1,6 +1,6 @@
 ---
 title: Domande frequenti sulle pulizia di HoloLens 2
-description: ''
+description: Ottenere le risposte aggiornate per tutte le domande più frequenti per la pulizia e la manutenzione del dispositivo HoloLens 2.
 author: Teresa-Motiv
 ms.author: v-tea
 ms.date: 4/14/2020
@@ -15,12 +15,12 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 4574f62e42678ada15e8263e03ca95d388dc8e57
-ms.sourcegitcommit: 223df264cdc812beba88582377002ea3e49d55fd
+ms.openlocfilehash: ea6e4f32e804ee6c2f2f155da1f4290e1116bb74
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "10888555"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283087"
 ---
 # Domande frequenti sulle pulizia di HoloLens 2
 
@@ -32,7 +32,7 @@ ms.locfileid: "10888555"
 **Per pulire il dispositivo**
 
 1. Rimuovere la polvere usando un panno in microfibra asciutto e privo di pelucchi per pulire delicatamente la superficie del dispositivo.
-1. Inumidire leggermente il panno per usingmedical "70%" di alcool isopropilico e quindi usare il panno inumidito per pulire delicatamente la superficie del dispositivo.
+1. Inumidire leggermente il panno usando l'alcool isopropilico "70%" e quindi usare il panno inumidito per pulire delicatamente la superficie del dispositivo.
 
    ![Immagine che mostra come pulire la visiera](images/hololens-cleaning-visor.png)
 

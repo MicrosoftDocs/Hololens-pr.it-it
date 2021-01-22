@@ -1,6 +1,6 @@
 ---
 title: Guida alla distribuzione-cloud connected HoloLens 2 distribuzione in scala con assistenza remota-configura
-description: Come configurare le configurazioni per la registrazione dei dispositivi HoloLens tramite una rete connessa al cloud
+description: Informazioni su come configurare le configurazioni per la registrazione dei dispositivi HoloLens tramite una rete connessa cloud su scala con assistenza remota.
 keywords: HoloLens, gestione, cloud connected, Remote Assist, AAD, Azure AD, MDM, gestione di dispositivi mobili
 author: evmill
 ms.author: v-evmill
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 042a29fe436b21ca37a2fcd7921fc53d6a9686d5
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: 00cc3f9df1fefafc9c4c084ff642364ae3ccb85c
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253043"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283887"
 ---
 # Configura-Guida connessa al cloud
 

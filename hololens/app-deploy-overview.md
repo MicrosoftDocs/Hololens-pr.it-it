@@ -1,6 +1,6 @@
 ---
 title: Panoramica-gestione delle app
-description: app, gestione, gestione app
+description: Introduzione a una panoramica della gestione delle app di realtà mista con i pacchetti di gestione di dispositivi mobili, Microsoft Store per le aziende e provisioning.
 keywords: HoloLens, utente, account, app, gestione applicazioni,
 author: evmill
 ms.author: v-evmill
@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 2ca0b05b6ed61ddce327a44fedbbcf280b33a106
-ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
+ms.openlocfilehash: 951c79e49d67c1a0308e236e4283ffa498a7139f
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "11252667"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283707"
 ---
 # Gestione dell'app: panoramica
 

@@ -1,6 +1,6 @@
 ---
 title: Trovare e salvare file in HoloLens
-description: Usare Esplora file in HoloLens per visualizzare e gestire i file nel dispositivo
+description: Informazioni su come usare Esplora file in HoloLens per aprire, visualizzare e gestire i file nel dispositivo di realtà mista.
 keywords: procedura, selezione file, file, foto, video, immagini, OneDrive, archiviazione, Esplora file, hololens
 ms.assetid: 77d2e357-f65f-43c8-b62f-6cd9bf37070a
 author: mattzmsft
@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: fb3287f0a074eddeac0c7ee2871e289b93eafcac
-ms.sourcegitcommit: 8b56f4b9b5f9c928fc361f18efcbea729055a0b2
+ms.openlocfilehash: 2d979b2cffd20589ddef7f11db5c7206eaea23cb
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "10919123"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283527"
 ---
 # Trovare, aprire e salvare file in HoloLens
 

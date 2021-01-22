@@ -1,6 +1,6 @@
 ---
 title: Guida alla distribuzione-cloud connected HoloLens 2 distribuzione in scala con assistenza remota-Mantieni
-description: Suggerimenti per la gestione dei dispositivi HoloLens tramite una rete connessa al cloud
+description: Tieniti aggiornato sui suggerimenti per il mantenimento e il supporto dei dispositivi HoloLens su una rete connessa al cloud.
 keywords: HoloLens, gestione, cloud connected, Remote Assist, AAD, Azure AD, MDM, gestione di dispositivi mobili
 author: evmill
 ms.author: v-evmill
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8117c73516d2775ec67f37bad524bcf377ece2e5
-ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
+ms.openlocfilehash: bc34c4e41c5a6cee8f3f9a0a97407ee38d419bbc
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "11252697"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283897"
 ---
 # Manutenzione-guida connessa al cloud
 

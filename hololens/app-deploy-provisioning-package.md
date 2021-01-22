@@ -1,6 +1,6 @@
 ---
 title: Pacchetto di provisioning
-description: app, distribuzione di app, distribuzione di app Enterprise, provisioning
+description: Informazioni su come creare pacchetti di app, provisioning, distribuzione e distribuzione di app Enterprise per dispositivi HoloLens.
 keywords: app, distribuzione di app, distribuzione di app Enterprise, provisioning
 author: evmill
 ms.author: v-evmill
@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 11bc83be188e1b81959690efcb2bdf26d800aae3
-ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
+ms.openlocfilehash: 9c73b03e6a8dca6baf6c58fed091df96994c3780
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "11252677"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283697"
 ---
 # Pacchetto di provisioning
 

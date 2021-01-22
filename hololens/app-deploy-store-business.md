@@ -1,6 +1,6 @@
 ---
 title: Microsoft Store per le aziende
-description: Microsoft Store for business, msfb,
+description: Informazioni su come collaborare con Microsoft Store for business per pubblicare le applicazioni di realtà mista nella propria azienda.
 keywords: Microsoft Store for business, msfb, distribuzione di app, Store
 author: evmill
 ms.author: v-evmill
@@ -11,12 +11,12 @@ ms.sitesec: library
 ms.localizationpriority: medium
 audience: HoloLens
 manager: yannisle
-ms.openlocfilehash: 82748301ccb6306c61e8a6f32ee126629221646a
-ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.openlocfilehash: 52036b9e17fe6685bd05693b06e3120b4655c863
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009494"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283677"
 ---
 # Microsoft Store per le aziende
 

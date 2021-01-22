@@ -6,12 +6,12 @@ ms.author: mattwoj
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: hololens
-ms.openlocfilehash: 311da6bc52098d5ba16e4684f68fec9a01e7c23b
-ms.sourcegitcommit: 8cea4c04c6d2e22225f4de43e10c05dab840736a
+ms.openlocfilehash: dd205ab1fe399d6612be982136c80733a5eb087e
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "11253840"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283662"
 ---
 # Contribuire alla documentazione di HoloLens
 
@@ -233,6 +233,8 @@ Usare il flusso di lavoro seguente per apportare modifiche alla documentazione c
       ![Scegliere "Salva tutto" in Esplora risorse](images/explorer-save.png)
       
    3. Eseguire il **commit di tutte** le modifiche nel **controllo del codice sorgente** (messaggio di scrittura commit quando richiesto).
+   
+      ![Scegliere "Commit all" nel controllo del codice sorgente](images/source-control-commit.png)
       
    4. Selezionare il pulsante **Sincronizza** per sincronizzare di nuovo le modifiche all'origine (la forcella su GitHub).
       

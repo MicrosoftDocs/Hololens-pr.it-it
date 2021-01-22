@@ -1,6 +1,6 @@
 ---
 title: Domande frequenti su HoloLens 2 Development Edition
-description: Domande frequenti sulle FAQ di HoloLens 2 Development Edition.
+description: Tieniti aggiornato con le domande più frequenti sul dispositivo di realtà mista HoloLens 2 Development Edition.
 keywords: Hololens 2 opzioni di acquisto, opzioni HoloLens, versione per sviluppatori
 author: evmill
 ms.author: v-evmill
@@ -14,16 +14,16 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d2f3a58766baf9850f5af38c8e94acc8cb4877d6
-ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
+ms.openlocfilehash: 8d17276adff49fcc7b6d2947539d17392a76eee5
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "11252787"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283857"
 ---
 # Domande frequenti su HoloLens 2 Development Edition
 
-## Generale
+## Domande generali
 
 ### Cosa si ottiene con l'edizione di sviluppo di HoloLens 2?
 

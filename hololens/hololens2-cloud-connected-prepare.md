@@ -1,6 +1,6 @@
 ---
 title: Guida alla distribuzione-cloud connected HoloLens 2 distribuzione in scala con assistenza remota-preparazione
-description: Come preparare la registrazione dei dispositivi HoloLens tramite una rete connessa al cloud
+description: Informazioni su come preparare la registrazione dei dispositivi HoloLens tramite una rete connessa al cloud con Azure Active Directory e gestione delle identità.
 keywords: HoloLens, gestione, cloud connected, Remote Assist, AAD, Azure AD, MDM, gestione di dispositivi mobili
 author: evmill
 ms.author: v-evmill
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a4e99740d985a709683595cd5afef76094faaf76
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: 067917396631f9a89a50b13ef1b7dcca8b631f52
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253053"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283867"
 ---
 # Preparare-guida connessa al cloud
 

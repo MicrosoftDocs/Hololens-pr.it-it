@@ -16,12 +16,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f6b715a6a43a403ec56119188db0121e0731af37
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: b22baa62488bbdf6d2a8a43b6487bbe5ec3277cb
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11162993"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11284157"
 ---
 # Configurare HoloLens usando un pacchetto di provisioning
 
@@ -29,12 +29,12 @@ ms.locfileid: "11162993"
 
 Alcune delle configurazioni di HoloLens che è possibile applicare in un pacchetto di provisioning includono le seguenti:
 
-- Eseguire l'aggiornamento a Windows olografico for business [qui](hololens1-upgrade-enterprise.md)
+- Eseguire l'aggiornamento a [Windows olografico for business](hololens1-upgrade-enterprise.md)
 - Configurare un account locale
 - Configurare una connessione Wi-Fi
 - Applicare certificati al dispositivo
 - Abilitare la modalità sviluppatore
-- Configurare la modalità Kiosk (le istruzioni dettagliate per la configurazione della modalità Kiosk possono essere trovate [qui](hololens-kiosk.md#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk).
+- Configurare la modalità Kiosk seguendo le [istruzioni dettagliate](hololens-kiosk.md#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk).
 
 ## Creazione guidata pacchetto di provisioning HoloLens
 
@@ -50,7 +50,7 @@ La procedura guidata di HoloLens consente di configurare le impostazioni seguent
 - Registrare il dispositivo in Azure Active Directory oppure creare un account locale
 - Aggiungere certificati
 - Abilitare la modalità sviluppatore
-- Configurare la modalità Kiosk. Le istruzioni dettagliate per la configurazione della modalità Kiosk possono essere trovate [qui](hololens-kiosk.md#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk).
+- Configurare la modalità Kiosk seguendo [le istruzioni dettagliate](hololens-kiosk.md#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk).
 
 > [!WARNING]
 > Devi eseguire Progettazione configurazione di Windows in Windows 10 per configurare la registrazione di Azure Active Directory utilizzando una delle procedure guidate.
@@ -66,7 +66,7 @@ I pacchetti di provisioning possono includere istruzioni e criteri di gestione, 
 2. **Opzione 2:** [da Windows Assessment and Deployment Kit (ADK) per Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit). Se si installa Windows Configuration designer da Windows ADK, selezionare **progettazione configurazione** nella finestra di dialogo **selezionare le caratteristiche da installare** . Questa opzione non include le funzionalità di HoloLens 2.
 
 > [!NOTE]
-> Se si è certi che si utilizzerà un PC offline che deve avere accesso a Windows Configuration designer, seguire [l'installazione dell'](https://docs.microsoft.com/hololens/hololens-recovery#downloading-arc-without-using-the-app-store) app offline per il compagno di ripristino avanzato, ma per rendere Windows Confiugration Desinger invece la selezione. 
+> Se si è certi che si utilizzerà un PC offline che deve avere accesso a Windows Configuration designer, seguire l'[installazione dell'app offline ( https://docs.microsoft.com/hololens/hololens-recovery#downloading-arc-without-using-the-app-store) istruzioni per Advanced Recovery Companion. Impostare Windows Configuration designer come selezione. 
 
 ### 2. creare il pacchetto di provisioning
 
@@ -117,7 +117,7 @@ Al termine, selezionare **Crea**. L'operazione richiede solo pochi secondi. Al t
     > [!IMPORTANT]
     > (Solo per Windows 10 versione 1607) Se crei un account locale nel pacchetto di provisioning, devi modificare la password usando l'app **Impostazioni** ogni 42 giorni. Se la password non viene modificata entro tale periodo, l'account potrebbe essere bloccato ed è impossibile accedervi. Se l'account utente viene bloccato, è necessario [eseguire un ripristino completo del dispositivo](https://developer.microsoft.com/windows/mixed-reality/reset_or_recover_your_hololens#perform_a_full_device_recovery).
 
-7. Selezionare **File**  >  **Salva**file.
+7. Selezionare ****  >  **Salva**file.
 
 8. Leggere l'avviso che i file di progetto possono contenere informazioni riservate e scegliere **OK**.
 
@@ -190,7 +190,7 @@ Prima che gli utenti di questa versione dovessero avviare manualmente la scherma
 
 Nota: se un drive USB viene lasciato collegato mentre il dispositivo viene avviato, la configurazione guidata enumera il dispositivo di archiviazione USB esistente, oltre a controllare se sono collegati altri dispositivi.
 
-Per altre informazioni sull'applicazione di pacchetti di provisioning durante la configurazione guidata, continuare a leggere [qui](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup).
+Leggere l' [applicazione di pacchetti di provisioning durante la configurazione guidata](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup).
 
 ### Convalidare automaticamente i pacchetti di provisioning in OOBE
 - Processo automatizzato che consente di usare meno interazioni degli utenti, quando viene visualizzata la pagina del pacchetto di provisioning verrà applicato automaticamente tutti i pacchetti elencati.
@@ -223,7 +223,7 @@ Nel PC seguire questa procedura:
 3. Trascinare e rilasciare il pacchetto di provisioning nella cartella documenti in HoloLens.
 
 Nella HoloLens seguire questa procedura:
-1. Accedere a **Settings**  >  **account**di  >  **accesso o a scuola**. 
+1. Accedere a ****  >  **account**di  >  **accesso o a scuola**. 
 2. In **impostazioni correlate**selezionare **Aggiungi o Rimuovi un pacchetto di provisioning**.
 3. Nella pagina successiva selezionare **Aggiungi un pacchetto** per avviare la selezione file e selezionare il pacchetto di provisioning. Se la cartella è vuota, verificare di aver selezionato **questo dispositivo** e selezionare **documenti**.
 

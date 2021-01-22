@@ -1,11 +1,10 @@
 ---
 title: Migliorare la qualità visiva e il comfort
-description: La calibrazione della distanza interpupillare può migliorare la qualità degli indicatori visivi. Entrambi i visori VR immersive HoloLens e Windows Mixed Reality consentono di personalizzare la distanza interpupillare in diversi modi.
+description: Informazioni su come calibrare la distanza interpupillare (dpi) per migliorare la qualità degli oggetti visivi nei dispositivi HoloLens.
 author: Teresa-Motiv
 ms.author: xerxesb
 ms.date: 9/13/2019
 ms.topic: article
-keywords: calibrazione, comfort, indicatori visivi, qualità, distanza interpupillare
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
@@ -14,12 +13,13 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 748475cb3e3c51e36904109ecfe03e65bdad6c1e
-ms.sourcegitcommit: 6446a80bece77d67077f36a390f13b8ce59af26e
+keywords: calibrazione, comfort, elementi visivi, qualità, dpi, HoloLens, Windows Mixed Reality, cuffie VR
+ms.openlocfilehash: e975e2ccd978d4ec6b5331af0ae566af116711c5
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "11252531"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283547"
 ---
 # Migliorare la qualità visiva e il comfort
 
@@ -37,7 +37,7 @@ HoloLens 2 richiede a un utente di calibrare il dispositivo nei seguenti casi:
 - L'utente ha precedentemente scelto di non eseguire il processo di calibrazione
 - Il processo di calibrazione non è riuscito l'ultima volta che l'utente ha usato il dispositivo
 - L'utente ha eliminato i profili di calibrazione
-- Il dispositivo viene tolto e ripristinato e si applicano le circostanze precedenti 
+- Il dispositivo è decollato e riattivato e si applica una delle circostanze sopra descritte 
 
 
 ![Richiesta di calibrazione per la regolazione degli occhi.](./images/07-et-adjust-for-your-eyes.png)
@@ -50,7 +50,7 @@ Durante questo processo, dovrai guardare una serie di obiettivi (gemme). Durante
 
 ![Regolazione richiesta di calibrazione.](./images/09-et-adjusting.png)
 
-Se la calibrazione è stata eseguita correttamente, verrà visualizzata una schermata di successo.  In caso contrario, leggi altre informazioni sulla diagnosi degli errori di calibrazione [qui](#troubleshooting-hololens-2-calibration).
+Se la calibrazione è stata eseguita correttamente, verrà visualizzata una schermata di successo.  In caso contrario, leggere altre informazioni sulla [diagnosi degli errori di calibrazione](#troubleshooting-hololens-2-calibration).
 
 ![Esito positivo della calibrazione.](./images/10-et-success.png)
 
@@ -68,9 +68,9 @@ Un dispositivo HoloLens 2 può essere condiviso da più utenti, senza che ciascu
 
 ### Supporto per Posizione automatica degli occhi
 
-In HoloLens 2, le posizioni degli occhi consentono un posizionamento accurato dell'ologramma, un'esperienza visiva confortevole e una migliore qualità di visualizzazione. Le posizioni degli occhi vengono calcolate internamente come parte del calcolo del tracciamento oculare. Tuttavia, questo richiede a ogni utente di passare alla calibrazione della verifica degli occhi, anche quando l'esperienza potrebbe non richiedere l'input sguardo fisso.
+In HoloLens 2 le posizioni degli occhi permettono un posizionamento accurato degli ologrammi, un'esperienza di visualizzazione confortevole e una qualità di visualizzazione migliorata. Le posizioni degli occhi vengono calcolate internamente come parte del calcolo del tracciamento oculare. Tuttavia, questo richiede a ogni utente di passare alla calibrazione della verifica degli occhi, anche quando l'esperienza potrebbe non richiedere l'input sguardo fisso.
 
-**Posizione automatica degli occhi** consente di calcolare la posizione degli occhi per l'utente, in una modalità priva di interazione. Posizione automatica degli occhi inizia a funzionare automaticamente in background dal momento in cui l'utente accende il dispositivo. Se l'utente non ha una calibrazione preventiva degli occhi, Posizione automatica degli occhi inizierà a fornire le posizioni degli occhi dell'utente al sistema di visualizzazione dopo un tempo di elaborazione di 20-30 secondi. I dati dell'utente non vengono conservati sul dispositivo e quindi questo processo viene ripetuto se l'utente toglie e rimette il dispositivo o se il dispositivo si riavvia o si riattiva dalla modalità sospensione.
+**Posizione automatica degli occhi** consente di calcolare la posizione degli occhi per l'utente, in una modalità priva di interazione. La posizione degli occhi automatici inizia a lavorare in background automaticamente dal momento in cui l'utente inserisce il dispositivo. Se l'utente non ha una calibrazione preventiva degli occhi, la posizione degli occhi automatici inizierà a fornire le posizioni degli occhi dell'utente al sistema di visualizzazione dopo un tempo di elaborazione di 20-30 secondi. I dati dell'utente non vengono mantenuti nel dispositivo e questo processo viene ripetuto se l'utente decolla e riattiva il dispositivo o se il dispositivo si riavvia o si risveglia dal sonno.
 
 Quando un utente non calibrato indossa il dispositivo, ci sono alcune modifiche al comportamento del sistema della funzionalità Posizione automatica degli occhi. In questo contesto, un utente non calibrato fa riferimento a una persona che non ha superato il processo di calibrazione del rilevamento degli occhi nel dispositivo in precedenza.
 
@@ -83,11 +83,11 @@ Se l'utente passa da un'applicazione non abilitata allo sguardo fisso a una che 
 
 Tutti gli altri comportamenti del sistema saranno simili a quando l'utente corrente non ha una calibrazione attiva per la verifica degli occhi. Ad esempio, il gesto iniziale con una sola mano non verrà abilitato. Per la configurazione iniziale, non ci sarà alcun cambiamento nell'esperienza di configurazione guidata.
 
-Per le esperienze che richiedono dati sullo sguardo fisso o un posizionamento olografico molto preciso, è consigliabile che gli utenti non calibrati eseguano la calibrazione del tracciamento oculare. È accessibile dalla richiesta di calibrazione degli occhi o avviando l'app Impostazioni dal menu Start, quindi selezionando **Sistema > Calibrazione > Calibrazione degli occhi > Esegui calibrazione degli occhi**.
+Per le esperienze che richiedono dati sugli occhi o un preciso posizionamento olografico, è consigliabile che gli utenti non calibrati eseguano la calibrazione della verifica degli occhi. È accessibile dalla richiesta di calibrazione degli occhi o lanciando l'app Impostazioni dal menu Start e quindi selezionando **sistema > calibrazione > calibrazione > eseguire**la calibrazione degli occhi.
 
 #### Richiesta di calibrazione posticipata
 
-Con Posizione automatica degli occhi, la finestra di dialogo della richiesta di calibrazione degli occhi viene rinviata finché un'applicazione non richiede i dati sullo sguardo fisso. In questo modo, non viene inviata alcuna richiesta all'utente quando l'applicazione attiva non richiede lo sguardo fisso. Se l'applicazione richiede dati sullo sguardo fisso e l'utente corrente non è calibrato, all'utente viene inviata una richiesta di calibrazione. Questo comportamento può essere usato per visualizzare la richiesta di calibrazione degli occhi in un momento appropriato per l'esperienza. Questo metodo è consigliato per i seguenti motivi
+Con Posizione automatica degli occhi, la finestra di dialogo della richiesta di calibrazione degli occhi viene rinviata finché un'applicazione non richiede i dati sullo sguardo fisso. Questo garantisce che non ci siano richieste per l'utente quando l'applicazione attiva non richiede lo sguardo. Se l'applicazione richiede dati sugli sguardi e l'utente corrente non è calibrato, l'utente viene presentato con una richiesta di calibrazione. Questo comportamento può essere usato per visualizzare la richiesta di calibrazione degli occhi in un momento appropriato per l'esperienza. Questo metodo è consigliato per i seguenti motivi
 
 1.  La finestra di dialogo della richiesta di calibrazione degli occhi fornisce all'utente i dettagli sul motivo per cui è necessario il monitoraggio degli occhi.
 2.  Presenta all'utente un modo per rifiutare la calibrazione degli occhi.
@@ -105,8 +105,8 @@ Alcuni possibili motivi per un errore di calibrazione includono:
 - Le lenti sono sporche o graffiate
 - Alcuni tipi di lenti a contatto e occhiali (lenti a contatto colorate, alcune lenti a contatto toriche, occhiali anti infrarosso, alcuni occhiali con alta gradazione, occhiali da sole o simili)
 - Trucco più pronunciato e alcune estensioni delle ciglia
-- Capelli o montature spesse di occhiali, qualora impediscano al dispositivo dal vedere i tuoi occhi
-- Fisiologia oculare, condizioni oculari o chirurgia oculare specifiche, come occhi stretti, ciglia lunghe, ambliopia, nistagmo, alcuni casi di chirurgia dell'occhio laser o altri interventi di chirurgia oculare
+- Capelli o cornici di occhiali spessi se bloccano il dispositivo dal vedere gli occhi
+- Fisiologia degli occhi, condizioni oculari o chirurgia oculare come gli occhi stretti, le ciglia lunghe, la ambliopia, il nistagmo, alcuni casi di LASIK o altre operazioni oculari
 
 Se la calibrazione non riesce, provare quanto segue:
 
@@ -116,15 +116,15 @@ Se la calibrazione non riesce, provare quanto segue:
 - Rimuovere eventuali oggetti che potrebbero trovarsi in corrispondenza della visiera (ad esempio, i capelli)
 - Accendere una luce nella stanza o allontanarsi dalla luce diretta del sole
 
-Se sono state seguite tutte le linee guida e la calibrazione ancora non riesce, puoi disabilitare la richiesta di calibrazione nelle Impostazioni. Puoi comunicarcelo anche inviando un tuo feedback tramite l’[Hub di Feedback](hololens-feedback.md).
+Se sono state seguite tutte le linee guida e la calibrazione ancora non riesce, puoi disabilitare la richiesta di calibrazione nelle Impostazioni. Segnala anche il feedback nell' [Hub di feedback](hololens-feedback.md).
 
-Consulta anche le informazioni correlate sulla [risoluzione dei problemi relativi a colore dell'immagine o luminosità.](hololens2-fit-comfort-faq.md#hologram-image-color-or-brightness-does-not-look-right)
+Vedere anche informazioni correlate per la [risoluzione dei problemi relativi a colore immagine o luminosità.](hololens2-fit-comfort-faq.md#hologram-image-color-or-brightness-does-not-look-right)
 
-Tieni presente che l'impostazione della distanza interpupillare non è applicabile per Hololens 2, perché le posizioni degli occhi sono calcolate dal sistema. 
+L'impostazione di DPI non è applicabile per HoloLens 2, poiché le posizioni degli occhi vengono calcolate dal sistema. 
 
 ### Dati di calibrazione e sicurezza
 
-Le informazioni sulla calibrazione vengono memorizzate localmente nel dispositivo e non sono associate alle informazioni sull'account. Non viene mantenuto alcun record qualora un utente utilizzi il dispositivo senza calibrazione. Ai nuovi utenti verrà pertanto richiesto di calibrare gli indicatori visivi quando usano il dispositivo per la prima volta. Lo stesso avverrà per gli utenti che hanno scelto di non eseguire la calibrazione in precedenza o qualora la calibrazione abbia avuto esito negativo.
+Le informazioni di calibrazione vengono archiviate localmente nel dispositivo e non sono associate alle informazioni sull'account. Chi ha usato il dispositivo senza calibrazione non contiene alcun record. Questo significa che i nuovi utenti riceveranno la richiesta di calibrare gli elementi visivi quando usano il dispositivo per la prima volta e gli utenti che hanno scelto di non eseguire la calibrazione in precedenza o se la calibrazione non è riuscita.
 
 Il dispositivo può archiviare localmente fino a 50 profili di calibrazione. Una volta raggiunto questo numero, il dispositivo eliminerà automaticamente il profilo inutilizzato meno recente.
 
@@ -146,13 +146,13 @@ Il dispositivo usa la tecnologia per il tracciamento degli occhi per migliorare 
 > [!NOTE]
 > L'impostazione della distanza interpupillare non è applicabile per Hololens 2, in quanto le posizioni degli occhi sono calcolate dal sistema.
 
-Le applicazioni HoloLens usano il tracciamento oculare per individuare in tempo reale la posizione verso cui guarda l'utente. Si tratta della principale funzionalità che gli sviluppatori possono sfruttare per consentire un livello completamente nuovo di contesto, comprensione umana e interazioni all'interno dell'esperienza olografica. Gli sviluppatori non devono eseguire alcuna operazione per sfruttare questa funzionalità.
+Le applicazioni di HoloLens usano il monitoraggio degli occhi per tenere traccia della posizione in tempo reale. Questi sono gli sviluppatori di funzionalità principali che possono essere usati per abilitare un livello completamente nuovo di contesto, comprensione umana e interazioni all'interno dell'esperienza olografica. Gli sviluppatori non devono eseguire alcuna operazione per usare questa funzionalità.
 
 ## Calibrazione del dispositivo HoloLens (prima generazione)
 
-HoloLens (prima generazione) regola la visualizzazione degli ologrammi in base alla [distanza di interpupillare](https://en.wikipedia.org/wiki/Interpupillary_distance). Se la distanza interpupillare non è corretta, gli ologrammi potrebbero apparire instabili o a una distanza errata. Per migliorare la qualità degli indicatori visivi, puoi calibrare il dispositivo in base alla distanza interpupillare.
+HoloLens (1a generazione) regola la visualizzazione dell'ologramma in base alla [distanza di interpupillare](https://en.wikipedia.org/wiki/Interpupillary_distance) (dpi). Se il DPI non è accurato, gli ologrammi potrebbero essere instabili o a una distanza errata. Per migliorare la qualità degli indicatori visivi, puoi calibrare il dispositivo in base alla distanza interpupillare.
 
-Quando configuri il dispositivo Hololens (prima generazione), ti viene richiesto di calibrare gli indicatori visivi dopo l'introduzione di Cortana. È consigliabile completare il passaggio di calibrazione durante questa fase di configurazione. Puoi comunque saltare questa procedura ogni volta che Cortana te la propone, pronunciando "Salta".
+Quando si configura il dispositivo HoloLens (1a Gen), viene chiesto di calibrare gli elementi visivi dopo che Cortana si presenta. È consigliabile completare il passaggio di calibrazione durante questa fase di configurazione. Puoi comunque saltare questa procedura ogni volta che Cortana te la propone, pronunciando "Salta".
 
 Durante il processo di calibrazione, HoloLens chiede di allineare il dito con una serie di sei obiettivi per occhio. HoloLens usa questo processo per impostare correttamente la distanza interpupillare dei tuoi occhi.
 
@@ -187,4 +187,4 @@ Alcuni visori VR immersive offrono la possibilità di personalizzare l'impostazi
 
 Puoi inoltre regolare questa impostazione nel PC selezionando **Impostazioni** > **Realtà mista** > **Display headset**.
 
-Se il visore VR non supporta la personalizzazione della distanza interpupillare, questa impostazione verrà disabilitata.
+Se l'auricolare non supporta la personalizzazione di dpi, questa impostazione verrà disabilitata.

@@ -1,6 +1,6 @@
 ---
 title: Acquisire e gestire foto e video di realtà mista
-description: Informazioni su come acquisire, visualizzare e condividere foto e video di realtà mista usando HoloLens.
+description: Informazioni su come acquisire, visualizzare e condividere foto e video di realtà mista usando i dispositivi di realtà mista HoloLens.
 keywords: hololens, foto, video, acquisizione, MRC, acquisizione di realtà mista, foto, fotocamera, flusso, Livestream, demo
 ms.assetid: 1b636ec3-6186-4fbb-81b2-71155aef0593
 ms.prod: hololens
@@ -15,12 +15,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: df67fe8c5b29eea317a0d00a1ebdcf7331fb0936
-ms.sourcegitcommit: 681e8e03e1a0250368f1f50cef6fbc3c99bac3af
+ms.openlocfilehash: 6b7bb29ab76a16aa518ca38ee04f434dfd0cf0c7
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "11165010"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283507"
 ---
 # Creare foto e video in realtà mista
 

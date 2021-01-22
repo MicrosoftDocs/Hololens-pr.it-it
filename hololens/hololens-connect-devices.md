@@ -1,6 +1,6 @@
 ---
 title: Connessione a dispositivi Bluetooth e USB-C
-description: Questa guida illustra la connessione a dispositivi e accessori Bluetooth e USB-C.
+description: Informazioni di base sulla connessione ai dispositivi e accessori Bluetooth e USB-C dai dispositivi di Realtà mista HoloLens.
 ms.assetid: 01af0848-3b36-4c13-b797-f38ad3977e30
 ms.prod: hololens
 ms.sitesec: library
@@ -13,12 +13,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 2f2de4d776a0fdb99555687a96719d111ffb6460
-ms.sourcegitcommit: 8bf8e9196c4ea89297f210b5c1d41b31f9edd407
+ms.openlocfilehash: afbcfd0762bea9e7a6bc217d5e4a2910eaab7359
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "11156293"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283347"
 ---
 # Connessione a dispositivi Bluetooth e USB-C
 

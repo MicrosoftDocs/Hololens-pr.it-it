@@ -1,6 +1,6 @@
 ---
 title: Uso di Microsoft Endpoint Manager Intune per la gestione di dispositivi HoloLens
-description: Usare MDM per configurare CSP e criteri e gestire HoloLens in scala.
+description: Informazioni su come usare MDM per configurare CSP, Policy e gestire i dispositivi di realtà mista HoloLens su scala con Intune.
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
@@ -13,12 +13,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 4fda0b271e915e82350f806418d2f02cbdd5a796
-ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.openlocfilehash: ce288afdcb112c17ffde75078d641f3637a8448c
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009639"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283957"
 ---
 # Uso di Microsoft Endpoint Manager Intune per la gestione di dispositivi HoloLens
 
@@ -40,7 +40,7 @@ Iniziare [a usare i profili di configurazione e la](https://docs.microsoft.com/m
 L'uso di MDM per gestire i dispositivi offre una vasta gamma di elementi che possono essere selezionati. 
 
 ### Wi-Fi
-[Le impostazioni Wi-Fi](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-configure) assegnano le impostazioni di rete wireless a utenti e dispositivi. Quando si assegna un profilo Wi-Fi, gli utenti possono accedere alla rete Wi-Fi aziendale senza doverla configurare autonomamente.
+[Le impostazioni Wi-Fi](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-configure) assegnano le impostazioni di rete wireless a utenti e dispositivi. Quando si assegna un profilo di Wi-Fi, gli utenti possono accedere alle Wi-Fi aziendali senza doverlo configurare autonomamente.
 Leggi altre informazioni su [come configurare la rete per HoloLens](hololens-commercial-infrastructure.md)
 
 ### Certificati

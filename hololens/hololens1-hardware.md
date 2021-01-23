@@ -1,9 +1,9 @@
 ---
 title: Hardware HoloLens (prima generazione)
-description: Una struttura dei componenti che costituiscono Microsoft HoloLens (1st Gen), il primo computer olografico completamente untethered del mondo con Windows.
+description: Informazioni sui componenti che costituiscono Microsoft HoloLens (1a generazione), l'ultima evoluzione di un computer Microsoft olografico non legato con Windows 10.
 ms.assetid: 527d494e-2ab6-46ca-bd5a-bfc6b43cc833
 ms.date: 09/16/2019
-keywords: hololens
+keywords: HoloLens
 ms.prod: hololens
 ms.sitesec: library
 author: mattzmsft
@@ -13,12 +13,12 @@ manager: jarrettr
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: e3821cf7945b101abd2ffa5b261802bea125fe8e
-ms.sourcegitcommit: 681e8e03e1a0250368f1f50cef6fbc3c99bac3af
+ms.openlocfilehash: a9719d06b824ba23f2fbfefb6adb220d32b2892b
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "11165018"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11284017"
 ---
 # Hardware HoloLens (prima generazione)
 

@@ -1,6 +1,6 @@
 ---
 title: Panoramica sulla configurazione di CSP e la gestione dei dispositivi
-description: Come configurare CSP, criteri e gestione dei dispositivi.
+description: Informazioni su come configurare CSP, criteri e gestione dei dispositivi usando i pacchetti di gestione e provisioning dei dispositivi mobili.
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
@@ -13,12 +13,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: c6da29506035525b1b1b5141a04603f63de1ef24
-ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
+ms.openlocfilehash: 60e73a9a70a70c5c583edc73a0add2f0f502ef80
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "11252777"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283247"
 ---
 # Panoramica sulla configurazione di CSP e la gestione dei dispositivi
 

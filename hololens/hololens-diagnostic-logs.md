@@ -1,6 +1,6 @@
 ---
 title: Raccogliere e usare le informazioni di diagnostica dai dispositivi HoloLens
-description: Raccogliere e usare le informazioni di diagnostica dai dispositivi HoloLens
+description: Scopri come raccogliere, usare e conservare le informazioni di diagnostica dai dispositivi HoloLens.
 author: Teresa-Motiv
 ms.author: v-tea
 ms.date: 10/15/2020
@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 24f9fc142581de5017e498b2c4591cdb8f79d533
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: 206a31476820e8722b1b72fbd501345a089379b1
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253153"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283227"
 ---
 # Raccogliere e usare le informazioni di diagnostica dai dispositivi HoloLens
 

@@ -1,6 +1,6 @@
 ---
 title: Configurare il dispositivo HoloLens come chiosco
-description: Usa una configurazione Kiosk per bloccare le app in HoloLens.
+description: Informazioni su come configurare e usare una configurazione Kiosk per bloccare le app nei dispositivi HoloLens.
 ms.prod: hololens
 ms.sitesec: library
 author: dansimp
@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 777c90c4be397e176281ee72cb684a561ba78cfa
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: 245de50fcaaf1235cce02cd1b6cae921b64f2851
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253033"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283987"
 ---
 # Configurare il dispositivo HoloLens come chiosco
 
@@ -452,7 +452,7 @@ Per configurare la modalità Kiosk tramite Windows Device Portal, eseguire la pr
 ### Accesso assegnato globale-modalità Kiosk
 - Gestione delle identità ridotta per Kiosk, abilitando il nuovo metodo Kiosk che applica la modalità Kiosk a livello di sistema.
 
-Questa nuova funzionalità consente all'amministratore IT di configurare un dispositivo HoloLens 2 per la modalità Kiosk di più app, applicabile a livello di sistema, non ha affinità con alcuna identità nel sistema e si applica a tutti gli utenti che accedono al dispositivo. Per [informazioni dettagliate, vedere](hololens-global-assigned-access-kiosk.md)questa nuova funzionalità.
+Questa nuova funzionalità consente all'amministratore IT di configurare un dispositivo HoloLens 2 per la modalità Kiosk di più app, applicabile a livello di sistema, non ha affinità con alcuna identità nel sistema e si applica a tutti gli utenti che accedono al dispositivo. Per altre informazioni su questa nuova funzionalità, vedere la documentazione del [chiosco di Access a HoloLens Global assegnato](hololens-global-assigned-access-kiosk.md) .
 
 ### Avvio automatico di un'applicazione in modalità Kiosk con più app 
 - Esperienza focalizzata con l'avvio automatico delle app, aumentando ulteriormente l'interfaccia utente e le selezioni delle app scelte per le esperienze in modalità Kiosk.

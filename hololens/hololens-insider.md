@@ -1,6 +1,6 @@
 ---
 title: Insider Preview per Microsoft HoloLens
-description: È semplice iniziare con le build Insider e dare un valido feedback per il nostro prossimo aggiornamento per il sistema operativo principale per HoloLens.
+description: Scopri come iniziare a usare le build Insider e fornisci un valido feedback per il nostro prossimo aggiornamento per il sistema operativo principale per HoloLens.
 ms.prod: hololens
 ms.sitesec: library
 author: scooley
@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 6df24d3a8640edeb9196834f940500aa51e85af7
-ms.sourcegitcommit: 50e4d61a31b94d5007776064b4012e26cf9ecbbb
+ms.openlocfilehash: 5936f721c1279dce45fa3e92e160f10d880de207
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "11271713"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283197"
 ---
 # Insider Preview per Microsoft HoloLens
 
@@ -108,6 +108,15 @@ Dato che il nuovo Microsoft Edge è un'app Win32 nativa con un nuovo layer di ad
 - La reimpostazione del dispositivo rimuoverà il nuovo Microsoft Edge
 - L'anteprima della lente di ingrandimento nella tastiera olografica Mostra contenuto non corretto
 
+#### Canali Insider di Microsoft Edge
+
+Il team Microsoft Edge rende disponibili tre canali di anteprima per la community di Edge Insider: beta, dev e Canary. L'installazione di un canale di anteprima non disinstalla la versione rilasciata di Microsoft Edge in HoloLens 2 ed è possibile installarne più di uno simultaneamente. 
+
+Visita la [Home page di Microsoft Edge Insider](https://www.microsoftedgeinsider.com) per altre informazioni sulla community di Edge Insider. Per altre informazioni sui diversi canali Insider e per iniziare, visita la [pagina di download di Edge Insider](https://www.microsoftedgeinsider.com/download).
+
+> [!NOTE]
+> Durante questo Windows Insider Preview per HoloLens 2, la versione di Microsoft Edge nel dispositivo potrebbe essere superiore a quella disponibile in alcuni (o tutti) dei canali Microsoft Edge Insider. Questo per garantire che le nuove funzionalità e le correzioni in particolare destinate al Web browser in HoloLens 2 siano disponibili al più presto possibile per i partecipanti al programma Windows Insider. Subito dopo il rilascio pubblico del prossimo aggiornamento di Windows, le build del canale Microsoft Edge Insider supereranno la versione di Microsoft Edge in HoloLens 2.
+
 ### App nuove impostazioni
 
 Con questa versione, stiamo introducendo una nuova versione dell'app Impostazioni. L'app nuove impostazioni include le nuove caratteristiche e le impostazioni espanse per HoloLens 2 nelle aree seguenti: audio, Power & Sleep, Network & Internet, app, account, facilità di accesso e altro ancora.
@@ -162,7 +171,7 @@ Tieni presente che questa caratteristica può essere difficile da usare e padron
 > [!IMPORTANT]
 > Il collegamento di **un microfono USB non viene impostato automaticamente come dispositivo di input**. Quando si collega un set di cuffie USB-C, gli utenti osserveranno che l'audio della cuffia viene reindirizzato automaticamente alle cuffie, ma il sistema operativo HoloLens privilegia la matrice microfono interna sopra qualsiasi altro dispositivo di input. **Per usare un microfono USB-C, seguire i passaggi seguenti.**
 
-Gli utenti possono ora selezionare i microfoni esterni collegati tramite USB-C usando il pannello impostazioni **audio** . In questo modo gli utenti possono usare il proprio microfono collegato ma USB in registrazione e app. I microfoni USB-C sono facili da abilitare e usare.
+Gli utenti possono selezionare i microfoni esterni USB-C tramite il pannello impostazioni **audio** . I microfoni USB-C possono essere usati per chiamare, registrare e così via.
 
 Aprire l'app **Impostazioni** e selezionare **sistema**  ->  **audio**.
 

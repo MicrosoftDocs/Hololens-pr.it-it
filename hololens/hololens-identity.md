@@ -1,6 +1,6 @@
 ---
 title: Gestire l'identità utente e l'accesso per HoloLens
-description: Gestire l'identità, la sicurezza e l'accesso degli utenti per HoloLens.
+description: Informazioni su come gestire l'identità degli utenti, il supporto multiutente, la sicurezza, l'autenticazione aziendale e l'accesso per i dispositivi HoloLens.
 keywords: HoloLens, User, account, AAD, Azure AD, ADFS, account Microsoft, MSA, credenziali, riferimento
 ms.assetid: 728cfff2-81ce-4eb8-9aaa-0a3c3304660e
 author: scooley
@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 96e3b90a24d297631d39a1eb62888e4f4aa1098e
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: d9b7bebd9fd326def4ddfc2982bfecb09cb14186
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253223"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283277"
 ---
 # Gestire l'identità utente e l'accesso per HoloLens
 
@@ -43,7 +43,7 @@ HoloLens supporta diversi tipi di identità utente. È possibile usare uno o pi�
 Gli account connessi al cloud (Azure AD e MSA) offrono più funzionalità perché possono usare i servizi di Azure.  
 
 > [!NOTE]
-> 1-mentre un dispositivo HoloLens 2 può supportare fino agli account di 64 Azure AD, solo 10 di questi account possono eseguire la registrazione nell'autenticazione di Iris. Questa operazione è allineata ad altre opzioni di autenticazione biometrica per Windows Hello for business. [Per altre informazioni, vedere.](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer)
+> 1-mentre un dispositivo HoloLens 2 può supportare fino agli account di 64 Azure AD, solo 10 di questi account possono eseguire la registrazione nell'autenticazione di Iris. Questa operazione è allineata ad altre [Opzioni di autenticazione biometrica per Windows Hello for business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer).
 
 ## Configurazione degli utenti
 
@@ -109,7 +109,7 @@ Windows Hello for business (che supporta l'uso di un PIN per l'accesso) è suppo
 
 HoloLens 2 supporta l'autenticazione Iris. Iris si basa sulla tecnologia Windows Hello ed è supportata per l'uso sia dagli account di Azure Active Directory che da Microsoft. Iris viene implementata allo stesso modo delle altre tecnologie Windows Hello e consente di ottenere la sicurezza biometrica di oltre 1/100K.
 
-Per altre informazioni sui requisiti e le specifiche biometriche per Windows [, vedere Ciao.](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-biometric-requirements) Leggi altre informazioni su [Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) e [Windows Hello for business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification). 
+Per altre informazioni, vedere [requisiti e specifiche biometriche per Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-biometric-requirements) . Leggi altre informazioni su [Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) e [Windows Hello for business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification). 
 
 ### In che modo il tipo di account ha effetto sul comportamento di accesso?
 

@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 1/13/2021
+ms.date: 1/21/2021
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5936f721c1279dce45fa3e92e160f10d880de207
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: c2d79c9cfbca263a507388227304f9d0dcecd9d0
+ms.sourcegitcommit: f30add1d1eb07342e78a6baef87777c4d7123669
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283197"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "11297659"
 ---
 # Insider Preview per Microsoft HoloLens
 
@@ -113,6 +113,24 @@ Dato che il nuovo Microsoft Edge è un'app Win32 nativa con un nuovo layer di ad
 Il team Microsoft Edge rende disponibili tre canali di anteprima per la community di Edge Insider: beta, dev e Canary. L'installazione di un canale di anteprima non disinstalla la versione rilasciata di Microsoft Edge in HoloLens 2 ed è possibile installarne più di uno simultaneamente. 
 
 Visita la [Home page di Microsoft Edge Insider](https://www.microsoftedgeinsider.com) per altre informazioni sulla community di Edge Insider. Per altre informazioni sui diversi canali Insider e per iniziare, visita la [pagina di download di Edge Insider](https://www.microsoftedgeinsider.com/download).
+
+Per installare i canali Microsoft Edge insider in HoloLens 2 è disponibile un paio di metodi:
+
+**Installazione diretta sul dispositivo (attualmente disponibile solo per i dispositivi non gestiti)**
+  1. In HoloLens 2, visitare la [pagina di download di Edge Insider](https://www.microsoftedgeinsider.com/download)
+  1. Selezionare il pulsante **Scarica per HoloLens 2** per il canale Insider di Edge che si vuole installare
+  1. Avviare il file msix scaricato dalla coda di download Edge o dalla cartella "download" del dispositivo (tramite Esplora file)
+  1. Il [programma di installazione dell'app](app-deploy-app-installer.md) verrà avviato
+  1. Selezionare il pulsante **Installa**
+  1. Dopo aver completato l'installazione, si troverà Microsoft Edge beta, dev o Canary come voce separata nell'elenco **tutte le app** del menu Start.
+
+**Installare tramite PC con Windows Device Portal (è necessario abilitare la [modalità sviluppatore](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal) in HoloLens 2)**
+  1. Nel PC, visitare la [pagina di download di Edge Insider](https://www.microsoftedgeinsider.com/download)
+  1. Selezionare il **pulsante della freccia a discesa** accanto al pulsante "Scarica per Windows 10" per il canale Insider di Edge che si vuole installare
+  1. Selezionare **HoloLens 2** nel menu a discesa
+  1. Salvare il file con estensione msix nella cartella "Downloads" del PC (o in un'altra cartella che è possibile trovare facilmente)
+  1. Usare [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app) nel PC per installare il file msix scaricato in HoloLens 2
+  1. Dopo aver completato l'installazione, si troverà Microsoft Edge beta, dev o Canary come voce separata nell'elenco **tutte le app** del menu Start.
 
 > [!NOTE]
 > Durante questo Windows Insider Preview per HoloLens 2, la versione di Microsoft Edge nel dispositivo potrebbe essere superiore a quella disponibile in alcuni (o tutti) dei canali Microsoft Edge Insider. Questo per garantire che le nuove funzionalità e le correzioni in particolare destinate al Web browser in HoloLens 2 siano disponibili al più presto possibile per i partecipanti al programma Windows Insider. Subito dopo il rilascio pubblico del prossimo aggiornamento di Windows, le build del canale Microsoft Edge Insider supereranno la versione di Microsoft Edge in HoloLens 2.
@@ -253,6 +271,17 @@ Per altre informazioni, vedere [Introduzione ai canali Windows Insider](https://
 Selezionare quindi **lo sviluppo attivo di Windows**, scegliere se si vuole ricevere le build del canale **dev** o del canale **beta** e rivedere le condizioni del programma.
 
 Selezionare **conferma > Riavvia ora** per completare l'installazione. Dopo aver riavviato il dispositivo, accedere a **impostazioni > aggiorna & sicurezza > verificare la disponibilità di aggiornamenti** per ottenere la build più recente.
+
+### Errore di aggiornamento 0x80070490 work-in giro
+Se si verifica un errore di aggiornamento 0x80070490 durante l'aggiornamento sul canale dev o beta, provare il lavoro a breve termine seguente. Si tratta di spostare il canale Insider, ritirare l'aggiornamento e quindi spostare il canale Insider di nuovo.
+
+#### Fase 1-versione Preview
+1.  Impostazioni, aggiorna & sicurezza, Windows Insider Program, selezionare **Release Preview Channel**.
+2.  Impostazioni, aggiornare & sicurezza, Windows Update, **controllare la disponibilità di aggiornamenti**. Dopo l'aggiornamento, continuare con la fase due.
+
+#### Fase due-dev Channel
+1. Impostazioni, aggiorna & sicurezza, Windows Insider Program, seleziona **dev Channel**.
+2. Impostazioni, aggiornare & sicurezza, Windows Update, **controllare la disponibilità di aggiornamenti**.
 
 ## FFU download e istruzioni Flash
 Per eseguire il test con un FFU firmato per il volo, è necessario prima di tutto sbloccare il dispositivo prima di infiammare il volo firmato FFU.

@@ -1,6 +1,6 @@
 ---
 title: Configurare il dispositivo HoloLens 2
-description: Questa guida illustra come eseguire la configurazione per la prima volta.  Ti servirà una rete Wi-Fi e un account Microsoft o Azure Active Directory (AAD).
+description: Informazioni su come configurare HoloLens 2 per la prima volta tramite una rete Wi-Fi con un account Microsoft (MSA) o un account di Azure Active Directory (AAD).
 ms.assetid: 507305f4-e85a-47c5-a055-a3400ae8a10e
 ms.date: 9/17/2019
 keywords: hololens
@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a0ba32e3caff7695cd284ee3752bb91d80da2194
-ms.sourcegitcommit: 7edbb99e0972d3d857e5e87c062c3c64cacc1f41
+ms.openlocfilehash: 9824de1d81fd6ba9ccafc8627d660aebefeaed15
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "10903242"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283877"
 ---
 # Configurare il dispositivo HoloLens 2
 
@@ -76,7 +76,7 @@ HoloLens 2 ti guiderà nei passaggi seguenti:
         1. Continua a configurare il dispositivo.
     - Quando scegli **Appartiene a me**, accedi con un account Microsoft. Al termine della configurazione, puoi [registrare manualmente HoloLens in gestione dispositivi](hololens-enroll-mdm.md#different-ways-to-enroll).
         1. Immetti le informazioni sull'account Microsoft.
-        2. Immetti la password. Se l'account Microsoft richiede la [verifica in due passaggi (2FA)](https://blogs.technet.microsoft.com/microsoft_blog/2013/04/17/microsoft-account-gets-more-secure/), completa il processo di verifica.
+        2. Immettere la password. Se l'account Microsoft richiede la [verifica in due passaggi (2FA)](https://blogs.technet.microsoft.com/microsoft_blog/2013/04/17/microsoft-account-gets-more-secure/), completa il processo di verifica.
 
     ![Impostazione dell'utente](images/13-device-owner.png)
 

@@ -1,6 +1,6 @@
 ---
 title: Windows Autopilot per HoloLens 2
-description: Come configurare Autopilot nei dispositivi HoloLens 2.
+description: Informazioni su come configurare, impostare e risolvere i problemi di Autopilot nei dispositivi HoloLens 2.
 author: Teresa-Motiv
 ms.author: v-tea
 ms.date: 10/13/2020
@@ -13,18 +13,18 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: 98f35c52091a2d477a2f0852f66ad706498ad026
-ms.sourcegitcommit: 3827d244426ffecb517f6cfa714eeef9363c062d
+ms.openlocfilehash: 23cb3612a633f6747c770d9fd52b137561492426
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "11253592"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11284037"
 ---
 # Windows Autopilot per HoloLens 2
 
-A partire da Windows Holographic versione 2004, HoloLens 2 supporta la [modalità di distribuzione automatica](https://docs.microsoft.com/mem/autopilot/self-deploying) di Windows Autopilot. Gli amministratori possono configurare la Configurazione guidata in Microsoft Endpoint Manager e consentire agli utenti finali di preparare i dispositivi per l'uso aziendale con poca o nessuna interazione. Ciò riduce il costo generale di gestione dell'inventario, il costo della preparazione pratica del dispositivo e le chiamate di supporto da parte dei dipendenti durante l'esperienza di configurazione. Per altre informazioni su Windows Autopilot, fare clic [qui](https://docs.microsoft.com/mem/autopilot/windows-autopilot).
+A partire da Windows Holographic versione 2004, HoloLens 2 supporta la [modalità di distribuzione automatica](https://docs.microsoft.com/mem/autopilot/self-deploying) di Windows Autopilot. Gli amministratori possono configurare la Configurazione guidata in Microsoft Endpoint Manager e consentire agli utenti finali di preparare i dispositivi per l'uso aziendale con poca o nessuna interazione. Ciò riduce il costo generale di gestione dell'inventario, il costo della preparazione pratica del dispositivo e le chiamate di supporto da parte dei dipendenti durante l'esperienza di configurazione. Per ulteriori informazioni, vedere la documentazione di [Windows Autopilot](https://docs.microsoft.com/mem/autopilot/windows-autopilot).
 
-Allo stesso modo dei dispositivi Surface, è consigliabile che i clienti collaborino con il proprio [provider di soluzioni cloud](https://partner.microsoft.com/cloud-solution-provider) Microsoft (rivenditore o distributore) per registrare i dispositivi con il servizio Autopilot tramite il Centro per i partner. Altri metodi per la registrazione dei dispositivi sono illustrati in [questa](https://docs.microsoft.com/mem/autopilot/add-devices)sezione, anche l’uso dei partner di canale di Microsoft garantisce un percorso end-to-end più efficace.
+Allo stesso modo dei dispositivi Surface, è consigliabile che i clienti collaborino con il proprio [provider di soluzioni cloud](https://partner.microsoft.com/cloud-solution-provider) Microsoft (rivenditore o distributore) per registrare i dispositivi con il servizio Autopilot tramite il Centro per i partner. Altri metodi per la registrazione dei dispositivi sono descritti nella documentazione relativa all'[aggiunta di dispositivi](https://docs.microsoft.com/mem/autopilot/add-devices), anche se l'uso dei partner di canale di Microsoft garantisce il percorso end-to-end più efficace.
 
 > [!NOTE]
 > A partire dal 20/11/2020, la configurazione di Autopilot per HoloLens in Microsoft Endpoint Manager passerà all'**anteprima pubblica**. I clienti non devono più iscriversi all'anteprima privata e tutti i tenant potranno configurare Autopilot nell'interfaccia di amministrazione MEM.
@@ -73,7 +73,7 @@ Per informazioni su come registrare i dispositivi e configurare i profili, veder
 
 #### Rivedere i requisiti del sistema operativo HoloLens:
 
-- I dispositivi devono essere in [Windows Holographic, versione 2004](hololens-release-notes.md#windows-holographic-version-2004) (build 19041.1103) o versioni successive. Per confermare la versione della build nel dispositivo o per eseguire nuovamente il flashing del sistema operativo più recente, è possibile usare [ARC (Advanced Recovery Companion)](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=1&activetab=pivot:overviewtab). [Qui](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device) è possibile trovare le istruzioni. I dispositivi distribuiti entro la fine di settembre 2020 hanno la versione 1903 di Windows Holographic preinstallata. Contattare il rivenditore per verificare i dispositivi predisposti per Autopilot siano inviati.
+- I dispositivi devono essere in [Windows Holographic, versione 2004](hololens-release-notes.md#windows-holographic-version-2004) (build 19041.1103) o versioni successive. Per verificare la versione della build nel dispositivo o eseguire nuovamente il flash al sistema operativo più recente, usare [l'ARC (Advanced Recovery Companion)](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=1&activetab=pivot:overviewtab) e le [istruzioni per il re-flash del dispositivo.](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device) I dispositivi distribuiti entro la fine di settembre 2020 hanno la versione 1903 di Windows Holographic preinstallata. Contattare il rivenditore per verificare i dispositivi predisposti per Autopilot siano inviati.
 
 - Windows Holographic versione 2004 supporta solo Autopilot con connessione ethernet. Assicurarsi che HoloLens sia connesso a ethernet usando un adattatore "USB C a Ethernet" **prima di accenderlo**. All'avvio del dispositivo non è necessaria alcuna interazione con l'utente. Se si prevede di eseguire l'implementazione di Autopilot in più dispositivi HoloLens, è consigliabile pianificare l'infrastruttura dell’adattatore. Non è consigliabile usare l’hub USB, perché spesso è richiesta l'installazione di altri driver di terze parti che non sono supportati in HoloLens.
 

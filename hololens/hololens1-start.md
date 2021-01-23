@@ -1,6 +1,6 @@
 ---
 title: Configurare il dispositivo HoloLens (prima generazione)
-description: Questa guida illustra come eseguire la configurazione per la prima volta.  Ti servirà una rete Wi-Fi e un account Microsoft o Azure Active Directory (Azure AD).
+description: Informazioni su come configurare HoloLens (1a generazione) per la prima volta in una rete Wi-Fi con un account Microsoft (MSA) o un account di Azure Active Directory (AAD).
 ms.assetid: 0136188e-1305-43be-906e-151d70292e87
 ms.prod: hololens
 author: Teresa-Motiv
@@ -11,14 +11,14 @@ manager: jarrettr
 ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 9a20a2ddd52c08a2b44dad452aac07ad9e69de85
-ms.sourcegitcommit: 7edbb99e0972d3d857e5e87c062c3c64cacc1f41
+ms.openlocfilehash: aca7b287b3d26ab37ddb90e4245a1e0b3adc17e2
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "10903232"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283927"
 ---
-# Configurare HoloLens (prima generazione)
+# Configurazione HoloLens (1a generazione)
 
 La prima volta che accendi il dispositivo HoloLens, riceverai istruzioni per eseguire la calibrazione, la configurazione e l'accesso.  Questo articolo illustra come eseguire il primo avvio e configurare HoloLens (prima generazione).
 
@@ -71,7 +71,7 @@ Durante la calibrazione, HoloLens chiede di allineare il dito con una serie di s
 
 *Schermata di allineamento della distanza oculare tramite dita, seconda fase*
 
-A questo punto, La configurazione è completa ed è possibile iniziare a usare HoloLens.
+Complimenti. La configurazione è completa ed è possibile iniziare a usare HoloLens.
 
 ## Passaggi successivi
 

@@ -1,6 +1,6 @@
 ---
 title: Domande frequenti sulla sicurezza
-description: domande frequenti sulla sicurezza di hololens
+description: Non perderti le domande e le risposte frequenti sulla sicurezza relative ai dispositivi HoloLens di realtà mista.
 ms.assetid: bd55ecd1-697a-4b09-8274-48d1499fcb0b
 author: pawinfie
 ms.author: pawinfie
@@ -15,12 +15,12 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 manager: bradke
-ms.openlocfilehash: dc9223c2ef7e57c457f4f8a653d7fdeedbc2f2f9
-ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
+ms.openlocfilehash: 0e3b7f40aa6d5163b6d58b7f21b9ea6daa9cc9b4
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "10865785"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11284007"
 ---
 # Domande frequenti sulla sicurezza di HoloLens (Prima generazione)
 

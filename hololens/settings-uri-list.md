@@ -1,6 +1,6 @@
 ---
 title: Visibilità impostazioni pagina
-description: Elenco degli URI supportati da HoloLens per PageVisibilityList e guida
+description: Tieniti aggiornato con l'elenco degli URI supportati per PageVisibilityList e la guida sui dispositivi di realtà mista HoloLens.
 author: evmill
 ms.author: v-evmill
 ms.date: 10/13/2020
@@ -13,12 +13,12 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8cd336ce64cf7d4549b031a7977f592ca82dd6e4
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: e4d4936595144f82a468883f26dae6e19eef4f84
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11163140"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11284117"
 ---
 # Visibilità impostazioni pagina
 
@@ -42,7 +42,8 @@ Questa operazione può essere eseguita tramite Intune usando OMA-URI.
 1. Quando si seleziona i dati scegliere: **stringa**
 1. Quando si digita il valore, usare: **showonly:network-wifi;network-proxy;bluetooth**
 1. Assicurarsi di assegnare la configurazione di un dispositivo personalizzato a un gruppo all’interno del quale il dispositivo deve essere.
-Per altre informazioni sui gruppi Intune e sulle configurazioni dei dispositivi Intune fare clic [qui](hololens-mdm-configure.md).
+
+Per altre informazioni sui gruppi di Intune e sulle configurazioni di dispositivi, vedere [configurazione MDM di HoloLens](hololens-mdm-configure.md).
 
 Indipendentemente dal metodo scelto, il dispositivo dovrebbe ora ricevere le modifiche e agli utenti verrà presentata la seguente app Impostazioni. 
 
@@ -126,4 +127,4 @@ I dispositivi HoloLens e i dispositivi Windows 10 hanno una selezione di pagine 
 > - ms-settings:windowsupdate-options
 > - ms-settings:windowsupdate-restartoptions 
 
-Per un elenco completo degli URI delle impostazioni di Windows 10, visitare [questa pagina](https://docs.microsoft.com/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference). 
+Per un elenco completo degli URI delle impostazioni di Windows 10, visitare la documentazione relativa alle [impostazioni di avvio](https://docs.microsoft.com/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference). 

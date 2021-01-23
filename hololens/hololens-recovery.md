@@ -1,6 +1,6 @@
 ---
 title: Riavviare, reimpostare o ripristinare HoloLens
-ms.reviewer: Basic and advanced instructions for rebooting or resetting your HoloLens.
+ms.reviewer: Follow along with our basic and advanced instructions for rebooting or resetting your HoloLens 2 device.
 description: Come usare Advanced Recovery Companion per installare un file immagine su HoloLens 2.
 keywords: guida, riavvio, reset, ripristino, ripristino manuale, ripristino automatico, ciclo di alimentazione, HoloLens, spegnimento, arc, advanced recovery companion
 ms.prod: hololens
@@ -14,12 +14,12 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-ms.openlocfilehash: 7845a00d1141fb721683c4e3f2a884ed0c37c735
-ms.sourcegitcommit: 33911e3b405732d0d31a27039c8f590d52b647c4
+ms.openlocfilehash: 025ba8508eb930cdad6d502c381e5a07d9efc6e0
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "11254833"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11284087"
 ---
 # <span data-ttu-id="ecc9b-104">Riavviare, reimpostare o ripristinare HoloLens 2</span><span class="sxs-lookup"><span data-stu-id="ecc9b-104">Restart, reset, or recover HoloLens 2</span></span>
 

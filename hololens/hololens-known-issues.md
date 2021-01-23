@@ -1,6 +1,6 @@
 ---
 title: Problemi noti di HoloLens
-description: Questo è l'elenco dei problemi noti che possono influenzare i clienti e gli sviluppatori di HoloLens.
+description: Tieniti aggiornato con l'elenco dei problemi noti e delle soluzioni alternative che possono influenzare i clienti e gli sviluppatori di HoloLens con Unity e Windows Device Portal.
 keywords: risoluzione dei problemi, problema noto, guida
 author: mattzmsft
 ms.author: mazeller
@@ -15,12 +15,12 @@ ms.prod: hololens
 appliesto:
 - HoloLens (1st Gen)
 - HoloLens 2
-ms.openlocfilehash: e5450cc41406416ec1b6e7c0bd7c8205056cb7d4
-ms.sourcegitcommit: bf9a784d1b5f221d0766c5ae90efa4e9a5979b84
+ms.openlocfilehash: 54bc090352983e814c64deea8f1f401c24e3261b
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "11194624"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11284077"
 ---
 # Problemi noti di HoloLens
 

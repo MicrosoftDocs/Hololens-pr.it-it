@@ -1,6 +1,6 @@
 ---
 title: Requisiti di licenza
-description: ''
+description: È importante tenersi sempre aggiornati sui requisiti di licenza e sulle linee guida necessarie per la gestione di dispositivi mobili, HoloLens e assistenza remota.
 ms.prod: hololens
 ms.sitesec: library
 author: pawinfie
@@ -14,12 +14,12 @@ manager: bradke
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 3ac86512755620ebb6159dd4d845b488e203dbad
-ms.sourcegitcommit: 238d41844116ab94d347a2ffd0fbfa18b8a81947
+ms.openlocfilehash: 2f7af532d2172dcaa6514ee11dbb0d6ab5631929
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "10956762"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283967"
 ---
 # Requisiti di licenza
 
@@ -27,7 +27,7 @@ ms.locfileid: "10956762"
 
 Se si prevede di gestire i dispositivi HoloLens, saranno necessari Azure AD e un sistema MDM. Active Director (AD) non può essere usato per gestire i dispositivi HoloLens.
 Se si prevede di usare un sistema MDM diverso da Intune, è necessaria una [licenza di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis).
-Se si prevede di usare Intune come sistema MDM, [qui](https://docs.microsoft.com/intune/fundamentals/licenses) è riportato un elenco di suite che includono le licenze di Intune. **Si noti che Azure AD è incluso nella maggior parte delle famiglie di prodotti.**
+Se si prevede di usare Intune come MDM, leggere l'[elenco delle suite](https://docs.microsoft.com/intune/fundamentals/licenses) che includono le licenze di Intune. **Si noti che Azure AD è incluso nella maggior parte delle famiglie di prodotti.**
 
 ## Identificare le licenze necessarie per lo scenario e i prodotti
 
@@ -42,7 +42,7 @@ Potrebbe essere necessario aggiornare il dispositivo HoloLens (prima generazione
 
 ### Requisiti di licenza di Remote Assist
 
-Assicurarsi di avere le licenze e i dispositivi necessari. I requisiti di licenza e di prodotto aggiornati sono disponibili [qui](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements).
+Verificare di disporre della licenza e del dispositivo necessari nella documentazione relativa ai [requisiti](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements).
 
 1. [Licenza di Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist)
     1. Altrimenti, provare la [versione di valutazione di Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/try-remote-assist)
@@ -53,7 +53,7 @@ Se si prevede di implementare **[questo scenario tra tenant](https://docs.micros
 
 ### Guide ai requisiti di licenza
 
-I requisiti di licenza e di dispositivo aggiornati sono disponibili [qui](https://docs.microsoft.com/dynamics365/mixed-reality/guides/requirements).
+Verificare i [requisiti di licenze e dispositivi aggiornati](https://docs.microsoft.com/dynamics365/mixed-reality/guides/requirements).
 
 1. [Licenza di Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
 1. [Power BI](https://powerbi.microsoft.com/desktop/)

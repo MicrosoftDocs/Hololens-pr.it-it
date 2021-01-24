@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: c2d79c9cfbca263a507388227304f9d0dcecd9d0
-ms.sourcegitcommit: f30add1d1eb07342e78a6baef87777c4d7123669
+ms.openlocfilehash: 7cc08396925368be5230a078de6fb4c7cd0a8b24
+ms.sourcegitcommit: 063aa10baa190429b7248f7f1384afba7975861e
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/23/2021
-ms.locfileid: "11297659"
+ms.locfileid: "11297766"
 ---
 # Insider Preview per Microsoft HoloLens
 
@@ -97,7 +97,6 @@ Dato che il nuovo Microsoft Edge è un'app Win32 nativa con un nuovo layer di ad
 **Scenari e funzionalità disponibili in breve:**
 - Estensione del Visualizzatore WebXR e 360
 - Ripristino del contenuto per correggere la finestra durante l'esplorazione tra più finestre inserite nell'ambiente
-- Partecipare a una chiamata di Microsoft teams tramite il browser con video, acquisizione di realtà mista o condivisione dello schermo (partecipare alle chiamate con audio funziona bene)
 
 **Scenari e funzionalità che non si prevede di utilizzare:**
 - Audio spaziale proveniente da più finestre con flussi audio simultanei
@@ -164,6 +163,7 @@ Con questa versione, stiamo introducendo una nuova versione dell'app Impostazion
 - Le finestre delle impostazioni precedentemente inserite verranno rimosse (Vedi nota sopra)
 - La visita alla pagina notifiche può arrestarsi in modo anomalo nell'app Impostazioni (analisi)
 - La pagina Ethernet attualmente non viene visualizzata (per essere risolta a breve)
+- Non è più possibile rinominare il dispositivo con l'app Impostazioni (gli amministratori IT possono usare i pacchetti di provisioning o MDM per rinominare i dispositivi)
 - L'utilizzo della batteria per il nuovo Microsoft Edge potrebbe non essere corretto, a causa della sua natura di applicazione desktop Win32 supportata da un layer di adapter UWP (nessuna correzione anticipata presto)
 
 ### Selezione app predefinita

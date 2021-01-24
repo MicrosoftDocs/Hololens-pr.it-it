@@ -1,7 +1,6 @@
 ---
 title: Considerazioni sull'ambiente per HoloLens
-description: Ottieni la migliore esperienza possibile utilizzando HoloLens quando ottimizzi il dispositivo per gli occhi e l'ambiente. Molti fattori ambientali diversi sono fusi insieme per consentire il rilevamento, ma in qualità di sviluppatore di realtà mista, sono diversi i fattori che puoi tenere presente per ottimizzare uno spazio in modo da ottenere ologrammi migliori.
-keywords: fotogramma olografico, campo visivo, FOV, calibrazione, spazi, ambiente, procedure
+description: Ottieni la migliore esperienza possibile utilizzando HoloLens quando ottimizzi il dispositivo per gli occhi e l'ambiente.
 author: dorreneb
 ms.author: dobrown
 manager: jarrettr
@@ -10,40 +9,41 @@ ms.prod: hololens
 ms.topic: article
 audience: ITPro
 ms.localizationpriority: high
-ms.openlocfilehash: dc8182d04a8cdc8a8ec3775a8e453a41d29486d3
-ms.sourcegitcommit: 0abe53295191e22299d5be49f2cef4e85744d0fd
+keywords: fotogramma olografico, campo visivo, cv, calibrazione, spazi, ambiente, procedura, HoloLens, realtà mista, headset realtà mista
+ms.openlocfilehash: ae5c039387d247d1a2c795bc65d7ea56867b3843
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993646"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283137"
 ---
-# Considerazioni sull'ambiente per HoloLens
+# Considerazioni sull'ambiente HoloLens
 
-HoloLens unisce il mondo olografico a quello mondo reale, posizionando gli ologrammi nell'ambiente circostante. Una finestra dell'app olografica "si blocca" sul muro, una ballerina olografica gira sul tavolo, le orecchie da coniglio si siedono sulla testa del tuo amico a sua insaputa. Quando utilizzi un gioco o un'app immersiva, il mondo olografico si aprirà per riempire l'ambiente circostante, ma potrai comunque vedere e spostarti nello spazio.
+HoloLens unisce il mondo olografico a quello mondo reale, posizionando gli ologrammi nell'ambiente circostante. Una finestra dell'app olografica "si blocca" sul muro, una ballerina olografica gira sul tavolo, le orecchie da coniglio si siedono sulla testa del tuo amico a sua insaputa. Quando si usa un gioco o un'app immersiva, il mondo olografico si espanderà per riempire l'ambiente circostante, ma sarà comunque possibile vedere e spostarsi nello spazio.
 
-Gli ologrammi che posizioni rimarranno dove li hai inseriti, anche se spegni il dispositivo.
+Gli ologrammi rimarranno dove sono stati posizionati, anche se il dispositivo viene spento.
 
 ## Configurazione di un ambiente
 
-I dispositivi HoloLens sanno come posizionare ologrammi stabili e accurati mediante *rilevazione* degli utenti in uno spazio. Senza il rilevamento appropriato, il dispositivo non comprende l'ambiente o l'utente al suo interno, quindi gli ologrammi potrebbero apparire nelle posizioni sbagliate, non vengono visualizzati nello stesso punto ogni volta o non vengono visualizzati affatto. I dati utilizzati per il rilevamento degli utenti sono rappresentati nella *mappa spaziale*.  
+I dispositivi HoloLens sanno come posizionare gli ologrammi in modo stabile e accurato mediante il *rilevamento* degli utenti in uno spazio. Senza un rilevamento appropriato, il dispositivo non riesce a comprendere l'ambiente o l'utente al suo interno. Gli ologrammi possono comparire in posizioni sbagliate, non comparire nello stesso punto ogni volta o non comparire affatto. I dati utilizzati per il rilevamento degli utenti sono rappresentati nella *mappa spaziale*.  
 
 Le prestazioni del rilevamento sono fortemente influenzate dall'ambiente in cui si trova l'utente e l'ottimizzazione di un ambiente per ottenere un rilevamento stabile e coerente è un'arte piuttosto che una scienza. Molti fattori ambientali diversi sono fusi insieme per consentire il rilevamento, ma in qualità di sviluppatore di realtà mista, sono diversi i fattori che puoi tenere presente per ottimizzare uno spazio per un migliore rilevamento.
 
 ### Illuminazione
 
-Windows Mixed Reality utilizza la luce visiva per rilevare la posizione dell'utente. Quando un ambiente è troppo luminoso, le fotocamere possono essere saturate e non viene visualizzato nulla. Se l'ambiente è troppo scuro, le fotocamere non possono raccogliere informazioni sufficienti e non viene visualizzato nulla. L'illuminazione dovrebbe essere uniforme e sufficiente in modo tale che un essere umano possa vedere senza alcuno sforzo, ma non così brillante per cui la vista può essere disagevole.  
+Windows Mixed Reality utilizza la luce visiva per rilevare la posizione dell'utente. Quando un ambiente è troppo luminoso, le fotocamere possono essere saturate e non viene visualizzato nulla. Se l'ambiente è troppo scuro, le fotocamere non riescono a raccogliere informazioni sufficienti e non verrà visualizzato nulla. L'illuminazione deve essere uniforme e sufficiente in modo tale che un essere umano possa vedere senza alcuno sforzo, ma non così forte da creare fastidi alla vista.  
 
 Anche le aree in cui sono presenti punti di luce in un'area nel complesso ombreggiata sono problematiche, perché la fotocamera deve essere regolata quando si sposta dentro e fuori spazi luminosi. Ciò può causare lo "smarrimento" del dispositivo che potrebbe scambiare una modifica dell'illuminazione in una modifica della posizione. I livelli di luce stabili in un'area consentiranno un migliore rilevamento.  
 
-Qualsiasi illuminazione esterna può anche causare instabilità nel sensore, poiché il sole può variare notevolmente nel tempo. Ad esempio, il rilevamento nello stesso spazio in estate e in inverno può produrre risultati drasticamente diversi, perché la luce indiretta potrebbe essere più intensa in momenti diversi dell'anno.  
+Qualsiasi illuminazione esterna può anche causare instabilità nel sensore, poiché il sole può variare notevolmente nel tempo. Ad esempio, il rilevamento nello stesso spazio può produrre risultati drasticamente diversi in estate e in inverno, perché la luce indiretta potrebbe essere più intensa in momenti diversi dell'anno.  
 
 Se disponi di un luxmetro, un valore di 500-1000 lux costante è un buon punto di partenza.  
 
 #### Tipi di illuminazione
 
-Anche i diversi tipi di luce in uno spazio possono influenzare il rilevamento. Impulso delle lampadine con l'elettricità CA che le attraversa: se la frequenza CA è 50Hz, gli impulsi di luce sono da 50Hz. Per un essere umano, questi impulsi non vengono notati. Tuttavia, la fotocamera da 30 fps di HoloLens vede queste modifiche: alcuni fotogrammi saranno ben illuminati, alcuni saranno poco illuminati e alcuni saranno sovraesposti in quanto la fotocamera tenta di compensare gli impulsi di luce.  
+Anche i diversi tipi di luce in uno spazio possono influenzare il rilevamento. Impulso delle lampadine con l'elettricità CA: se la frequenza CA è 50Hz, gli impulsi di luce sono da 50Hz. Tale pulsazione non viene notata dagli esseri umani. Tuttavia, la fotocamera da 30 fps di HoloLens nota tali modifiche: alcuni fotogrammi saranno ben illuminati, altri poco illuminati e altri ancora sovraesposti, in quanto la fotocamera tenta di compensare gli impulsi di luce.  
 
-Negli Stati Uniti, lo standard di frequenza di elettricità è 60hz, quindi gli impulsi della lampadina sono armonizzati con la frequenza di fotogrammi di HoloLens: 60hz si allinea con la frequenza di 30 fotogrammi FPS di HoloLens. Tuttavia, molti paesi hanno uno standard di frequenza CA di 50hz, il che significa che alcuni fotogrammi HoloLens verranno acquisiti durante gli impulsi e altri no. In particolare, l'illuminazione fluorescente in Europa è nota per causare problemi.  
+Negli Stati Uniti, lo standard di frequenza di elettricità è 60hz, quindi gli impulsi della lampadina vengono adattati alla frequenza di fotogrammi di HoloLens: 60hz si allinea con la frequenza di 30 fotogrammi al secondo di HoloLens. Tuttavia, molti paesi hanno uno standard di frequenza AC di 50 Hz, il che significa che alcuni fotogrammi HoloLens verranno acquisiti durante gli impulsi e mentre altri no. In particolare, l'illuminazione fluorescente in Europa è nota per causare problemi.  
 
 Esistono alcune operazioni che puoi provare per risolvere i problemi di sfarfallio. La temperatura, l'età della lampadina e i cicli di riscaldamento sono cause comuni di sfarfallio fluorescente e la sostituzione delle lampadine può essere utile. Anche le operazioni per serrare bene le lampadine e verificare che la corrente sia sempre costante possono essere di aiuto.  
 
@@ -53,23 +53,23 @@ HoloLens utilizza punti di riferimento ambientali univoci, noti anche come *funz
 
 Un dispositivo non può quasi mai eseguire il rilevamento in un'area povera di funzionalità, perché il dispositivo non ha modo di sapere dove si trova nello spazio. L'aggiunta di funzionalità alle pareti di uno spazio è in genere un buon modo per migliorare il rilevamento. I poster, i simboli attaccati su una parete, le piante, oggetti univoci o altri elementi simili possono aiutare allo stesso modo. Una scrivania disordinata è un buon esempio di un ambiente che comporta un rilevamento, in quanto sono disponibili numerose funzionalità diverse all'interno di un'unica area.  
 
-Inoltre, utilizza funzionalità univoche nello stesso spazio. Lo stesso poster ripetuto più volte su una parete, ad esempio, causerà confusione per i dispositivi perché HoloLens non saprà quale dei manifesti ripetuti sta esaminando. Un modo comune per aggiungere funzionalità univoche consiste nell'usare righe di nastro adesivo per creare modelli univoci e non ripetitivi lungo le pareti e il pavimento di uno spazio.  
+Inoltre, utilizza funzionalità univoche nello stesso spazio. Ad esempio, se uno stesso poster viene ripetuto più volte su un muro, ciò causerà confusione nel dispositivo poiché HoloLens non saprà quale dei poster che vengono ripetuti sta guardando. Un modo comune per aggiungere funzionalità univoche consiste nell'usare righe di nastro adesivo per creare modelli univoci e non ripetitivi lungo le pareti e il pavimento di uno spazio.  
 
 Una buona domanda da porsi è: se hai visto solo una piccola parte della scena, saresti in grado di individuarti in modo univoco nello spazio? In caso contrario, è probabile che il dispositivo possa avere anche problemi di rilevamento.
 
 #### Buchi neri
 
-Se hai due aree o regioni identiche che sembrano coincidere, il tracciatore potrebbe pensare che siano uguali. In questo modo il dispositivo è indotto a pensare di trovarsi altrove. Questi tipi di aree ripetitive vengono chiamati *buchi neri*.  
+Se sono presenti due aree o regioni identiche, il tracciatore potrebbe pensare che siano uguali. In questo modo il dispositivo potrebbe pensare che si trova altrove. Questi tipi di aree ripetitive vengono chiamati *buchi neri*.  
 
-Per impedire il verificarsi di buchi neri, prova a impedire la presenza di aree identiche nello stesso spazio. Le aree identiche possono talvolta includere stazioni di fabbrica, finestre su un edificio, server rack o stazioni di lavoro. Le aree di etichettatura o l'aggiunta di funzionalità univoche a ciascuna area di aspetto simile consentono di attenuare i buchi neri.
+Per impedire il verificarsi di buchi neri, prova a impedire la presenza di aree identiche nello stesso spazio. Le aree identiche possono talvolta includere stazioni di fabbrica, finestre su un edificio, server rack o stazioni di lavoro. L’etichettatura delle aree o l’aggiunta di funzionalità univoche a ciascuna area di aspetto simile consentono di attenuare i buchi neri.
 
 ### Movimento in uno spazio
 
 Se l'ambiente viene costantemente spostato e modificato, il dispositivo non dispone di funzionalità stabili da individuare.  
 
-Più oggetti in movimento si trovano in uno spazio, tra cui le persone, più facile è perdere il rilevamento. Nastri trasportatori che si muovono, elementi in diversi stati di costruzione e molte persone in uno spazio sono fattori che notoriamente causano problemi di rilevamento.
+Maggiore è il numero di oggetti in movimento presenti in uno spazio, incluse le persone, più facile sarà perdere il rilevamento. Nastri trasportatori che si muovono, elementi in diversi stati di costruzione e molte persone in uno spazio sono fattori che notoriamente causano problemi di rilevamento.
 
-HoloLens può adattarsi rapidamente a queste modifiche, ma solo quando l'area è chiaramente visibile per il dispositivo. Le aree che non vengono viste abbastanza frequentemente possono rientrare in ritardo rispetto alla realtà causando errori nella mappa spaziale. Ad esempio, un utente esegue la scansione di un amico e quindi si gira mentre l'amico lascia la stanza. Una rappresentazione 'fantasma' dell'amico resterà nei dati di mapping spaziale finché l'utente non esegue nuovamente l'analisi dello spazio vuoto.
+HoloLens può adattarsi rapidamente a queste modifiche, ma solo quando l'area è chiaramente visibile per il dispositivo. Le aree che non vengono viste con frequenza possono rimanere indietro rispetto alla realtà, causando errori nella mappa spaziale. Ad esempio, un utente esegue la scansione di un amico e quindi si gira mentre l'amico lascia la stanza. Una rappresentazione 'fantasma' dell'amico resterà nei dati di mapping spaziale finché l'utente non esegue nuovamente l'analisi dello spazio vuoto.
 
 ### Vicinanza dell'utente agli elementi nello spazio
 
@@ -87,7 +87,7 @@ Gli oggetti meno lucidi sono più facili da rilevare.
 
 Se è abilitata la connessione Wi-Fi, i dati della mappa saranno correlati con un'impronta digitale Wi-Fi, anche quando non sono connessi a una rete/router WiFi effettiva. Senza info sul Wi-Fi, lo spazio e gli ologrammi potrebbero essere leggermente più lenti da riconoscere. Se i segnali Wi-Fi cambiano in modo significativo, il dispositivo potrebbe pensare di trovarsi in uno spazio completamente diverso.
 
-L'identificazione della rete (ad esempio SSID o indirizzo MAC) non viene inviata a Microsoft e tutti i riferimenti al Wi-Fi vengono mantenuti in locale su HoloLens.
+L'identificazione di rete (come SSID o indirizzo MAC) non viene inviata a Microsoft e tutti i riferimenti Wi-Fi vengono mantenuti localmente solo in HoloLens.
 
 ## Mapping di nuovi spazi
 
@@ -95,19 +95,19 @@ Quando immetti un nuovo spazio (o ne carichi uno esistente), vedrai una grafica 
 
 ## Gestione dell'ambiente
 
-Esistono due impostazioni che consentono agli utenti di "pulire" gli ologrammi e fare in modo che HoloLens "dimentichi" uno spazio. Si trovano in **Ologrammi e ambienti** nell'app Impostazioni, con la seconda impostazione visualizzata anche in **Privacy** nell'app Impostazioni.  
+Esistono due impostazioni, che consentono agli utenti di "pulire" gli ologrammi e fare in modo che HoloLens "dimentichi" uno spazio. Si trovano in **Ologrammi e ambienti** nell'app Impostazioni, con la seconda impostazione visualizzata anche in **Privacy** nell'app Impostazioni.  
 
 1. **Eliminare ologrammi nelle vicinanze**. Quando selezioni questa impostazione, HoloLens cancellerà tutti gli ologrammi ancorati e tutti i dati della mappa archiviati per lo "spazio corrente" in cui si trova il dispositivo. Una nuova sezione della mappa verrebbe creata e archiviata nel database per tale posizione dopo che gli ologrammi sono stati nuovamente posizionati nello stesso spazio.
 
-1. **Elimina tutti gli ologrammi**. Selezionando questa impostazione, HoloLens cancellerà TUTTI i dati delle mappe e gli ologrammi ancorati nell'intero database di spazi. Gli ologrammi non verranno individuati nuovamente e tutti gli ologrammi devono essere riposizionati per archiviare nuovamente sezioni della mappa nel database.
+1. **Eliminare tutti gli ologrammi.** Selezionando questa impostazione, HoloLens cancellerà TUTTI i dati della mappa e gli ologrammi ancorati negli interi database di spazi. Gli ologrammi non verranno individuati nuovamente e tutti gli ologrammi devono essere riposizionati per archiviare nuovamente sezioni della mappa nel database.
 
 ## Qualità dell'ologramma
 
 Gli ologrammi possono essere posizionati in tutto l'ambiente, in alto, in basso e intorno a te, ma li vedrai attraverso un [fotogramma olografico](https://docs.microsoft.com/windows/mixed-reality/holographic-frame) che si trova davanti agli occhi. Per ottenere la visualizzazione ottimale, assicurati di regolare il dispositivo in modo da poter vedere l'intero fotogramma. E non esitare a esplorare l'ambiente circostante.
 
-Per fare in modo che gli [ologrammi](https://docs.microsoft.com/windows/mixed-reality/hologram) appaiono nitidi, chiari e stabili, HoloLens deve essere calibrato solo per te. Quando configuri per la prima volta HoloLens, verrai guidato attraverso questo processo. In seguito, se gli ologrammi non hanno un aspetto corretto o se si verificano molti errori, puoi apportare modifiche.
+Per fare in modo che gli [ologrammi](https://docs.microsoft.com/windows/mixed-reality/hologram) appaiono nitidi, chiari e stabili, HoloLens deve essere calibrato solo per te. Quando si configura HoloLens per la prima, si verrà guidati attraverso questo processo. In seguito, se gli ologrammi non hanno un aspetto corretto o se si verificano molti errori, è possibile apportare modifiche.
 
-Se si verificano problemi di mapping degli spazi, prova a eliminare gli ologrammi nelle vicinanze e a rimappare lo spazio.
+Se si verificano problemi durante il mapping degli spazi, è consigliabile provare a eliminare gli ologrammi nelle vicinanze e a ridefinire lo spazio.
 
 ### Calibrazione
 

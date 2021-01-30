@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: db8f7774bc3c5718a09a99d8d4137d2ed3271bc1
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: a339470e0c8be2b1cdf492bd14bad1ab724fdc3e
+ms.sourcegitcommit: c72a3c60d4105c77407e6d04c95fadd08f102775
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283037"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "11304969"
 ---
 # Hardware HoloLens 2
 
@@ -29,8 +29,10 @@ Microsoft HoloLens 2 è un computer olografico autonomo.  Perfeziona il percorso
 
 - **Visiera**. Contiene i sensori e i display di HoloLens. Puoi ruotare la visiera in alto mentre indossi il dispositivo HoloLens.
 - **Fascia**. Per accendere il dispositivo HoloLens, usa la rotellina di regolazione per espandere la fascia. Con HoloLens in posizione, serra la rotellina di regolazione girando verso destra, finché la fascia non sarà indossata in modo confortevole.
-- **Pulsanti di luminosità**. Quando indossi HoloLens, i pulsanti di luminosità si trovano sul lato sinistro del dispositivo.
-- **Pulsanti del volume**. Quando indossi HoloLens, i pulsanti del volume si trovano sul lato destro del dispositivo.
+- **Pulsanti di luminosità**. Quando indossi HoloLens, i pulsanti di luminosità si trovano sul lato sinistro della visiera.
+- **Pulsanti del volume**. Quando indossi HoloLens, i pulsanti del volume si trovano sul lato destro della visiera.
+- **Pulsante di alimentazione**. Quando indossi HoloLens, il pulsante di alimentazione si trova sul lato destro della copertura esterna posteriore.
+- **Porta USB-C**. Quando indossi HoloLens, la porta USB-C si trova sul lato destro della copertura esterna posteriore sotto il pulsante di alimentazione.
 
 ## Contenuto della confezione
 

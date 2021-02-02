@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8d17276adff49fcc7b6d2947539d17392a76eee5
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: 1ce1ec05e0eb3c17b6b79a8cdae009c5d917e21e
+ms.sourcegitcommit: b24acae8bdc56442ae0cb8290ab5e9464e6f564e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283857"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "11306655"
 ---
 # Domande frequenti su HoloLens 2 Development Edition
 
@@ -31,7 +31,7 @@ HoloLens 2 Development Edition include un HoloLens 2, $500 in Azure Credits, una
 
 ### Qual è la differenza tra HoloLens 2 e HoloLens 2 Development Edition?
 
-Si può usare solo l'edizione di sviluppo HoloLens 2 per la creazione interna e il test delle applicazioni aziendali da usare in connessione con la HoloLens 2 (Commercial Edition) in un'impostazione di produzione. Durante l'acquisto della versione di sviluppo, Microsoft può, a sua esclusiva discrezione, avere determinati diritti identificati durante il processo di checkout, ad esempio il diritto di riscattare determinati crediti di sconto o l'accesso di prova a determinati servizi o strumenti Microsoft o di terze parti per un periodo di tempo limitato. [Scopri di più](hololens2-options.md?tabs=developeredition#1-learn-about-the-development-edition)
+È possibile usare HoloLens 2 Development Edition solo per creare e testare applicazioni aziendali interne da usare con la HoloLens 2 (Commercial Edition) in un'impostazione di produzione. Durante l'acquisto della versione di sviluppo, Microsoft può, a sua esclusiva discrezione, avere determinati diritti identificati durante il processo di checkout. Questi diritti includono il diritto di riscattare determinati crediti di sconto o l'accesso di prova a determinati servizi o strumenti Microsoft o di terze parti per un periodo di tempo limitato. [Altre informazioni](hololens2-options.md#learn-about-the-development-edition)
 
 ### È possibile usare una versione di HoloLens 2 per lo sviluppo?
 
@@ -47,11 +47,11 @@ No, non offriamo piani di trasferimento del dispositivo. Non è possibile esegui
 
 ### Che cos'è Unity Pro?
 
-Unity Pro è una piattaforma 3D in tempo reale per studi/aziende di piccole e medie dimensioni. È progettato per i team con una combinazione di competenze tecniche e non tecniche. [Scopri di più](https://store.unity.com/products/unity-pro)
+Unity Pro è una piattaforma 3D in tempo reale per studi/aziende di piccole e medie dimensioni. È progettato per i team con una combinazione di competenze tecniche e non tecniche. [Altre informazioni](https://store.unity.com/products/unity-pro)
 
 ### Che cos'è il plug-in Pixyz?
 
-Il plug-in Pixyz legge e converte quasi tutti i formati, lo ottimizza e lo inserisce in Unity e lo mette in fase per creare asset pronti per l'uso per le applicazioni in tempo reale. [Scopri di più](https://unity.com/products/pixyz)
+Il plug-in Pixyz legge e converte quasi tutti i formati, lo ottimizza e lo inserisce in Unity e lo mette in fase per creare asset pronti per l'uso per le applicazioni in tempo reale. [Altre informazioni](https://unity.com/products/pixyz)
 
 ### Quando sarà disponibile il finanziamento per la versione di sviluppo di HoloLens 2?
 
@@ -83,11 +83,11 @@ No, questo dispositivo è lo stesso da un punto di vista requisiti hardware. L'e
 
 ### Come si usa il Toolkit Mixed Reality-unità per lo sviluppo di HoloLens 2 Development Edition?
 
-MRTK-Unity è un progetto basato su Microsoft che fornisce un set di componenti e funzionalità, usato per accelerare lo sviluppo di app multipiattaforma per il signor in Unity. [Scopri di più](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
+MRTK-Unity è un progetto basato su Microsoft che fornisce un set di componenti e funzionalità, usato per accelerare lo sviluppo di app multipiattaforma per il signor in Unity. [Altre informazioni](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
 
 ### Come è possibile usare Mixed Reality Toolkit-Unreal UXT per lo sviluppo della mia versione di sviluppo di HoloLens 2?
 
-MRTK-Unreal è il primo componente degli strumenti UX che deve essere rilasciato ed è attualmente supportato solo in HoloLens 2. Il plug-in componente include il codice, le cianografie e gli asset di esempio delle caratteristiche comuni di UX per la simulazione di input, gli attori delle interazioni manuali, i componenti per i pulsanti per la stampa, i componenti del manipolatore e [Scopri di più](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/WelcomeToUXTools.html)
+MRTK-Unreal è il primo componente degli strumenti UX che deve essere rilasciato ed è attualmente supportato solo in HoloLens 2. Il plug-in componente include il codice, le cianografie e gli asset di esempio delle caratteristiche comuni di UX per la simulazione di input, gli attori delle interazioni manuali, i componenti per i pulsanti per la stampa, i componenti del manipolatore e [Altre informazioni](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/WelcomeToUXTools.html)
 
 ### Le versioni del sistema operativo per l'edizione di sviluppo di HoloLens 2 sono le stesse di HoloLens 2?
 
@@ -99,15 +99,15 @@ Se si rispettano i termini e le condizioni di HoloLens 2 Development Edition, s�
 
 ### Dove è possibile ottenere altre informazioni sull'edizione di sviluppo di HoloLens 2?
 
-Visita la pagina della documentazione di HoloLens 2 Development Edition. [Scopri di più](https://docs.microsoft.com/hololens/hololens2-options?tabs=device)
+Visita la pagina della documentazione di HoloLens 2 Development Edition. [Altre informazioni](https://docs.microsoft.com/hololens/hololens2-options?tabs=device)
 
 ### Dove è possibile ottenere altre informazioni sullo sviluppo di soluzioni di realtà miste?
 
-Visita l'introduzione alla documentazione per lo sviluppo di realtà mista. [Scopri di più](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unityhttps://docs.microsoft.com/en-us/windows/mixed-reality/develop/development?tabs=unity)
+Visita l'introduzione alla documentazione per lo sviluppo di realtà mista. [Altre informazioni](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unityhttps://docs.microsoft.com/en-us/windows/mixed-reality/develop/development?tabs=unity)
 
 ### Dove è possibile ottenere ulteriori informazioni sulla progettazione di soluzioni di realtà miste?
 
-Visita la documentazione introduttiva a Mixed Reality Design. [Scopri di più](https://docs.microsoft.com/windows/mixed-reality/design/design)
+Visita la documentazione introduttiva a Mixed Reality Design. [Altre informazioni](https://docs.microsoft.com/windows/mixed-reality/design/design)
 
 ### Dove è possibile ottenere supporto per HoloLens Developer Edition?
 
@@ -170,7 +170,7 @@ Per il supporto specifico di Pixyz (dopo aver riscattato la versione di valutazi
 
 ### Come si può riscattare il credito di $500 Azure?
 
-Per riscattare i crediti di $500 Azure, riscattare il codice promozionale di Azure pass e attivare l'abbonamento. [Scopri di più](https://www.microsoftazurepass.com/Home/HowTo?Length=5)
+Per riscattare i crediti di $500 Azure, riscattare il codice promozionale di Azure pass e attivare l'abbonamento. [Altre informazioni](https://www.microsoftazurepass.com/Home/HowTo?Length=5)
 
 Esaminare il contratto di [abbonamento](https://azure.microsoft.com/support/legal/subscription-agreement/?country=US) di Azure pass e [fornire dettagli](https://azure.microsoft.com/en-us/offers/azure-pass/).
 
@@ -184,4 +184,4 @@ Con i crediti di Azure puoi iniziare a creare con il set di servizi cloud in con
 
 ### Dove è possibile ottenere ulteriori informazioni sui servizi di realtà mista di Azure?
 
-Microsoft offre un set di servizi di realtà mista per consentire agli sviluppatori di creare e testare soluzioni di realtà miste. [Scopri di più](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services)
+Microsoft offre un set di servizi di realtà mista per consentire agli sviluppatori di creare e testare soluzioni di realtà miste. [Altre informazioni](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services)

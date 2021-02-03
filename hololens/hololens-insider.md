@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 1/21/2021
+ms.date: 2/2/2021
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7cc08396925368be5230a078de6fb4c7cd0a8b24
-ms.sourcegitcommit: 063aa10baa190429b7248f7f1384afba7975861e
+ms.openlocfilehash: e36d25a31495b09e2e9f08f8ea5a8bf34fadafeb
+ms.sourcegitcommit: 12d96e5d0c733e733f6ff7da2f4efb8e0f96c27b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "11297766"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "11311832"
 ---
 # Insider Preview per Microsoft HoloLens
 
@@ -34,6 +34,7 @@ Siamo entusiasti di iniziare a volare nuove funzionalità per i partecipanti al 
 | Nome caratteristica                                              | Descrizione breve                                                                      | Disponibile nella build |
 |-----------------------------------------------------------|----------------------------------------------------------------------------------------|--------------------|
 | [Nuovo Microsoft Edge](#introducing-the-new-microsoft-edge) | Il nuovo Edge Microsoft basato su cromo è ora disponibile per HoloLens 2                         | 20279,1006 |
+| [Visualizzatore di WebXR e 360](#webxr-and-360-viewer)             | Provare le esperienze Web immersive e la riproduzione di video di 360                                           | 20289,1000 |
 | [App nuove impostazioni](#new-settings-app)                     | L'app impostazioni legacy viene sostituita da una versione aggiornata con nuove funzionalità e impostazioni | 20279,1006 |
 | [Selezione app predefinita](#default-app-picker)                 | Scegliere l'app che deve essere avviata per ogni file o tipo di collegamento                                      | 20279,1006 |
 | [Office Web App](#office-web-app)                         | Un collegamento a Office Web App è ora elencato in "tutte le app"                                   | 20279,1006 |
@@ -133,6 +134,57 @@ Per installare i canali Microsoft Edge insider in HoloLens 2 è disponibile un p
 
 > [!NOTE]
 > Durante questo Windows Insider Preview per HoloLens 2, la versione di Microsoft Edge nel dispositivo potrebbe essere superiore a quella disponibile in alcuni (o tutti) dei canali Microsoft Edge Insider. Questo per garantire che le nuove funzionalità e le correzioni in particolare destinate al Web browser in HoloLens 2 siano disponibili al più presto possibile per i partecipanti al programma Windows Insider. Subito dopo il rilascio pubblico del prossimo aggiornamento di Windows, le build del canale Microsoft Edge Insider supereranno la versione di Microsoft Edge in HoloLens 2.
+
+### Visualizzatore di WebXR e 360
+
+*Aggiunta in Windows Insider Build 20289,1000*
+
+Il nuovo Microsoft Edge include il supporto per WebXR, che è il nuovo standard per la creazione di esperienze Web Immersive (sostituendo WebVR). Molte esperienze Web immersive sono state progettate pensando a VR (sostituiscono il campo di visualizzazione con un ambiente virtuale), ma queste esperienze sono supportate anche da HoloLens 2. Lo standard WebXR consente inoltre di sfruttare le esperienze Web Immersive in realtà aumentata e mista che sfruttano l'ambiente fisico. Quando gli sviluppatori dedicano più tempo a WebXR, anticipiamo che le nuove esperienze immersive di Augmented e Mixed Reality arriveranno per i clienti di HoloLens 2 da provare.
+
+L'estensione del Visualizzatore di 360 è basata su WebXR e viene installata automaticamente accanto al nuovo Microsoft Edge in HoloLens 2. Questa estensione Web ti offre la possibilità di immergerti in video di 360 gradi. YouTube offre la più grande selezione di video di 360, quindi ti invitiamo a iniziare da lì.
+
+#### Come usare WebXR
+
+1. Passare a un sito Web con il supporto di WebXR.
+1. Selezionare il pulsante **Immetti VR** nel sito Web. La posizione e la rappresentazione visiva di questo pulsante possono variare in base al sito Web, ma possono avere un aspetto simile al seguente:
+
+    ![Esempio di pulsante Inserisci VR](images/75px-enter-vr.png)
+
+1. La prima volta che si tenta di avviare un'esperienza di WebXR su un dominio specifico, il browser chiederà il consenso per l'immissione di una visualizzazione immersiva, selezionare **Consenti**.
+1. USA i [movimenti di HoloLens 2](hololens2-basic-usage.md#the-hand-tracking-frame) per modificare l'esperienza.
+1. Se l'esperienza non ha un pulsante **Esci** , usa il [gesto Start](hololens2-basic-usage.md#start-gesture) per tornare a casa.
+
+**Esempi di WebXR consigliati**
+- Visualizzatore di 360 (vedere la sezione successiva)
+- [XR dinosauri](https://www.xrdinosaurs.com/)
+- [Barista Express](https://constructarca.de/game/barista-express/)
+- [Colore WebXR](https://threejs.org/examples/webxr_vr_paint.html)
+
+#### Come usare il Visualizzatore di 360
+
+1. Passare a un video di 360 gradi su YouTube.
+1. Nel fotogramma video selezionare il pulsante dell'auricolare Mixed Reality:
+
+    ![Pulsante per attivare il Visualizzatore di 360](images/enter-360-viewer.jpg)
+
+1. La prima volta che si tenta di avviare il Visualizzatore di 360 in un dominio specifico, il browser chiederà il consenso per l'immissione di una visualizzazione immersiva. Selezionare **Consenti**.
+1. [Toccare aria](hololens2-basic-usage.md#select-using-air-tap) per visualizzare i controlli di riproduzione. Usare i [raggi delle mani e il tocco aria](hololens2-basic-usage.md#select-using-air-tap) per riprodurre/sospendere, saltare avanti/indietro, attivare/disattivare i sottotitoli o interrompere l'esperienza (che esce dalla visualizzazione immersiva). I controlli di riproduzione scompariranno dopo pochi secondi di inattività.
+
+#### Principali problemi noti di WebXR e 360 Viewer
+- Nelle esperienze WebXR gli ologrammi possono spostarsi o inclinarsi quando si inclina la testa o si sposta intorno all'ambiente.
+- A seconda della complessità dell'esperienza di WebXR, il framerate può eliminare o balbettare.
+- Le articolazioni delle mani articolate non sono ancora disponibili in WebXR.
+- Quando si esce da un'esperienza di WebXR o di un visualizzatore di 360, potrebbero essere necessarie 30 secondi o più per ricomparire gli ologrammi della realtà mista Home.
+- i video di 360 provenienti da siti Web diversi da YouTube potrebbero non funzionare come previsto.
+- Se i video di 360 non entrano in visualizzazione immersiva (o se il pulsante dell'auricolare mixed reality non viene visualizzato), provare a aggiornare la pagina.
+- Le didascalie non sono ancora visibili nel Visualizzatore di 360 in HoloLens 2.
+- La sospensione di un video nel Visualizzatore di 360 interrompe il rendering del video (ma se si seleziona il pulsante Riproduci riprende correttamente la riproduzione).
+- Il pulsante "prossimo video" nel Visualizzatore di 360 non è attualmente in uso.
+- È possibile riprodurre video 2D in modalità "Theater" immersiva, ma la frequenza dei fotogrammi sarà inferiore a 30 fps.
+
+#### Fornire commenti e suggerimenti su WebXR e 360 Viewer
+
+Condividere feedback e bug con il team tramite la caratteristica **Invia feedback** nel nuovo Microsoft Edge.
 
 ### App nuove impostazioni
 

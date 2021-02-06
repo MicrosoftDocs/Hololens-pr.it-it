@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1348e6f33f5ea64c6fd3572b09c18fdcb6ae63e6
-ms.sourcegitcommit: 39424078a75feaf6a1e9b0547cb7d5de9847faf3
+ms.openlocfilehash: 9de0bbe4cc8d3056a1f34647c0779ebdff1476aa
+ms.sourcegitcommit: f122e2c0c7c0366d88fa3efa3590e9e237eaf925
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "11312651"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "11313553"
 ---
 # Panoramica di HoloLens 2
 
@@ -66,7 +66,7 @@ Informazioni sull'esteso [portfolio di HoloLens 2](https://www.microsoft.com/hol
 
 ### **HoloLens 2 (solo dispositivo)**
 #### Informazioni su HoloLens 2
-L'utilizzo dei dispositivi HoloLens 2 in un ambiente commerciale può rappresentare uno strumento efficace per l'azienda o l'organizzazione. Qualsiasi dispositivo HoloLens 2 può essere usato da uno sviluppatore per creare app di realtà mista. 
+L'utilizzo dei dispositivi HoloLens 2 in un ambiente commerciale può rappresentare uno strumento efficace per l'azienda o l'organizzazione. Qualsiasi dispositivo HoloLens 2 può essere usato dagli sviluppatori per creare app di realtà mista. 
 
 <br>
 

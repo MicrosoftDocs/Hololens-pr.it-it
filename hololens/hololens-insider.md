@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e36d25a31495b09e2e9f08f8ea5a8bf34fadafeb
-ms.sourcegitcommit: 12d96e5d0c733e733f6ff7da2f4efb8e0f96c27b
+ms.openlocfilehash: 3d91c9cf1378fd06d1982b69177638354b552c6f
+ms.sourcegitcommit: feccd0135ac567d1217a1ac78a36f03321554305
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "11311832"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "11314007"
 ---
 # Insider Preview per Microsoft HoloLens
 
@@ -30,6 +30,11 @@ Benvenuti alle build di insider Preview più recenti per HoloLens! È facile [in
 ## Note sulla versione di Windows Insider
 
 Siamo entusiasti di iniziare a volare nuove funzionalità per i partecipanti al programma Windows Insider. Per gli aggiornamenti più recenti sarà possibile eseguire il volo per il canale dev. Continueremo ad aggiornare questa pagina man mano che aggiungiamo altre funzionalità e aggiornamenti alle nostre Build Insider di Windows.  Diventa entusiasta e pronto a combinare questi aggiornamenti nella tua realtà.
+
+> [!IMPORTANT]
+> Se in precedenza stavi usando l'app impostazioni o l'app Microsoft Edge in un chiosco, abbiamo sostituito queste app con le nuove app che usano un ID app diverso. Ti invitiamo vivamente a leggere [nuovi aumid per le nuove app in modalità Kiosk](#use-the-new-settings-and-edge-apps-in-kiosk-modes) . In questo modo, puoi continuare ad avere l'app impostazioni nel chiosco o includere la nuova app Microsoft Edge.
+
+<br>
 
 | Nome caratteristica                                              | Descrizione breve                                                                      | Disponibile nella build |
 |-----------------------------------------------------------|----------------------------------------------------------------------------------------|--------------------|
@@ -117,19 +122,19 @@ Visita la [Home page di Microsoft Edge Insider](https://www.microsoftedgeinsider
 Per installare i canali Microsoft Edge insider in HoloLens 2 è disponibile un paio di metodi:
 
 **Installazione diretta sul dispositivo (attualmente disponibile solo per i dispositivi non gestiti)**
-  1. In HoloLens 2, visitare la [pagina di download di Edge Insider](https://www.microsoftedgeinsider.com/download)
-  1. Selezionare il pulsante **Scarica per HoloLens 2** per il canale Insider di Edge che si vuole installare
-  1. Avviare il file msix scaricato dalla coda di download Edge o dalla cartella "download" del dispositivo (tramite Esplora file)
-  1. Il [programma di installazione dell'app](app-deploy-app-installer.md) verrà avviato
-  1. Selezionare il pulsante **Installa**
+  1. In HoloLens 2, visitare la [pagina di download di Edge Insider](https://www.microsoftedgeinsider.com/download).
+  1. Selezionare il pulsante **Scarica per HoloLens 2** per il canale Insider che si vuole installare.
+  1. Avviare il file msix scaricato dalla coda di download Edge o dalla cartella "download" del dispositivo (tramite Esplora file).
+  1. Il [programma di installazione dell'app](app-deploy-app-installer.md) verrà avviato.
+  1. Selezionare il pulsante **Installa** .
   1. Dopo aver completato l'installazione, si troverà Microsoft Edge beta, dev o Canary come voce separata nell'elenco **tutte le app** del menu Start.
 
 **Installare tramite PC con Windows Device Portal (è necessario abilitare la [modalità sviluppatore](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal) in HoloLens 2)**
-  1. Nel PC, visitare la [pagina di download di Edge Insider](https://www.microsoftedgeinsider.com/download)
-  1. Selezionare il **pulsante della freccia a discesa** accanto al pulsante "Scarica per Windows 10" per il canale Insider di Edge che si vuole installare
-  1. Selezionare **HoloLens 2** nel menu a discesa
-  1. Salvare il file con estensione msix nella cartella "Downloads" del PC (o in un'altra cartella che è possibile trovare facilmente)
-  1. Usare [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app) nel PC per installare il file msix scaricato in HoloLens 2
+  1. Nel PC, visita la [pagina di download di Edge Insider](https://www.microsoftedgeinsider.com/download).
+  1. Selezionare il **pulsante della freccia a discesa** accanto al pulsante "Scarica per Windows 10" per il canale Insider di Edge che si vuole installare.
+  1. Selezionare **HoloLens 2** nel menu a discesa.
+  1. Salvare il file con estensione msix nella cartella "download" del PC (o in un'altra cartella che è possibile trovare facilmente).
+  1. Usare [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app) nel PC per installare il file msix scaricato in HoloLens 2.
   1. Dopo aver completato l'installazione, si troverà Microsoft Edge beta, dev o Canary come voce separata nell'elenco **tutte le app** del menu Start.
 
 > [!NOTE]
@@ -196,27 +201,29 @@ Con questa versione, stiamo introducendo una nuova versione dell'app Impostazion
 ![Home page dell'app nuove impostazioni](images/new-settings-app.png)
 
 **Nuove funzionalità e impostazioni**
-- Ricerca impostazioni: cercare le impostazioni dalla Home page delle impostazioni usando le parole chiave o il nome dell'impostazione
+- Ricerca impostazioni: cercare le impostazioni dalla Home page delle impostazioni usando le parole chiave o il nome dell'impostazione.
 - Sistema > audio:
-  - Dispositivi audio di input e output: scegliere in modo indipendente i dispositivi audio di input e output, ad esempio ascoltare l'audio tramite auricolari Bluetooth o usare un microfono USB-C per l'input audio. Nota: i microfoni Bluetooth non sono supportati da HoloLens 2.
-  - Volume dell'app: modificare in modo indipendente il volume di ogni app
-- Sistema > Power & Sleep: scegliere quando il dispositivo deve andare a dormire dopo un periodo di inattività
-- Sistema > batteria: abilitare manualmente la modalità risparmio batteria o impostare una soglia di batteria a cui si attiva automaticamente la modalità risparmio batteria del punto
-- Dispositivi > USB: è possibile disabilitare le connessioni USB per impostazione predefinita
+  - Dispositivi audio di input e output: scegliere in modo indipendente i dispositivi audio di input e output, ad esempio ascoltare l'audio tramite auricolari Bluetooth o usare un microfono USB-C per l'input audio. 
+    > [!NOTE]
+    > I microfoni Bluetooth non sono supportati da HoloLens 2.
+  - Volume dell'app: modificare in modo indipendente il volume di ogni app.
+- Sistema > Power & Sleep: scegliere quando il dispositivo deve andare a dormire dopo un periodo di inattività.
+- Sistema > batteria: abilitare manualmente la modalità di risparmio batteria o impostare una soglia della batteria a cui si attiva automaticamente la modalità risparmio batteria.
+- Dispositivi > USB: è possibile disabilitare le connessioni USB per impostazione predefinita.
 - Rete & Internet:
-  - Le schede Ethernet USB-C compariranno ora in rete & Internet
-  - Le impostazioni della scheda Ethernet USB-C sono ora disponibili, incluso il relativo indirizzo IP
-  - Ora è possibile abilitare la modalità aereo in HoloLens 2
+  - Le schede Ethernet USB-C compariranno ora in Network & Internet.
+  - Le impostazioni della scheda Ethernet USB-C sono ora disponibili, incluso il relativo indirizzo IP.
+  - Ora è possibile abilitare la modalità aeroplano in HoloLens 2.
 - App: puoi reimpostare le app predefinite usate per i tipi di file e collegamenti. Per altre informazioni, vedere [selezione delle app predefinite](#default-app-picker) .
 - Account > altri utenti: i proprietari di dispositivi possono aggiungere utenti, aggiornare gli utenti standard ai proprietari dei dispositivi, declassare i proprietari dei dispositivi agli utenti standard e rimuovere gli utenti.
-- Accesso facilitato: modificare le dimensioni del testo e alcuni effetti visivi
+- Accesso facilitato: modificare le dimensioni del testo e alcuni effetti visivi.
 
 **Problemi noti**
-- Le finestre delle impostazioni precedentemente inserite verranno rimosse (Vedi nota sopra)
-- La visita alla pagina notifiche può arrestarsi in modo anomalo nell'app Impostazioni (analisi)
-- La pagina Ethernet attualmente non viene visualizzata (per essere risolta a breve)
-- Non è più possibile rinominare il dispositivo con l'app Impostazioni (gli amministratori IT possono usare i pacchetti di provisioning o MDM per rinominare i dispositivi)
-- L'utilizzo della batteria per il nuovo Microsoft Edge potrebbe non essere corretto, a causa della sua natura di applicazione desktop Win32 supportata da un layer di adapter UWP (nessuna correzione anticipata presto)
+- Le finestre delle impostazioni precedentemente inserite verranno rimosse (Vedi nota sopra).
+- La visita alla pagina notifiche può arrestarsi in modo anomalo nell'app Impostazioni (analisi).
+- La pagina Ethernet attualmente non viene visualizzata (per essere risolta a breve).
+- Non è più possibile rinominare il dispositivo con l'app Impostazioni (gli amministratori IT possono usare i pacchetti di provisioning o MDM per rinominare i dispositivi).
+- L'utilizzo della batteria per il nuovo Microsoft Edge potrebbe non essere corretto, a causa della sua natura di applicazione desktop Win32 supportata da un layer di adapter UWP (nessuna correzione anticipata presto).
 
 ### Selezione app predefinita
 
@@ -341,7 +348,7 @@ Per eseguire il test con un FFU firmato per il volo, è necessario prima di tutt
 
     1. Scaricare FFU dal PC [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) .
     
-    1. Installare ARC (Advanced Recovery Companion) da Microsoft Store: [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8)
+    1. Installare ARC (Advanced Recovery Companion) da Microsoft Store: [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8) .
     
 1. In HoloLens-Flight Unlock: Open **Settings**  >  **Update & Security**  >  **Windows Insider Program** , quindi iscriviti, riavvia il dispositivo.
 

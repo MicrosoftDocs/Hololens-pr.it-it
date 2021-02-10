@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 3d91c9cf1378fd06d1982b69177638354b552c6f
-ms.sourcegitcommit: feccd0135ac567d1217a1ac78a36f03321554305
+ms.openlocfilehash: 4573f3b2e88af36c397fd1735ec9c6a96b4c52d6
+ms.sourcegitcommit: 76a99370ab841c06e533cc2f4a0c78c1fb7eac70
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "11314007"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "11324799"
 ---
 # Insider Preview per Microsoft HoloLens
 
@@ -48,6 +48,9 @@ Siamo entusiasti di iniziare a volare nuove funzionalità per i partecipanti al 
 | [Nuovo Aumid per le nuove app in modalità Kiosk](#use-the-new-settings-and-edge-apps-in-kiosk-modes) | Aumid per le nuove impostazioni e le app Edge | 20279,1006 |
 | [Miglioramento della modalità di mancato funzionamento del chiosco](#kiosk-mode-behavior-changes-for-handling-of-failures) | La modalità Kiosk cerca l'accesso assegnato globale prima del menu Start vuoto. | 20279,1006 |
 | [Configurare la diagnostica di fallback](#configuring-fallback-diagnostics-via-settings-app) | Impostazione del comportamento di diagnostica di fallback nell'app impostazioni | 20279,1006 |
+| [Condividere elementi con i dispositivi vicini](#share-things-with-nearby-devices) | Condividere file o URL da un HoloLens a un PC | 20279,1006 |
+| [Nuovo strumento di risoluzione dei problemi di aggiornamento del sistema operativo](#new-os-update-troubleshooter) | Nuovo strumento di risoluzione dei problemi nelle impostazioni per gli aggiornamenti del sistema operativo | 20279,1006 |
+| [Miglioramenti e correzioni nell'aggiornamento](#improvements-and-fixes-in-the-update) | Correzioni aggiuntive nell'aggiornamento. | 20279,1006 |
 
 ### Introduzione al nuovo Microsoft Edge
 
@@ -304,6 +307,20 @@ Ora, nell'app Impostazioni, un utente può configurare il comportamento della [d
 
 > [!NOTE]
 > Se è configurato un criterio MDM per il dispositivo, l'utente non sarà in grado di eseguire l'override di tale comportamento.  
+
+### Condividere elementi con i dispositivi vicini
+
+Condividere elementi con i dispositivi vicini di Windows 10, inclusi i PC e altri dispositivi HoloLens in cui è in uso HoloLens Insider Build 20279.1006 +. Puoi provarlo nelle ****  ->  ****  ->  **esperienze condivise** di sistema delle impostazioni per condividere file o URL da un HoloLens a un PC. Per altre informazioni, vedere altre informazioni su come [condividere elementi con i dispositivi vicini in Windows 10](https://support.microsoft.com/windows/share-things-with-nearby-devices-in-windows-10-0efbfe40-e3e2-581b-13f4-1a0e9936c2d9).
+
+Questa funzionalità può essere gestita tramite [connettività/AllowConnectedDevices](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowconnecteddevices).
+
+### Nuovo strumento di risoluzione dei problemi di aggiornamento del sistema operativo
+
+Oltre agli errori di risoluzione dei problemi precedenti nell'app Impostazioni, è stato aggiunto un nuovo strumento di risoluzione dei problemi con l'aggiunta dell'app nuove impostazioni per gli aggiornamenti del sistema operativo. Passare a **Impostazioni**  ->  **aggiornamento &amp; sicurezza**  ->  **risoluzione dei problemi**di  ->  **Windows Update** e selezionare **Avvia**. In questo modo puoi raccogliere le tracce durante la riproduzione del problema con gli aggiornamenti del sistema operativo per facilitare la risoluzione dei problemi con l'IT o il supporto.
+
+### Miglioramenti e correzioni nell'aggiornamento:
+
+- La [diagnostica offline](hololens-diagnostic-logs.md#offline-diagnostics) includerà anche altre informazioni sul dispositivo per il numero seriale e la versione del sistema operativo.
 
 
 

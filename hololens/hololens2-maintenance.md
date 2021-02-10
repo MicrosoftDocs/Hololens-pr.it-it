@@ -15,19 +15,19 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 65144a8c209b80ac32361933f94dd51447e095a6
-ms.sourcegitcommit: 17ad2c127ac9586e7644e6898585cbe4efa34bc1
+ms.openlocfilehash: 0d44a985d7f8a0ca7707e6471700320b832b0826
+ms.sourcegitcommit: 76a99370ab841c06e533cc2f4a0c78c1fb7eac70
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/09/2021
-ms.locfileid: "11319280"
+ms.locfileid: "11324784"
 ---
 # Domande frequenti sulle pulizia di HoloLens 2
 
 > [!IMPORTANT]  
 > Microsoft non può determinare l'efficacia di un determinato prodotto disinfettante nella lotta agli agenti patogeni, ad esempio COVID-19. Consultare le indicazioni dell'autorità pubblica sanitaria locale su come rimanere al sicuro da potenziali infezioni.  
 
-## Quali sono le istruzioni generali per la pulizia dei dispositivi HoloLens 2?
+## HoloLens 2 uso e manutenzione
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/HoloLens-2-Use-and-Care/player]
 
@@ -36,8 +36,12 @@ ms.locfileid: "11319280"
 **Per pulire il dispositivo**
 
 1. Rimuovere la polvere usando un panno in microfibra asciutto e privo di pelucchi per pulire delicatamente la superficie del dispositivo.
-1. Inumidire leggermente il panno usando l'alcool isopropilico "70%" e quindi usare il panno inumidito per pulire delicatamente la superficie del dispositivo.
-1. Far asciugare completamente il dispositivo.
+
+   ![Pulire mentre si tiene il pad della fronte](images/hl2-cleaning.png)
+
+2. Inumidire leggermente il panno usando l'alcool isopropilico "70%" e quindi usare il panno inumidito per pulire delicatamente la superficie del dispositivo.
+
+3. Far asciugare completamente il dispositivo.
 
 **Per pulire il pad della fronte**
 
@@ -54,7 +58,7 @@ No. I detergenti per lenti possono essere abrasivi per i rivestimenti della visi
 
 ## È possibile usare le salviette disinfettanti per pulire il dispositivo?
 
-Sì, se i wipe non contengono candeggina. È possibile usare salviette disinfettanti non candeggianti per [pulire delicatamente le superfici HoloLens](#what-are-the-general-cleaning-instructions-for-hololens-2-devices).  
+Sì, se i wipe non contengono candeggina. È possibile usare salviette disinfettanti non candeggianti per [pulire delicatamente le superfici HoloLens](#hololens-2-use-and-care).  
 
 > [!CAUTION]  
 > Evitare di usare salviette disinfettanti che contengono candeggina per pulire le superfici HoloLens. È accettabile usare salviettine candeggianti in situazioni critiche, quando non sono disponibili altri elementi. Tuttavia, la candeggina può danneggiare la visiera HoloLens o altre superfici.

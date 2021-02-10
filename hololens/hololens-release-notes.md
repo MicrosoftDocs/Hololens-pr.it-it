@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8dd5f4c50ebdab202d24d4a52d393b8bee086c7a
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: 7fa7fb4dbdb29b9f45ea7f06e09f40e745e147c9
+ms.sourcegitcommit: b46055bde70071ddaffb226e6f341a7a83253988
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11284097"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "11326008"
 ---
 # Note sulla versione di HoloLens 2
 
@@ -30,6 +30,20 @@ Siamo entusiasti di iniziare a volare nuove funzionalità per i partecipanti al 
 
 >[!NOTE]
 > Per leggere le note sulla versione dell'emulatore HoloLens, [visita l'archivio](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
+
+## Windows olografico, versione 20H2-aggiornamento di 2021 febbraio
+- Build 19041,1136
+
+Miglioramenti e correzioni nell'aggiornamento:
+
+- Risolve un problema relativo alla configurazione iniziale del dispositivo e allo Store degli aggiornamenti delle app.
+- Risolve un problema intorno agli aggiornamenti e ai voli per versioni successive di HoloLens.
+- Rimossi i certificati preinstallati non usati dall'archivio radice di eSIM dai dispositivi di HoloLens.
+
+## Windows olografico, versione 1903-febbraio 2021 Update
+- Build 18362,1098
+
+Questo aggiornamento mensile di qualità non contiene modifiche importanti, ti invitiamo a provare le nostre build più recenti per Windows olografico, versione 2004.
 
 ## Windows olografico, versione 20H2-aggiornamento di 2021 gennaio
 - Build 19041,1134

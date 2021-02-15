@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8e0b5732c6dd2eba0a318a2b72694aacd404c68f
-ms.sourcegitcommit: a5b6e9fdc0fa61a93cb23a89348f5b49316e2748
+ms.openlocfilehash: 65d3ec2a8ecc7fc456f8e8d9d6820a5624da9e99
+ms.sourcegitcommit: 0d16c7dc4d18d550023da9f6b3cc942eb915a2c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "11306924"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "11328110"
 ---
 # Hardware HoloLens 2
 
@@ -29,8 +29,8 @@ Microsoft HoloLens 2 è un computer olografico autonomo.  Perfeziona il percorso
 
 - **Visiera**. Contiene i sensori e i display di HoloLens. Puoi ruotare la visiera in alto mentre indossi il dispositivo HoloLens.
 - **Fascia**. Per accendere il dispositivo HoloLens, usa la rotellina di regolazione per espandere la fascia. Con HoloLens in posizione, serra la rotellina di regolazione girando verso destra, finché la fascia non sarà indossata in modo confortevole.
-- **Pulsanti di luminosità**. Quando indossi HoloLens, i pulsanti di luminosità si trovano sul lato sinistro della visiera.
-- **Pulsanti del volume**. Quando indossi HoloLens, i pulsanti del volume si trovano sul lato destro della visiera.
+- **Pulsanti di luminosità**. Quando indossi HoloLens, i pulsanti di luminosità si trovano sul lato sinistro della visiera vicino alla tempia.
+- **Pulsanti del volume**. Quando indossi HoloLens, i pulsanti del volume si trovano sul lato destro della visiera vicino alla tempia.
 - **Pulsante di alimentazione**. Quando indossi HoloLens, il pulsante di alimentazione si trova sul lato destro della copertura esterna posteriore.
 - **Porta USB-C**. Quando indossi HoloLens, la porta USB-C si trova sul lato destro della copertura esterna posteriore sotto il pulsante di alimentazione.
 
@@ -170,7 +170,7 @@ Per mantenere/accrescere la percentuale di carica della batteria interna mentre 
 |     Larghezza unità                 |     247,90 mm          |     9,760 pollici        |
 |     Profondità unità                 |     163,07 mm          |     6,420 pollici        |
 |     Peso unità                |     2,878 kg           |     6,344 lb.           |
-|     Lunghezza confezione esterna    |     446 mm          |     17,559 pollici       |
+|     Lunghezza confezione esterna    |     446,00 mm          |     17,559 pollici       |
 |     Larghezza confezione esterna     |     257,99 mm          |     10,157 pollici       |
 |     Spessore confezione esterna     |     172,01 mm          |     6,772 pollici        |
 |     Peso confezione esterna    |     3,284 kg           |     7,240 lb.           |
@@ -182,10 +182,10 @@ Per mantenere/accrescere la percentuale di carica della batteria interna mentre 
 ## Trovare il numero di serie
 
 Nei dispositivi HoloLens 2 il numero di serie è stampato sotto la visiera.
-1. Solleva la visiera del dispositivo.
-1. Cerca vicino al cuscinetto della fronte.
-1. Puoi trovare il numero di serie vicino alla cerniera. 
 
+1. Solleva la visiera del dispositivo.
+1. Cerca vicino al cuscinetto sopraccigliare.
+1. Puoi trovare il numero di serie vicino alla cerniera.
 
 <img src="images/serial-number-diagram-hl2.png" alt=Null width="625" height="903" />
 

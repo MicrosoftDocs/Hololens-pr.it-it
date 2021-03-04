@@ -18,138 +18,134 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 206a31476820e8722b1b72fbd501345a089379b1
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: c8d9aa9fecff74a04e3f7cb395bffe5d239e18cf
+ms.sourcegitcommit: 7791e470fc2e03bdf51b19a816d7215018772860
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283227"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "11387522"
 ---
-# Raccogliere e usare le informazioni di diagnostica dai dispositivi HoloLens
+# <a name="collect-and-use-diagnostic-information-from-hololens-devices"></a>Raccogliere e usare le informazioni di diagnostica dai dispositivi HoloLens
 
 Gli utenti e gli amministratori di HoloLens possono scegliere tra quattro metodi diversi per raccogliere informazioni di diagnostica da HoloLens:
 
-- App Hub feedback
+- App Hub di Feedback
 - CSP DiagnosticLog
 - app Impostazioni
+- Diagnostica offline
 
 > [!IMPORTANT]  
-> I log di diagnostica del dispositivo contengono informazioni personali, ad esempio i processi o le applicazioni che l'utente avvia durante le operazioni tipiche. Quando più utenti condividono un dispositivo HoloLens, ad esempio gli utenti accedono allo stesso dispositivo usando diversi account di Microsoft Azure Active Directory (Azure AD), i log di diagnostica potrebbero contenere informazioni personali che si applicano a più utenti. Per altre informazioni, vedere l'informativa [sulla privacy Microsoft](https://privacy.microsoft.com/privacystatement).
+> I log di diagnostica dei dispositivi contengono informazioni personali, ad esempio sui processi o le applicazioni avviati dall'utente durante le operazioni tipiche. Quando più utenti condividono un dispositivo HoloLens (ad esempio, gli utenti accodati allo stesso dispositivo usando account Microsoft Azure Active Directory (Azure AD) diversi, i log di diagnostica possono contenere informazioni sulle informazioni personali applicabili a più utenti. Per ulteriori informazioni, vedere [l'Informativa sulla privacy di Microsoft.](https://privacy.microsoft.com/privacystatement)
 
-Nella tabella seguente vengono confrontati i tre metodi di raccolta. I nomi dei metodi si collegano a informazioni più dettagliate nelle sezioni che seguono la tabella.
+Nella tabella seguente vengono confrontati i diversi metodi di raccolta. I nomi dei metodi si collegano a informazioni più dettagliate nelle sezioni successive alla tabella.
 
-|Metodo |Prerequisiti |Posizioni dei dati |Accesso ai dati e utilizzo |Conservazione dei dati |
+|Metodo |Prerequisiti |Posizioni dei dati |Accesso e utilizzo dei dati |Conservazione dei dati |
 | --- | --- | --- | --- | --- |
-|[Hub di Feedback](#feedback-hub) |Connessione di rete e Internet<br /><br />App Hub feedback<br /><br />Autorizzazione per caricare file in Microsoft Cloud |Microsoft Cloud<br /><br />Dispositivo HoloLens (facoltativo) |L'utente richiede assistenza, accetta le condizioni per l'uso e carica i dati<br /><br />I dipendenti Microsoft visualizzano i dati, in conformità con le condizioni per l'utilizzo |I dati nel cloud vengono conservati per il periodo definito dalla privacy di nuova generazione (NGP). I dati vengono quindi eliminati automaticamente.<br /><br />I dati del dispositivo possono essere eliminati in qualsiasi momento da un utente con autorizzazioni di **amministratore** o **proprietario del dispositivo** . |
-|[Risoluzione dei problemi di impostazioni](#settings-troubleshooter) |app Impostazioni |Dispositivo HoloLens<br /><br />Computer connesso (facoltativo) |L'utente archivia i dati e solo l'utente accede ai dati, a meno che l'utente non condivida in modo specifico i dati con un altro utente. |I dati vengono mantenuti finché l'utente non la Elimina. * |
-|[CSP DiagnosticLog](#diagnosticlog-csp) |Connessione di rete<br /><br />Ambiente MDM che supporta il CSP DiagnosticLog |L'amministratore configura i percorsi di archiviazione |Nell'ambiente gestito l'utente acconsente implicitamente all'accesso di amministratore ai dati.<br /><br />L'amministratore configura i ruoli e le autorizzazioni di accesso. | L'amministratore configura i criteri di conservazione. |
-|[Diagnostica offline](#offline-diagnostics) |Configurazione dispositivo:<ul><li>Acceso e connesso al computer</li><li>Funzionamento dei pulsanti di alimentazione e di volume</li></ul> |Dispositivo HoloLens<br /><br />Computer connesso |L'utente archivia i dati e solo l'utente accede ai dati, a meno che l'utente non condivida in modo specifico i dati con un altro utente. |I dati vengono mantenuti finché l'utente non la Elimina. | 
+|[Hub di Feedback](#feedback-hub) |Connessione di rete e Internet<br /><br />App Hub di Feedback<br /><br />Autorizzazione per caricare file nel cloud Microsoft |Cloud Microsoft<br /><br />Dispositivo HoloLens (facoltativo) |L'utente richiede assistenza, accetta le condizioni per l'utilizzo e carica i dati<br /><br />I dipendenti Microsoft visualizzano i dati in modo coerente con le condizioni per l'utilizzo |I dati nel cloud vengono conservati per il periodo definito da Next Generation Privacy (NGP). I dati vengono quindi eliminati automaticamente.<br /><br />I dati nel dispositivo possono essere eliminati in qualsiasi momento da un utente con autorizzazioni di **proprietario o** **amministratore** del dispositivo. |
+|[Risoluzione dei problemi delle impostazioni](#settings-troubleshooter) |app Impostazioni |Dispositivo HoloLens<br /><br />Computer connesso (facoltativo) |L'utente archivia i dati e solo l'utente accede ai dati (a meno che l'utente non condiva in modo specifico i dati con un altro utente). |I dati vengono conservati nel dispositivo fino a quando l'utente non lo elimina.* |
+|[CSP DiagnosticLog](#diagnosticlog-csp) |Connessione di rete<br /><br />Ambiente MDM che supporta il provider di servizi di configurazione DiagnosticLog |L'amministratore configura i percorsi di archiviazione |Nell'ambiente gestito, l'utente acconsente implicitamente all'accesso da parte dell'amministratore ai dati.<br /><br />L'amministratore configura le autorizzazioni e i ruoli di accesso. | I dati vengono conservati nell'archiviazione cloud e l'amministratore configura i criteri di conservazione. |
+|[Diagnostica offline](#offline-diagnostics) |Configurazione dispositivo:<ul><li>Acceso e connesso al computer</li><li>Pulsanti di alimentazione e volume funzionanti</li></ul> |Dispositivo HoloLens<br /><br />Computer connesso |L'utente archivia i dati e solo l'utente accede ai dati (a meno che l'utente non condiva in modo specifico i dati con un altro utente). |I dati vengono conservati nel dispositivo fino a quando l'utente non lo elimina. |
 
+- L'utente finale è responsabile della condivisione responsabile dei log con un altro utente. Questi file sono utili principalmente quando si contatta il servizio clienti e il supporto tecnico.  
 
--   L'utente finale è responsabile della condivisione dei registri in modo responsabile con altri utenti. Questi file sono principalmente utili per contattare il servizio assistenza clienti e il supporto tecnico.  
+## <a name="feedback-hub"></a>Hub di Feedback
 
-## Hub di Feedback
-
-Un utente di HoloLens può usare l'app desktop Microsoft Feedback hub per inviare informazioni di diagnostica al supporto Microsoft. Per informazioni dettagliate e istruzioni complete, vedere [inviare commenti e suggerimenti](hololens-feedback.md).  
+Un utente di HoloLens può usare l'app desktop Hub di Microsoft Feedback per inviare informazioni di diagnostica al supporto tecnico Microsoft. Per informazioni dettagliate e istruzioni complete, vedere [Inviare commenti e suggerimenti.](hololens-feedback.md)  
 
 > [!NOTE]  
-> **Utenti commerciali o aziendali:** Se usi l'app hub di feedback per segnalare un problema che si riferisce a MDM, provisioning o qualsiasi altro aspetto di gestione dei dispositivi, modifica la categoria **** dell'app in  >  **Categoria dispositivo**di gestione aziendale.
+> **Utenti commerciali o aziendali:** Se usi l'app Hub di Feedback per segnalare un problema relativo a MDM, provisioning o altri aspetti della gestione dei dispositivi, modifica la categoria dell'app in **Categoria**dispositivo di gestione  >  **aziendale.**
 
-### Prerequisiti
+### <a name="prerequisites"></a>Prerequisiti
 
 - Il dispositivo è connesso a una rete.
-- L'app hub di feedback è disponibile nel computer desktop dell'utente e l'utente può caricare i file nel cloud Microsoft.
+- L'app Hub di Feedback è disponibile nel computer desktop dell'utente e l'utente può caricare file nel cloud Microsoft.
 
-### Posizioni dei dati, accesso e conservazione
+### <a name="data-locations-access-and-retention"></a>Posizioni, accesso e conservazione dei dati
 
-Accettando le condizioni per l'uso dell'hub di feedback, l'utente acconsente esplicitamente all'archiviazione e all'uso dei dati (come definito da tale contratto).
+Accettando le condizioni per l'uso di Hub di Feedback, l'utente acconsente esplicitamente all'archiviazione e all'utilizzo dei dati (come definito dal contratto).
 
-L'hub di feedback offre due posizioni per l'utente per archiviare le informazioni di diagnostica:
+Hub di Feedback offre due posizioni in cui l'utente può archiviare le informazioni di diagnostica:
 
-- **Microsoft Cloud**. I dati caricati dall'utente tramite l'app hub di feedback vengono archiviati per il numero di giorni coerenti con i requisiti per la privacy di nuova generazione (NGP). I dipendenti Microsoft possono usare un visualizzatore conforme a NGP per accedere alle informazioni durante questo periodo.
+- **Microsoft Cloud.** I dati caricati dall'utente tramite l'app Hub di Feedback vengono archiviati per il numero di giorni che è coerente con i requisiti NGP (Next Generation Privacy). I dipendenti Microsoft possono usare un visualizzatore conforme a NGP per accedere alle informazioni durante questo periodo.
    > [!NOTE]  
-   > Questi requisiti si applicano ai dati in tutte le categorie di hub di feedback.
+   > Questi requisiti si applicano ai dati in tutte le categorie di Hub di Feedback.
 
-- **Il dispositivo HoloLens**. Durante l'archiviazione di un report nell'hub di feedback, l'utente può selezionare **Salva una copia locale di diagnostica e allegati creati quando si dà un feedback**. Se l'utente seleziona questa opzione, l'hub di feedback archivia una copia delle informazioni di diagnostica nel dispositivo HoloLens. Queste informazioni restano accessibili per l'utente (o tutti gli utenti che usano quell'account per accedere a HoloLens). Per eliminare queste informazioni, un utente deve avere il **proprietario del dispositivo** o le autorizzazioni di **amministratore** per il dispositivo. Un utente con le autorizzazioni appropriate può accedere all'hub di feedback, selezionare i ****  >  **registri di diagnostica della visualizzazione**impostazioni ed eliminare le informazioni.
+- **Il dispositivo HoloLens.** Durante l'archiviazione di un report nell'Hub di Feedback, l'utente può selezionare Salva una copia locale della diagnostica e degli allegati creati **per inviare commenti e suggerimenti.** Se l'utente seleziona questa opzione, Hub di Feedback archivia una copia delle informazioni di diagnostica nel dispositivo HoloLens. Queste informazioni rimangono accessibili all'utente (o a chiunque usi tale account per accedere a HoloLens). Per eliminare queste informazioni, un utente deve disporre delle autorizzazioni **di proprietario del dispositivo** **o** amministratore per il dispositivo. Un utente che dispone delle autorizzazioni appropriate può **** accedere all'Hub di Feedback, selezionare Impostazioni Visualizza log di  >  **** diagnostica ed eliminare le informazioni.
 
-## Risoluzione dei problemi di impostazioni
+## <a name="settings-troubleshooter"></a>Risoluzione dei problemi delle impostazioni
 
-Un utente di HoloLens può usare l'app impostazioni nel dispositivo per risolvere i problemi e raccogliere informazioni di diagnostica. A tale scopo, procedere come segue:
+Un utente di HoloLens può usare l'app Impostazioni nel dispositivo per risolvere i problemi e raccogliere informazioni diagnostiche. A tale scopo, effettua quanto segue:
 
-1. Aprire l'app Impostazioni e selezionare **Aggiorna &**  >  pagina**risoluzione dei problemi** di sicurezza.
-1. Selezionare l'area appropriata e selezionare **Avvia**.
+1. Apri l'app Impostazioni e seleziona **Aggiorna & risoluzione dei problemi**  >  **di** sicurezza.
+1. Selezionare l'area appropriata e quindi fare clic su **Start.**
 1. Riprodurre il problema.
-1. Dopo aver riprodotto il problema, tornare a impostazioni e quindi selezionare **Interrompi**.
+1. Dopo aver riprodotto il problema, tornare a Impostazioni e selezionare **Interrompi.**
 
-### Prerequisiti
+### <a name="prerequisites"></a>Prerequisiti
 
-- L'app impostazioni è installata nel dispositivo ed è disponibile per l'utente.
+- L'app Impostazioni viene installata nel dispositivo ed è disponibile per l'utente.
 
-### Posizioni dei dati, accesso e conservazione
+### <a name="data-locations-access-and-retention"></a>Posizioni, accesso e conservazione dei dati
 
-Dato che l'utente avvia la raccolta dati, l'utente acconsente implicitamente all'archiviazione delle informazioni di diagnostica. Solo l'utente o chiunque con cui l'utente condivide i dati può accedere ai dati.
+Poiché l'utente avvia la raccolta dei dati, l'utente acconsente implicitamente all'archiviazione delle informazioni di diagnostica. Solo l'utente o chiunque con cui condivide i dati può accedere ai dati.
 
-Le informazioni di diagnostica sono archiviate nel dispositivo. Se il dispositivo è connesso al computer dell'utente, le informazioni si trovano anche nel computer nel file seguente:
+Le informazioni di diagnostica vengono archiviate nel dispositivo. Se il dispositivo è connesso al computer dell'utente, le informazioni risiedono anche nel computer nel file seguente:
 
-> Questo PC\\ \<*HoloLens device name*> \\Internal Storage\\Documents\\Trace \<*ddmmyyhhmmss*> . etl
+> Questo PC\\ \<*HoloLens device name*> \\Archiviazione interna\\Documenti\\Traccia \<*ddmmyyhhmmss*> .etl
 
 > [!NOTE]  
-> In questo percorso e nome del file \<*HoloLens device name*> rappresenta il nome del dispositivo HoloLens e \<*ddmmyyhhmmss*> rappresenta la data e l'ora in cui il file è stato creato.
+> In questo percorso e nome di file rappresenta il nome del dispositivo HoloLens e rappresenta la data e l'ora di creazione \<*HoloLens device name*> \<*ddmmyyhhmmss*> del file.
 
-Le informazioni di diagnostica restano in questi percorsi finché l'utente non la Elimina.
+Le informazioni di diagnostica rimangono in queste posizioni fino a quando l'utente non le elimina.
 
-## CSP DiagnosticLog
+## <a name="diagnosticlog-csp"></a>CSP DiagnosticLog
 
-In un ambiente di gestione di dispositivi mobili (MDM), l'amministratore IT può usare il [provider del servizio di configurazione di DiagnosticLog (CSP)](https://docs.microsoft.com/windows/client-management/mdm/diagnosticlog-csp) per configurare le impostazioni di diagnostica nei dispositivi HoloLens registrati. L'amministratore IT può configurare queste impostazioni per raccogliere i log dai dispositivi registrati.
+In un ambiente di gestione di dispositivi mobili (MDM, Mobile Device Management), l'amministratore IT può usare il provider di servizi di configurazione [DiagnosticLog (CSP)](https://docs.microsoft.com/windows/client-management/mdm/diagnosticlog-csp) per configurare le impostazioni di diagnostica nei dispositivi HoloLens registrati. L'amministratore IT può configurare queste impostazioni per raccogliere i log dai dispositivi registrati.
 
-### Prerequisiti
+### <a name="prerequisites"></a>Prerequisiti
 
 - Il dispositivo è connesso a una rete.
-- Il dispositivo è registrato in un ambiente MDM che supporta il CSP DiagnosticLog.
+- Il dispositivo viene registrato in un ambiente MDM che supporta il CSP DiagnosticLog.
 
-### Posizioni dei dati, accesso e conservazione
+### <a name="data-locations-access-and-retention"></a>Posizioni, accesso e conservazione dei dati
 
-Dato che il dispositivo fa parte dell'ambiente gestito, l'utente acconsente implicitamente all'accesso amministrativo alle informazioni di diagnostica.
+Poiché il dispositivo fa parte dell'ambiente gestito, l'utente acconsente implicitamente all'accesso amministrativo alle informazioni di diagnostica.
 
-L'amministratore IT usa il CSP DiagnosticLog per configurare i criteri di archiviazione, conservazione e accesso dei dati, inclusi i criteri che regolano le operazioni seguenti:
+L'amministratore IT utilizza il provider di servizi di configurazione DiagnosticLog per configurare i criteri di archiviazione, conservazione e accesso dei dati, inclusi i criteri che regolano gli elementi seguenti:
 
-- Infrastruttura cloud in cui sono archiviate le informazioni di diagnostica.
+- Infrastruttura cloud in cui vengono archiviate le informazioni di diagnostica.
 - Periodo di conservazione per le informazioni di diagnostica.
 - Autorizzazioni che controllano l'accesso alle informazioni di diagnostica.
 
-## Diagnostica offline
-In situazioni in cui il dispositivo non è in grado di raccogliere la diagnostica tramite hub di feedback o lo strumento di risoluzione dei problemi di impostazione, è possibile raccogliere la diagnostica manualmente. Uno scenario in cui è necessario quando il dispositivo non riesce a connettersi alla rete Wi-Fi. La diagnostica raccoglie i dump e i registri di arresto anomalo del dispositivo che aiutano un ingegnere del supporto tecnico Microsoft a isolare i problemi.
+## <a name="offline-diagnostics"></a>Diagnostica offline
+In situazioni in cui il dispositivo non è in grado di raccogliere la diagnostica tramite Hub di Feedback o lo strumento di risoluzione dei problemi delle impostazioni, puoi raccogliere la diagnostica manualmente. Uno scenario in cui ciò è necessario è quando il dispositivo non può connettersi a Wi-Fi o non è possibile accedere ad altri metodi menzionati in precedenza. La diagnostica raccoglie i dump di arresto anomalo e i log dal dispositivo che consentono a un tecnico del supporto Microsoft di isolare i problemi.
 
-Questa operazione funziona quando il dispositivo viene visualizzato in Esplora file dopo averla collegata a un PC tramite un cavo USB. 
+Questa operazione funziona quando il dispositivo viene visualizzato in Esplora file dopo la connessione a un PC tramite un cavo USB.
 
 > [!NOTE]
-> La generazione e la gestione della diagnostica offline sono controllate in modo diverso a seconda della versione del sistema operativo. In precedenza era controllato dall'impostazione di telemetria, ma ora è controllato direttamente tramite criteri. 
+> La generazione e la gestione della diagnostica offline vengono controllate in modo diverso a seconda della versione del sistema operativo. In precedenza era controllato dall'impostazione di telemetria, ma ora è controllato direttamente tramite criteri MDM. Se disabilitata tramite l'impostazione o i criteri MDM, i log di diagnostica non possono essere raccolti con questo meccanismo.
 
-Comportamento prima di [Windows olografico, versione 20H2](hololens-release-notes.md#windows-holographic-version-20h2):
- - La diagnostica offline è abilitata solo quando l'utente sta attraversando il valore dei criteri OOBE o [System\AllowTelemetry](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) è impostato su Full (il valore predefinito è Basic in HoloLens). 
-- Per disabilitare la diagnostica offline, vai alla pagina **Impostazioni App > privacy** e seleziona **Basic** in **dati di diagnostica**. Nelle build in cui la diagnostica offline dipende dall'impostazione di telemetria, l'effetto si verifica solo se i registri vengono raccolti o meno. Non influisce sui file raccolti.
+Comportamento precedente a [Windows Holographic, verison 20H2:](hololens-release-notes.md#windows-holographic-version-20h2)
+ - La diagnostica offline è abilitata solo quando l'utente sta passando attraverso la Configurazione guidata o Sistema\Il valore del criterio [AllowTelemetry](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) è impostato su Completo (il valore di base è il valore predefinito in HoloLens). 
+- Per disabilitare la diagnostica offline, vai alla pagina **Impostazioni app > Privacy** e seleziona **Base** in Dati **di diagnostica.** Nelle build in cui la diagnostica offline dipende dall'impostazione di telemetria, influisce solo sulla raccolta o meno di eventuali log. Non influisce sui file raccolti.
 - Se il dispositivo è bloccato, i log non verranno visualizzati.
 
-In Build [Windows olografico, versione 20H2](hololens-release-notes.md#windows-holographic-version-20h2) e versioni precedenti:
-- Quando la diagnostica di fallback è abilitata, verrà controllata da specifici criteri di MDM con l'impostazione corrispondente [MixedReality/FallbackDiagnostics](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-fallbackdiagnostics)
+Nelle build [Windows Holographic, verison 20H2](hololens-release-notes.md#windows-holographic-version-20h2) e oltre:
+- Quando la diagnostica di fallback è abilitata, verrà controllata da criteri MDM specifici con l'impostazione [MixedReality/FallbackDiagnostics corrispondente](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-fallbackdiagnostics)
 - Se il dispositivo è bloccato, i log non verranno visualizzati.
 
-
-Guarda questo video per saperne di più. 
+Guardare questo video per altre informazioni.
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Gathering-Diagnostic-Files-on-HoloLens2/player]
 
-Seguire questa procedura per raccogliere la diagnostica:
-1.  Connettere il dispositivo con un cavo USB al PC.
-2.  In Esplora file nel PC passare a **"questo PC \<hololens-device> \Internal storage"**.
-3.  Se la cartella di **archiviazione interna** non viene visualizzata, il dispositivo attende l'accesso di un utente. Eseguire l'accesso o il ciclo di alimentazione del dispositivo tenendo premuto il pulsante di alimentazione per 10 secondi.
-4.  Premere e rilasciare immediatamente i pulsanti **Power + Volume Down** insieme.
-5.  Attendere un minuto prima che il dispositivo prepari gli archivi zip. Un file temporaneo denominato HololensDiagnostics. Temp può diventare visibile mentre il dispositivo genera gli archivi zip. Non accedere o salvare il file. Al termine del processo verrà sostituito dagli archivi zip.
-6.  Aggiornare Esplora file e passare alla cartella **' \Documents '** .
+Segui questi passaggi per raccogliere la diagnostica:
+1.  Collega il dispositivo con un cavo USB al PC.
+2.  In Esplora file nel PC passa a **"Questo PC \<hololens-device> \Archiviazione interna".**
+3.  Se la **cartella Di** archiviazione interna non viene mostrata, il dispositivo è in attesa dell'accesso di un utente. Accesso o ciclo di alimentazione del dispositivo tenendo premuto il pulsante POWER per 10 secondi.
+4.  Premere e rilasciare immediatamente i **pulsanti POWER + VOLUME DOWN** insieme.
+5.  Attendere un minuto che il dispositivo prepari gli archivi ZIP. Un file temporaneo denominato HololensDiagnostics.temp potrebbe diventare visibile mentre il dispositivo genera gli archivi ZIP. Non accedere al file o salvarlo. Al termine del processo, questo verrà sostituito dagli archivi ZIP.
+6.  Aggiornare Esplora file e passare alla **cartella "\Documents".**
 7.  Copiare i file ZIP di diagnostica e condividerli con il team di supporto Microsoft.
 
 > [!NOTE]
-> Alcuni file ZIP di diagnostica possono contenere informazioni personali.
-
-
-
+> Alcuni dei file ZIP di diagnostica possono contenere informazioni personali.

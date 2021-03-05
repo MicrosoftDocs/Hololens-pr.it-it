@@ -40,9 +40,10 @@
 ## Posizionamento nello spazio e ottica degli ologrammi
 ### [Migliorare la qualità visiva e il comfort](hololens-calibration.md)
 ### [Eseguire il mapping degli spazi fisici con HoloLens](hololens-spaces.md) 
-## [Aggiornare HoloLens](hololens-update-hololens.md)
+## [Come aggiornare HoloLens](hololens-update-hololens.md)
+## [Microsoft Mesh (anteprima)](/mesh/overview)
 
-# Preparare
+# Preparazione
 ## [Distribuire HoloLens in un ambiente commerciale](hololens-requirements.md)
 ## Scenari di distribuzione comuni
 ### [Scenari di distribuzione dell'infrastruttura](common-scenarios.md)
@@ -94,6 +95,7 @@
 ### [Preparare certificati e profili di rete per HoloLens 2](hololens-certificates-network.md)
 ### [Gestire gli endpoint di connessione per HoloLens](hololens-offline.md)
 ### [Connessione a dispositivi Bluetooth e USB-C](hololens-connect-devices.md)
+### [Connettersi alla rete cellulare e 5G](hololens-cellular.md)
 ## [Gestione certificati](certificate-manager.md)
 
 # Distribuisci

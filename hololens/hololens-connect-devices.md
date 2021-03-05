@@ -13,19 +13,19 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 1b4f95f43fc60dffa2ca75322466857a0a20a0a7
-ms.sourcegitcommit: 145bbabc390f626ba6633fa49423c38656cd2224
+ms.openlocfilehash: 728bf8547315be96f879ff94a1290c1e2b3e7bf8
+ms.sourcegitcommit: fbc8ddb17e31fea8667ece43a511592b86ac3947
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "11302270"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "11385484"
 ---
-# Connessione a dispositivi Bluetooth e USB-C
+# <a name="connect-to-bluetooth-and-usb-c-devices"></a>Connessione a dispositivi Bluetooth e USB-C
 
 > [!NOTE]
 > I microfoni esterni non possono essere utilizzati. HoloLens 2 usa il suo [](hololens2-hardware.md#audio-and-speech)gruppo microfoni[ incorporato.](hololens2-hardware.md#audio-and-speech)
 
-## Accoppiare dispositivi Bluetooth
+## <a name="pair-bluetooth-devices"></a>Accoppiare dispositivi Bluetooth
 
 HoloLens 2 supporta le seguenti categorie di dispositivi Bluetooth:
 
@@ -37,12 +37,12 @@ HoloLens (prima generazione) supporta le seguenti categorie di dispositivi Bluet
 
 - Mouse
 - Tastiera
-- Clicker HoloLens (prima generazione)
+- [Clicker HoloLens (prima generazione)](https://docs.microsoft.com/hololens/hololens1-clicker)
 
 > [!NOTE]
 > Altri tipi di dispositivi Bluetooth, come altoparlanti, cuffie, smartphone e game pad, potrebbero essere elencati come disponibili nelle impostazioni di HoloLens. Tuttavia, questi dispositivi non sono supportati in HoloLens (prima generazione). Per maggiori dettagli, vedere [Le impostazioni di HoloLens indicano che i dispositivi sono disponibili, ma questi non funzionano](hololens-FAQ.md#hololens-settings-lists-devices-as-available-but-the-devices-dont-work).
 
-### Accoppiare una tastiera o un mouse Bluetooth
+### <a name="pair-a-bluetooth-keyboard-or-mouse"></a>Accoppiare una tastiera o un mouse Bluetooth
 
 1. Attivare la tastiera o il mouse e renderli individuabili. Per informazioni su come rendere i dispositivi individuabili, cerca informazioni nel dispositivo (o nella documentazione) oppure visita il sito web del produttore.
 
@@ -52,21 +52,7 @@ HoloLens (prima generazione) supporta le seguenti categorie di dispositivi Bluet
 
 1. Quando vedi il nome del dispositivo, seleziona **Associa**, e segui poi le istruzioni.
 
-### HoloLens (prima generazione): Associare il clicker
-
-1. Usa il gesto della mano a fiore per andare a **Start**, quindi seleziona **Impostazioni**.
-
-1. Seleziona **Dispositivi**, e assicurati che il Bluetooth sia attivato.
-
-1. Usa la punta di una penna per tenere premuto il pulsante di associazione del clicker finché la lunce bianca si accende sull’indicatore del clicker. Assicurati di tenere premuto il pulsante finché la luce comincia a lampeggiare.   
-
-   Il pulsante di associazione si trova sul lato inferiore del clicker, accanto all’anello per il dito.
-
-   ![Il pulsante di associazione si trova accanto all’anello](images/use-hololens-clicker-1.png)
-
-1. Nella schermata di associazione, seleziona **Clicker** > **Associa**.
-
-## Disattivare il Bluetooth
+## <a name="disable-bluetooth"></a>Disattivare il Bluetooth
 
 Questa procedura disattiva i componenti RF della radio Bluetooth, e disabilita tutte le funzionalità Bluetooth di Microsoft HoloLens.
 
@@ -74,7 +60,7 @@ Questa procedura disattiva i componenti RF della radio Bluetooth, e disabilita t
 
 1. Sposta il selettore del **Bluetooth** sulla posizione **Off**.
 
-## HoloLens 2: Connettere dispositivi USB-C
+## <a name="hololens-2-connect-usb-c-devices"></a>HoloLens 2: Connettere dispositivi USB-C
 
 HoloLens 2 supporta le seguenti categorie di dispositivi USB-C:
 
@@ -87,11 +73,9 @@ HoloLens 2 supporta le seguenti categorie di dispositivi USB-C:
 - Hub PD con combinazione (ricarica USB A più PD)
 
 > [!NOTE]
-> Alcuni dispositivi mobili con connessioni USB-C si mostrano a HoloLens come adattatori ethernet, e possono perciò essere usati in configurazioni con hotspor personali, a cominciare da Windows Holographic versione 2004. I modem USB LTE che richiedono driver separati e/o l’installazione di applicazioni per la configurazione non sono supportati.
+> In risposta al feedback dei clienti, abbiamo abilitato un supporto limitato per la connettività cellulare con tethering direttamente a HoloLens tramite USB-C. Per altre informazioni, vedi [Connettersi alla rete cellulare e 5G.](hololens-cellular.md)
 
-In risposta al riscontro dei clienti, abbiamo abilitato il supporto limitato per la connettività cellulare tramite hotspot collegato a HoloLens via USB-C.   La connettività funziona solo per i dispositivi che supportano l'implementazione generica del driver Microsoft [RNDIS](https://docs.microsoft.com/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-), e non richiedono l'installazione di altri driver o applicazioni.  Questo dispositivo, una volta connesso, viene mostrato automaticamente come una nuova connessione ethernet nell’interfaccia delle impostazioni di rete di HoloLens 2. Per altre informazioni sul supporto del driver generico Microsoft RNDIS, consultare il produttore del dispositivo.
-
-### Hub USB-C
+### <a name="usb-c-hubs"></a>Hub USB-C
 
 Alcuni utenti potrebbero avere la necessità di connettere più dispositivi contemporaneamente. Per gli utenti che desiderano visualizzare in anteprima una caratteristica Insider e [usare un microfono USB-C](hololens-insider.md#usb-c-external-microphone-support) insieme a un altro dispositivo connesso, gli hub USB-C possono rappresentare una soluzione adatta. Microsoft non ha testato tali dispositivi, né è nella misura di consigliare un marchio specifico.
 
@@ -100,7 +84,7 @@ Alcuni utenti potrebbero avere la necessità di connettere più dispositivi cont
 - I dispositivi connessi non possono richiedere un driver per l'installazione.
 - Il consumo energetico totale di tutti i dispositivi connessi deve essere inferiore a 4,5 watt.
 
-## Connettersi a Miracast
+## <a name="connect-to-miracast"></a>Connettersi a Miracast
 
 Per usare Miracast, segui questa procedura:
 

@@ -1,6 +1,6 @@
 ---
 title: Insider Preview per Microsoft HoloLens
-description: Scopri come iniziare a usare le build Insider e fornire feedback utili per il nostro prossimo aggiornamento del sistema operativo principale per HoloLens.
+description: Scopri come iniziare a usare le build Insider e fornire feedback utili per il prossimo aggiornamento del sistema operativo principale per HoloLens.
 ms.prod: hololens
 ms.sitesec: library
 author: scooley
@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 2/23/2021
+ms.date: 3/4/2021
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ac408f100fb6e421a0ed0c85563ed920f1a25a83
-ms.sourcegitcommit: fbc8ddb17e31fea8667ece43a511592b86ac3947
+ms.openlocfilehash: 327701c2f618fc8958704cef5f174efed08fff3a
+ms.sourcegitcommit: f3e35e278f7841176982b411881f2791e9600e6a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "11385532"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "11388784"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Insider Preview per Microsoft HoloLens
 
@@ -29,7 +29,7 @@ Benvenuto nelle ultime build di Insider Preview per HoloLens! È semplice inizia
 
 ## <a name="windows-insider-release-notes"></a>Note sulla versione di Windows Insider
 
-Siamo contenti di iniziare di nuovo la distribuzione di nuove funzionalità di anteprima ai windows insider. Per gli aggiornamenti più recenti, le nuove build verranno aggiornate al Canale di sviluppo. We will continue to update this page as we add more features and updates to our Windows Insider builds.  Prepararsi a combinare questi aggiornamenti nella realtà.
+Siamo contenti di iniziare di nuovo la distribuzione di nuove funzionalità di anteprima ai windows insider. Per gli aggiornamenti più recenti, le nuove build verranno aggiornate al Canale di sviluppo. Continueremo ad aggiornare questa pagina man quando aggiungeremo altre funzionalità e aggiornamenti alle build di Windows Insider.  Prepararsi a combinare questi aggiornamenti nella realtà.
 
 Questo aggiornamento delle funzionalità contiene le funzionalità per due gruppi di destinatari. Funzionalità che possono essere usate da chiunque su un dispositivo dall'utente finale e nuove opzioni di gestione dei dispositivi che possono essere configurate dagli amministratori IT. La tabella delle caratteristiche seguente specifica i gruppi di destinatari con cui è possibile utilizzare ogni nuova funzionalità. Gli amministratori IT possono consultare l'elenco di controllo per l'aggiornamento [dell'amministratore IT](#it-admin---update-checklist)
 
@@ -51,7 +51,7 @@ Questo aggiornamento delle funzionalità contiene le funzionalità per due grupp
 | [Menu Alimentazione da Start](#power-menu-from-start) | Nel menu Start riavvia e arresta il dispositivo HoloLens | Utente finale | 20293.1000 |
 | [Più utenti elencati nella schermata di accesso](#multiple-users-listed-on-sign-in-screen) | Visualizzare più account utente nella schermata di accesso | Utente finale | 20293.1000 |
 | [Supporto microfono esterno USB-C](#usb-c-external-microphone-support) | Usa microfoni USB-C per app e/o Assistenza remota.| Utente finale | 20279.1006 |
-| [Accesso automatico dei visitatori per chioschi](#visitor-auto-logon-for-kiosks)                          | Consente di abilitare l'accesso automatico sugli account dei visitatori per le modalità tutto schermo.                         | Amministratore IT | 20279.1006                 |
+| [Accesso automatico dei visitatori per chioschi](#visitor-auto-logon-for-kiosks)                          | Consente di abilitare l'accesso automatico agli account dei visitatori per le modalità tutto schermo.                         | Amministratore IT | 20279.1006                 |
 | [Nuovi AUMID per le nuove app in modalità tutto schermo](#use-the-new-settings-and-edge-apps-in-kiosk-modes) | AUMID per nuove impostazioni e app Edge | Amministratore IT | 20279.1006 |
 | [Miglioramento della gestione degli errori in modalità tutto schermo](#kiosk-mode-behavior-changes-for-handling-of-failures) | La modalità tutto schermo cerca l'accesso assegnato globale prima del menu Start vuoto. | Amministratore IT | 20279.1006 |
 | [New SettingsURIs for Page Settings Visibility](hololens-insider.md#new-settingsuris-for-page-settings-visibility) | Oltre 20 nuovi criteri SettingsURIs per Settings/PageVisibilityList | Amministratore IT | 20289.1000 |
@@ -81,7 +81,7 @@ I visitatori possono ora accedere automaticamente a un chiosco multimediale. Que
 
 Questo aggiornamento ora mantiene i dispositivi più controllati dalla modalità tutto schermo, consentendo di eseguire il fall back a diversi tipi di chioschi prima di presentare semplicemente un chiosco multimediale vuoto. Anche se non è gestibile, potrebbe essere utile informare il reparto di supporto se si usano i chioschi multimediale in un modo che potrebbe essere applicabile alla configurazione.
 
-#### <a name="updates-to-page-settings-visibility"></a>Aggiornamenti della visibilità delle impostazioni della pagina
+#### <a name="updates-to-page-settings-visibility"></a>Aggiornamenti alla visibilità delle impostazioni della pagina
 
 [**New SettingsURIs for Page Settings Visibility**](hololens-insider.md#new-settingsuris-for-page-settings-visibility)
 
@@ -111,7 +111,7 @@ Se in precedenza bloccavi Microsoft Edge tramite WDAC, dovrai aggiornare i crite
 
 Il nuovo Microsoft Edge adotta il progetto [open source Chromium](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) per creare una migliore compatibilità per i clienti e una minore frammentazione del Web per gli sviluppatori Web.
 
-Con questa anteprima insider, il nuovo Microsoft Edge è disponibile per la prima volta per i clienti di HoloLens 2. Mentre il nuovo Microsoft Edge sostituirà Microsoft Edge legacy in HoloLens 2, entrambi i browser sono attualmente disponibili per i insider. Condividere feedback e bug con il team tramite la **funzionalità Invia feedback** nel nuovo Microsoft Edge o tramite Hub di [Feedback.](hololens-feedback.md)
+Con questa anteprima insider, il nuovo Microsoft Edge è disponibile per la prima volta per i clienti di HoloLens 2. Mentre il nuovo Microsoft Edge sostituirà Microsoft Edge legacy in HoloLens 2, entrambi i browser sono attualmente disponibili per i insider. Condividere feedback e bug con il team tramite la funzionalità **Invia feedback** nel nuovo Microsoft Edge o tramite Hub [di Feedback.](hololens-feedback.md)
 
 ![Screenshot del nuovo Microsoft Edge](images/new-edge-ui.png)
 
@@ -142,7 +142,7 @@ Ecco alcune risorse utili per saperne di più sulla gestione delle impostazioni 
 
 #### <a name="what-to-expect-from-the-new-microsoft-edge-on-hololens-2"></a>Cosa aspettarsi dal nuovo Microsoft Edge in HoloLens 2
 
-Poiché il nuovo Microsoft Edge è un'app Win32 nativa con un nuovo livello di adattatore UWP che ne consente l'esecuzione su dispositivi solo UWP come HoloLens 2, alcune funzionalità potrebbero non essere immediatamente disponibili. Supporteremo nuovi scenari e funzionalità nei prossimi mesi, quindi controlla questo spazio per informazioni aggiornate.
+Poiché il nuovo Microsoft Edge è un'app Win32 nativa con un nuovo livello di scheda UWP che ne consente l'esecuzione su dispositivi solo UWP come HoloLens 2, alcune funzionalità potrebbero non essere immediatamente disponibili. Supporteremo nuovi scenari e funzionalità nei prossimi mesi, quindi controlla questo spazio per informazioni aggiornate.
 
 **Scenari e funzionalità previsti per il funzionamento:**
 - Esperienza di prima esecuzione, accesso al profilo e sincronizzazione
@@ -155,10 +155,8 @@ Poiché il nuovo Microsoft Edge è un'app Win32 nativa con un nuovo livello di a
 - Suono spaziale da una singola finestra del browser
 - Aggiornamento automatico e manuale del browser
 - Salvataggio di un PDF dal menu Stampa (con l'opzione "Salva in PDF")
-
-**Scenari e funzionalità in arrivo:**
 - Estensione Visualizzatore WebXR e 360
-- Ripristino del contenuto per correggere la finestra durante l'esplorazione tra più finestre posizionate nell'ambiente
+- Ripristino del contenuto per correggere la finestra, quando si esplorano più finestre posizionate nell'ambiente
 
 **Scenari e funzionalità non previsti:**
 - Suono spaziale da più finestre con flussi audio simultanei
@@ -168,6 +166,9 @@ Poiché il nuovo Microsoft Edge è un'app Win32 nativa con un nuovo livello di a
 **Principali problemi noti del browser:**
 - La reimpostazione del dispositivo rimuoverà il nuovo Microsoft Edge
 - L'anteprima della lente di ingrandimento nella tastiera olografica mostra contenuto non corretto
+- A volte lo scorrimento può stutter
+- I collegamenti Web nell'app di Microsoft Store potrebbero non avviare il browser
+- L'audio potrebbe essere riprodotto dalla finestra del browser errata se l'audio è stato riprodotto in precedenza da un'altra finestra del browser
 
 #### <a name="microsoft-edge-insider-channels"></a>Canali Microsoft Edge Insider
 
@@ -178,7 +179,7 @@ Visita la home [page di Microsoft Edge Insider](https://www.microsoftedgeinsider
 Sono disponibili due metodi per installare i canali Microsoft Edge Insider in HoloLens 2:
 
 **Installazione diretta nel dispositivo (attualmente disponibile solo per i dispositivi non gestiti)**
-  1. In HoloLens 2, visitare la pagina di [download di Edge Insider.](https://www.microsoftedgeinsider.com/download)
+  1. In HoloLens 2, visitare la pagina [di download di Edge Insider.](https://www.microsoftedgeinsider.com/download)
   1. Seleziona il **pulsante Download per HoloLens 2** per il canale Edge Insider che vuoi installare.
   1. Avvia il file msix scaricato dalla coda di download di Edge o dalla cartella "Download" del dispositivo (usando Esplora file).
   1. [Il programma di installazione app](app-deploy-app-installer.md) verrà avviato.
@@ -186,10 +187,10 @@ Sono disponibili due metodi per installare i canali Microsoft Edge Insider in Ho
   1. Dopo l'installazione, Microsoft Edge Beta, Dev o Canary è **** una voce separata nell'elenco Tutte le app del menu Start.
 
 **Eseguire l'installazione tramite PC con Windows Device Portal [(è](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal) necessario che la modalità sviluppatore sia abilitata in HoloLens 2)**
-  1. Nel PC, visitare la pagina [di download di Edge Insider.](https://www.microsoftedgeinsider.com/download)
-  1. Seleziona il **pulsante freccia dell'elenco** a discesa accanto al pulsante "Scarica per Windows 10" per il canale Edge Insider che vuoi installare.
+  1. Nel PC, visita la pagina [di download di Edge Insider.](https://www.microsoftedgeinsider.com/download)
+  1. Seleziona il **pulsante della freccia dell'elenco** a discesa accanto al pulsante "Scarica per Windows 10" per il canale Edge Insider che vuoi installare.
   1. Seleziona **HoloLens 2** nel menu a discesa.
-  1. Salva il file msix nella cartella "Download" del PC (o in un'altra cartella che puoi trovare facilmente).
+  1. Salva il file msix nella cartella "Download" del PC (o in un'altra cartella facilmente individuabile).
   1. Usa [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app) nel PC per installare il file msix scaricato in HoloLens 2.
   1. Dopo l'installazione, Microsoft Edge Beta, Dev o Canary è **** una voce separata nell'elenco Tutte le app del menu Start.
 
@@ -227,21 +228,21 @@ L'estensione visualizzatore 360 si basa su WebXR e viene installata automaticame
 - [Barista Express](https://constructarca.de/game/barista-express/)
 - [WebXR Paint](https://threejs.org/examples/webxr_vr_paint.html)
 
-#### <a name="how-to-use-360-viewer"></a>Come usare il visualizzatore 360
+#### <a name="how-to-use-360-viewer"></a>Come usare il visualizzatore a 360
 
 1. Passa a un video a 360 gradi su YouTube.
-1. Nel fotogramma video seleziona il pulsante headset in realtà mista:
+1. Nel fotogramma video seleziona il pulsante dell'headset in realtà mista:
 
     ![Pulsante per attivare visualizzatore 360](images/enter-360-viewer.jpg)
 
 1. La prima volta che provi ad avviare il visualizzatore 360 in un dominio specifico, il browser chiederà il consenso per accedere a una visualizzazione immersiva. Selezionare **Consenti.**
-1. [Air tap](hololens2-basic-usage.md#select-using-air-tap) to bring up the playback controls. Usa [i raggi della mano](hololens2-basic-usage.md#select-using-air-tap) e il tocco dell'aria per riprodurre/mettere in pausa, saltare avanti/indietro, attivare/disattivare i sottotitoli o interrompere l'esperienza (che esce dalla visualizzazione immersiva). I controlli di riproduzione scompariranno dopo alcuni secondi di inattività.
+1. [Air tap](hololens2-basic-usage.md#select-using-air-tap) to bring up the playback controls. Usa [i raggi della mano](hololens2-basic-usage.md#select-using-air-tap) e il tocco dell'aria per riprodurre/mettere in pausa, andare avanti/indietro, attivare/disattivare i sottotitoli o interrompere l'esperienza (che esce dalla visualizzazione immersiva). I controlli di riproduzione scompariranno dopo alcuni secondi di inattività.
 
 #### <a name="top-webxr-and-360-viewer-known-issues"></a>Principali problemi noti del visualizzatore WebXR e 360
 - Nelle esperienze WebXR, gli ologrammi possono cambiare o inclinare quando si inclina la testa o si sposta nell'ambiente.
 - A seconda della complessità dell'esperienza WebXR, la frequenza dei fotogrammi può essere notevolmente più complessa.
 - Le giunzioni delle mani articolate non sono ancora disponibili in WebXR.
-- Quando si esce da un'esperienza WebXR o 360 Viewer, la riapparire degli ologrammi nella casa della realtà mista potrebbe richiedere 30 secondi o più.
+- Quando si esce da un'esperienza WebXR o 360 Viewer, potrebbero essere necessario 30 secondi o più perché gli ologrammi nella casa della realtà mista possano riapparire.
 - 360 video da siti Web diversi da YouTube potrebbero non funzionare come previsto.
 - Se 360 video non entrano nella visualizzazione immersive (o il pulsante headset della realtà mista non viene visualizzato), prova ad aggiornare la pagina.
 - Le didascalie non sono ancora visibili nel visualizzatore 360 in HoloLens 2.
@@ -290,20 +291,20 @@ Con questa versione stiamo introducendo una nuova versione dell'app Impostazioni
 
 *Aggiunta nella build 20293.1000 di Windows Insider*
 
-Con questa nuova impostazione, è possibile selezionare un profilo colori alternativo per il display HoloLens 2. In questo modo i colori possono risultare più accurati, soprattutto a livelli di luminosità dello schermo inferiori. La calibrazione del colore dello schermo è disponibile nell'app Impostazioni, nella pagina Calibrazione > sistema.
+Con questa nuova impostazione, è possibile selezionare un profilo colori alternativo per il display HoloLens 2. In questo modo i colori possono risultare più precisi, soprattutto a livelli di luminosità dello schermo inferiori. La calibrazione del colore dello schermo è disponibile nell'app Impostazioni, nella pagina Calibrazione > sistema.
 
 > [!NOTE]
 > Poiché questa impostazione salva un nuovo profilo colori nel firmware dello schermo, si tratta di un'impostazione per dispositivo (e non univoca per ogni account utente).
 
 #### <a name="how-to-use-display-color-calibration"></a>Come usare la calibrazione del colore dello schermo
 
-1. Avvia **l'app Impostazioni** e passa a **Calibrazione > sistema.**
-1. In **Calibrazione del colore dello**schermo selezionare il pulsante Esegui **calibrazione** del colore dello schermo.
+1. Avvia **l'app** Impostazioni e passa a **Calibrazione > sistema.**
+1. In **Calibrazione del colore dello**schermo selezionare il pulsante Esegui **calibrazione del colore dello** schermo.
 1. L'esperienza di calibrazione del colore dello schermo si avvierà e ti incoraggerà a assicurarti che la visiera sia nella posizione corretta.
 1. Dopo aver seguito le finestre di dialogo delle istruzioni, lo schermo viene automaticamente visualizzato in grigio fino a una luminosità del 30%.
     > [!TIP]
     > Se hai problemi a visualizzare la scena in grigio nel tuo ambiente, puoi regolare manualmente il livello di luminosità di HoloLens 2 usando i pulsanti di luminosità sul lato sinistro del dispositivo.
-1. Seleziona i pulsanti da 1 a 6 per provare immediatamente ogni profilo di colore e trovarne uno che sia il migliore per i tuoi occhi (questo in genere significa che il profilo che consente alla scena di apparire più neutra, con il motivo a gradazioni di grigio e i toni della buccia come previsto).
+1. Seleziona i pulsanti da 1 a 6 per provare immediatamente ogni profilo di colore e trovane uno che sia il migliore per i tuoi occhi (questo in genere significa che il profilo che consente alla scena di apparire più neutra, con il motivo a gradazioni di grigio e i toni della buccia che appaiono come previsto).
 
     ![Visualizzare la scena di calibrazione dei colori](images/color-cal-ui.png)
     
@@ -314,14 +315,14 @@ Con questa nuova impostazione, è possibile selezionare un profilo colori altern
 > Ecco alcuni suggerimenti utili da tenere presenti durante l'uso dell'impostazione di calibrazione del colore dello schermo:
 > - È possibile eseguire di nuovo la calibrazione del colore dello schermo da Impostazioni ogni volta che si desidera
 > - Se qualcuno nel dispositivo ha usato in precedenza l'impostazione per modificare i profili colori, la data/ora della modifica più recente verrà visualizzata nella pagina Impostazioni
-> - Quando si rieseguono la calibrazione del colore dello schermo, il profilo colori salvato in precedenza verrà evidenziato e il profilo 0 non verrà visualizzato (poiché il profilo 0 rappresenta il profilo colori originale dello schermo)
+> - Quando si rieseguono la calibrazione dei colori dello schermo, il profilo colori salvato in precedenza verrà evidenziato e il profilo 0 non verrà visualizzato (poiché il profilo 0 rappresenta il profilo colori originale dello schermo)
 > - Se si desidera ripristinare il profilo colori originale dello schermo, è possibile farlo dalla pagina Impostazioni (vedere come reimpostare il profilo [colori)](#how-to-reset-color-profile)
 
 #### <a name="how-to-reset-color-profile"></a>Come reimpostare il profilo colori
 
 Se non sei soddisfatto del profilo colori personalizzato salvato in HoloLens 2, puoi ripristinare il profilo colori originale del dispositivo:
-1. Avvia **l'app Impostazioni** e passa a **Calibrazione > sistema.**
-1. In **Calibrazione del colore**dello schermo selezionare il pulsante Ripristina profilo **colori** predefinito.
+1. Avvia **l'app** Impostazioni e passa a **Calibrazione > sistema.**
+1. In **Calibrazione colore visualizzazione**selezionare il pulsante Ripristina profilo **colori** predefinito.
 1. When the dialog box opens, select **Restart** if you're ready to restart HoloLens 2 and apply your changes.
 
 #### <a name="top-display-color-calibration-known-issues"></a>Problemi noti relativi alla calibrazione del colore dello schermo superiore
@@ -330,6 +331,7 @@ Se non sei soddisfatto del profilo colori personalizzato salvato in HoloLens 2, 
     - Soluzione alternativa: selezionare un'altra pagina Impostazioni e quindi selezionare di nuovo la pagina Calibrazione.
 - Se HoloLens 2 va in sospensione durante l'esecuzione della calibrazione del colore dello schermo, in seguito riprenderà nella casa della realtà mista e il livello di luminosità dello schermo continuerà a essere inattiva.
 - Potrebbe essere necessario provare a premere i pulsanti di luminosità sul lato sinistro del dispositivo verso l'alto o verso il basso alcune volte prima che funzionino come previsto.
+- La localizzazione non è completa per tutti i mercati
 
 ### <a name="default-app-picker"></a>Selezione app predefinita
 
@@ -337,13 +339,13 @@ Quando attivi un collegamento ipertestuale o apri un tipo di file con più app i
 
 ![Finestra di selezione app](images/default-app-picker.png)
 
-Se scegli "Sempre" ma in seguito vuoi modificare l'app che gestisce un determinato file o tipo di collegamento, puoi reimpostare le impostazioni predefinite salvate in Impostazioni **> app.** Scorrere fino alla parte inferiore **** della pagina e selezionare il pulsante Cancella in "App predefinite per i tipi di file" e/o "App predefinite per i tipi di collegamento". A differenza dell'impostazione simile nei PC desktop, non è possibile reimpostare le impostazioni predefinite dei singoli tipi di file.
+Se scegli "Sempre" ma in seguito vuoi modificare l'app che gestisce un determinato tipo di file o collegamento, puoi reimpostare le impostazioni predefinite salvate in Impostazioni **> app.** Scorrere fino alla fine della **** pagina e selezionare il pulsante Cancella in "App predefinite per i tipi di file" e/o "App predefinite per i tipi di collegamento". A differenza dell'impostazione simile nei PC desktop, non è possibile reimpostare le impostazioni predefinite dei singoli tipi di file.
 
 ### <a name="per-app-volume-control"></a>Controllo del volume per app
 
-Ora gli utenti di questa build di Windows Insider possono regolare manualmente il livello di volume di ogni app. Ciò consente agli utenti di concentrarsi meglio sulle app necessarie o di ascoltare meglio quando usano più app. Ad esempio, se devi disattivare il volume di un'app mentre chiami un'altra persona per assistenza remota in un'altra.
+Ora in questa build di Windows Insider gli utenti possono modificare manualmente il livello di volume di ogni app. Ciò consente agli utenti di concentrarsi meglio sulle app necessarie o di ascoltare meglio quando usano più app. Ad esempio, se devi disattivare il volume di un'app mentre chiami un'altra persona per assistenza remota in un'altra.
 
-Per impostare il volume di **** una singola app, passa a Impostazioni audio di sistema e in  ->  ****  ->  **** Opzioni audio avanzate seleziona **Volume dell'app e preferenze del dispositivo.**
+Per impostare il volume di una singola app, passa a **Impostazioni**audio di sistema e in Opzioni audio avanzate  ->  ****  ->  **** seleziona **Volume dell'app e preferenze del dispositivo.**
 
  <img alt="App volume and device preferences." src="./images/volume-per-app.jpg" width="500" height="250" />
 
@@ -351,11 +353,14 @@ Per impostare il volume di **** una singola app, passa a Impostazioni audio di s
 
 L'app Web di Office è stata aggiunta all'elenco "Tutte le app" del menu Start. Questa app Web può anche essere aggiunta a Start o disinstallata. Poiché si tratta di un'app Web, la funzionalità corrispondente corrisponde esattamente a quella che si potrebbe sperimentare visitando https://www.office.com . La funzionalità Office Web App è disponibile solo quando HoloLens 2 dispone di una connessione Internet attiva.
 
+**Problema noto**
+- La reimpostazione del dispositivo rimuove l'app Web di Office
+
 ### <a name="swipe-to-type"></a>Scorrimento rapido per digitare
 
 Alcuni clienti trovano più veloce "digitare" sulle tastiere virtuali scorrendo rapidamente la forma della parola che vogliono digitare e stiamo visualizzando in anteprima questa funzionalità per la tastiera olografica. Puoi scorrere una parola alla volta passando la punta del dito attraverso il piano della tastiera olografica, scorrendo la forma della parola e quindi ritirando la punta del dito dal piano della tastiera. Puoi scorrere rapidamente le parole di follow-up senza dover premere la barra spaziatrice rimuovendo il dito dalla tastiera tra le parole. La funzionalità funziona se viene visualizzata una traccia di scorrimento rapido che segue il movimento del dito sulla tastiera.
 
-Tieni presente che questa funzionalità può essere difficile da usare e master a causa della natura di una tastiera olografica in cui non provi resistenza al dito (a differenza del display di un telefono cellulare). We are evaluating this feature for public release, so your feedback is important; Indipendentemente dal fatto che la funzionalità sia utile o se si abbia un feedback positivo, contattaci tramite [Hub di Feedback.](hololens-feedback.md)
+Tieni presente che questa funzionalità può essere difficile da usare e master a causa della natura di una tastiera olografica in cui non provi resistenza al dito (a differenza dello schermo di un cellulare). We are evaluating this feature for public release, so your feedback is important; Se la funzionalità è utile o se si dispone di feedback positivi, contattaci tramite [Hub di Feedback.](hololens-feedback.md)
 
 ### <a name="power-menu-from-start"></a>Menu Alimentazione da Start
 
@@ -371,7 +376,7 @@ Un nuovo menu che consente all'utente di disconnettersi, arrestare e riavviare i
 
 3. Selezionare l'immagine del profilo utente usando le mani o il comando vocale "Alimentazione".
 
-4. Viene visualizzato un menu con le opzioni Disconnetti, Riavvia o Arresta il dispositivo:
+4. Viene visualizzato un menu con opzioni per disconnettersi, riavviare o arrestare il dispositivo:
 
    <img alt="User context menu" src="./images/powertransition_aad_options_cropped.png" width="586" height="330" />
 
@@ -381,7 +386,7 @@ Un nuovo menu che consente all'utente di disconnettersi, arrestare e riavviare i
 
 #### <a name="update-indicator"></a>Indicatore di aggiornamento
 
-Quando è disponibile un aggiornamento, l'icona con i puntini di sospensione si accenderà per indicare che un riavvio installerà l'aggiornamento Le opzioni di menu cambiano in modo da riflettere la presenza dell'aggiornamento.<br/><br/>
+Quando è disponibile un aggiornamento, l'icona dei puntini di sospensione si accenderà per indicare che un riavvio installerà l'aggiornamento Le opzioni di menu cambiano in modo da riflettere la presenza dell'aggiornamento.<br/><br/>
 
 <img alt="User context menu showing update" src="./images/powertransition_aad_options_update_cropped.png" width="470" height="313" />
 
@@ -389,7 +394,7 @@ Quando è disponibile un aggiornamento, l'icona con i puntini di sospensione si 
 
 In precedenza la schermata di accesso mostrava solo l'utente che ha effettuato l'accesso più di recente, nonché un punto di ingresso "Altro utente". Abbiamo ricevuto il feedback dei clienti che non è sufficiente se più utenti hanno effettuato l'accesso al dispositivo. Era comunque necessario digitare di nuovo il nome utente e così via.
 
-Introdotto in questa build di **** Windows Insider, quando selezioni Altro utente che si trova a destra del campo di immissione del PIN, nella schermata di accesso verranno visualizzati più utenti con cui in precedenza è stato eseguito l'accesso al dispositivo. In questo modo gli utenti possono selezionare il proprio profilo utente e quindi accedere con le credenziali di Windows Hello. Un nuovo utente può anche essere aggiunto al dispositivo da questa pagina Altri utenti tramite il **pulsante Aggiungi account.**
+Introdotto in questa build di **** Windows Insider, quando selezioni Altro utente che si trova a destra del campo di immissione del PIN, nella schermata di accesso verranno visualizzati più utenti con cui in precedenza è stato effettuato l'accesso al dispositivo. In questo modo gli utenti possono selezionare il proprio profilo utente e quindi accedere con le credenziali di Windows Hello. Un nuovo utente può anche essere aggiunto al dispositivo da questa pagina Altri utenti tramite il **pulsante Aggiungi account.**
 
 Nel menu Altri utenti, il pulsante Altri utenti visualizza l'ultimo utente che ha eseguito l'accesso al dispositivo. Selezionare questo pulsante per tornare alla schermata di accesso dell'utente.
 
@@ -406,7 +411,7 @@ Nel menu Altri utenti, il pulsante Altri utenti visualizza l'ultimo utente che h
 
 Gli utenti possono selezionare i microfoni esterni connessi tramite USB-C usando il **pannello Impostazioni** audio. I microfoni USB-C possono essere usati per chiamate, registrazioni e così via.
 
-Apri **l'app** Impostazioni e seleziona **Suono**  >  **di sistema.**
+Apri **l'app Impostazioni** e seleziona **Suono di**  >  **sistema.**
 
 ![Impostazioni audio](images/usbc-mic-1.jpg)
 
@@ -429,7 +434,7 @@ Purtroppo Bluetooth microfoni non sono ancora supportati in HoloLens 2.
 
 #### <a name="troubleshooting-usb-c-microphones"></a>Risoluzione dei problemi relativi ai microfoni USB-C
 
-Tenere presente che alcuni microfoni USB-C segnalano erroneamente se stessi sia come microfono *che* come altoparlante. Si tratta di un problema con il microfono e non con HoloLens. Quando si collega uno di questi microfoni a HoloLens, l'audio potrebbe essere perso. Fortunatamente, esiste una semplice correzione.  
+Tenere presente che alcuni microfoni USB-C segnalano erroneamente se stessi come microfono *e* altoparlante. Si tratta di un problema con il microfono e non con HoloLens. Quando si collega uno di questi microfoni a HoloLens, l'audio potrebbe essere perso. Fortunatamente, esiste una semplice correzione.  
 
 In **Impostazioni suono**di sistema imposta in modo esplicito gli altoparlanti predefiniti (driver audio funzionalità  ->  ****  ->  **** **analogica)** come **dispositivo predefinito.** HoloLens dovrebbe ricordare questa impostazione anche se il microfono viene rimosso e riconnesso in un secondo momento.
 
@@ -459,9 +464,9 @@ L'accesso automatico dei visitatori può essere gestito tramite [criteri URI OMA
 
 ### <a name="use-the-new-settings-and-edge-apps-in-kiosk-modes"></a>Usare le nuove app Impostazioni e Edge in modalità tutto schermo
 
-Quando si includono [app](hololens-kiosk.md)in chioschi, un amministratore IT spesso aggiunge l'app al chiosco multimediale ma usa il suo ID modello utente app (AUMID). Poiché sia l'app Impostazioni che l'app Microsoft Edge sono considerate nuove app e diverse da quelle delle app precedenti che usano gli AUMID per queste app, sarà necessario aggiornarsi per usare il nuovo AUMID.
+Quando si includono [app](hololens-kiosk.md)in chioschi, un amministratore IT spesso aggiunge l'app al chiosco multimediale ma usa il suo ID modello utente app (AUMID). Poiché sia l'app Impostazioni che l'app Microsoft Edge sono considerate nuove app e diverse da quelle delle app precedenti che usano AUMID per tali app, sarà necessario aggiornarsi per usare il nuovo AUMID.
 
-Quando si modifica un chiosco multimediale per includere le nuove app, è consigliabile aggiungere nel nuovo AUMID e lasciare quella precedente. Questo creerà una transizione semplice quando gli utenti aggiornano il sistema operativo e non dovranno ricevere nuovi criteri per continuare a usare il chiosco multimediale come previsto.
+Quando si modifica un chiosco multimediale per includere le nuove app, è consigliabile aggiungere nel nuovo AUMID e lasciare quella precedente. In questo modo verrà creata una transizione semplice quando gli utenti aggiorneranno il sistema operativo e non sarà necessario ricevere nuovi criteri per continuare a usare il chiosco multimediale come previsto.
 
 | App                    | AUMID                                                  |
 |------------------------|--------------------------------------------------------|
@@ -472,7 +477,7 @@ Quando si modifica un chiosco multimediale per includere le nuove app, è consig
 
 ### <a name="kiosk-mode-behavior-changes-for-handling-of-failures"></a>Modifiche al comportamento della modalità tutto schermo per la gestione degli errori
 
-Nelle build precedenti, se un dispositivo aveva una configurazione tutto schermo, che è una combinazione dell'accesso assegnato globale e dell'accesso assegnato ai membri del gruppo AAD, se la determinazione dell'appartenenza al gruppo AAD non è riuscita, l'utente non visualizza " nulla nel menu[Start".](https://docs.microsoft.com/hololens/hololens-kiosk#kiosk-mode-behavior-changes-for-handling-of-failures)
+Nelle build precedenti, se un dispositivo aveva una configurazione tutto schermo, ovvero una combinazione dell'accesso assegnato globale e dell'accesso assegnato ai membri del gruppo AAD, se la determinazione dell'appartenenza al gruppo AAD non è riuscita, l'utente non visualizzava " nulla nel menu[Start".](https://docs.microsoft.com/hololens/hololens-kiosk#kiosk-mode-behavior-changes-for-handling-of-failures)
 
 A partire dalla versione Windows Insider, l'esperienza di chiosco multimediale verrà fallback alla configurazione globale del chiosco multimediale (se presente) in caso di errori durante la modalità tutto schermo del gruppo AAD.
 
@@ -513,20 +518,20 @@ Nelle build di Windows Insider stiamo espandendo l'elenco degli URI delle impost
 | System > Storage > Configure Storage Sense         | `ms-settings:storagepolicies`                      |
 | Ora & lingua > data & ora                        | `ms-settings:dateandtime`                          |
 | Ora & lingua > tastiera                           | `ms-settings:keyboard`                             |
-| Ora & lingua > lingua                           | `ms-settings:language`                             |
-| Ora & lingua > lingua                           | `ms-settings:regionlanguage-languageoptions`       |
+| Time & Language > Language                           | `ms-settings:language`                             |
+| Time & Language > Language                           | `ms-settings:regionlanguage-languageoptions`       |
 | Aggiornamento & sicurezza > ripristino & ripristino               | `ms-settings:reset`                                |
 
 #### <a name="updated-uris"></a>URI aggiornati
 
-In precedenza, i due URI seguenti non portava un utente direttamente alle pagine indicate, ma bloccava solo la pagina degli aggiornamenti principali. Gli elementi seguenti sono stati aggiornati per indirizzare le proprie pagine:
+In precedenza, i due URI seguenti non portava un utente direttamente alle pagine indicate, ma bloccava solo la pagina degli aggiornamenti principali. Gli elementi seguenti sono stati aggiornati per indirizzare le pagine:
 
 - `ms-settings:windowsupdate-options`
 - `ms-settings:windowsupdate-restartoptions`
 
 ### <a name="configuring-fallback-diagnostics-via-settings-app"></a>Configurazione della diagnostica di fallback tramite l'app Impostazioni
 
-Ora, nell'app Impostazioni, un utente può configurare il comportamento di [Diagnostica fallback.](hololens-diagnostic-logs.md) Nell'app Impostazioni passa alla **pagina Risoluzione dei**problemi relativi alla privacy per configurare questa  ->  **** impostazione.
+Ora, nell'app Impostazioni, un utente può configurare il comportamento di [Diagnostica fallback.](hololens-diagnostic-logs.md) Nell'app Impostazioni passare alla **pagina Risoluzione**  ->  **dei** problemi relativi alla privacy per configurare questa impostazione.
 
 > [!NOTE]
 > Se sono configurati criteri MDM per il dispositivo, l'utente non sarà in grado di ignorare tale comportamento.  
@@ -539,7 +544,7 @@ Questa funzionalità può essere gestita tramite [Connectivity/AllowConnectedDev
 
 ### <a name="new-os-update-troubleshooter"></a>Nuovo strumento di risoluzione dei problemi dell'aggiornamento del sistema operativo
 
-Oltre agli strumento di risoluzione dei problemi precedenti all'interno dell'app Impostazioni, è stato aggiunto un nuovo strumento di risoluzione dei problemi con l'aggiunta della nuova app Impostazioni per gli aggiornamenti del sistema operativo. Passa a **Settings**  ->  **Update &amp; Security**  >  **Troubleshoot**Windows  >  **Update e** seleziona **Start.** In questo modo è possibile raccogliere le tracce durante la riproduzione del problema con gli aggiornamenti del sistema operativo per agevolare la risoluzione dei problemi relativi all'IT o al supporto tecnico.
+Oltre agli strumento di risoluzione dei problemi precedenti nell'app Impostazioni, è stato aggiunto un nuovo strumento di risoluzione dei problemi con l'aggiunta della nuova app Impostazioni per gli aggiornamenti del sistema operativo. Passa a **Settings**  ->  **Update &amp; Security**  >  **Troubleshoot**  >  **Windows Update** e seleziona **Start.** In questo modo è possibile raccogliere le tracce durante la riproduzione del problema con gli aggiornamenti del sistema operativo per agevolare la risoluzione dei problemi relativi all'IT o al supporto tecnico.
 
 ### <a name="delivery-optimization-preview"></a>Anteprima ottimizzazione recapito
 
@@ -586,7 +591,7 @@ Alcune avvertenze su questa offerta di anteprima:
 
 In un dispositivo HoloLens 2 vai a **Settings**  >  **Update & Security Windows**Insider  >  **Program** e seleziona **Get started.** Collega l'account che hai usato per registrarti come Windows Insider.
 
-Windows Insider sta ora passando ai canali. **L'anello Fast** diventerà **dev Channel,** l'anello **Lento** diventerà il **Canale Beta**e l'anello **Release Preview** diventerà il Canale di anteprima **delle versioni.** Ecco l'aspetto del mapping:
+Windows Insider sta ora passando ai canali. **L'anello Fast** diventerà **dev Channel,** **l'anello Slow** diventerà il Canale **Beta**e l'anello **Release Preview** diventerà il Canale di anteprima **delle versioni.** Ecco l'aspetto del mapping:
 
 ![Spiegazione dei canali Windows Insider](images/WindowsInsiderChannels.png)
 
@@ -597,18 +602,18 @@ Seleziona Quindi **Sviluppo attivo di Windows,** scegli se vuoi ricevere le buil
 Selezionare **Confirm > Restart Now** per completare l'operazione. Dopo il riavvio del dispositivo, vai a Impostazioni **> Aggiornamento & sicurezza > verificare** la disponibilità di aggiornamenti per ottenere la build più recente.
 
 ### <a name="update-error-0x80070490-work-around"></a>Aggiornamento degli errori 0x80070490 risolvere il problema
-Se si verifica un errore di aggiornamento 0x80070490 durante l'aggiornamento nel canale Dev o Beta, provare a eseguire le operazioni seguenti a breve termine. Implica lo spostamento del canale Insider, la raccolta dell'aggiornamento e quindi il trasferimento del canale Insider.
+Se si verifica un errore di aggiornamento 0x80070490 durante l'aggiornamento nel canale Dev o Beta, provare a eseguire le operazioni seguenti a breve termine. Si tratta di spostare il canale Insider, raccogliere l'aggiornamento e quindi spostare di nuovo il canale Insider.
 
 #### <a name="stage-one---release-preview"></a>Passaggio 1 - Versione di anteprima
 1.  Impostazioni, Aggiornamento & Sicurezza, Programma Windows Insider, seleziona **Canale di anteprima versione.**
 2.  Settings, Update & Security, Windows Update, **Check for updates.** Dopo l'aggiornamento, passare al passaggio 2.
 
 #### <a name="stage-two---dev-channel"></a>Fase due - Dev Channel
-1. Impostazioni, Aggiorna & Sicurezza, Programma Windows Insider, seleziona **Canale sviluppatore.**
+1. Impostazioni, Update & Security, Programma Windows Insider, seleziona **Dev Channel.**
 2. Settings, Update & Security, Windows Update, **Check for updates.**
 
 ## <a name="ffu-download-and-flash-directions"></a>Indicazioni stradali per il download e il flash FFU
-Per eseguire il test con un ffu firmato in anteprima, devi prima sbloccare il dispositivo prima di lampeggiare il ffu firmato in anteprima.
+Per eseguire il test con una versione di anteprima firmata ffu, devi prima sbloccare il dispositivo prima di lampeggiare la versione di anteprima firmata ffu.
 1. Nel PC:
 
     1. Scarica ffu nel PC da [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) .
@@ -621,21 +626,21 @@ Per eseguire il test con un ffu firmato in anteprima, devi prima sbloccare il di
 
 ## <a name="provide-feedback-and-report-issues"></a>Inviare commenti e suggerimenti e segnalare i problemi
 
-Usa [l'app Hub di Feedback](hololens-feedback.md) in HoloLens per fornire feedback e segnalare i problemi. L'uso di Hub di Feedback garantisce che tutte le informazioni di diagnostica necessarie siano incluse per aiutare i nostri tecnici a eseguire rapidamente il debug e risolvere il problema.  I problemi con la versione cinese e giapponese di HoloLens devono essere segnalati allo stesso modo.
+Usa [l'app Hub di Feedback](hololens-feedback.md) in HoloLens per fornire feedback e segnalare i problemi. L'uso di Hub di Feedback garantisce che tutte le informazioni di diagnostica necessarie siano incluse per aiutare i tecnici a eseguire rapidamente il debug e risolvere il problema.  I problemi con la versione cinese e giapponese di HoloLens devono essere segnalati allo stesso modo.
 
 > [!NOTE]
 > Assicurati di accettare la richiesta che ti chiede se vuoi che Hub di Feedback accedono alla cartella Documenti (seleziona **Sì** quando richiesto).
 
 ## <a name="note-for-developers"></a>Nota per gli sviluppatori
 
-Sei il benvenuto e ti incoraggi a provare a sviluppare le tue applicazioni usando le build Insider di HoloLens.  Per iniziare, consultare la documentazione per sviluppatori [di HoloLens.](https://developer.microsoft.com/windows/mixed-reality/development) Queste stesse istruzioni funzionano con le build Insider di HoloLens.  Puoi usare le stesse build di Unity e Visual Studio già in uso per lo sviluppo di HoloLens.
+Sei il benvenuto e ti incoraggi a provare a sviluppare le tue applicazioni con le build Insider di HoloLens.  Per iniziare, consultare la documentazione per sviluppatori [di HoloLens.](https://developer.microsoft.com/windows/mixed-reality/development) Queste stesse istruzioni funzionano con le build Insider di HoloLens.  Puoi usare le stesse build di Unity e Visual Studio già in uso per lo sviluppo di HoloLens.
 
 ## <a name="stop-receiving-insider-builds"></a>Interrompere la ricezione delle build Insider
 
 Se non vuoi più ricevere build Insider di Windows Holographic, puoi rifiutare esplicitamente quando HoloLens esegue una build di produzione oppure puoi ripristinare il dispositivo usando Advanced Recovery Companion per ripristinare il dispositivo in una versione non Insider di Windows Holographic. [](hololens-recovery.md)
 
 > [!CAUTION]
-> Esiste un problema noto in cui gli utenti che annullano la registrazione alle build di Insider Preview dopo aver reinstallato manualmente una nuova build di anteprima visualizzano una schermata blu. Successivamente devono recuperare manualmente il dispositivo. Per informazioni dettagliate sull'impatto o meno su questo problema noto, vedere altre informazioni su [questo problema noto.](https://docs.microsoft.com/hololens/hololens-known-issues?source=docs#blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-a-insider-build)
+> Esiste un problema noto in cui gli utenti che annullano la registrazione alle build di Insider Preview dopo aver reinstallato manualmente una nuova build di anteprima visualizzano una schermata blu. Successivamente devono ripristinare manualmente il dispositivo. Per informazioni dettagliate su se l'utente sarebbe stato o meno in grado di verificarsi, consultare altre informazioni su [questo problema noto.](https://docs.microsoft.com/hololens/hololens-known-issues?source=docs#blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-a-insider-build)
 
 Per verificare che HoloLens ese in esecuzione una build di produzione:
 

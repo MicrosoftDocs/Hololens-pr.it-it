@@ -11,12 +11,12 @@ metadata:
   ms.author: v-todmc
   ms.date: 5/22/2020
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: 196162764a236ef2b4d7a6d1337b86066dde7469
-  ms.sourcegitcommit: 5b0f0b5930f138afc6cc0e0b9869c3239f1352b2
+  ms.openlocfilehash: a2c1e27a22525366c4d5ffc4bc06e9931412a54a
+  ms.sourcegitcommit: fbc8ddb17e31fea8667ece43a511592b86ac3947
   ms.translationtype: HT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 01/26/2021
-  ms.locfileid: "11301534"
+  ms.lasthandoff: 03/04/2021
+  ms.locfileid: "11385449"
 landingContent:
 - title: Panoramica di HoloLens
   linkLists:
@@ -26,9 +26,9 @@ landingContent:
       url: hololens2-options.md
     - text: Hardware HoloLens 2
       url: hololens2-hardware.md
-    - text: Hardware HoloLens (prima generazione)
-      url: hololens1-hardware.md
-    - text: Usare il menu Start e casa della realtà mista
+    - text: Microsoft Mesh (anteprima)
+      url: /mesh/overview
+    - text: Usare il menu Start e ambiente iniziale
       url: holographic-home.md
     - text: Trovare, installare e disinstallare le applicazioni
       url: holographic-store-apps.md

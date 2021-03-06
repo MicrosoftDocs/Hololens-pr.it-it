@@ -18,20 +18,20 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 51058ddcba10a285b91d7fffedccf19d052d4e04
-ms.sourcegitcommit: f3e35e278f7841176982b411881f2791e9600e6a
+ms.openlocfilehash: 918ffe42ae23c6b7e0e91c6d365c80eee487660b
+ms.sourcegitcommit: 07ffe1bf2f45dcb2ba9d7fbe54b4773a0fb9d525
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/05/2021
-ms.locfileid: "11388774"
+ms.locfileid: "11393860"
 ---
 # <a name="frequently-asked-questions-about-hololens-devices-and-holograms"></a>Domande frequenti sui dispositivi e gli ologrammi di HoloLens
 
 Questo articolo risponde ad alcune domande relative all'uso di HoloLens, tra cui come posizionare gli ologrammi, lavorare con gli spazi e altro ancora.
 
-Ogni volta che si verificano problemi, assicurarsi che HoloLens sia [carico](https://support.microsoft.com/help/12627/hololens-charge-your-hololens). Provare a [riavviarlo](hololens-restart-recover.md) per verificare se ciò risolve il problema. Usare l'app Feedback per inviare informazioni riguardanti il problema. L'app Feedback è disponibile nel menu [**Start**](holographic-home.md).
+Ogni volta che si verificano problemi, assicurarsi che HoloLens sia [caricato.](https://support.microsoft.com/help/12627/hololens-charge-your-hololens) Provare a [riavviarlo](hololens-restart-recover.md) per verificare se ciò risolve il problema. Usare l'app Feedback per inviare informazioni riguardanti il problema. L'app Feedback è disponibile nel menu [**Start**](holographic-home.md).
 
-Per suggerimenti su come indossare l'HoloLens, vedere [Domande frequenti su come indossare comodamente HoloLens (1ª generazione)](hololens1-fit-comfort-faq.md).
+Per suggerimenti su come indossare HoloLens, vedi le domande frequenti sull'adattamento e il comfort di [HoloLens (prima generazione).](hololens1-fit-comfort-faq.md)
 
 Il presente articolo affronta le domande e i problemi seguenti:
 <a id="list"></a>
@@ -210,7 +210,7 @@ Se si verificano problemi nell'utilizzo di un dispositivo Bluetooth, verificare 
 
 ## <a name="im-having-problems-using-the-hololens-clicker"></a>Si verificano problemi durante l'utilizzo del clicker di HoloLens
 
-Usare il [clicker](hololens1-clicker.md) per selezionare, scorrere, spostare e ridimensionare gli ologrammi. Le app individuali possono supportare movimenti del clicker aggiuntivi.
+Usare il [clicker](hololens1-clicker.md) per selezionare, scorrere, spostare e ridimensionare gli ologrammi. Le singole app possono supportare movimenti del clicker aggiuntivi.
 
 Se si verificano problemi nell'utilizzo del clicker, assicurarsi che sia carico e associato a HoloLens. Se la batteria è scarica, la spia lampeggia in giallo. Per verificare che il clicker sia associato, accedere a **Impostazioni** > **Dispositivi** e controllare che sia presente. Per ulteriori informazioni, vedere [Associare il clicker](hololens1-clicker.md).
 

@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 327701c2f618fc8958704cef5f174efed08fff3a
-ms.sourcegitcommit: f3e35e278f7841176982b411881f2791e9600e6a
+ms.openlocfilehash: 7c11dfbdb78e59493d648fb3a172d3e1f73048c8
+ms.sourcegitcommit: 07ffe1bf2f45dcb2ba9d7fbe54b4773a0fb9d525
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/05/2021
-ms.locfileid: "11388784"
+ms.locfileid: "11393880"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Insider Preview per Microsoft HoloLens
 
@@ -283,8 +283,8 @@ Con questa versione stiamo introducendo una nuova versione dell'app Impostazioni
 
 **Problemi noti**
 - Le finestre Impostazioni posizionate in precedenza verranno rimosse (vedere la nota precedente).
-- La pagina Ethernet mostra sempre un dispositivo Ethernet virtuale ("UsbNcm") (in analisi). Questo dispositivo Ethernet virtuale verrà visualizzato anche nella pagina Rete della configurazione del dispositivo, ma può essere ignorato (in analisi).
-- Non puoi più rinominare il dispositivo con l'app Impostazioni (gli amministratori IT possono usare pacchetti di provisioning o MDM per rinominare i dispositivi).
+- Non puoi più rinominare il dispositivo con l'app Impostazioni. Gli amministratori IT possono rinominare i dispositivi usando il modello di nome del dispositivo [Windows Autopilot per HoloLens 2](https://docs.microsoft.com/hololens/hololens2-autopilot) o il nodo MDM [DevDetail CSP](https://docs.microsoft.com/windows/client-management/mdm/devdetail-csp) Ext/Microsoft/DNSComputerName.
+- La pagina Ethernet mostra sempre un dispositivo Ethernet virtuale ("UsbNcm").
 - L'utilizzo della batteria per il nuovo Microsoft Edge potrebbe non essere accurato, a causa della sua natura come applicazione desktop Win32 supportata da un livello di scheda UWP (nessuna correzione prevista a breve).
 
 ### <a name="display-color-calibration"></a>Calibrazione del colore dello schermo

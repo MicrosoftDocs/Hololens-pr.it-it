@@ -15,24 +15,24 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 06768203459827a83d8b6e891dfc8c46e33c3da2
-ms.sourcegitcommit: 1f37a06cde037f3acdc4ef3767a9384953d97c33
+ms.openlocfilehash: 44c79a41d7864cd6000ffed1bdd32dab8ffabc39
+ms.sourcegitcommit: b437c738f101ac870a29bbdb7fd642eda3d67f00
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "11194866"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "11406268"
 ---
-# Trovare, installare e disinstallare le applicazioni su Microsoft Store
+# <a name="find-install-and-uninstall-applications-from-the-microsoft-store"></a>Trovare, installare e disinstallare le applicazioni su Microsoft Store
 
 Microsoft Store è la tua fonte di riferimento per le app e i giochi compatibili con HoloLens. Quando entri nello Store con il tuo HoloLens, le app visualizzate lì funzioneranno sul dispositivo.
 
 Le app di HoloLens usano le visualizzazioni 2D o olografiche. Le app che usano la visualizzazione 2D sono simili a finestre e possono essere posizionate intorno a te. Le app che usano la visualizzazione olografica ti circondano e diventano l'unica app che vedi.
 
-HoloLens supporta molte attuali applicazioni disponibili su Microsoft Store, nonché nuove app create specificamente per HoloLens.  Questo articolo si concentra sulle applicazioni olografiche disponibili su Microsoft Store.
+HoloLens supporta molte applicazioni esistenti da Microsoft Store e nuove app create appositamente per HoloLens.  Questo articolo si concentra sulle applicazioni olografiche disponibili su Microsoft Store.
 
 Per maggiori informazioni sull'installazione e l'esecuzione di app personalizzate, si legga [Applicazioni olografiche personalizzate](holographic-custom-apps.md).
 
-## Trova le app
+## <a name="find-apps"></a>Trova le app
 
 Apri Microsoft Store dal menu **Start**. Quindi scorri le app e i giochi. È possibile usare i [comandi vocali](hololens-cortana.md) per cercando pronunciando la parola "Cerca", dicendo "Avvia dettatura" quando si apre la finestra di ricerca, quindi pronunciando i termini di ricerca quando richiesto.
 
@@ -50,24 +50,25 @@ Apri Microsoft Store dal menu **Start**. Quindi scorri le app e i giochi. È pos
 | Word Mobile       | https://office.live.com/start/Word.aspx       |
 | PowerPoint Mobile | https://office.live.com/start/PowerPoint.aspx |
 
-## Installazione delle app
+## <a name="install-apps"></a>Installazione delle app
 
-Per scaricare le app, è necessario eseguire l'accesso con un account Microsoft. Alcune app sono gratuite e possono essere scaricate subito. Per le app che devono essere acquistate, è necessario accedere allo Store con il proprio account Microsoft e avere un metodo di pagamento valido.
+Per scaricare le app, è necessario eseguire l'accesso con un account Microsoft. Alcune app sono gratuite e possono essere scaricate subito. Per le app che richiedono un acquisto, devi accedere a Windows Store con il tuo account Microsoft e avere un metodo di pagamento valido.
 > [!NOTE]
-> L'account utilizzato in Microsoft Store non deve corrispondere all'account con cui si esegue l'accesso. Se si utilizza un account aziendale o scolastico su HoloLens, è necessario effettuare l'accesso con l'account personale nell'app di Microsoft Store per fare un acquisto. 
+> L'account utilizzato in Microsoft Store non deve per forza corrispondere all'account con cui si esegue l'accesso. Se si utilizza un account aziendale o scolastico su HoloLens, è necessario effettuare l'accesso con l'account personale nell'app di Microsoft Store per fare un acquisto. 
 
-Per configurare una modalità di pagamento, vai su [ account.microsoft.com](https://account.microsoft.com/) e seleziona **Pagamento & fatturazione** > **Opzioni di pagamento** > **Aggiungere un'opzione di pagamento**.
+> [!TIP]
+> Per configurare una modalità di pagamento, vai su [ account.microsoft.com](https://account.microsoft.com/) e seleziona **Pagamento & fatturazione** > **Opzioni di pagamento** > **Aggiungere un'opzione di pagamento**.
 
 1. Per aprire il [menu **Start**](holographic-home.md), eseguire un [gesto Start](https://docs.microsoft.com/hololens/hololens2-basic-usage#start-gesture) o [ a fiore](hololens1-basic-usage.md) su HoloLens 1 (prima generazione).
-1. Selezionare l'app Microsoft Store. Dopo l'apertura dell'App Store:
-   1. Usare la barra di ricerca per cercare le applicazioni desiderate. 
+1. Selezionare l'app Microsoft Store. Dopo l'apertura dell'app store:
+   1. Utilizzare la barra di ricerca per cercare le applicazioni. 
    1. Selezionare le app essenziali o le app create appositamente per HoloLens da una delle categorie selezionate.
    1. Nell'angolo in alto a destra dell'App Store, selezionare il **"..."** pulsante, poi selezionare **Raccolta personale** per visualizzare le app acquistate in precedenza.
 1. Selezionare **Ottieni** o **Installa** nella pagina dell'applicazione (potrebbe essere necessario un acquisto).
 
-## Aggiornare le app
-Per aggiornare un'app installata da Microsoft Store, è anche possibile aggiornare la stessa app da Microsoft Store. Ciò vale anche per le app installate per Microsoft Store per le aziende. 
-1. Per aprire il [menu **Start**](holographic-home.md), eseguire un [gesto Start](https://docs.microsoft.com/hololens/hololens2-basic-usage#start-gesture) o [ a fiore](hololens1-basic-usage.md) su HoloLens 1 (prima generazione).
+## <a name="update-apps"></a>Aggiornare le app
+Per aggiornare un'app installata da Microsoft Store, puoi farlo dall'app di Microsoft Store. Per le app installate per Microsoft Store per le aziende, puoi anche aggiornare tali app da Microsoft Store per le aziende. 
+1. Per aprire il [menu **Start**](holographic-home.md), eseguire un [gesto Start](https://docs.microsoft.com/hololens/hololens2-basic-usage#start-gesture) o [ mano a fiore](hololens1-basic-usage.md) su HoloLens 1 (prima generazione).
 1. Selezionare l’App Store.
 1. Cercare nell'angolo in alto a destra dell'app Store. 
 1. Selezionare il pulsante **"..."** o "Vedi altro".
@@ -76,7 +77,7 @@ Per aggiornare un'app installata da Microsoft Store, è anche possibile aggiorna
    > ![Schermate delll'app Microsoft Store.](images/store-update-1.png)
 
 1. Selezionare **Download e aggiornamenti**.
-    1. Se il dispositivo ha identificato in precedenza degli aggiornamenti, è possibile che siano mostrati una freccia rivolta in basso e un numero, che rappresenta gli aggiornamenti in sospeso.
+    1. Se il dispositivo ha identificato in precedenza gli aggiornamenti, potrebbero esserci una freccia in giù e un numero che rappresenta gli aggiornamenti in sospeso.
 1. Selezionare **Ottieni aggiornamenti**. Ora il dispositivo cerca gli aggiornamenti e in seguito li scarica e installa. 
  
    > [!div class="mx-imgBorder"]
@@ -87,14 +88,14 @@ Per aggiornare un'app installata da Microsoft Store, è anche possibile aggiorna
 >
 > Se si vuole aggiornare un'app personalizzata che è stata trasferita o distribuita, è necessario usare lo stesso metodo con la versione aggiornare dell'app. Per maggiori informazioni sull'installazione e l'esecuzione di app personalizzate, si legga [Applicazioni olografiche personalizzate](holographic-custom-apps.md).
 
-## Disinstallare le app
+## <a name="uninstall-apps"></a>Disinstallare le app
 
 Ci sono due modi per disinstallare le applicazioni.  È possibile disinstallare le applicazioni attraverso Microsoft Store o il menu Start.
 
-### Disinstallare dal menu Start
+### <a name="uninstall-from-the-start-menu"></a>Disinstallare dal menu Start
 
 Nel menu **Start** o nella lista di **Tutte le app** cercare l'app. Selezionare e tenere premuto finché non viene visualizzato il menu, quindi selezionare ** Disinstalla**.
 
-### Disinstallare da Microsoft Store
+### <a name="uninstall-from-the-microsoft-store"></a>Disinstallare da Microsoft Store
 
-Aprire Microsoft Store dal menu **Start** e cercare l'applicazione da disinstallare.  Nella pagina dello Store, per ogni applicazione installata è presente il pulsante **Disinstalla**.
+Apri Microsoft Store dal menu **Start** e quindi cerca l'applicazione che vuoi disinstallare.  Nella pagina Dello Store, ogni applicazione installata ha un **pulsante Disinstalla.**

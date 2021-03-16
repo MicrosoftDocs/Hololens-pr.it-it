@@ -12,18 +12,18 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 ms.topic: article
-ms.localizationpriority: high
+ms.localizationpriority: medium
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: f0aa400be56d09a843a1b7c9bae78346551ad8af
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
-ms.translationtype: HT
+ms.openlocfilehash: f50a885f6cc82256d146d7f4914aca934e81c0c0
+ms.sourcegitcommit: 01c0b0a789e156a9d29aaf6f61e36dfd09b8c01a
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283917"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439042"
 ---
-# Riavviare, ripristinare o recuperare HoloLens (prima generazione)
+# <a name="restart-reset-or-recover-hololens-1st-gen"></a>Riavviare, ripristinare o recuperare HoloLens (prima generazione)
 
 Se si riscontrano problemi su HoloLens, è possibile provare a riavviare o ripristinare il dispositivo, o addirittura a riconfigurarlo utilizzando lo strumento di recupero. Questo articolo illustra i passaggi consigliati ed il loro ordine di esecuzione per il ripristino.
 
@@ -32,9 +32,9 @@ Se si vuole ripristinare un HoloLens 2, vedere [Ripristino di un HoloLens 2](htt
 > [!NOTE]
 > Questo articolo è incentrato sul dispositivo ed il software HoloLens. Se gli ologrammi non sembrano essere corretti, vedere **[considerazioni sull'ambiente HoloLens](hololens-environment-considerations.md)** per informazioni sui fattori che migliorano la qualità degli ologrammi.
 
-## Riavviare
+## <a name="restart"></a>Riavviare
 
-### Riavviare in sicurezza usando Cortana
+### <a name="do-a-safe-restart-by-using-cortana"></a>Riavviare in sicurezza usando Cortana
 
 Il modo più sicuro per riavviare HoloLens consiste nell'usare Cortana, che in genere è la prima cosa da provare quando si verifica un problema con HoloLens.
 
@@ -48,7 +48,7 @@ Il modo più sicuro per riavviare HoloLens consiste nell'usare Cortana, che in g
 2. Pronuncia “Ciao Cortana, riavvia” o “Ciao Cortana, esegui il reboot”.
 3. Cortana risponderà e chiederà di confermare. Attendere la riproduzione di un suono dopo la domanda e successivamente dire “Sì". Il dispositivo viene ora riavviato.
 
-### Usare il pulsante di accensione per riavviare in sicurezza
+### <a name="use-the-power-button-to-do-a-safe-restart"></a>Usare il pulsante di accensione per riavviare in sicurezza
 
 Se ancora risulta impossibile riavviare il dispositivo, ritentare utilizzando il pulsante di **accensione**:
 
@@ -59,14 +59,14 @@ Se ancora risulta impossibile riavviare il dispositivo, ritentare utilizzando il
 1. Attendere 1 minuto per il completamento della chiusura. Lo spegnimento potrebbe ancora essere in corso nonostante lo spegnimento delle luci.
 2. Riaccendere il dispositivo tenendo premuto il tasto di **accensione** per 1 secondo.
 
-### Eseguire un riavvio sicuro usando il Portale di dispositivi di Windows
+### <a name="do-a-safe-restart-by-using-windows-device-portal"></a>Eseguire un riavvio sicuro usando il Portale di dispositivi di Windows
 
 > [!NOTE]
 > Per questo processo, HoloLens deve essere configurato come un dispositivo per sviluppatori. Maggiori informazioni sul [Portale di dispositivi di Windows](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal).
 
 Se la procedura precedente non ha funzionato, è possibile provare a riavviare il dispositivo usando il [Portale di dispositivi di Windows](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal). Nell’angolo in alto a destra si trova l’opzione per riavviare o spegnere il dispositivo.
 
-### Eseguire un riavvio forzato rischioso
+### <a name="do-an-unsafe-forced-restart"></a>Eseguire un riavvio forzato rischioso
 
 Se i metodi precedenti non hanno riavviato HoloLens, forzarne il riavvio. Questo metodo equivale a rimuovere e reinstallare la batteria. Tale procedura rappresenta un rischio perché potrebbe danneggiare il dispositivo. Se si verifica, dovrai ripristinare manualmente il tuo HoloLens.  
 
@@ -80,7 +80,7 @@ Se i metodi precedenti non hanno riavviato HoloLens, forzarne il riavvio. Questo
 1. Tenere premuto il pulsante di **accensione** per 1 secondo.
 1. Se il problema persiste, tenere premuto il tasto di **accensione** per 4 secondi, finché tutti gli indicatori della batteria si spengono e gli ologrammi non sono più mostrati sullo schermo. Attendere 1 minuto, e premere poi il tasto di **accensione** di nuovo per accendere il dispositivo.
 
-## Ripristinare le impostazioni di fabbrica
+## <a name="reset-to-factory-settings"></a>Ripristinare le impostazioni di fabbrica
 
 > [!NOTE]
 > Per eseguire il ripristino, la batteria deve essere carica almeno al 40%.
@@ -95,7 +95,7 @@ Se il problema persiste sul Microsoft HoloLens, provare a ripristinare le impost
 1. Confermare il ripristino. Il dispositivo si riavvierà e mostrerà una serie di ingranaggi rotanti con un indicatore di stato.
 1. Attendi circa 30 minuti per il completamento del processo. Al termine, il dispositivo si riavvierà in modalità “impatto fuori scatola”.
 
-## Reinstallare il sistema operativo
+## <a name="reinstall-the-operating-system"></a>Reinstallare il sistema operativo
 
 Se il dispositivo presenta ancora problemi dopo il riavvio e il ripristino, è possibile usare uno strumento di recupero sul computer per reinstallare il sistema operativo e il firmware di HoloLens.  
 
@@ -107,7 +107,7 @@ La procedura di recupero può richiedere del tempo. Al termine, sarà installata
 
 Per usare lo strumento, è necessario un computer dotato di Windows 10 o versione successiva e di almeno 4 GB di spazio di archiviazione libero. Non è possibile eseguire questo strumento su una macchina virtuale.
 
-### Recupero di HoloLens
+### <a name="recover-your-hololens"></a>Recupero di HoloLens
 
 1. Scarica e installa [Windows Device Recovery Tool](https://support.microsoft.com/help/12379/windows-10-mobile-device-recovery-tool-faq) sul tuo PC.
 1. Connettere un HoloLens di 1 generazione al computer usando il cavo micro USB fornito in dotazione.
@@ -115,7 +115,7 @@ Per usare lo strumento, è necessario un computer dotato di Windows 10 o version
 
 Se l'HoloLens di 1 generazione non viene rilevato automaticamente, selezionare **il mio dispositivo non è stato rilevato**. Seguire quindi le istruzioni per far entrare il dispositivo in modalità di ripristino.
 
-### Modalità di riconfigurazione manuale
+### <a name="manual-flashing-mode"></a>Modalità di riconfigurazione manuale
 
 Se il dispositivo non viene rilevato, eseguire le operazioni seguenti per farlo entrare in modalità di riconfigurazione:
 

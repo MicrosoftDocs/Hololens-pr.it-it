@@ -8,23 +8,23 @@ ms.author: v-tea
 ms.topic: article
 ms.date: 8/12/2019
 manager: jarrettr
-ms.localizationpriority: high
+ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: aca7b287b3d26ab37ddb90e4245a1e0b3adc17e2
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
-ms.translationtype: HT
+ms.openlocfilehash: f0ec62e55f15fda6d5a8304ea2bb77039d644b9e
+ms.sourcegitcommit: 01c0b0a789e156a9d29aaf6f61e36dfd09b8c01a
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283927"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439062"
 ---
-# Configurazione HoloLens (1a generazione)
+# <a name="set-up-your-hololens-1st-gen"></a>Configurazione HoloLens (1a generazione)
 
 La prima volta che accendi il dispositivo HoloLens, riceverai istruzioni per eseguire la calibrazione, la configurazione e l'accesso.  Questo articolo illustra come eseguire il primo avvio e configurare HoloLens (prima generazione).
 
 Nella sezione successiva imparerai a usare HoloLens e interagire con gli ologrammi. Per ignorare questo articolo, vedi [Introduzione a HoloLens (prima generazione)](hololens1-basic-usage.md).
 
-## Prima di iniziare
+## <a name="before-you-start"></a>Prima di iniziare
 
 Prima di iniziare, assicurati di disporre di quanto segue:
 
@@ -41,7 +41,7 @@ Prima di iniziare, assicurati di disporre di quanto segue:
 > - La prima volta che usi il tuo dispositivo HoloLens, [Cortana](hololens-cortana.md) è già attiva e pronta per guidarti (sebbene sarà in grado di rispondere alle tue domande solo dopo che avrai configurato il dispositivo). Puoi disattivare Cortana in qualsiasi momento tramite le relative impostazioni.
 > - Per passare alla versione cinese o giapponese di HoloLens, dovrai scaricare la build per la lingua desiderata in un PC e quindi installarla nel tuo dispositivo HoloLens. Per altre informazioni, vedi [Installare versioni localizzate di HoloLens (prima generazione)](hololens1-install-localized.md).
 
-## Avviare il dispositivo Hololens e configurare Windows
+## <a name="start-your-hololens-and-set-up-windows"></a>Avviare il dispositivo Hololens e configurare Windows
 
 La prima volta che avvii HoloLens, dovrai innanzitutto configurare Windows Holographic nel tuo dispositivo.
 
@@ -55,11 +55,11 @@ La prima volta che avvii HoloLens, dovrai innanzitutto configurare Windows Holog
         1. Continua a configurare il dispositivo.
     - Quando scegli **Appartiene a me**, accedi usando un account Microsoft. Al termine della configurazione, puoi [registrare manualmente HoloLens in gestione dispositivi](hololens-enroll-mdm.md#different-ways-to-enroll).
         1. Immetti le informazioni sull'account Microsoft.
-        1. Immettere la password. Se l'account Microsoft richiede la [verifica in due passaggi (2FA)](https://blogs.technet.microsoft.com/microsoft_blog/2013/04/17/microsoft-account-gets-more-secure/), completare il processo di verifica.
+        1. Immettere la password. Se l'account Microsoft richiede la [verifica in due passaggi (2FA)](https://blogs.technet.microsoft.com/microsoft_blog/2013/04/17/microsoft-account-gets-more-secure/), completa il processo di verifica.
 
 1. Il dispositivo imposta il fuso orario in base alle informazioni ottenute dalla rete Wi-Fi.
 
-## Calibrazione
+## <a name="calibration"></a>Calibrazione
 
 Dopo l'introduzione di Cortana, il passaggio di configurazione successivo è la calibrazione. Per una migliore esperienza di HoloLens, è consigliabile completare il processo di calibrazione durante l'installazione.
 
@@ -71,9 +71,9 @@ Durante la calibrazione, HoloLens chiede di allineare il dito con una serie di s
 
 *Schermata di allineamento della distanza oculare tramite dita, seconda fase*
 
-Complimenti. La configurazione è completa ed è possibile iniziare a usare HoloLens.
+A questo punto, La configurazione è completa ed è possibile iniziare a usare HoloLens.
 
-## Passaggi successivi
+## <a name="next-steps"></a>Passaggi successivi
 
 > [!div class="nextstepaction"]
-> [Informazioni di base su HoloLens (prima generazione)](hololens1-basic-usage.md)
+> [Introduzione a HoloLens (prima generazione)](hololens1-basic-usage.md)

@@ -6,21 +6,21 @@ ms.sitesec: library
 author: Teresa-Motiv
 ms.author: v-tea
 ms.topic: article
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.date: 10/09/2019
 ms.reviewer: jarrettr
 audience: ITPro
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 8205675213faefd1b0907627c427c572d52a37c6
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
-ms.translationtype: HT
+ms.openlocfilehash: c596eac214b0134d04a5b34acded69ff973be3b4
+ms.sourcegitcommit: 01c0b0a789e156a9d29aaf6f61e36dfd09b8c01a
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283997"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439022"
 ---
-# Domande frequenti su come indossare in modo confortevole HoloLens (prima generazione)
+# <a name="hololens-1st-gen-fit-and-comfort-frequently-asked-questions"></a>Domande frequenti su come indossare in modo confortevole HoloLens (prima generazione)
 
 Ecco alcuni suggerimenti su come indossare comodamente e avere un'esperienza ottimale con il tuo dispositivo HoloLens.
 
@@ -31,38 +31,38 @@ Per istruzioni dettagliate e un video sull'inserimento e la regolazione del disp
 
 Ecco alcuni suggerimenti su come indossare comodamente e avere un'esperienza ottimale con il tuo dispositivo HoloLens.
 
-## Mi sento a disagio quando utilizzo il dispositivo. Cosa posso fare?
+## <a name="im-experiencing-discomfort-when-i-use-my-device-what-should-i-do"></a>Mi sento a disagio quando utilizzo il dispositivo. Cosa posso fare?
 
 Se avverti qualche disagio, fermati e riposati finché non ti senti meglio. Prova a restare seduto in una stanza ben illuminata e rilassati per un po'. La volta successiva che usi il tuo dispositivo HoloLens, prova a usarlo per un periodo di tempo più breve.
 
 Per altre informazioni, vedi [Informazioni sulla salute e la sicurezza di HoloLens](https://go.microsoft.com/fwlink/p/?LinkId=746661).
 
-## Non riesco a vedere l'intero fotogramma olografico o i miei ologrammi sono troncati
+## <a name="i-cant-see-the-whole-holographic-frame-or-my-holograms-are-cut-off"></a>Non riesco a vedere l'intero fotogramma olografico o i miei ologrammi sono troncati
 
 Per visualizzare il bordo superiore del fotogramma olografico, sposta il dispositivo in modo che si trovi al di sopra della tua testa o inclina leggermente la fascia davanti. Per vedere il bordo inferiore, sposta il dispositivo più in basso sulla testa o inclina leggermente la fascia davanti. Se il bordo sinistro o destro del fotogramma della vista non è visibile, assicurati che la visiera HoloLens sia centrata sulla fronte.
 
-## Devo guardare verso l'alto o verso il basso per vedere gli ologrammi
+## <a name="i-need-to-look-up-or-down-to-see-holograms"></a>Devo guardare verso l'alto o verso il basso per vedere gli ologrammi
 
 Prova a regolare la posizione della visiera del dispositivo in modo che il fotogramma corrisponda allo sguardo naturale. Ecco come:
 
 - **Se devi guardare verso l'alto per vedere gli ologrammi**. Prima di tutto, sposta la parte posteriore della fascia un po' più in alto sulla testa. Utilizza quindi una mano per tenere la fascia in posizione e l'altra per ruotare delicatamente la visiera in modo da avere una buona visuale del fotogramma olografico.
 - **Se devi guardare verso il basso per vedere gli ologrammi**. Prima di tutto, sposta la parte posteriore della fascia un po' più in basso sulla testa. Posiziona quindi i pollici sotto le braccia del dispositivo e le dita indice sulla parte superiore della fascia e premi delicatamente con i pollici per ruotare la visiera in modo da avere una buona visuale del fotogramma olografico.
 
-## Il dispositivo scorre in basso quando lo uso o devo stringere troppo la fascia per fissarla
+## <a name="the-device-slides-down-when-im-using-it-or-i-need-to-make-the-headband-too-tight-to-keep-it-secure"></a>Il dispositivo scorre in basso quando lo uso o devo stringere troppo la fascia per fissarla
 
 Il cinturino sulla testa può aiutarti a fissare il dispositivo HoloLens sulla testa, soprattutto se ti muovi molto. Il cinturino può anche permetterti di allentare un po' la fascia. [Modalità d'uso](hololens1-setup.md#adjust-fit).
 
 Puoi anche provare il posizionamento della fascia: a seconda delle dimensioni e della forma della testa, potrebbe essere necessario farlo scorrere verso l'alto o verso il basso per riposizionarlo sulla fronte.
 
-## Il mio dispositivo HoloLens pesa sul mio naso
+## <a name="my-hololens-feels-heavy-on-my-nose"></a>Il mio dispositivo HoloLens pesa sul mio naso
 
 Se il dispositivo HoloLens è regolato correttamente, il cuscinetto deve poggiare in modo leggero sul naso. Se sembra troppo pesante, prova a ruotare la visiera verso l'alto o a regolare l'angolo della fascia. Puoi anche far scorrere la visiera de dispositivo: afferra i bracci del dispositivo appena dietro la visiera e tira in avanti delicatamente.
 
-## Come posso modificare HoloLens per adattarsi agli occhiali?
+## <a name="how-can-i-adjust-hololens-to-fit-with-my-glasses"></a>Come posso modificare HoloLens per adattarsi agli occhiali?
 
 La visiera del dispositivo può scorrere all'interno e all'esterno per sistemare gli occhiali. Afferra i bracci del dispositivo appena dietro la visiera e tira in avanti delicatamente per regolarlo.
 
-## Il mio braccio si stanca quando uso i movimenti. Cosa posso fare?
+## <a name="my-arm-gets-tired-when-i-use-gestures-what-can-i-do"></a>Il mio braccio si stanca quando uso i movimenti. Cosa posso fare?
 
 Quando usi i movimenti, non è necessario estendere il braccio troppo lontano dal corpo. Tienilo più vicino al tuo fianco, dove è più comodo e ti stancherà di meno. [Altre informazioni sui movimenti](hololens1-basic-usage.md#use-hololens-with-your-hands).
 

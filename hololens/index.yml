@@ -11,12 +11,12 @@ metadata:
   ms.author: v-todmc
   ms.date: 5/22/2020
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: a2c1e27a22525366c4d5ffc4bc06e9931412a54a
-  ms.sourcegitcommit: fbc8ddb17e31fea8667ece43a511592b86ac3947
+  ms.openlocfilehash: 178433ece6962a03880b0d7520d58f4a7fc52ff0
+  ms.sourcegitcommit: 9f79ed9f76b930b8ceb97844d5f9eace9316b8a3
   ms.translationtype: HT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 03/04/2021
-  ms.locfileid: "11385449"
+  ms.lasthandoff: 03/22/2021
+  ms.locfileid: "11442578"
 landingContent:
 - title: Panoramica di HoloLens
   linkLists:
@@ -155,4 +155,4 @@ landingContent:
     - text: Supporto di Microsoft Store-Office
       url: https://support.microsoft.com/office/microsoft-store-109d8aed-d32f-4d6f-9c54-ff80871e8637
     - text: Archiviare & supporto per le richieste di acquisto
-      url: https://support.microsoft.com/account-billing/contact-microsoft-store-support-4f615f2a-6bbd-fd69-6695-ae213d63eef0
+      url: https://www.microsoft.com/store/b/business

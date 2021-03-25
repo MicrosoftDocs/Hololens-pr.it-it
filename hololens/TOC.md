@@ -54,6 +54,12 @@
 #### [Distribuzione nel cloud](hololens2-cloud-connected-deploy.md)
 #### [Mantenimento nel cloud](hololens2-cloud-connected-maintain.md)
 ### [Distribuzione di HoloLens 2 a client esterni con assistenza remota](hololens2-deployment-guide.md)
+### Distribuzione di HoloLens 2 con connessione aziendale e Dynamics 365 Guides
+#### [Panoramica della distribuzione con connessione aziendale](hololens2-corp-connected-overview.md)
+#### [Preparazione con connessione aziendale](hololens2-corp-connected-prepare.md)
+#### [Configurazione con connessione aziendale](hololens2-corp-connected-configure.md)
+#### [Distribuzione con connessione aziendale](hololens2-corp-connected-deploy.md)
+#### [Manutenzione con connessione aziendale](hololens2-corp-connected-maintain.md)
 ### [Protezione offline](hololens-common-scenarios-offline-secure.md)
 ## Sicurezza
 ### [Panoramica della sicurezza](security-overview.md)

@@ -11,12 +11,12 @@ metadata:
   ms.author: v-todmc
   ms.date: 5/22/2020
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: 178433ece6962a03880b0d7520d58f4a7fc52ff0
-  ms.sourcegitcommit: 9f79ed9f76b930b8ceb97844d5f9eace9316b8a3
+  ms.openlocfilehash: 3dfac30e9ce4ecd20f4bfbee6c25b21ef009de3b
+  ms.sourcegitcommit: d7c86ccad7be32f7223d4b801083798454fda740
   ms.translationtype: HT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 03/22/2021
-  ms.locfileid: "11442578"
+  ms.lasthandoff: 03/25/2021
+  ms.locfileid: "11448484"
 landingContent:
 - title: Panoramica di HoloLens
   linkLists:
@@ -42,8 +42,10 @@ landingContent:
     links:
     - text: Scenari di distribuzione comuni
       url: common-scenarios.md
-    - text: Distribuzione con assistenza remota si HoloLens 2 in scala nel cloud
+    - text: Distribuzione con assistenza remota di HoloLens 2 in scala nel cloud
       url: hololens2-cloud-connected-overview.md
+    - text: Distribuzione di HoloLens 2 con connessione aziendale e Dynamics 365 Guides
+      url: hololens2-corp-connected-overview.md
     - text: Guida alla distribuzione di client esterni
       url: hololens2-deployment-guide.md
     - text: Distribuzione sicura offline

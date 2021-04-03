@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 3/4/2021
+ms.date: 04/01/2021
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 26fa6bfbbb1d9ec0408208513a4cd54b8ba93117
-ms.sourcegitcommit: b1362ab822d1cba97fe0b3fb4e666d9b68b6adbf
+ms.openlocfilehash: ebd3992458daa94726e73742b1fba4d7fa97a48b
+ms.sourcegitcommit: ad725427c2c88e73df2e5753001a26502b2327de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "11406772"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "11474841"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Insider Preview per Microsoft HoloLens
 
@@ -79,7 +79,7 @@ I visitatori possono ora essere connessi automaticamente a un chiosco multimedia
 
 [**Miglioramento della gestione degli errori in modalità tutto schermo**](#kiosk-mode-behavior-changes-for-handling-of-failures)
 
-Questo aggiornamento ora mantiene i dispositivi più controllati dalla modalità tutto schermo, consentendone il fall back a diversi tipi di chioschi prima di presentare semplicemente un chiosco multimediale vuoto. Anche se questo non è gestibile, potrebbe essere qualcosa per informare il reparto di supporto se si utilizzano chioschi multimediale in un modo che potrebbe essere applicabile alla configurazione.
+Se l'appartenenza al gruppo AAD dell'utente AAD connesso non viene determinata correttamente, la configurazione globale del chiosco multimediale viene utilizzata per il menu start (se presente) altrimenti all'utente viene presentato un menu start vuoto. Anche se il menu start vuoto non è una configurazione che è possibile impostare direttamente, questa nuova gestione potrebbe essere qualcosa che informa il reparto di supporto se si utilizzano chioschi multimediale, in quanto ciò potrebbe essere applicabile alle configurazioni o potrebbe essere necessario apportare nuove modifiche alle configurazioni di accesso assegnate.
 
 #### <a name="updates-to-page-settings-visibility"></a>Aggiornamenti della visibilità delle impostazioni della pagina
 
@@ -168,11 +168,14 @@ Poiché il nuovo Microsoft Edge è un'app Win32 nativa con un nuovo livello di s
 - Stampa
 
 **Principali problemi noti del browser:**
-- La reimpostazione del dispositivo rimuoverà il nuovo Microsoft Edge
-- L'anteprima della lente di ingrandimento nella tastiera olografica mostra contenuto non corretto
-- Lo scorrimento può talvolta stutter
+- Wi-Fi le configurazioni proxy, che sono criteri proxy per le singole connessioni Wi-Fi, attualmente non funzionano con il nuovo Microsoft Edge. Stiamo lavorando attivamente per sbloccare questo problema prima del rilascio pubblico dell'aggiornamento del sistema operativo.
+- L'anteprima della lente di ingrandimento nella tastiera olografica è stata disabilitata per il nuovo Microsoft Edge. Speriamo di riabilitare questa funzionalità in un aggiornamento futuro, una volta che l'ingrandimento funziona correttamente.
+- Due caratteri sulla tastiera giapponese non funzionano come previsto nel nuovo Microsoft Edge. This issue has been root caused and should be fixed soon.
 - I collegamenti Web nell'app di Microsoft Store potrebbero non avviare il browser
-- L'audio potrebbe essere riprodotto dalla finestra del browser errata se in precedenza hai riprodotto l'audio da un'altra finestra del browser
+- L'audio potrebbe essere riprodotto dalla finestra del browser errata se è aperta e attiva un'altra finestra del browser. Puoi risolvere questo problema chiudendo l'altra finestra attiva che non dovrebbe riprodurre l'audio.
+- Quando si riproduce l'audio da una finestra del browser in [modalità "Seguimi",](hololens2-basic-usage.md#follow-me-stop-following)l'audio continuerà a essere riprodotto se si disabilita la modalità "Seguimi". Puoi risolvere questo problema interrompendo la riproduzione audio prima di disabilitare la modalità "Seguimi" o chiudendo la finestra con il **pulsante X.**
+- L'interazione con le finestre di Microsoft Edge attive può causare l'inattività imprevista di altre finestre dell'app 2D. Puoi riattivare queste finestre interagendo di nuovo con esse.
+- L'apertura di un collegamento Web da un'altra app o da alcuni tipi di documenti come i PDF può causare l'apertura di una seconda scheda vuota nel browser (oltre alla nuova scheda creata con il contenuto del collegamento Web o del collegamento file). È possibile risolvere questo problema chiudendo la scheda vuota aggiuntiva.
 
 #### <a name="microsoft-edge-insider-channels"></a>Canali Microsoft Edge Insider
 
@@ -249,16 +252,14 @@ L'estensione visualizzatore 360 si basa su WebXR e viene installata automaticame
 1. [Tocco dell'aria](hololens2-basic-usage.md#select-using-air-tap) per visualizzare i controlli di riproduzione. Usa [i raggi della mano](hololens2-basic-usage.md#select-using-air-tap) e il tocco dell'aria per riprodurre/sospendere, andare avanti/indietro, attivare/disattivare i sottotitoli o interrompere l'esperienza (che esce dalla visualizzazione immersiva). I controlli di riproduzione scompariranno dopo alcuni secondi di inattività.
 
 #### <a name="top-webxr-and-360-viewer-known-issues"></a>Principali problemi noti di WebXR e visualizzatore 360
-- Nelle esperienze WebXR, gli ologrammi possono cambiare o inclinare quando si inclina la testa o si sposta nell'ambiente.
 - A seconda della complessità dell'esperienza WebXR, la frequenza dei fotogrammi può essere goccia o balbuzie.
-- Le giunzioni articolate della mano non sono ancora disponibili in WebXR.
+- Il supporto per le giunzioni articolate della mano in WebXR non è abilitato per impostazione predefinita. Gli sviluppatori possono abilitare il supporto `edge://flags` attivando "Input mano WebXR".
 - Quando si esce da un'esperienza WebXR o visualizzatore a 360, potrebbero essere necessario 30 secondi o più perché gli ologrammi nella casa di realtà mista riappariranno.
 - 360 video da siti Web diversi da YouTube potrebbero non funzionare come previsto.
-- Se i video a 360 gradi non entrano nella visualizzazione immersive (o non viene visualizzato il pulsante headset di realtà mista), prova ad aggiornare la pagina.
-- Le didascalie non sono ancora visibili nel visualizzatore 360 in HoloLens 2.
+- I sottotitoli sono attualmente disabilitati nel visualizzatore 360 in HoloLens 2. Microsoft prevede di abilitare questa funzionalità in un aggiornamento futuro.
 - La sospensione di un video nel visualizzatore a 360 interrompe il rendering del video (ma selezionando il pulsante di riproduzione viene ripresa correttamente la riproduzione).
 - Il pulsante "video successivo" in Visualizzatore 360 non funziona attualmente.
-- Puoi riprodurre video 2D in una modalità "cinema" immersiva, ma la frequenza dei fotogrammi sarà inferiore a 30 fps.
+- Puoi riprodurre video 2D in una modalità "cinema" immersiva, ma la frequenza dei fotogrammi può essere inferiore a 30 fps.
 
 #### <a name="providing-feedback-on-webxr-and-360-viewer"></a>Fornire feedback su WebXR e visualizzatore 360
 
@@ -337,11 +338,8 @@ Se non sei soddisfatto del profilo colori personalizzato salvato in HoloLens 2, 
 
 #### <a name="top-display-color-calibration-known-issues"></a>Problemi noti relativi alla calibrazione del colore dello schermo superiore
 
-- Nella pagina Impostazioni, la stringa di stato che indica quando il profilo colori è stato modificato per l'ultima volta non sarà aggiornato fino a quando non si ricarica la pagina di Impostazioni 
+- Nella pagina Impostazioni, la stringa di stato che indica quando il profilo colori è stato modificato per l'ultima volta non sarà aggiornato fino a quando non si ricarica la pagina di Impostazioni.
     - Soluzione alternativa: selezionare un'altra pagina Impostazioni e quindi selezionare di nuovo la pagina Calibrazione.
-- Se HoloLens 2 va in sospensione durante l'esecuzione della calibrazione del colore dello schermo, in seguito riprenderà nella casa della realtà mista e il livello di luminosità dello schermo sarà ancora in grigio.
-- Potresti dover provare a premere i pulsanti di luminosità sul lato sinistro del dispositivo un paio di volte prima che funzionino come previsto.
-- La localizzazione non è completa per tutti i mercati
 
 ### <a name="default-app-picker"></a>Selezione app predefinita
 
@@ -360,6 +358,9 @@ Per impostare il volume di **** una singola app, passa a Impostazioni Suono di s
  <img alt="App volume and device preferences." src="./images/volume-per-app.jpg" width="500" height="250" />
 
 ### <a name="office-web-app"></a>Office Web App
+
+>[!NOTE]
+>A causa della build 20325.1000 di Windows Insider, l'app Web di Office non verrà più preinstallato e non sarà preinstallato per la prossima versione pubblica dell'aggiornamento del sistema operativo. Per installare l'app Web di Office, visitare https://www.office.com e selezionare il pulsante App **disponibile** o Installa **Office** nella barra degli indirizzi. Selezionare **Installa** per confermare.
 
 L'app Web di Office è stata aggiunta all'elenco "Tutte le app" del menu Start. Questa app Web può anche essere aggiunta a Start o disinstallata. Poiché si tratta di un'app Web, la relativa funzionalità corrisponde esattamente a quanto si potrebbe provare visitando https://www.office.com . La funzionalità dell'app Web di Office è disponibile solo quando HoloLens 2 dispone di una connessione Internet attiva.
 
@@ -585,9 +586,15 @@ Alcune avvertenze su questa offerta di anteprima:
 
 - [La diagnostica offline](hololens-diagnostic-logs.md#offline-diagnostics) includerà anche informazioni aggiuntive sul dispositivo per il numero di serie e la versione del sistema operativo.
 
+### <a name="known-issues-and-work-around"></a>Problemi noti e risoluzione dei problemi
 
+#### <a name="pairing-hololens-to-pc"></a>Associazione di HoloLens al PC
 
+Prima della build 20325.1000 di Windows Insider, quando un utente aveva impostato le credenziali di associazione in [Windows Holographic, versione 20H2](hololens-release-notes.md#windows-holographic-version-20h2) o [Windows Holographic, versione 2004](hololens-release-notes.md#windows-holographic-version-2004) e aggiornata alle build di Windows Insider, le credenziali del set precedente per l'associazione di HoloLens al PC per la distribuzione e il debug di app come tramite Visual Studio non hanno più funzionato. Windows Insider build 20325.1000 risolve questo problema e non richiede azioni aggiuntive per riprendere a usare device portal.
 
+Gli utenti che hanno lampeggiato il dispositivo con una [build Insider](#ffu-download-and-flash-directions) dovranno ora riconseere i propri dispositivi (a 20325.1000+ o a una build GA) per associare i propri dispositivi al PC.
+
+Gli utenti che non si sono iscritti a Windows Insider e che riceveranno l'aggiornamento delle funzionalità quando è disponibile in genere non sono interessati.
 
 
 ## <a name="start-receiving-insider-builds"></a>Iniziare a ricevere build Insider

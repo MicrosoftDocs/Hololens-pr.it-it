@@ -1,6 +1,6 @@
 ---
-title: Configurare il dispositivo HoloLens (prima generazione)
-description: Informazioni su come configurare HoloLens (1a generazione) per la prima volta in una rete Wi-Fi con un account Microsoft (MSA) o un account di Azure Active Directory (AAD).
+title: Configurare HoloLens (prima generazione)
+description: Informazioni su come configurare HoloLens (prima generazione) per la prima volta in una rete Wi-Fi con un account Microsoft (MSA) o Azure Active Directory (AAD).
 ms.assetid: 0136188e-1305-43be-906e-151d70292e87
 ms.prod: hololens
 author: Teresa-Motiv
@@ -12,66 +12,66 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: f0ec62e55f15fda6d5a8304ea2bb77039d644b9e
-ms.sourcegitcommit: 01c0b0a789e156a9d29aaf6f61e36dfd09b8c01a
+ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439062"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "108309363"
 ---
-# <a name="set-up-your-hololens-1st-gen"></a>Configurazione HoloLens (1a generazione)
+# <a name="set-up-your-hololens-1st-gen"></a>Configurare HoloLens (prima generazione)
 
-La prima volta che accendi il dispositivo HoloLens, riceverai istruzioni per eseguire la calibrazione, la configurazione e l'accesso.  Questo articolo illustra come eseguire il primo avvio e configurare HoloLens (prima generazione).
+La prima volta che si accende HoloLens, si verrà guidati attraverso la calibrazione del dispositivo, la configurazione del dispositivo e l'accesso.  Questo articolo illustra l'esperienza di avvio e configurazione di HoloLens (prima generazione).
 
-Nella sezione successiva imparerai a usare HoloLens e interagire con gli ologrammi. Per ignorare questo articolo, vedi [Introduzione a HoloLens (prima generazione)](hololens1-basic-usage.md).
+Nella sezione successiva si apprenderà come usare HoloLens e interagire con gli ologrammi. Per passare a questo articolo, vedere [Introduzione a HoloLens (prima generazione).](hololens1-basic-usage.md)
 
 ## <a name="before-you-start"></a>Prima di iniziare
 
-Prima di iniziare, assicurati di disporre di quanto segue:
+Prima di iniziare, assicurarsi di avere a disposizione quanto segue:
 
-**Una connessione Wi-Fi**. Dovrai connettere il tuo dispositivo HoloLens a una rete Wi-Fi per configurarlo. La prima volta che effettui la connessione, ti servirà una rete aperta o protetta da password che non richiede l'accesso a un sito Web o l'utilizzo di certificati per la connessione. [Scopri di più sui siti Web usati da HoloLens](hololens-offline.md).
+**Una Wi-Fi connessione .** È necessario connettere HoloLens a una rete Wi-Fi per configurarla. La prima volta che ci si connette, è necessaria una rete aperta o protetta da password che non richieda l'accesso a un sito Web o l'uso di certificati per la connessione. [Altre informazioni sui siti Web che HoloLens usa.](hololens-offline.md)
 
-**Un account Microsoft o un account aziendale**. Dovrai anche usare un account Microsoft o, se la tua organizzazione è proprietaria del dispositivo, un account aziendale per accedere a HoloLens. Se non disponi di un account Microsoft, vai a [account.microsoft.com](https://account.microsoft.com) e configurane uno gratuitamente.
+**Un account Microsoft o un account aziendale.** È anche necessario usare un account account Microsoft (o un account aziendale, se l'organizzazione è proprietaria del dispositivo) per accedere a HoloLens. Se non si ha una account Microsoft, passare a account.microsoft.com [e](https://account.microsoft.com) configurarne una gratuitamente.
 
-**Uno spazio sicuro e ben illuminato senza pericoli**. [Informazioni sulla sicurezza](https://go.microsoft.com/fwlink/p/?LinkId=746661).
+**Uno spazio sicuro e ben illuminato senza rischi di inciampo.** [Informazioni su integrità e sicurezza.](https://go.microsoft.com/fwlink/p/?LinkId=746661)
 
-**Accessori opzionali per il comfort** forniti con il dispositivo HoloLens, utili per indossarlo in modo confortevole. [Ulteriori informazioni per indossarlo in modo confortevole](https://support.microsoft.com/help/12632/hololens-fit-your-hololens).
+**Gli accessori di comfort facoltativi** in dotazione con HoloLens consentono di ottenere la scelta più comoda. [Altre informazioni su adattamento e comfort.](https://support.microsoft.com/help/12632/hololens-fit-your-hololens)
 
 > [!NOTE]
 >  
-> - La prima volta che usi il tuo dispositivo HoloLens, [Cortana](hololens-cortana.md) è già attiva e pronta per guidarti (sebbene sarà in grado di rispondere alle tue domande solo dopo che avrai configurato il dispositivo). Puoi disattivare Cortana in qualsiasi momento tramite le relative impostazioni.
-> - Per passare alla versione cinese o giapponese di HoloLens, dovrai scaricare la build per la lingua desiderata in un PC e quindi installarla nel tuo dispositivo HoloLens. Per altre informazioni, vedi [Installare versioni localizzate di HoloLens (prima generazione)](hololens1-install-localized.md).
+> - La prima volta che usi HoloLens, [Cortana](hololens-cortana.md) è già pronta per guidarti (anche se non sarà in grado di rispondere alle tue domande fino a quando non hai configurato il dispositivo). È possibile disattivare Cortana in qualsiasi momento nelle impostazioni di Cortana.
+> - Per passare alla versione cinese o giapponese di HoloLens, è necessario scaricare la build per la lingua in un PC e quindi installarla in HoloLens. Per altre informazioni, vedere [Installare versioni localizzate di HoloLens (prima generazione).](hololens1-install-localized.md)
 
-## <a name="start-your-hololens-and-set-up-windows"></a>Avviare il dispositivo Hololens e configurare Windows
+## <a name="start-your-hololens-and-set-up-windows"></a>Avviare Hololens e configurare Windows
 
-La prima volta che avvii HoloLens, dovrai innanzitutto configurare Windows Holographic nel tuo dispositivo.
+La prima volta che si avvia HoloLens, la prima attività è configurare Windows Holographic nel dispositivo.
 
-1. Connettiti a Internet (HoloLens ti guida per selezionare la rete Wi-Fi).
+1. Connettersi a Internet (HoloLens consente di selezionare Wi-Fi rete).
 
-1. Accedi al tuo account utente. Scegli tra **Appartiene all'azienda o all'istituto di istruzione** e **Appartiene a me**.
-    - Quando scegli **Appartiene all'azienda o all'istituto di istruzione**, accedi usando un account Azure AD. Se l'organizzazione usa Azure AD Premium e ha configurato la registrazione automatica MDM, HoloLens si registra automaticamente in MDM. Se l'organizzazione non usa Azure AD Premium, la registrazione MDM automatica non è disponibile, quindi dovrai [registrare manualmente HoloLens nella gestione dispositivi](hololens-enroll-mdm.md#different-ways-to-enroll). Per accedere al dispositivo per la prima volta usando un account aziendale o dell'istituto di istruzione, effettua quanto segue:
-        1. Immetti le informazioni sull'account aziendale.
-        1. Accettare l'Informativa sulla privacy.
-        1. Accedi usando le credenziali di Azure AD. Potresti essere reindirizzato alla pagina di accesso dell'organizzazione.
-        1. Continua a configurare il dispositivo.
-    - Quando scegli **Appartiene a me**, accedi usando un account Microsoft. Al termine della configurazione, puoi [registrare manualmente HoloLens in gestione dispositivi](hololens-enroll-mdm.md#different-ways-to-enroll).
-        1. Immetti le informazioni sull'account Microsoft.
-        1. Immettere la password. Se l'account Microsoft richiede la [verifica in due passaggi (2FA)](https://blogs.technet.microsoft.com/microsoft_blog/2013/04/17/microsoft-account-gets-more-secure/), completa il processo di verifica.
+1. Accedere al proprio account utente. Scegliere tra **My work or school owns it and** I own **it**.
+    - Quando si sceglie **My work or school owns it**,si accede usando un account Azure AD personale. Se l'organizzazione usa Azure AD Premium e ha configurato la registrazione MDM automatica, HoloLens si registra automaticamente in MDM. Se l'organizzazione non usa Azure AD Premium, la registrazione MDM automatica non è disponibile, quindi sarà necessario registrare manualmente [HoloLens nella gestione dei dispositivi.](hololens-enroll-mdm.md#different-ways-to-enroll) Per accedere al dispositivo la prima volta usando un account aziendale o dell'istituto di istruzione, seguire questa procedura:
+        1. Immettere le informazioni sull'account aziendale.
+        1. Accettare l'informativa sulla privacy.
+        1. Accedere usando le credenziali Azure AD utente. Potresti essere reindirizzato alla pagina di accesso dell'organizzazione.
+        1. Continuare a configurare il dispositivo.
+    - Quando si sceglie **I own it**,si accede usando un account Microsoft. Al termine dell'installazione, è possibile [registrare manualmente HoloLens nella gestione dei dispositivi.](hololens-enroll-mdm.md#different-ways-to-enroll)
+        1. Immettere le account Microsoft dati.
+        1. Immettere la password. Se l'account Microsoft richiede la [verifica in due passaggi (2FA)](https://blogs.technet.microsoft.com/microsoft_blog/2013/04/17/microsoft-account-gets-more-secure/), completare il processo di verifica.
 
-1. Il dispositivo imposta il fuso orario in base alle informazioni ottenute dalla rete Wi-Fi.
+1. Il dispositivo imposta il fuso orario in base alle informazioni che ottiene dalla Wi-Fi rete.
 
 ## <a name="calibration"></a>Calibrazione
 
-Dopo l'introduzione di Cortana, il passaggio di configurazione successivo è la calibrazione. Per una migliore esperienza di HoloLens, è consigliabile completare il processo di calibrazione durante l'installazione.
+Dopo che Cortana ha introdotto se stesso, il passaggio di configurazione successivo è la calibrazione. Per un'esperienza HoloLens ottimale, è necessario completare il processo di calibrazione durante la configurazione.
 
-HoloLens (prima generazione) usa la distanza tra le tue pupille ([distanza interpupillare](https://en.wikipedia.org/wiki/Interpupillary_distance)) per rendere l'interazione con gli ologrammi chiara e facile. Se la distanza interpupillare non è corretta, gli ologrammi potrebbero sembrare instabili o a una distanza errata.
+HoloLens (prima generazione) usa la distanza tra le tue distanze (IPD o [distanza interpuperiale)](https://en.wikipedia.org/wiki/Interpupillary_distance)per rendere gli ologrammi chiari e facili da interagire. Se l'IPD non è corretto, gli ologrammi possono sembrare instabili o a una distanza non corretta.
 
-Durante la calibrazione, HoloLens chiede di allineare il dito con una serie di sei obiettivi per occhio. HoloLens usa questo processo per impostare la distanza interpupillare corretta per gli occhi. Se la calibrazione deve essere aggiornata o regolata per un nuovo utente, quest'ultimo può eseguire l'app Calibrazione al di fuori della configurazione.
+Durante la calibrazione, HoloLens chiede di allineare il dito con una serie di sei destinazioni per occhio. HoloLens usa questo processo per impostare l'IPD corretto per gli occhi. Se la calibrazione deve essere aggiornata o modificata per un nuovo utente, il nuovo utente può eseguire l'app Calibrazione al di fuori dell'installazione.
 
-![Schermata di allineamento della distanza oculare tramite dita, seconda fase](./images/ipd-finger-alignment-300px.jpg)
+![Schermata di allineamento del dito IPD nel secondo passaggio](./images/ipd-finger-alignment-300px.jpg)
 
-*Schermata di allineamento della distanza oculare tramite dita, seconda fase*
+*Schermata di allineamento del dito IPD nel secondo passaggio*
 
-A questo punto, La configurazione è completa ed è possibile iniziare a usare HoloLens.
+Congratulazioni! La configurazione è stata completata ed è possibile iniziare a usare HoloLens.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

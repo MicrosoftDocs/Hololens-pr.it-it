@@ -1,6 +1,6 @@
 ---
-title: Uso di Microsoft Endpoint Manager Intune per la gestione di dispositivi HoloLens
-description: Informazioni su come usare MDM per configurare CSP, Policy e gestire i dispositivi di realtà mista HoloLens su scala con Intune.
+title: Uso di Microsoft Endpoint Manager Intune per gestire i dispositivi HoloLens
+description: Informazioni su come usare MDM per configurare CSP, criteri e gestire dispositivi di realtà mista HoloLens su larga scala con Intune.
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
@@ -14,62 +14,62 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: ce288afdcb112c17ffde75078d641f3637a8448c
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283957"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "108309554"
 ---
-# Uso di Microsoft Endpoint Manager Intune per la gestione di dispositivi HoloLens
+# <a name="using-microsofts-endpoint-manager-intune-to-manage-hololens-devices"></a>Uso di Microsoft Endpoint Manager Intune per gestire i dispositivi HoloLens
 
-Sono disponibili numerose impostazioni diverse che è possibile gestire tramite MDM. L'uso dei dispositivi Intune può essere raggruppato insieme e le configurazioni possono essere distribuite in questi gruppi di utenti o dispositivi. Le app possono anche essere distribuite e gestite, configurare i dispositivi per la connessione alla rete, nonché configurare gli aggiornamenti in modo che si verifichino al momento desiderato e nell'anello di aggiornamento necessario. 
+Esistono numerose impostazioni diverse che è possibile gestire tramite MDM. L'uso dei dispositivi di Intune può essere raggruppato e le configurazioni possono essere distribuite a tali gruppi di utenti o dispositivi. Le app possono anche essere distribuite e gestite, configurando i dispositivi per la connessione alla rete, nonché configurando gli aggiornamenti in modo che si verifichino nel momento desiderato e nell'anello di aggiornamento necessario. 
 
-## Come gestire tramite Intune
+## <a name="how-to-manage-via-intune"></a>Come gestire tramite Intune
 
-### Categorie e gruppi di dispositivi
-Usando Intune, puoi creare categorie di dispositivi per aggiungere automaticamente periferiche ai gruppi in base alle categorie create, ad esempio ingegneria, medico, sviluppatori e così via. L'idea è quella di semplificare la gestione dei dispositivi in cui è in uso Windows olografico for business.
-Per saperne di più: [categorizzare i dispositivi in gruppi](https://docs.microsoft.com/mem/intune/enrollment/device-group-mapping)
+### <a name="device-categories-and-groups"></a>Categorie e gruppi di dispositivi
+Con Intune è possibile creare categorie di dispositivi per aggiungere automaticamente i dispositivi ai gruppi in base alle categorie create, ad esempio ingegneria, medici, sviluppatori e così via. L'idea è semplificare la gestione dei dispositivi che eseguono Windows Holographic for Business.
+Altre informazioni: [Classificare i dispositivi in gruppi](https://docs.microsoft.com/mem/intune/enrollment/device-group-mapping)
 
-### Profili di configurazione dei dispositivi
-Intune include le impostazioni e le caratteristiche che è possibile abilitare o disabilitare in dispositivi diversi all'interno dell'organizzazione. Queste impostazioni e funzionalità vengono gestite con i profili. Ad esempio, puoi creare un profilo che consente a Cortana o usa Microsoft Defender Smart Screen nei tuoi dispositivi con Windows olografico for business.
-Nei tuoi profili puoi usare OMA-URI per personalizzare alcune impostazioni, creare restrizioni per i dispositivi e configurare una rete privata virtuale (VPN) e Wi-Fi.
-Iniziare [a usare i profili di configurazione e la](https://docs.microsoft.com/mem/intune/configuration/device-profiles) [Panoramica del profilo](https://docs.microsoft.com/mem/intune/configuration/device-profile-create).
+### <a name="device-configuration-profiles"></a>Profili di configurazione dispositivo
+Intune include impostazioni e funzionalità che è possibile abilitare o disabilitare in dispositivi diversi all'interno dell'organizzazione. Queste impostazioni e funzionalità vengono gestite usando i profili. Ad esempio, è possibile creare un profilo che abilita Cortana o usa Microsoft Defender SmartScreen nei dispositivi che eseguono Windows Holographic for Business.
+Nei profili è possibile usare URI OMA per personalizzare alcune impostazioni, creare restrizioni dei dispositivi e configurare una rete privata virtuale (VPN) e Wi-Fi.
+[Introduzione ai profili di configurazione e](https://docs.microsoft.com/mem/intune/configuration/device-profiles)panoramica del [profilo](https://docs.microsoft.com/mem/intune/configuration/device-profile-create).
 
-## Esempi di elementi che possono essere gestiti e configurati
+## <a name="examples-of-what-can-be-managed-and-configured"></a>Esempi di cosa può essere gestito e configurato
 
-L'uso di MDM per gestire i dispositivi offre una vasta gamma di elementi che possono essere selezionati. 
+L'uso di MDM per gestire i dispositivi offre un'ampia gamma di elementi che è possibile selezionare. 
 
-### Wi-Fi
-[Le impostazioni Wi-Fi](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-configure) assegnano le impostazioni di rete wireless a utenti e dispositivi. Quando si assegna un profilo di Wi-Fi, gli utenti possono accedere alle Wi-Fi aziendali senza doverlo configurare autonomamente.
-Leggi altre informazioni su [come configurare la rete per HoloLens](hololens-commercial-infrastructure.md)
+### <a name="wi-fi"></a>Wi-Fi
+[Impostazioni Wi-Fi](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-configure) assegna le impostazioni di rete wireless a utenti e dispositivi. Quando si assegna un profilo Wi-Fi, gli utenti ottengono l'accesso al Wi-Fi aziendale senza doverlo configurare.
+Altre informazioni sulla [configurazione della rete per HoloLens](hololens-commercial-infrastructure.md)
 
-### Certificati
-I certificati consentono di migliorare la sicurezza fornendo l'autenticazione dell'account, l'autenticazione Wi-Fi, la crittografia VPN e la crittografia SSL del contenuto Web. Anche se gli amministratori possono gestire i certificati sui dispositivi manualmente tramite il provisioning dei pacchetti, è consigliabile usare il sistema MDM per gestire i certificati durante l'intero ciclo di vita, dall'iscrizione al rinnovo e alla revoca. Il sistema MDM può distribuire automaticamente questi certificati agli archivi certificati dei dispositivi dopo la registrazione del dispositivo (purché il sistema MDM supporti il protocollo SCEP) o gli standard di crittografia a chiave pubblica #12 (PKCS # 12)). MDM può anche eseguire query ed eliminare certificati client registrati o attivare una nuova richiesta di registrazione prima della scadenza del certificato corrente. 
+### <a name="certificates"></a>Certificati
+I certificati consentono di migliorare la sicurezza fornendo autenticazione dell'account, Wi-Fi autenticazione, crittografia VPN e crittografia SSL del contenuto Web. Anche se gli amministratori possono gestire manualmente i certificati nei dispositivi tramite il provisioning dei pacchetti, è consigliabile usare il sistema MDM per gestire tali certificati per l'intero ciclo di vita, dalla registrazione al rinnovo e alla revoca. Il sistema MDM può distribuire automaticamente questi certificati agli archivi certificati dei dispositivi dopo la registrazione del dispositivo (purché il sistema MDM supporti il Simple Certificate Enrollment Protocol (SCEP) o public key cryptography standards #12 (PKCS #12)). MDM può anche eseguire query ed eliminare i certificati client registrati o attivare una nuova richiesta di registrazione prima della scadenza del certificato corrente. 
 
-### Proxy
-La maggior parte delle reti Intranet aziendali sfrutta un proxy per gestire il traffico interno. Con HoloLens 2 è possibile configurare un server proxy per le connessioni Ethernet e Wi-Fi. Queste impostazioni non si applicano alle connessioni VPN. Per altre informazioni sulle impostazioni proxy per Windows 10, Vedi [CSP di NetworkProxy](https://docs.microsoft.com/windows/client-management/mdm/networkproxy-csp).
+### <a name="proxy"></a>Proxy
+La maggior parte delle reti Intranet aziendali sfrutta un proxy per gestire il traffico interno. Con HoloLens 2 è possibile configurare un server proxy per le connessioni ethernet e Wi-Fi connessioni. Queste impostazioni non si applicano alle connessioni VPN. Per altre informazioni sulle impostazioni proxy per Windows 10, vedere [NetworkProxy CSP](https://docs.microsoft.com/windows/client-management/mdm/networkproxy-csp).
 
-### VPN
-Le organizzazioni usano spesso una connessione VPN per controllare l'accesso alle app e alle risorse della Intranet aziendale. HoloLens 2 supporta le connessioni VPN SSL, che richiedono un plug-in scaricabile da Microsoft Store e sono specifiche del fornitore di VPN a scelta. 
-- Per saperne di più [su VPN in HoloLens](hololens-network.md#vpn).
-- Per altre informazioni sui profili VPN, vedere il [CSP di VPNv2](https://docs.microsoft.com/windows/client-management/mdm/vpnv2-csp).
+### <a name="vpn"></a>Connessione
+Le organizzazioni usano spesso una connessione VPN per controllare l'accesso alle app e alle risorse della Intranet aziendale. HoloLens 2 supporta le connessioni VPN SSL, che richiedono un plug-in scaricabile dal Microsoft Store e sono specifiche del fornitore VPN di propria scelta. 
+- Altre informazioni [sulla VPN in HoloLens.](hololens-network.md#vpn)
+- Per altre informazioni sui profili VPN, vedere [VPNv2 CSP](https://docs.microsoft.com/windows/client-management/mdm/vpnv2-csp).
 
-### Distribuire e gestire le app
-Usando Intune, puoi aggiungere app ai tuoi dispositivi che usano Windows olografico for business. Una soluzione MDM consente ai responsabili IT e agli amministratori di installare automaticamente le proprie app line-of-business in privato o di acquistare app tramite lo Store per un gruppo di utenti. Esistono diversi modi per distribuire le app, tra cui:
--   [Intune e portale aziendale]( app-deploy-intune.md)
+### <a name="deploy-and-manage-apps"></a>Distribuire e gestire le app
+Con Intune è possibile aggiungere le app ai dispositivi che eseguono Windows Holographic for Business. Una soluzione MDM consente ai decision maker e agli amministratori IT di installare (eseguire il push) in privato delle app line-of-business o di acquistare app tramite lo Store per un gruppo di utenti. Esistono molti modi per distribuire le app, ad esempio:
+-   [Intune e Portale aziendale]( app-deploy-intune.md)
 -   [Microsoft Store per le aziende]( app-deploy-store-business.md)
 
-Leggi altre informazioni sulla gestione delle app tramite Intune.
--   [Aggiungere app a Intune](https://docs.microsoft.com/mem/intune/apps/apps-add)
--   [Aggiungere app di Microsoft Store](https://docs.microsoft.com/mem/intune/apps/store-apps-windows)
--   [Aggiungere app create](https://docs.microsoft.com/mem/intune/apps/lob-apps-windows)
+Altre informazioni sulla gestione delle app tramite Intune.
+-   [Aggiungere le app a Intune](https://docs.microsoft.com/mem/intune/apps/apps-add)
+-   [Aggiungere le app di Microsoft Store](https://docs.microsoft.com/mem/intune/apps/store-apps-windows)
+-   [Aggiungere le app create dall'utente](https://docs.microsoft.com/mem/intune/apps/lob-apps-windows)
 - [Assegnare app ai gruppi](https://docs.microsoft.com/mem/intune/apps/apps-deploy)
 
-### Aggiornamenti software
-Intune include una caratteristica chiamata Update Rings per dispositivi Windows 10. Questi anelli di aggiornamento includono un gruppo di impostazioni che determinano la modalità di installazione degli aggiornamenti. Ad esempio, è possibile creare una finestra di manutenzione per installare gli aggiornamenti oppure scegliere di riavviare dopo l'installazione degli aggiornamenti. Un anello di aggiornamento può essere applicato a più dispositivi con Windows olografico per le aziende.
-Leggi altre informazioni su come [gestire gli aggiornamenti di HoloLens](hololens-updates.md) e [gestire gli aggiornamenti software tramite Intune](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure).
+### <a name="software-updates"></a>Aggiornamenti software
+Intune include una funzionalità denominata anelli di aggiornamento per i dispositivi Windows 10. Questi anelli di aggiornamento includono un gruppo di impostazioni che determinano il modo in cui vengono installati gli aggiornamenti. È possibile ad esempio creare una finestra di manutenzione per installare gli aggiornamenti o scegliere di riavviare dopo l'installazione degli aggiornamenti. Un anello di aggiornamento può essere applicato a più dispositivi che eseguono Windows Holographic for Business.
+Altre informazioni su come gestire [gli aggiornamenti di HoloLens](hololens-updates.md) e [Gestire gli aggiornamenti software tramite Intune.](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)
 
-### Configura la modalità tutto schermo
-Usando le caratteristiche di PC condivise o guest disponibili in Intune, puoi configurare i dispositivi Windows olografici per le aziende per l'esecuzione come chiosco. Questi dispositivi possono eseguire un'app (modalità Kiosk Single-app) o eseguire più app (modalità Kiosk multi-app). La modalità Kiosk è un'interfaccia utente per controllare le identità che hanno accesso alle app per impostazione predefinita.
-Informazioni su come [configurare HoloLens come chiosco]( hololens-kiosk.md)
+### <a name="configure-kiosk-mode"></a>Configurare la modalità tutto schermo
+Grazie alle funzionalità del PC in condivisione o guest disponibili in Intune, è possibile configurare i dispositivi Windows Holographic for Business per l'esecuzione in modalità tutto schermo. Questi dispositivi possono eseguire un'app (modalità tutto schermo per app singola), o più app (modalità tutto schermo per più app). La modalità tutto schermo è un'interfaccia utente per controllare quali identità hanno accesso alle app per impostazione predefinita.
+Informazioni su come [configurare HoloLens come chiosco multimediale]( hololens-kiosk.md)
 

@@ -1,7 +1,7 @@
 ---
-title: Panoramica della connessione cloud connessa a HoloLens 2 con assistenza remota
-description: Informazioni su come registrare i dispositivi HoloLens 2 in una rete connessa tramite cloud con l'assistenza remota di Dynamics 365.
-keywords: HoloLens, gestione, cloud connected, Remote Assist, AAD, Azure AD, MDM, gestione di dispositivi mobili
+title: Panoramica dei servizi connessi HoloLens 2 cloud con Remote Assist
+description: Informazioni su come registrare HoloLens 2 dispositivi su una rete connessa al cloud usando Dynamics 365 Remote Assist.
+keywords: HoloLens, gestione, connessa al cloud, Remote Assist, AAD, Azure AD, MDM, gestione dei dispositivi mobili
 author: evmill
 ms.author: v-evmill
 ms.reviewer: aboeger
@@ -15,76 +15,76 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 69b31657a7efaebd5b25b742023dc8767f9c5038
-ms.sourcegitcommit: 39424078a75feaf6a1e9b0547cb7d5de9847faf3
+ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "11312636"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "108309113"
 ---
-# Guida alla distribuzione: HoloLens 2 con Remote Assist nel cloud - Panoramica
+# <a name="deployment-guide--cloud-connected-hololens-2-with-remote-assist--overview"></a>Guida alla distribuzione - Cloud connected HoloLens 2 con Remote Assist - Panoramica
 
-Questa guida aiuta i professionisti IT a pianificare e distribuire i dispositivi Microsoft HoloLens 2 alla propria organizzazione con l'obiettivo generale di consentire a questi dispositivi di essere connessi alla propria organizzazione con l'assistenza remota di Dynamics 365 pronta per l'uso. Tieni presente che questo sarà un modello per le distribuzioni Proof-of-concept per la tua organizzazione in diversi casi di utilizzo di HoloLens 2.
+Questa guida consente ai professionisti IT di pianificare e distribuire Microsoft HoloLens 2 dispositivi all'organizzazione con l'obiettivo complessivo di avere questi dispositivi connessi al cloud all'organizzazione con Dynamics 365 Remote Assist pronti per l'uso. Tenere presente che questo modello fungerà da modello per le distribuzioni di modelli di verifica per l'organizzazione in un'ampia gamma di HoloLens 2 casi d'uso.
 
-Durante la guida verrà illustrato come registrare i dispositivi nella gestione del dispositivo, applicare le licenze in base alle esigenze e verificare che gli utenti finali siano in grado di usare immediatamente l'assistenza remota alla configurazione del dispositivo. A questo scopo, rivediamo i principali componenti dell'infrastruttura necessari per la configurazione e l'uso, ottenendo la distribuzione in scala con HoloLens 2.
+Durante la guida verrà illustrato come registrare i dispositivi nella gestione dei dispositivi, applicare le licenze in base alle esigenze e verificare che gli utenti finali siano in grado di usare immediatamente Remote Assist durante la configurazione del dispositivo. A tale scopo, verranno trattate le importanti infrastrutture necessarie per la configurazione e l'esecuzione, ottenendo una distribuzione su larga scala con HoloLens 2.
 
 ![Banner connesso al cloud](./images/cloud-connected-hololens-large.png)
 
-## In questa guida
+## <a name="in-this-guide"></a>In questa guida
 
-Questa guida ha l'obiettivo specifico di configurare l'assistenza remota all'interno dell'organizzazione nei dispositivi HoloLens. Riguarderemo le necessità necessarie per raggiungere questo obiettivo. Per mantenere lo stato attivo su questo obiettivo, la preparazione e la configurazione verranno preselezionate in modo da ottimizzare la distribuzione o ridurre gli elementi necessari per la configurazione. Sarai informato di queste opzioni e potrai personalizzare la distribuzione in base alle tue esigenze aziendali.
+Questa guida ha l'obiettivo specifico di configurare Remote Assist all'interno dell'organizzazione nei dispositivi HoloLens. Verranno trattati i necessari per raggiungere questo obiettivo. Per mantenere l'attenzione su questo obiettivo, alcune configurazioni e preparazione verranno preseescente per ottimizzare questa distribuzione o ridurre gli elementi necessari per la configurazione. Si verrà informati di queste scelte e sarà possibile personalizzare la distribuzione in base alle esigenze aziendali.
 
-Si tratta di una configurazione simile allo [scenario a: distribuire ai dispositivi Cloud Connect](https://docs.microsoft.com/hololens/common-scenarios#scenario-a), che è una buona opzione per molti strumenti di prova per le distribuzioni di concetti, che includono:
+Si tratta di una configurazione simile a [Scenario A:](https://docs.microsoft.com/hololens/common-scenarios#scenario-a)Deploy to cloud connect devices , che è un'opzione valida per molte distribuzioni del modello di verifica, tra cui:
 
-- Le reti di Wi-Fi sono in genere completamente aperte a Internet e ai servizi cloud
-- Join di Azure AD con registrazione automatica MDM--MDM (Intune) Managed
-- Accesso degli utenti con il proprio account aziendale (Azure AD)
-  - Singoli o più utenti per dispositivo supportati
-- I vari livelli di configurazioni di blocco dei dispositivi vengono applicati in base a casi di utilizzo specifici, dal chiosco completamente aperto al singolo app
+- Wi-Fi reti sono in genere completamente aperte ai servizi Internet e cloud
+- Azure AD aggiunta alla registrazione automatica MDM -- GESTIONE MDM (Intune)
+- Gli utenti a cui si accede con il proprio account aziendale (Azure AD)
+  - Supporto di uno o più utenti per dispositivo
+- Diversi livelli di configurazioni di blocco dei dispositivi vengono applicati in base a casi d'uso specifici, da Completamente aperto a App singola in modalità tutto schermo
 
 ![Scenario connesso al cloud](./images/cloud-connected-guide-diagram.png)
 
-In questa guida non verranno applicate altre limitazioni o configurazioni di dispositivo, ma ti invitiamo ad esplorare queste opzioni dopo la fine.
+In questa guida non verranno applicate altre restrizioni o configurazioni per i dispositivi, tuttavia si consiglia di esplorare tali opzioni al termine dell'operazione.
 
-## Informazioni sull'assistenza remota
+## <a name="learn-about-remote-assist"></a>Informazioni sulle Remote Assist
 
-L'assistenza remota consente la manutenzione e il ripristino collaborativo, il controllo remoto e la condivisione delle conoscenze e la formazione. Collegando persone in ruoli e posizioni diverse, un tecnico che usa l'assistenza remota può connettersi a un collaboratore remoto in Microsoft teams. Possono combinare video, screenshot e annotazioni per risolvere i problemi in tempo reale anche quando non sono&#39;t nella stessa posizione. I collaboratori remoti possono inserire immagini di riferimento, schemi e altre informazioni utili per lo spazio fisico del tecnico&#39;, in modo che possano riferirsi allo schema mentre si lavora a heads-up e Hands-Free su HoloLens.
+Remote Assist manutenzione e riparazione collaborativa, l'ispezione remota, nonché la condivisione delle conoscenze e la formazione. Connettendo persone con ruoli e posizioni diversi, un tecnico Remote Assist può connettersi con un collaboratore remoto in Microsoft Teams. Possono combinare video, screenshot e annotazioni per risolvere i problemi in tempo reale anche quando&#39;nella stessa posizione. I collaboratori remoti possono inserire immagini di riferimento, schemi e altre informazioni utili che il tecnico&#39;ha nello spazio fisico in modo che possano fare riferimento allo schema mentre lavorano a testa alta e senza mani su HoloLens.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## In questa guida verrà:
+## <a name="in-this-guide-you-will"></a>Contenuto della guida:
 
-Preparare
+Preparazione:
 
 > [!div class="checklist"]
-> - [Informazioni sull'infrastruttura Essentials per i dispositivi HoloLens 2.](hololens2-cloud-connected-prepare.md#infrastructure-essentials)
-> - [Leggi altre informazioni su Azure AD e impostane una se non ne hai&#39;.](hololens2-cloud-connected-prepare.md#azure-active-directory)
-> - [Informazioni sulla gestione delle identità e sulla configurazione ottimale degli account di Azure AD.](hololens2-cloud-connected-prepare.md#identity-management)
-> - [Leggi altre informazioni su MDM e configura con Intune se Don&#39;t ne hai già uno pronto.](hololens2-cloud-connected-prepare.md#mobile-device-management)
-> - [Informazioni sui requisiti di rete di Remote assist.](hololens2-cloud-connected-prepare.md#network)
-> - [Facoltativamente: VPN per connettersi alle risorse dell'organizzazione](/hololens2-cloud-connected-prepare.md#optional-connect-your-hololens-to-vpn)
+> - [Informazioni sui dati di base dell'infrastruttura HoloLens 2 dispositivi.](hololens2-cloud-connected-prepare.md#infrastructure-essentials)
+> - [Altre informazioni su Azure AD e su come configurarne una se&#39;non è già stata impostata.](hololens2-cloud-connected-prepare.md#azure-active-directory)
+> - [Informazioni sulla gestione delle identità e su come configurare al meglio Azure AD account.](hololens2-cloud-connected-prepare.md#identity-management)
+> - [Altre informazioni su MDM e configurazione con Intune se non&#39;ne è già disponibile uno.](hololens2-cloud-connected-prepare.md#mobile-device-management)
+> - [Informazioni sui requisiti di rete di Remote Assist.](hololens2-cloud-connected-prepare.md#network)
+> - [Facoltativamente: VPN per connettersi alle risorse aziendali](/hololens2-cloud-connected-prepare.md#optional-connect-your-hololens-to-vpn)
 
-Configurare
+Configurare:
 
 > [!div class="checklist"]
 > - [Come creare utenti e gruppi.](hololens2-cloud-connected-configure.md#azure-users-and-groups)
-> - [Come configurare la registrazione automatica in Azure AD.](hololens2-cloud-connected-configure.md#auto-enrollment-on-hololens-2)
+> - [Come configurare la registrazione automatica all'interno Azure AD.](hololens2-cloud-connected-configure.md#auto-enrollment-on-hololens-2)
 > - [Come assegnare le licenze dell'applicazione.](hololens2-cloud-connected-configure.md#application-licenses)
 
-Distribuire
+Distribuzione:
 
 > [!div class="checklist"]
-> - [Configurare la registrazione di HoloLens 2 e Validate.](hololens2-cloud-connected-deploy.md#enrollment-validation)
-> - [Verificare che sia possibile effettuare una chiamata assistita remota.](hololens2-cloud-connected-deploy.md#remote-assist-call-validation)
+> - [Configurare la registrazione HoloLens 2 convalidare la registrazione.](hololens2-cloud-connected-deploy.md#enrollment-validation)
+> - [Verificare che sia possibile effettuare una Remote Assist chiamata.](hololens2-cloud-connected-deploy.md#remote-assist-call-validation)
 
-Mantenere
+Gestione:
 
 > [!div class="checklist"]
-> - [Come aggiornare Remote Assist con l'app Microsoft Store.](hololens2-cloud-connected-maintain.md#updates)
+> - [Come aggiornare i Remote Assist usando l'app Microsoft Store app.](hololens2-cloud-connected-maintain.md#updates)
 > - [Creazione di un piano di supporto.](hololens2-cloud-connected-maintain.md#support-plan)
 > - [Piano di sviluppo.](hololens2-cloud-connected-maintain.md#development-plan)
 
-## Passaggio successivo
+## <a name="next-step"></a>Passaggio successivo
 
 > [!div class="nextstepaction"]
-> [Distribuzione connessa al cloud-preparare](hololens2-cloud-connected-prepare.md)
+> [Distribuzione connessa al cloud - Preparare](hololens2-cloud-connected-prepare.md)
 

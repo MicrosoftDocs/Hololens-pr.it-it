@@ -1,6 +1,6 @@
 ---
 title: Commenti e suggerimenti
-description: È possibile creare feedback per gli sviluppatori di realtà miste HoloLens e Windows usando l'hub feedback.
+description: Creare commenti e suggerimenti utilizzabili per gli sviluppatori holoLens e Windows Mixed Reality usando il Hub di Feedback.
 ms.assetid: b9b24c72-ff86-44a9-b30d-dd76c49479a9
 author: mattzmsft
 ms.author: mazeller
@@ -11,81 +11,81 @@ ms.custom:
 audience: ITPro
 ms.prod: hololens
 ms.topic: article
-keywords: feedback, bug, problema, errore, risoluzione dei problemi, guida
+keywords: feedback, bug, problema, errore, risoluzione dei problemi, Guida
 manager: jarrettr
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: f8704b7e1b75cd08bc282eb0c2df22b8266cb9fd
-ms.sourcegitcommit: e44f1f1ab708e5bd6c4c5b85ec449db2bc798be2
+ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "11237276"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "108309632"
 ---
-# Feedback per HoloLens
+# <a name="feedback-for-hololens"></a>Commenti e suggerimenti per HoloLens
 
-Usa l'hub feedback per comunicare le caratteristiche che ami, le caratteristiche che puoi eseguire senza e il modo migliore. Il team di progettazione USA lo stesso meccanismo internamente per tenere traccia e correggere i bug, quindi usa hub feedback per segnalare eventuali bug visualizzati. Stiamo ascoltando!
+Usare il Hub di Feedback per indicare quali funzionalità si desiderano, quali funzionalità è possibile fare a meno e come potrebbe essere meglio. Il team di progettazione usa internamente lo stesso meccanismo per tenere traccia e correggere i bug, quindi usare Hub di Feedback per segnalare eventuali bug visualizzati. Stiamo ascoltando.
 
-Hub di feedback è un ottimo modo per avvisare il team di ingegneri per i bug e per assicurarsi che gli aggiornamenti futuri siano più sani e sempre più esenti da bug. Tuttavia, l'hub di feedback non offre una risposta. Se hai bisogno di assistenza immediata, invia il tuo feedback, prendi nota del riepilogo che hai fornito per il tuo feedback e quindi segui il [supporto di HoloLens](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f) -usa la caratteristica **Condividi** nell'hub feedback per condividere un collegamento diretto all'URL. L'hub di feedback riceve molti dati ogni giorno: l'URL consente di identificare rapidamente il feedback.
+Hub di Feedback è un modo eccellente per avvisare il team di progettazione di bug e per assicurarsi che gli aggiornamenti futuri siano più sani e senza bug. Tuttavia, Hub di Feedback non fornisce una risposta. Se è necessaria assistenza immediata, inviare commenti e suggerimenti, prendere nota del riepilogo fornito per il  feedback e quindi seguire il supporto [di HoloLens:](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f) usare la funzionalità Condividi in Hub di Feedback per condividere un collegamento diretto all'URL. Hub di Feedback una grande quantità di dati al giorno: l'URL consente di identificare rapidamente i commenti e suggerimenti.
 
 > [!NOTE]  
 >  
-> - Verificare di avere la versione corrente dell'hub feedback. A tale scopo, selezionare **Avvia**  >  **Microsoft Store**e quindi selezionare i puntini di sospensione (**...**). Quindi, selezionare **download e aggiornamenti per**  >  **ottenere gli aggiornamenti**.  
+> - Assicurarsi di avere la versione corrente di Hub di Feedback. A tale scopo, selezionare **Avvia**  >  **Microsoft Store** e quindi selezionare i puntini di sospensione (**...**). Selezionare quindi **Download e aggiornamenti** Ottenere gli  >  **aggiornamenti**.  
 >  
-> - Per ottenere i dati migliori per la risoluzione dei problemi, è consigliabile impostare la telemetria del dispositivo su **facoltativo**. Puoi impostare questo valore durante l'esperienza di out-of-box (OOBE) oppure usando l'app Impostazioni. Per eseguire questa operazione usando impostazioni, selezionare **Avvia**  >  **Impostazioni**per la diagnostica delle  >  ****  >  **app**  >  **sulla**privacy.
+> - Per fornire i dati migliori possibili per la correzione dei problemi, è consigliabile impostare i dati di telemetria del dispositivo su **Facoltativo.** È possibile impostare questo valore durante la configurazione predefinita o usando l'app Impostazioni. A tale scopo tramite Impostazioni, selezionare **Start** Settings Privacy App Diagnostics On ( Avvia  >  **impostazioni**  >  **Privacy** App  >  **Diagnostics**  >  **on**).
 
-## Usare l'hub di feedback
+## <a name="use-the-feedback-hub"></a>Usare il Hub di Feedback
 
-1. Usare il gesto **Start** per aprire il menu **Start** e quindi selezionare **Hub feedback**. L'app si apre nell'ambiente.
+1. Usare il **movimento Avvia** per aprire il menu **Start** e quindi selezionare **Hub di Feedback**. L'app viene aperta nell'ambiente in uso.
 
-   ![App feedback nel menu Start di HoloLens](./images/hololens2-feedbackhub-tile.png)
+   ![App feedback in HoloLens menu Start](./images/hololens2-feedbackhub-tile.png)
    > [!NOTE]  
-   > Se non Vedi **Hub di feedback**, seleziona **tutte le app** per visualizzare l'elenco completo delle app nel dispositivo.
+   > Se non viene visualizzato **Hub di Feedback,** selezionare **Tutte** le app per visualizzare l'elenco completo delle app nel dispositivo.
 
-1. Per verificare se un altro utente ha ricevuto un feedback simile, immettere alcune parole chiave relative all'argomento nella casella di ricerca **feedback** .
-1. Se si trova un feedback simile, selezionarlo, aggiungere eventuali informazioni aggiuntive nella casella **Scrivi un commento** e quindi selezionare **votazione**.
-1. Se non si trovano commenti simili, selezionare **Aggiungi nuovo feedback**.
+1. Per verificare se un altro utente ha fornito commenti e suggerimenti simili, immettere alcune parole chiave relative all'argomento nella casella di ricerca **Commenti e** suggerimenti.
+1. Se si trovano commenti simili, selezionarli, aggiungere eventuali  informazioni aggiuntive disponibili nella casella Scrivi un commento e quindi selezionare **Upvote ..**
+1. Se non si trovano commenti simili, selezionare **Aggiungi nuovo feedback.**
 
-   ![Aggiungere un nuovo feedback](./images/hololens-feedback-1.png)
+   ![Aggiungi nuovo feedback](./images/hololens-feedback-1.png)
 
-1. In **Riepilogo del feedback**, immettere un breve riepilogo del feedback. Aggiungere quindi i dettagli nella casella **spiega in altro dettaglio** . Più dettagli fornisci, ad esempio come riprodurre il problema e l'effetto che ha, più è utile il feedback. Al termine, selezionare **Avanti**.
+1. In **Summarize your feedback (Riepiloga** commenti e suggerimenti) immettere un breve riepilogo dei commenti e suggerimenti. Aggiungere quindi i dettagli nella **casella Spiega in modo più** dettagliato. Più dettagli vengono forniti, ad esempio come riprodurre il problema e l'effetto che ha, più utili sono i commenti e i suggerimenti. Al termine, fare clic su **Avanti**.
 
-1. Selezionare un argomento da **scegliere una categoria**e quindi selezionare una sottocategoria da **selezionare una**sottocategoria. La tabella seguente descrive le categorie disponibili nella categoria olografica di Windows.
+1. Selezionare un argomento in **Scegliere una categoria** e quindi selezionare una sottocategoria da Selezionare una **sottocategoria**. La tabella seguente descrive le categorie disponibili nella categoria Windows Holographic.
 
    > [!NOTE]  
-   > **Clienti commerciali**: per segnalare un bug correlato a MDM, provisioning o qualsiasi altro aspetto della gestione dei dispositivi, selezionare la categoria **gestione aziendale** e la sottocategoria **dispositivo** .
+   > **Clienti commerciali:** per segnalare un bug correlato a MDM, provisioning o qualsiasi altro aspetto della gestione dei dispositivi, selezionare la categoria **Gestione** aziendale e la **sottocategoria** Dispositivo.
 
-   |Categoria |Descrizione |
+   |Category |Descrizione |
    | --- | --- |
-   |Tracciamento oculare |Feedback sul rilevamento degli occhi, l'accesso a iride o la calibrazione. |
-   |Precisione, stabilità e affidabilità degli ologrammi |Feedback sul modo in cui gli ologrammi compaiono nello spazio. |
-   |Avvio, posizionamento, modifica e chiusura delle app |Feedback sull'avvio o l'arresto di app 2D o 3D. |
-   |Miracast |Feedback su Miracast. |
-   |Spazi e persistenza |Feedback su come HoloLens riconosce gli spazi e mantiene gli ologrammi nello spazio. |
-   |Menu Start ed elenco Tutte le app |Feedback sul menu **Start** e sull'elenco tutte le app. |
-   |Mappatura di superfici |Feedback sul mapping delle superfici. |
-   |Acquisizione di foto e registrazione di video |Feedback sulle acquisizioni di realtà miste. |
-   |Riproduzione di ologrammi video |Feedback sulla riproduzione olografica video. |
+   |Tracciamento oculare |Commenti e suggerimenti sul tracciamento oculare, sull'accesso all'iris o sulla calibrazione. |
+   |Accuratezza, stabilità e affidabilità degli ologrammi |Commenti e suggerimenti sulla modalità di visualizzazione degli ologrammi nello spazio. |
+   |Avvio, posizionamento, modifica e uscita delle app |Commenti e suggerimenti sull'avvio o l'arresto di app 2D o 3D. |
+   |Miracast |Commenti e suggerimenti su Miracast. |
+   |Spazi e persistenza |Commenti e suggerimenti su come HoloLens riconosce gli spazi e mantiene gli ologrammi nello spazio. |
+   |menu Start elenco di tutte le app |Commenti e suggerimenti sul menu **Start** e sull'elenco di tutte le app. |
+   |Mapping della superficie |Commenti e suggerimenti sul mapping delle superfici. |
+   |Scattare foto e video |Commenti e suggerimenti sulle acquisizioni di realtà mista. |
+   |Riproduzione di ologrammi video |Commenti e suggerimenti sulla riproduzione di ologrammi video. |
    |Tutti gli altri problemi |Tutti gli altri problemi. |
 
-1. Potrebbe essere richiesto di cercare un feedback simile. Se il problema è simile a quello di altri utenti, selezionare il feedback. In caso contrario, seleziona **nuovo feedback** e quindi scegli **Avanti**.
+1. Potrebbe essere richiesto di cercare commenti e suggerimenti simili. Se il problema è simile al feedback di altri utenti, selezionare tale feedback. In caso contrario, **selezionare Nuovo feedback** e quindi Selezionare **Avanti.**
 
 1. Se richiesto, selezionare la descrizione migliore del problema.
 
-1. Allegare i dati rilevanti al feedback o riprodurre il problema. È possibile selezionare una delle opzioni seguenti:
+1. Allegare i dati pertinenti al feedback o riprodurre il problema. È possibile selezionare una qualsiasi delle opzioni seguenti:
 
-   - **Allegare uno screenshot**. Selezionare questa opzione per allegare uno screenshot che illustra la situazione che si sta descrivendo.
-   - **Allegare un file**. Selezionare questa opzione per allegare i file di dati. Se sono presenti file rilevanti per il problema o che potrebbero aiutarci a riprodurre il problema, allegarli.
-   - **Ricreare il problema**. Selezionare questa opzione se si riesce a riprodurre il problema manualmente. Dopo aver selezionato **ricrea il problema**, eseguire le operazioni seguenti:  
+   - **Allegare uno screenshot.** Selezionare questa opzione per allegare uno screenshot che illustra la situazione che si sta descrivendo.
+   - **Allegare un file**. Selezionare questa opzione per allegare file di dati. Se si dispone di file rilevanti per il problema o che potrebbero essere utili per riprodurre il problema, allegarli.
+   - **Ricreare il problema.** Selezionare questa opzione se è possibile riprodurre il problema manualmente. Dopo aver selezionato **Ricrea il problema,** seguire questa procedura:  
 
-     1. Selezionare **Includi dati** e verificare che siano elencati i tipi di dati più rilevanti. Nella maggior parte dei casi, le selezioni predefinite si basano sulla categoria e sottocategoria selezionata per il feedback.  
+     1. Selezionare **Includi dati su** e assicurarsi che siano elencati i tipi di dati più rilevanti. Nella maggior parte dei casi, le selezioni predefinite si basano sulla categoria e sulla sottocategoria selezionate per il feedback.  
      1. Selezionare **Avvia registrazione**.
 
-     1. Riprodurre il problema. Non preoccuparti se questo significa che devi inserire un'app immersiva. Al termine, si tornerà alla pagina feedback.
-     1. Selezionare **Interrompi registrazione**. Dopo l'interruzione della registrazione, è possibile visualizzare i dati allegati al feedback per il team di progettazione.
+     1. Riprodurre il problema. Non è necessario preoccuparsi se ciò significa che è necessario immettere un'app immersiva. Al termine, si tornerà alla pagina dei commenti e suggerimenti.
+     1. Selezionare **Interrompi registrazione.** Dopo l'arresto della registrazione, è possibile visualizzare i dati allegati al feedback del team di progettazione.
 
-1. Verificare di avere una connessione Internet attiva in modo da poter ricevere il feedback. Selezionare **Invia**e termina.
+1. Assicurarsi di avere una connessione Internet attiva in modo che Microsoft possa ricevere commenti e suggerimenti. Selezionare **Submit**(Invia) per inviare il file.
 
-1. Usare il pulsante **Condividi** per condividere l'URL ridotto con il supporto Microsoft o i colleghi.
+1. Usare il **pulsante Condividi** per condividere l'URL abbreviato con il supporto tecnico Microsoft o con i colleghi.

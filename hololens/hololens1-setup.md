@@ -1,6 +1,6 @@
 ---
 title: Preparare un nuovo HoloLens
-description: Scopri come preparare, regolare e configurare il dispositivo HoloLens (prima generazione) in Realtà mista per la prima volta.
+description: Informazioni su come preparare, regolare e configurare per la prima volta il dispositivo holoLens (prima generazione) in realtà mista.
 ms.prod: hololens
 ms.sitesec: library
 author: JesseMcCulloch
@@ -13,99 +13,99 @@ manager: jarrettr
 appliesto:
 - Hololens (1st gen)
 ms.openlocfilehash: 30912fda53d5d8b9ea5e60f29eeb93ea29cca2d2
-ms.sourcegitcommit: 01c0b0a789e156a9d29aaf6f61e36dfd09b8c01a
+ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439082"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "108309426"
 ---
-# <a name="get-your-hololens-1st-gen-ready-to-use"></a>Preparare HoloLens (prima generazione)
+# <a name="get-your-hololens-1st-gen-ready-to-use"></a>Prepara l'uso di HoloLens (prima generazione)
 
-Seguire questa procedura per configurare per la prima volta un dispositivo HoloLens (prima generazione).
+Seguire questa procedura per configurare un holoLens (prima generazione) per la prima volta.
 
-## <a name="charge-your-hololens-1st-gen"></a>Caricare il dispositivo HoloLens (prima generazione)
+## <a name="charge-your-hololens-1st-gen"></a>Addebitare HoloLens (prima generazione)
 
-Per caricare il dispositivo HoloLens, collega l'alimentatore alla porta di ricarica usando il cavo USB micro incluso. Collega quindi l'alimentatore a una presa elettrica. Quando il dispositivo è in carica, l'indicatore della batteria si accenderà con un motivo a onde.
+Per caricare HoloLens, collegare l'alimentatore alla porta di ricarica usando il cavo MICRO USB incluso. Collegare quindi l'alimentatore a una presa di alimentazione. Quando il dispositivo è in carica, l'indicatore della batteria si accende in un modello di onda.
 
-![Immagine che mostra come collegare il cavo USB micro a HoloLens](./images/hololens-charging.png)
+![Immagine che illustra come collegare il cavo MICRO USB a HoloLens](./images/hololens-charging.png)
 
-Quando il dispositivo HoloLens è acceso, l'indicatore della batteria mostra il livello della batteria in base a incrementi. Quando solo uno dei cinque indicatori è acceso, il livello della batteria è inferiore al 20%. Se il livello della batteria è molto basso e tenti di accendere il dispositivo, una luce lampeggia per un breve periodo, quindi scompare.
+Quando HoloLens è on, l'indicatore della batteria mostra il livello della batteria in incrementi. Quando è accese solo una delle cinque luci, il livello della batteria è inferiore al 20%. Se il livello della batteria è criticamente basso e si tenta di accendere il dispositivo, una luce lampeggia brevemente e quindi si spegne.
 
 > [!TIP]
-> Per ottenere una stima del tuo attuale livello della batteria, pronuncia "Ehi Cortana, quanta batteria mi rimane?"
+> Per ottenere una stima del livello corrente della batteria, pronunciare "Hey Cortana, quanta batteria è ancora disponibile?"
 
-L'alimentatore e il cavo USB forniti con il dispositivo sono il modo migliore per ricaricare HoloLens (prima generazione).  L'alimentatore fornisce 18 W di alimentazione (9V 2A).
+L'alimentatore e il cavo USB forniti con il dispositivo sono il modo migliore per caricare HoloLens (prima generazione).  L'alimentatore fornisce 18W di alimentazione (9V 2A).
 
-La velocità di carica possono variare a seconda dell'ambiente in cui il dispositivo è in esecuzione.
+La velocità e la velocità di ricarica possono variare a seconda dell'ambiente in cui è in esecuzione il dispositivo.
 
-## <a name="adjust-fit"></a>Regolare la misura
+## <a name="adjust-fit"></a>Adattare l'adattamento
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/be3cb527-f2f1-4f85-b4f7-a34fbaba980d]
 
 |     |     |
 |:--- |:--- |
-|1. Ruota la fascia per un massimo di circa 20-30 gradi.|![Passaggio 1, ruotare la fascia](./images/FitGuideStep1.png)|
-|2. Spingi la fascia verso il retro. Non tirare indietro né manipolare la fascia dietro la cerniera, perché la fascia potrebbe rompersi con il tempo.|![Passaggio 2, spingere la fascia verso il retro](./images/FitGuideStep2.png)|
-|3. Usa la rotellina di regolazione per estendere completamente la fascia. |![Passaggio 3, usare la rotellina di regolazione per estendere la fascia](./images/FitGuideStep3.png)|
-|4. Tieni il dispositivo per i relativi bracci e posizionalo sulla testa. Assicurati di posizionare la fascia nella parte superiore della fronte, quindi serra la rotellina di regolazione.|![Passaggio 4, indossare il dispositivo e regolare la fascia](./images/FitGuideStep4.png)|
-|5. Fai scorrere la visiera indietro e controlla che il dispositivo calzi correttamente. La fascia deve essere posizionata nella parte superiore della fronte, appena sotto l'attaccatura dei capelli, con gli altoparlanti sopra le orecchie. Le lenti devono essere centrate sugli occhi.|![Passaggio cinque, far scorrere la visiera indietro e controllare che il dispositivo calzi correttamente](./images/FitGuideSetep5.png)|
+|1. Ruotare l'archetto fino a circa 20-30 gradi.|![Passaggio 1, ruotare la fascia](./images/FitGuideStep1.png)|
+|2. Eseguire il push indietro della fascia. Non estrarlo o manipolare la banda dietro la cerniata, perché nel tempo ciò può interrompere la banda.|![Passaggio 2, eseguire il push indietro del headband](./images/FitGuideStep2.png)|
+|3. Ruotare la rotellina di regolazione per estendere la rotellina fino all'uscita. |![Passaggio 3: usare la ruota di regolazione per estendere la fascia](./images/FitGuideStep3.png)|
+|4. Tenere il dispositivo in mano e posizionarlo sulla testa. Assicurarsi che la banda della testa sieda nella parte superiore della fronte e quindi stringere la ruota di regolazione.|![Passaggio 4, inserire il dispositivo e regolare la fascia](./images/FitGuideStep4.png)|
+|5. Far scorrere di nuovo il visore e quindi controllare l'adattamento del dispositivo. La fascia della testa deve essere posta nella parte superiore della fronte, sotto la linea dei capello, con i relatori sopra le sedie. Le lenti devono essere centrate sugli occhi.|![Passaggio 5, far scorrere di nuovo il visore e controllare l'adattamento](./images/FitGuideSetep5.png)|
 
-## <a name="turn-on-your-hololens"></a>Attivare il dispositivo HoloLens
+## <a name="turn-on-your-hololens"></a>Attivare HoloLens
 
-Usa il pulsante di alimentazione per accendere e spegnere HoloLens o per metterlo in modalità standby.
+Usa il pulsante di alimentazione per attivare e disattivare HoloLens o per attivarlo in modalità standby.
 
 ![Immagine che mostra il pulsante di alimentazione di HoloLens](./images/hololens-power.png)
 
-Se il dispositivo non risponde o non si avvia, vedi [Riavviare, reimpostare o ripristinare HoloLens](hololens-restart-recover.md).
+Se il dispositivo non risponde o non si avvia, vedi [Riavviare, reimpostare o ripristinare HoloLens.](hololens-restart-recover.md)
 
-Quando HoloLens è spento o in standby, accendilo premendo il pulsante di alimentazione per un secondo. Se non si accende, collegalo e caricalo per almeno 30 minuti.
+Quando HoloLens è spento o in standby, attivarlo premendo il pulsante di alimentazione per un secondo. Se non viene attivata, collegarla e addebitarla per almeno 30 minuti.
 
 > [!TIP]
-> Per riavviare HoloLens, pronuncia "Ehi Cortana, riavvia il dispositivo".
+> Per riavviare HoloLens, pronunciare "Hey Cortana, reboot the device".
 
 ### <a name="put-hololens-in-standby"></a>Mettere HoloLens in standby
 
-Per mettere HoloLens in standby mentre è acceso, premi una volta il pulsante di alimentazione. Gli indicatori di batteria lampeggiano. Per riattivare il dispositivo dalla modalità standby, premi di nuovo il pulsante di alimentazione.
+Per mettere holoLens in standby mentre è acceso, premi il pulsante di alimentazione una sola volta. Gli indicatori della batteria lampeggiano. Per riattivarlo dalla modalità standby, premere di nuovo il pulsante di alimentazione.
 
-HoloLens passa automaticamente in standby dopo 3 minuti di inattività. Quando è in standby, si spegne automaticamente dopo 4 ore o quando il livello della batteria scende del 10%.
+HoloLens passa automaticamente in standby dopo 3 minuti di inattività. Quando è in standby, si arresta automaticamente dopo 4 ore o dopo che il livello della batteria scende del 10%.
 
-### <a name="shut-down-hololens"></a>Spegnere HoloLens
+### <a name="shut-down-hololens"></a>Arrestare HoloLens
 
-Per spegnere HoloLens, tieni premuto il pulsante di alimentazione per quattro secondi. Gli indicatori della batteria si spengono uno alla volta, quindi si spegne il dispositivo.
+Per arrestare (disattivare) HoloLens, tenere premuto il pulsante di alimentazione per quattro secondi. Gli indicatori della batteria si spegnino uno alla volta e il dispositivo si arresta.
 
-HoloLens si spegne automaticamente quando il livello della batteria scende fino all'1%, anche se è collegato. Dopo aver ricaricato la batteria fino al 3%, potrai accendere di nuovo HoloLens.
+HoloLens si arresta automaticamente quando il livello della batteria scende all'1%, anche se è collegato. Dopo aver ricaricato la batteria al 3%, sarà possibile riattivare HoloLens.
 
-## <a name="adjust-volume-and-brightness"></a>Regolare il volume e la luminosità
+## <a name="adjust-volume-and-brightness"></a>Regolare volume e luminosità
 
-I pulsanti di luminosità e volume si trovano sopra i bracci del dispositivo: il volume a destra e la luminosità a sinistra.
+I pulsanti di luminosità e volume sono sopra il volume delle bracci del dispositivo a &mdash; destra e la luminosità a sinistra.
 
 ![Immagine che mostra i pulsanti di HoloLens](./images/hololens-buttons.jpg)
 
-## <a name="hololens-indicator-lights"></a>Indicatori luminosi di HoloLens
+## <a name="hololens-indicator-lights"></a>Luci indicatore HoloLens
 
-![Immagine che mostra gli indicatori luminosi di HoloLens](./images/hololens-lights.png)
+![Immagine che mostra le luci dell'indicatore HoloLens](./images/hololens-lights.png)
 
-Non sai cosa indicano gli indicatori luminosi sul dispositivo HoloLens? Ecco una guida.
+Non si sa cosa significano le luci dell'indicatore su HoloLens? Ecco una guida.
 
-|Comportamento delle luci |Significato |
+|Quando le luci ese- |Significa |
 | - | - |
-|Scorrono dal centro verso l'esterno. |HoloLens si sta avviando. |
-|Rimangono illuminate (tutte o alcune). |HoloLens è acceso e pronto per l'uso. La durata della batteria viene visualizzata in incrementi del 20%. |
-|Scorrono, quindi si illuminano e scorrono di nuovo. |HoloLens è acceso e in carica. La durata della batteria viene visualizzata in incrementi del 20%. |
-|Si spengono una alla volta. |HoloLens si sta spegnendo. |
-|Si spengono contemporaneamente. |HoloLens sta entrando in modalità standby. |
-|Si illuminano tutte, quindi una lampeggia brevemente e infine si spengono tutte. |Il livello della batteria è estremamente basso. HoloLens deve essere caricato. |
-|Scorrono tutte, quindi una lampeggia e infine scorrono tutte. |Il livello della batteria è estremamente basso. HoloLens è in carica. |
+|Scorrere dal centro verso l'esterno. |È in corso l'avvio di HoloLens. |
+|Rimanere accesi (tutti o alcuni). |HoloLens è pronto per l'uso. La durata della batteria viene visualizzata in incrementi del 20%. |
+|Scorrere, quindi accendere e infine scorrere. |HoloLens è in funzione e addebita. La durata della batteria viene visualizzata in incrementi del 20%. |
+|Disattivare uno alla volta. |HoloLens è in fase di arresto. |
+|Disattivare tutto contemporaneamente. |HoloLens entra in standby. |
+|Si accende tutto, quindi si lampeggia brevemente, quindi tutti si disattivano. |La batteria è estremamente bassa. HoloLens deve eseguire l'addebito. |
+|Scorrere tutti, quindi lampeggiare e quindi scorrere tutti. |La batteria è estremamente bassa. HoloLens sta addebitando. |
 
 ## <a name="safety-and-comfort"></a>Sicurezza e comfort
 
-### <a name="use-in-safe-surroundings"></a>Uso in un ambiente sicuro
+### <a name="use-in-safe-surroundings"></a>Uso in ambienti sicuri
 
-Usa il tuo HoloLens in uno spazio sicuro senza ostacoli e potenziali pericoli. Non usarlo nelle situazioni che richiedono un campo visivo completo e la massima attenzione, ad esempio durante la guida di un veicolo o durante altre attività potenzialmente pericolose.
+Usa HoloLens in uno spazio sicuro privo di ostacoli e rischi di inciampo. Non usarlo quando è necessario un campo di vista chiaro e la massima attenzione, ad esempio quando si usa un veicolo o si effettuano altre attività potenzialmente pericolose.
 
-### <a name="stay-comfortable"></a>Uso confortevole
+### <a name="stay-comfortable"></a>Mantenere la comodità
 
-Durante le prime sessioni, utilizza il dispositivo HoloLens per un breve periodo di tempo, assicurandoti di fare delle pause. Se avverti qualche disagio, fermati e riposati finché non ti senti meglio. Eventuali disturbi potrebbero includere temporaneo senso di nausea, cinetosi, vertigini, disorientamento, cefalea, stanchezza, affaticamento della vista o secchezza oculare.
+Tenere brevi le prime sessioni con HoloLens e assicurarsi di eseguire pause. Se si verificano disagi, fermarsi e riposo fino a quando non si è meglio. Ciò può includere sentimenti temporanei di tristezza, malattia del movimento, vertigini, disorientamento, mal di testa, fatica, affaticamento oculare o occhi secchi.
 
 > [!div class="nextstepaction"]
-> [Avviare e configurare il tuo dispositivo HoloLens (prima generazione)](hololens1-start.md)
+> [Avviare e configurare HoloLens (prima generazione)](hololens1-start.md)

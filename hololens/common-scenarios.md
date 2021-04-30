@@ -15,78 +15,78 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 4b9bd4335e45180276d69af2ce5f33a38ecb800f
-ms.sourcegitcommit: d7c86ccad7be32f7223d4b801083798454fda740
+ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "11448494"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "108309482"
 ---
 # <a name="common-infrastructure-deployment-scenarios-overview"></a>Panoramica degli scenari comuni di distribuzione dell'infrastruttura
 
-Queste informazioni seguenti forniscono una panoramica dell'architettura di alto livello per tre scenari comuni durante la distribuzione e la gestione dei dispositivi Microsoft HoloLens 2 all'interno dell'azienda. Spesso la modalità di gestione dei dispositivi e l'accesso alle risorse dell'organizzazione dipende in larga parte da fattori già in atto. In base all'infrastruttura esistente, ti invitiamo a esaminare lo stile di gestione dei dispositivi comune negli scenari seguenti e provare le nostre guide per la distribuzione nello scenario in base alle tue esigenze.
+Queste informazioni forniscono una panoramica generale dell'architettura per tre scenari comuni quando si distribuiscono e si gestiscono Microsoft HoloLens 2 dispositivi all'interno dell'azienda. Spesso il modo in cui si gestiscono i dispositivi e come accedere alle risorse dell'organizzazione è determinato in gran parte da fattori già presenti. In base all'infrastruttura esistente, è necessario esaminare lo stile di gestione dei dispositivi comune negli scenari seguenti e provare le guide per la distribuzione nello scenario in base alle esigenze.
 
 ## <a name="scenarios"></a>Scenari
 
-Il diagramma seguente rappresenta tre scenari tipici per le distribuzioni di HoloLens 2.
+Il diagramma seguente rappresenta tre scenari tipici per HoloLens 2 distribuzione.
 ![Diagramma degli scenari](images/scenarios.jpg)
 
-### <a name="scenario-a-deploy-to-cloud-connect-devices"></a>Scenario A: Distribuire ai dispositivi di connessione cloud
+### <a name="scenario-a-deploy-to-cloud-connect-devices"></a>Scenario A: Distribuire nei dispositivi cloud connect
 
-HoloLens 2 viene distribuito per l'utilizzo principalmente in ambienti esterni a una rete aziendale. Le risorse aziendali non sono accessibili o possono essere limitate tramite VPN. Questa distribuzione è simile ai dispositivi mobili gestiti all'interno di un'azienda.
+HoloLens 2 viene distribuito per l'uso principalmente in ambienti esterni a una rete aziendale. Le risorse aziendali non sono accessibili o possono essere limitate tramite VPN. Questa distribuzione è simile ai dispositivi mobili gestiti all'interno di un'azienda.
  * Configurazioni comuni di base
-   * Wi-Fi di rete sono in genere completamente aperte a Internet e ai servizi cloud.
-   * Aggiunta ad Azure AD con registrazione automatica di Gestione dispositivi mobili (MDM) -MDM (Intune) Gestito
+   * Wi-Fi le reti sono in genere completamente aperte ai servizi Internet e Cloud.
+   * Azure AD aggiunta alla registrazione automatica mdm (Mobile Device Management) gestita da MDM (Intune)
    * Gli utenti a cui si accede con il proprio account aziendale (Azure AD)
      * Supporto di uno o più utenti per dispositivo
-   * Diversi livelli di configurazioni di blocco dei dispositivi vengono applicati in base a casi di uso specifici, da Completamente aperto a Chiosco app singola.
+   * Diversi livelli di configurazioni di blocco dei dispositivi vengono applicati in base a casi d'uso specifici, da Completamente aperto a Modalità tutto schermo per app singola.
    * Una o più applicazioni vengono distribuite tramite MDM
 
-* Sfide comuni
-   * Determinazione delle configurazioni MDM da applicare a HoloLens 2 in base ai requisiti dello scenario.
+* Problemi comuni
+   * Determinazione delle configurazioni MDM da applicare al HoloLens 2 in base ai requisiti dello scenario.
 
-Per una guida alla distribuzione simile allo scenario A leggere la guida per [Cloud connected HoloLens 2 with Remote Assist.](hololens2-cloud-connected-overview.md)
+Per una guida alla distribuzione simile allo scenario A esaminare la guida per Cloud [connected HoloLens 2 with Remote Assist](hololens2-cloud-connected-overview.md).
 
 > [!div class="nextstepaction"]
-> [Guida alla distribuzione - HoloLens 2 connesso al cloud con Assistenza remota](hololens2-cloud-connected-overview.md)
+> [Guida alla distribuzione- Cloud connected HoloLens 2 with Remote Assist](hololens2-cloud-connected-overview.md)
 
-### <a name="scenario-b-deploy-inside-your-organizations-network"></a>Scenario B: distribuire all'interno della rete dell'organizzazione
+### <a name="scenario-b-deploy-inside-your-organizations-network"></a>Scenario B: Eseguire la distribuzione all'interno della rete dell'organizzazione
 
-HoloLens 2 viene distribuito per l'uso principalmente nella rete aziendale con accesso alle risorse aziendali interne. I servizi Internet e cloud potrebbero essere limitati. Questa distribuzione è una distribuzione tipica per la maggior parte dei PC Windows 10.
+HoloLens 2 viene distribuito per l'uso principalmente nella rete aziendale con accesso alle risorse aziendali interne. I servizi Internet e cloud possono essere limitati. Questa distribuzione è una distribuzione tipica per la maggior parte Windows 10 PC.
 
  * Configurazioni comuni di base
-   * Wi-Fi è una rete aziendale interna con accesso alle risorse interne e accesso limitato a Internet o ai servizi cloud.
-   * Aggiunta ad Azure AD con registrazione automatica MDM
+   * Wi-Fi rete aziendale interna con accesso alle risorse interne e accesso limitato a Internet o ai servizi cloud.
+   * Azure AD join con la registrazione automatica MDM
    * Mdm (Intune) Gestito
    * Gli utenti a cui si accede con il proprio account aziendale (Azure AD)
      * Supporto di uno o più utenti per dispositivo
-   * Diversi livelli di configurazioni di blocco dei dispositivi vengono applicati in base a casi di uso specifici, da Completamente aperto a Chiosco app singola.
+   * Diversi livelli di configurazioni di blocco dei dispositivi vengono applicati in base a casi d'uso specifici, da Completamente aperto a App singola in modalità tutto schermo.
    * Una o più applicazioni vengono distribuite tramite MDM
 
- * Sfide comuni
-   * HoloLens 2 non supporta l'aggiunta ad ACTIVE locale o SCCM. Solo l'aggiunta ad Azure AD con MDM. Molte aziende ancora oggi distribuiscono PC Windows 10 in questo scenario come dispositivi aggiunti ad AD locali, gestiti da System Center Configuration Manager (SCCM) e potrebbero non disporre dell'infrastruttura distribuita/configurata per la gestione dei dispositivi Windows 10 interni tramite soluzioni MDM basate su cloud.
-   * Poiché HoloLens 2 è un primo dispositivo cloud, si basa molto sui servizi connessi a Internet e cloud per l'autenticazione utente, gli aggiornamenti del sistema operativo, la gestione MDM e così via. Quando ci si connette a una rete aziendale, è molto probabile che sia necessario modificare le regole proxy/firewall per consentire l'accesso a HoloLens 2 e alle applicazioni in esecuzione su di essa.
-   * La Wi-Fi aziendale richiede in genere certificati per autenticare il dispositivo o l'utente nella rete. L'infrastruttura o le impostazioni necessarie per distribuire i certificati nei dispositivi Windows 10 tramite MDM possono essere difficili da configurare.
+ * Problemi comuni
+   * HoloLens 2 non supporta l'aggiunta ad AD locale o SCCM. Aggiungere Azure AD mdm. Molte aziende distribuiscono ancora PC Windows 10 in questo scenario come dispositivi aggiunti ad AD locali, gestiti da System Center Gestione configurazione (SCCM) e potrebbero non avere l'infrastruttura distribuita/configurata per la gestione dei dispositivi Windows 10 interni tramite soluzioni MDM basate sul cloud.
+   * Poiché HoloLens 2 è un primo dispositivo cloud, si basa molto sui servizi connessi a Internet e cloud per l'autenticazione utente, gli aggiornamenti del sistema operativo, la gestione MDM e così via. Quando ci si connette a una rete aziendale, è molto probabile che sia necessario modificare le regole proxy/firewall per abilitare l'accesso per HoloLens 2 e le applicazioni in esecuzione su di essa.
+   * La Wi-Fi aziendale richiede in genere certificati per autenticare il dispositivo o l'utente nella rete. L'infrastruttura o le impostazioni necessarie per distribuire i certificati Windows 10 dispositivi tramite MDM possono essere difficili da configurare.
 
 > [!div class="nextstepaction"]
-> [Guida alla distribuzione - HoloLens 2 connesso all'azienda con le guide di Dynamics 365](hololens2-corp-connected-overview.md)
+> [Guida alla distribuzione- Guida alla HoloLens 2 aziendale con le guide di Dynamics 365](hololens2-corp-connected-overview.md)
 
 ### <a name="scenario-c-deploy-in-secure-offline-environment"></a>Scenario C: Distribuire in un ambiente offline sicuro
 
 HoloLens 2 viene distribuito per l'uso principalmente offline senza accesso alla rete o a Internet. Si tratta di una distribuzione tipica per posizioni altamente sicure o riservate.
  * Configurazioni comuni di base
-   * Wi-Fi connettività è disabilitata. Ethernet tramite USB può essere abilitato per la connettività LAN, se necessario.
+   * Wi-Fi la connettività è disabilitata. Ethernet tramite USB può essere abilitato per la connettività LAN, se necessario.
    * Non gestito.
    * Account utente locale per l'accesso al dispositivo.
      * HoloLens 2 supporta un solo account locale.
-   * Diversi livelli di configurazioni di blocco dei dispositivi vengono applicati tramite pacchetti di provisioning in base a casi di uso specifici. Queste configurazioni sono in genere limitate a causa dei requisiti di ambiente sicuro.
+   * I diversi livelli di configurazioni di blocco dei dispositivi vengono applicati tramite pacchetti di provisioning in base a casi d'uso specifici. Queste configurazioni sono in genere limitate a causa dei requisiti di ambiente sicuro.
    * Una o più applicazioni vengono distribuite tramite il pacchetto di provisioning
 
- * Sfide comuni
-   * È disponibile un set limitato di configurazioni tramite pacchetti di provisioning
-   * I servizi cloud non possono essere utilizzati, limitando quindi le funzionalità di HoloLens 2.
-   * Sovraccarico amministrativo maggiore poiché questi dispositivi devono essere configurati, configurati e aggiornati manualmente.
+ * Problemi comuni
+   * È disponibile un set limitato di configurazioni tramite i pacchetti di provisioning
+   * I servizi cloud non possono essere usati, limitando quindi le HoloLens 2 funzionalità.
+   * Maggiore sovraccarico amministrativo perché questi dispositivi devono essere configurati, configurati e aggiornati manualmente.
 
-Per una guida alla distribuzione simile a questo scenario, consultare la Guida [alla distribuzione sicura offline](hololens-common-scenarios-offline-secure.md).
+Per una guida alla distribuzione simile a questo scenario, vedere la [Guida alla distribuzione sicura offline.](hololens-common-scenarios-offline-secure.md)
 
 > [!div class="nextstepaction"]
-> [Guida alla distribuzione - Offline Secure HoloLens 2](hololens-common-scenarios-offline-secure.md)
+> [Guida alla distribuzione - Sicurezza offline HoloLens 2](hololens-common-scenarios-offline-secure.md)

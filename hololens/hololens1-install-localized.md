@@ -1,5 +1,5 @@
 ---
-title: Installare versioni localizzate di HoloLens
+title: Installare le versioni localizzate di HoloLens
 description: Informazioni su come installare le versioni localizzate di HoloLens (prima generazione), incluse le versioni in cinese e giapponese.
 ms.prod: hololens
 ms.mktglfcycl: manage
@@ -14,31 +14,31 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: 74eb003aafd23218b90988abe113d35f1fc3035a
-ms.sourcegitcommit: 01c0b0a789e156a9d29aaf6f61e36dfd09b8c01a
+ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "11439012"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "108310062"
 ---
-# <a name="install-localized-versions-of-hololens-1st-gen"></a>Installare versioni localizzate di HoloLens (prima generazione)
+# <a name="install-localized-versions-of-hololens-1st-gen"></a>Installare le versioni localizzate di HoloLens (prima generazione)
 
-Per passare alla versione cinese o giapponese di HoloLens, dovrai usare Windows Device Recovery Tool (WDRT) per scaricare la build per la lingua in un PC e quindi installarla nel dispositivo HoloLens.
+Per passare alla versione cinese o giapponese di HoloLens, è necessario usare windows Device Recovery Tool (WDRT) per scaricare la build per la lingua in un PC e quindi installarla in HoloLens.
 
 > [!IMPORTANT]
-> Quando si usa WDRT per installare la build cinese o giapponese di HoloLens, vengono eliminati da HoloLens i dati esistenti, ad esempio le impostazioni e i file personali. 
+> L'uso di WDRT per installare le build in cinese o giapponese di HoloLens elimina i dati esistenti, ad esempio file personali e impostazioni, da HoloLens. 
 
-1. Nel PC scarica e installa [Windows Device Recovery Tool (WDRT)](https://support.microsoft.com/help/12379).
-1. Scarica il pacchetto per la lingua desiderata per il PC: [cinese semplificato](https://aka.ms/hololensdownload-ch) o [giapponese](https://aka.ms/hololensdownload-jp).
-1. Al termine del download, seleziona **Esplora file** > **Download**. Fai clic con il pulsante destro del mouse sulla cartella compressa appena scaricata e seleziona **Estrai tutto** > **Estratti** per decomprimerla.
-1. Collega HoloLens al PC usando il cavo USB micro con cui è stato fornito il dispositivo. Puoi anche usare altri cavi per collegare il tuo dispositivo HoloLens, ma questo funziona meglio.
-1. Dopo che lo strumento avrà rilevato automaticamente il dispositivo HoloLens, seleziona il riquadro Microsoft HoloLens.
-1. Nella schermata successiva scegli   **Manual package selection** e seleziona il file di installazione che si trova nella cartella decompressa nel passaggio 4. Cerca un file con estensione "ffu". 
-1. Seleziona **Installa software** e segui le istruzioni. 
-1. Dopo l'installazione della build, viene avviata automaticamente la configurazione di HoloLens. Indossa il dispositivo e segui le istruzioni per la configurazione. 
+1. Nel PC scaricare e installare [Windows Device Recovery Tool (WDRT).](https://support.microsoft.com/help/12379)
+1. Scaricare il pacchetto per la lingua desiderata nel PC: [cinese semplificato](https://aka.ms/hololensdownload-ch) o [giapponese.](https://aka.ms/hololensdownload-jp)
+1. Al termine del download, **selezionare** Esplora file  >  **Download**. Fare clic con il pulsante destro del mouse sulla cartella compressa appena scaricata e scegliere **Estrai** tutto  >   per decomprimerla.
+1. Connettere HoloLens al PC usando il cavo micro USB fornito. Anche se si usano altri cavi per connettere HoloLens, questo funziona meglio.
+1. Dopo che lo strumento rileva automaticamente HoloLens, selezionare il Microsoft HoloLens riquadro.
+1. Nella schermata successiva selezionare **Selezione** pacchetto manuale e selezionare il file di installazione che si trova nella cartella   decompressa nel passaggio 4. Cercare un file con estensione ".ffu". 
+1. Selezionare **Installa software** e seguire le istruzioni. 
+1. Dopo l'installazione della build, viene avviata automaticamente l'installazione di HoloLens. Posizionare il dispositivo e seguire le istruzioni di configurazione. 
 
-Dopo aver completato la configurazione, vai a **Impostazioni** > **Aggiornamento e sicurezza** > **Programma Windows Insider**, quindi verifica di poter ricevere le ultime build in anteprima. Come per le build in anteprima inglese, il Programma Windows Insider mantiene aggiornate le versioni cinese e giapponese di HoloLens con le build in anteprima più recenti.
+Al termine dell'installazione, passare a Impostazioni Aggiornamento & Sicurezza Programma Windows Insider e verificare di essere configurati per ricevere le build di  >    >  anteprima più recenti. Come le build di anteprima in lingua inglese, Programma Windows Insider le versioni in cinese e giapponese di HoloLens aggiornate con le build di anteprima più recenti.
 
 > [!NOTE]
 >  
-> - Non puoi usare l'app Impostazioni per modificare la lingua del sistema tra inglese, giapponese e cinese. Il flashing di una nuova build è l'unico modo supportato per cambiare la lingua del sistema del dispositivo.
-> - Per immettere testo in cinese semplificato o giapponese, puoi usare la tastiera Pinyin su schermo, mentre l'uso di una tastiera hardware Bluetooth non è supportato al momento.  Nei dispositivi HoloLens cinesi o giapponesi puoi tuttavia continuare a usare una tastiera Bluetooth per digitare in inglese. Per attivare una tastiera hardware per digitare in inglese, premi il tasto ~.
+> - Non è possibile usare l'app Impostazioni per modificare la lingua del sistema tra inglese, giapponese e cinese. Il flashing di una nuova build è l'unico modo supportato per modificare la lingua del sistema del dispositivo.
+> - Anche se è possibile usare la tastiera Pinyin su schermo per immettere testo cinese semplificato o giapponese, l'uso di una tastiera hardware Bluetooth per digitare testo cinese semplificato o giapponese non è attualmente supportato.  Tuttavia, su HoloLens cinese o giapponese, puoi continuare a usare una tastiera Bluetooth per digitare l'inglese (per attivare o disattivare la digitazione di una tastiera hardware in inglese, premi il tasto ~).

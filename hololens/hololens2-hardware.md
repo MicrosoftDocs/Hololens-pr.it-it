@@ -66,9 +66,9 @@ Per mantenere/accrescere la percentuale di carica della batteria interna mentre 
 | - | - |
 | Tracciamento della testa | 4 telecamere a luce visibile |
 | Tracciamento oculare | 2 telecamere a infrarossi (IR) |
-| Intensità | Sensore intensità tempo di volo 1MP |
+| Intensità | Sensore intensità tempo di volo 1 MP |
 | Unità di misura inerziale (IMU) | Accelerometro, giroscopio, magnetometro |
-| Fotocamera | Fermo immagine 8MP, video 1080p30 |
+| Fotocamera | Fermo immagine 8 MP, video 1080p30 |
 
 ![Sensori di HoloLens 2](images/hololens2-front-view.png)
 
@@ -88,8 +88,8 @@ Per mantenere/accrescere la percentuale di carica della batteria interna mentre 
 | - | - |
 | Sistema su chip | [Dettagli](https://www.qualcomm.com/products/snapdragon-850-mobile-compute-platform) della piattaforma di elaborazione Qualcomm Snapdragon 850 |
 | Unità di elaborazione olografica | Unità di elaborazione olografica integrata personalizzata di seconda generazione |
-| Memoria | DRAM in sistema LPDDR4x 4GB |
-| Archiviazione | UFS 2.1 da 64GB |
+| Memoria | DRAM in sistema LPDDR4x 4 GB |
+| Archiviazione | UFS 2.1 da 64 GB |
 | WiFi | 802.11 ac 2x2 |
 | Bluetooth | 5.0 |
 | USB | USB Type-C |

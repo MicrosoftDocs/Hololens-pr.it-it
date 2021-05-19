@@ -213,5 +213,5 @@ Se WDRT non rileva l’HoloLens, prova a riavviare il computer. Se il rilevament
 
 - [Note sulla versione di HoloLens 2](https://docs.microsoft.com/hololens/hololens-release-notes)
 - [Che cos'è Windows Update for Business?](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb)
-- [Assegnare i dispositivi ai canali di manutenzione per gli aggiornamenti di Windows10](https://docs.microsoft.com/windows/deployment/update/waas-servicing-channels-windows-10-updates)
+- [Assegnare i dispositivi ai canali di manutenzione per gli aggiornamenti di Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-servicing-channels-windows-10-updates)
 - [Gestire gli aggiornamenti del software Windows 10 con Intune](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)

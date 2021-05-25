@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: f50a885f6cc82256d146d7f4914aca934e81c0c0
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: f855aa84a347edc85e5b9f02458721778eb2515a
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108309394"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397692"
 ---
 # <a name="restart-reset-or-recover-hololens-1st-gen"></a>Riavviare, reimpostare o ripristinare HoloLens (prima generazione)
 
@@ -55,7 +55,7 @@ Se non è ancora possibile riavviare il dispositivo, provare a riavviarlo usando
 1. Tenere premuto il **pulsante** di alimentazione per 5 secondi. Dopo 1 secondo, tutti e cinque i LED si illuminano e quindi si disattivano lentamente uno alla volta da destra a sinistra. Dopo 5 secondi, tutti i LED saranno spenti, a indicare che l'arresto è riuscito.
       
    > [!IMPORTANT]
-   > Arrestare la pressione del pulsante immediatamente dopo che tutti i LED sono stati spenti.
+   > Interrompere la pressione del pulsante immediatamente dopo che tutti i LED sono stati spenti.
 1. Attendere 1 minuto per il completamento dell'arresto. L'arresto potrebbe essere ancora in corso anche dopo che gli schermi sono stati disattivati.
 2. Accendere di nuovo il dispositivo premendo e tenendo **premuto** il pulsante di alimentazione per 1 secondo.
 
@@ -71,13 +71,13 @@ Se la procedura precedente non ha funzionato, provare a riavviare il dispositivo
 Se i metodi precedenti non hanno riavviato HoloLens, forzare un riavvio. Questo metodo equivale a rimuovere e reinstallare la batteria. È pericoloso perché potrebbe lasciare il dispositivo in uno stato danneggiato. In questo caso, è necessario eseguire il flash di HoloLens.  
 
 > [!WARNING]
-> Si tratta di un metodo potenzialmente dannoso e deve essere usato solo se i metodi menzionati in precedenza non funzionano.
+> Si tratta di un metodo potenzialmente dannoso e deve essere usato solo se i metodi citati in precedenza non funzionano.
 
 1. Premere e tenere premuto **il pulsante** di alimentazione per almeno 10 secondi.
    - È possibile tenere premuto il pulsante per più di 10 secondi.
    - È possibile ignorare qualsiasi attività del LED.
 1. Rilasciare il pulsante e attendere 2-3 secondi.
-1. Premere e tenere premuto **il pulsante** di alimentazione per 1 secondo.
+1. Tenere premuto il **pulsante di** alimentazione per 1 secondo.
 1. Se si verificano ancora  problemi, premere il pulsante di alimentazione per 4 secondi, fino a quando tutti gli indicatori della batteria non si dissolveranno e lo schermo smetterà di visualizzare gli ologrammi. Attendere 1 minuto e quindi premere di nuovo il **pulsante** di alimentazione per accendere il dispositivo.
 
 ## <a name="reset-to-factory-settings"></a>Ripristinare le impostazioni predefinite
@@ -85,7 +85,7 @@ Se i metodi precedenti non hanno riavviato HoloLens, forzare un riavvio. Questo 
 > [!NOTE]
 > Per la reimpostazione della batteria è necessario almeno il 40% di carica.
 
-Se holoLens presenta ancora un problema, provare a ripristinarlo allo stato factory. Questo passaggio mantiene la versione del software Windows Holographic installato e restituisce tutto il resto alle impostazioni predefinite.
+Se holoLens presenta ancora un problema, prova a ripristinarlo allo stato factory. Questo passaggio mantiene la versione del software Windows Holographic installato e restituisce tutto il resto alle impostazioni predefinite.
 
 >[!WARNING]
 > Se si reimposta il dispositivo, tutti i dati personali, le app e le impostazioni verranno cancellati, incluse le informazioni di reimpostazione del TPM. La reimpostazione installerà solo la versione installata più recente di Windows Holographic. Sarà necessario ripetere tutti i passaggi di inizializzazione ( calibrare, connettersi al Wi-Fi, creare un account utente, scaricare le app e così via).
@@ -121,7 +121,7 @@ Se il dispositivo non viene rilevato, seguire questa procedura per attivarla in 
 
 1. Scollegare il dispositivo da qualsiasi fonte di alimentazione.
 1. Se il dispositivo è spento, tenere premuto **il** pulsante di alimentazione fino a quando non si spegne completamente.
-2. Tenere premuto **il pulsante del volume** e toccare brevemente il pulsante **di** alimentazione. Il dispositivo dovrebbe avviarsi e visualizzare solo la luce centrale del LED.
+2. Tenere premuto **il pulsante del volume** e toccare brevemente il pulsante **di** alimentazione. Il dispositivo dovrebbe avviarsi e visualizzare solo il LED centrale.
 3. Collegare il dispositivo al PC.
 4. Aprire lo strumento ripristino dispositivi di Windows.
 5. Selezionare **Il dispositivo non è stato rilevato** e quindi **HoloLens.** 

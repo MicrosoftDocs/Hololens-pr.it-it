@@ -1,6 +1,6 @@
 ---
 title: Crittografia BitLocker di HoloLens
-description: Informazioni su come abilitare la crittografia dei dispositivi Bitlocker per proteggere i file archiviati nei dispositivi di realtà mista HoloLens.
+description: Informazioni su come abilitare la crittografia dei dispositivi BitLocker per proteggere i file archiviati nei dispositivi di realtà mista HoloLens.
 ms.prod: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,16 +11,18 @@ ms.localizationpriority: medium
 ms.date: 01/26/2019
 ms.reviewer: ''
 manager: laurawi
-ms.openlocfilehash: 268c3650b85e7e7f102618ccc5a94c25de54dcfe
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+appliesto:
+- HoloLens (1st gen)
+ms.openlocfilehash: 2929cbea826e0cc92a72550c7874995506b94257
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108309064"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397282"
 ---
 # <a name="hololens-1st-gen-bitlocker-encryption"></a>Crittografia BitLocker di HoloLens (prima generazione)
 
-HoloLens (prima generazione) e HoloLens 2 entrambi supportano la crittografia dei dispositivi con BitLocker, tuttavia BitLocker è sempre abilitato HoloLens 2.
+HoloLens (prima generazione) e HoloLens 2 entrambi supportano la crittografia dei dispositivi tramite BitLocker, tuttavia BitLocker è sempre abilitato HoloLens 2.
 
 Questo articolo consente di abilitare e gestire BitLocker in HoloLens (prima generazione).
 
@@ -34,7 +36,7 @@ In HoloLens (prima generazione) è possibile abilitare la crittografia dei dispo
 
 Per altri strumenti MDM, vedere la documentazione del provider MDM per istruzioni. Se il provider MDM richiede UN URI personalizzato per la crittografia del dispositivo, usare la configurazione seguente:
 
-- **Nome**: un nome a scelta
+- **Nome:** un nome a scelta
 - **Descrizione:** facoltativo
 - **URI OMA**: `./Vendor/MSFT/Policy/Config/Security/RequireDeviceEncryption`
 - **Tipo di dati**: integer
@@ -47,7 +49,7 @@ I pacchetti di provisioning sono file creati dallo strumento Progettazione confi
 ### <a name="create-a-provisioning-package-that-upgrades-the-windows-holographic-edition-and-enables-encryption"></a>Creare un pacchetto di provisioning che aggiorna l'edizione Windows Holographic e abilita la crittografia
 
 1. [Creare un pacchetto di provisioning per HoloLens.](hololens-provisioning.md)
-1. Passare a **Impostazioni di runtime**  >  **Criteri**  >  **Sicurezza** e **selezionare RichiediDispositivaCrittografia.**
+1. Passare a **Impostazioni di runtime**  >  **Criteri**  >  **Sicurezza** e selezionare **RichiediDispositivaCrittografia.**
 
     ![Richiedi l'impostazione di crittografia del dispositivo configurata su Sì](images/device-encryption.png)
 

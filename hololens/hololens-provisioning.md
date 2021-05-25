@@ -16,12 +16,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: b22baa62488bbdf6d2a8a43b6487bbe5ec3277cb
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: cf2abe249e40e522b4d8993449b9f19033a64744
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108309862"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397402"
 ---
 # <a name="configure-hololens-by-using-a-provisioning-package"></a>Configurare HoloLens usando un pacchetto di provisioning
 
@@ -38,7 +38,7 @@ Di seguito sono riportate alcune delle configurazioni di HoloLens che è possibi
 
 ## <a name="provisioning-package-hololens-wizard"></a>Procedura guidata per il provisioning del pacchetto HoloLens
 
-La procedura guidata di HoloLens consente di configurare le impostazioni seguenti in un pacchetto di provisioning:
+La procedura guidata HoloLens consente di configurare le impostazioni seguenti in un pacchetto di provisioning:
 
 - Eseguire l'aggiornamento all'edizione Enterprise
 
@@ -90,9 +90,9 @@ Usare lo strumento Progettazione configurazione Windows per creare un pacchetto 
 <table>
 <tr><td style="width:45%" valign="top"><a id="one"></a><img src="images/one.png" alt="step one"/><img src="images/set-up-device.png" alt="set up device"/></br></br>Individuare e selezionare il file di licenza enterprise per aggiornare l'edizione HoloLens.</br></br>È anche possibile attivare <strong>o disattivare Sì</strong> <strong>o No</strong> per nascondere parti della prima esperienza.</br></br>Per configurare il dispositivo senza la necessità di connettersi a una rete Wi-Fi, impostare <strong>Skip Wi-Fi su</strong> <strong>On</strong>.</br></br>Selezionare un'area e un fuso orario in cui verrà usato il dispositivo. </td><td><img src="images/set-up-device-details.png" alt="Select enterprise licence file and configure OOBE"/></td></tr>
 <tr><td style="width:45%" valign="top"><a id="two"></a><img src="images/two.png" alt="step two"/>  <img src="images/set-up-network.png" alt="set up network"/></br></br>In questa sezione è possibile immettere i dettagli della Wi-Fi wireless a cui il dispositivo deve connettersi automaticamente. A tale scopo, selezionare Su <strong>,</strong>immettere l'SSID, il tipo di rete (<strong>Open</strong> o <strong>WPA2-Personal</strong>) e (se <strong>WPA2-Personal</strong>) la password per la rete wireless.</td><td><img src="images/set-up-network-details-desktop.png" alt="Enter network SSID and type"/></td></tr>
-<tr><td style="width:45%" valign="top"><a id="three"></a><img src="images/three.png" alt="step three"/>  <img src="images/account-management.png" alt="account management"/></br></br>È possibile registrare il dispositivo Azure Active Directory o creare un account locale nel dispositivo</br></br>Prima di usare una procedura guidata di Progettazione configurazione di Windows per configurare la registrazione Azure AD in blocco, configurare <a href="https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup" data-raw-source="[set up Azure AD join in your organization](https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup)">Azure AD'aggiunta all'organizzazione.</a> Il <strong>numero massimo di dispositivi per impostazione</strong> utente nel tenant di Azure AD determina quante volte è possibile usare il token in blocco che si ottiene nella procedura guidata. Per registrare il dispositivo in Azure AD, selezionare l'opzione e immettere un nome descrittivo per il token in blocco che verrà visualizzato tramite la procedura guidata. Impostare una data di scadenza per il token (il massimo è di 30 giorni dalla data in cui si ottiene il token). Selezionare <strong>Get bulk token (Ottieni token in blocco).</strong> Nella finestra <strong>Let&#39;'accesso</strong> immettere un account che abbia le autorizzazioni per aggiungere un dispositivo Azure AD e quindi la password. Selezionare <strong>Accetta per</strong> concedere a Progettazione configurazione di Windows le autorizzazioni necessarie. </br></br>Per creare un account locale, selezionare l'opzione e immettere un nome utente e una password. </br></br><strong>Importante:</strong> <br />(Solo Windows 10 versione 1607) Se si crea un account locale nel pacchetto di provisioning, è necessario modificare la password usando l'app <strong>Impostazioni</strong> ogni 42 giorni. Se la password non viene modificata entro tale periodo, l'account potrebbe essere bloccato ed è impossibile accedervi.  </td><td><img src="images/account-management-details.png" alt="join  Azure AD or create a local  account"/></td></tr>
+<tr><td style="width:45%" valign="top"><a id="three"></a><img src="images/three.png" alt="step three"/>  <img src="images/account-management.png" alt="account management"/></br></br>È possibile registrare il dispositivo Azure Active Directory o creare un account locale nel dispositivo</br></br>Prima di usare una procedura guidata di Progettazione configurazione di Windows per configurare la registrazione Azure AD in blocco, configurare <a href="https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup" data-raw-source="[set up Azure AD join in your organization](https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup)">Azure AD'aggiunta all'organizzazione.</a> Il <strong>numero massimo di dispositivi per</strong> impostazione utente nel tenant di Azure AD determina quante volte è possibile usare il token in blocco che si ottiene nella procedura guidata. Per registrare il dispositivo in Azure AD, selezionare l'opzione e immettere un nome descrittivo per il token in blocco che verrà visualizzato tramite la procedura guidata. Impostare una data di scadenza per il token (il massimo è di 30 giorni dalla data in cui si ottiene il token). Selezionare <strong>Get bulk token (Ottieni token in blocco).</strong> Nella finestra <strong>Let&#39;'accesso</strong> immettere un account che abbia le autorizzazioni per aggiungere un dispositivo Azure AD e quindi la password. Selezionare <strong>Accetta per</strong> concedere a Progettazione configurazione di Windows le autorizzazioni necessarie. </br></br>Per creare un account locale, selezionare l'opzione e immettere un nome utente e una password. </br></br><strong>Importante:</strong> <br />(Solo Windows 10 versione 1607) Se si crea un account locale nel pacchetto di provisioning, è necessario modificare la password usando l'app <strong>Impostazioni</strong> ogni 42 giorni. Se la password non viene modificata entro tale periodo, l'account potrebbe essere bloccato ed è impossibile accedervi.  </td><td><img src="images/account-management-details.png" alt="join  Azure AD or create a local  account"/></td></tr>
 <tr><td style="width:45%" valign="top"><a id="four"></a><img src="images/four.png" alt="step four"/> <img src="images/add-certificates.png" alt="add certificates"/></br></br>Per effettuare il provisioning del dispositivo con un certificato, fare clic <strong>su Aggiungi un certificato.</strong> Immettere un nome per il certificato, quindi individuare e selezionare il certificato da usare.</td><td><img src="images/add-certificates-details.png" alt="add a certificate"/></td></tr> 
-<tr><td style="width:45%" valign="top"><a id="five"></a><img src="images/five.png" alt="step five"/> <img src="images/developer-setup.png" alt="Developer Setup"/></br></br><strong>Attiva/Disattiva Sì</strong> <strong>o No</strong> per abilitare la modalità sviluppatore in HoloLens. <a href="https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development#developer-mode" data-raw-source="[Learn more about Developer Mode.](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development#developer-mode)">Ulteriori informazioni sulla modalità sviluppatore.</a></td><td><img src="images/developer-setup-details.png" alt="Enable Developer Mode"/></td></tr>
+<tr><td style="width:45%" valign="top"><a id="five"></a><img src="images/five.png" alt="step five"/> <img src="images/developer-setup.png" alt="Developer Setup"/></br></br>Selezionare <strong>Sì</strong> o <strong>No</strong> per abilitare la modalità sviluppatore in HoloLens. <a href="https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development#developer-mode" data-raw-source="[Learn more about Developer Mode.](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development#developer-mode)">Ulteriori informazioni sulla modalità sviluppatore.</a></td><td><img src="images/developer-setup-details.png" alt="Enable Developer Mode"/></td></tr>
 <tr><td style="width:45%" valign="top"><a id="six"></a><img src="images/six.png" alt="step six"/> <img src="images/finish.png" alt="finished"/></br></br>Non impostare una password per proteggere il pacchetto di provisioning. Se il pacchetto di provisioning è protetto da una password, il provisioning del dispositivo HoloLens avrà esito negativo.</td><td><img src="images/finish-details.png" alt="Protect your package"/></td></tr>
 </table>
 
@@ -106,7 +106,7 @@ Al termine, selezionare **Crea**. Sono necessari solo alcuni secondi. Quando il 
 1. Nella pagina iniziale di Progettazione configurazione Windows selezionare **Provisioning avanzato**.
 2. Nella finestra **Immetti dettagli progetto**, specifica un nome e la posizione del progetto. Facoltativamente, immetti una breve descrizione del progetto.
 
-3. Selezionare **Next** (Avanti).
+3. Selezionare **Avanti**.
 
 4. Nella finestra **Scegliere le impostazioni da visualizzare e** configurare selezionare Windows 10 Holographic e quindi selezionare **Avanti.** 
 
@@ -126,7 +126,7 @@ Al termine, selezionare **Crea**. Sono necessari solo alcuni secondi. Quando il 
     
 9. Selezionare **Esporta**  >  **pacchetto di provisioning**.
 
-10. Impostare **Owner (Proprietario)** **su IT Admin (Amministratore IT).** In questo modo viene impostata la precedenza di questo pacchetto di provisioning maggiore rispetto ai pacchetti di provisioning applicati a questo dispositivo da altre origini. Selezionare **Next** (Avanti).
+10. Impostare **Owner (Proprietario)** **su IT Admin (Amministratore IT).** In questo modo viene impostata la precedenza di questo pacchetto di provisioning maggiore rispetto ai pacchetti di provisioning applicati a questo dispositivo da altre origini. Selezionare **Avanti**.
 
 11. Imposta un valore per **Versione pacchetto**.
 
@@ -142,7 +142,7 @@ Al termine, selezionare **Crea**. Sono necessari solo alcuni secondi. Quando il 
 
     Facoltativamente, è possibile selezionare **Sfoglia per** modificare il percorso di output predefinito.
 
-14. Selezionare **Next** (Avanti).
+14. Selezionare **Avanti**.
 
 15. Selezionare **Compila** per iniziare a compilare il pacchetto. Le informazioni del progetto vengono visualizzate nella pagina di compilazione e la barra di stato indica lo stato della compilazione.
 
@@ -154,7 +154,7 @@ Al termine, selezionare **Crea**. Sono necessari solo alcuni secondi. Quando il 
 
 HoloLens 2 dispositivi in Windows Holographic, versione 2004 o [build 19041.1103](hololens-release-notes.md#windows-holographic-version-2004) o successiva, possono usare un'unità USB per applicare un pacchetto di provisioning. È sufficiente copiare il file con estensione ppkg nella radice dell'unità USB. I pacchetti di provisioning verranno applicati solo se sono nella radice dell'unità USB. Più pacchetti di provisioning presenti verranno applicati in sequenza.
 
-HoloLens 2 dispositivi windows [Holographic versione 20H2](hololens-release-notes.md#windows-holographic-version-20h2) o successiva hanno funzionalità più nuove che consentono di semplificare e semplificare questo processo rendendolo automatico. Esaminare le sezioni seguenti:
+HoloLens 2 dispositivi windows [Holographic versione 20H2](hololens-release-notes.md#windows-holographic-version-20h2) o successiva hanno funzionalità più nuove per semplificare e semplificare questo processo rendendolo automatico. Esaminare le sezioni seguenti:
 
 - [Avvio automatico del provisioning da USB](hololens-provisioning.md#auto-launch-provisioning-from-usb)
 - [Confermare automaticamente i pacchetti di provisioning nella Configurazione automatica](hololens-provisioning.md#auto-confirm-provisioning-packages-in-oobe)
@@ -170,7 +170,7 @@ HoloLens 2 dispositivi windows [Holographic versione 20H2](hololens-release-note
 
 4. In Esplora File, trascinare e rilasciare il pacchetto di provisioning (.ppkg) nell'archiviazione del dispositivo.
 
-5. Premere e rilasciare brevemente i **pulsanti Volume Down** (Volume in basso) e **Power** (Risparmio energia) contemporaneamente nella pagina First interactable moment (Primo momento **intervienibile)** di OOBE.
+5. Premere e rilasciare brevemente i **pulsanti Volume Down** (Volume in basso) e **Power** (Alimentazione) contemporaneamente nella pagina First interactable moment (Primo momento **intervienibile)** di OOBE.
 
 6. Il dispositivo chiede se si considera attendibile il pacchetto e si vuole applicarlo. Confermare che consideri attendibile il pacchetto.
 
@@ -190,7 +190,7 @@ Prima di questa versione, gli utenti dovevano avviare manualmente la schermata d
 
 Nota: se un'unità USB viene lasciata collegata durante l'avvio del dispositivo, la Configurazione guidata enumera il dispositivo di archiviazione USB esistente, oltre a controllare eventuali altri dispositivi collegati.
 
-Leggere le informazioni [sull'applicazione di pacchetti di provisioning durante la configurazione di .](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup)
+Leggere le informazioni [sull'applicazione di pacchetti di provisioning durante la configurazione del sistema operativo.](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup)
 
 ### <a name="auto-confirm-provisioning-packages-in-oobe"></a>Confermare automaticamente i pacchetti di provisioning nella Configurazione automatica
 - Processo automatizzato che consente una minore interazione dell'utente, quando viene visualizzata la pagina Pacchetto di provisioning verrà applicata automaticamente a tutti i pacchetti elencati.
@@ -212,10 +212,10 @@ Combinando l'avvio automatico del provisioning dai dispositivi USB e la conferma
 
 Il dispositivo è ora configurato e visualizza la schermata Provisioning completato.
 
-## <a name="apply-a-provisioning-package-to-hololens-after-setup"></a>Applicare un pacchetto di provisioning a HoloLens dopo l'installazione
+## <a name="applyremove-a-provisioning-package-to-hololens-after-setup"></a>Applicare/rimuovere un pacchetto di provisioning in HoloLens dopo l'installazione
 
 > [!NOTE]
-> Questi passaggi si applicano solo ai Windows 10, versione 1809.
+> Questi passaggi si applicano a tutti HoloLens 2 e dispositivi HoloLens (prima generazione) in Windows Holographic versione 1809 e successive.
 
 Nel PC seguire questa procedura:
 1. Creare un pacchetto di provisioning come descritto in [Creare un pacchetto di provisioning per HoloLens usando la procedura guidata di HoloLens.](hololens-provisioning.md)
@@ -225,7 +225,7 @@ Nel PC seguire questa procedura:
 In HoloLens seguire questa procedura:
 1. Passare a **Impostazioni** > **Account** > **Accedi all'azienda o all'istituto di istruzione**. 
 2. In **Impostazioni correlate** selezionare Aggiungi o rimuovi un pacchetto di **provisioning.**
-3. Nella pagina successiva selezionare Aggiungi un pacchetto **per** avviare la selezione file e selezionare il pacchetto di provisioning. Se la cartella è vuota, assicurarsi di selezionare **Questo dispositivo e** quindi **Documenti.**
+3. Nella pagina successiva selezionare Aggiungi un pacchetto **per** avviare la selezione file e selezionare il pacchetto di provisioning. Se la cartella è vuota, assicurarsi di selezionare **Questo dispositivo** e quindi **Documenti.**
 
 Dopo l'applicazione, il pacchetto viene visualizzato nell'elenco **Pacchetti installati**. Per visualizzare i dettagli del pacchetto o rimuoverlo dal dispositivo, selezionare il pacchetto elencato.
 

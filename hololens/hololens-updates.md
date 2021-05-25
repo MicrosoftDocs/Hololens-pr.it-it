@@ -1,6 +1,6 @@
 ---
 title: Gestire gli aggiornamenti di HoloLens
-description: Informazioni su come gli amministratori possono usare la gestione di dispositivi mobili per gestire gli aggiornamenti dei dispositivi HoloLens.
+description: Informazioni su come gli amministratori possono usare la gestione dei dispositivi mobili per gestire gli aggiornamenti ai dispositivi HoloLens.
 ms.prod: hololens
 ms.sitesec: library
 author: Teresa-Motiv
@@ -11,207 +11,235 @@ ms.localizationpriority: high
 ms.date: 10/13/2020
 ms.reviewer: jarrettr
 manager: jarrettr
+appliesto:
+- HoloLens (1st gen)
+- HoloLens 2
 ms.custom:
 - CI 116337
 - CI 115825
 - CI 111456
 - CSSTroubleshooting
-ms.openlocfilehash: fa31ab20b149ab62fa59e334f6710b98f2e826ff
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
-ms.translationtype: HT
+ms.openlocfilehash: 6c9d1551b2a3348a6ff9962180c2d5552eb100f1
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11284057"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397232"
 ---
-# Gestire gli aggiornamenti di HoloLens
+# <a name="manage-hololens-updates"></a>Gestire gli aggiornamenti di HoloLens
 
-HoloLens usa Windows Update allo stesso modo degli altri dispositivi Windows 10. Quando un aggiornamento è disponibile, viene scaricato e installato automaticamente la volta successiva in cui il dispositivo viene collegato ed è connesso a internet. Questo articolo descrive come gestire gli aggiornamenti in un ambiente aziendale o in altri ambienti gestiti. Per informazioni sulla gestione degli aggiornamenti per i dispositivi HoloLens, vedi[Aggiornamento di HoloLens](hololens-update-hololens.md).
+HoloLens usa Windows Update come altri dispositivi Windows 10 dispositivo. Quando un aggiornamento è disponibile, viene scaricato e installato automaticamente alla successiva connessione del dispositivo a Internet. Questo articolo descrive come gestire gli aggiornamenti in un ambiente aziendale o in un altro ambiente gestito. Per informazioni su come gestire gli aggiornamenti per i singoli dispositivi HoloLens, vedi [Aggiornare HoloLens.](hololens-update-hololens.md)
 
-## Gestire automaticamente gli aggiornamenti
+## <a name="manage-updates-automatically"></a>Gestire automaticamente gli aggiornamenti
 
-### Gestione degli aggiornamenti mediante Windows Update per le aziende
+### <a name="managing-updates-by-using-windows-update-for-business"></a>Gestione degli aggiornamenti tramite Windows Update per le aziende
 
-Windows Holographic for Business può usare [Windows Update for Business](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb) per gestire gli aggiornamenti. Tutti i dispositivi HoloLens 2 possono usare Windows Holographic for Business. Assicurati che utilizzino la build 10.0.18362.1042 o successiva di Windows Holographic for Business. Se hai dispositivi HoloLens (prima generazione), devi [aggiornarli a Windows Holographic for Business](hololens1-upgrade-enterprise.md) per gestire gli aggiornamenti.
+Windows Holographic for Business possibile [usare](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb) Windows Update per le aziende per gestire gli aggiornamenti. Tutti HoloLens 2 dispositivi possono usare Windows Holographic for Business. Assicurarsi che usino la Windows Holographic for Business build 10.0.18362.1042 o successiva. Se hai dispositivi HoloLens (prima generazione), devi aggiornarli a Windows Holographic for Business [per](hololens1-upgrade-enterprise.md) gestirne gli aggiornamenti.
 
-Windows Update for Business connette direttamente i dispositivi HoloLens al servizio Windows Update. Usando Windows Update for Business, puoi controllare più aspetti del processo di aggiornamento,&mdash;ossia i dispositivi, i tipi di aggiornamento e gli orari. Ad esempio, puoi installare gli aggiornamenti su un sottoinsieme di dispositivi per fare un collaudo, e poi, successivamente, installarli sui dispositivi rimanenti. Oppure, puoi definire tabelle di marcia differenti per l’aggiornamento di dispositivi differenti.
+Windows Update per le aziende connette i dispositivi HoloLens direttamente al Windows Update servizio. Usando Windows Update per le aziende, è possibile controllare più aspetti del processo di aggiornamento, ovvero quali dispositivi ottengono &mdash; gli aggiornamenti in un momento qualsiasi. Ad esempio, è possibile implementare gli aggiornamenti in un subset di dispositivi per il test e quindi implementare gli aggiornamenti nei dispositivi rimanenti in un secondo momento. In caso contrario, è possibile definire pianificazioni degli aggiornamenti diverse per diversi tipi di aggiornamenti.
 
 > [!NOTE]  
-> Per i dispositivi HoloLens,puoi gestire automaticamente gli aggiornamenti delle funzionalità (rilasciati due volte all’anno) e della qualità (rilasciati mensilmente o in base alle esigenze, inclusi gli aggiornamenti critici per la sicurezza). Per maggiori dettagli sui tipi di aggiornamento, vedi [Tipologie di aggiornamento gestite da Windows Update for Business](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb#types-of-updates-managed-by-windows-update-for-business).
+> Per i dispositivi HoloLens, puoi gestire automaticamente gli aggiornamenti delle funzionalità (rilasciati due volte all'anno) e gli aggiornamenti qualitativi (rilasciati ogni mese o in base alle esigenze, inclusi gli aggiornamenti della sicurezza critici). Per altre informazioni sui tipi di aggiornamento, vedere [Tipi di aggiornamenti gestiti da Windows Update per le aziende](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb#types-of-updates-managed-by-windows-update-for-business).
 
-Puoi configurare le impostazioni di Windows Update for Business per HoloLens usando i criteri di una soluzione MDM per la gestione dei dispositivi, come Microsoft Intune.
+È possibile configurare Windows Update per le aziende per HoloLens usando i criteri in una soluzione di gestione di dispositivi mobili (MDM), ad esempio Microsoft Intune.
 
-### Configurazione delle impostazioni di Windows Update for Business con Microsoft Intune.
+### <a name="managing-windows-update-for-business-by-using-microsoft-intune"></a>Gestione Windows Update per le aziende tramite Microsoft Intune
 
-Per una descrizione dettagliata sull’uso di Intune per configurare Windows Update for business, leggi [Gestire gli aggiornamenti del software Windows 10 con Intune](https://docs.microsoft.com/intune/protect/windows-update-for-business-configure). Per maggiori dettagli sulla funzionalità di Intune specifica supportata da HoloLens, vedi [funzioni di gestione degli aggiornamenti di Intune supportati da HoloLens ](#intune-update-management-functions-that-hololens-supports).
+Per una discussione dettagliata su come usare Intune per configurare Windows Update per le aziende, vedere Gestire gli aggiornamenti software Windows 10 [in Intune.](https://docs.microsoft.com/intune/protect/windows-update-for-business-configure) Per altre informazioni sulle funzionalità specifiche di Intune supportate da HoloLens, vedere Funzioni di gestione degli aggiornamenti di Intune supportate da [HoloLens.](#intune-update-management-functions-that-hololens-supports)
 
 > [!IMPORTANT]  
-> Intune offre due tipi di criteri per la gestione degli aggiornamenti: *anello di aggiornamento per Windows 10* e *aggiornamento delle funzionalità per Windows 10*. Al momento, la tipologia “aggiornamento delle funzionalità per Windows 10” è in anteprima, e non è supportata su HoloLens.
+> Intune offre due tipi di criteri per la gestione degli aggiornamenti: *Windows 10'anello* di aggiornamento *e Windows 10 funzionalità di aggiornamento.* Il Windows 10 di criteri di aggiornamento delle funzionalità è attualmente in anteprima pubblica e non è supportato per HoloLens.
 >  
-> Puoi usare i criteri dell’anello di aggiornamento per Windows 10 per gestire gli aggiornamenti dell’HoloLens 2.
+> È possibile usare i Windows 10 degli anelli di aggiornamento per gestire HoloLens 2 aggiornamenti.
 
-### Configurare i criteri di aggiornamento per HoloLens 2 o HoloLens (prima generazione)
+### <a name="configure-update-policies-for-hololens-2-or-hololens-1st-gen"></a>Configurare i criteri di aggiornamento HoloLens 2 o HoloLens (prima generazione)
 
-Questa sezione descrive i criteri che puoi usare per gestire gli aggiornamenti di HoloLens 2 o HoloLens (prima generazione). Per maggiori dettagli sulle ulteriori funzionalità disponibili per HoloLens 2, vedi [Pianificare e configurare le installazioni degli aggiornamenti per HoloLens 2](#plan-and-configure-update-rollouts-for-hololens-2).
+Questa sezione descrive i criteri che è possibile usare per gestire gli aggiornamenti per HoloLens 2 o HoloLens (prima generazione). Per altre informazioni sulle funzionalità disponibili per HoloLens 2, vedere Pianificare e configurare le implementazioni degli aggiornamenti [per](#plan-and-configure-update-rollouts-for-hololens-2)HoloLens 2 .
 
-[Criterio CSP - Aggiornamenti](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update) definisce i criteri che consentono di configurare Windows Update for business.
-
-> [!NOTE]  
-> Per un elenco di provider di servizi di configurazione di criteri specifici (CSP) supportati da edizioni specifiche di HoloLens, vedi [Criteri CSP supportati dai dispositivi HoloLens](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#policy-csps-supported-by-hololens-devices).
-
-#### Configurare il controllo automatico degli aggiornamenti
-
-Puoi usare il criterio **Update/AllowAutoUpdate** per gestire l’aggiornamento automatico, ad esempio la scansione, lo scaricamento e l’installazione degli aggiornamenti.  Per maggiori dettagli sulle impostazioni disponibili per questo criterio, vedi [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowautoupdate).
+Provider di servizi di configurazione dei [criteri: l'aggiornamento](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update) definisce i criteri che configurano Windows Update per le aziende.
 
 > [!NOTE]  
-> In Microsoft Intune, puoi usare **Configura aggiornamenti automatici** per modificare questo criterio. Per altre informazioni, vedi [Gestire gli aggiornamenti software Windows 10 in Intune](https://docs.microsoft.com/intune/windows-update-for-business-configure).
+> Per un elenco di provider di servizi di configurazione dei criteri (CSP) specifici supportati da edizioni specifiche di HoloLens, vedere Provider di servizi di configurazione dei criteri supportati dai [dispositivi HoloLens.](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#policy-csps-supported-by-hololens-devices)
 
-#### Configurare una pianificazione degli aggiornamenti
+#### <a name="configure-automatic-checks-for-updates"></a>Configurare i controlli automatici per gli aggiornamenti
 
-Per configurare come e quando saranno applicati gli aggiornamenti, usa questi criteri:
+È possibile usare i **criteri Update/AllowAutoUpdate** per gestire il comportamento degli aggiornamenti automatici, ad esempio l'analisi, il download e l'installazione degli aggiornamenti. Per altre informazioni sulle impostazioni disponibili per questo criterio, vedere [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowautoupdate).
+
+> [!NOTE]  
+> In Microsoft Intune, è possibile usare **il comportamento di aggiornamento automatico** per modificare questo criterio. Per altre informazioni, vedere [Gestire gli Windows 10 software in Intune.](https://docs.microsoft.com/intune/windows-update-for-business-configure)
+
+#### <a name="configure-an-update-schedule"></a>Configurare una pianificazione degli aggiornamenti
+
+Per configurare come e quando vengono applicati gli aggiornamenti, usare i criteri seguenti:
 
 - [Update/ScheduledInstallDay](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-scheduledinstallday)  
-  - Valori: **0**–**7** (0 = ogni giorno, 1 = domenica, 7 = sabato)
+  - Valori: **0**-**7** (0 = ogni giorno, 1 = domenica, 7 = sabato)
   - Valore predefinito: **0** (ogni giorno)
 - [Update/ScheduledInstallTime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-scheduledinstalltime)
-  - Valori: 0–23 (0 = mezzanotte, 23 = 11 PM)
-  - Valore predefinito: 3 PM
+  - Valori: 0-23 (0 = mezzanotte, 23 = 11 PM)
+  - Valore predefinito: 15:00
 
-#### Configurare l'orario di attività.
-A partire da [Windows Holographic, versione 20H2](hololens-release-notes.md#windows-holographic-version-20h2) un amministratore IT può specificare l'intervallo di ore di attività per i dispositivi HoloLens 2.
+#### <a name="configure-active-hours"></a>Configurare l'orario di attività.
+A partire [da Windows Holographic, versione 20H2,](hololens-release-notes.md#windows-holographic-version-20h2) un amministratore IT può specificare l'intervallo di ore attive per HoloLens 2 dispositivi.
 
-L’orario di attività identifica il periodo di tempo durante il quale si prevede che il dispositivo sia in uso. I riavvi automatici dopo un aggiornamento verranno eseguiti al di fuori dell'orario di attività. L'intervallo specificato verrà calcolato dall'ora di inizio dell'orario di attività. È possibile usare MDM, come descritto in [Configurazione dell'orario di attività con MDM](https://docs.microsoft.com/windows/deployment/update/waas-restart#configuring-active-hours-with-mdm). MDM usa le impostazioni Update/ActiveHoursStart e Update/ActiveHoursEnd e Update/ActiveHoursMaxRange nel CSP del criterio per configurare le ore di attivà.
+L'orario di attività identifica il periodo di tempo durante il quale prevedi che il dispositivo sia uso. I riavvi automatici dopo un aggiornamento verranno eseguiti al di fuori dell'orario di attività. L'intervallo specificato verrà conteggiato dall'ora di inizio delle ore attive. È possibile usare MDM, come descritto in [Configurazione degli orari di attività con MDM.](https://docs.microsoft.com/windows/deployment/update/waas-restart#configuring-active-hours-with-mdm) MDM usa le impostazioni Update/ActiveHoursStart e Update/ActiveHoursEnd e Update/ActiveHoursMaxRange in Policy CSP per configurare le ore attive.
 
--   [Update/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend) - questo valore imposta l'ora di fine. È disponibile un massimo di 12 ore dall'ora di inizio.
+-   [Update/ActiveHoursEnd:](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend) questo valore imposta l'ora di fine. È presente un massimo di 12 ore dall'ora di inizio.
     -   I valori supportati sono 0-23, dove 0 è 12 AM, 1 è 1 AM e così via.
-    -   Il valore predefinito è 17 (5 PM).
--   [Update/ActiveHoursMaxRange](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange) - questo valore imposta il numero massimo di ore di attività dall'ora di inizio.
-    -   I valori supportati sono 8-18.
+    -   Il valore predefinito è 17 (17:00).
+-   [Update/ActiveHoursMaxRange:](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange) questo valore imposta il numero massimo di ore attive dall'ora di inizio.
+    -   I valori supportati sono da 8 a 18.
     -   Il valore predefinito è 18 (ore).
--   [Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart) - questo valore imposta l'ora di inizio. C'è un massimo di 12 ore dall'ora di fine.
+-   [Update/ActiveHoursStart:](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart) questo valore imposta l'ora di inizio. È presente un massimo di 12 ore dall'ora di fine.
     -   I valori supportati sono 0-23, dove 0 è 12 AM, 1 è 1 AM e così via.
     -   Il valore predefinito è 8 (8 AM).
 
-#### Solo per i dispositivi che eseguono Windows 10, versione 1607
+#### <a name="for-devices-that-run-windows-10-version-1607-only"></a>Per i dispositivi che eseguono Windows 10, solo versione 1607
 
-Puoi usare i seguenti criteri aggiornati per configurare i dispositivi in modo da ricevere aggiornamenti da Windows Server Update Service (WSUS), invece di Windows Update:
+È possibile usare i criteri di aggiornamento seguenti per configurare i dispositivi per ottenere gli aggiornamenti dal servizio Windows Server Update Services (WSUS), anziché da Windows Update:
 
 - [Update/AllowUpdateService](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowupdateservice)
 - [Update/RequireUpdateApproval](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-requireupdateapproval)
 - [Update/UpdateServiceUrl](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-updateserviceurl)
 
-### Pianificare e configurare le installazioni degli aggiornamenti per HoloLens 2
+### <a name="plan-and-configure-update-rollouts-for-hololens-2"></a>Pianificare e configurare le implementazioni degli aggiornamenti per HoloLens 2
 
-HoloLens 2 supporta più funzionalità di automazione di aggiornamento rispetto a HoloLens (prima generazione). Ciò è specialmente vero se usi Microsoft Intune per gestire i criteri di Windows Update for Business. Queste funzionalità ti consentono di pianificare e implementare più facilmente le installazioni degli aggiornamenti nella tua organizzazione.
+HoloLens 2 supporta più funzionalità di automazione degli aggiornamenti rispetto a HoloLens (prima generazione). Ciò vale soprattutto se si usa Microsoft Intune per gestire Windows Update per le aziende criteri. Queste funzionalità semplificano la pianificazione e l'implementazione delle implementazioni degli aggiornamenti all'interno dell'organizzazione.
 
-#### Pianificare la strategia di aggiornamento
+#### <a name="plan-the-update-strategy"></a>Pianificare la strategia di aggiornamento
 
-Windows Updates for Business supporta i criteri di posticipazione. Quando Microsoft pubblica un aggiornamento, puoi usare un criterio di posticipazione per definire quanto a lungo attendere prima di installarlo sul dispositivo. Associando sottoinsiemi dei tuoi dispositivi (noti come *anelli di aggiornamento*) a criteri di posticipazione differenti, puoi coordinare la strategia di installazione degli aggiornamenti della tua organizzazione.
+Windows Updates for Business supporta i criteri di rinvio. Dopo che Microsoft ha rilasciato un aggiornamento, è possibile usare un criterio di rinvio per definire il tempo di attesa prima di installare l'aggiornamento nei dispositivi. Associando subset dei dispositivi (noti anche come anelli di *aggiornamento)* a diversi criteri di rinvio, è possibile coordinare una strategia di implementazione degli aggiornamenti per l'organizzazione.
 
-Ad esempio, considera un’organizzazione che ha 1.000 dispositivi e deve aggiornarli entro cinque giorni. L’organizzazione può creare cinque anelli di aggiornamento, come mostrato nella tabella seguente.
+Si consideri, ad esempio, un'organizzazione che ha 1.000 dispositivi e deve aggiornare i dispositivi in cinque onde. L'organizzazione può creare cinque anelli di aggiornamento, come illustrato nella tabella seguente.
 
-|Gruppo |Numero di dispositivi |Posticipazione (giorni) |
+|Gruppo |Number of devices (Numero di dispositivi) |Differimento (giorni) |
 | ---| :---: | :---: |
-|GRP 1 (personale IT) |5 |0 |
-|GRP 2 (utenti early adopter) |50 |60 |
-|GRP 3 (principale 1) |250 |120 |
-|GRP 4 (principale 2) |300 |150 |
-|GRP 5 (principale 3) |395 |180 |
+|Grp 1 (personale IT) |5 |0 |
+|Grp 2 (early adopter) |50 |60 |
+|Grp 3 (principale 1) |250 |120 |
+|Grp 4 (principale 2) |300 |150 |
+|Grp 5 (main 3) |395 |180 |
 
-Ecco come l'implementazione procede nel corso del tempo per l'intera organizzazione.
+Ecco come procede l'implementazione nel tempo per l'intera organizzazione.
 
-![Cronologia dell’installazione degli aggiornamenti](./images/hololens-updates-timeline.png)
+![Sequenza temporale per la distribuzione degli aggiornamenti](./images/hololens-updates-timeline.png)
 
-#### Configurare un criterio di posticipazione degli aggiornamenti
+#### <a name="configure-an-update-deferral-policy"></a>Configurare un criterio di rinvio degli aggiornamenti
 
-Un criterio di posticipazione specifica il numero di giorni che intercorrono tra la data in cui un aggiornamento viene reso disponibile e la data in cui viene offerto a una dispositivo.
+I criteri di differimento specificano il numero di giorni tra la data in cui un aggiornamento diventa disponibile e la data in cui l'aggiornamento viene offerto a un dispositivo.
 
-Puoi configurare posticipazioni differenti per gli aggiornamenti delle funzionalità e gli aggiornamenti per la qualità. Nella seguente tabella sono elencati i criteri specifici da usare per ogni tipo, e la posticipazione massima per ciascuno di essi.
+È possibile configurare diversi rinvii per gli aggiornamenti delle funzionalità e gli aggiornamenti qualitativi. Nella tabella seguente sono elencati i criteri specifici da usare per ogni tipo e il rinvio massimo per ognuno.
 
-|Categoria |Condizione |Differimento massimo |
+|Category |Criteri |Differimento massimo |
 | --- | --- | --- |
 |Aggiornamenti delle funzionalità |DeferFeatureUpdatesPeriodInDays |365 giorni |
-|Aggiornamenti qualitativi |DeferQualityUpdatesPeriodInDays |30 days |
+|Aggiornamenti qualitativi |DeferQualityUpdatesPeriodInDays |30 giorni |
 
-#### Sospendere gli aggiornamenti tramite dispositivo
+#### <a name="pause-updates-via-device"></a>Sospendere gli aggiornamenti tramite il dispositivo
 
-Se un utente non ha accesso a MDM, può sospendere manualmente gli aggiornamenti per un massimo di 35 giorni su un dispositivo HoloLens 2 nella build [Windows Holographic, versione 2004](hololens-release-notes.md#windows-holographic-version-2004) o successiva. Gli utenti possono raggiungere questa impostazione passando a **Impostazioni -> Aggiornamenti e sicurezza -> Opzioni avanzate** scorrendo verso il basso per **Sospendi aggiornamenti** e selezionando la data in cui verranno sospesi gli aggiornamenti. Una volta che un utente ha raggiunto il limite di sospensione, il dispositivo dovrà ottenere nuovi aggiornamenti per effettuare una nuova sospensione. 
+Se un utente non ha accesso a MDM, può sospendere singolarmente gli aggiornamenti per un massimo di 35 giorni manualmente in un dispositivo HoloLens 2 nella build [Windows Holographic, versione 2004](hololens-release-notes.md#windows-holographic-version-2004) o successiva. Gli utenti possono raggiungere questa impostazione passando a Impostazioni **-> Update & Security -> Opzioni** avanzate scorrere verso il basso fino a **Sospendi** aggiornamenti e selezionare la data fino alla quale sospenderanno gli aggiornamenti. Quando un utente ha raggiunto il limite di pausa, il dispositivo dovrà ottenere nuovi aggiornamenti perché può essere sospeso di nuovo. 
 
-A partire da [Windows Holographic, versione 20H2](hololens-release-notes.md#windows-holographic-version-20h2), la funzione di pausa degli aggiornamenti può essere gestita per i dispositivi HoloLens 2. 
+A partire [da Windows Holographic versione 20H2,](hololens-release-notes.md#windows-holographic-version-20h2)questa funzione di sospensione degli aggiornamenti può essere gestita per HoloLens 2 dispositivi. 
 - [Update/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess).
-    - 0 (impostazione predefinita) - abilitato
-    - 1 - disabilitato
+    - 0 (impostazione predefinita): abilitata
+    - 1 : disabilitato
 
-#### Funzioni di gestione degli aggiornamenti di Intune supportate da HoloLens
+#### <a name="intune-update-management-functions-that-hololens-supports"></a>Funzioni di gestione degli aggiornamenti di Intune supportate da HoloLens
 
-È possibile usare le seguenti funzioni di gestione degli aggiornamenti di Intune per gestire gli aggiornamenti di HoloLens.
+È possibile usare le funzioni di gestione degli aggiornamenti di Intune seguenti per gestire gli aggiornamenti per HoloLens.
 
-- **Creare** e **Assegnare**: Queste funzioni aggiungono una suoneria di aggiornamento di Windows 10 all'elenco degli anelli di aggiornamento. Per altre informazioni, vedi [Creare e assegnare anelli di aggiornamento](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure#create-and-assign-update-rings).
+- **Crea** e **assegna:** queste funzioni aggiungono un Windows 10 di aggiornamento all'elenco degli anelli di aggiornamento. Per altre informazioni, vedere [Creare e assegnare anelli di aggiornamento.](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure#create-and-assign-update-rings)
 
-- **Sospendere**: Se si verifica un problema durante la distribuzione di una caratteristica o un aggiornamento della qualità, puoi sospendere l'aggiornamento per 35 giorni (a partire da una data specifica). Tale sospensione impedisce di installare l’aggiornamento sugli altri dispositivi, finché non avrai risolto o migrato il problema. Se sospendi un aggiornamento delle funzionalità, gli aggiornamenti per la qualità continuano a essere offerti ai dispositivi per garantire che siano protetti. Quando un tipo di aggiornamento viene sospeso, il riquadro di panoramica dell’anello mostra i giorni residui prima del ripristino dell’aggiornamento.  Una volta trascorso il periodo di tempo specificato, la sospensione scadrà automaticamente e il processo di aggiornamento verrà ripristinato.
+- Sospendi: se si verifica un problema quando si distribuisce un aggiornamento qualitativo o di funzionalità, è possibile sospendere l'aggiornamento per 35 giorni (a partire da una data specificata). Questa sospensione impedisce ad altri dispositivi di installare l'aggiornamento fino a quando non si risolve o si attenua il problema. Se si sospende un aggiornamento delle funzionalità, gli aggiornamenti qualitativi vengono comunque offerti ai dispositivi per assicurarsi che rimangano protetti. Quando un tipo di aggiornamento viene sospeso, il riquadro Panoramica per tale anello mostra il numero di giorni che devono trascorrere prima del ripristino del tipo di aggiornamento. Al termine del tempo specificato, la sospensione scade automaticamente e il processo di aggiornamento riprende.
 
-  Mentre l’anello di aggiornamento è sospeso, puoi selezionare le seguenti opzioni:
+  Mentre l'anello di aggiornamento è sospeso, è possibile selezionare una delle opzioni seguenti:
 
-  - **Estendere**: Estende il periodo di sospensione per un tipo di aggiornamento per 35 giorni.
-  - **Ripristinare**: Per ripristinare gli aggiornamenti per quell’anello all’operazione attiva. Se necessario, puoi sospendere di nuovo l’anello di aggiornamento.
+  - **Estensione:** estendere il periodo di sospensione per un tipo di aggiornamento per 35 giorni.
+  - **Riprendi:** ripristina gli aggiornamenti per l'anello nell'operazione attiva. Se necessario, è possibile sospendere nuovamente l'anello di aggiornamento.
 
   > [!NOTE]  
-  > L’opzione di **Disinstallazione** degli anelli di aggiornamento non è supportata sui dispositivi HoloLens 2.
+  > **L'operazione** di disinstallazione per gli anelli di aggiornamento non è supportata per HoloLens 2 dispositivi.
 
-## Verificare manualmente gli aggiornamenti
+### <a name="delivery-optimization-preview"></a>Ottimizzazione recapito anteprima
 
-Anche se HoloLens verifica periodicamente gli aggiornamenti di sistema, in alcuni casi potrebbe essere necessario verificarli manualmente.
+[Windows Holographic versione 21H1](hololens-release-notes.md#windows-holographic-version-21h1) ha abilitato un'anteprima anticipata per le impostazioni di ottimizzazione del recapito per ridurre il consumo di larghezza di banda per i download da più dispositivi HoloLens. Una descrizione più completa di questa funzionalità insieme alla configurazione di rete consigliata è disponibile qui: Ottimizzazione recapito [per Windows 10 aggiornamenti](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization).
 
-Per verificare manualmente gli aggiornamenti, vai a **Impostazioni** > **Aggiornamento e Sicurezza** > **Controlla la disponibilità di aggiornamenti**. Se l’app Impostazioni indica che il dispositivo è aggiornato, tutti gli aggiornamenti disponibili sono già installati.
+Le impostazioni seguenti sono abilitate come parte dell'area di gestione e [possono essere configurate da Intune:](https://docs.microsoft.com/mem/intune/configuration/delivery-optimization-settings)
 
-## Eseguire il rollback manuale di un aggiornamento
+- [DOCacheHost](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-docachehost)
+- [DOCacheHostSource](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-docachehostsource)
+- [DODelayCacheServerFallbackBackground](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelaycacheserverfallbackbackground)
+- [DODelayCacheServerFallbackForeground](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelaycacheserverfallbackforeground)
+- [DODownloadMode](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodownloadmode)
+- [DOMaxBackgroundDownloadBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxbackgrounddownloadbandwidth)
+- [DOMaxForegroundDownloadBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxforegrounddownloadbandwidth)
+- [DOPercentageMaxBackgroundBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dopercentagemaxbackgroundbandwidth)
+- [DOPercentageMaxForegroundBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dopercentagemaxforegroundbandwidth)
+- [DOSetHoursToLimitForegroundDownloadBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dosethourstolimitforegrounddownloadbandwidth)
+- [DOSetHoursToLimitBackgroundDownloadBandwidth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth)
 
-In alcuni casi, potresti voler ripristinare una versione precedente del software di HoloLens. Il processo è differente per i dispositivi HoloLens 2 e gli HoloLens di prima generazione.
+Alcune avvertenze su questa offerta di anteprima:
 
-### Ripristinare una versione precedente (HoloLens 2)
+- Il supporto di HoloLens è limitato in questa anteprima solo agli aggiornamenti del sistema operativo.
+- Windows Holographic for Business supporta solo le modalità di download HTTP e i download da un [endpoint cache connessa Microsoft](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache). Le modalità di download peer-to-peer e le assegnazioni di gruppo non sono attualmente supportate per i dispositivi HoloLens.
+- HoloLens non supporta l'ottimizzazione della distribuzione o del recapito Windows Server Update Services endpoint.
+- La risoluzione dei problemi richiederà la diagnostica nel server cache connessa o la raccolta di una traccia in HoloLens in HoloLens tramite l'aggiornamento delle impostazioni & Risoluzione dei problemi di  >    >     >   **sicurezza Windows Update**.
 
-Puoi eseguire il roll back degli aggiornamenti e tornare a una versione precedente di HoloLens 2 usando [Advanced Recovery Companion](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab) per ripristinare una versione precedente sul tuo HoloLens.
+## <a name="manually-check-for-updates"></a>Controllare manualmente la disponibilità di aggiornamenti
+
+Anche se HoloLens verifica periodicamente la presenza di aggiornamenti di sistema, in alcuni casi può essere necessario controllare manualmente.
+
+Per controllare manualmente la disponibilità di aggiornamenti, passare a **Impostazioni**  >  **Aggiornamento & controllo** di sicurezza per gli  >  **aggiornamenti**. Se l'app Impostazioni indica che il dispositivo è aggiornato, sono disponibili tutti gli aggiornamenti.
+
+## <a name="manually-roll-back-an-update"></a>Eseguire manualmente il rollback di un aggiornamento
+
+In alcuni casi, potrebbe essere necessario ripristinare una versione precedente del software HoloLens. Il processo per questa operazione dipende dal fatto che si stia usando HoloLens 2 o HoloLens (prima generazione).
+
+### <a name="revert-to-a-previous-version-hololens-2"></a>Ripristinare una versione precedente (HoloLens 2)
+
+È possibile eseguire il rollback degli aggiornamenti e tornare a una versione precedente di HoloLens 2 usando [Advanced Recovery Companion](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab) per reimpostare HoloLens alla versione precedente.
 
 > [!NOTE]
-> Il ripristino della versione precedente determina la cancellazione dei file e delle impostazioni personali.
+> Il ripristino di una versione precedente elimina i file e le impostazioni personali.
 
-Per ripristinare una versione precedente di HoloLens 2, segui questi passaggi:
+Per ripristinare una versione precedente di HoloLens 2, seguire questa procedura:
 
-1. Assicurati che nessun telefono o dispositivo Windows sia collegato al tuo computer.
-1. Sul tuo computer, scarica [Advanced Recovery Companion](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab) da Microsoft Store.
-1. Scarica la [versione più recente di HoloLens 2](https://aka.ms/hololens2download).
-1. Una volta completati questi download, apri **Esplora file** > **Download**, fai clic destro sulla cartella compressa (.zip) che hai appena scaricato, e seleziona **Estrarre tutto** > **Estrarre** per espandere il file.
-1. Usa un cavo USB-A / USB-C per collegare il tuo HoloLens al tuo computer. Anche se hai usato altri cavi per collegare il tuo HoloLens, questo tipo di cavo funziona meglio.
-1. Advanced Recovery Companion rileva automaticamente il tuo HoloLens. Seleziona il riquadro **Microsoft HoloLens**.
-1. Nella schermata successiva, seleziona **Selezione manuale del pacchetto**, e apri la cartella che hai espanso in precedenza.
-1. Seleziona il file di installazione (.ffu).
-1. Seleziona **Installa software**, e segui le istruzioni.
+1. Assicurarsi di non avere telefoni o dispositivi Windows collegati al computer.
+1. Nel computer scaricare [Advanced Recovery Companion](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab) dal Microsoft Store.
+1. Scaricare la [versione più HoloLens 2 recente.](https://aka.ms/hololens2download)
+1. Al termine di questi download, aprire **Download** di Esplora file, fare clic con il pulsante destro del mouse sulla cartella compressa (zip) appena scaricata e quindi scegliere Estrai tutto per espandere  >     >   il file.
+1. Usare un cavo da USB-A a USB-C per connettere il dispositivo HoloLens al computer. Anche se hai già utilizzato altri cavi per connettere HoloLens, questo tipo di cavo funziona meglio.
+1. Advanced Recovery Companion rileva automaticamente il dispositivo HoloLens. Selezionare il **Microsoft HoloLens** riquadro.
+1. Nella schermata successiva selezionare **Selezione manuale del pacchetto** e quindi aprire la cartella espansa in precedenza.
+1. Selezionare il file di installazione (con estensione ffu).
+1. Selezionare **Installa software** e quindi seguire le istruzioni.
 
-### Ripristinare una versione precedente (HoloLens (prima generazione))
+### <a name="revert-to-a-previous-version-hololens-1st-gen"></a>Ripristinare una versione precedente (HoloLens (prima generazione))
 
-Puoi eseguire il roll back degli aggiornamenti e tornare a una versione precedente di HoloLens (prima generazione) usando [ Windows Device Recovery Tool (WDRT)](https://support.microsoft.com/help/12379) per reimpostare una versione precedente del tuo HoloLens.
+Puoi eseguire il rollback degli aggiornamenti e tornare a una versione precedente di HoloLens (prima generazione) usando lo strumento ripristino dispositivi di [Windows (WDRT)](https://support.microsoft.com/help/12379) per ripristinare holoLens alla versione precedente.
 
 > [!NOTE]
-> Il ripristino della versione precedente di HoloLens determina la cancellazione dei file e delle impostazioni personali.
+> Il ripristino di una versione precedente di HoloLens elimina i file e le impostazioni personali.
 
-Per ripristinare una versione precedente di HoloLens (prima generazione), segui questi passaggi:
+Per ripristinare una versione precedente di HoloLens (prima generazione), segui questa procedura:
 
-1. Assicurati che nessun telefono o dispositivo Windows sia collegato al tuo computer.
-1. Scarica e installa [Windows Device Recovery Tool (WDRT)](https://support.microsoft.com/help/12379) sul tuo PC.
-1. Scarica il pacchetto [HoloLens Anniversary Update recovery package](https://aka.ms/hololensrecovery).
-1. Una volta completati i download, apri **Esplora file** > **Download**, fai clic destro sulla cartella compressa (.zip) che hai appena scaricato, e seleziona **Estrarre tutto** > **Estrarre** per espandere il file.
-1. Usa il cavo micro-USB fornito insieme al tuo HoloLens per collegare l’HoloLens al tuo computer. Anche se hai usato altri cavi per collegare il tuo HoloLens, questo tipo di cavo funziona meglio.
-1. Lo strumento WDRT rileva automaticamente il dispositivo HoloLens. Seleziona il riquadro **Microsoft HoloLens**.
-1. Nella schermata successiva, seleziona **Selezione manuale del pacchetto**, e apri la cartella che hai espanso in precedenza.
-1. Seleziona il file di installazione (.ffu).
-1. Seleziona **Installa software**, e segui le istruzioni.
+1. Assicurarsi che nel computer non siano collegati telefoni o dispositivi Windows.
+1. Nel computer scaricare Windows [Device Recovery Tool (WDRT).](https://support.microsoft.com/help/12379)
+1. Scaricare il [pacchetto di ripristino dell'aggiornamento dell'anniversario di HoloLens.](https://aka.ms/hololensrecovery)
+1. Al termine dei download, aprire **Esplora file** Download , fare clic con il pulsante destro del mouse sulla cartella compressa (zip) appena scaricata e quindi scegliere Estrai tutto per  >  espandere   >   il file.
+1. Usa il cavo micro-USB fornito con il dispositivo HoloLens per connettere il dispositivo HoloLens al computer. Anche se si usano altri cavi per connettere il dispositivo HoloLens, questo funziona meglio.
+1. WDRT rileva automaticamente il dispositivo HoloLens. Selezionare il **Microsoft HoloLens** riquadro.
+1. Nella schermata successiva selezionare **Selezione manuale del pacchetto** e quindi aprire la cartella espansa in precedenza.
+1. Selezionare il file di installazione (con estensione ffu).
+1. Selezionare **Installa software** e quindi seguire le istruzioni.
 
 **Se WDRT non rileva il dispositivo**
 
-Se WDRT non rileva l’HoloLens, prova a riavviare il computer. Se il rilevamento non funziona, seleziona **Il mio dispositivo non è stato rilevato**, seleziona poi **Microsoft HoloLens**, e segui le istruzioni.
+Se WDRT non rileva il dispositivo HoloLens, provare a riavviare il computer. Se non funziona, selezionare **Il dispositivo non** è stato rilevato, **selezionare** Microsoft HoloLens e quindi seguire le istruzioni.
 
-## Articoli correlati
+## <a name="related-articles"></a>Articoli correlati
 
-- [Note sulla versione di HoloLens 2](https://docs.microsoft.com/hololens/hololens-release-notes)
-- [Che cos'è Windows Update for Business?](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb)
-- [Assegnare i dispositivi ai canali di manutenzione per gli aggiornamenti di Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-servicing-channels-windows-10-updates)
-- [Gestire gli aggiornamenti del software Windows 10 con Intune](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)
+- [HoloLens 2 sulla versione](https://docs.microsoft.com/hololens/hololens-release-notes)
+- [Che cos'è Windows Update per le aziende?](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb)
+- [Assegnare dispositivi ai canali di manutenzione per Windows 10 aggiornamenti](https://docs.microsoft.com/windows/deployment/update/waas-servicing-channels-windows-10-updates)
+- [Gestire gli aggiornamenti software di Windows 10 in Intune](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)

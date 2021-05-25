@@ -1,6 +1,6 @@
 ---
-title: Usare il menu Start e casa della realtà mista
-description: Informazioni su come usare il menu Start, gestire e accedere alle app ed esplorare la Realtà mista nei dispositivi HoloLens.
+title: Usare i menu Start e ambiente iniziale
+description: Informazioni su come usare il menu Start, gestire e accedere alle app ed esplorare ambiente iniziale nei dispositivi HoloLens.
 ms.assetid: 742bc126-7996-4f3a-abb2-cf345dff730c
 ms.date: 08/07/2019
 keywords: hololens
@@ -13,80 +13,96 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 26dc73b59f569496d732bcde068b3647b3857c55
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
-ms.translationtype: HT
+ms.openlocfilehash: 66271911a4692dea89b6338cc8c77a05dfcaae1d
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283517"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397392"
 ---
-# Usare il menu Start e casa della realtà mista
+# <a name="use-the-start-menu-and-mixed-reality-home"></a>Usare i menu Start e ambiente iniziale
 
-Così come l'esperienza con i PC Windows inizia con il desktop, quella con Windows Holographic inizia con la casa della realtà mista.  Usando il menu Start puoi aprire e posizionare finestre delle app, icone di avvio delle app immersive e contenuto 3D nella casa della realtà mista. La posizione di tali elementi nello spazio fisico verrà memorizzata.
+Proprio come l'esperienza pc Windows inizia con il desktop, Windows Holographic inizia con ambiente iniziale.  Usando il menu Start è possibile aprire e posizionare finestre dell'app, utilità di avvio delle app immersive e contenuto 3D in ambiente iniziale e la relativa posizione nello spazio fisico verrà memorizzata.
 
-## Usare il menu Start
+## <a name="use-the-start-menu"></a>Usare il menu Start
 
-Il menu Start in HoloLens consente di aprire le app, visualizzare importanti informazioni sullo stato e accedere a strumenti come la fotocamera.
+La menu Start in HoloLens consente di aprire le app, visualizzare informazioni importanti sullo stato e accedere a strumenti come la fotocamera.
 
-In qualunque posizione ti trovi in HoloLens, potrai sempre aprire il menu Start usando il **gesto Start**.  In HoloLens (prima generazione) il gesto Start consiste nell'[aprire la mano a fiore](https://support.microsoft.com/help/12644/hololens-use-gestures). In HoloLens 2, il [gesto Start](hololens2-basic-usage.md#start-gesture) consiste nel toccare l'icona Start visualizzata sul polsino.  Puoi anche aprire il menu Start usando il comando vocale "Vai a Start".
-
-> [!TIP]
-> Quando il menu Start è aperto, usa il gesto Start per chiuderlo oppure guarda il menu Start e pronuncia "Chiudi".
-
-Nella parte superiore del menu Start verranno visualizzati gli indicatori di stato per Wi-Fi, batteria, volume e un orologio. In HoloLens 2 è disponibile anche un indicatore di ascolto che indica se il dispositivo è abilitato per la sintesi vocale e l'ascolto dei comandi vocali. Nella parte inferiore sono disponibili i pulsanti **Fotografia** e **Video** che consentono di scattare foto e registrare video.  Esiste anche un pulsante **Connetti** che consente di proiettare gli elementi visualizzati in un altro dispositivo tramite Miracast.
-
-### Trovare app nel menu Start
-
-Il menu Start include un elenco **App aggiunte** e un elenco **Tutte le app**.
-
-- L'elenco **App aggiunte** mostra le app che sono state aggiunte. Puoi aggiungere e rimuovere app dall'elenco **App aggiunte** usando il menu di scelta rapida visualizzato quando **selezioni e tieni premuto** il riquadro di un'app.
-
-- L'elenco **Tutte le app** mostra tutte le app installate nel dispositivo.  Seleziona il pulsante **Tutte le app** sul lato destro del menu **Start** per ottenere l'elenco.
-
-In entrambi gli elenchi di app usa i pulsanti **Pagina precedente** e **Pagina successiva** sul lato destro del menu Start per scorrere tutte le app dell'elenco.  Entrambi gli elenchi delle app verranno aperti automaticamente in corrispondenza dell'ultima pagina usata durante una sessione del dispositivo.
+Ovunque ci si trova in HoloLens, è sempre possibile aprire il menu Start usando **il movimento Start.**  In HoloLens (prima generazione) il movimento Start è [bloom](https://support.microsoft.com/help/12644/hololens-use-gestures). In HoloLens 2, il [movimento Start](hololens2-basic-usage.md#start-gesture) tocca l'icona Start visualizzata sul polso.  È anche possibile aprire il menu Start usando la voce pronunciando "Vai a Start".
 
 > [!TIP]
-> In HoloLens 2 puoi scorrere direttamente gli elenchi delle app usando il dito indice. Basta toccare l'elenco con la punta delle dita e trascinare verso l'alto o verso il basso.
+> Quando il menu Start è aperto, usare il movimento Avvia per chiuderlo o osservare il menu Start e pronunciare "Chiudi".
 
-### Aprire le app dal menu Start
+Nella parte superiore del menu Start vengono visualizzati gli indicatori di stato per Wi-Fi, batteria, volume e orologio. In HoloLens 2 è presente anche un indicatore di ascolto che indica se il dispositivo è abilitato per la voce e se è in ascolto di comandi vocali. Nella parte inferiore sono disponibili i pulsanti **Foto** e **Video** che consentono di scattare foto e registrazioni video.  È anche disponibile un **pulsante Connetti** che consente di proiettare ciò che si vede in un altro dispositivo usando Miracast.
 
-Per aprire un'app dal menu Start, **seleziona** semplicemente un **riquadro dell'app**. Puoi anche pronunciare il nome di un'app per aprirla.
+### <a name="find-apps-on-start-menu"></a>Trovare app in menu Start
 
-Quando apri un'app dal menu Start, verrà eseguita una di queste operazioni, in base al modo in cui l'app è progettata:
+Il menu Start ha un **elenco di app aggiunte** e un elenco Tutte **le** app.
 
-- Viene posizionata una **finestra dell'app**. L'app viene quindi caricata nella finestra e potrai usarla come un touchscreen.
-- Viene posizionata un'**icona di avvio delle app 3D** per un'app immersiva. Devi quindi **selezionare** l'icona di avvio per aprire l'app immersiva.
-- Viene posizionata una finestra dell'app che funge da **icona di avvio** per un'app immersiva. L'app immersiva verrà avviata automaticamente.
+- **L'elenco App aggiunte** mostra le app aggiunte. È possibile aggiungere e rimuovere app dall'elenco **App** aggiunte usando il menu di scelta rapida visualizzato quando si seleziona e si tiene **premuto** un riquadro dell'app.
 
-Le finestre delle app e le icone di avvio delle app posizionate nella casa della realtà mista saranno disponibili finché non decidi di rimuoverle.  Rappresentano un comodo collegamento all'interno del mondo utile per usare le finestre delle app o avviare le app immersive senza doverle aprire di nuovo dal menu Start. 
+- **L'elenco** Tutte le app mostra tutte le app installate nel dispositivo.  Selezionare il **pulsante Tutte** le app sul lato destro del menu **Start** per visualizzare l'elenco.
+
+In entrambi gli elenchi  di app usare i pulsanti Pagina precedente e **Pagina successiva** sul lato destro del menu Start per scorrere tutte le app nell'elenco.  Entrambi gli elenchi di app si apriranno automaticamente nella pagina usata per l'ultima volta durante una sessione del dispositivo.
+
+> [!TIP]
+> Nella HoloLens 2 è possibile scorrere direttamente gli elenchi di app usando il dito indice. È sufficiente toccare l'elenco con la punta del dito e trascinare verso l'alto o verso il basso.
+
+### <a name="open-apps-from-start-menu"></a>Aprire app da menu Start
+
+Per aprire un'app dal menu Start, è sufficiente **selezionare un** riquadro **dell'app.** È anche possibile pronunciare il nome di un'app per aprirla.
+
+Quando si apre un'app dal menu Start, si verifica una delle condizioni seguenti, a seconda di come è progettata l'app:
+
+- Viene **inserita una finestra** dell'app. L'app viene quindi caricata nella finestra ed è possibile usarla come un touchscreen.
+- Viene **inserita un'utilità di avvio di app 3D** per un'app immersiva. È quindi necessario selezionare **l'utilità di** avvio per aprire l'app immersiva.
+- Viene inserita una finestra dell'app che funge da utilità **di** avvio per un'app immersiva. L'app immersive verrà avviata automaticamente.
+
+Le finestre delle app e le utilità di avvio delle app ambiente iniziale rimangono in un'altra posizione fino a quando non si decide di rimuoverle.  Offrono un pratico collegamento per usare le finestre delle app o avviare app immersive senza doverle aprire di nuovo dal menu Start. 
 
 > [!NOTE]
->Come in un telefono, le risorse di sistema vengono gestite automaticamente in HoloLens.  Ad esempio, quando apri una nuova app immersiva, tutte le altre app in esecuzione diventeranno immediatamente inattive. Non è necessario rimuovere le finestre delle app e le icone di avvio nella case della realtà mista per liberare risorse di sistema. 
+>Come in un telefono, le risorse di sistema vengono gestite automaticamente in HoloLens.  Ad esempio, quando si apre una nuova app immersiva, tutte le altre app in esecuzione diventano immediatamente inattive. Non è necessario rimuovere le finestre delle app e le utilità di avvio ambiente iniziale liberare risorse di sistema. 
 
-## Usare le app in HoloLens
+## <a name="using-apps-on-hololens"></a>Uso di app in HoloLens
 
-Le app in HoloLens possono usare la visualizzazione della finestra dell'app o la visualizzazione Immersive. Nella visualizzazione della finestra dell'app solo il contenuto dell'app viene mostrato all'interno di una finestra. Nella visualizzazione Immersive un'app ti allontana dalla casa della realty mista e visualizza il contenuto nell'ambiente fisico intorno a te. Le app possono anche scegliere di usare entrambe le visualizzazioni.
+Le app in HoloLens possono usare la visualizzazione della finestra dell'app o la visualizzazione immersiva. Con la visualizzazione della finestra dell'app, l'app mostra semplicemente il contenuto all'interno di una finestra. Con la visualizzazione immersiva, un'app si allontana dalla realtà mista, dove può quindi visualizzare il contenuto nell'ambiente fisico circostante. Le app possono anche scegliere di usare entrambe le visualizzazioni.
 
-### Usare le finestre delle app
+### <a name="use-app-windows"></a>Usare le finestre dell'app
 
-In HoloLens (prima generazione) le finestre delle app vengono posizionate e usate nella casa della realtà mista, dove puoi [spostarle, ridimensionarle e ruotarle](hololens1-basic-usage.md#move-resize-and-rotate-apps) come desideri. Oltre che con lo sguardo e il gesto, puoi usare le finestre delle app anche con il mouse e la tastiera Bluetooth.
+Nelle finestre dell'app HoloLens (prima generazione) vengono posizionate e usate in ambiente iniziale, dove è possibile [spostarle,](hololens1-basic-usage.md#move-resize-and-rotate-apps) ridimensionarle e ruotarle come si desidera. Oltre a usare le finestre dell'app con lo sguardo e il movimento, è anche possibile usarle con mouse e tastiera connessi Bluetooth.
 
-In HoloLens 2 oltre a usare le finestre delle app nella casa della realtà mista, puoi anche usare la finestra di un'app alla volta all'interno di un'app immersiva. Puoi anche impostare la finestra di un'app in modalità **Seguimi**, per visualizzarla sempre in primo piano mentre ti sposti. Quando apri la finestra di un'app mentre sei all'interno di un'app immersiva, la modalità **Seguimi** verrà impostata automaticamente. Puoi [spostare, ridimensionare e ruotare](hololens2-basic-usage.md#move-resize-and-rotate-holograms) le finestre delle app direttamente con le mani sia nella casa della realtà mista sia all'interno di un'app immersiva.
+In HoloLens 2, oltre a usare le finestre dell'app in ambiente iniziale, è anche possibile usare una finestra dell'app alla volta all'interno di un'app immersiva. È anche possibile impostare una finestra dell'app in modalità **Seguimi** in cui rimarrà davanti all'utente mentre si va in giro. Quando si apre una finestra dell'app mentre si è all'interno di un'app immersiva, viene aperta automaticamente in modalità **Seguimi.** È possibile [spostare, ridimensionare e ruotare le](hololens2-basic-usage.md#move-resize-and-rotate-holograms) finestre dell'app direttamente usando le mani sia in ambiente iniziale che all'interno di un'app immersiva.
 
 > [!NOTE]
 >
-> - Nella casa della realtà mista possono essere attive un massimo di tre finestre delle app alla volta. Puoi aprirne un'altra, ma ne rimarranno attive solo tre.
-> - Il contenuto in una finestra dell'app non attiva apparirà scurito rispetto a quello in una finestra attiva.  In alcuni casi verrà visualizzata solo l'icona dell'app invece dell'eventuale contenuto.  Per attivare una finestra inattiva, basterà **selezionarla**.
-> - Per ogni app aperta può essere attiva una finestra alla volta, ad eccezione di Microsoft Edge, che supporta fino a tre finestre attive.
+> - Possono essere attive fino a tre finestre dell'app ambiente iniziale alla volta. È possibile aprire altre informazioni, ma solo tre rimarranno attive.
+> - Quando una finestra dell'app non è attiva, il contenuto avrà un aspetto scuro rispetto a una finestra attiva.  Alcuni mostreranno semplicemente l'icona dell'app anziché qualsiasi contenuto.  Per attivare una finestra inattiva, **è sufficiente selezionarla.**
+> - Ogni app aperta può avere una finestra attiva alla volta, ad Microsoft Edge, che può avere fino a tre.
 
-### Chiudere le app
+### <a name="close-apps"></a>Chiudere le app
 
-Per chiudere un'app che usa una finestra dell'app, chiudi semplicemente la finestra dell'app con il pulsante **Chiudi** sulla barra del titolo.  Puoi anche guardare la finestra e pronunciare "Chiudi".
+Per chiudere un'app che usa una finestra dell'app, è sufficiente chiudere la finestra dell'app con **il pulsante** Chiudi sulla barra del titolo.  È anche possibile esaminare la finestra e pronunciare "Chiudi".
 
-Per uscire da un'app che usa la visualizzazione Immersive, usa il gesto Start per visualizzare il **menu Start**, quindi seleziona il pulsante **Casa della realtà mista**.
+Per uscire da un'app che usa la visualizzazione immersiva, usa il movimento Start per visualizzare il menu Start **e** quindi seleziona il pulsante Home **di Realtà** mista.
 
-Se un'app immersiva è in uno stato di interruzione e deve essere riavviata, puoi prima verificare che l'app sia completamente arrestata chiudendo la relativa icona di avvio nella casa della realtà mista, quindi avviala dal menu Start.
+Se un'app immersiva è in uno stato danneggiato ed è necessario riavviarla, è possibile assicurarsi che l'app venga arrestata completamente chiudendo l'utilità di avvio in ambiente iniziale e quindi avviarla dal menu Start.
 
-## Informazioni correlate
+### <a name="default-app-picker"></a>Selezione app predefinita
 
-[Trovare, installare e disinstallare le applicazioni da Microsoft Store](holographic-store-apps.md)
+Con [Windows Holographic versione 21H1,](hololens-release-notes.md#windows-holographic-version-21h1)quando si attiva un collegamento ipertestuale o si apre un tipo di file con più di un'app installata che la supporta, viene visualizzata una nuova finestra che richiede di selezionare l'app installata che deve gestire il tipo di file o collegamento. In questa finestra è anche possibile scegliere di fare in modo che l'app selezionata gestirà il file o il tipo di collegamento "Una sola volta" o "Sempre".
+
+![Finestra di selezione app](images/default-app-picker.png)
+
+Se si sceglie "Sempre" ma in un secondo momento si vuole modificare l'app che gestisce un determinato file o tipo di collegamento, è possibile reimpostare le impostazioni predefinite salvate in **Impostazioni > app**. Scorrere fino alla fine della  pagina e selezionare il pulsante Cancella in "App predefinite per i tipi di file" e/o "App predefinite per i tipi di collegamento". A differenza dell'impostazione simile nei PC desktop, non è possibile reimpostare le impostazioni predefinite dei singoli tipi di file.
+
+### <a name="per-app-volume-control"></a>Controllo del volume per app
+
+Con [Windows Holographic, versione 21H1,](hololens-release-notes.md#windows-holographic-version-21h1)gli utenti possono modificare manualmente il livello di volume di ogni app. Ciò consente agli utenti di concentrarsi meglio sulle app necessarie o di ascoltare meglio quando usano più app. Ad esempio, la necessità di disattivare il volume di un'app mentre chiama un'altra persona per assistenza remota in un'altra.
+
+Per impostare il volume di una singola app, passare a Impostazioni Audio del sistema e in Opzioni audio avanzate  ->    ->  selezionare **Volume dell'app e preferenze del dispositivo.**
+
+ <img alt="App volume and device preferences." src="./images/volume-per-app.jpg" width="500" height="250" />
+
+## <a name="related-info"></a>Informazioni correlate
+
+[Trovare, installare e disinstallare applicazioni dal Microsoft Store](holographic-store-apps.md)

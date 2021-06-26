@@ -1,6 +1,6 @@
 ---
 title: Come eseguire il side load e installare le app tramite HoloLens 2 Programma di installazione app
-description: Informazioni su come installare e risolvere i problemi delle app con il programma di installazione e il caricamento laterale e installare le app tramite l'interfaccia utente.
+description: Informazioni su come installare e risolvere i problemi delle app con il programma di installazione delle app e il caricamento laterale e installare le app tramite l'interfaccia utente.
 keywords: gestione delle app, app, hololens, programma di installazione delle app
 author: evmill
 ms.author: v-evmill
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9e413963dbf34dd071fc9603487590065b967ee7
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: d8be5c2ed7fba38b6710aba9c122557a36073a79
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108309274"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924129"
 ---
 # <a name="install-apps-on-hololens-2-via-app-installer"></a>Installare app in HoloLens 2 tramite Programma di installazione app
 
@@ -44,29 +44,29 @@ Questa funzionalità è attualmente disponibile nelle build di Windows Holograph
 
 ### <a name="for-your-apps"></a>Per le app:
 
-La configurazione della soluzione dell'app deve essere **Master** o **Release** perché il Programma di installazione app userà le dipendenze dallo Store. Vedere altre informazioni sulla [creazione di pacchetti dell'app.](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs)
+La configurazione della soluzione dell'app deve essere **Master** o **Release** perché l'Programma di installazione app userà le dipendenze dallo Store. Vedere altre informazioni sulla [creazione di pacchetti di app.](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs)
 
-Le app installate tramite questo metodo devono essere firmate digitalmente. È necessario usare un certificato per firmare l'app. È possibile ottenere un certificato dall'elenco di [CA attendibili di Microsoft](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT), nel qual caso non sarà necessario eseguire alcuna azione aggiuntiva. Oppure è possibile firmare il proprio certificato, tuttavia sarà necessario eseguire il push del certificato nel dispositivo.
+Le app installate tramite questo metodo devono essere firmate digitalmente. È necessario usare un certificato per firmare l'app. È possibile ottenere un certificato dall'elenco di [CA](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT)attendibili ms , nel qual caso non sarà necessario eseguire alcuna azione aggiuntiva. Oppure è possibile firmare il proprio certificato, tuttavia tale certificato dovrà essere inserito nel dispositivo.
 
-- Come firmare le app [usando lo strumento di firma.](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool)
+- Come firmare le [app usando lo strumento di firma.](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool)
 
 **Opzioni del certificato:**
 
-- [Elenco CA attendibili MS](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT)
+- [Elenco di CA attendibili ms](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT)
 
 **Selezionare un metodo di distribuzione del certificato.**
 
 - [I pacchetti di](hololens-provisioning.md) provisioning possono essere applicati ai dispositivi locali.
-- MDM può essere usato per applicare [i certificati con le configurazioni dei dispositivi.](https://docs.microsoft.com/mem/intune/protect/certificates-configure)
-- Usare nel dispositivo [Gestione certificati](certificate-manager.md).
+- MDM può essere usato per [applicare i certificati con le configurazioni dei dispositivi.](https://docs.microsoft.com/mem/intune/protect/certificates-configure)
+- Usare gestione certificati [nel dispositivo](certificate-manager.md).
 
 ## <a name="installation-method"></a>Metodo di installazione
 
 1. Verificare che il dispositivo non sia considerato gestito.
-1. Verificare che il dispositivo HoloLens 2 sia acceso e che sia stato eseguito l'accesso.
-1. Nel PC passare all'app personalizzata e copiare yourapp.appxbundle in nome dispositivo\Archiviazione interna\Download.
+1. Verificare che il HoloLens 2 sia acceso e che sia stato eseguito l'accesso.
+1. Nel PC passare all'app personalizzata e copiare yourapp.appxbundle indevicename\Internal Storage\Downloads.
     Al termine della copia del file, è possibile disconnettere il dispositivo e completare l'installazione in un secondo momento.
-1. Dal dispositivo HoloLens 2 aprire il **menu Start**, selezionare Tutte le **app** e avviare l Esplora file app. 
+1. Dal dispositivo HoloLens 2 aprire il **menu Start,** selezionare Tutte le **app** e avviare l Esplora file app. 
 1. Passare alla cartella Download. Potrebbe essere necessario nel pannello sinistro dell'app selezionare **Questo dispositivo** prima di tutto, quindi passare a Download.
 1. Selezionare il file yourapp.appxbundle.
 1. Il Programma di installazione app verrà avviato. Selezionare il **pulsante Installa** per installare l'app.
@@ -86,7 +86,7 @@ Se l'installazione dell'app non è riuscita, controllare quanto segue per risolv
 
 ## <a name="web-installer"></a>Programma di installazione Web
 
-Gli utenti possono installare un'app direttamente da un server Web. Questo flusso usa l'Programma di installazione app combinato con un metodo di distribuzione facile per il download e l'installazione.
+Gli utenti possono installare un'app direttamente da un server Web. Questo flusso usa l'Programma di installazione app combinato con un metodo di distribuzione di download e installazione semplice.
 
 ### <a name="how-to-set-up-web-install"></a>Come configurare l'installazione Web:
 
@@ -98,17 +98,15 @@ Gli utenti possono installare un'app direttamente da un server Web. Questo fluss
 1. L'utente riceve e installa il certificato nel dispositivo usando un metodo scelto in precedenza.
 1. L'utente visita l'URL creato nel passaggio precedente.
 
-L'app verrà ora installata nel dispositivo. Per trovare l'app, aprire il **menu Start** e selezionare il pulsante **Tutte** le app per trovare l'app.
+L'app verrà ora installata nel dispositivo. Per trovare l'app, aprire il **menu Start** e selezionare il pulsante **Tutte le** app per trovare l'app.
 
-- Per altre informazioni sulla risoluzione dei problemi relativi al metodo di installazione del programma di installazione delle app, vedere [Risolvere i problemi del programma di installazione dell'app.](https://docs.microsoft.com/windows/msix/app-installer/troubleshoot-appinstaller-issues)
+- Per altre informazioni sulla risoluzione dei problemi relativi al metodo di installazione del programma di installazione dell'app, vedere [Risolvere i problemi del programma di installazione dell'app.](https://docs.microsoft.com/windows/msix/app-installer/troubleshoot-appinstaller-issues)
 
 > [!NOTE]
 > L'interfaccia utente durante il processo di aggiornamento non è supportata. L'opzione ShowPrompt in [questa pagina e](https://docs.microsoft.com/windows/msix/app-installer/update-settings) le opzioni correlate non sono quindi supportate.
 
 ## <a name="sample-apps"></a>App di esempio
 
-Per provare il Programma di installazione app con alcune app di esempio, vedere alcuni degli esempi disponibili:
-
-- [MRTK Examples Hub](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html)
-- [Superfici](https://docs.microsoft.com/windows/mixed-reality/develop/unity/sampleapp-surfaces)
-- [App di esempio UWP che possono essere usate per i test](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples)
+Provare il Programma di installazione app con una delle app di esempio disponibili. 
+> [!div class="nextstepaction"]
+> [App di esempio](https://docs.microsoft.com/windows/mixed-reality/develop/features-and-samples?tabs=unity#sample-apps)

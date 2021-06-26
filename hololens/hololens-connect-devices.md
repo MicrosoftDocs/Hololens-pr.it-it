@@ -13,12 +13,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: ffae65a6e1c096242ae7a28c488896c65df1c62d
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: e02950bf6cb70e381e3bc5850509bc65267759c1
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397852"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924180"
 ---
 # <a name="connect-to-bluetooth-and-usb-c-devices"></a>Connettersi a dispositivi Bluetooth e USB-C
 
@@ -44,13 +44,13 @@ HoloLens (prima generazione) supporta le classi seguenti di dispositivi Bluetoot
 - [Clicker HoloLens (prima generazione)](https://docs.microsoft.com/hololens/hololens1-clicker)
 
 > [!NOTE]
-> Altri tipi di dispositivi Bluetooth, ad esempio altoparlanti, visori VR, smartphone e game pad, possono essere elencati come disponibili nelle impostazioni di HoloLens. Tuttavia, questi dispositivi non sono supportati in HoloLens (prima generazione). Per altre informazioni, vedi [Impostazioni di HoloLens](hololens-FAQ.md#hololens-settings-lists-devices-as-available-but-the-devices-dont-work)che elenca i dispositivi come disponibili, ma i dispositivi non funzionano.
+> Altri tipi di dispositivi Bluetooth, ad esempio altoparlanti, visori VR, smartphone e game pad, possono essere elencati come disponibili nelle impostazioni di HoloLens. Tuttavia, questi dispositivi non sono supportati in HoloLens (prima generazione). Per altre informazioni, vedi [Impostazioni di HoloLens](hololens-troubleshooting.md#devices-listed-as-available-in-settings-dont-work)che elenca i dispositivi come disponibili, ma i dispositivi non funzionano.
 
 ### <a name="pair-a-bluetooth-keyboard-or-mouse"></a>Associare una tastiera o un mouse Bluetooth
 
 1. Accendere la tastiera o il mouse e renderla individuabile. Per informazioni su come rendere individuabile il dispositivo, cercare informazioni sul dispositivo (o sulla relativa documentazione) o visitare il sito Web del produttore.
 
-1. Usa il movimento di fiore (HoloLens (prima generazione)) o il movimento di avvio (HoloLens 2) per passare a **Start** e quindi seleziona **Impostazioni.**
+1. Usa il movimento di fiore (HoloLens (prima generazione)) o il movimento di avvio (HoloLens 2) per passare a **Start** e quindi seleziona **Settings (Impostazioni).**
 
 1. Selezionare **Dispositivi** e verificare che Bluetooth sia selezionato.  
 
@@ -60,31 +60,31 @@ HoloLens (prima generazione) supporta le classi seguenti di dispositivi Bluetoot
 
 Questa procedura disattiva i componenti RF della radio Bluetooth e disabilita tutte le funzionalità Bluetooth Microsoft HoloLens.
 
-1. Usare il movimento bloom (HoloLens (prima generazione)) o il movimento start (HoloLens 2) per passare a **Start** e quindi selezionare Settings Devices   >  **(Impostazioni dispositivi).**
+1. Usa il movimento di fiore (HoloLens (prima generazione)) o il movimento di avvio (HoloLens 2) per passare a **Start** e quindi seleziona **Impostazioni**  >  **Dispositivi.**
 
-1. Spostare l'interruttore del **dispositivo di scorrimento per Bluetooth** nella posizione **Off.**
+1. Spostare l'interruttore del **dispositivo di scorrimento** per Bluetooth **nella posizione Disattivato.**
 
 ## <a name="hololens-2-connect-usb-c-devices"></a>HoloLens 2: Connettere dispositivi USB-C
 
 HoloLens 2 supporta le classi seguenti di dispositivi USB-C:
 
-- Dispositivi di archiviazione di massa (ad esempio unità di scorrimento)
-- Schede Ethernet (inclusa ethernet e ricarica)
+- Dispositivi di archiviazione di massa (ad esempio le unità thumb)
+- Schede Ethernet (tra cui ethernet e ricarica)
 - Adattatori audio digitali USB da C a 3,5 mm
-- Visori audio digitali USB-C (inclusi gli adattatori visore e la ricarica)
+- Visori VR audio digitali USB-C (inclusi adattatori per visori VR e ricarica)
 - Microfoni esterni USB-C[(Windows Holographic, versione 21H1 e](hololens-release-notes.md#windows-holographic-version-21h1) successive)
 - Mouse cablato
 - Tastiera cablata
-- Hub PD combinato (ricarica USB A e PD)
+- Hub PD combinato (USB A e ricarica PD)
 
 
 > [!NOTE]
-> In risposta ai commenti e suggerimenti dei clienti, è stato abilitato il supporto limitato per la connettività cellulare collegata direttamente a HoloLens tramite USB-C. Per [altre informazioni, vedere Connettersi a Cellulare e 5G.](hololens-cellular.md)
+> In risposta ai commenti e suggerimenti dei clienti, è stato abilitato un supporto limitato per la connettività cellulare collegata direttamente a HoloLens tramite USB-C. Per [altre informazioni, vedere Connettersi a cellulare e 5G.](hololens-cellular.md)
 
 ### <a name="usb-c-external-microphone-support"></a>Supporto microfono esterno USB-C
 
 > [!IMPORTANT]
-> L'inserimento di **un microfono USB non lo imposta automaticamente come dispositivo di input.** Quando si collega un set di cuffia USB-C, gli utenti osserveranno che l'audio della cuffia verrà reindirizzato automaticamente alle cuffia, ma il sistema operativo HoloLens assegna la priorità all'array di microfoni interni rispetto a qualsiasi altro dispositivo di input. **Per usare un microfono USB-C, seguire questa procedura.**
+> L'inserimento di un microfono USB non **lo imposta automaticamente come dispositivo di input.** Quando si collega un set di cuffi USB-C, gli utenti osserveranno che l'audio della cuffia verrà reindirizzato automaticamente alle cuffie, ma il sistema operativo HoloLens assegna la priorità all'array di microfoni interni rispetto a qualsiasi altro dispositivo di input. **Per usare un microfono USB-C, seguire questa procedura.**
 
 > [!NOTE]
 > Non è possibile usare microfoni esterni nelle build precedenti [a Windows Holographic versione 21H1 e](hololens-release-notes.md#windows-holographic-version-21h1) successive. 
@@ -112,21 +112,14 @@ Aprire **l'app Impostazioni** e selezionare **Suono di**  >  **sistema.**
 
 Sfortunatamente, i microfoni Bluetooth non sono ancora supportati in HoloLens 2.
 
-#### <a name="troubleshooting-usb-c-microphones"></a>Risoluzione dei problemi relativi ai microfoni USB-C
-
-Tenere presente che alcuni microfoni USB-C segnalano erroneamente se stessi sia come microfono *che come* altoparlante. Si tratta di un problema con il microfono e non con HoloLens. Quando si collega uno di questi microfoni a HoloLens, l'audio potrebbe essere perso. Fortunatamente è disponibile una semplice correzione.  
-
-In **Settings** System Sound (Impostazioni audio sistema) impostare in modo esplicito gli altoparlanti  ->    ->   **predefiniti (Analog Feature Audio Driver)** come **dispositivo predefinito.** HoloLens deve ricordare questa impostazione anche se il microfono viene rimosso e riconnesso in un secondo momento.
-
-![Risoluzione dei problemi relativi ai microfoni USB-C](images/usbc-mic-4.png)
 ### <a name="usb-c-hubs"></a>Hub USB-C
 
-Alcuni utenti potrebbero dover connettere più dispositivi contemporaneamente. Per gli utenti che desiderano usare un [microfono USB-C](#usb-c-external-microphone-support) insieme a un altro dispositivo connesso, gli hub USB-C possono soddisfare le esigenze del cliente. Microsoft non ha testato questi dispositivi, né è possibile consigliare marchi specifici.
+Alcuni utenti potrebbero dover connettere più dispositivi contemporaneamente. Per gli utenti che desiderano usare un microfono [USB-C](#usb-c-external-microphone-support) insieme a un altro dispositivo connesso, gli hub USB-C possono soddisfare le esigenze del cliente. Microsoft non ha testato questi dispositivi, né è possibile consigliare marchi specifici.
 
 **Requisiti per l'hub USB-C e i dispositivi connessi:**
 
 - I dispositivi connessi non devono richiedere l'installazione di un driver.
-- Il risparmio energia totale di tutti i dispositivi connessi deve essere inferiore a 4,5 Watt.
+- Il consumo di energia totale di tutti i dispositivi connessi deve essere inferiore a 4,5 Punti.
 
 ## <a name="connect-to-miracast"></a>Connettersi a Miracast
 
@@ -139,4 +132,4 @@ Per usare Miracast, seguire questa procedura:
 
 1. Nell'elenco dei dispositivi visualizzato selezionare un dispositivo disponibile.
 
-1. Completare l'associazione per iniziare a proiettare.
+1. Completare l'associazione per iniziare la progettazione.

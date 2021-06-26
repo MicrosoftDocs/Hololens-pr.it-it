@@ -1,7 +1,7 @@
 ---
 title: HoloLens 2 Development Edition
 description: Informazioni su HoloLens 2 Development Edition e su cosa fare dopo averrne una propria.
-keywords: HoloLens 2 di acquisto, opzioni di HoloLens, Developer Edition
+keywords: HoloLens 2 opzioni di acquisto, opzioni HoloLens, Developer Edition
 author: bogenera
 ms.author: bogenera
 ms.reviewer: bogenera
@@ -14,16 +14,16 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2df71baf36d45f0f4737b9c3b6f4eabb1e5e8c4c
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 6ecb881f694ca919f9c37a9d6094a708eafcb414
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110398960"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924469"
 ---
 # <a name="hololens-2-development-edition"></a>HoloLens 2 Development Edition
 
-Iniziare a creare per la realtà mista con questa offerta che combina HoloLens 2 con versioni di valutazione gratuite del software Unity e crediti di Azure per i servizi cloud. Informazioni su come andare oltre le nozioni di base e iniziare a sviluppare per la realtà mista.
+Iniziare a creare realtà mista con questa offerta che combina HoloLens 2 con versioni di valutazione gratuite del software Unity e crediti di Azure per i servizi cloud. Informazioni su come andare oltre le nozioni di base e iniziare a sviluppare per la realtà mista.
 
 ## <a name="learn-about-the-development-edition"></a>Informazioni sull'edizione di sviluppo
 
@@ -57,7 +57,7 @@ Si riceverà un codice univoco. Indicazioni per riscattare la versione di valuta
 1. Fare **clic su Riscatta un codice prodotto**
 1. Immettere il codice prodotto del plug-in Pixyz e fare clic **su Riscatta un codice prodotto**
 
-Altre informazioni su come [riscattare la licenza Pixyz.](https://www.pixyz-software.com/documentations/html/2020.1/review/TrialLicense.html) Per assistenza, contattare il [supporto di Pixyz](https://www.pixyz-software.com/support/) in base alle esigenze.
+Altre informazioni su come [riscattare la licenza Pixyz.](https://www.pixyz-software.com/documentations/html/2020.1/review/TrialLicense.html) Per assistenza, contattare il supporto [di Pixyz](https://www.pixyz-software.com/support/) in base alle esigenze.
 
 ### <a name="azure"></a>Azure
 Di seguito sono riportati alcuni [prodotti Azure comuni per la realtà mista](https://azure.microsoft.com/topic/mixed-reality/) per cui è possibile riscattare il credito di Azure.
@@ -78,11 +78,12 @@ Si tratta di scegliere il motore, scaricare gli strumenti e spolverare la tastie
 
 ## <a name="developer-edition-additional-resources"></a>Risorse aggiuntive per Developer Edition
 
+- [domande frequenti HoloLens 2 Development Edition](hololens2-development-edition-faq.md)
 - [Assicurarsi di installare gli strumenti per lo sviluppo holoLens.](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity)
 - [Informazioni sullo sviluppo per HoloLens 2 con Unity.](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2)
 - [Informazioni su come combinare MRTK con Unity.](https://docs.microsoft.com/windows/mixed-reality/develop/unity/mrtk-getting-started)
-- [Informazioni su come distribuire le app compilate.](https://docs.microsoft.com/hololens/app-deploy-overview)
-- [Esplorare tutte le possibilità di realtà mista.](https://docs.microsoft.com/windows/mixed-reality/)
+- [Informazioni su come distribuire le app compilate.](app-deploy-overview.md)
+- [Esplorare tutte le possibilità per la realtà mista.](https://docs.microsoft.com/windows/mixed-reality/)
 - [Informazioni sullo sviluppo per HoloLens 2 con Unreal.](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=mrtk%2Casa)
 - [Contattare gli altri sviluppatori nel canale Slack di HoloDevelopers.](https://holodevelopersslack.azurewebsites.net/)
 

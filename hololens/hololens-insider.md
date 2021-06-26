@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a4949ab68121cb772fdb8a62411ed70868a6ccb6
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 8b8c3c26ff743a4df0010110d0fe6e2930646c86
+ms.sourcegitcommit: add53aa73588986a3430cdc0310af7665a038cfc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924367"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "112977227"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Insider Preview per Microsoft HoloLens
 
@@ -29,10 +29,14 @@ Benvenuti nelle build insider preview più recenti per HoloLens. È semplice ini
 
 ## <a name="windows-insider-release-notes"></a>partecipante al Programma Windows Insider sulla versione
 
-Siamo molto contenti di iniziare a eseguire nuovamente il volo di nuove funzionalità per Windows Insiders. Le nuove build verranno aggiornate ai canali Dev e Beta per gli aggiornamenti più recenti. Questa pagina continuerà ad essere aggiornata quando si aggiungono altre funzionalità e aggiornamenti alle partecipante al Programma Windows Insider build. Prepararsi a combinare questi aggiornamenti nella realtà. 
+Siamo molto contenti di iniziare a eseguire nuovamente il volo di nuove funzionalità per Windows Insiders. Le nuove build verranno aggiornate ai canali Dev e Beta per gli aggiornamenti più recenti. Questa pagina continuerà ad essere aggiornata quando si aggiungono altre funzionalità e aggiornamenti alle partecipante al Programma Windows Insider build. Prepararsi a combinare questi aggiornamenti nella realtà.
+
+| Funzionalità                 | Descrizione                | Utenti di destinazione | Build introdotta |
+|-------------------------|----------------------------|--------------|------------------|
+| Modifiche di CSP in HoloLens | Nuovi CSP per eseguire query sui dati | Amministratori IT    | 20348.1403                 |
 
 ### <a name="csp-changes-on-hololens"></a>Modifiche di CSP in HoloLens
- 
+
 - Introduzione alla partecipante al Programma Windows Insider build 20348.1403
 
 #### <a name="devdetail-csp"></a>DevDetail
@@ -111,7 +115,7 @@ Si è invitati a provare a sviluppare applicazioni usando build Insider di HoloL
 ## <a name="stop-receiving-insider-builds"></a>Interrompere la ricezione di build Insider
 Se non si vogliono più ricevere build Insider di Windows Holographic, è possibile rifiutare esplicitamente [](hololens-recovery.md) quando HoloLens esegue una build di produzione oppure è possibile ripristinare il dispositivo usando Advanced Recovery Companion per ripristinare il dispositivo in una versione non Insider di Windows Holographic.
 > [!CAUTION]
-> Esiste un problema noto in cui gli utenti che annullano la registrazione dalle build insider preview dopo la reinstallazione manuale di una nuova build di anteprima visualizzano una schermata blu. Successivamente, devono ripristinare manualmente il dispositivo. Per informazioni dettagliate complete su se si sarebbe stati o meno influenzati, vedere altre informazioni su [questo problema noto.](hololens-troubleshooting.md#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
+> Esiste un problema noto in cui gli utenti che annullano la registrazione dalle build insider preview dopo la reinstallazione manuale di una nuova build di anteprima visualizzano una schermata blu. Successivamente, devono ripristinare manualmente il dispositivo. Per informazioni dettagliate complete su se si sarebbe o meno in grado di influire, vedere altre informazioni su [questo problema noto.](hololens-troubleshooting.md#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
 Per verificare che HoloLens sia in esecuzione una build di produzione:
 1. Passare a **Impostazioni > sistema > Informazioni su** e trovare il numero di build.
 1. [Vedere le note sulla versione per i numeri di build di produzione](hololens-release-notes.md).

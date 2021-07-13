@@ -11,12 +11,12 @@ metadata:
   ms.author: v-jjaswinski
   ms.date: 05/24/2021
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: 8cb5b881e880adec2b59bde9b36fa700bfce3a91
-  ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+  ms.openlocfilehash: a37ddd0867a0ea3dfa6f016e01728f2576663aaf
+  ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
   ms.translationtype: MT
   ms.contentlocale: it-IT
   ms.lasthandoff: 07/12/2021
-  ms.locfileid: "113637150"
+  ms.locfileid: "113639421"
 landingContent:
 - title: Informazioni sul HoloLens 2
   linkLists:
@@ -103,22 +103,22 @@ landingContent:
   - linkListType: how-to-guide
     links:
     - text: Che cos'è Realtà mista?
-      url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality
+      url: /windows/mixed-reality/mixed-reality
     - text: Iniziare a progettare e a creare prototipi
-      url: https://docs.microsoft.com/windows/mixed-reality/design
+      url: /windows/mixed-reality/design
     - text: Introduzione allo sviluppo di app di Realtà mista
-      url: https://docs.microsoft.com/windows/mixed-reality/development?tabs=unity
+      url: /windows/mixed-reality/development?tabs=unity
     - text: Panoramica - Servizi cloud
-      url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality-cloud-services#overview
+      url: /windows/mixed-reality/mixed-reality-cloud-services#overview
     - text: Microsoft Mesh (anteprima)
-      url: https://docs.microsoft.com/mesh/overview
+      url: /mesh/overview
 - title: Altri servizi
   linkLists:
   - linkListType: reference
     links:
     - text: Dynamics 365 Remote Assist Documenti
-      url: https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/ra-overview
+      url: /dynamics365/mixed-reality/remote-assist/ra-overview
     - text: Guide di Dynamics 365
-      url: https://docs.microsoft.com/dynamics365/mixed-reality/guides/
+      url: /dynamics365/mixed-reality/guides/
     - text: Microsoft Dynamics 365 Mixed Reality
-      url: https://docs.microsoft.com/dynamics365/mixed-reality/
+      url: /dynamics365/mixed-reality/

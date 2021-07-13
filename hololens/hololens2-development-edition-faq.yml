@@ -15,12 +15,12 @@ metadata:
   manager: yannisle
   appliesto:
   - HoloLens 2
-  ms.openlocfilehash: 97f3bbdfec85e64d2895dfb5482ee9dc692c5e4c
-  ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+  ms.openlocfilehash: be152373fadb6f2b5778616bae0f9bff9356af3d
+  ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
   ms.translationtype: MT
   ms.contentlocale: it-IT
   ms.lasthandoff: 07/12/2021
-  ms.locfileid: "113637294"
+  ms.locfileid: "113639693"
 title: HoloLens 2 Domande frequenti sull'edizione development
 summary: ''
 sections:
@@ -93,15 +93,15 @@ sections:
   - question: >
       Dove è possibile ottenere altre informazioni su HoloLens 2 Development Edition?
     answer: >
-      Visitare la pagina HoloLens 2 della documentazione di HoloLens 2 Development Edition. [Scopri di più](https://docs.microsoft.com/hololens/hololens2-options?tabs=device)
+      Visitare la pagina HoloLens 2 della documentazione di HoloLens 2 Development Edition. [Scopri di più](hololens2-options.md?tabs=device)
   - question: >
       Dove è possibile ottenere altre informazioni sullo sviluppo di soluzioni di realtà mista?
     answer: >
-      Vedere la documentazione Introduzione allo sviluppo di realtà mista. [Scopri di più](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unityhttps://docs.microsoft.com/en-us/windows/mixed-reality/develop/development?tabs=unity)
+      Vedere la documentazione Introduzione allo sviluppo di realtà mista. [Scopri di più](/windows/mixed-reality/develop/development?tabs=unity)
   - question: >
       Dove è possibile ottenere altre informazioni sulla progettazione di soluzioni di realtà mista?
     answer: >
-      Vedere la documentazione introduzione alla progettazione di realtà mista. [Scopri di più](https://docs.microsoft.com/windows/mixed-reality/design/design)
+      Vedere la documentazione introduzione alla progettazione di realtà mista. [Scopri di più](/windows/mixed-reality/design/design)
   - question: >
       Dove è possibile ottenere supporto per HoloLens Developer Edition?
     answer: >
@@ -130,7 +130,7 @@ sections:
       4. Immettere il codice prodotto e selezionare &#39;Riscatta un codice prodotto&#39;
 
 
-      Per altre HoloLens 2, vedere la documentazione di HoloLens 2 Development [Edition](https://docs.microsoft.com/hololens/hololens2-options?tabs=device)
+      Per altre HoloLens 2, vedere la documentazione di HoloLens 2 Development [Edition](hololens2-options.md?tabs=device)
   - question: >
       È possibile compilare applicazioni con versioni di Unity diverse dalla licenza PRO?
     answer: >
@@ -163,7 +163,7 @@ sections:
       4. Immettere il codice prodotto e fare clic su &#39;Riscatta un codice prodotto&#39;
 
 
-      Per altre HoloLens 2, vedere la documentazione di HoloLens 2 Development [Edition](https://docs.microsoft.com/hololens/hololens2-options?tabs=device)
+      Per altre HoloLens 2, vedere la documentazione di HoloLens 2 Development [Edition](hololens2-options.md?tabs=device)
   - question: >
       Ricerca per categorie contattare il supporto di Pixyz?
     answer: >
@@ -174,20 +174,20 @@ sections:
 - name: Azure
   questions:
   - question: >
-      Come si riscatta il credito di Azure da $ 500?
+      Come è possibile riscattare il credito Azure da $ 500?
     answer: >
-      Per riscattare i crediti di Azure da $ 500, riscattare il Azure Pass promozionale e attivare la sottoscrizione. [Scopri di più](https://www.microsoftazurepass.com/Home/HowTo?Length=5)
+      Per riscattare i crediti Azure di $ 500, riscattare il Azure Pass promo e attivare la sottoscrizione. [Scopri di più](https://www.microsoftazurepass.com/Home/HowTo?Length=5)
 
 
-      Esaminare il contratto Azure Pass [sottoscrizione e](https://azure.microsoft.com/support/legal/subscription-agreement/?country=US) i dettagli [dell'offerta.](https://azure.microsoft.com/en-us/offers/azure-pass/)
+      Esaminare il contratto Azure Pass [sottoscrizione e i](https://azure.microsoft.com/support/legal/subscription-agreement/?country=US) dettagli [dell'offerta.](https://azure.microsoft.com/en-us/offers/azure-pass/)
   - question: >
-      Quando scade il credito di Azure da $ 500?
+      Quando scade il credito Azure da $ 500?
     answer: >
-      Il credito di Azure da $ 500 scadrà 90 giorni dopo l'attivazione del codice della chiave di Azure.
+      Il credito Azure da $ 500 scadrà 90 giorni dopo l'attivazione del codice della chiave di Azure.
   - question: >
-      Cosa è possibile fare con i crediti di Azure?
+      Cosa è possibile fare con i crediti Azure?
     answer: >
-      Con i crediti di Azure, è possibile iniziare a creare con Microsoft&#39;un set di servizi cloud in continua espansione. I crediti di Azure inclusi in HoloLens 2 Development Edition consentono ai clienti di iniziare rapidamente a creare e testare applicazioni di realtà mista in Azure. Per informazioni dettagliate complete sulla compilazione in Azure, vedere Risorse [di Azure](https://azure.microsoft.com/en-us/resources/)
+      Con i crediti Azure, è possibile iniziare a creare con Microsoft&#39;set di servizi cloud in continua espansione. I crediti Azure inclusi in HoloLens 2 Development Edition consentono ai clienti di iniziare rapidamente a creare e testare applicazioni di realtà mista in Azure. Per informazioni dettagliate sulla compilazione in Azure, vedere Risorse [di Azure](https://azure.microsoft.com/en-us/resources/)
   - question: >
-      Dove è possibile trovare altre informazioni sui servizi di realtà mista di Azure?
-    answer: Microsoft offre un set di servizi di realtà mista per consentire agli sviluppatori di creare e testare soluzioni di realtà mista. [Altre informazioni](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services)
+      Dove è possibile ottenere altre informazioni sui servizi di realtà mista di Azure?
+    answer: Microsoft offre un set di servizi di realtà mista per consentire agli sviluppatori di creare e testare soluzioni di realtà mista. [Altre informazioni](/windows/mixed-reality/develop/mixed-reality-cloud-services)

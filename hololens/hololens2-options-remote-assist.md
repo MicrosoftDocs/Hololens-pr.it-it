@@ -2,7 +2,7 @@
 title: HoloLens 2 Remote Assist
 description: Informazioni su HoloLens 2 Remote Assist e su cosa fare dopo averrne uno personalizzato.
 keywords: HoloLens 2 opzioni di acquisto, HoloLens, Remote Assist
-author: bogenera
+author: bgener
 ms.author: bogenera
 ms.reviewer: bogenera
 ms.date: 4/12/2021
@@ -14,26 +14,26 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a9f04315c59fba72aaae1545a02f16f1068433b4
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 540bdcaefafcc50cc38d5e9a67dea3b9cb596f05
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636266"
+ms.locfileid: "113639472"
 ---
 # <a name="hololens-2-with-remote-assist"></a>HoloLens 2 con Remote Assist
 
-Inizia il primo giorno con HoloLens 2 e l'app di comunicazione di realtà mista definitiva di Microsoft, disponibile insieme. Aiutare l'intera azienda a essere più produttiva e a innovare con maggiore finalità. Sperimentare la realtà mista ora con Dynamics 365 e le soluzioni dei partner del settore.
+Inizia il primo giorno con HoloLens 2 e l'app di comunicazione di realtà mista finale di Microsoft, disponibile insieme. Aiutare l'intera azienda a essere più produttiva e a innovare con maggiore finalità. Sperimentare la realtà mista ora con Dynamics 365 e le soluzioni dei partner del settore.
 
 ## <a name="learn-about-hololens-2-with-remote-assist"></a>Informazioni sulle HoloLens 2 con Remote Assist
-- È possibile usare questi dispositivi in un ambiente commerciale per l'azienda. Ordinare tutte le informazioni necessarie.
+- È possibile usare questi dispositivi in un ambiente commerciale per l'azienda. Ordinare il numero necessario.
 - Uno degli usi più diffusi per gli HoloLens aziendali è Remote Assist **,** che offre una licenza per postazione (per dispositivo).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## <a name="heres-what-to-do-next-with-the-hololens-2-with-dynamics-365-remote-assist-edition"></a>Ecco come procedere con l'HoloLens 2 con Dynamics 365 Remote Assist edition
 
-È stata creata una guida specifica per distribuire i dispositivi HoloLens su larga scala. La guida include la configurazione end-to-end per Azure Active Directory convalida di una Remote Assist chiamata. Per altri dettagli, vedere la Guida alla distribuzione [- Cloud connected HoloLens 2 con Remote Assist.](hololens2-cloud-connected-overview.md)
+È stata creata una guida specifica per la distribuzione di HoloLens su larga scala. La guida include la configurazione end-to-end per Azure Active Directory convalida di una Remote Assist chiamata. Per altre informazioni, vedere la Guida alla distribuzione [- Cloud connected HoloLens 2 con Remote Assist.](hololens2-cloud-connected-overview.md)
 
 | Checkpoint  | Risultato                                |
 |-------------|----------------------------------------|

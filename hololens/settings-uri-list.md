@@ -13,16 +13,16 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5ac3ff27085fd2f7c5bc1de0e461079a673bbb23
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 454d79e8b719feb73d5a39280794dcd76f134952
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 07/12/2021
-ms.locfileid: "113637167"
+ms.locfileid: "113639234"
 ---
 # <a name="page-settings-visibility"></a>Visibilità Impostazioni pagina
 
-Una delle funzionalità gestibili per i dispositivi HoloLens usa i criteri [Impostazioni/PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) per limitare le pagine visibili all'interno dell'app Impostazioni. PageVisibilityList è un criterio che consente agli amministratori IT di impedire che pagine specifiche nell'app System Impostazioni siano visibili o accessibili oppure di eseguire questa operazione per tutte le pagine ad eccezione di quelle specificate.
+Una delle funzionalità gestibili per i dispositivi HoloLens usa i criteri [Impostazioni/PageVisibilityList](/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) per limitare le pagine visibili all'interno dell'app Impostazioni. PageVisibilityList è un criterio che consente agli amministratori IT di impedire che pagine specifiche nell'app System Impostazioni siano visibili o accessibili oppure di eseguire questa operazione per tutte le pagine ad eccezione di quelle specificate.
 
 > [!NOTE]
 > Questa funzionalità è disponibile solo in [Windows Holographic, versione 20H2](hololens-release-notes.md#windows-holographic-version-20h2) o successiva per HoloLens 2 dispositivi. Assicurarsi che i dispositivi per cui si intende usarlo siano aggiornati.
@@ -156,16 +156,16 @@ HoloLens dispositivi e Windows 10 hanno una selezione diversa di pagine all'inte
 | <sup>Calibrazione 2</sup> |  `calibration` |
 | Notifiche e azioni  | `notifications`          |
 | Esperienze condivise | `crossdevice` 
-| Audio <sup>2</sup>           | `sound`<br>|
+| Suono <sup>2</sup>           | `sound`<br>|
 | Audio > volume dell'app e preferenza del dispositivo <sup>2</sup>           | `apps-volume`<br>|
 | Gestione > audio <sup>2</sup>           | `sound-devices`<br>|
 | Archiviazione            | `storagesense`           |
-| Archiviazione > Configurare Archiviazione Sense <sup>2</sup>           | `storagepolicies`<br>|
+| Archiviazione > configurare Archiviazione Sense <sup>2</sup>           | `storagepolicies`<br>|
 
 ### <a name="time--language"></a>Lingua & ora
 | Pagina Impostazioni | URI                                           |
 |---------------|-----------------------------------------------|
-| Data & <sup>2</sup> | `dateandtime`                  |
+| Data &'ora <sup>2</sup> | `dateandtime`                  |
 | Tastiera <sup>2</sup> | `keyboard`                  |
 | Lingua <sup>2</sup> | `language`                  |
 | Lingua <sup>2</sup> | `regionlanguage-languageoptions`                  |
@@ -179,14 +179,14 @@ HoloLens dispositivi e Windows 10 hanno una selezione diversa di pagine all'inte
 | Ripristino & ripristino <sup>2</sup>      | `reset`         |
 | Programma Windows Insider               | `windowsinsider` <br>`windowsinsider-optin`          |
 | Windows Update                        | `windowsupdate`<br> `windowsupdate-activehours`  <br> `windowsupdate-history` <br> `windowsupdate-optionalupdates` <br><sup>1</sup>`windowsupdate-options`<br><sup>1</sup>`windowsupdate-restartoptions` |
-| Windows Aggiornamento: verifica la disponibilità di aggiornamenti | `windowsupdate-action`          |
+| Windows Update - Controlla la disponibilità di aggiornamenti | `windowsupdate-action`          |
 
 
-- <sup>1</sup> - Per le versioni precedenti Windows Holographic, versione 21H1, i due URI  seguenti non visualizzano effettivamente le pagine Opzioni **avanzate;** verranno bloccate o mostrate solo le pagine Windows pagina Aggiorna.
-  -  opzioni di windowsupdate
+- <sup>1-</sup> Per le versioni precedenti Windows Holographic, versione 21H1, i due URI  **seguenti** non visualizzano effettivamente le pagine Opzioni avanzate. bloccano o visualizzano solo la pagina principale Windows Aggiorna.
+  -  windowsupdate-options
   -  windowsupdate-restartoptions
 
 - <sup>2</sup> - Disponibile in Windows Holographic 21H1 o versione successiva.
 
 
-Per un elenco completo degli URI Windows 10 Impostazioni, vedere la documentazione [relativa alle impostazioni di](https://docs.microsoft.com/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference) avvio.
+Per un elenco completo degli URI Windows 10 Impostazioni, vedere la documentazione [relativa alle impostazioni di](/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference) avvio.

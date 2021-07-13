@@ -14,16 +14,16 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 86d36275d5cf1296ca3e9fec90684a188a29f3f0
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 26fd2def8ce1fa8f960ab930e209c74fb37e2e0a
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635127"
+ms.locfileid: "113639761"
 ---
 # <a name="deployment-guide--cloud-connected-hololens-2-with-remote-assist--overview"></a>Guida alla distribuzione - Cloud connected HoloLens 2 with Remote Assist – Overview
 
-Questa guida consente ai professionisti IT di pianificare e distribuire Microsoft HoloLens 2 dispositivi con Remote Assist all'organizzazione. Verrà utilizzato come modello per le distribuzioni di modelli di verifica all'organizzazione in un'ampia gamma HoloLens 2 casi d'uso. La configurazione è simile allo [Scenario A: Distribuire nei dispositivi di connessione al cloud.](https://docs.microsoft.com/hololens/common-scenarios#scenario-a) 
+Questa guida consente ai professionisti IT di pianificare e distribuire Microsoft HoloLens 2 dispositivi con Remote Assist all'organizzazione. Verrà utilizzato come modello per le distribuzioni di modelli di verifica all'organizzazione in vari casi d'HoloLens 2 casi d'uso. La configurazione è simile allo [Scenario A: Distribuire nei dispositivi di connessione al cloud.](common-scenarios.md#scenario-a) 
 
 Durante la guida verrà illustrato come registrare i dispositivi nella gestione dei dispositivi, applicare le licenze in base alle esigenze e verificare che gli utenti finali siano in grado di usare immediatamente Remote Assist al momento della configurazione del dispositivo. A tale scopo, verranno trattate le parti importanti dell'infrastruttura necessarie per la configurazione e l'esecuzione, ottenendo la distribuzione su larga scala con HoloLens 2. In questa guida non verranno applicate altre restrizioni o configurazioni per i dispositivi, tuttavia è possibile esplorare tali opzioni al termine dell'operazione.
 
@@ -31,10 +31,10 @@ Durante la guida verrà illustrato come registrare i dispositivi nella gestione 
 
 L'infrastruttura seguente deve essere presente per distribuire il HoloLens 2. In caso contrario, la configurazione di Azure e Intune è inclusa in questa guida:
 
-Si tratta di una configurazione simile allo scenario A: Distribuire nei dispositivi con connessione [al cloud,](/hololens/common-scenarios#scenario-a)che è un'opzione valida per molte distribuzioni del modello di verifica, tra cui:
+Si tratta di una configurazione simile allo scenario A: Distribuire nei dispositivi con connessione [al cloud,](/hololens/common-scenarios#scenario-a)che è una buona opzione per molte distribuzioni del modello di verifica, tra cui:
 
 - Wi-Fi reti sono in genere completamente aperte a Internet e ai servizi cloud
-- Azure AD aggiunta alla registrazione automatica MDM - Gestione mdm (Intune)
+- Azure AD aggiunta con la registrazione automatica MDM: gestita da MDM (Intune)
 - Gli utenti a cui si accede con il proprio account aziendale (Azure AD)
     - Sono supportati uno o più utenti per dispositivo.
 
@@ -43,14 +43,14 @@ Si tratta di una configurazione simile allo scenario A: Distribuire nei disposit
 
 ## <a name="learn-about-remote-assist"></a>Informazioni sulle Remote Assist
 
-Remote Assist manutenzione e riparazione collaborativa, l'ispezione remota, nonché la condivisione delle conoscenze e la formazione. Connettendo persone con ruoli e posizioni diversi, un tecnico Remote Assist connettersi con un collaboratore remoto in Microsoft Teams. Possono combinare video, screenshot e annotazioni per risolvere i problemi in tempo reale anche quando&#39;nella stessa posizione. I collaboratori remoti possono inserire immagini di riferimento, schemi e altre informazioni utili che il tecnico&#39;ha nello spazio fisico in modo che possano fare riferimento allo schema mentre lavorano a testa in su e senza HoloLens.
+Remote Assist manutenzione e riparazione collaborativa, l'ispezione remota, nonché la condivisione delle conoscenze e la formazione. Connettendo persone con ruoli e posizioni diversi, un tecnico che usa Remote Assist può connettersi con un collaboratore remoto in Microsoft Teams. Possono combinare video, screenshot e annotazioni per risolvere i problemi in tempo reale anche quando non sono nella stessa posizione. I collaboratori remoti possono inserire immagini di riferimento, schemi e altre informazioni utili sullo spazio fisico del tecnico in modo che possano fare riferimento allo schema mentre lavorano a testa in su e senza HoloLens.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### <a name="remote-assist-licensing-and-requirements"></a>Remote Assist licenze e requisiti
 
 - Azure AD account (obbligatorio per l'acquisto della sottoscrizione e l'assegnazione delle licenze)
-- [Remote Assist sottoscrizione](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) (o versione [di Remote Assist)](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/try-remote-assist)
+- [Remote Assist sottoscrizione](/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) (o versione [di Remote Assist)](/dynamics365/mixed-reality/remote-assist/try-remote-assist)
     
 #### <a name="dynamics-365-remote-assist-user"></a>Dynamics 365 Remote Assist utente
 
@@ -62,7 +62,7 @@ Remote Assist manutenzione e riparazione collaborativa, l'ispezione remota, nonc
 - Microsoft Teams o [Teams Freemium.](https://products.office.com/microsoft-teams/free)
 - Connettività di rete
 
-Se si prevede di implementare questo [scenario tra tenant,](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)potrebbe essere necessaria una licenza information barriers. Vedere [questo articolo per](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation#step-1-determine-if-information-barriers-are-necessary) determinare se è necessaria una licenza information barrier.
+Se si prevede di implementare questo [scenario tra tenant,](/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)potrebbe essere necessaria una licenza information barriers. Per determinare se è necessaria una licenza information barrier, vedere Fornitori e [clienti usano le funzionalità](/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation)Dynamics 365 Remote Assist sicurezza .
 
 ## <a name="in-this-guide-you-will"></a>Contenuto della guida:
 

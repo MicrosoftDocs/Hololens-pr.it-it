@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f747a2893ed3551e91a81bdbf5971deefbf6ce46
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 21fffdc24f8682bc44779e1cebe8cd6eacb59619
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 07/12/2021
-ms.locfileid: "113637133"
+ms.locfileid: "113639659"
 ---
 # <a name="prepare---cloud-connected-guide"></a>Preparazione - Guida alla connessione al cloud
 
@@ -34,7 +34,7 @@ Per scenari di distribuzione sia personali che aziendali, un sistema MDM è l'in
 Azure AD è un servizio directory basato su cloud che offre funzionalità di gestione delle identità e dell'accesso. Le organizzazioni che usano Microsoft Office 365 o Intune usano già Azure AD, che dispone di tre edizioni: Gratuito, Premium P1 e Premium P2 (vedere [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-editions)edition). Tutte le edizioni Azure AD la registrazione del dispositivo, ma Premium P1 è necessaria per abilitare la registrazione automatica MDM che verrà utilizzata in questa guida più avanti.
 
 > [!IMPORTANT]
-> È essenziale disporre di un Azure Active Directory perché i HoloLens non supportano l'aggiunta ad AD locale. Se non&#39;è già stato configurato un Azure Active Directory, passare a Creare [un nuovo tenant in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).
+> È essenziale disporre di un Azure Active Directory perché i HoloLens non supportano l'aggiunta ad AD locale. Se non&#39;è già stato configurato un Azure Active Directory, passare a Creare [un nuovo tenant in Azure Active Directory](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).
 
 ## <a name="identity-management"></a>Identity Management
 

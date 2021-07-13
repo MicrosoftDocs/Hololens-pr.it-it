@@ -1,6 +1,6 @@
 ---
-title: Windows Defender controllo delle applicazioni - WDAC
-description: Panoramica di Windows Defender controllo delle applicazioni e su come usarlo per gestire i dispositivi di realtà mista HoloLens.
+title: Windows Defender Controllo delle applicazioni - WDAC
+description: Panoramica di Windows Defender controllo delle applicazioni e su come usarlo per gestire HoloLens dispositivi di realtà mista.
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
@@ -12,23 +12,23 @@ ms.reviewer: ''
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 23c9a274387424e8f084a4729ee621e130820716
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: a27a16913873c5245f734dbe084eb2b7ed007c20
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108309403"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113639931"
 ---
-# <a name="windows-defender-application-control---wdac"></a>Windows Defender controllo delle applicazioni - WDAC
+# <a name="windows-defender-application-control---wdac"></a>Windows Defender Controllo delle applicazioni - WDAC
 
 WDAC consente a un amministratore IT di configurare i propri dispositivi per bloccare l'avvio delle app nei dispositivi. Questo è diverso rispetto ai metodi di restrizione dei dispositivi, ad esempio la modalità tutto schermo, in cui all'utente viene presentata un'interfaccia utente che nasconde le app nel dispositivo, ma che possono comunque essere avviate. Durante l'implementazione di WDAC, le app sono ancora visibili nell'elenco Tutte le app, ma WDAC impedisce l'avvio di tali app e processi da parte dell'utente del dispositivo.
 
 A un dispositivo possono essere assegnati più criteri WDAC. Se in un sistema sono impostati più criteri WDAC, vengono applicati quelli più restrittivi. 
 
 > [!NOTE]
-> Quando gli utenti finali tentano di avviare un'app bloccata da WDAC, in HoloLens non riceveranno una notifica che indica che non è possibile avviare l'app.
+> Quando gli utenti finali tentano di avviare un'app bloccata da WDAC, HoloLens non riceveranno una notifica che indica che non è possibile avviare l'app.
 
-Di seguito è riportata una guida per gli utenti che illustrano come usare [WDAC](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens)e Windows PowerShell per consentire o bloccare le app nei dispositivi HoloLens 2 con Microsoft Intune .
+Di seguito è riportata una guida per gli utenti che illustrano come usare [WDAC](/mem/intune/configuration/custom-profile-hololens)e Windows PowerShell per consentire o bloccare le app nei dispositivi HoloLens 2 con Microsoft Intune .
 
 Quando gli utenti cercano le app installate nel PC Windows 10 usando il primo passaggio di esempio, potrebbe essere necessario eseguire alcuni tentativi per restringere i risultati.
 
@@ -44,9 +44,9 @@ Ad esempio, l'esecuzione di quanto segue per Microsoft Edge restituirà più di 
 Get-AppxPackage -name *edge*
 ``` 
 
-## <a name="package-family-names-for-apps-on-hololens"></a>Nomi delle famiglie di pacchetti per le app in HoloLens
+## <a name="package-family-names-for-apps-on-hololens"></a>Nomi delle famiglie di pacchetti per le app HoloLens
 
-Nella guida collegata sopra è possibile modificare manualmente newPolicy.xml e aggiungere regole per le applicazioni installate solo in HoloLens con i relativi nomi di famiglia di pacchetti. In alcuni casi è possibile usare app che non sono presenti nel PC desktop che si vuole aggiungere ai criteri.
+Nella guida collegata in precedenza è possibile modificare manualmente newPolicy.xml e aggiungere regole per le applicazioni installate solo in HoloLens con i relativi nomi di famiglia di pacchetti. In alcuni casi è possibile usare app che non sono presenti nel PC desktop che si vuole aggiungere ai criteri.
 
 Di seguito è riportato un elenco di app di uso In-Box per HoloLens 2 dispositivi.
 
@@ -65,19 +65,19 @@ Di seguito è riportato un elenco di app di uso In-Box per HoloLens 2 dispositiv
 | Microsoft Store            | Microsoft.WindowsStore_8wekyb3d8bbwe               |
 | Film e TV                | Microsoft.ZuneVideo_8wekyb3d8bbwe                  |
 | OneDrive                   | microsoft.microsoftskydrive_8wekyb3d8bbwe          |
-| Foto                     | Microsoft.Windows.Photos_8wekyb3d8bbwe             |
+| Foto                     | Microsoft. Windows. Photos_8wekyb3d8bbwe             |
 | Impostazioni                   | HolographicSystemSettings_cw5n1h2txyewy            |
 | Suggerimenti                       | Microsoft.HoloLensTips_8wekyb3d8bbwe               |
 
-- 1- Bloccando Programma di installazione app verrà bloccata solo l'app Programma di installazione app e non le app installate da altre origini, ad esempio il Microsoft Store o dalla soluzione MDM.
+- 1 - Il Programma di installazione app blocca solo l'app Programma di installazione app e non le app installate da altre origini, ad esempio il Microsoft Store o dalla soluzione MDM.
 
 ### <a name="how-to-find-a-package-family-name"></a>Come trovare un nome di famiglia di pacchetti
 
-Se un'app non è in questo elenco, un utente può usare Portale di dispositivi, connesso a un HoloLens 2 che ha installato l'app da bloccare, per determinare PackageRelativeID e da qui ottenere PackageFamilyName.
+Se un'app non è in questo elenco, un utente può usare Portale di dispositivi, connesso a un HoloLens 2 che ha installato l'app che si vuole bloccare, per determinare PackageRelativeID e da qui ottenere PackageFamilyName.
 
 1. Installare l'app nel HoloLens 2 dispositivo. 
-1. Aprire Impostazioni -> Aggiornamenti & Sicurezza -> Per gli sviluppatori, abilitare **modalità** sviluppatore e quindi **Portale di dispositivi.** 
-    1. Altre istruzioni dettagliate per altre informazioni sulla configurazione [e l'uso del portale per dispositivi sono disponibili qui.](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)
+1. Aprire Impostazioni -> Aggiornamenti & Sicurezza -> Per gli sviluppatori, abilitare modalità  sviluppatore e quindi **Portale di dispositivi.** 
+    1. Altre istruzioni dettagliate per altre informazioni sulla configurazione [e l'uso del portale per dispositivi sono disponibili qui.](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)
 1. Dopo Portale di dispositivi connesso, passare a **Visualizzazioni e** quindi **ad App.** 
 1. Nel pannello App installate usare l'elenco a discesa per selezionare l'app installata. 
 1. Individuare PackageRelativeID. 

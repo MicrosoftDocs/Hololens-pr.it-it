@@ -1,6 +1,6 @@
 ---
 title: HoloLens 2 edizioni
-description: Informazioni su come HoloLens 2'edizione del dispositivo sia la stessa o diversa e cosa fare dopo aver fatto una delle proprie.
+description: Informazioni su come HoloLens 2'edizione del dispositivo sia la stessa o diversa e cosa fare dopo aver selezionato una delle proprie.
 keywords: HoloLens 2 opzioni di acquisto, opzioni HoloLens, Developer Edition
 author: evmill
 ms.author: v-evmill
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b5bb534020fe037576ce1caa3d9cee978dac778d
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 32153fd6f7703347f4fe2f9ad41043fbeb9fab3f
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636300"
+ms.locfileid: "113640475"
 ---
 # <a name="compare-hololens-2-options"></a>Confrontare HoloLens 2 opzioni
 
@@ -31,17 +31,17 @@ Sia che si sia un professionista [IT](https://www.microsoft.com/hololens/apps) a
 
 |                                                      | HoloLens 2 | HoloLens 2 con Remote Assist | HoloLens 2 Industrial Edition | HoloLens 2 Industrial Edition con Remote Assist | Trimble XR10 con HoloLens 2 | HoloLens 2 Edizione di sviluppo |
 |------------------------------------------------------|------------|-------------------------------|-------------------------------|--------------------------------------------------|------------------------------|--------------------------------|
-| HoloLens 2 dispositivo (un dispositivo)                       |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                ✔️               |
-| Dynamics 365 Remote Assist (un posto)                |            |               ✔️               |                               |                         ✔️                        |                              |                                |
-| Classificazione delle camere pulite ISO 14644-1 Classe 5           |            |                               |               ✔️               |                         ✔️                        |                              |                                |
-| Ambienti UL Class I, Division 2-Groups A, B, C e D HAZLOC                     |            |                               |               ✔️               |                         ✔️                        |               ✔️              |                                |
-| Hard hat integrated (conforme a PPE in più di 40 paesi) |            |                               |                               |                                                  |               ✔️              |                                |
-| Output audio di annullamento del rumore                        |            |                               |                               |                                                  |               ✔️              |                                |
-| Diritti per sviluppatori <sup>1</sup>                             |            |                               |                               |                                                  |                              |                ✔️               |
-| Programma di sostituzione rapida <sup>2</sup>                          |            |                               |               ✔️               |                         ✔️                        |                              |                                |
-| Diritti di utilizzo commerciale                                |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                                |
-| [Garanzia](hololens2-hardware.md#warranty-information)                                             |   1 anno   |             1 anno            |             2 anni            |                      2 anni                      |            1 anno <sup>3</sup>            |             1 anno             |
-| Limite di acquisto del dispositivo                                |    Nessuno    |              Nessuno             |              Nessuno             |                       Nessuno                       |             Nessuno             |       Uno per transazione      |
+| **HoloLens 2 dispositivo (un dispositivo)**                       |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                ✔️               |
+| **Dynamics 365 Remote Assist (un posto)**                |            |               ✔️               |                               |                         ✔️                        |                              |                                |
+| **Classificazione delle camere pulite ISO 14644-1 Classe 5**           |            |                               |               ✔️               |                         ✔️                        |                              |                                |
+| **Ambienti UL Class I, Division 2-Groups A, B, C e D HAZLOC**                     |            |                               |               ✔️               |                         ✔️                        |               ✔️              |                                |
+| **Hard hat integrated (conforme a PPE in più di 40 paesi)** |            |                               |                               |                                                  |               ✔️              |                                |
+| **Output audio di annullamento del rumore**                        |            |                               |                               |                                                  |               ✔️              |                                |
+| **Diritti per sviluppatori <sup>1</sup>**                             |            |                               |                               |                                                  |                              |                ✔️               |
+| **Programma di sostituzione rapida <sup>2</sup>**                          |            |                               |               ✔️               |                         ✔️                        |                              |                                |
+| **Diritti di utilizzo commerciale**                                |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                                |
+| [**Garanzia**](hololens2-hardware.md#warranty-information)                                             |   1 anno   |             1 anno            |             2 anni            |                      2 anni                      |            1 anno <sup>3</sup>            |             1 anno             |
+| **Limite di acquisto del dispositivo**                                |    Nessuno    |              Nessuno             |              Nessuno             |                       Nessuno                       |             Nessuno             |       Uno per transazione      |
 
 - <sup>1:</sup> include $ 500 di credito di Azure e versioni di valutazione di 3 mesi per Unity Pro plug-in Pixyz.
 - <sup>2</sup> - Ricevere un dispositivo sostitutivo durante la notte o la spedizione accelerata (più velocemente delle opzioni disponibili) prima che il dispositivo difettoso venga ricevuto da Microsoft.
@@ -53,9 +53,9 @@ Sia che si sia un professionista [IT](https://www.microsoft.com/hololens/apps) a
 
 | HoloLens 2 Edizione                  | Mercati supportati               |
 |-------------------------------------------| ----------------------------------------| 
-| HoloLens 2 | Stati Uniti, Canada, Germania, Francia, Regno Unito, Irlanda, Cina, Giappone, Australia, Italia, Nuova Zelanda, Paesi Bassi, Svizzera, Spagna, Australia, Svezia, Danimarca, Danimarca, Belgio, Portogallo, Singapore, Hong Kong, Taiwan e Corea del Sud |
-| HoloLens 2 con Remote Assist | Australia, Giappone, Canada, Stati Uniti, Germania, Belgio, Danimarca, Spagna, Francia, Germania, Italia, Paesi Bassi, Norvegia, Spagna, Svezia, Svizzera, Regno Unito e Irlanda <sup>1</sup> 
-| HoloLens 2 Industrial Edition *(al lancio)* | Stati Uniti, Canada, Germania, Francia, Regno Unito, Irlanda, Cina, Giappone, Australia, Italia, Nuova Zelanda, Paesi Bassi, Svizzera, Spagna, Australia, Svezia, Danimarca, Danimarca, Belgio, Portogallo, Singapore, Hong Kong, Taiwan e Corea del Sud |
+| HoloLens 2 | Stati Uniti, Canada, Germania, Francia, Regno Unito, Irlanda, Cina, Giappone, Australia, Italia, Nuova Zelanda, Paesi Bassi, Svizzera, Spagna, Australia, Svezia, Germania, Danimarca, Belgio, Portogallo, Singapore, Hong Kong, Taiwan e Corea del Sud |
+| HoloLens 2 con Remote Assist | Australia, Giappone, Canada, Stati Uniti, Germania, Belgio, Danimarca, Germania, Francia, Germania, Italia, Paesi Bassi, Norvegia, Spagna, Svezia, Svizzera, Regno Unito e Irlanda <sup>1</sup> 
+| HoloLens 2 Industrial Edition *(al lancio)* | Stati Uniti, Canada, Germania, Francia, Regno Unito, Irlanda, Cina, Giappone, Australia, Italia, Nuova Zelanda, Paesi Bassi, Svizzera, Spagna, Australia, Svezia, Germania, Danimarca, Belgio, Portogallo, Singapore, Hong Kong, Taiwan e Corea del Sud |
 | HoloLens 2 Edizione di sviluppo | Canada, Germania, Francia, Regno Unito, Irlanda, Giappone, Australia, Italia, Svizzera e Nuova Zelanda |
 - <sup>1</sup> Questo elenco è dinamico, verificare la disponibilità di aggiornamenti
 

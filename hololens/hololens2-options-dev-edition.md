@@ -2,7 +2,7 @@
 title: HoloLens 2 Edizione di sviluppo
 description: Informazioni su HoloLens 2 Development Edition e su cosa fare dopo averrne una propria.
 keywords: HoloLens 2 opzioni di acquisto, opzioni HoloLens, Developer Edition
-author: bogenera
+author: bgener
 ms.author: bogenera
 ms.reviewer: bogenera
 ms.date: 4/12/2021
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 268e338ad6734b2d951e72dbf8af4d2edf569aae
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 613f0a24d1d0d0740ebc448b2c92238a76350958
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636368"
+ms.locfileid: "113639676"
 ---
 # <a name="hololens-2-development-edition"></a>HoloLens 2 Edizione di sviluppo
 
@@ -57,7 +57,7 @@ Si riceverà un codice univoco. Indicazioni per riscattare la versione di valuta
 1. Fare **clic su Riscatta un codice prodotto**
 1. Immettere il codice prodotto del plug-in Pixyz e fare clic **su Riscatta un codice prodotto**
 
-Altre informazioni su come [riscattare la licenza Pixyz.](https://www.pixyz-software.com/documentations/html/2020.1/review/TrialLicense.html) Per assistenza, contattare il [supporto di Pixyz](https://www.pixyz-software.com/support/) in base alle esigenze.
+Altre informazioni su come [riscattare la licenza Pixyz.](https://www.pixyz-software.com/documentations/html/2020.1/review/TrialLicense.html) Per assistenza, contattare il supporto [di Pixyz](https://www.pixyz-software.com/support/) in base alle esigenze.
 
 ### <a name="azure"></a>Azure
 Di seguito sono riportati alcuni [prodotti Azure comuni per la realtà mista](https://azure.microsoft.com/topic/mixed-reality/) per cui è possibile riscattare il credito di Azure.
@@ -79,7 +79,7 @@ Si tratta di scegliere il motore, scaricare gli strumenti e spolverare la tastie
 ## <a name="developer-edition-additional-resources"></a>Risorse aggiuntive per Developer Edition
 
 - [HoloLens 2 Domande frequenti su Development Edition](hololens2-development-edition-faq.yml)
-- [Assicurarsi di installare gli strumenti per lo HoloLens sviluppo.](/windows/mixed-reality/develop/install-the-tools?tabs=unity)
+- [Assicurarsi di installare gli strumenti per HoloLens sviluppo.](/windows/mixed-reality/develop/install-the-tools?tabs=unity)
 - [Informazioni sullo sviluppo per HoloLens 2 con Unity.](/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2)
 - [Informazioni su come combinare MRTK con Unity.](/windows/mixed-reality/develop/unity/mrtk-getting-started)
 - [Informazioni su come distribuire le app compilate.](app-deploy-overview.md)
@@ -89,7 +89,7 @@ Si tratta di scegliere il motore, scaricare gli strumenti e spolverare la tastie
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-1. Iniziare subito a interagire con la realtà mista e Windows 10 nel HoloLens: vedere l'app **Suggerimenti** per esercitazioni pratica sulle interazioni con la mano. Usare il movimento start per passare a Start o pronunciare "Vai a Start" e selezionare Suggerimenti.
+1. Iniziare **subito a** interagire con la realtà mista ed esplorare Windows 10 sul HoloLens: vedere l'app Suggerimenti per esercitazioni pratica sulle interazioni con la mano. Usare il movimento start per passare a Start o pronunciare "Vai a Start" e selezionare Suggerimenti.
 1. Fare clic di seguito per continuare a leggere informazioni su come HoloLens 2.
 
 > [!div class="nextstepaction"]

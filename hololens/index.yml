@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Microsoft HoloLens
-summary: Microsoft HoloLens è il primo computer olografico completamente indipendente a eseguire Windows 10. Ora, con l'introduzione di HoloLens 2, ogni dispositivo HoloLens offre funzionalità di gestione pronte per la commercializzazione migliorate dall'affidabilità, dalla sicurezza e dalla scalabilità dei servizi cloud e di intelligenza artificiale di Microsoft.
+summary: Microsoft HoloLens è il primo computer olografico completamente autonomo a eseguire Windows 10. Ora, con l'introduzione di HoloLens 2, ogni dispositivo HoloLens offre funzionalità di gestione pronte per l'uso commerciale migliorate dall'affidabilità, dalla sicurezza e dalla scalabilità dei servizi cloud e di intelligenza artificiale di Microsoft.
 metadata:
   title: Microsoft HoloLens
   description: Pagina di destinazione per Microsoft HoloLens.
@@ -11,21 +11,23 @@ metadata:
   ms.author: v-jjaswinski
   ms.date: 05/24/2021
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: 6c73b6fbad7a2968e1f75b361b2b8a015cb1769c
-  ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+  ms.openlocfilehash: 8cb5b881e880adec2b59bde9b36fa700bfce3a91
+  ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 06/25/2021
-  ms.locfileid: "112924316"
+  ms.lasthandoff: 07/12/2021
+  ms.locfileid: "113637150"
 landingContent:
 - title: Informazioni sul HoloLens 2
   linkLists:
   - linkListType: learn
     links:
-    - text: Informazioni HoloLens 2 hardware
-      url: hololens2-hardware.md
-    - text: Confrontare HoloLens 2 opzioni
+    - text: HoloLens 2 funzionalità e soluzioni
+      url: hololens-commercial-features.md
+    - text: HoloLens 2 opzioni
       url: hololens2-options.md
+    - text: Hardware HoloLens 2
+      url: hololens2-hardware.md
   - linkListType: overview
     links:
     - text: Solo dispositivo
@@ -36,7 +38,7 @@ landingContent:
       url: hololens2-options-industrial-edition.md
     - text: Edizione di sviluppo
       url: hololens2-options-dev-edition.md
-    - text: Trimble XR10 with HoloLens 2
+    - text: Trimble XR10 con HoloLens 2
       url: hololens2-options-trimble-xr10-edition.md
 - title: Introduzione
   linkLists:
@@ -46,7 +48,7 @@ landingContent:
       url: hololens2-setup.md
     - text: Utilizzo giornaliero
       url: holographic-home.md
-- title: Pianificare la distribuzione HoloLens 2 distribuzione
+- title: Pianificare la HoloLens 2 distribuzione
   linkLists:
   - linkListType: architecture
     links:
@@ -58,7 +60,7 @@ landingContent:
       url: hololens2-autopilot-registration-support.md
   - linkListType: deploy
     links:
-    - text: Guida alla distribuzione - Distribuzione di applicazioni HoloLens 2 cloud su larga scala con Remote Assist
+    - text: Guida alla distribuzione - Distribuzione di HoloLens 2 con connessione cloud su larga scala con Remote Assist
       url: hololens2-cloud-connected-overview.md
     - text: Guida alla distribuzione - Client esterni (connessi al cloud)
       url: hololens2-deployment-guide.md
@@ -78,7 +80,7 @@ landingContent:
       url: hololens2-display.md
     - text: Implementazione e dispositivi gestiti
       url: hololens2-enterprise-troubleshooting.md
-    - text: Raccogliere e usare le informazioni di diagnostica dai dispositivi HoloLens
+    - text: Raccogliere e usare informazioni di diagnostica HoloLens dispositivi
       url: hololens-diagnostic-logs.md
     - text: Riavviare, reimpostare o ripristinare HoloLens 2
       url: hololens-recovery.md
@@ -114,7 +116,7 @@ landingContent:
   linkLists:
   - linkListType: reference
     links:
-    - text: Dynamics 365 Remote Assist Docs
+    - text: Dynamics 365 Remote Assist Documenti
       url: https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/ra-overview
     - text: Guide di Dynamics 365
       url: https://docs.microsoft.com/dynamics365/mixed-reality/guides/

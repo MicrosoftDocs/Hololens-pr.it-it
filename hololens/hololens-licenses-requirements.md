@@ -1,6 +1,6 @@
 ---
-title: Requisiti di licenza
-description: È importante tenersi sempre aggiornati sui requisiti di licenza e sulle linee guida necessarie per la gestione di dispositivi mobili, HoloLens e assistenza remota.
+title: Requisiti relativi alle licenze
+description: Tenersi aggiornati su tutti i requisiti di licenza e le linee guida necessari per la gestione dei dispositivi mobili, HoloLens e Remote Assist.
 ms.prod: hololens
 ms.sitesec: library
 author: pawinfie
@@ -12,49 +12,102 @@ ms.date: 1/23/2020
 ms.reviewer: ''
 manager: bradke
 appliesto:
-- HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 2f7af532d2172dcaa6514ee11dbb0d6ab5631929
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
-ms.translationtype: HT
+ms.openlocfilehash: d0d8aa648df7901dec8636942e43aa549e626d7e
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283967"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635892"
 ---
-# Requisiti di licenza
+# <a name="license-requirements"></a>Requisiti relativi alle licenze
 
-## Indicazioni sulle licenze di Gestione dei dispositivi mobili (MDM)
+## <a name="hololens-2-device-managed"></a>HoloLens 2 Dispositivo (gestito)
 
-Se si prevede di gestire i dispositivi HoloLens, saranno necessari Azure AD e un sistema MDM. Active Director (AD) non può essere usato per gestire i dispositivi HoloLens.
-Se si prevede di usare un sistema MDM diverso da Intune, è necessaria una [licenza di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis).
-Se si prevede di usare Intune come MDM, leggere l'[elenco delle suite](https://docs.microsoft.com/intune/fundamentals/licenses) che includono le licenze di Intune. **Si noti che Azure AD è incluso nella maggior parte delle famiglie di prodotti.**
+[Azure AD Account](https://docs.microsoft.com/azure/active-directory/)
 
-## Identificare le licenze necessarie per lo scenario e i prodotti
+> [!IMPORTANT]
+> Active Directory (AD) non può essere usato per gestire HoloLens dispositivi.
 
-### Requisiti di licenza di HoloLens (prima generazione)
+[Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) o un altro MDM.
+- [Windows Autopilot per HoloLens 2:](hololens2-autopilot.md)semplifica l'esperienza di provisioning sia per gli amministratori IT che per gli utenti finali. Gli amministratori IT possono preconfigurare i HoloLens 2 e al primo avvio i dispositivi verranno distribuiti in stato business-ready senza interazione dell'utente finale. 
 
-Potrebbe essere necessario aggiornare il dispositivo HoloLens (prima generazione) a Windows Holographic for Business. (Per determinare se è necessario eseguire l'aggiornamento, vedere [Funzionalità commerciali di HoloLens](holoLens-commercial-features.md#feature-comparison-between-editions)).
+  > [!NOTE]
+  > Windows Autopilot richiede [che Azure P1](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) e [la registrazione](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) automatica siano configurati per primi per la distribuzione del dispositivo e del flusso di Autopilot a tocco basso. 
 
- In tale caso, si dovranno eseguire le operazioni seguenti:
+### <a name="business-use-case"></a>Caso d'uso aziendale: 
 
-- Acquistare un file XML di licenza HoloLens Enterprise.
-- Applicare il file XML a HoloLens. È possibile eseguire questa operazione tramite un [pacchetto di provisioning](hololens-provisioning.md) o tramite il [Gestore di dispositivi mobili](https://docs.microsoft.com/intune/configuration/holographic-upgrade).
+- [Scenario di distribuzione A:](hololens-requirements.md#scenario-a-deploy-to-cloud-connected-devices) modello di verifica o distribuzione pilota.
 
-### Requisiti di licenza di Remote Assist
+- [Scenario di distribuzione B:](hololens-requirements.md#scenario-b-deploy-inside-your-organizations-network) distribuzione su larga scala.
 
-Verificare di disporre della licenza e del dispositivo necessari nella documentazione relativa ai [requisiti](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements).
+## <a name="hololens-2-device-only-non-managed"></a>HoloLens 2 Solo dispositivo (non gestito)
 
-1. [Licenza di Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist)
-    1. Altrimenti, provare la [versione di valutazione di Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/try-remote-assist)
-1. [Teams Freemium/Teams](https://products.office.com/microsoft-teams/free)
-1. [Licenza di Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
+Quando si usa un account Microsoft (MSA) o un account locale, non sono necessarie licenze aggiuntive per questi account.
 
-Se si prevede di implementare **[questo scenario tra tenant](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)**, potrebbe essere necessaria una licenza Barriere informative. Vedere [questo articolo](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation#step-1-determine-if-information-barriers-are-necessary) per determinare se è necessaria una licenza Barriere informative.
+[Account locale](https://docs.microsoft.com/windows/security/identity-protection/access-control/local-accounts)
 
-### Guide ai requisiti di licenza
+- Il provisioning di questo account deve [essere](hololens-provisioning.md#provisioning-package-hololens-wizard) eseguito in anticipo con Windows Configuration Designer (WCD).
 
-Verificare i [requisiti di licenze e dispositivi aggiornati](https://docs.microsoft.com/dynamics365/mixed-reality/guides/requirements).
+[Account Microsoft (MSA)](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts)
 
-1. [Licenza di Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
-1. [Power BI](https://powerbi.microsoft.com/desktop/)
-1. [Guide](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup)
+> [!WARNING]
+> Non sono supportati più utenti per un dispositivo che usa uno di questi account.
+
+### <a name="business-use-case"></a>Caso d'uso aziendale: 
+
+- [Scenario di distribuzione C:](hololens-requirements.md#scenario-c-deploy-in-secure-offline-environment) distribuzione offline o sicura.
+ 
+## <a name="dynamics-365-licensing-and-requirements"></a>Licenze e requisiti di Dynamics 365
+
+### <a name="dynamics-365-remote-assist"></a>Dynamics 365 Remote Assist 
+
+#### <a name="admin"></a>Amministrativi
+
+- Azure AD account (obbligatorio per l'acquisto della sottoscrizione e l'assegnazione delle licenze)
+- [Remote Assist sottoscrizione](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) (o versione [di Remote Assist)](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/try-remote-assist)
+    
+#### <a name="dynamics-365-remote-assist-user"></a>Dynamics 365 Remote Assist utente
+
+- Account Azure AD
+
+- Remote Assist licenza 
+
+  > [!NOTE]
+  > Microsoft Teams è in bundle con Remote Assist
+
+- Connettività di rete
+
+#### <a name="microsoft-teams-user"></a>Microsoft Teams utente
+
+- Account Azure AD
+
+- Microsoft Teams o [Teams Freemium.](https://products.office.com/microsoft-teams/free)
+
+- Connettività di rete
+
+Se si prevede di implementare questo [scenario tra tenant,](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)potrebbe essere necessaria una licenza information barriers. Vedere [questo articolo per](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation#step-1-determine-if-information-barriers-are-necessary) determinare se è necessaria una licenza information barrier.
+
+### <a name="dynamics-365-guides"></a>Guide di Dynamics 365 
+
+#### <a name="admin"></a>Amministrativi
+
+- Azure AD account (obbligatorio per l'acquisto della sottoscrizione e l'assegnazione delle licenze)
+- Sottoscrizione di Dynamics 365 [Guides o versione di valutazione gratuita](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup-step-one)
+
+#### <a name="guides-author"></a>Autore guide
+
+1. Account Azure AD
+1. [Dynamics 365 Guides licenza](/dynamics365/mixed-reality/guides/requirements)
+1. Dynamics 365 Guides'applicazione installata in un PC o in un HoloLens
+1. [Power BI Desktop](https://powerbi.microsoft.com/desktop/) (usato per visualizzare il dashboard di Analytics)
+1. Ruolo Autore (per la creazione di guide)
+1. Connettività di rete
+
+#### <a name="guides-user"></a>Guida l'utente
+
+1. Account Azure AD
+1. [Dynamics 365 Guides licenza](/dynamics365/mixed-reality/guides/requirements)
+1. Dynamics 365 Guides'app installata in un HoloLens
+1. Ruolo operatore (per il test o l'uso di guide)
+1. Connettività di rete

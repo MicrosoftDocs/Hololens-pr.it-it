@@ -16,33 +16,34 @@ ms.custom:
 - CSSTroubleshooting
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 721c169c8ad34acab6914448af8ffc6ceec97a0e
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: a179032978e1fc062273a6754e3b0a1ad50a5211
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108309307"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635909"
 ---
 # <a name="manage-custom-apps-for-hololens-1st-gen"></a>Gestire app personalizzate per HoloLens (prima generazione)
 
-HoloLens supporta molte applicazioni esistenti dal Microsoft Store, nonché nuove app create in modo specifico per HoloLens. Questo articolo è in particolare sulle applicazioni olografiche personalizzate.  
+HoloLens supporta molte applicazioni esistenti dal Microsoft Store, nonché nuove app create appositamente per HoloLens. Questo articolo è in particolare sulle applicazioni olografiche personalizzate.  
 
 Per altre informazioni sulle app dello Store, vedere [Gestire le app con lo Store.](holographic-store-apps.md)
 
 > [!IMPORTANT]
-> Le informazioni seguenti sono state create per HoloLens (prima generazione), chiamata anche HoloLens Developer Edition al momento. Di conseguenza, il sideload delle app tramite il portale di dispositivi e l'installazione di app tramite Visual Studio erano comuni. Per le distribuzioni aziendali non è consigliabile abilitare la modalità sviluppatore, che viene utilizzata da entrambi questi metodi. Se si è interessati a un metodo di distribuzione dell'app sicuro, vedere Gestione [delle app: Panoramica.](app-deploy-overview.md)
+> Le informazioni seguenti sono state create per la HoloLens (prima generazione), denominata anche HoloLens Developer Edition al momento. Di conseguenza, il sideload delle app tramite il portale di dispositivi e l'installazione di app tramite Visual Studio erano comuni. Per le distribuzioni aziendali non è consigliabile abilitare la modalità sviluppatore, che viene utilizzata da entrambi questi metodi. Se si è interessati a un metodo di distribuzione dell'app sicuro, vedere Gestione [delle app: Panoramica.](app-deploy-overview.md)
 >
-> Se si sta cercando uno dei due metodi di installazione delle app per HoloLens 2, fare riferimento a:
-> - [Portale di dispositivi: Installazione di un'app](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app)
-> - [Uso di Visual Studio per distribuire ed eseguire il debug di app](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-visual-studio)
+> Se si sta cercando uno dei due metodi di installazione delle app per i dispositivi HoloLens 2, fare riferimento a:
+>
+> - [Portale di dispositivi: Installazione di un'app](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app)
+> - [Uso di Visual Studio per distribuire ed eseguire il debug di app](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-visual-studio)
 
 ## <a name="install-custom-apps"></a>Installare app personalizzate
 
-Puoi installare le tue applicazioni in HoloLens usando il Portale di dispositivi o distribuendo le app da Visual Studio.
+È possibile installare applicazioni personalizzate in HoloLens usando il Portale di dispositivi o distribuendo le app da Visual Studio.
 
 ### <a name="installing-an-application-package-with-the-device-portal"></a>Installazione di un pacchetto dell'applicazione con il Portale di dispositivi
 
-1. Stabilire una connessione dal [Portale di dispositivi](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal) al dispositivo HoloLens di destinazione.
+1. Stabilire una connessione dal [Portale di dispositivi](/windows/mixed-reality/using-the-windows-device-portal) al HoloLens di HoloLens.
 
 1. Nel riquadro di spostamento a sinistra passare alla **pagina** App.
 
@@ -54,26 +55,26 @@ Puoi installare le tue applicazioni in HoloLens usando il Portale di dispositivi
 1. Selezionare **Vai**.
 
    > [!div class="mx-imgBorder"]
-   > ![Installare il modulo dell'app Portale di dispositivi di Windows in Microsoft HoloLens](images/deviceportal-appmanager.jpg)
+   > ![Installare il modulo dell'app Windows Portale di dispositivi in Microsoft HoloLens](images/deviceportal-appmanager.jpg)
 
 ### <a name="deploying-from-microsoft-visual-studio-2015"></a>Distribuzione da Microsoft Visual Studio 2015
 
 1. Aprire la soluzione di Visual Studio dell'app (file con estensione sln).
 
-1. Aprire proprietà del **progetto**.
+1. Aprire proprietà **del progetto.**
 
 1. Selezionare la configurazione di compilazione seguente: **Master/x86/Computer remoto**.
 
-1. Quando si seleziona **Computer remoto**:
-   - Assicurarsi che l'indirizzo punti Wi-Fi'indirizzo IP di HoloLens.
-   - Impostare **l'autenticazione su Universal (Unencrypted Protocol)**.
+1. Quando si seleziona **Computer remoto:**
+   - Assicurarsi che l'indirizzo punti all'Wi-Fi IP del HoloLens.
+   - Impostare **l'autenticazione su Universale (protocollo non crittografato).**
    
 1. Compilare la soluzione.
 
-1. Per distribuire l'app dal PC di sviluppo in HoloLens, selezionare **Computer remoto**. Se si ha già una build esistente in HoloLens, selezionare **Sì** per installare questa versione più recente.  
+1. Per distribuire l'app dal PC di sviluppo al HoloLens, selezionare **Computer remoto.** Se si dispone già di una build esistente nel HoloLens, selezionare **Sì** per installare questa versione più recente.  
 
-   ![Distribuzione di computer remoti per le app da Microsoft HoloLens in Visual Studio](images/vs2015-remotedeployment.jpg)  
+   ![Distribuzione di computer remoti per le app Microsoft HoloLens in Visual Studio](images/vs2015-remotedeployment.jpg)  
    
-1. L'applicazione verrà installata e avviata automaticamente in HoloLens.
+1. L'applicazione verrà installata e avviata automaticamente nel HoloLens.
 
-Dopo aver installato un'app, è possibile trovarla nell'elenco **Tutte** le app (**Avvia**  >  **tutte le app**).
+Dopo aver installato un'app, è possibile trovarla nell'elenco Tutte le **app** (**Avvia tutte** le  >  **app**).

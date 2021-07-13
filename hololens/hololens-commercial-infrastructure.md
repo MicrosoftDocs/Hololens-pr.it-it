@@ -1,6 +1,6 @@
 ---
-title: Linee guida sull'infrastruttura per HoloLens
-description: Informazioni sulle linee guida per l'infrastruttura dei dispositivi HoloLens, tra cui il supporto della rete wireless, l'assistenza remota e la gestione dei dispositivi mobili.
+title: Linee guida per l'infrastruttura HoloLens
+description: Informazioni sulle linee guida dell'infrastruttura per HoloLens, tra cui il supporto di rete wireless, l'assistenza remota e la gestione dei dispositivi mobili.
 ms.prod: hololens
 ms.sitesec: library
 author: pawinfie
@@ -14,35 +14,35 @@ manager: bradke
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 4eb55bec56e53de9195ac87e0491eefd91992f3d
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
-ms.translationtype: HT
+ms.openlocfilehash: e3f87c524ce0f8af05ec8c92877d46facd962fb4
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283387"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113639285"
 ---
-# Configurare la rete per HoloLens
+# <a name="configure-your-network-for-hololens"></a>Configurare la rete per HoloLens
 
-Questa parte del documento richiede la partecipazione degli utenti seguenti:
+Questa parte del documento richiederà le persone seguenti:
 
-1. Amministratore di rete con le autorizzazioni per modificare il proxy o il firewall
-2. Amministratore di Azure Active Directory
+1. Amministratore di rete con autorizzazioni per apportare modifiche al proxy/firewall
+2. Azure Active Directory Admin
 3. Amministratore di Mobile Device Manager
 
-## Requisiti dell'infrastruttura
+## <a name="infrastructure-requirements"></a>Requisiti dell'infrastruttura
 
-HoloLens è, in sostanza, un dispositivo mobile di Windows integrato in Azure.  Funziona in modo ottimale in ambienti commerciali con disponibilità di rete wireless (Wi-Fi) e accesso ai servizi Microsoft.
+HoloLens è, alla base, un dispositivo Windows dispositivo mobile integrato con Azure.  Funziona meglio negli ambienti commerciali con disponibilità di rete wireless (wi-fi) e accesso a servizi Microsoft.
 
 I servizi cloud critici includono:
 
-- Azure Active Directory (Azure AD)
-- Windows Update (WU)
+- Azure active directory (Azure AD)
+- Windows Aggiornamento (WU)
 
-I clienti commerciali avranno bisogno di un'infrastruttura di gestione della mobilità aziendale (EMM, Enterprise Mobility Management) o gestione dei dispositivi mobili (MDM, Mobile Device Management) per gestire i dispositivi HoloLens in scala.  Questa guida usa [Microsoft Intune](https://www.microsoft.com/enterprise-mobility-security/microsoft-intune) come esempio, anche se qualsiasi provider con supporto completo per Microsoft Policy può supportare HoloLens.  Chiedere al provider di gestione di dispositivi mobili se supporta HoloLens 2.
+I clienti commerciali avranno bisogno di un'infrastruttura EMM (Enterprise Mobility Management) o MDM (Mobile Device Management) per gestire HoloLens dispositivi su larga scala.  Questa guida [usa](https://www.microsoft.com/enterprise-mobility-security/microsoft-intune) Microsoft Intune esempio, anche se qualsiasi provider con supporto completo per Criteri Microsoft può supportare HoloLens.  Chiedere al provider di gestione dei dispositivi mobili se supporta HoloLens 2.
 
 HoloLens supporta un set limitato di esperienze disconnesse dal cloud.
 
-### Supporto EAP di rete wireless
+### <a name="wireless-network-eap-support"></a>Supporto EAP per la rete wireless
 
 - PEAP-MS-CHAPv2
 - PEAP-TLS
@@ -53,140 +53,140 @@ HoloLens supporta un set limitato di esperienze disconnesse dal cloud.
 - TTLS-PAP
 - TTLS-TLS
 
-### Requisiti di rete specifici di HoloLens
+### <a name="hololens-specific-network-requirements"></a>HoloLens Requisiti di rete specifici
 
-Assicurarsi che [questo elenco](hololens-offline.md) di endpoint sia consentito nel firewall di rete. Questo consentirà il funzionamento corretto di HoloLens.
+Assicurarsi che [questo elenco di](hololens-offline.md) endpoint sia consentito nel firewall di rete. In questo modo HoloLens funzionerà correttamente.
 
-### Requisiti di rete specifici di Remote Assist
+### <a name="remote-assist-specific-network-requirements"></a>Remote Assist requisiti di rete specifici
 
-1. La larghezza di banda consigliata per prestazioni ottimali di Remote Assist è 1,5 Mbps. Per ulteriori informazioni vedere i [requisiti di rete dettagliati](https://docs.microsoft.com/MicrosoftTeams/prepare-network).
-**Se non si ha una rete con una velocità di rete di almeno 1,5 Mbps, Remote Assist funzionerà comunque. Tuttavia, la qualità potrebbe soffrire.**
-1. Assicurarsi che tali porte e URL siano consentiti nel firewall di rete per consentire il funzionamento di Microsoft Teams. È possibile restare aggiornati consultando l’[elenco delle porte più recente](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams).
+1. La larghezza di banda consigliata per prestazioni ottimali Remote Assist è di 1,5 Mbps. Per altre [informazioni, vedere i requisiti di](/MicrosoftTeams/prepare-network) rete dettagliati.
+**Si noti che se non si ha una velocità di rete di almeno 1,5 Mbps, Remote Assist funzionerà ancora. Tuttavia, la qualità può risentire).**
+1. Assicurarsi che queste porte e URL siano consentiti nel firewall di rete per consentire Microsoft Teams funzionamento. Rimanere aggiornati con [l'elenco più recente delle porte](/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams).
 
-- Ulteriori informazioni sui [requisiti di rete per l’assistenza remota](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements#network-requirements) specifici. 
-- Leggere altre informazioni su come[preparare la rete aziendale per Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/prepare-network)
+- Altre informazioni sui requisiti di [rete specifici per Remote Assist](/dynamics365/mixed-reality/remote-assist/requirements#network-requirements). 
+- Altre informazioni su come [preparare la rete dell'organizzazione per l'Microsoft Teams](/MicrosoftTeams/prepare-network)
 
-### Requisiti di rete specifici di Guides
+### <a name="guides-specific-network-requirements"></a>Guide requisiti di rete specifici
 
-Guides richiede solo l'accesso di rete per scaricare e usare l'app.
+Le guide richiedono solo l'accesso alla rete per scaricare e usare l'app.
 
-## Indicazioni per Azure Active Directory
-
-> [!NOTE]
-> Questo passaggio è necessario solo se la società prevede di gestire HoloLens.
-
-1. Verificare di avere una licenza di Azure AD.
-Per altre informazioni, vedere i [requisiti di licenza di HoloLens](hololens-licenses-requirements.md).
-
-1. Se si prevede di usare la registrazione automatica, sarà necessario [configurare la registrazione di Azure AD.](https://docs.microsoft.com/intune/deploy-use/.set-up-windows-device-management-with-microsoft-intune#azure-active-directory-enrollment)
-
-1. Verificare che gli utenti della società siano in Azure Active Directory (Azure AD).
-Vedere le seguenti [istruzioni](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory) per aggiungere utenti.
-
-1. È consigliabile aggiungere gli utenti che hanno bisogno di licenze simili allo stesso gruppo.
-    1. [Creare un gruppo](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
-    1. [Aggiungere utenti ai gruppi](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal)
-
-1. Verificare che gli utenti (o il gruppo di utenti) della società abbiano le licenze necessarie.
-Se è necessario assegnare licenze, seguire queste [istruzioni](https://docs.microsoft.com/azure/active-directory/fundamentals/license-users-groups).
-
-1. Eseguire questa procedura solo se gli utenti devono registrare il proprio dispositivo HoloLens/mobile (sono disponibili tre opzioni). Questi passaggi assicurano che gli utenti (o un gruppo di utenti) della società possano aggiungere dispositivi.
-    1. **Opzione 1:** consentire a tutti gli utenti di aggiungere dispositivi in Azure AD.
-**Accedere al portale di Azure come amministratore** > **Azure Active Directory** > **Dispositivi** > **Impostazioni dei dispositivi** >
-**Impostare Gli utenti possono aggiungere dispositivi ad Azure AD su*Tutti***
-
-    1. **Opzione 2:** assegnare a utenti/gruppi selezionati l'autorizzazione per l'aggiunta di dispositivi ad Azure AD **Accedere al portale di Azure come amministratore** > **Azure Active Directory** > **Dispositivi** > **Impostazioni dei dispositivi** >
-**Impostare gli utenti possono aggiungere dispositivi ad Azure AD su *Selezionati***
-![Immagine che mostra la configurazione dei dispositivi aggiunti ad Azure AD](images/azure-ad-image.png)
-
-    1. **Opzione 3:** è possibile impedire a tutti gli utenti di aggiungere i propri dispositivi al dominio. Questo significa che tutti i dispositivi devono essere registrati manualmente.
-
-## Indicazioni per Mobile Device Manager
-
-### Gestione continuativa di dispositivi mobili
+## <a name="azure-active-directory-guidance"></a>Azure Active Directory Guida
 
 > [!NOTE]
-> Questo passaggio è necessario solo se la società prevede di gestire HoloLens.
+> Questo passaggio è necessario solo se l'azienda prevede di gestire il HoloLens.
 
-La gestione continuativa dei dispositivi dipenderà dall'infrastruttura di gestione dei dispositivi mobili in uso.  La maggior parte ha le stesse funzionalità generali, ma l'interfaccia utente può variare notevolmente.
+1. Assicurarsi di avere una licenza Azure AD licenza.
+Per [altre informazioni, HoloLens requisiti](hololens-licenses-requirements.md) per le licenze.
 
-1. I [provider di servizi di configurazione (CSP)](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices) consentono di creare e distribuire impostazioni di gestione per i dispositivi nella rete. Per informazioni vedere l’elenco dei[, CSP di HoloLens](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices).
+1. Se si prevede di usare la registrazione automatica, sarà necessario configurare Azure AD [registrazione automatica.](/intune/deploy-use/.set-up-windows-device-management-with-microsoft-intune#azure-active-directory-enrollment)
 
-1. I [criteri di conformità](https://docs.microsoft.com/intune/device-compliance-get-started) sono regole e impostazioni che i dispositivi devono soddisfare per essere conformi nell'infrastruttura aziendale. Usare questi criteri insieme all'accesso condizionale per bloccare l'accesso alle risorse aziendali per i dispositivi non conformi. Ad esempio, è possibile creare un criterio che richiede che BitLocker sia abilitato.
+1. Assicurarsi che gli utenti dell'azienda siano Azure Active Directory (Azure AD).
+Vedere le istruzioni [seguenti per](/azure/active-directory/fundamentals/add-users-azure-active-directory) l'aggiunta di utenti.
 
-1. [Creare criteri di conformità](https://docs.microsoft.com/intune/protect/compliance-policy-create-windows).
+1. È consigliabile aggiungere utenti che necessitano di licenze simili allo stesso gruppo.
+    1. [Creare un gruppo](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
+    1. [Aggiungere utenti ai gruppi](/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal)
 
-1. L'accesso condizionale consente/nega ai dispositivi mobili e alle applicazioni per dispositivi mobili l'accesso alle risorse aziendali. Due documenti che possono essere utili sono [Procedura: pianificare la distribuzione dell'accesso condizionale](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access) e [Procedure consigliate](https://docs.microsoft.com/azure/active-directory/conditional-access/best-practices).
+1. Assicurarsi che agli utenti dell'azienda (o al gruppo di utenti) siano assegnate le licenze necessarie.
+Se è necessario assegnare licenze, seguire queste [istruzioni.](/azure/active-directory/fundamentals/license-users-groups)
 
-1. [Questo articolo](https://docs.microsoft.com/intune/fundamentals/windows-holographic-for-business) parla degli strumenti di gestione di Intune per HoloLens.
+1. Eseguire questo passaggio solo se si prevede che gli utenti enroll their HoloLens/Mobile device into you (There are three options) Questi passaggi garantiscono che gli utenti dell'azienda (o un gruppo di utenti) possano aggiungere dispositivi.
+    1. **Opzione 1:** Concedere a tutti gli utenti l'autorizzazione per aggiungere dispositivi Azure AD.
+**Accedere al portale di Azure come amministratore**  >  **Azure Active Directory**  >  **Dispositivi**  >  **Dispositivi Impostazioni**  >
+ **Impostare Utenti che possono aggiungere dispositivi Azure AD su *Tutti***
 
-1. [Creare un profilo del dispositivo](https://docs.microsoft.com/intune/configuration/device-profile-create)
+    1. **Opzione 2:** Concedere a utenti/gruppi selezionati l'autorizzazione per aggiungere dispositivi a Azure AD Accedere al **portale di Azure** come amministratore  >  **Azure Active Directory**  >  **Dispositivi** dispositivo  >  **Impostazioni**  >
+ **Impostare** 
+ ![ gli utenti possono aggiungere dispositivi a Azure AD a Immagine selezionata che mostra La configurazione dei dispositivi aggiunti Azure AD](images/azure-ad-image.png)
 
-### Gestire gli aggiornamenti
+    1. **Opzione 3:** È possibile impedire a tutti gli utenti di aggiungere i propri dispositivi al dominio. Ciò significa che tutti i dispositivi dovranno essere registrati manualmente.
 
-Intune include una caratteristica denominata Anelli di aggiornamento per i dispositivi Windows 10, tra cui HoloLens 2 e HoloLens V1 (con Holographic for Business). Gli anelli di aggiornamento includono un gruppo di impostazioni che determinano come e quando vengono installati gli aggiornamenti.
+## <a name="mobile-device-manager-guidance"></a>Linee guida per Mobile Device Manager
 
-Ad esempio, è possibile creare una finestra di manutenzione per installare gli aggiornamenti oppure scegliere di riavviare dopo l'installazione degli aggiornamenti.  Si può anche scegliere di sospendere gli aggiornamenti a tempo indeterminato finché non si è pronti per l'aggiornamento.
+### <a name="ongoing-device-management"></a>Gestione continua dei dispositivi
 
-Seguire il link per altre informazioni sulla [configurazione degli anelli di aggiornamento con Intune](https://docs.microsoft.com/intune/windows-update-for-business-configure).
+> [!NOTE]
+> Questo passaggio è necessario solo se l'azienda prevede di gestire il HoloLens.
 
-### Gestione delle applicazioni
+La gestione continua dei dispositivi dipende dall'infrastruttura di gestione dei dispositivi mobili.  La maggior parte ha la stessa funzionalità generale, ma l'interfaccia utente può variare notevolmente.
 
-Gestire le applicazioni di HoloLens tramite:
+1. [I provider di servizi di](/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices) configurazione (Provider di servizi di configurazione) consentono di creare e distribuire le impostazioni di gestione per i dispositivi nella rete. Vedere [l'elenco di HoloLens CSP per](/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices) informazioni di riferimento.
+
+1. [I criteri di](/intune/device-compliance-get-started) conformità sono regole e impostazioni che i dispositivi devono soddisfare per essere conformi nell'infrastruttura aziendale. Usare questi criteri con l'accesso condizionale per bloccare l'accesso alle risorse aziendali per i dispositivi non conformi. È possibile ad esempio creare un criterio che richiede l'abilitazione di Bitlocker.
+
+1. [Creare criteri di conformità](/intune/protect/compliance-policy-create-windows).
+
+1. L'accesso condizionale consente o nega ai dispositivi mobili e alle applicazioni mobili di accedere alle risorse aziendali. Due documenti che possono risultare utili sono [Pianificare la distribuzione della CA](/azure/active-directory/conditional-access/plan-conditional-access) e Procedure [consigliate.](/azure/active-directory/conditional-access/best-practices)
+
+1. [Questo articolo](/intune/fundamentals/windows-holographic-for-business) illustra gli strumenti di gestione di Intune per HoloLens.
+
+1. [Creare un profilo di dispositivo](/intune/configuration/device-profile-create)
+
+### <a name="manage-updates"></a>Gestire gli aggiornamenti
+
+Intune include una funzionalità denominata Anelli di aggiornamento per Windows 10 dispositivi, tra cui HoloLens 2 e HoloLens v1 (con Holographic for Business). Gli anelli di aggiornamento includono un gruppo di impostazioni che determinano come e quando vengono installati gli aggiornamenti.
+
+È possibile ad esempio creare una finestra di manutenzione per installare gli aggiornamenti o scegliere di riavviare dopo l'installazione degli aggiornamenti.  È anche possibile scegliere di sospendere gli aggiornamenti a tempo indeterminato fino a quando non si è pronti per l'aggiornamento.
+
+Altre informazioni sulla [configurazione degli anelli di aggiornamento con Intune.](/intune/windows-update-for-business-configure)
+
+### <a name="application-management"></a>Gestione delle applicazioni
+
+Gestire HoloLens applicazioni tramite:
 
 1. Microsoft Store  
-  Microsoft Store è il mezzo migliore per distribuire e usare applicazioni su HoloLens.  Nello Store è già disponibile un'ampia gamma di applicazioni di HoloLens oppure è possibile [pubblicare la propria](https://docs.microsoft.com/windows/uwp/publish/).  
-  Tutte le applicazioni nello Store sono disponibili pubblicamente per tutti. Se questo non è accettabile, provare Microsoft Store per le aziende.  
+  Il Microsoft Store è il modo migliore per distribuire e usare le applicazioni HoloLens.  È disponibile un ottimo set di HoloLens di base già disponibili nello store oppure è possibile [pubblicare il proprio](/windows/uwp/publish/).  
+  Tutte le applicazioni nello Store sono disponibili pubblicamente per tutti, ma se non è accettabile, eseguire il check-Microsoft Store per le aziende.  
 
-1. [Microsoft Store per le aziende](https://docs.microsoft.com/microsoft-store/)  
-  Microsoft Store per le aziende e gli istituti di istruzione è un negozio personalizzato per gli ambienti aziendali.  Consente di usare Microsoft Store integrato in Windows 10 e HoloLens per trovare, acquisire, distribuire e gestire app per l'organizzazione.  Consente anche di distribuire app specifiche per il proprio ambiente commerciale, ma non a tutto il mondo.
+1. [Microsoft Store per le aziende](/microsoft-store/)  
+  Microsoft Store per le aziende e Education è un archivio personalizzato per l'ambiente aziendale.  Consente di usare i Microsoft Store predefiniti Windows 10 e HoloLens per trovare, acquisire, distribuire e gestire le app per l'organizzazione.  Consente anche di distribuire app specifiche per l'ambiente commerciale, ma non per il mondo.
 
-1. Distribuzione e gestione delle applicazioni con Intune o un'altra soluzione di gestione dei dispositivi mobili  
-  La maggior parte delle soluzioni di gestione dei dispositivi mobili, tra cui Intune, offre un modo per distribuire applicazioni line-of-business direttamente in un set di dispositivi registrati.  Vedere questo articolo per l'[installazione di app con Intune](https://docs.microsoft.com/intune/apps-deploy).
+1. Distribuzione e gestione di applicazioni tramite Intune o un'altra soluzione di gestione dei dispositivi mobili  
+  La maggior parte delle soluzioni di gestione dei dispositivi mobili, tra cui Intune, offre un modo per distribuire le applicazioni line-of-business direttamente in un set di dispositivi registrati.  Vedere questo articolo per [l'installazione dell'app Intune.](/intune/apps-deploy)
 
-1. _non consigliato_ Device Portal  
-  Le applicazioni possono anche essere installate direttamente in HoloLens tramite Windows Device Portal.  Questa scelta non è consigliata, perché per usare il portale di dispositivi occorre abilitare la modalità di sviluppo.
+1. _sconsigliato_ Portale di dispositivi  
+  Le applicazioni possono anche essere installate HoloLens direttamente usando il Windows Portale di dispositivi.  Questa operazione non è consigliata perché la modalità sviluppatore deve essere abilitata per l'uso del portale dei dispositivi.
 
-Seguire il link per altre informazioni sull[installazione di app in HoloLens](https://docs.microsoft.com/hololens/hololens-install-apps).
+Altre informazioni [sull'installazione di app in HoloLens](hololens-install-apps.md).
 
-### Certificati
+### <a name="certificates"></a>Certificati
 
-È possibile distribuire i certificati tramite il provider MDM. Se la società ha bisogno di certificati, Intune supporta PKCS, PFX e SCEP. È importante comprendere quale sia il certificato appropriato per l'azienda. Per determinare qual è il certificato più adatto, consultare la documentazione delle [configurazioni dei certificati](https://docs.microsoft.com/intune/protect/certificates-configure). Se si prevede di usare certificati per l'autenticazione di HoloLens, PFX o SCEP può essere la scelta corretta.
+È possibile distribuire i certificati tramite il provider MDM. Se l'azienda richiede certificati, Intune supporta PKCS, PFX e SCEP. È importante comprendere quale certificato è più giusto per l'azienda. Visitare la documentazione [relativa alle configurazioni](/intune/protect/certificates-configure) dei certificati per determinare quale certificato è più adatto alle specifiche. Se si prevede di usare i certificati per HoloLens autenticazione, PFX o SCEP potrebbe essere la scelta giusta.
 
-Vedere i passaggi seguenti sull'uso di [SCEP](https://docs.microsoft.com/intune/protect/certificates-profile-scep).
+Per l'uso di [SCEP,](/intune/protect/certificates-profile-scep)vedere la procedura seguente.
 
-### Come eseguire l'aggiornamento alla famiglia di prodotti commerciali Holographic for Business
+### <a name="how-to-upgrade-to-holographics-for-business-commercial-suite"></a>Come eseguire l'aggiornamento a Holographics for Business Commercial Suite
 
 > [!NOTE]
-> Windows Holographic for Business (famiglia di prodotti commerciali) è inteso solo per i dispositivi HoloLens di prima generazione. Il profilo non verrà applicato ai dispositivi HoloLens 2.
+> Windows Holographics for Business (suite commerciale) è destinato solo HoloLens dispositivi di prima generazione. Il profilo non verrà applicato ai HoloLens 2 mobili.
 
-È possibile trovare le indicazioni per l'aggiornamento alla famiglia dei prodotti commerciali nella documentazione dell'[aggiornamento olografico](https://docs.microsoft.com/intune/configuration/holographic-upgrade).
+Le istruzioni per l'aggiornamento alla suite commerciale sono disponibili nella documentazione [sull'aggiornamento olografico.](/intune/configuration/holographic-upgrade)
 
-### Come configurare la modalità tutto schermo con Microsoft Intune
+### <a name="how-to-configure-kiosk-mode-using-microsoft-intune"></a>Come configurare la modalità tutto schermo usando Microsoft Intune
 
-1. Sincronizzare Microsoft Store a Intune (vedere le seguenti [istruzioni](https://docs.microsoft.com/intune/apps/windows-store-for-business)).
+1. Sincronizzare Microsoft Store con Intune (vedere le istruzioni [seguenti).](/intune/apps/windows-store-for-business)
 
 1. Controllare le impostazioni dell'app
-    1. Accedere all'account di Microsoft Store per le aziende
-    1. **Gestisci > Prodotti e servizi > App e software > Selezionare l'app che si vuole sincronizzare > Disponibilità archivio privato > Selezionare "Tutti" o "Gruppi specifici"**
+    1. Accedere all'account Microsoft Store Business
+    1. **Manage > Products and Services > Apps and Software > Selezionare l'app da sincronizzare > Private Store Availability > Select "Everyone" (Tutti) o "Gruppi specifici"**
         >[!NOTE]
-        >Se l'app desiderata non viene visualizzata, sarà necessario eseguire una ricerca nel punto vendita per l'app. **Fare clic sulla barra di ricerca nell'angolo in alto a destra > digitare il nome dell'app > fare clic sull'app > selezionare Ottieni**.
-    1. Se le proprie app non sono visibili in **Intune > App client > App**, potrebbe essere necessario [sincronizzare le app](https://docs.microsoft.com/intune/apps/windows-store-for-business#synchronize-apps) di nuovo.
+        >Se l'app desiderata non è visualizzata, sarà necessario "ottenere" l'app cercando l'app nell'archivio. Fare clic sulla barra "Cerca" nell'angolo superiore destro > digitare il nome dell'app > fare clic **sull'app > selezionare "Ottieni".**
+    1. Se le app in **Intune** non vengono > app client >, potrebbe essere necessario [sincronizzare di nuovo le](/intune/apps/windows-store-for-business#synchronize-apps) app.
 
-1. [Creare un profilo del dispositivo per la modalità tutto schermo](https://docs.microsoft.com/intune/configuration/kiosk-settings#create-the-profile)
+1. [Creare un profilo di dispositivo per la modalità tutto schermo](/intune/configuration/kiosk-settings#create-the-profile)
 
 > [!NOTE]
-> È possibile configurare utenti diversi per esperienze in modalità tutto schermo diverse usando "Azure AD" come "Tipo di accesso utente". Tuttavia, questa opzione è disponibile solo in modalità Più app in modalità tutto schermo. La modalità Più app in modalità tutto schermo funziona sia con una sola app, sia con più app.
+> È possibile configurare utenti diversi in modo da avere esperienze diverse in modalità tutto schermo usando "Azure AD" come "Tipo di accesso utente". Questa opzione è tuttavia disponibile solo in modalità tutto schermo multi-app. La modalità tutto schermo multi-app funzionerà con una sola app e con più app.
 
 ![Immagine che mostra la configurazione della modalità tutto schermo in Intune](images/aad-kioskmode.png)
 
-Per altri servizi MDM, vedere le istruzioni nella documentazione del provider. Consultare le istruzioni del [chiosco multimediale HoloLens](hololens-kiosk.md#use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk) se è necessario usare un'impostazione personalizzata e una configurazione XML completa per configurare un chiosco multimediale nel servizio MDM.
+Per altri servizi MDM, consultare la documentazione del provider per istruzioni. Fare riferimento alle istruzioni [HoloLens chiosco](hololens-kiosk.md#use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk) multimediale se è necessario usare un'impostazione personalizzata e una configurazione XML completa per configurare un chiosco multimediale nel servizio MDM.
 
-## Certificati e autenticazione
+## <a name="certificates-and-authentication"></a>Certificati e autenticazione
 
-I certificati possono essere distribuiti tramite MDM (vedere "certificati" nella [sezione MDM](hololens-commercial-infrastructure.md#mobile-device-manager-guidance)). È anche possibile distribuire certificati al dispositivo HoloLens mediante il provisioning di pacchetti. Per altre informazioni, vedere [Provisioning di HoloLens](hololens-provisioning.md).
+I certificati possono essere distribuiti tramite MDM (vedere "certificati" nella [sezione MDM](hololens-commercial-infrastructure.md#mobile-device-manager-guidance)). I certificati possono anche essere distribuiti nell'HoloLens tramite il provisioning dei pacchetti. Per altre [informazioni, HoloLens provisioning.](hololens-provisioning.md)
 
-### Altri collegamenti rapidi di Intune
+### <a name="additional-intune-quick-links"></a>Collegamenti rapidi di Intune aggiuntivi
 
-1. [Creare profili:](https://docs.microsoft.com/intune/configuration/device-profile-create) i profili consentono di aggiungere e configurare impostazioni che verranno inviate ai dispositivi dell'organizzazione.
+1. [Creare profili:](/intune/configuration/device-profile-create) I profili consentono di aggiungere e configurare le impostazioni di cui verrà inserito il push nei dispositivi dell'organizzazione.
 

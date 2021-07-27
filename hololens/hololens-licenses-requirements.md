@@ -13,12 +13,12 @@ ms.reviewer: ''
 manager: bradke
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 6284a8e3ce3ea77aaf98dcf8238df3920719dded
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: 6224cd5e07794d9fca3c0a406e787d1a3fd88b43
+ms.sourcegitcommit: bd55edcc855e20d6709c7e535573f43785155d41
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659557"
+ms.locfileid: "114661713"
 ---
 # <a name="license-requirements"></a>Requisiti relativi alle licenze
 
@@ -27,8 +27,8 @@ Questa pagina offre una panoramica generale delle licenze e degli account necess
 
 ## <a name="hololens-2-license-and-account-requirements"></a>HoloLens 2 requisiti di licenza e account
 
-
-|                   | Gestione HoloLens | Non HoloLens |
+ 
+|       &nbsp;      | Gestione HoloLens | Non HoloLens |
 |-------------------|-----------------|---------------------|
 | **Caso d'uso aziendale** | | |
 | [Distribuire nei dispositivi connessi al cloud: modello di verifica/distribuzione pilota](hololens-requirements.md#scenario-a-deploy-to-cloud-connected-devices)  | ✔️| |
@@ -44,7 +44,7 @@ Questa pagina offre una panoramica generale delle licenze e degli account necess
 | [Account locale](/windows/security/identity-protection/access-control/local-accounts)<sup>3</sup> | | ✔️ |
 - <sup>1</sup> [Registrazione automatica durante](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) la configurazione iniziale del dispositivo, che registra e Azure Active Directory e consente la gestione del dispositivo con Intune.
 - <sup>2</sup> [Windows Autopilot per HoloLens 2](hololens2-autopilot.md) semplifica l'esperienza di provisioning sia per gli amministratori IT che per gli utenti finali. Gli amministratori IT possono preconfigurare i HoloLens 2 e al primo avvio i dispositivi verranno distribuiti in stato business-ready senza interazione dell'utente finale.
-- <sup>3</sup> Il provisioning di [questo](hololens-provisioning.md#provisioning-package-hololens-wizard) account deve essere eseguito in anticipo con Windows configuration designer (WCD).
+- <sup>3</sup> Il provisioning di [questo](hololens-provisioning.md#provisioning-package-hololens-wizard) account deve essere eseguito in anticipo Windows Configuration Designer (WCD).
 
 > [!IMPORTANT]
 > Active Directory (AD) non può essere usato per gestire HoloLens dispositivi.
@@ -59,7 +59,7 @@ Questa pagina offre una panoramica generale delle licenze e degli account necess
 #### <a name="admin"></a>Amministrativi
 
 - Azure AD account (obbligatorio per l'acquisto della sottoscrizione e l'assegnazione delle licenze)
-- [Remote Assist sottoscrizione](/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) (o versione [Remote Assist valutazione)](/dynamics365/mixed-reality/remote-assist/try-remote-assist)
+- [Remote Assist sottoscrizione](/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) (o versione [di Remote Assist)](/dynamics365/mixed-reality/remote-assist/try-remote-assist)
     
 #### <a name="dynamics-365-remote-assist-user"></a>Dynamics 365 Remote Assist utente
 

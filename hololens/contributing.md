@@ -6,14 +6,14 @@ ms.author: mattwoj
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: hololens
-ms.openlocfilehash: 73b6e8bcd634cb4d45171bda0a85f2e991a977c9
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: b1efaa77a4b96ed4b55e84147448cbfbc706d677
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635671"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659115"
 ---
-# <a name="contributing-to-the-hololens-documentation"></a>Contribuire alla documentazione HoloLens di lavoro
+# <a name="contributing-to-the-hololens-documentation"></a>Contribuire alla documentazione HoloLens
 
 Benvenuti nella documentazione [HoloLens!](https://github.com/MicrosoftDocs/Hololens) Tutti gli articoli creati o modificati in questo repo **saranno visibili al pubblico.** 
 
@@ -53,24 +53,29 @@ Usare il flusso di lavoro seguente per apportare aggiornamenti *a un* articolo e
 
 1. Passare all'articolo che si vuole modificare nella cartella "mixed-reality-docs".
 
-2. Selezionare il pulsante di modifica (icona a forma di matita) in alto a destra, che crea automaticamente un ramo usa e getta dal ramo "master".
+2. Selezionare il pulsante Di modifica (icona a forma di matita) in alto a destra.
 
    ![Modificare un articolo.](images/editpage.png)
+
+   Verrà automaticamente creato il fork di un ramo usabile dal ramo predefinito, _master_.
+
+   > [!NOTE]
+   > Questo articolo contiene riferimenti a _master,_ un termine che Microsoft non usa più. Quando il termine verrà rimosso dal software, verrà rimosso anche dall'articolo.
    
-3. Modificare il contenuto dell'articolo in base [alle "nozioni di base di Markdown".](#markdown-basics)
+3. Modificare il contenuto dell'articolo in base alle [nozioni di base di Markdown.](#markdown-basics)
 
 4. Aggiornare i metadati nella parte superiore di ogni articolo:
 
    * **title**: titolo della pagina visualizzato nella scheda del browser quando viene visualizzato l'articolo. I titoli di pagina vengono usati per seo e indicizzazione, quindi non modificare il titolo a meno che non sia necessario (anche se questo è meno critico prima che la documentazione sia pubblica).
    * **description**: scrivere una breve descrizione del contenuto dell'articolo, che migliora seo e individuazione.
-   * **author:** se si è il proprietario primario della pagina, aggiungere l'alias GitHub qui.
+   * **author:** se si è il proprietario principale della pagina, aggiungere l'alias GitHub qui.
    * **ms.author:** se si è il proprietario principale della pagina, aggiungere l'alias Microsoft qui (non è necessario , ma @microsoft.com solo l'alias).
    * **ms.date:** aggiornare la data se si aggiunge contenuto principale alla pagina, ma non per correzioni come chiarimenti, formattazione, grammatica o ortografia.
    * **keywords:** le parole chiave sono di aiuto in SEO (ottimizzazione del motore di ricerca). Aggiungere parole chiave, separate da una virgola e uno spazio, specifiche per l'articolo, ma senza punteggiatura dopo l'ultima parola chiave nell'elenco. Non è necessario aggiungere parole chiave globali che si applicano a tutti gli articoli, perché vengono gestite altrove. 
    
 5. Dopo aver completato le modifiche all'articolo, scorrere verso il basso e selezionare **Proponi modifica file**.
 
-6. Nella pagina successiva selezionare Crea **richiesta pull per** unire il ramo creato automaticamente in "master".
+6. Nella pagina successiva selezionare Crea richiesta **pull per** unire il ramo creato automaticamente nel ramo _predefinito, master_.
 
 7. Ripetere i passaggi precedenti per l'articolo successivo da modificare.
 
@@ -94,7 +99,7 @@ Per aggiungere un reindirizzamento .openpublishing.redirection.js, aggiungere un
 
 - è `redirect_url` l'URL pubblico relativo dall'articolo precedente al nuovo articolo. Assicurarsi che questo URL non contenga o , perché fa riferimento **all'URL** pubblico `mixed-reality-docs` e non al percorso del `.md` repository. È consentito il collegamento a una sezione all'interno del nuovo articolo `#section` tramite . Se necessario, è anche possibile usare un percorso assoluto per un altro sito.
 
-- `redirect_document_id` indica se si vuole mantenere l'ID documento dal file precedente. Il valore predefinito è `false`. Usare `true` se si vuole mantenere il valore `ms.documentid` dell'attributo dall'articolo reindirizzato. Se si mantiene l'ID documento, i dati, ad esempio le visualizzazioni di pagina e le classificazioni, verranno trasferiti all'articolo di destinazione. Eseguire questa operazione se il reindirizzamento è principalmente una ridenominazione e non un puntatore a un articolo diverso che copre solo parte dello stesso contenuto.
+- `redirect_document_id` indica se si vuole mantenere l'ID documento dal file precedente. Il valore predefinito è `false`. Usare `true` se si vuole mantenere il valore `ms.documentid` dell'attributo dall'articolo reindirizzato. Se si mantiene l'ID documento, i dati, ad esempio le visualizzazioni pagina e le classificazioni, verranno trasferiti all'articolo di destinazione. Eseguire questa operazione se il reindirizzamento è principalmente una ridenominazione e non un puntatore a un articolo diverso che copre solo parte dello stesso contenuto.
 
 Se si aggiunge un reindirizzamento, assicurarsi di eliminare anche il file precedente.
 
@@ -102,9 +107,12 @@ Se si aggiunge un reindirizzamento, assicurarsi di eliminare anche il file prece
 
 Usare il flusso di lavoro seguente *per creare nuovi* articoli nel repo della documentazione tramite GitHub in un Web browser:
 
-1. Creare un fork dal ramo "master" di MicrosoftDocs/mixed-reality (usando il **pulsante Fork** in alto a destra).
+1. Creare un fork dal ramo _predefinito, master_, di MicrosoftDocs/mixed-reality usando il **pulsante Fork** in alto a destra.
 
-   ![Creare il fork del ramo master.](images/forkbranch.png)
+   ![Creare il fork del ramo predefinito, attualmente denominato "master".](images/forkbranch.png)
+
+   > [!NOTE]
+   > Questo articolo contiene riferimenti a _master,_ un termine che Microsoft non usa più. Quando il termine verrà rimosso dal software, verrà rimosso anche dall'articolo.
    
 2. Nella cartella "mixed-reality-docs" selezionare **Crea nuovo file** in alto a destra.
 
@@ -129,15 +137,15 @@ Usare il flusso di lavoro seguente *per creare nuovi* articoli nel repo della do
    ---
    ```
 
-5. Compilare i campi dei metadati pertinenti in base alle istruzioni riportate nella [sezione precedente.](#editing-an-existing-article)
+5. Compilare i campi dei metadati pertinenti come descritto in precedenza in [Modifica di un articolo esistente.](#editing-an-existing-article)
 
-6. Scrivere il contenuto dell'articolo [usando le nozioni di base di Markdown.](#markdown-basics)
+6. Scrivere il contenuto dell'articolo usando [le nozioni di base di Markdown.](#markdown-basics)
 
 7. Aggiungere una `## See also` sezione nella parte inferiore dell'articolo con collegamenti ad altri articoli pertinenti.
 
 8. Al termine, selezionare **Commit new file (Esegui commit nuovo file).**
 
-9. Selezionare **Nuova richiesta pull** ed eseguire il merge del ramo "master" del fork in MicrosoftDocs/mixed-reality 'master' (assicurarsi che la freccia sia rivolta nel modo corretto).
+9. Selezionare **Nuova richiesta pull** ed eseguire il merge del ramo _master_ del fork in MicrosoftDocs/mixed-reality _master_ (assicurarsi che la freccia punti alla destinazione corretta).
 
    ![Creare una richiesta pull dal fork in MicrosoftDocs/mixed-reality](images/pr-to-master.png)
 
@@ -150,7 +158,7 @@ Le risorse seguenti consentono di imparare a modificare la documentazione usando
 
 ### <a name="adding-tables"></a>Aggiunta di tabelle
 
-A causa del modo in cui docs.microsoft.com stili, non hanno bordi o stili personalizzati, anche se si prova css inline. Sembra funzionare per un breve periodo di tempo, ma alla fine la piattaforma rimuoverà lo stile dalla tabella. Pianificare in anticipo e mantenere le tabelle semplici. [Ecco un sito che semplifica le tabelle Markdown.](https://www.tablesgenerator.com/markdown_tables)
+A causa del modo in cui docs.microsoft.com stili, non hanno bordi o stili personalizzati, anche se si prova css inline. Sembra funzionare per un breve periodo di tempo, ma alla fine la piattaforma rimuoverà lo stile dalla tabella. Pianificare in anticipo e mantenere le tabelle semplici. Ecco un sito che semplifica le tabelle Markdown: [Generatore tabelle]]( https://www.tablesgenerator.com/markdown_tables) .
 
 [L'estensione Docs Markdown per Visual Studio Code](/teamblog/docs-extension) semplifica anche la generazione di tabelle se si usa Visual Studio Code (vedere di [seguito)](#using-visual-studio-code) per modificare la documentazione.
 
@@ -159,23 +167,23 @@ A causa del modo in cui docs.microsoft.com stili, non hanno bordi o stili person
 È necessario caricare le immagini nella cartella "mixed-reality-docs/images" nel repo e quindi fare riferimento alle immagini in modo appropriato nell'articolo. Le immagini verranno visualizzate automaticamente a dimensioni complete, ovvero le immagini di grandi dimensioni riempiranno l'intera larghezza dell'articolo. È consigliabile pre-ridimensionare le immagini prima di caricarle. La larghezza consigliata è compresa tra 600 e 700 pixel, anche se è consigliabile ridimensionare rispettivamente se si tratta di uno screenshot denso o di una frazione di uno screenshot.
 
 >[!IMPORTANT]
->È possibile caricare immagini solo nel proprio repo con fork prima dell'unione. Pertanto, se si prevede di aggiungere immagini a un articolo, è necessario usare [Visual Studio Code](#using-visual-studio-code) per aggiungere prima le immagini alla cartella "images" del fork o assicurarsi di aver eseguito le operazioni seguenti in un Web browser:
+>È possibile caricare le immagini solo nel repo con fork prima dell'unione. Pertanto, se si prevede di aggiungere immagini a un articolo, è necessario usare [Visual Studio Code](#using-visual-studio-code) per aggiungere prima le immagini alla cartella "images" del fork o assicurarsi di aver eseguito le operazioni seguenti in un Web browser:
 >
->1. Fork del repo MicrosoftDocs/realtà mista.
+>1. Forked del repo MicrosoftDocs/mixed-reality.
 >2. L'articolo è stato modificato nel fork.
 >3. Le immagini a cui si fa riferimento nell'articolo sono caricate nella cartella "mixed-reality-docs/images" nel fork.
->4. È stata **creata una richiesta pull** per unire il fork nel ramo 'master' MicrosoftDocs/realtà mista.
+>4. È stata **creata una richiesta pull** per unire il fork nel ramo master MicrosoftDocs/mixed-reality. 
 >
->Per informazioni su come configurare il proprio repo con fork, seguire le istruzioni per la [creazione di un nuovo articolo.](#creating-a-new-article)
+>Per informazioni su come configurare il proprio repo con fork, seguire le istruzioni per [la creazione di un nuovo articolo.](#creating-a-new-article)
 
 ## <a name="previewing-your-work"></a>Anteprima del lavoro
 
 Durante la modifica in GitHub tramite un Web  browser, è possibile selezionare la scheda Anteprima nella parte superiore della pagina per visualizzare in anteprima il lavoro prima di eseguire il commit. 
 
 >[!NOTE]
->La visualizzazione in anteprima delle modifiche review.docs.microsoft.com è disponibile solo per i dipendenti Microsoft
+>L'anteprima delle modifiche review.docs.microsoft.com è disponibile solo per i dipendenti Microsoft
 
-Dipendenti Microsoft: dopo aver unito i contributi nel ramo "master", è possibile esaminare il contenuto prima che venga pubblicato all'indirizzo </hololens?branch=master>. Trovare l'articolo usando il sommario nella colonna sinistra.
+Dipendenti Microsoft: quando i contributi sono stati uniti nel ramo predefinito _master,_ è possibile esaminare il contenuto prima che sia pubblico all'indirizzo </hololens?branch=master>. Trovare l'articolo usando il sommario nella colonna di sinistra.
 
 ## <a name="editing-in-the-browser-vs-editing-with-a-desktop-client"></a>Modifica nel browser e modifica con un client desktop
 
@@ -185,7 +193,7 @@ La modifica nel browser è il modo più semplice per apportare modifiche rapide,
 - Non si ottiene alcun collegamento intelligente ad altri articoli (è necessario digitare manualmente il nome file dell'articolo).
 - Può essere un'insidola per caricare e fare riferimento alle immagini.
 
-Se si preferisce non gestire questi problemi, usare un client desktop come [Visual Studio Code](https://code.visualstudio.com/) con un paio [di estensioni utili](#useful-extensions) per contribuire.
+Se si preferisce non gestire questi problemi, usare un client desktop come [Visual Studio Code](https://code.visualstudio.com/) con un paio di estensioni [utili](#useful-extensions) quando si contribuisce.
 
 ## <a name="using-visual-studio-code"></a>Uso di Visual Studio Code
 
@@ -193,64 +201,64 @@ Per i motivi [elencati in](#editing-in-the-browser-vs-editing-with-a-desktop-cli
 
 ### <a name="setup"></a>Configurazione
 
-Seguire questa procedura per configurare Visual Studio Code per l'utilizzo con questo repo:
+Seguire questa procedura per configurare Visual Studio Code usare questo repo:
 
 1. In un Web browser:
     1. Installare [Git per il PC.](https://git-scm.com/downloads)
     2. Installare [Visual Studio Code](https://code.visualstudio.com/).
-    3. [Creare una fork di MicrosoftDocs/realtà mista,](#creating-a-new-article) se non è già stato fatto.
-    4. Nel fork selezionare **Clona o scarica e** copiare l'URL.
+    3. [Creare il fork di MicrosoftDocs/mixed-reality,](#creating-a-new-article) se non è già stato fatto.
+    4. Nel fork selezionare **Clona o scarica e** copia l'URL.
 2. Creare un clone locale del fork in Visual Studio Code:
-    1. Scegliere **Riquadro comandi** dal menu **Visualizza.**
+    1. Scegliere **Riquadro comandi** dal menu **Visualizza**.
     2. Digitare "Git: Clone".
     3. Incollare l'URL copiato.
     4. Scegliere dove salvare il clone nel PC.
-    5. Selezionare Open repo (Apri il **repo)** nella finestra popup.
+    5. Selezionare **Apri il repo** nel popup.
 
-### <a name="editing-documentation"></a>Modifica della documentazione
+### <a name="editing-documentation"></a>Documentazione di modifica
 
 Usare il flusso di lavoro seguente per apportare modifiche alla documentazione con Visual Studio Code:
 
 >[!NOTE]
->Tutte le linee [](#creating-a-new-article) guida per [la modifica](#editing-an-existing-article) e la creazione di articoli e le nozioni di base per la modifica di [Markdown](#markdown-basics)da sopra si applicano anche quando si Visual Studio Code.
+>Tutte le linee [](#creating-a-new-article) guida per [la modifica](#editing-an-existing-article) e la creazione di articoli e le nozioni di base sulla modifica di [Markdown](#markdown-basics)da sopra si applicano anche quando si Visual Studio Code.
 
 1. Assicurarsi che il fork clonato sia aggiornato con il repo ufficiale.
 
-   1. In un Web browser creare una richiesta pull per sincronizzare le modifiche recenti di altri collaboratori in MicrosoftDocs/master di realtà mista nel fork(assicurarsi che la freccia sia rivolta verso destra).
+   1. In un Web browser creare una richiesta pull per sincronizzare le modifiche recenti di altri collaboratori nel ramo predefinito di MicrosoftDocs/mixed-reality, _master_, al fork (assicurarsi che la freccia punti alla destinazione corretta).
       
-      ![Sincronizzare le modifiche da MicrosoftDocs/realtà mista al fork](images/sync-repos.png)
+      ![Sincronizzare le modifiche da MicrosoftDocs/mixed-reality al fork](images/sync-repos.png)
       
-   2. Nella Visual Studio Code selezionare il pulsante sync (Sincronizza) per sincronizzare il fork appena aggiornato con il clone locale.
+   2. In Visual Studio Code selezionare il pulsante di sincronizzazione per sincronizzare il fork appena aggiornato con il clone locale.
       
       ![Fare clic sull'immagine del pulsante di sincronizzazione](images/sync-clone.png)
       
-2. Creare o modificare articoli nel proprio repo clonato usando Visual Studio Code.
+2. Creare o modificare articoli nel repo clonato usando Visual Studio Code.
 
    1. Modificare uno o più articoli (aggiungere immagini alla cartella "images", se necessario).
    
-   2. **Salvare** le modifiche in **Esplora**.
+   2. **Salvare** le modifiche in **Esplora risorse**.
       
       ![Scegliere "Salva tutto" in Esplora risorse](images/explorer-save.png)
       
-   3. **Eseguire il commit** di tutte **le modifiche nel controllo del** codice sorgente (scrivere un messaggio di commit quando richiesto).
+   3. **Eseguire il commit** di tutte le modifiche nel controllo del codice **sorgente** (scrivere un messaggio di commit quando richiesto).
    
-      ![Scegliere "Esegui commit di tutto" nel controllo del codice sorgente](images/source-control-commit.png)
+      ![Scegliere "Commit all" nel controllo del codice sorgente](images/source-control-commit.png)
       
-   4. Selezionare il **pulsante sincronizza** per sincronizzare le modifiche nell'origine (il fork in GitHub).
+   4. Selezionare il **pulsante sincronizza** per sincronizzare le modifiche all'origine (fork GitHub).
       
-      ![Fare clic sul pulsante sincronizza](images/sync-back.png)
+      ![Fare clic sul pulsante di sincronizzazione](images/sync-back.png)
       
-3. In un Web browser creare una richiesta pull per sincronizzare le nuove modifiche nel fork con MicrosoftDocs/mixed-reality 'master' (assicurarsi che la freccia sia rivolta nel modo corretto).
+3. In un Web browser creare una richiesta pull per sincronizzare le nuove modifiche nel fork con MicrosoftDocs/mixed-reality _master_ (assicurarsi che la freccia punti alla destinazione corretta).
 
-   ![Creare una richiesta pull dal fork in MicrosoftDocs/realtà mista](images/pr-to-master.png)
+   ![Creare una richiesta pull dal fork in MicrosoftDocs/mixed-reality](images/pr-to-master.png)
 
 ### <a name="useful-extensions"></a>Estensioni utili
 
 Le estensioni Visual Studio Code seguenti sono utili quando si modifica la documentazione:
 
-- [Estensione Docs Markdown per Visual Studio Code:](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) usare **ALT+M** per visualizzare un menu di opzioni di creazione di documenti, ad esempio:
+- [Estensione Docs Markdown per Visual Studio Code-](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) Usare **ALT+M** per visualizzare un menu di opzioni di creazione della documentazione, ad esempio:
    - Cercare e fare riferimento alle immagini caricate.
    - Aggiungere formattazione come elenchi, tabelle e call-out specifici della documentazione, ad esempio `>[!NOTE]` .
    - Cercare e fare riferimento a collegamenti e segnalibri interni (collegamenti a sezioni specifiche all'interno di una pagina).
-   - Gli errori di formattazione sono evidenziati (passare il puntatore del mouse sull'errore per altre informazioni).
-- [Controllo ortografico del codice:](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) le parole con errori di ortografia verranno sottolineate; Fare clic con il pulsante destro del mouse su una parola con errori di ortografia per modificarla o salvarla nel dizionario.
+   - Gli errori di formattazione sono evidenziati (passare il mouse sull'errore per altre informazioni).
+- [Controllo ortografico del codice:](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) le parole con errori di ortografia verranno sottolineate. Fare clic con il pulsante destro del mouse su una parola con errori di ortografia per modificarla o salvarla nel dizionario.

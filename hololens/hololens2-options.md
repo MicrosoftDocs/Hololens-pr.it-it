@@ -14,12 +14,12 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 32153fd6f7703347f4fe2f9ad41043fbeb9fab3f
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 2da84a11a8f9613999e2b376fefeb6cb2b83cd00
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640475"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659030"
 ---
 # <a name="compare-hololens-2-options"></a>Confrontare HoloLens 2 opzioni
 
@@ -47,17 +47,6 @@ Sia che si sia un professionista [IT](https://www.microsoft.com/hololens/apps) a
 - <sup>2</sup> - Ricevere un dispositivo sostitutivo durante la notte o la spedizione accelerata (più velocemente delle opzioni disponibili) prima che il dispositivo difettoso venga ricevuto da Microsoft.
 - <sup>3</sup> - Per domande su garanzia, supporto e certificazione per Trimble XR10 con HoloLens 2 edition, contattare [Trimble](https://fieldtech.trimble.com/en/contact-support).
 
-## <a name="countries-where-hololens-2-is-available"></a>Paesi in cui HoloLens 2 disponibili
-
-<br>
-
-| HoloLens 2 Edizione                  | Mercati supportati               |
-|-------------------------------------------| ----------------------------------------| 
-| HoloLens 2 | Stati Uniti, Canada, Germania, Francia, Regno Unito, Irlanda, Cina, Giappone, Australia, Italia, Nuova Zelanda, Paesi Bassi, Svizzera, Spagna, Australia, Svezia, Germania, Danimarca, Belgio, Portogallo, Singapore, Hong Kong, Taiwan e Corea del Sud |
-| HoloLens 2 con Remote Assist | Australia, Giappone, Canada, Stati Uniti, Germania, Belgio, Danimarca, Germania, Francia, Germania, Italia, Paesi Bassi, Norvegia, Spagna, Svezia, Svizzera, Regno Unito e Irlanda <sup>1</sup> 
-| HoloLens 2 Industrial Edition *(al lancio)* | Stati Uniti, Canada, Germania, Francia, Regno Unito, Irlanda, Cina, Giappone, Australia, Italia, Nuova Zelanda, Paesi Bassi, Svizzera, Spagna, Australia, Svezia, Germania, Danimarca, Belgio, Portogallo, Singapore, Hong Kong, Taiwan e Corea del Sud |
-| HoloLens 2 Edizione di sviluppo | Canada, Germania, Francia, Regno Unito, Irlanda, Giappone, Australia, Italia, Svizzera e Nuova Zelanda |
-- <sup>1</sup> Questo elenco è dinamico, verificare la disponibilità di aggiornamenti
 
 ## <a name="options-overview"></a>Panoramica delle opzioni
 
@@ -87,12 +76,12 @@ Esplorare queste soluzioni aggiuntive create per HoloLens di realtà mista.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Per gli utenti finali del dispositivo, [vedere Get your HoloLens 2 ready to use to](hololens2-setup.md) get started (Ottenere il HoloLens 2 per iniziare a usare).
+Per gli utenti finali del dispositivo, [vedere Get your HoloLens 2 ready to use to](hololens2-setup.md) get started (Ottenere il HoloLens 2 per iniziare).
 
 > [!div class="nextstepaction"]
-> [Prepararsi per HoloLens 2'uso](hololens2-setup.md)
+> [Prepara il HoloLens 2'uso](hololens2-setup.md)
 
-Per gli amministratori IT, la distribuzione dei dispositivi nell'organizzazione consente di sbloccare potenti esperienze di realtà mista. Per iniziare, esaminare i requisiti HoloLens 2 distribuzione e gli scenari in una gamma di configurazioni dell'infrastruttura IT.
+Per gli amministratori IT, la distribuzione di dispositivi nell'organizzazione sblocca potenti esperienze di realtà mista. Per iniziare, esaminare i requisiti HoloLens 2 distribuzione e gli scenari in un'ampia gamma di configurazioni dell'infrastruttura IT.
 
 > [!div class="nextstepaction"]
 > [Distribuire HoloLens 2 in un ambiente commerciale](hololens-requirements.md)

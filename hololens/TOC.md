@@ -2,17 +2,16 @@
 
 # Panoramica del dispositivo
 ## [Informazioni HoloLens 2](hololens2-hardware.md)
-## [Che cosa HoloLens 2 fare per te?](hololens-commercial-features.md)
+## [Che cosa HoloLens 2 fare per l'utente?](hololens-commercial-features.md)
 ## Individuare HoloLens 2 edizioni
 ### [Confrontare HoloLens 2 opzioni](hololens2-options.md)
 ### [Edizione solo dispositivo](hololens2-options-device-only.md)
 ### [Remote Assist edizione](hololens2-options-remote-assist.md)
 ### [Edizione industriale](hololens2-options-industrial-edition.md)
-#### [HoloLens 2 Domande frequenti per l'edizione industriale](hololens2-industrial-edition-faq.md)
+#### [HoloLens 2 Domande frequenti su Industrial Edition](hololens2-industrial-edition-faq.md)
 ### [Edizione di sviluppo](hololens2-options-dev-edition.md)
 #### [HoloLens 2 Domande frequenti per l'edizione di sviluppo](hololens2-development-edition-faq.yml)
 ### [Trimble XR10 Edition](hololens2-options-trimble-xr10-edition.md)
-### [Funzionalità commerciali](hololens-commercial-features.md)
 
 # Uso del HoloLens
 ## Primo utilizzo
@@ -50,14 +49,14 @@
 #### [Preparare](hololens2-cloud-connected-prepare.md)
 #### [Configurare](hololens2-cloud-connected-configure.md)
 #### [Distribuzione](hololens2-cloud-connected-deploy.md)
-#### [Effettuare la manutenzione](hololens2-cloud-connected-maintain.md)
+#### [Mantenere](hololens2-cloud-connected-maintain.md)
 #### [Guida alla distribuzione dell'ambiente connesso al cloud (client esterni)](hololens2-deployment-guide.md)
 ### Guida alla distribuzione della rete aziendale
 #### [Panoramica](hololens2-corp-connected-overview.md)
 #### [Preparare](hololens2-corp-connected-prepare.md)
 #### [Configurare](hololens2-corp-connected-configure.md)
 #### [Distribuzione](hololens2-corp-connected-deploy.md)
-#### [Effettuare la manutenzione](hololens2-corp-connected-maintain.md)
+#### [Mantenere](hololens2-corp-connected-maintain.md)
 ### [Guida alla distribuzione dell'ambiente protetto offline](hololens-common-scenarios-offline-secure.md)
 ### [Requisiti relativi alle licenze](hololens-licenses-requirements.md)
 ## Identità
@@ -110,6 +109,7 @@
 ## [Reimposta HoloLens 2](hololens-recovery.md)
 
 # Risorse
+## [Dove acquistare HoloLens 2](hololens2-purchase.md)
 ## [Opzioni di supporto tecnico e assistenza](hololens2-support.md)
 ## [Richieste di supporto di Autopilot](hololens2-autopilot-registration-support.md)
 ## [HoloLens 2 sulla versione](hololens-release-notes.md)
@@ -119,15 +119,15 @@
 ## HoloLens (prima generazione)
 ### Primo utilizzo
 #### [Informazioni HoloLens (prima generazione)](hololens1-hardware.md)
-#### [HoloLens (prima generazione) adatta e comfort](hololens1-fit-comfort-faq.md)
+#### [HoloLens (prima generazione) idonea e comfort](hololens1-fit-comfort-faq.md)
 #### [Panoramica dell'utilizzo di base](hololens1-setup.md)
-#### [Configurare la HoloLens (prima generazione)](hololens1-start.md)
+#### [Configurare l'HoloLens (prima generazione)](hololens1-start.md)
 ### Utilizzo giornaliero
 #### [Usare il HoloLens clicker di prima generazione](hololens1-clicker.md)
 #### [Usare Visualizzatore 3D in HoloLens (prima generazione)](holographic-3d-viewer-beta.md)
 #### [Come spostarsi HoloLens (prima generazione)](hololens1-basic-usage.md)
 #### [Gestire app personalizzate per HoloLens](holographic-custom-apps.md)
-#### [Installare la versione localizzata di HoloLens (prima generazione)](hololens1-install-localized.md)
+#### [Installare la versione localizzata HoloLens (prima generazione)](hololens1-install-localized.md)
 #### [Sbloccare Windows Holographic for Business funzionalità](hololens1-upgrade-enterprise.md)
 #### [Reset HoloLens (prima generazione)](hololens1-recovery.md)
 ### HoloLens (prima generazione)

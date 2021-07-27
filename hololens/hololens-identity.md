@@ -18,19 +18,19 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 4d959d99b65085aea2a776725abdb36e27b43b81
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 1081ed512183592e66e65f2e69323752b822f1c1
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640390"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659183"
 ---
 # <a name="manage-user-identity-and-sign-in-for-hololens"></a>Gestire l'identità utente e l'accesso per HoloLens
 
 > [!NOTE]
 > Questo articolo è un riferimento tecnico per professionisti IT e appassionati di tecnologia. Se si stanno cercando istruzioni HoloLens configurazione, vedere " Configurazione del HoloLens[(prima generazione)](hololens1-start.md)" o " Configurazione del[HoloLens 2](hololens2-start.md)".
 
-Come altri Windows, HoloLens funziona sempre in un contesto utente. Esiste sempre un'identità utente. HoloLens tratta l'identità in modo quasi identico a quello degli altri Windows 10 dispositivi. Questo articolo è una guida di riferimento approfondito per l'identità HoloLens ed è in HoloLens differenze rispetto ad altri Windows 10 dispositivi.
+Come altri Windows, HoloLens funziona sempre in un contesto utente. Esiste sempre un'identità utente. HoloLens tratta l'identità in modo quasi analogo ad altri Windows 10 dispositivi. Questo articolo è una guida di riferimento approfondito per l'identità HoloLens ed è in HoloLens differenze rispetto ad altri Windows 10 dispositivi.
 
 HoloLens supporta diversi tipi di identità utente. È possibile usare uno o più account utente per accedere. Ecco una panoramica dei tipi di identità e delle opzioni di autenticazione HoloLens:
 
@@ -45,7 +45,7 @@ Gli account connessi al cloud (Azure AD e MSA) offrono più funzionalità perch�
 > 1: Azure AD Premium necessario per accedere al dispositivo. Tuttavia, è necessario per altre funzionalità di una distribuzione basata sul cloud a basso tocco, ad esempio la registrazione automatica e Autopilot.
 
 > [!NOTE]
-> 2- Mentre un dispositivo HoloLens 2 può supportare fino a 64 account Azure AD, solo 10 di questi account possono registrarsi nell'autenticazione Iris. Questo è allineato con altre opzioni [di autenticazione biometrica per Windows Hello per le aziende.](/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer)
+> 2- Mentre un dispositivo HoloLens 2 può supportare fino a 64 account Azure AD, solo 31 di questi account possono registrarsi nell'autenticazione Iris. Questo è allineato con altre opzioni [di autenticazione biometrica per Windows Hello per le aziende.](/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer)
 
 ## <a name="setting-up-users"></a>Configurazione degli utenti
 
@@ -69,7 +69,7 @@ HoloLens supporta più utenti dello stesso tenant Azure AD tenant. Per usare que
 
 Tutti gli utenti possono usare le app installate nel dispositivo. Tuttavia, ogni utente ha i propri dati e preferenze dell'app. La rimozione di un'app dal dispositivo la rimuove per tutti gli utenti.  
 
-I dispositivi impostati con Azure AD non consentiranno l'accesso al dispositivo con un account Microsoft. Tutti gli account successivi usati Azure AD dallo stesso tenant del dispositivo. È comunque possibile [accedere con un account Microsoft](hololens-identity.md#setting-up-multi-user-support-azure-ad-only) alle app che lo supportano, ad esempio Microsoft Store. Per passare dall'uso Azure AD account microsoft agli account Microsoft per l'accesso al dispositivo, è necessario [eseguire il reflash del dispositivo.](hololens-recovery.md#clean-reflash-the-device)
+I dispositivi impostati con Azure AD non consentiranno l'accesso al dispositivo con un account Microsoft. Tutti gli account successivi usati devono Azure AD dallo stesso tenant del dispositivo. È comunque possibile [accedere con un account Microsoft](hololens-identity.md#setting-up-multi-user-support-azure-ad-only) alle app che lo supportano, ad esempio il Microsoft Store. Per passare dall'uso Azure AD account microsoft agli account Microsoft per l'accesso al dispositivo, è necessario [eseguire il reflash del dispositivo.](hololens-recovery.md#clean-reflash-the-device)
 
 > [!NOTE]
 > **HoloLens (prima generazione)** ha iniziato a supportare più Azure AD utenti nell'aggiornamento di [Windows 10 aprile 2018](/windows/mixed-reality/release-notes-april-2018) come parte di [Windows Holographic for Business](hololens-upgrade-enterprise.md).
@@ -106,7 +106,7 @@ Se l'app usa altri tipi di autenticazione, ad esempio NTLM, Basic o Kerberos, è
 
 ## <a name="deprecated-apis"></a>API deprecate
 
-Un modo in cui lo sviluppo per HoloLens differisce dallo sviluppo per Desktop è che l'API [OnlineIDAuthenticator](/uwp/api/Windows.Security.Authentication.OnlineId.OnlineIdAuthenticator) non è completamente supportata. Anche se l'API restituisce un token se l'account primario è valido, interruzioni come quelle descritte in questo articolo non visualizzano alcuna interfaccia utente per l'utente e non riescono a autenticare correttamente l'account.
+Uno dei modi in cui lo sviluppo per HoloLens differisce dallo sviluppo per Desktop è che l'API [OnlineIDAuthenticator](/uwp/api/Windows.Security.Authentication.OnlineId.OnlineIdAuthenticator) non è completamente supportata. Anche se l'API restituisce un token se l'account primario è valido, interruzioni come quelle descritte in questo articolo non visualizzano alcuna interfaccia utente per l'utente e non riescono a autenticare correttamente l'account.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 

@@ -11,12 +11,12 @@ metadata:
   ms.author: v-jjaswinski
   ms.date: 05/24/2021
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: a37ddd0867a0ea3dfa6f016e01728f2576663aaf
-  ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+  ms.openlocfilehash: c0189c7a75ad27d6d301721e78de6391f6ac76f7
+  ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 07/12/2021
-  ms.locfileid: "113639421"
+  ms.lasthandoff: 07/24/2021
+  ms.locfileid: "114659574"
 landingContent:
 - title: Informazioni sul HoloLens 2
   linkLists:
@@ -94,6 +94,8 @@ landingContent:
       url: hololens-insider.md
   - linkListType: reference
     links:
+    - text: Dove acquistare HoloLens 2
+      url: hololens2-purchase.md
     - text: Opzioni di supporto tecnico e assistenza
       url: hololens2-support.md
     - text: Commenti e suggerimenti

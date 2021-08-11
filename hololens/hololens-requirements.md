@@ -12,12 +12,12 @@ ms.localizationpriority: medium
 ms.date: 11/04/2020
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 529dde590c30d4a51fa8ae61e9d37d22170dc271
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: 27fd7f81d2868134344c7563ebc0a93133a18c0a217d6eff820b5f322e9271a7
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659064"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115662927"
 ---
 # <a name="common-deployment-scenarios"></a>Scenari di distribuzione comuni
 
@@ -29,7 +29,7 @@ Si vogliono distribuire soluzioni su larga scala. L'utente deve essere in grado 
 
 Si può essere un decision maker aziendale, un professionista IT o un team di innovazione che cerca di adottare HoloLens all'interno dell'organizzazione. Quando si crea un modello di verifica a una distribuzione ridimensionata, le guide alla distribuzione hanno senso HoloLens all'interno dell'infrastruttura IT, indipendentemente dalle dimensioni o dalle dimensioni. Gli scenari di distribuzione seguenti sono i più comuni:
 
-| Scenario |Uso | Punti chiave |
+| Scenario |Utilizzo | Punti chiave |
 |---------|---------|---------|
 | [Scenario A: Dispositivi connessi al cloud](hololens2-cloud-connected-overview.md) | Quando si inizia la distribuzione per la prima volta, è possibile avviare piccole dimensioni e distribuire un singolo dispositivo connesso al cloud solo per visualizzare il processo di base. | I dispositivi verranno connessi ai servizi cloud e a Internet pubblico. Questa soluzione è più adatta per i casi d'uso dei clienti, i servizi sul campo e il modello di verifica.|
 | [Scenario B: Rete dell'organizzazione](hololens2-corp-connected-overview.md) | Quando si esegue la distribuzione nell'ambiente di produzione su larga scala, potrebbe essere necessario eseguire l'integrazione con la rete dell'organizzazione. | I dispositivi verranno connessi a una rete Wi-Fi "Aziendale". Questa opzione è più adatta per gli utenti interni o per l'uso all'interno dell'ambiente aziendale.|
@@ -111,7 +111,7 @@ La guida alla connessione aziendale corrispondente indica come registrare HoloLe
 
 Si tratta di una distribuzione tipica per posizioni altamente sicure o riservate. HoloLens 2 viene distribuito per l'uso principalmente offline senza accesso alla rete o a Internet.
 
-[![Diagramma 1 della sicurezza offline](images/deployment-guides-revised-scenario-c-01.png)](images/deployment-guides-revised-scenario-c-01.png#lightbox)
+[![Diagramma di sicurezza offline 1](images/deployment-guides-revised-scenario-c-01.png)](images/deployment-guides-revised-scenario-c-01.png#lightbox)
 
 ### <a name="when-to-use"></a>Utilizzo
 
@@ -132,8 +132,8 @@ Prendere in considerazione questo modello di distribuzione per:
 
 ### <a name="common-challenges"></a>Problemi comuni
 
-* È disponibile un set limitato di configurazioni tramite il provisioning dei pacchetti
-* I servizi cloud non possono essere usati, limitando quindi le HoloLens 2 funzionalità.
+* È disponibile un set limitato di configurazioni tramite i pacchetti di provisioning
+* I servizi cloud non possono essere usati, pertanto limitano le HoloLens 2 funzionalità.
 * Maggiore sovraccarico amministrativo perché questi dispositivi devono essere configurati, configurati e aggiornati manualmente.
 
 La guida sicura offline corrispondente fornisce istruzioni per l'applicazione di un pacchetto di provisioning di esempio che blocca un HoloLens 2 per l'uso in ambienti sicuri.

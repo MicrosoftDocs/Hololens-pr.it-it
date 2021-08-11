@@ -12,12 +12,12 @@ ms.date: 10/13/2020
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8b1869e786e3f3324494cecbfd596f61811e1893
-ms.sourcegitcommit: 78e5f26014e55c13fee9c2b75a80810fd2e77877
+ms.openlocfilehash: 438a132a6bafd8c93b148b9c2c817ec93cc3bc73651f08275acc130695fa09c1
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2021
-ms.locfileid: "115009324"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665183"
 ---
 # <a name="certificate-manager"></a>Gestione certificati
 

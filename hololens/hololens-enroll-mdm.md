@@ -14,12 +14,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 6c279664fa6051fab2f5e2e8f61e70b55704ae7c
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 3c17ad2397d87660cb2013604029864f9c36abdbf520710c4fe5952e3440e3a5
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640407"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664224"
 ---
 # <a name="enroll-hololens-in-mdm"></a>Registrare HoloLens in MDM
 
@@ -48,7 +48,7 @@ A seconda del tipo di [identità](hololens-identity.md) scelto durante la Proced
 - Se Identity è Local User (Identità) è Local User (Utente locale), Impostazioni collegamento App Access Work or School Enroll only in device management (Registra solo per l'accesso **all'app** o all'istituto di  ->    ->  **istruzione) nel collegamento di gestione dei** dispositivi.
     - Chiamato anche flusso di registrazione MDM puro.
 
-Dopo aver registrato il dispositivo nel server MDM, l'app Impostazioni rifletterà che il dispositivo è registrato nella gestione dei dispositivi.
+Dopo aver registrato il dispositivo con il server MDM, l'app Impostazioni rifletterà che il dispositivo è registrato nella gestione dei dispositivi.
 
 ## <a name="auto-enrollment-in-mdm"></a>Registrazione automatica in MDM
 

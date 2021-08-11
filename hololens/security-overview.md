@@ -1,6 +1,6 @@
 ---
-title: Panoramica della sicurezza di HoloLens
-description: Introduzione a una panoramica della sicurezza per i dispositivi HoloLens in realtà mista.
+title: HoloLens sulla sicurezza
+description: Introduzione a una panoramica della sicurezza per i HoloLens di realtà mista.
 author: evmill
 ms.author: v-evmill
 ms.reviewer: tagran
@@ -13,17 +13,17 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: bbf05404193f684bdc43d7d6a37159e17678d604
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
-ms.translationtype: HT
+ms.openlocfilehash: 5e65cd542cc1090a7744c0041d57f1e13d3ca0c67b15f81a515f8e3040438aca
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11284147"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665641"
 ---
-# Panoramica della sicurezza
+# <a name="security-overview"></a>Panoramica della sicurezza
 
-Per affrontare le sfide poste dall'odierno panorama delle minacce e dai rischi correlati, è stata completamente riprogettata l'architettura della sicurezza di HoloLens 2 per fornire una sicurezza e una protezione della privacy end-to-end avanzate e innovative.
+Per soddisfare le sfide di un panorama moderno delle minacce e dei rischi associati, l'architettura di sicurezza HoloLens 2 è stata completamente riprogettata per offrire sicurezza avanzata e innovative e protezione della privacy, end-to-end.
 
-Con HoloLens 2, le aziende e i clienti dispongono di un sistema operativo estremamente moderno e all'avanguardia, dotato di un efficace framework di sicurezza integrato. Questo sistema operativo contemporaneo consente agli sviluppatori di progettare, creare ed erogare applicazioni caratterizzate da una strategia di sicurezza eccezionale, per combattere in modo efficace un panorama delle minacce complesso e i rischi correlati. 
+Con HoloLens 2, aziende e clienti hanno un sistema operativo davvero moderno e all'avanguardia con un framework di sicurezza solido e integrato. Questo sistema operativo moderno consente agli sviluppatori di progettare, compilare e distribuire applicazioni con una strategia di sicurezza eccezionale, per contrastare in modo efficace un panorama di minacce complesso e i rischi associati. 
 
-I capitoli sulla sicurezza che seguono presentano una panoramica della nostra sicurezza in continua evoluzione di Windows HoloLens 2, che consente agli sviluppatori di creare applicazioni a prestazioni elevate pià efficaci e sicure. Queste sezioni descrivono l'architettura della sicurezza del sistema operativo di Windows HoloLens 2, le sue posizioni sicure e le funzionalità e i meccanismi di sicurezza correlati.
+I capitoli seguenti sulla sicurezza presentano una panoramica dell'evoluzione della sicurezza Windows HoloLens 2, che consente agli sviluppatori di creare applicazioni più efficaci e sicure a prestazioni elevate. Queste sezioni descrivono l'Windows HoloLens 2 di sicurezza del sistema operativo, le relative posizioni sicure e le funzionalità e i meccanismi di sicurezza correlati.

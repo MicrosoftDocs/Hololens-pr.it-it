@@ -16,12 +16,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens 1 (1st gen)
 - HoloLens 2
-ms.openlocfilehash: b8bda049f0ef4610dcf0ca6fe81d89dd5a316e3e
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: d1eef6bdf463aa400504af7b35a0fd2b8e2b44499d6ff7b93e70a2dd5952ef88
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640042"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115662858"
 ---
 # <a name="map-physical-spaces-with-hololens"></a>Eseguire il mapping di spazi fisici con HoloLens
 
@@ -36,7 +36,7 @@ Questo articolo illustra come HoloLens spazi mappati, come migliorare il mapping
 
 ## <a name="choosing-and-setting-up-and-your-space"></a>Scelta e configurazione e spazio
 
-Le funzionalità dell'ambiente possono rendere difficile l'HoloLens di interpretare uno spazio. I livelli di luce, i materiali nello spazio, il layout degli oggetti e altro ancora possono influire sul modo in cui HoloLens mappa un'area.
+Le funzionalità nell'ambiente possono rendere difficile l'HoloLens di interpretare uno spazio. I livelli di luce, i materiali nello spazio, il layout degli oggetti e altro ancora possono influire sul modo in cui HoloLens mappa un'area.
 
 HoloLens funziona meglio in determinati tipi di ambienti. Per produrre la migliore mappa spaziale, scegliere una stanza con una luce adeguata e molto spazio. Evitare spazi e stanze buie con molte superfici scure, lucenti o traslucidi (ad esempio, mirror o tende di garza).
 
@@ -62,7 +62,7 @@ I movimenti uniformi consentono anche di HoloLens mappa in modo più efficiente.
 
 ### <a name="look-in-all-directions"></a>Guarda in tutte le direzioni
 
-Quando si esegue il mapping dello spazio, HoloLens più dati sulla posizione in cui i punti sono relativi l'uno all'altro.  
+Quando si esegue il mapping dello spazio, HoloLens più dati sulla posizione in cui i punti sono l'uno rispetto all'altro.  
 
 Se non si cerca, ad esempio, il HoloLens potrebbe non sapere dove si trova il controsoffitto in una stanza.  
 
@@ -70,7 +70,7 @@ Non dimenticare di guardare il pavimento mentre si mappa lo spazio.
 
 ### <a name="cover-key-areas-multiple-times"></a>Coprire più volte le aree chiave
 
-Spostarsi più volte in un'area consente di raccogliere le funzionalità che potrebbero non essere state perse nella prima procedura dettagliata. Per creare una mappa ideale, provare a attraversare un'area da due a tre volte.
+Lo spostamento in un'area più volte consente di raccogliere le funzionalità che potrebbero essere state perse nella prima procedura dettagliata. Per creare una mappa ideale, provare a attraversare un'area da due a tre volte.
 
 Se possibile, durante la ripetizione di questi movimenti, passare il tempo a spostarsi in un'area in una direzione, quindi girarsi e tornare indietro nel modo in cui si è arrivati.
 
@@ -93,7 +93,7 @@ Se viene visualizzato uno di questi errori, usare [FeedbackHub](hololens-feedbac
 
 Windows 10 versione 1803 per Microsoft HoloLens e versioni successive archivia i dati di mapping in un database locale (su dispositivo).
 
-HoloLens gli utenti non possono accedere direttamente al database delle mappe, anche quando il dispositivo è collegato a un PC o quando si usa l'app Esplora file mappa. Quando BitLocker è abilitato nel HoloLens, vengono crittografati anche i dati della mappa archiviati insieme all'intero volume.
+HoloLens gli utenti non possono accedere direttamente al database delle mappe, anche quando il dispositivo è collegato a un PC o quando si usa l'app Esplora file mappa. Quando BitLocker è abilitato in HoloLens, vengono crittografati anche i dati della mappa archiviati insieme all'intero volume.
 
 ### <a name="remove-map-data-and-known-spaces-from-hololens"></a>Rimuovere i dati della mappa e gli spazi noti HoloLens
 
@@ -109,7 +109,7 @@ Esistono due opzioni per l'eliminazione dei dati della mappa in **Impostazioni >
 - Per eliminare tutti gli ologrammi, selezionare **Rimuovi tutti gli ologrammi**. Questo comando cancella tutti i dati della mappa archiviati nel dispositivo e tutti gli ologrammi ancorati. È necessario inserire in modo esplicito gli ologrammi. Non sarà possibile riscoprire gli ologrammi posizionati in precedenza.
 
 > [!NOTE]
-> Dopo aver rimosso tutti gli ologrammi nelle vicinanze, HoloLens immediatamente l'analisi e il mapping dello spazio corrente.
+> Dopo aver rimosso tutti gli ologrammi vicini, HoloLens immediatamente l'analisi e il mapping dello spazio corrente.
 
 ### <a name="wi-fi-data-in-spatial-maps"></a>Wi-Fi dati nelle mappe spaziali
 

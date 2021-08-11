@@ -1,6 +1,6 @@
 ---
 title: Hardware HoloLens 2
-description: Informazioni sui componenti che costituiscono il Microsoft HoloLens 2, l'evoluzione più recente di un computer Microsoft olografico senza tethering che esegue Windows 10.
+description: Informazioni sui componenti che costituiscono l'Microsoft HoloLens 2, l'evoluzione più recente di un computer Microsoft olografico senza tethering che esegue Windows 10.
 ms.assetid: 651d0430-bfbc-4685-a4fd-db7c33ce9325
 ms.date: 10/20/2020
 keywords: hololens
@@ -12,47 +12,47 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 4c476a2adc8f03c37e17e6324960318b4806534e
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 759ef671e9a831e23809d5974595ce5928433e3e50ddb26e25a7a74ebe2559a3
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639744"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115659998"
 ---
 # <a name="about-hololens-2"></a>Informazioni HoloLens 2
 
-![HoloLens 2 vista laterale](images/hololens2-breakdown.png)
+![HoloLens 2 visualizzazione laterale](images/hololens2-breakdown.png)
 
-Microsoft HoloLens 2 è un computer olografico senzathering.  Perfeziona il percorso di elaborazione olografica avviato da HoloLens (prima generazione) per offrire un'esperienza più comoda e immersiva associata a più opzioni per la collaborazione nella realtà mista. HoloLens 2 viene eseguito nel sistema operativo [Windows Holographic,](hololens-release-notes.md)basato su una "versione" di Windows 10, che offre a utenti, amministratori e sviluppatori una piattaforma solida, a prestazioni e sicure. 
+Microsoft HoloLens 2 è un computer olografico senzathering.  Perfeziona il percorso di calcolo olografico avviato da HoloLens (prima generazione) per offrire un'esperienza più comoda e coinvolgente abbinata a più opzioni per la collaborazione nella realtà mista. HoloLens 2 viene eseguito nel sistema operativo [Windows Holographic](hololens-release-notes.md), basato su una "versione" di Windows 10, che offre a utenti, amministratori e sviluppatori una piattaforma affidabile, performante e sicura. 
 
 > [!NOTE]
-> L'annuncio Windows 11 è stato incentrato sulla versione PC di Windows. Di recente è stato avviato un aggiornamento principale del sistema operativo per HoloLens 2 maggio 2021 e stiamo lavorando [a](https://techcommunity.microsoft.com/t5/mixed-reality-blog/what-s-new-in-windows-holographic-version-21h1/ba-p/2337067) una versione futura in base ai commenti e suggerimenti dei clienti per questo fallire.
+> L'annuncio Windows 11 è stato incentrato sulla versione pc di Windows. Di recente è [stato](https://techcommunity.microsoft.com/t5/mixed-reality-blog/what-s-new-in-windows-holographic-version-21h1/ba-p/2337067) avviato un aggiornamento importante del sistema operativo per HoloLens 2 maggio 2021 e si sta lavorando a una versione futura basata sui commenti e suggerimenti dei clienti per questo autunno.
 
 È necessario un account utente per usare HoloLens 2.
 
 ## <a name="hololens-components"></a>HoloLens componenti
 
-- **Visore**. Contiene i HoloLens e le informazioni visualizzate. È possibile ruotare il visore verso l'alto mentre si ruota il HoloLens.
-- **Headband**. Per posizionare il HoloLens, usare la rotellina di regolazione per espandere la fascia. Dopo aver HoloLens, stringere la ruota di regolazione ruotando verso destra, fino a quando la fascia non è comoda.
-- **Pulsanti luminosità**. Quando si indossa il HoloLens, i pulsanti di luminosità si trova sul lato sinistro del visore vicino al tempio.
-- **Pulsanti volume**. Quando si indossano HoloLens, i pulsanti del volume si trova sul lato destro del visore vicino al tempio.
-- **Pulsante di alimentazione**. Quando si copre HoloLens, il pulsante di alimentazione si trova sul lato destro della copertura esterna posteriore.
-- **Porta USB-C**. Quando si copre HoloLens, la porta USB-C si trova sul lato destro della copertura esterna posteriore sotto il pulsante di alimentazione.
+- **Visore**. Contiene i HoloLens e i display. È possibile ruotare la visiera verso l'alto mentre si indossa la HoloLens.
+- **Fascia head**. Per posizionare il HoloLens, usare la rotellina di regolazione per espandere la fascia. Dopo aver HoloLens, stringere la ruota di regolazione girando verso destra, fino a quando la fascia non è comoda.
+- **Pulsanti di luminosità**. Quando si indossa il HoloLens, i pulsanti di luminosità si trova sul lato sinistro della visiera vicino al tempio.
+- **Pulsanti del volume**. Quando si indossa HoloLens, i pulsanti del volume si trova sul lato destro della visiera vicino al tempio.
+- **Pulsante di alimentazione**. Quando si indossa HoloLens, il pulsante di accensione si trova sul lato destro della copertura esterna posteriore.
+- **Porta USB-C**. Quando si indossa HoloLens, la porta USB-C si trova sul lato destro della copertura esterna posteriore sotto il pulsante Di alimentazione.
 
 ## <a name="in-the-box"></a>Nella casella
 
-- **[Brow pad](https://www.microsoft.com/p/microsoft-hololens-2-brow-pad/90z10rsslqp0)**. È possibile rimuovere e sostituire il riempimento della fronte, in base alle esigenze.
-- **[Sovraccarico .](https://www.microsoft.com/p/microsoft-hololens-2-overhead-strap/8wxl8wmk1f7z)** Quando si è in grado di HoloLens durante lo spostamento, usare il sovraccarico per mantenere il dispositivo sul posto. Quando si usura il HoloLens per periodi prolungati, il sovraccarico può rendere il dispositivo più a proprio agio da usurare.
-- **[Caricatore USB-C e cavo](https://www.microsoft.com/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5)**. L'alimentatore si collega alla presa di alimentazione. Usare il cavo USB-C per collegare il HoloLens all'alimentatore per l'ricarica o per collegare il HoloLens al computer.
-- **Microfibero evaso.** Usare per pulire la HoloLens visore.
+- **[Riempimento della fronte.](https://www.microsoft.com/p/microsoft-hololens-2-brow-pad/90z10rsslqp0)** È possibile rimuovere e sostituire il riempimento della fronte, in base alle esigenze.
+- **[Sovraccarico della cinghia](https://www.microsoft.com/p/microsoft-hololens-2-overhead-strap/8wxl8wmk1f7z)**. Quando indossi il dispositivo HoloLens in movimento, usa la cinghia a testa per mantenere il dispositivo sul posto. Quando si indossa il HoloLens per periodi prolungati, la cinghia a testa può rendere il dispositivo più comodo da portare.
+- **[Caricabatterie USB-C e cavo](https://www.microsoft.com/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5)**. L'alimentatore si collega alla presa di alimentazione. Usare il cavo USB-C per connettere il HoloLens all'alimentatore per la ricarica o per connettere il HoloLens al computer.
+- **Microfibria .** Usare per pulire la HoloLens visore.
 
-### <a name="power-supply-details"></a>Dettagli dell'alimentatore
+### <a name="power-supply-details"></a>Dettagli di Power Supply
 
-L'alimentatore e il cavo USB forniti con il dispositivo sono il meccanismo migliore supportato per la ricarica. L'alimentatore è un caricatore da 18W.  Fornisce 9 V a 2A.
+L'alimentatore e il cavo USB forniti con il dispositivo sono il meccanismo migliore supportato per la ricarica. L'alimentatore è un caricabatterie da 18W.  Fornisce 9V a 2A.
 
 La velocità e la velocità di ricarica possono variare a seconda dell'ambiente in cui è in esecuzione il dispositivo.
 
-Per mantenere/far avanzare la percentuale di carica della batteria interna mentre il dispositivo è in funzione, deve essere connesso almeno a un caricatore da 15W.
+Per mantenere o far avanzare la percentuale di carica della batteria interna mentre il dispositivo è in esecuzione, è necessario collegarlo almeno a un caricabatterie da 15W.
 
 ## <a name="device-specifications"></a>Specifiche del dispositivo
 
@@ -60,32 +60,32 @@ Per mantenere/far avanzare la percentuale di carica della batteria interna mentr
 
 |   | &nbsp; |
 |---|---|
-| **Ottica** | Lenti olografiche see-through (waveguide) |
-| **Risoluzione olografica** | Motori leggeri 2k 3:2 |
-| **Densità olografica** | >radianti da 2,5 k (punti luce per radianti) |
-| **Rendering basato sugli occhi** | Ottimizzazione dello schermo per la posizione degli occhi 3D |
+| **Ottica** | Lenti olografiche see-through (waveguides) |
+| **Risoluzione olografica** | Motori leggeri da 2.000 a 3:2 |
+| **Densità olografica** | >radianti da 2,5 k (punti luce per radiante) |
+| **Rendering basato sugli occhi** | Ottimizzazione dello schermo per la posizione dell'occhio 3D |
 
 ### <a name="sensors"></a>Sensori
 
 |   | &nbsp; |
 |---|---|
-| **Tracciamento della testa** | 4 fotocamere di luce visibili |
-| **Tracciamento oculare** | 2 fotocamere a ir- |
+| **Rilevamento della testa** | 4 fotocamere di luce visibili |
+| **Tracciamento oculare** | 2 fotocamere a raggi a infrarossi (IR) |
 | **Livello nidificazione** | Sensore di profondità time-of-flight da 1 MP |
 | **Unità di misura inerziale (IMU)** | Accelerometro, giroscopio, magnetometro |
-| **Fotocamera** | 8-MP stills, video 1080p30 |
+| **Fotocamera** | Fermo immagine da 8 MP, video 1080p30 |
 
 ![HoloLens 2 Sensori](images/hololens2-front-view.png)
 
 > [!NOTE]
-> Non coprire i sensori che vengono chiamati nell'immagine. Le fotocamere di rilevamento della testa hanno una fov molto ampia, non dovrebbero essere presenti elementi intorno a esse oltre a non coprire le fotocamere.
+> Non coprire nessuno dei sensori che vengono richiamati nell'immagine. Le fotocamere di rilevamento della testa hanno un fov molto ampio, non dovrebbero essere presenti altri elementi oltre a non coprire le fotocamere.
 
 ### <a name="audio-and-speech"></a>Audio e voce
 
 |   | &nbsp; |
 |---|---|
-| **Matrice di microfoni** | 5 canali |
-| **Altoparlanti** | Audio spaziale incorporato |
+| **Matrice microfono** | 5 canali |
+| **Altoparlanti** | Suono spaziale incorporato |
 
 ### <a name="compute-and-connectivity"></a>Calcolo e connettività
 
@@ -99,15 +99,15 @@ Per mantenere/far avanzare la percentuale di carica della batteria interna mentr
 | **Bluetooth** | 5.0 |
 | **USB** | USB Type-C DRP |
 
-### <a name="power"></a>Potenza
+### <a name="power"></a>Elettricità
 
 |   | &nbsp; |
 |---|---|
 | **Durata della batteria** | 2-3 ore di utilizzo attivo. Fino a due settimane di tempo di standby. |
 | **Tecnologia della batteria** | [Batterie al litio](https://www.microsoft.com/download/details.aspx?id=43388) |
-| **Comportamento di addebito** | Completamente funzionante durante l'addebito |
+| **Comportamento di addebito** | Completamente funzionante durante la ricarica |
 | **Tipo di raffreddamento** | Raffreddamento passivo (senza ventole) |
-| **Power draw** | Per mantenere/far avanzare la percentuale di carica della batteria interna mentre il dispositivo è in funzione, deve essere connesso almeno a un caricatore da 15W. |
+| **Power draw** | Per mantenere o far avanzare la percentuale di carica della batteria interna mentre il dispositivo è in esecuzione, è necessario collegarlo almeno a un caricabatterie da 15W. |
 
 ### <a name="fit"></a>Ambito d'uso
 
@@ -168,7 +168,7 @@ Per mantenere/far avanzare la percentuale di carica della batteria interna mentr
 
 ## <a name="warranty-information"></a>Informazioni sulla garanzia
 
-Microsoft HoloLens 2 viene fornito con una garanzia limitata [standard.](https://support.microsoft.com/topic/warranties-extended-service-plans-and-terms-conditions-for-your-device-eedf7a23-84a7-1a47-480b-0e10503eedf5) 
+Microsoft HoloLens 2 viene fornito con una garanzia [limitata](https://support.microsoft.com/topic/warranties-extended-service-plans-and-terms-conditions-for-your-device-eedf7a23-84a7-1a47-480b-0e10503eedf5)standard. 
 
 
 L'acquisto è soggetto [Microsoft Store condizioni per l'utilizzo e la vendita.](https://www.microsoft.com/storedocs/terms-of-sale?rtc=1) Tutte le vendite sono definitive. Nessun rimborso.

@@ -1,9 +1,9 @@
 ---
-title: Usare la voce per gestire HoloLens
-description: Informazioni su come usare Cortana per eseguire tutti i tipi di operazioni nei dispositivi con Realtà mista HoloLens, inclusi comandi vocali, dettatura e interazioni con gli ologrammi.
+title: Usare la voce per HoloLens
+description: Informazioni su Cortana per eseguire qualsiasi tipo di operazione nei dispositivi HoloLens realtà mista, tra cui comandi vocali, dettatura e interazioni con ologrammi.
 ms.assetid: fd96fb0e-6759-4dbe-be1f-58bedad66fed
 ms.date: 03/10/2020
-keywords: HoloLens
+keywords: hololens
 ms.prod: hololens
 ms.sitesec: library
 author: Teresa-Motiv
@@ -15,131 +15,131 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f6e3dd8f7dc90cea158d000251973ec75dc76a90
-ms.sourcegitcommit: 07ffe1bf2f45dcb2ba9d7fbe54b4773a0fb9d525
-ms.translationtype: HT
+ms.openlocfilehash: 2fe7727fb05f983f56f329a6e7f7c25a627a914a1956fc65a9fc047653aae977
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "11393870"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115661086"
 ---
-# <a name="use-your-voice-to-operate-hololens"></a>Usare la voce per gestire HoloLens
+# <a name="use-your-voice-to-operate-hololens"></a>Usare la voce per HoloLens
 
-Puoi usare la tua voce per fare quasi tutto su HoloLens, ad esempio per scattare una foto veloce o aprire un'app. Molti comandi vocali sono incorporati in HoloLens, mentre altri sono disponibili tramite Cortana.
+È possibile usare la voce per eseguire quasi tutte le HoloLens, ad esempio scattare una foto rapida o aprire un'app. Molti comandi vocali sono incorporati in HoloLens, mentre altri sono disponibili tramite Cortana.
 
-Questo articolo spiega come controllare HoloLens e il tuo mondo olografico con la tua voce e con Cortana.
+Questo articolo illustra come controllare l'HoloLens e il mondo olografico con la voce e con Cortana.
 
 > [!NOTE]
-> I comandi vocali sono supportati solo in [alcune lingue](hololens2-language-support.md). La lingua dei comandi vocali si basa sulla lingua di visualizzazione di Windows e non sulla lingua della tastiera.  
+> Il riconoscimento vocale è supportato solo in [alcune lingue.](hololens2-language-support.md) La lingua del riconoscimento vocale è basata sulla lingua Windows lingua di visualizzazione, non sulla lingua della tastiera.  
 >  
-> È possibile verificare la lingua di visualizzazione di Windows selezionando **Impostazioni** > **Data/ora e lingua** > **Lingua**.
+> È possibile verificare la lingua Windows lingua di visualizzazione selezionando **Impostazioni**  >  **lingua.**  >  
 
 ## <a name="built-in-voice-commands"></a>Comandi vocali predefiniti
 
-Spostati più velocemente in HoloLens con questi comandi di base. Per usare tali comandi devi abilitare i comandi vocali alla prima esecuzione del dispositivo o in **Impostazioni** > **Privacy** > **Comandi vocali**. Puoi sempre verificare se il riconoscimento vocale è abilitato guardando lo stato nella parte superiore del menu Start. Per ottenere risultati ottimali di riconoscimento vocale, HoloLens 2 usa i servizi basati sul cloud Microsoft. Tuttavia, puoi usare le Impostazioni per disabilitare questa funzionalità. A questo scopo, disattiva **Riconoscimento vocale online** in Impostazioni. Dopo aver modificato questa opzione, HoloLens 2 elabora solo i dati vocali a livello locale in modo da riconoscere comandi e dettatura. Cortana non sarà disponibile.
+È possibile HoloLens più velocemente con questi comandi di base. Per usarli, è necessario abilitare Riconoscimento vocale durante la prima esecuzione del dispositivo **o** in Impostazioni  >  **Privacy**  >  **Speech**. È sempre possibile controllare se il riconoscimento vocale è abilitato esaminando lo stato nella parte superiore del menu Start. Per ottenere risultati ottimali per il riconoscimento vocale, HoloLens 2 i servizi basati sul cloud Microsoft. Tuttavia, è possibile usare Impostazioni per disabilitare questa funzionalità. A tale scopo, in Impostazioni disattivare **Riconoscimento vocale online.** Dopo aver modificato questa impostazione, HoloLens 2 elaborare i dati vocali solo in locale per riconoscere i comandi e la dettatura e Cortana non saranno disponibili.
 
 ### <a name="general-speech-commands"></a>Comandi vocali generali
 
-Usa questi comandi in Windows Mixed Reality per spostarti più rapidamente. Alcuni comandi usano il cursore dello sguardo, che si apre pronunciando “Seleziona”.
+Usare questi comandi in Windows Mixed Reality per spostarsi più velocemente. Alcuni comandi usano il cursore sguardo fisso che viene visualizzato pronunciando "select".
 
 > [!NOTE]
-> I raggi della mano non sono supportati in HoloLens (prima generazione).
+> I raggi della mano non sono supportati HoloLens (prima generazione).
 
-| Pronuncia la frase | Per |
+| Pronunciare questo | Per |
 | - | - |
-| "Seleziona" | Pronuncia "Seleziona" per visualizzare il cursore dello sguardo. Gira quindi la testa per posizionare il cursore sull'oggetto che vuoi selezionare e ripeti "Seleziona". |
-| "Vai a Start" |  Apri il menu Start |
-| "Chiudi"  | Chiudi il menu Start |
-| Pronuncia"Vai a Start" per visualizzare il menu azioni rapide, quindi pronuncia "ambiente iniziale".  | Chiudere un'app immersiva |
-| "Nascondi raggio della mano"/"Mostra raggio della mano" | Nascondere e visualizzare il raggio della mano |
+| "Seleziona" | Pronunciare "select" per visualizzare il cursore dello sguardo. Quindi, ruotare la testa per posizionare il cursore sull'oggetto da selezionare e pronunciare di nuovo "seleziona". |
+| "Vai a Start" |  Aprire il menu Start |
+| "Chiudi"  | Chiudere il menu Start |
+| Pronunciare "Vai a Start" per visualizzare il menu delle azioni rapide e quindi "Home della realtà mista".  | Lasciare un'app immersiva |
+| "Nascondi raggio mano" / "Mostra raggio mano" | Nascondere e visualizzare il raggio della mano |
 | "Cosa posso dire?"  | Vedere i comandi vocali disponibili |
 
-Iniziando con la versione 19041.x di HoloLens 2, puoi usare i seguenti comandi:
+A partire dalla versione 19041.x HoloLens 2, è anche possibile usare questi comandi:
 
-| Pronuncia | Per eseguire questa operazione |
+| Pronunciare questo | Per |
 | - | - |
-| "Riavvia dispositivo" | Apre una finestra di dialogo per confermare che desideri riavviare il dispositivo. Puoi dire "sì" per riavviarlo. |
-| "Arresta dispositivo" | Apre una finestra di dialogo per confermare che desideri spegnere il dispositivo. Puoi dire "sì" per confermare. |
-| "Alza/abbassa la luminosità" | Aumenta o riduce la luminosità del display del 10%. |
-| "Alza/abbassa il volume" | Aumenta o riduce il volume del 10%. |
-| "Qual è il mio indirizzo IP" | Apre una finestra di dialogo che mostra l'attuale indirizzo IP del tuo dispositivo sulla rete locale. |
-| "Scatta una foto" | Scatta una foto di realtà mista di ciò che vedi. |
-| "Acquisisci video" | Avvia la registrazione di un video di realtà mista. | 
-| "Interrompi video" | Interrompe la registrazione corrente del video di realtà mista, se in corso. |
+| "Riavvia il dispositivo" | Visualizzare una finestra di dialogo per confermare che si vuole riavviare il dispositivo. È possibile pronunciare "sì" per riavviare. |
+| "Arresto del dispositivo" | Visualizzare una finestra di dialogo per confermare che si vuole spegnere il dispositivo. È possibile pronunciare "sì" per confermare. |
+| "Luminosità verso l'alto/verso il basso" | Aumentare o ridurre la luminosità dello schermo del 10%. |
+| "Volume su/giù" | Aumentare o ridurre il volume del 10%. |
+| "Qual è l'indirizzo IP" | Viene visualizzata una finestra di dialogo che mostra l'indirizzo IP corrente del dispositivo nella rete locale. |
+| "Scatta una foto" | Acquisire una foto di realtà mista di ciò che si sta attualmente guardando. |
+| "Take a video" | Avviare la registrazione di un video di realtà mista. | 
+| "Arresta registrazione" | Arresta la registrazione video di realtà mista corrente, se ne è in corso una. |
 
-### <a name="hologram-commands"></a>Comandi olografici
+### <a name="hologram-commands"></a>Comandi ologrammi
 
-Per usare questi comandi, fissa un oggetto 3D, un ologramma o una finestra dell'app.
+Per usare questi comandi, osservare un oggetto 3D, un ologramma o una finestra dell'app.
 
-| Pronuncia la frase | Per |
+| Pronunciare questo | Per |
 | - | - |
-| "Più grande" | Ingrandire l'oggetto |
-| "Più piccolo" | Ridurre le dimensioni dell'oggetto |
-| "Guardami" | Rivolgere l'oggetto verso di te |
-| "Sposta" | Spostare l'oggetto (seguendo il tuo sguardo fisso) |
+| "Bigger" | Ingrandirla |
+| "Più piccolo" | Renderlo più piccolo |
+| "Guardami" | Ruotarlo per viso |
+| "Sposta" | Spostarlo (seguire lo sguardo) |
 | "Chiudi" | Chiuderlo |
-| "Seguimi"/"Smettila di seguirmi" | Farti seguire dall'oggetto mentre ti sposti |
+| "Follow me" / "Stop following" | Fare in modo che si segua l'utente mentre ci si sposta |
 
-### <a name="see-it-say-it"></a>Vedere e pronunciare
+### <a name="see-it-say-it"></a>Guarda, parla
 
-Molti pulsanti e altri elementi in HoloLens rispondono anche alla tua voce, ad esempio **Seguimi** e **Chiudi** sulla barra dell'app o il pulsante **Indietro** in Microsoft Edge. Per scoprire se un pulsante è abilitato per la voce, posiziona il **cursore dello sguardo fisso, il**, **cursore tocco** o un **raggio della mano** su di esso per un momento. Se il pulsante è abilitato per la voce, viene visualizzato un suggerimento vocale.
+Molti pulsanti e altri elementi HoloLens anche la **voce,** ad esempio  Seguimi e chiudi sulla barra dell'app o il **pulsante** Indietro in Edge. Per scoprire se un pulsante è abilitato per la voce,  posizionare il **cursore** dello sguardo, il **cursore** tocco o un raggio della mano su di esso per un momento. Se il pulsante è abilitato per la voce, verrà visualizzata una descrizione comando vocale.
 
-### <a name="dictation-mode"></a>Modalità di dettatura
+### <a name="dictation-mode"></a>Modalità dettatura
 
-Sei stanco di digitare? Passa alla modalità dettatura ogni volta che la tastiera olografica è attiva. Per iniziare, seleziona il pulsante del microfono oppure pronuncia "Avvia dettatura". Per arrestare la dettatura, seleziona di nuovo il pulsante oppure pronuncia "Arresta dettatura". Per eliminare ciò che hai appena dettato, pronuncia "Eliminalo". 
+Sei stufo di digitare? Passare alla modalità dettatura ogni volta che la tastiera olografica è attiva. Per iniziare, selezionare il pulsante del microfono o pronunciare "Inizia a dettare". Per interrompere la dettatura, selezionare di nuovo il pulsante o pronunciare "Interrompi dettatura". Per eliminare le informazioni appena dettate, pronunciare "Elimina". 
 
 > [!NOTE]
-> Per usare la modalità di dettatura, è necessario disporre di una connessione Internet.
+> Per usare la modalità dettatura, è necessario disporre di una connessione Internet.
 
-La dettatura HoloLens usa la punteggiatura esplicita, vale a dire il nome della punteggiatura che si vuole usare va pronunciato. Ad esempio, potresti dire "Ehi **virgola** che cosa stai facendo **punto interrogativo**".
+HoloLens dettatura usa la punteggiatura esplicita, vale a dire il nome della punteggiatura che si vuole usare. Ad esempio, si potrebbe dire "Hey **comma** what are you up to **question mark".**
 
-Ecco le parole chiave di punteggiatura che puoi usare:
+Ecco le parole chiave di punteggiatura che è possibile usare:
 
-- Punto, virgola, punto interrogativo, punto esclamativo
+- Punto, virgola, punto interrogativo, punto esclamativo/punto esclamativo
 - Nuova riga/nuovo paragrafo
 - Punto e virgola, due punti
-- Virgolette aperte, virgolette chiuse
-- Hashtag, smiley/smiley, accigliato, ammiccante
+- Virgolette aperte, virgolette di chiusura
+- Hashtag, smiley/smiley face, frowny, winky
 - Dollaro, percentuale
 
-A volte è utile compitare elementi come gli indirizzi di posta elettronica. Ad esempio, per dettare example@outlook.com, devi dire "E X A M P L E at Outlook dot com".
+A volte è utile scrivere parole come gli indirizzi di posta elettronica. Ad esempio, per example@outlook.com dettare , si direbbe "E X A M P L E at outlook dot com".
 
-## <a name="do-more-with-cortana"></a>Eseguire altre operazioni con Cortana
+## <a name="do-more-with-cortana"></a>Fare di più con Cortana
 
-Cortana può aiutarti a eseguire tutti i tipi di operazioni su HoloLens, ma a seconda della versione di Windows Holographic in uso, le funzionalità potrebbero essere diverse. Per altre informazioni sulle funzionalità aggiornate della versione più recente di Cortana, vedere Cortana nella prossima versione di [Windows 10,](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/)incentrata sulla produttività con sicurezza e privacy avanzate. 
+Cortana possibile eseguire tutti i tipi di operazioni nel HoloLens, ma a seconda della versione di Windows Holographic in uso, le funzionalità potrebbero essere diverse. Altre informazioni sulle funzionalità aggiornate della versione più recente di Cortana sono disponibili qui: Cortana nella prossima versione [Windows 10:](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/)incentrato sulla produttività con sicurezza e privacy migliorate. 
 
-![Ehi Cortana](images/cortana-on-hololens.png)
+![Hey Cortana!](images/cortana-on-hololens.png)
 
-Ecco alcune operazioni che puoi provare a ripetere (ricorda di dire "Ehi Cortana" prima).
+Ecco alcune cose che è possibile provare a dire (ricordarsi di dire "Hey Cortana" prima).
 
-**Ehi, Cortana**...
+**Hey, Cortana**...
 
-- Cosa posso dire?
-- Avvia <*nome dell'app*>.
+- What can I say?
+- Avviare <*nome dell'app*>.
 - Che ora è?
-- Mostra gli ultimi risultati NBA.
-- Raccontami una barzelletta.
+- Mostrami i punteggi PIÙ recenti di NBA.
+- Mi dica una barzelletta.
 
-Se stai usando la *versione 18362.x o una precedente*, puoi usare i seguenti comandi:
+Se si usa la *versione 18362.x* o precedente, è anche possibile usare questi comandi:
 
-**Ehi, Cortana**...
+**Hey, Cortana**...
 
-- Aumenta il volume.
-- Riduci la luminosità.
-- Arresta il sistema.
-- Riavvia il sistema.
-- Sospendi.
-- Disattiva audio.
-- Sposta <*nome dell'app*> qui (fissa il punto in cui vuoi spostare l'app).
-- Vai a Start.
-- Scatta una foto.
-- Avvia registrazione. (Avvia la registrazione di un video).
-- Interrompi registrazione. (Interrompe la registrazione di un video).
-- Quanta batteria mi rimane?
+- Aumentare il volume.
+- Ridurre la luminosità.
+- Spegni.
+- Riavvia.
+- Andare a letto.
+- Muto.
+- Spostare <*nome dell'app*> qui (osservare il punto in cui si vuole spostare l'app).
+- Fare clic su Start.
+- Scattare una foto.
+- Avviare la registrazione. Avvia la registrazione di un video.
+- Arrestare la registrazione. Interrompe la registrazione di un video.
+- Quanta batteria è rimasto?
 
-Alcune funzionalità di Cortana usate per Windows nel PC o nel telefono (ad esempio, promemoria e notifiche) non sono supportate in Microsoft HoloLens e l'esperienza di Cortana può essere diversa a seconda dell'area geografica in cui viene utilizzata.
+Alcune Cortana funzionalità usate da Windows nel PC o nel telefono (ad esempio, promemoria e notifiche) non sono supportate in Microsoft HoloLens e l'esperienza Cortana può variare da un'area all'altra.
 
 ### <a name="turn-cortana-off"></a>Disattivare Cortana
 
-Cortana viene attivata la prima volta che utilizzi HoloLens quando abiliti i comandi vocali. Puoi disattivarla nelle impostazioni di Cortana. Nell'elenco **Ogni app** seleziona **Cortana** > **Impostazioni**. Quindi attiva Cortana per ricevere suggerimenti, idee, promemoria, avvisi e altro ancora.
+Cortana è la prima volta che si usa HoloLens quando si abilita la voce. È possibile disattivarla nelle Cortana impostazioni di . **Nell'elenco Tutte le** app selezionare **Cortana**  >  **Impostazioni**. Disattivare quindi Cortana suggerimenti, idee, promemoria, avvisi e altro ancora.
 
-Se Cortana non risponde a "Ehi Cortana", controlla che i comandi vocali siano abilitati nel menu Start e passa alle impostazioni di Cortana per verificare che sia attiva.
+Se Cortana non risponde a "Hey Cortana", verificare che il riconoscimento vocale sia abilitato in Start e passare alle impostazioni di Cortana e verificare che sia attivata.

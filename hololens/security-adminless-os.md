@@ -13,12 +13,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: ed2d5134a6bc5952063f7dc5dc5d0e31db972b08
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: f4fc79b7f51933418cdda8368c6b4b070e854dd0978754647ce864075c772cfd
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639404"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665540"
 ---
 # <a name="admin-less-operating-system"></a>Sistema operativo senza amministratore
 
@@ -28,7 +28,7 @@ Queste funzionalità dell'applicazione continuano a avere il modello di classifi
   * Con restrizioni
   * Windows
 
-Windows componenti possono anche sfruttare la sandbox AppContainer tramite UWP di sistema. Per altre informazioni sulla piattaforma UWP (Universal Windows Platform), vedere la [documentazione della piattaforma UWP.](/windows/uwp/) Inoltre, i componenti Windows con esigenze di riduzione dei privilegi maggiori (ad esempio pagine di contenuto del browser o parser) usano la sandbox LPAC (Less Privileged AppContainer), che consente di ridurre l'accesso al set di risorse accessibili a tutti gli AppContainer.
+Windows componenti possono anche sfruttare la sandbox AppContainer tramite UWP di sistema. Per altre informazioni sulla piattaforma UWP (Universal Windows Platform), vedere [la documentazione della piattaforma UWP.](/windows/uwp/) Inoltre, i componenti Windows con esigenze di riduzione dei privilegi maggiori (ad esempio pagine di contenuto del browser o parser) usano la sandbox LPAC (Less Privileged AppContainer), che consente di ridurre l'accesso al set di risorse accessibili a tutti gli AppContainer.
 
 ## <a name="device-owner"></a>Proprietario del dispositivo
 

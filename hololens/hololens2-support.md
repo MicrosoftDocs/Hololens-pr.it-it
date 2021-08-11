@@ -1,29 +1,29 @@
 ---
-title: Altre informazioni sulle opzioni di supporto di Realtà mista
+title: Altre informazioni sulle opzioni di supporto per la realtà mista
 ms.author: rajhawar
 author: raunakjhawar
 ms.reviewer: asergaz
-description: Opzioni di supporto di realtà mista per i clienti di piccole e grandi imprese
+description: Opzioni di supporto per la realtà mista per clienti aziendali di piccole e grandi dimensioni
 ms.prod: hololens
 ms.topic: article
 ms.date: 3/19/2021
-ms.openlocfilehash: 0ddc4eb15036a4f5aa2ecf86893d5f671584f9bf
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: 43940fca03dec957c2afc6108e1ce77979aa000c1366bdc873056107d0b7da20
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659098"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115658736"
 ---
-# <a name="what-are-the-mixed-reality-support-and-help-options"></a>Quali sono le opzioni di supporto e guida di Realtà mista?
+# <a name="what-are-the-mixed-reality-support-and-help-options"></a>Quali sono le opzioni di supporto e assistenza per Realtà mista?
 
-Si sta cercando di sbloccare lo sviluppo dell'applicazione o si verifica un problema con l'HoloLens 2 o Windows Mixed Reality visore? È possibile che si utilizzi un servizio di realtà mista di Azure e si abbia una domanda tecnica. 
+Si sta cercando di sbloccare lo sviluppo dell'applicazione o si verifica un problema con il HoloLens 2 o Windows Mixed Reality visore VR? È possibile che si sta usando un servizio di realtà mista di Azure e si abbia una domanda tecnica. 
 
-Qui sono disponibili le opzioni di supporto per le opzioni seguenti che garantiscono la connessione al posto giusto. Vengono inoltre esaminate le risorse della community e le opzioni di contenuto self-service che è possibile esplorare:
+Qui sono disponibili le opzioni di supporto per le opzioni seguenti che garantiscono la connessione alla posizione corretta. Vengono anche analizzate le risorse della community e le opzioni di contenuto self-service che è possibile esplorare:
 
 - [Community opzioni della Guida per gli sviluppatori](#community-help-options)
-- [Ottenere assistenza per l'uso e la configurazione del dispositivo HoloLens 2 dispositivo](#help-with-technical-support-for-your-hololens-2)
-- [Ottenere assistenza per l'acquisto di un HoloLens 2 dispositivo](#help-with-commercial-store-support-for-your-hololens-2)
-- [Ottenere assistenza per la programmazione di un dispositivo HoloLens 2 o di un visore immersivo](#help-with-technical-support-for-your-hololens-2) 
+- [Ottenere assistenza per l'uso e la configurazione del HoloLens 2 dispositivo](#help-with-technical-support-for-your-hololens-2)
+- [Ottenere assistenza per l'acquisto di HoloLens 2 dispositivo](#help-with-commercial-store-support-for-your-hololens-2)
+- [Ottenere assistenza per la programmazione di un dispositivo HoloLens 2 o un visore VR immersive](#help-with-technical-support-for-your-hololens-2) 
 - [Ottenere assistenza con i servizi di realtà mista di Azure](#azure-mixed-reality-services-support)
 
 ## <a name="community-help-options"></a>Community della Guida
@@ -32,7 +32,7 @@ Qui sono disponibili le opzioni di supporto per le opzioni seguenti che garantis
 <div class='icon is-large'>
     <img alt='Azure Q&A' src='/media/logos/logo_azure.svg'>
 </div><br/>
-Per risposte rapide e affidabili sulle domande di programmazione di Realtà mista di Azure e HoloLens 2 di tecnici Microsoft, MVP (Most Valuable Professionals) o community di esperti, è possibile interagire con Microsoft Q&A, la destinazione preferita di Microsoft per il supporto della community.
+Per risposte rapide e affidabili alle domande sulla programmazione di Realtà mista di Azure e HoloLens 2 di tecnici Microsoft, MVP (Most Valuable Professionals) o della community di esperti, è possibile partecipare a Microsoft Q&A, la destinazione preferita da Microsoft per il supporto della community.
 
 Se non si trova una risposta al problema tramite la ricerca, inviare una nuova domanda a Domande e risposte Microsoft. Quando si formula la domanda, usare uno dei tag seguenti:
 
@@ -62,50 +62,50 @@ Se si invia una nuova domanda a Stack Overflow, usare uno o più tag seguenti:
 #### <a name="other-communities"></a>Altre community:
 
 - [Slack per HoloDevelopers](https://holodevelopersslack.azurewebsites.net/)
-- [Windows Mixed Reality Visori Reddit](https://www.reddit.com/r/WindowsMR/)
+- [Windows Mixed Reality Visori VR Reddit](https://www.reddit.com/r/WindowsMR/)
 - [HoloLens Reddit](https://www.reddit.com/r/HoloLens/)
 
 ## <a name="hololens-2-support"></a>HoloLens 2 Supporto
 
-### <a name="help-with-technical-support-for-your-hololens-2"></a>Supporto tecnico per l'HoloLens 2
+### <a name="help-with-technical-support-for-your-hololens-2"></a>Assistenza con il supporto tecnico per l'HoloLens 2
 
 - Ottenere HoloLens 2 di programmazione dalla community in [Microsoft Q&A](#post-a-question-on-microsoft-qa)
-- Altre informazioni su Guida e supporto e integrità dei servizi di realtà mista [di Azure](#azure-mixed-reality-services-support)
-- Creare una richiesta di supporto per la HoloLens 2 o la programmazione di visori immersivi al supporto [mr](https://aka.ms/mrsupport) 
-- Creare una richiesta di supporto per HoloLens 2 dei dispositivi, tra cui hardware, & configurazione del dispositivo HoloLens 2 [dispositivi](https://aka.ms/hlsupport) 
+- Altre informazioni su Guida e supporto e sull'integrità dei servizi di [realtà mista di Azure](#azure-mixed-reality-services-support)
+- Creare una richiesta di supporto per la programmazione HoloLens 2 visore VR immersive al supporto [mr](https://aka.ms/mrsupport) 
+- Creare una richiesta di supporto per i HoloLens 2 dei dispositivi, tra cui hardware, utilizzo & configurazione al supporto [HoloLens 2 dispositivo](https://aka.ms/hlsupport) 
 
 
 ### <a name="help-with-commercial-store-support-for-your-hololens-2"></a>Assistenza per il supporto dello Store commerciale per l'HoloLens 2
 
 - [Acquistare HoloLens 2](https://www.microsoft.com/hololens/buy) usare questa opzione per altre informazioni sui prezzi HoloLens 2 opzioni
-- Vedere l'elenco seguente dei numeri di business desk per parlare con i colleghi del supporto commerciale per ottenere assistenza tramite il supporto telefonico
-- Per gli acquisti al di fuori del Microsoft Store, fare riferimento a questo [elenco](hololens2-purchase.md) di rivenditori HoloLens 2 autorizzati e paesi in cui HoloLens 2 disponibili.
+- Per assistenza tramite supporto telefonico, vedere l'elenco seguente dei numeri di telefono dell'ufficio per parlare con i colleghi del supporto commerciale
+- Per gli acquisti al di fuori Microsoft Store, fare riferimento a questo elenco di rivenditori HoloLens 2 autorizzati e paesi in cui HoloLens 2 disponibili. [](hololens2-purchase.md)
 
-### <a name="commercial-store-support-numbers"></a>Numeri di supporto per i negozi commerciali
+### <a name="commercial-store-support-numbers"></a>Numeri di supporto per negozi commerciali
 >[!Note]
 >Usare uno dei numeri di telefono aziendali del supporto commerciale riportati di seguito per completare l'acquisto. 
 
 >[!Note]
->Se si sta chiamando per il supporto da un mercato non elencato di seguito, indirizzare la chiamata al numero di business desk degli Stati Uniti.
+>Se si sta chiamando per il supporto da un mercato non elencato di seguito, indirizzare la chiamata al numero dell'ufficio degli Stati Uniti.
 
-| Mercati | Numero di Business Desk | Orario di lavoro |
+| Mercati | Numero di business desk | Orario di lavoro |
 |-----------------|-------------------|-----------------------|
-| Regno Unito | +44 800 026 0061 | Da lunedì a venerdì, dalle 09:00 alle 18:00 |
-| Germania | +49 08 05 98 00 03 | Da lunedì a venerdì, dalle 09:00 alle 18:00 |
-| Svezia    | +46 20 120 3222   | Da lunedì a venerdì, dalle 09:00 alle 18:00 |
-| Svizzera | +41 800 662006 |    Da lunedì a venerdì, dalle 09:00 alle 18:00 |
-| Belgio | +32 80058153 |  Da lunedì a venerdì, dalle 09:00 alle 18:00 |
-| Paesi Bassi | +31 8007482055 |    Da lunedì a venerdì, dalle 09:00 alle 18:00 |
-| Austria | +43 800 943670 |    Da lunedì a venerdì, dalle 09:00 alle 18:00 |
-| Danimarca | +45 80400184 |  Da lunedì a venerdì, dalle 09:00 alle 18:00 |
-| Irlanda | +353 1800 832 653 | Da lunedì a venerdì, dalle 09:00 alle 18:00 |
-| Italia |   +39 800598979 | Da lunedì a venerdì, dalle 09:00 alle 18:00 |
-| Lussemburgo |  +352 80040425 | Da lunedì a venerdì, dalle 09:00 alle 18:00 |
-| Spagna |    +34 800 598979 |   Da lunedì a venerdì, dalle 09:00 alle 18:00 |
-| Norvegia |  +47 80062002 |  Da lunedì a venerdì, dalle 09:00 alle 18:00 |
-| Finlandia | +358 800526136 |    Da lunedì a venerdì, dalle 09:00 alle 18:00 |
-| Portogallo |    +351 800600087 |    Da lunedì a venerdì, dalle 09:00 alle 18:00 |
-| Stati Uniti |  866-425-4709 |  Da lunedì a venerdì, dalle 6:00 alle 18:00, PST |
+| Regno Unito | +44 800 026 0061 | Da lun a ven, dalle 09:00 alle 18:00 |
+| Germania | +49 08 05 98 00 03 | Da lun a ven, dalle 09:00 alle 18:00 |
+| Svezia    | +46 20 120 3222   | Da lun a ven, dalle 09:00 alle 18:00 |
+| Svizzera | +41 800 662006 |    Da lun a ven, dalle 09:00 alle 18:00 |
+| Belgio | +32 80058153 |  Da lun a ven, dalle 09:00 alle 18:00 |
+| Paesi Bassi | +31 8007482055 |    Da lun a ven, dalle 09:00 alle 18:00 |
+| Austria | +43 800 943670 |    Da lun a ven, dalle 09:00 alle 18:00 |
+| Danimarca | +45 80400184 |  Da lun a ven, dalle 09:00 alle 18:00 |
+| Irlanda | +353 1800 832 653 | Da lun a ven, dalle 09:00 alle 18:00 |
+| Italia |   +39 800598979 | Da lun a ven, dalle 09:00 alle 18:00 |
+| Lussemburgo |  +352 80040425 | Da lun a ven, dalle 09:00 alle 18:00 |
+| Spagna |    +34 800 598979 |   Da lun a ven, dalle 09:00 alle 18:00 |
+| Norvegia |  +47 80062002 |  Da lun a ven, dalle 09:00 alle 18:00 |
+| Finlandia | +358 800526136 |    Da lun a ven, dalle 09:00 alle 18:00 |
+| Portogallo |    +351 800600087 |    Da lun a ven, dalle 09:00 alle 18:00 |
+| Stati Uniti |  866-425-4709 |  Da lun a ven, dalle 06:00 alle 18:00, PST |
 | Canada |  877-345-2661 |  Da lun a ven, dalle 06:00 alle 18:00, PST |
 | Cina |   400-805-6783 |  Da lun a ven, dalle 09:00 alle 18:00 |
 | Giappone |   0120-03-5241 |  Da lun a ven, dalle 9:00 alle 17:30 |

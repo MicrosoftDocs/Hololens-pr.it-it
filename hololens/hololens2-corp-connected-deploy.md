@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 6407517bca9efd02fdaf45a78cba7a215ec05670
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: f9435ce94986a851bb7744eeea48fa6e411454f5090d7ae11c869ba6f27dc942
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113637065"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660244"
 ---
 # <a name="deploy---corporate-connected-guide"></a>Distribuzione - Guida alla connessione aziendale
 
@@ -35,17 +35,17 @@ Ora che tutto è configurato correttamente per Azure AD e la registrazione MDM, 
 
 Se il dispositivo non si trova attualmente in uno stato delle impostazioni predefinite, è possibile eseguire il [reflash del dispositivo.](/hololens/hololens-recovery#clean-reflash-the-device)
 
-1. Una volta che il dispositivo è in configurazione di configurazione, è necessario iniziare a interagire e seguire le richieste.
+1. Quando il dispositivo è in configurazione di configurazione, è necessario iniziare a interagire e seguire le richieste.
 
 2. Connessione a una rete Wi-Fi aperta che non richiede certificati per l'aggiunta al Wi-Fi. In questo modo il dispositivo può scaricare il certificato da usare nella rete dell'organizzazione Wi-Fi dopo la configurazione iniziale.
 
 3. La richiesta critica verrà visualizzata quando viene richiesto **Who proprietario di questa HoloLens?** Selezionare **L'account aziendale o dell'istituto di** istruzione è proprietario e immettere le credenziali Azure AD'account.
 
-4. Quando la registrazione ha esito positivo, verrà richiesto di configurare un PIN. Questo PIN è univoco per questo dispositivo per questo utente. Verranno anche richieste le analisi Iris, i dati vocali e le impostazioni di telemetria e infine si potrà imparare ad aprire il menu Start e completare la Configurazione guidata.
+4. Quando la registrazione ha esito positivo, verrà richiesto di configurare un PIN. Questo PIN è univoco per questo dispositivo per questo utente. Verranno anche richieste le analisi Iris, i dati vocali e le impostazioni di telemetria e infine si potrà imparare ad aprire il menu Start e completare la configurazione guidata.
 
-5. Dopo aver atterrato in Mixed Reality Home, aprire il menu Start usando il movimento **Start** appena appreso.
+5. Una volta che si è atterrato in Mixed Reality Home, aprire il menu Start usando il movimento **Start** appena appreso.
 
-6. Selezionare **l'Impostazioni** app e selezionare **Sistema**. La prima informazione che verrà visualizzata è il nome del dispositivo, che per il dispositivo HoloLens 2 sarà &quot; HOLOLENS, seguito &quot; da una stringa di sei caratteri.
+6. Selezionare **l Impostazioni app** e selezionare **Sistema**. La prima informazione che verrà visualizzata è il nome del dispositivo, che per il dispositivo HoloLens 2 sarà &quot; HOLOLENS, seguito &quot; da una stringa di sei caratteri.
 
 7. Prendere nota di questo nome.
 

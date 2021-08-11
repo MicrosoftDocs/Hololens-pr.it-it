@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f2f7e1425a208e1f466d995f66118b7e68984242
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 67e34ea275ef73adda840ee4f44d9c0c3c9440ef0bd2aef48cb7aaa971219220
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113637014"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660136"
 ---
 # <a name="deployment-guide---corporate-connected-hololens-2-with-dynamics-365-guides---overview"></a>Guida alla distribuzione - Connessione aziendale HoloLens 2 con Dynamics 365 Guides - Panoramica
 
@@ -33,7 +33,7 @@ Dovrebbe essere già presente l'infrastruttura seguente:
 - Wi-Fi
     - Rete aziendale interna con accesso alle risorse interne e accesso limitato a Internet o ai servizi cloud
     - Autenticazione del certificato basata su dispositivo.
-- Azure Active Directory (Azure AD) Partecipare alla registrazione automatica MDM (Azure AD[necessaria una sottoscrizione P1)](/azure/active-directory/fundamentals/active-directory-whatis)
+- Azure Active Directory (Azure AD) Aggiungere con la registrazione automatica MDM (Azure AD[necessaria una sottoscrizione P1)](/azure/active-directory/fundamentals/active-directory-whatis)
 - GESTIONE MDM (Intune)
     - Una o più applicazioni vengono distribuite tramite MDM.
 - Rete 
@@ -53,7 +53,7 @@ Dovrebbe essere già presente l'infrastruttura seguente:
 - Power BI Desktop
 - Connettività di rete
 
-[![Diagramma della rete connessa Corp, fase 1 ](./images/deployment-guides-revised-scenario-b-01-1.png)](./images/deployment-guides-revised-scenario-b-01-1.png#lightbox)
+[![Diagramma di rete connessa Corp, fase 1 ](./images/deployment-guides-revised-scenario-b-01-1.png)](./images/deployment-guides-revised-scenario-b-01-1.png#lightbox)
 
 [![Diagramma della rete connessa Corp, fase 2 ](./images/deployment-guides-revised-scenario-b-02-1.png)](./images/deployment-guides-revised-scenario-b-02-1.png#lightbox)
 
@@ -72,7 +72,7 @@ Dovrebbe essere già presente l'infrastruttura seguente:
 > [!div class="checklist"]
 >- [Come creare utenti e gruppi.](hololens2-corp-connected-configure.md#azure-users-and-groups)
 >- [Come configurare la registrazione automatica.](hololens2-corp-connected-configure.md#auto-enrollment-on-hololens-2)
->- [Come configurare certificati e profili Wi-Fi per la connettività Wi-Fi aziendale.](hololens2-corp-connected-configure.md#corporate-wi-fi-connectivity)
+>- [Come configurare i certificati Wi-Fi e i profili per la connettività Wi-Fi aziendale.](hololens2-corp-connected-configure.md#corporate-wi-fi-connectivity)
 >- [Upload pacchetti di app Line of Business (LOB) e Assign Line of Business (LOB).](hololens2-corp-connected-configure.md#app-deployment)
 >- [Configurare Dynamics 365 Guides.](hololens2-corp-connected-configure.md#setup-guides-application-licenses-dataverse-and-authoring)
 >- [Come configurare la modalità tutto schermo (facoltativo).](hololens2-corp-connected-configure.md#optional-kiosk-mode)

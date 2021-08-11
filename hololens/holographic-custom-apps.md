@@ -16,12 +16,12 @@ ms.custom:
 - CSSTroubleshooting
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: a179032978e1fc062273a6754e3b0a1ad50a5211
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 7d564fd00567033060428d5b47b34ddf827dea2fdeeb8955c73bc22e4ba87164
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635909"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664958"
 ---
 # <a name="manage-custom-apps-for-hololens-1st-gen"></a>Gestire app personalizzate per HoloLens (prima generazione)
 
@@ -39,7 +39,7 @@ Per altre informazioni sulle app dello Store, vedere [Gestire le app con lo Stor
 
 ## <a name="install-custom-apps"></a>Installare app personalizzate
 
-È possibile installare applicazioni personalizzate in HoloLens usando il Portale di dispositivi o distribuendo le app da Visual Studio.
+È possibile installare le proprie applicazioni HoloLens usando il Portale di dispositivi o distribuendo le app da Visual Studio.
 
 ### <a name="installing-an-application-package-with-the-device-portal"></a>Installazione di un pacchetto dell'applicazione con il Portale di dispositivi
 

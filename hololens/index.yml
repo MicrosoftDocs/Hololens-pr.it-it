@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Microsoft HoloLens
-summary: Microsoft HoloLens è il primo computer olografico completamente autonomo a eseguire Windows 10. Ora, con l'introduzione di HoloLens 2, ogni dispositivo HoloLens offre funzionalità di gestione pronte per l'uso commerciale migliorate dall'affidabilità, dalla sicurezza e dalla scalabilità dei servizi cloud e di intelligenza artificiale di Microsoft.
+summary: Microsoft HoloLens è il primo computer olografico completamente indipendente a eseguire Windows 10. Ora, con l'introduzione di HoloLens 2, ogni dispositivo HoloLens offre funzionalità di gestione pronte per la commercializzazione migliorate dall'affidabilità, dalla sicurezza e dalla scalabilità dei servizi cloud e di intelligenza artificiale di Microsoft.
 metadata:
   title: Microsoft HoloLens
   description: Pagina di destinazione per Microsoft HoloLens.
@@ -11,12 +11,12 @@ metadata:
   ms.author: v-jjaswinski
   ms.date: 05/24/2021
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: c0189c7a75ad27d6d301721e78de6391f6ac76f7
-  ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+  ms.openlocfilehash: fb887c40771d371d90580c0bb29c08d9686dfefab5515ba1fdc768fbc01551de
+  ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 07/24/2021
-  ms.locfileid: "114659574"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "115665319"
 landingContent:
 - title: Informazioni sul HoloLens 2
   linkLists:
@@ -38,7 +38,7 @@ landingContent:
       url: hololens2-options-industrial-edition.md
     - text: Edizione di sviluppo
       url: hololens2-options-dev-edition.md
-    - text: Trimble XR10 con HoloLens 2
+    - text: Trimble XR10 with HoloLens 2
       url: hololens2-options-trimble-xr10-edition.md
 - title: Introduzione
   linkLists:
@@ -48,7 +48,7 @@ landingContent:
       url: hololens2-setup.md
     - text: Utilizzo giornaliero
       url: holographic-home.md
-- title: Pianificare la HoloLens 2 distribuzione
+- title: Pianificare la distribuzione HoloLens 2 distribuzione
   linkLists:
   - linkListType: architecture
     links:
@@ -60,11 +60,11 @@ landingContent:
       url: hololens2-autopilot-registration-support.md
   - linkListType: deploy
     links:
-    - text: Guida alla distribuzione - Distribuzione di HoloLens 2 con connessione cloud su larga scala con Remote Assist
+    - text: Guida alla distribuzione - Distribuzione di applicazioni HoloLens 2 cloud su larga scala con Remote Assist
       url: hololens2-cloud-connected-overview.md
     - text: Guida alla distribuzione - Client esterni (connessi al cloud)
       url: hololens2-deployment-guide.md
-    - text: Guida alla distribuzione - Distribuzione di HoloLens 2 aziendale con Dynamics 365 Guides
+    - text: Guida alla distribuzione - Distribuzione di applicazioni HoloLens 2 con connessione aziendale con Dynamics 365 Guides
       url: hololens2-corp-connected-overview.md
     - text: Guida alla distribuzione - Protezione offline
       url: hololens-common-scenarios-offline-secure.md
@@ -80,7 +80,7 @@ landingContent:
       url: hololens2-display.md
     - text: Implementazione e dispositivi gestiti
       url: hololens2-enterprise-troubleshooting.md
-    - text: Raccogliere e usare informazioni di diagnostica HoloLens dispositivi
+    - text: Raccogliere e usare le informazioni di diagnostica HoloLens dispositivi
       url: hololens-diagnostic-logs.md
     - text: Riavviare, reimpostare o ripristinare HoloLens 2
       url: hololens-recovery.md

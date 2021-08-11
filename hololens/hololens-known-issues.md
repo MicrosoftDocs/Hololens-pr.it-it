@@ -14,12 +14,12 @@ manager: jarrettr
 ms.prod: hololens
 appliesto:
 - HoloLens (1st Gen)
-ms.openlocfilehash: 36991d62da91011b807dfb9ff52ab16eadac8bc7
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: d2a8ae420a0c1d646625fe81b166e2daae07e44652b70f2e4a1b19ccba240cfb
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640305"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115663955"
 ---
 # <a name="known-issues-for-hololens-1st-gen"></a>Problemi noti per HoloLens (prima generazione)
 
@@ -54,7 +54,7 @@ L OneDrive app per HoloLens non supporta il caricamento automatico della fotocam
 
 Soluzioni alternative:
 
-- Se possibile per l'azienda, il caricamento automatico della fotocamera è supportato sugli account Microsoft consumer. È possibile accedere al proprio account Microsoft oltre all'account aziendale o dell'istituto di istruzione (l'app OneDrive supporta il doppio accesso). Dal profilo account Microsoft all'interno OneDrive è possibile abilitare il caricamento automatico del rullino della fotocamera in background.
+- Se possibile per l'azienda, il caricamento automatico della fotocamera è supportato sugli account Microsoft consumer. È possibile accedere alla propria account Microsoft oltre all'account aziendale o dell'istituto di istruzione (l'app OneDrive supporta il doppio accesso). Dal profilo account Microsoft all'interno OneDrive è possibile abilitare il caricamento automatico del rullino della fotocamera in background.
 
 - Se non è possibile usare in modo sicuro un account Microsoft consumer per caricare automaticamente le foto, è possibile caricare manualmente le foto nell'account aziendale o dell'istituto di istruzione dall'app OneDrive aziendale. A tale scopo, assicurarsi di aver eseguito l'accesso all'account aziendale o dell'istituto di istruzione nell'app OneDrive app. Selezionare il **+** pulsante e scegliere Upload . Trovare le foto o i video da caricare passando a **Immagini > Rullino.** Selezionare le foto o i video da caricare e quindi fare clic **sul pulsante** Apri.
 
@@ -67,7 +67,7 @@ Soluzioni alternative:
 
 Visual Studio ha rilasciato VS 2019 versione 16.2, che include una correzione a questo problema. È consigliabile eseguire l'aggiornamento a questa versione più recente per evitare che si verifichi questo errore.
 
-Causa radice del problema: gli utenti che hanno usato Visual Studio Visual Studio 2015 o versioni precedenti di Visual Studio 2017 per distribuire ed eseguire il debug di applicazioni nel HoloLens e successivamente hanno usato le versioni più recenti di Visual Studio 2017 o Visual Studio 2019 con lo stesso HoloLens saranno interessati. Le versioni più recenti Visual Studio una nuova versione di un componente, ma i file della versione precedente vengono lasciati nel dispositivo, causando l'esito negativo della versione più recente.  Ciò causa il seguente messaggio di errore: DEP0100: Assicurarsi che nel dispositivo di destinazione sia abilitata la modalità sviluppatore. Impossibile ottenere una licenza per sviluppatori in \<ip\> a causa dell'errore 80004005.
+Causa radice del problema: gli utenti che hanno usato Visual Studio Visual Studio 2015 o versioni precedenti di Visual Studio 2017 per distribuire ed eseguire il debug di applicazioni nel HoloLens e successivamente hanno usato le versioni più recenti di Visual Studio 2017 o Visual Studio 2019 con lo stesso HoloLens saranno interessati. Le versioni più recenti Visual Studio una nuova versione di un componente, ma i file della versione precedente vengono lasciati nel dispositivo, causando l'esito negativo della versione più recente.  Ciò causa il seguente messaggio di errore: DEP0100: Assicurarsi che nel dispositivo di destinazione sia abilitata la modalità sviluppatore. Impossibile ottenere una licenza per sviluppatori in \<ip\> a causa di errori 80004005.
 
 #### <a name="workaround"></a>Soluzione alternativa
 
@@ -129,7 +129,7 @@ Il team sta attualmente lavorando a una correzione. Nel frattempo, è possibile 
 
 Verranno forniti altri aggiornamenti non appena saranno disponibili.
 
-### <a name="issues-launching-the-microsoft-store-and-apps-on-hololens"></a>Problemi di avvio del Microsoft Store e delle app HoloLens
+### <a name="issues-launching-the-microsoft-store-and-apps-on-hololens"></a>Problemi di avvio del Microsoft Store e delle app in HoloLens
 
 > [!NOTE]
 > Ultimo aggiornamento: 4/2 @ 10:00 - Problema risolto.
@@ -170,7 +170,7 @@ Se il dispositivo non è ancora in grado di caricare le app, è possibile esegui
 
 1. Scaricare questo [file ZIP dall'Area](https://download.microsoft.com/download/8/5/C/85C23745-794C-419D-B8D7-115FBCCD6DA7/netfx_1.7.zip) download Microsoft. Decomprimendo verranno prodotti due file.  Microsoft .NET.Native.Runtime.1.7.appx e Microsoft .NET.Native.Framework.1.7.appx.
 
-1. Verificare che il dispositivo sia sbloccato.  Se non è già stato fatto in precedenza, vedere [Uso del Windows Portale di dispositivi](/windows/mixed-reality/using-the-windows-device-portal) per istruzioni.
+1. Verificare che il dispositivo sia sbloccato.  Se non è già stato fatto in precedenza, vedere [Uso](/windows/mixed-reality/using-the-windows-device-portal) del Windows Portale di dispositivi per istruzioni.
 
 1. Si vuole quindi accedere al Windows Portale di dispositivi. È consigliabile eseguire questa operazione tramite USB, digitando http://127.0.0.1:10080 nel browser.
 
@@ -180,7 +180,7 @@ Se il dispositivo non è ancora in grado di caricare le app, è possibile esegui
 
    ![Windows Portale di dispositivi installare lSide-Loaded app](images/20190322-DevicePortal.png)
 
-1. A questo punto si ritiene che le applicazioni debbano iniziare a funzionare di nuovo e che sia anche possibile accedere allo Store.
+1. A questo punto si ritiene che le applicazioni debbano ricominciare a funzionare e che sia anche possibile accedere allo Store.
 
 1. In alcuni casi, è necessario eseguire il passaggio aggiuntivo di avvio dell'app Visualizzatore 3D prima dell'avvio delle app interessate.
 
@@ -204,7 +204,7 @@ Siamo molto apprezzati dal fatto che il processo di risoluzione del problema è 
 
 - Il controller wireless Xbox S deve essere aggiornato prima di poter essere usato con HoloLens. Assicurarsi di essere [aggiornati prima di](https://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter) provare ad associare il controller a un HoloLens.
 
-- Se si riavvia il HoloLens mentre il controller wireless Xbox è connesso, il controller non si riconnette automaticamente HoloLens. La luce del pulsante Guida lampeggia lentamente fino a quando il controller non si spegne dopo 3 minuti. Per riconnettere immediatamente il controller, spegnere il controller tenendo premuto il pulsante Guida fino a quando la luce non si spegne. Quando si riasserà il controller, si riconnetterà al HoloLens.
+- Se si riavvia il HoloLens mentre il controller wireless Xbox è connesso, il controller non si riconnette automaticamente HoloLens. La luce del pulsante Guida lampeggia lentamente fino a quando il controller non si spegne dopo 3 minuti. Per riconnettere immediatamente il controller, spegnere il controller tenendo premuto il pulsante Guida fino a quando la luce non si spegne. Quando si rialleva il controller, si riconnetterà al HoloLens.
 
 - Se il HoloLens entra in standby mentre il controller wireless Xbox è connesso, qualsiasi input sul controller riattiva il HoloLens. È possibile evitare questo problema spegnendo il controller al termine dell'uso.
 

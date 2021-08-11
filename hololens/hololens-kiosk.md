@@ -17,21 +17,21 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 25227184ec33b134215dbd1f42f7b920b26dc29c
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: e7f1efa99cc16b1003bd7063817451013ed2ec2661dbdf02edcd89c7984d0980
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659591"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115663976"
 ---
 # <a name="set-up-hololens-as-a-kiosk"></a>Configurare l'HoloLens come chiosco multimediale
 
 È possibile configurare un HoloLens in modo che funzioni come dispositivo per utilizzo fisso, detto anche chiosco multimediale, configurando il dispositivo per l'esecuzione in modalità tutto schermo. La modalità tutto schermo limita le applicazioni (o gli utenti) disponibili nel dispositivo. La modalità tutto schermo è una funzionalità pratica che è possibile usare per dedicare un dispositivo HoloLens alle app aziendali o per usare il dispositivo HoloLens in una demo di app.
 
-Questo articolo fornisce informazioni sugli aspetti della configurazione della modalità tutto schermo specifici per HoloLens dispositivi. Per informazioni generali sui diversi tipi di chioschi in modalità tutto schermo basati su Windows e su come configurarli, vedere Configurare chioschi in modalità tutto schermo e segnali digitali [Windows desktop.](/windows/configuration/kiosk-methods)  
+Questo articolo fornisce informazioni sugli aspetti della configurazione della modalità tutto schermo specifici per HoloLens dispositivi. Per informazioni generali sui diversi tipi di chioschi in modalità tutto schermo basati su Windows e su come configurarli, vedere Configurare chioschi in modalità tutto schermo e segnali digitali Windows [desktop.](/windows/configuration/kiosk-methods)  
 
 > [!IMPORTANT]  
-> La modalità tutto schermo determina quali app sono disponibili quando un utente accede al dispositivo. Tuttavia, la modalità tutto schermo non è un metodo di sicurezza. Non arresta l'apertura di un'altra app non consentita da un'app "consentita". Per bloccare l'apertura di app o processi, usare Windows Defender CSP di Controllo di [applicazioni (WDAC)](/windows/client-management/mdm/applicationcontrol-csp) per creare i criteri appropriati.
+> La modalità tutto schermo determina quali app sono disponibili quando un utente accede al dispositivo. Tuttavia, la modalità tutto schermo non è un metodo di sicurezza. Non arresta l'apertura di un'altra app non consentita da un'app "consentita". Per bloccare l'apertura di app o processi, usare Windows Defender CSP di Controllo di applicazioni [(WDAC)](/windows/client-management/mdm/applicationcontrol-csp) per creare i criteri appropriati.
 >
 > Altre informazioni sull'servizi Microsoft per offrire agli utenti un livello di sicurezza avanzato che HoloLens 2 usa, altre informazioni sulla separazione e l'isolamento dello stato [- Protezioni di Defender.](security-state-separation-isolation.md#defender-protections) In altre informazioni su [come usare WDAC Windows PowerShell per consentire](/mem/intune/configuration/custom-profile-hololens)o bloccare le app HoloLens 2 dispositivi con Microsoft Intune .
 
@@ -43,7 +43,7 @@ Questo articolo fornisce informazioni sugli aspetti della configurazione della m
 ## <a name="plan-the-kiosk-deployment"></a>Pianificare la distribuzione in modalità tutto schermo
 
 Quando si pianifica il chiosco multimediale, è necessario essere in grado di rispondere alle domande seguenti. Ecco alcune decisioni da prendere in considerazione durante la lettura di questa pagina e alcune considerazioni per queste domande.
-1. **Who verrà utilizzato il chiosco multimediale e quale tipo di [account](hololens-identity.md) verrà utilizzato?** Si tratta di una decisione probabilmente già presa e non deve essere modificata per il chiosco multimediale, ma influirà sul modo in cui il chiosco multimediale verrà assegnato in un secondo momento.
+1. **Who verrà utilizzato il chiosco multimediale e quale tipo di [account](hololens-identity.md) verrà utilizzato?** Si tratta di una decisione che probabilmente è già stata presa e non deve essere modificata ai fini del chiosco multimediale, ma influirà sul modo in cui il chiosco multimediale verrà assegnato in un secondo momento.
 1. **È necessario avere chioschi in modalità tutto schermo diversi per utente/gruppo o un chiosco multimediale non abilitato per alcuni?** In tal caso, è necessario creare il chiosco multimediale tramite XML. 
 1. **Quante app saranno in modalità tutto schermo?** Se si hanno più app, è necessario un chiosco multimediale con più app. 
 1. **Quali app saranno in modalità tutto schermo?** Usare l'elenco di AUMID riportato di seguito per aggiungere In-Box app personalizzate.
@@ -67,7 +67,7 @@ Un chiosco multimediale con una singola app avvia l'app specificata quando l'ute
 
 Un chiosco multimediale con più app visualizza menu Start quando l'utente accede al dispositivo. La configurazione della modalità tutto schermo determina quali app sono disponibili nel menu Start. È possibile usare un chiosco multimediale con più app per offrire agli utenti un'esperienza di facile comprensione presentando loro solo gli elementi che devono usare e rimuovendo gli elementi che non devono usare.
 
-La tabella seguente elenca le funzionalità disponibili nelle diverse modalità tutto schermo.
+La tabella seguente elenca le funzionalità nelle diverse modalità tutto schermo.
 
 | &nbsp; |Menu Start |Menu Azioni rapide |Fotocamera e video |Miracast |Cortana |Comandi vocali predefiniti |
 | --- | --- | --- | --- | --- | --- | --- | 
@@ -90,7 +90,7 @@ Per esempi su come usare queste funzionalità, vedere la tabella seguente.
 |Usare un'app singola in modalità tutto schermo per: |Usare un chiosco multimediale con più app per: |
 | --- | --- |
 |Un dispositivo che esegue solo una Guida di Dynamics 365 per i nuovi dipendenti. |Un dispositivo che esegue guide e assistenza remota per una gamma di dipendenti. |
-|Un dispositivo che esegue solo un'app personalizzata. |Un dispositivo che funziona come chiosco multimediale per la maggior parte degli utenti (che esegue solo un'app personalizzata), ma funziona come dispositivo standard per un gruppo specifico di utenti. |
+|Un dispositivo che esegue solo un'app personalizzata. |Un dispositivo che funziona come un chiosco multimediale per la maggior parte degli utenti (che esegue solo un'app personalizzata), ma funziona come un dispositivo standard per un gruppo specifico di utenti. |
 
 ### <a name="plan-kiosk-apps"></a>Pianificare app in modalità tutto schermo
 
@@ -98,10 +98,10 @@ Per informazioni generali su come scegliere le app in modalità tutto schermo, v
 
 Se si usa l'Windows Portale di dispositivi per configurare un'app singola in modalità tutto schermo, selezionare l'app durante il processo di configurazione.  
 
-Se si usa un sistema di gestione di dispositivi mobili (MDM) o un pacchetto di provisioning per configurare la modalità tutto schermo, si usa il provider di servizi di configurazione [AssignedAccess (CSP)](/windows/client-management/mdm/assignedaccess-csp) per specificare le applicazioni. Il provider di servizi di configurazione usa gli ID modello utente [applicazione (AUMID) per](/windows/configuration/find-the-application-user-model-id-of-an-installed-app) identificare le applicazioni. La tabella seguente elenca gli AUMID di alcune applicazioni in-box che è possibile usare in un chiosco multimediale multi-app.
+Se si usa un sistema di gestione di dispositivi mobili (MDM) o un pacchetto di provisioning per configurare la modalità tutto schermo, si usa il provider di servizi di configurazione [AssignedAccess (CSP)](/windows/client-management/mdm/assignedaccess-csp) per specificare le applicazioni. Il provider di servizi di configurazione usa gli ID modello utente [applicazione (AUMID)](/windows/configuration/find-the-application-user-model-id-of-an-installed-app) per identificare le applicazioni. La tabella seguente elenca gli AUMID di alcune applicazioni in-box che è possibile usare in un chiosco multimediale con più app.
 
 > [!IMPORTANT]
-> La modalità tutto schermo determina le app disponibili quando un utente accede al dispositivo. Tuttavia, la modalità tutto schermo non è un metodo di sicurezza. Non arresta l'apertura di un'app "consentita" da un'altra app non consentita. Poiché questo comportamento non viene limitato, le app possono comunque essere avviate da Edge, Esplora file e Microsoft Store app. Se sono presenti app specifiche che non si vuole avviare da un chiosco multimediale, usare Windows Defender [Application Control (WDAC) CSP per](/windows/client-management/mdm/applicationcontrol-csp) creare i criteri appropriati. 
+> La modalità tutto schermo determina quali app sono disponibili quando un utente accede al dispositivo. Tuttavia, la modalità tutto schermo non è un metodo di sicurezza. Non arresta l'apertura di un'altra app non consentita da un'app "consentita". Poiché questo comportamento non è limitato, le app possono comunque essere avviate da Microsoft Edge, Esplora file e Microsoft Store app. Se sono presenti app specifiche che non si vuole avviare da un chiosco multimediale, usare il provider di servizi di configurazione Windows Defender [Application Control (WDAC)](/windows/client-management/mdm/applicationcontrol-csp) per creare i criteri appropriati. 
 > 
 > Inoltre, la home page di realtà mista non può essere impostata come app in modalità tutto schermo.
 
@@ -113,191 +113,191 @@ Se si usa un sistema di gestione di dispositivi mobili (MDM) o un pacchetto di p
 |Calendario |microsoft.windowscommunicationsapps \_ 8wekyb3d8bbwe \! microsoft.windowslive.calendar |
 |Fotocamera<sup>1, 2</sup> |HoloCamera \_ cw5n1h2txyewy \! HoloCamera |
 |Cortana<sup>3</sup> |Microsoft.549981C3F5F10 \_ 8wekyb3d8bbwe \! App |
-|Selezione dispositivi in HoloLens (prima generazione) |HoloDevicesFlow \_ cw5n1h2txyewy \! HoloDevicesFlow |
-|Selezione dispositivi in HoloLens 2 |Microsoft. Windows. DevicesFlowHost \_ cw5n1h2txyewy \! Microsoft.Windows. DispositiviFlowHost |
+|Selezione dispositivo in HoloLens (prima generazione) |HoloDevicesFlow \_ cw5n1h2txyewy \! HoloDevicesFlow |
+|Selezione dispositivo in HoloLens 2 |Microsoft. Windows. DevicesFlowHost \_ cw5n1h2txyewy \! Microsoft.Windows. DevicesFlowHost |
 |Guide di Dynamics 365 |Microsoft.Dynamics365.Guides \_ 8wekyb3d8bbwe \! MicrosoftGuides |
 |Dynamics 365 Remote Assist |Microsoft.MicrosoftRemoteAssist \_ 8wekyb3d8bbwe \! Microsoft.RemoteAssist |
-|Hub di &nbsp; feedback |Microsoft.WindowsFeedbackHub \_ 8wekyb3d8bbwe \! App |
+|Hub di &nbsp; Feedback |Microsoft.WindowsFeedbackHub \_ 8wekyb3d8bbwe \! App |
 |Esplora file |c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy!App |
 |Posta |microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowslive.mail |
-|Dati Microsoft Edge |Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge |
+|Versione precedente Microsoft Edge |Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge |
 |Nuovo Microsoft Edge |Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe! MSEDGE |
 |Microsoft Store |Microsoft.WindowsStore_8wekyb3d8bbwe!App |
 |Miracast<sup>4</sup> |&nbsp; |
 |Film e TV |Microsoft.ZuneVideo \_ 8wekyb3d8bbwe \! Microsoft.ZuneVideo |
 |OneDrive |Microsoft.microsoftskydrive \_ 8wekyb3d8bbwe \! App |
 |Foto |Microsoft. Windows. \_Foto App 8wekyb3d8bbwe \! |
-|Dati Impostazioni |HolographicSystemSettings_cw5n1h2txyewy! App |
+|Versione precedente Impostazioni |HolographicSystemSettings_cw5n1h2txyewy! App |
 |Nuovo Impostazioni |BAEAEF15-9BAB-47FC-800B-ACECAD2AE94B_cw5n1h2txyewy! App |
 |Suggerimenti |Microsoft.HoloLensTips \_ 8wekyb3d8bbwe \! HoloLensTips |
 
-> <sup>1</sup> Per abilitare l'acquisizione di foto o video, è necessario abilitare l'app Fotocamera come app tutto schermo.  
+> <sup>1</sup> Per abilitare l'acquisizione di foto o video, è necessario abilitare l'app Fotocamera come app in modalità tutto schermo.  
 > <sup>2</sup> Quando si abilita l'app Fotocamera, tenere presenti le condizioni seguenti:
 > - Il menu Azioni rapide include i pulsanti Foto e Video.  
-> - È anche necessario abilitare un'app (ad esempio Foto, Mail o OneDrive) in grado di interagire con o recuperare immagini.  
+> - È anche consigliabile abilitare un'app (ad esempio Foto, Mail o OneDrive) in grado di interagire con o recuperare immagini.  
 >  
 > <sup>3</sup> Anche se non si abilita l'Cortana come app in modalità tutto schermo, vengono abilitati i comandi vocali predefiniti. Tuttavia, i comandi correlati alle funzionalità disabilitate non hanno alcun effetto.  
-> <sup>4</sup> Non è possibile abilitare Miracast direttamente. Per abilitare Miracast come app tutto schermo, abilitare l'app Fotocamera e l'app Selezione dispositivi.
+> <sup>4</sup> Non è possibile abilitare Miracast direttamente. Per abilitare la Miracast come app in modalità tutto schermo, abilitare l'app Fotocamera e l'app Selezione dispositivo.
 
 ### <a name="plan-kiosk-profiles-for-users-or-groups"></a>Pianificare profili in modalità tutto schermo per utenti o gruppi
 
-Quando si crea il file XML o si usa l'interfaccia utente di Intune per configurare un chiosco multimediale, è necessario considerare chi sarà l'utente del chiosco multimediale. Una configurazione tutto schermo può essere limitata a un singolo account o Azure AD gruppi. 
+Quando si crea il file XML o si usa l'interfaccia utente di Intune per configurare un chiosco multimediale, è necessario considerare chi sarà l'utente della modalità tutto schermo. Una configurazione della modalità tutto schermo può essere limitata a un singolo account o a Azure AD gruppi. 
 
-In genere i chioschi in modalità tutto schermo sono abilitati per un utente o un gruppo di utenti. Tuttavia, se si prevede di scrivere il proprio chiosco multimediale XML, è consigliabile prendere in considerazione l'accesso assegnato globale, in cui il chiosco multimediale viene applicato a livello di dispositivo indipendentemente dall'identità. Per altre informazioni sui chioschi di accesso assegnato globale, vedere [questo sito.](hololens-global-assigned-access-kiosk.md)
+In genere i chioschi sono abilitati per un utente o un gruppo di utenti. Tuttavia, se si prevede di scrivere codice XML in modalità tutto schermo, è consigliabile prendere in considerazione l'accesso assegnato globale, in cui il chiosco multimediale viene applicato a livello di dispositivo indipendentemente dall'identità. Se questo è interessante, leggere [altre informazioni sui chioschi di accesso assegnati a livello globale.](hololens-global-assigned-access-kiosk.md)
 
-#### <a name="if-you-are-creating-an-xml-file"></a>Se si crea un file XML:
--   Molti creano più profili tutto schermo e assegnano ognuno a utenti/gruppi diversi. Ad esempio, un chiosco multimediale per il Azure AD con molte app e un visitatore con più app in modalità tutto schermo con un'app singolare.
+#### <a name="if-you-are-creating-an-xml-file"></a>Se si sta creando un file XML:
+-   Molti utenti creano più profili in modalità tutto schermo e assegnano ognuno a utenti/gruppi diversi. Ad esempio, un chiosco multimediale per il gruppo di Azure AD con molte app e un visitatore con più app in modalità tutto schermo con un'app singola.
 -   La configurazione della modalità tutto schermo sarà denominata **ID profilo** e avrà un GUID.
--   Il profilo verrà assegnato nella sezione configs specificando il tipo di utente e usando lo stesso GUID per **DefaultProfile ID**.
-- Un file XML può essere creato ma ancora applicato a un dispositivo tramite MDM creando un profilo di configurazione del dispositivo URI OMA personalizzato e applicandolo HoloLens un gruppo di dispositivi usando il valore URI : ./Device/Vendor/MSFT/AssignedAccess/Configuration
+-   Il profilo verrà assegnato nella sezione configs specificando il tipo di utente e usando lo stesso GUID per **DefaultProfile Id**.
+- Un file XML può essere creato ma comunque applicato a un dispositivo tramite MDM creando un profilo di configurazione del dispositivo URI OMA personalizzato e applicandolo HoloLens un gruppo di dispositivi usando il valore URI: ./Device/Vendor/MSFT/AssignedAccess/Configuration
 
 #### <a name="if-you-are-creating-a-kiosk-in-intune"></a>Se si crea un chiosco multimediale in Intune.
--   Ogni dispositivo può ricevere un solo profilo tutto schermo, in caso contrario creerà un conflitto e non riceverà alcuna configurazione della modalità tutto schermo. 
-    -   Altri tipi di profili e criteri, ad esempio le restrizioni del dispositivo non correlate al profilo di configurazione tutto schermo, non sono in conflitto con il profilo di configurazione tutto schermo.
--   La modalità tutto schermo verrà abilitata per tutti gli utenti che fanno parte del tipo Di accesso utente, che verrà impostato con un utente o un Azure AD gruppo. 
--   Dopo aver impostato la configurazione della modalità tutto schermo e aver selezionato Il tipo di accesso utente **(utenti** che possono accedere alla modalità tutto schermo) e le app, la configurazione del dispositivo deve comunque essere assegnata a un gruppo. I gruppi assegnati determinano i dispositivi che ricevono la configurazione del dispositivo Tutto schermo, ma non interagiscono con se la modalità tutto schermo è abilitata o meno. 
-    - Per una descrizione completa degli effetti dell'assegnazione di profili di configurazione in Intune, vedere [Assegnare](/intune/configuration/device-profile-assign)profili utente e dispositivo in Microsoft Intune .
+-   Ogni dispositivo può ricevere un solo profilo in modalità tutto schermo, in caso contrario creerà un conflitto e non riceverà alcuna configurazione della modalità tutto schermo. 
+    -   Altri tipi di profili e criteri, ad esempio le restrizioni dei dispositivi non correlate al profilo di configurazione della modalità tutto schermo, non sono in conflitto con il profilo di configurazione della modalità tutto schermo.
+-   La modalità tutto schermo verrà abilitata per tutti gli utenti che fanno parte del tipo Accesso utente, che verrà impostata con un utente o un Azure AD utenti. 
+-   Dopo aver impostato la configurazione della modalità tutto schermo e aver selezionato Il tipo di accesso utente **(utenti** che possono accedere alla modalità tutto schermo) e le app, è necessario assegnare la configurazione del dispositivo a un gruppo. I gruppi assegnati determinano i dispositivi che ricevono la configurazione del dispositivo In modalità tutto schermo, ma non interagisce con se la modalità tutto schermo è abilitata o meno. 
+    - Per una descrizione completa degli effetti dell'assegnazione dei profili di configurazione in Intune, vedere [Assegnare profili](/intune/configuration/device-profile-assign)utente e dispositivo in Microsoft Intune .
 
 ### <a name="select-a-deployment-method"></a>Selezionare un metodo di distribuzione
 
-È possibile selezionare uno dei metodi seguenti per distribuire le configurazioni in modalità tutto schermo:
+È possibile selezionare uno dei metodi seguenti per distribuire le configurazioni della modalità tutto schermo:
 
-- [Microsoft Intune o un altro servizio di gestione dei dispositivi mobili (MDM)](#use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk)
+- [Microsoft Intune o un altro servizio di gestione di dispositivi mobili (MDM)](#use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk)
 
 - [Pacchetto di provisioning](#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk)
 
 - [Portale di dispositivi di Windows](#use-the-windows-device-portal-to-set-up-a-single-app-kiosk)
 
    > [!NOTE]  
-   > Poiché questo metodo richiede che la modalità sviluppatore sia abilitata nel dispositivo, è consigliabile usarla solo per le dimostrazioni.
+   > Poiché questo metodo richiede che nel dispositivo sia abilitata la modalità sviluppatore, è consigliabile usarla solo a scopo dimostrativo.
 
-Nella tabella seguente sono elencate le funzionalità e i vantaggi di ognuno dei metodi di distribuzione.
+La tabella seguente elenca le funzionalità e i vantaggi di ognuno dei metodi di distribuzione.
 
-| &nbsp; |Eseguire la distribuzione usando Windows Portale di dispositivi |Distribuire usando un pacchetto di provisioning |Distribuire tramite MDM |
+| &nbsp; |Eseguire la distribuzione usando Windows Portale di dispositivi |Eseguire la distribuzione usando un pacchetto di provisioning |Eseguire la distribuzione tramite MDM |
 | --------------------------- | ------------- | -------------------- | ---- |
-|Distribuire chioschi in modalità tutto schermo per app singole   | Sì           | Sì                  | Sì  |
-|Distribuire chioschi in modalità tutto schermo per più app    | No            | Sì                  | Sì  |
-|Distribuire solo nei dispositivi locali | Sì           | Sì                  | No   |
-|Distribuire usando la modalità sviluppatore |Obbligatoria       | Facoltativo            | Facoltativo   |
-|Eseguire la distribuzione usando Azure Active Directory (Azure AD)  | Facoltativo            | Facoltativo                   | Obbligatoria  |
+|Distribuire chioschi multimediale per app singole   | Sì           | Sì                  | Sì  |
+|Distribuire più app in modalità tutto schermo    | No            | Sì                  | Sì  |
+|Eseguire la distribuzione solo nei dispositivi locali | Sì           | Sì                  | No   |
+|Eseguire la distribuzione usando la modalità sviluppatore |Necessario       | Facoltativo            | Facoltativo   |
+|Eseguire la distribuzione usando Azure Active Directory (Azure AD)  | Facoltativo            | Facoltativo                   | Necessario  |
 |Distribuire automaticamente      | No            | No                   | Sì  |
-|Velocità di distribuzione            | Veloci       | Veloci                 | Lente |
+|Velocità di distribuzione            | Veloce       | Veloci                 | Lente |
 |Distribuire su larga scala | Non consigliata    | Consigliato        | Consigliato |
 
-## <a name="use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk"></a>Usare Microsoft Intune o un'altra soluzione MDM per configurare una singola app o più app in modalità tutto schermo
+## <a name="use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk"></a>Usare Microsoft Intune o un'altra soluzione MDM per configurare un'app singola o multiapp in modalità tutto schermo
 
 Per configurare la modalità tutto schermo usando Microsoft Intune o un altro sistema MDM, seguire questa procedura.
 
 1. [Preparare la registrazione dei dispositivi](#mdmenroll).
-1. [Creare un profilo di configurazione della modalità tutto schermo](#mdmprofile).
-1. Configurare la modalità tutto schermo.
-   - [Configurare le impostazioni per un'app singola in modalità tutto schermo.](#mdmconfigsingle)
-   - [Configurare le impostazioni per un chiosco multimediale con più app.](#mdmconfigmulti)
+1. [Creare un profilo di configurazione tutto schermo](#mdmprofile).
+1. Configurare il chiosco multimediale.
+   - [Configurare le impostazioni per un chiosco multimediale a app singola.](#mdmconfigsingle)
+   - [Configurare le impostazioni per un chiosco multimediale multi-app.](#mdmconfigmulti)
 1. [Assegnare il profilo di configurazione della modalità tutto schermo a un gruppo](#mdmassign).
 1. Distribuire i dispositivi.
    - [Distribuire un'app singola in modalità tutto schermo.](#mdmsingledeploy)
-   - [Distribuire un'app multi-app](#mdmmultideploy)in modalità tutto schermo.
+   - [Distribuire un chiosco multimediale multi-app.](#mdmmultideploy)
 
 ### <a name="mdm-step-1-ndash-prepare-to-enroll-the-devices"></a><a id="mdmenroll"></a>MDM, passaggio 1 &ndash; Preparare la registrazione dei dispositivi
 
-È possibile configurare il sistema MDM per registrare automaticamente HoloLens dispositivi quando l'utente esegue l'accesso per la prima volta oppure fare in modo che gli utenti esee possano registrare i dispositivi manualmente. I dispositivi devono anche essere aggiunti al dominio Azure AD e assegnati ai gruppi appropriati.
+È possibile configurare il sistema MDM per registrare automaticamente HoloLens dispositivi quando l'utente accede per la prima volta oppure fare in modo che gli utenti i dispositivi possano essere registrati manualmente. I dispositivi devono anche essere aggiunti al dominio Azure AD e assegnati ai gruppi appropriati.
 
-Per altre informazioni su come registrare i dispositivi, vedere [Enroll HoloLens in MDM](hololens-enroll-mdm.md) and Intune enrollment methods for Windows devices (Registrare i dispositivi in MDM e i metodi di registrazione di Intune per Windows [mobili).](/mem/intune/enrollment/windows-enrollment-methods)
+Per altre informazioni su come registrare i dispositivi, vedere [Registrare](hololens-enroll-mdm.md) HoloLens nei metodi di registrazione MDM e [Intune per](/mem/intune/enrollment/windows-enrollment-methods)Windows dispositivi .
 
-### <a name="mdm-step-2-ndash-create-a-kiosk-configuration-profile"></a><a id="mdmprofile"></a>MDM, passaggio 2: Creare &ndash; un profilo di configurazione della modalità tutto schermo
+### <a name="mdm-step-2-ndash-create-a-kiosk-configuration-profile"></a><a id="mdmprofile"></a>MDM, passaggio 2 &ndash; Creare un profilo di configurazione tutto schermo
 
-1. Aprire il portale di [Azure](https://portal.azure.com/) e accedere all'account amministratore di Intune personale.
-1. Selezionare **Microsoft Intune** Device configuration - Profiles Create profile (Configurazione  >  **del dispositivo - Creazione** profilo  >  **profili).**
-1. Immettere un nome per il profilo.
-1. Selezionare **Impostazioni Windows 10** e versioni successive e quindi selezionare Tipo di profilo Restrizioni del  >     > **dispositivo.**
+1. Aprire il [portale di Azure](https://portal.azure.com/) e accedere all'account amministratore di Intune locale.
+1. Selezionare **Microsoft Intune**  >  **configurazione del dispositivo - Profili**  >  **Crea profilo**.
+1. Immettere un nome di profilo.
+1. Selezionare **Platform**  >  **Windows 10 e versioni successive** e quindi selezionare Profile **type**  > **Device restrictions (Restrizioni del dispositivo).**
 1. Selezionare **Configura**  >  **chiosco** multimediale e quindi selezionare una delle opzioni seguenti:
-   - Per creare un'app singola in modalità tutto schermo, selezionare Modalità tutto **schermo**  >  **Per app singola in modalità tutto schermo.**
-   - Per creare un chiosco multimediale con più app, selezionare Modalità tutto **schermo** Più app in  >  **modalità tutto schermo.**
-1. Per avviare la configurazione del chiosco multimediale, selezionare **Aggiungi.**
+   - Per creare un chiosco multimediale a app singola, selezionare **Modalità tutto** schermo per  >  **app singola.**
+   - Per creare un chiosco multimediale multi-app, selezionare **Modalità** tutto schermo modalità tutto schermo  >  **multi-app.**
+1. Per avviare la configurazione della modalità tutto schermo, selezionare **Aggiungi**.
 
 I passaggi successivi variano a seconda del tipo di chiosco multimediale desiderato. Per altre informazioni, selezionare una delle opzioni seguenti:  
 
-- [App singola in modalità tutto schermo](#mdmconfigsingle)
+- [Modalità tutto schermo con app singola](#mdmconfigsingle)
 - [Più app in modalità tutto schermo](#mdmconfigmulti)
 
-Per altre informazioni su come creare un profilo di configurazione per chiosco multimediale, vedere Windows 10 [and Windows Holographic for Business device settings to run as a dedicated kiosk using Intune](/intune/configuration/kiosk-settings)(Impostazioni dei dispositivi per l'esecuzione come chiosco multimediale dedicato con Intune).
+Per altre informazioni su come creare un profilo di configurazione della modalità tutto schermo, vedere Configurare Windows 10 e Windows Holographic for Business dispositivo per l'esecuzione come chiosco multimediale dedicato [con Intune.](/intune/configuration/kiosk-settings)
 
-### <a name="mdm-step-3-single-app-ndash--configure-the-settings-for-a-single-app-kiosk"></a><a id="mdmconfigsingle"></a>MDM, passaggio 3 (app singola) Configurare le impostazioni per una &ndash;  singola app in modalità tutto schermo
+### <a name="mdm-step-3-single-app-ndash--configure-the-settings-for-a-single-app-kiosk"></a><a id="mdmconfigsingle"></a>MDM, passaggio 3 (app singola) Configurare le impostazioni per &ndash;  un chiosco multimediale a app singola
 
-Questa sezione riepiloga le impostazioni necessarie per una singola app in modalità tutto schermo. Per altri dettagli, vedere gli articoli seguenti:
+Questa sezione riepiloga le impostazioni necessarie per un chiosco multimediale a app singola. Per altre informazioni, vedere gli articoli seguenti:
 
 - Per informazioni su come configurare un profilo di configurazione della modalità tutto schermo in Intune, vedere [How to Configure Kiosk Mode Using Microsoft Intune](hololens-commercial-infrastructure.md#how-to-configure-kiosk-mode-using-microsoft-intune).
-- Per altre informazioni sulle impostazioni disponibili per i chioschi in modalità tutto schermo per app singole in Intune, vedere App a schermo intero in [modalità tutto schermo in modalità tutto schermo](/intune/configuration/kiosk-settings-holographic#single-full-screen-app-kiosks)
-- Per altri servizi MDM, vedere la documentazione del provider per istruzioni. Se è necessario usare una configurazione XML personalizzata per configurare un chiosco multimediale nel servizio MDM, creare un file XML che definisce la configurazione della modalità [tutto schermo](#ppkioskconfig).
+- Per altre informazioni sulle impostazioni disponibili per i chioschi in modalità tutto schermo per app singole in Intune, vedere Chioschi in modalità tutto [schermo per app singole](/intune/configuration/kiosk-settings-holographic#single-full-screen-app-kiosks)
+- Per altri servizi MDM, consultare la documentazione del provider per istruzioni. Se è necessario usare una configurazione XML personalizzata per configurare un chiosco multimediale nel servizio MDM, creare un file XML che definisce [la configurazione della modalità tutto schermo.](#ppkioskconfig)
 
-1. Selezionare **Accesso utente digitare** Account utente locale e quindi immettere il nome utente dell'account locale (dispositivo) o dell'account Microsoft (MSA) che può accedere al chiosco  >  multimediale.
+1. Selezionare **Accesso utente digitare** Account utente locale e quindi immettere il nome utente dell'account locale (dispositivo) o dell'account Microsoft (MSA) che può accedere al  >  chiosco multimediale.
    > [!NOTE]  
    > I tipi di account utente con **accesso automatico** non sono supportati in Windows Holographic for Business.
-1. Selezionare **Tipo di applicazione** App dello  >  **Store** e quindi selezionare un'app dall'elenco.
+1. Selezionare **Tipo di applicazione** App  >  **store** e quindi selezionare un'app dall'elenco.
 
 Il passaggio successivo consiste [nell'assegnare](#mdmassign) il profilo a un gruppo.
 
-### <a name="mdm-step-3-multi-app-ndash-configure-the-settings-for-a-multi-app-kiosk"></a><a id="mdmconfigmulti"></a>MDM, passaggio 3 (più app) Configurare le impostazioni per un &ndash; chiosco multimediale con più app
+### <a name="mdm-step-3-multi-app-ndash-configure-the-settings-for-a-multi-app-kiosk"></a><a id="mdmconfigmulti"></a>MDM, passaggio 3 (multi-app) &ndash; Configurare le impostazioni per una modalità tutto schermo multi-app
 
-Questa sezione riepiloga le impostazioni necessarie per un chiosco multimediale con più app. Per altre informazioni dettagliate, vedere gli articoli seguenti:
+Questa sezione riepiloga le impostazioni necessarie per un chiosco multimediale multi-app. Per altre informazioni dettagliate, vedere gli articoli seguenti:
 
 - Per informazioni su come configurare un profilo di configurazione della modalità tutto schermo in Intune, vedere [How to Configure Kiosk Mode Using Microsoft Intune](hololens-commercial-infrastructure.md#how-to-configure-kiosk-mode-using-microsoft-intune).
-- Per altre informazioni sulle impostazioni disponibili per più app in modalità tutto schermo in Intune, vedere Più app in [modalità tutto schermo](/mem/intune/configuration/kiosk-settings-holographic#multi-app-kiosks)
-- Per altri servizi MDM, vedere la documentazione del provider per istruzioni. Se è necessario usare una configurazione XML personalizzata per configurare un chiosco multimediale nel servizio MDM, creare un file XML che definisce la configurazione della modalità [tutto schermo.](#ppkioskconfig) Se si usa un file XML, assicurarsi di includere il [layout Start](#start-layout-for-hololens).  
+- Per altre informazioni sulle impostazioni disponibili per i chioschi in modalità tutto schermo multi-app in Intune, vedere [Chioschi in](/mem/intune/configuration/kiosk-settings-holographic#multi-app-kiosks) modalità tutto schermo per più app
+- Per altri servizi MDM, consultare la documentazione del provider per istruzioni. Se è necessario usare una configurazione XML personalizzata per configurare un chiosco multimediale nel servizio MDM, creare un file XML che definisce [la configurazione della modalità tutto schermo.](#ppkioskconfig) Se si usa un file XML, assicurarsi di includere il [layout Start](#start-layout-for-hololens).  
 - Facoltativamente, è possibile usare un layout Start personalizzato con Intune o altri servizi MDM. Per altre informazioni, vedere [Avviare il file di layout per MDM (Intune e altri).](#start-layout-file-for-mdm-intune-and-others)
 
-1. Selezionare **Target Windows 10 nei dispositivi in modalità S**  >  **No.**  
+1. Selezionare **Target Windows 10 nei dispositivi in modalità S**  >  **No**.  
 >[!NOTE]  
 > La modalità S non è supportata in Windows Holographic for Business.
 
-1. Selezionare **Tipo di accesso utente** Azure AD utente o gruppo o Tipo di accesso utente HoloLens  >     >  **visitatore** e quindi aggiungere uno o più gruppi di utenti o account.  
+1. Selezionare **Tipo di accesso utente** Azure AD utente o gruppo o Tipo di accesso utente HoloLens visitor e quindi aggiungere uno o più gruppi di utenti o  >     >  account.  
 
-   Solo gli utenti che appartengono ai gruppi o agli account specificati in Tipo di **accesso utente** possono usare l'esperienza in modalità tutto schermo.
+   Solo gli utenti che appartengono ai gruppi o agli account specificati in **Tipo di accesso utente** possono usare l'esperienza tutto schermo.
 
 1. Selezionare una o più app usando le opzioni seguenti:
    - Per aggiungere un'app line-of-business caricata, selezionare **Aggiungi app dello Store** e quindi selezionare l'app desiderata.
-   - Per aggiungere un'app specificando il relativo AUMID, selezionare **Aggiungi per AUMID** e quindi immettere l'AUMID dell'app. [Vedere l'elenco degli AUMID disponibili](#aumids)
+   - Per aggiungere un'app specificando il relativo AUMID, selezionare **Aggiungi da AUMID** e quindi immettere il valore AUMID dell'app. [Vedere l'elenco degli AUMID disponibili](#aumids)
 
 Il passaggio successivo consiste [nell'assegnare](#mdmassign) il profilo a un gruppo.
 
-### <a name="mdm-step-4-ndash-assign-the-kiosk-configuration-profile-to-a-group"></a><a id="mdmassign"></a>MDM, passaggio 4 &ndash; Assegnare il profilo di configurazione della modalità tutto schermo a un gruppo
+### <a name="mdm-step-4-ndash-assign-the-kiosk-configuration-profile-to-a-group"></a><a id="mdmassign"></a>MDM, passaggio 4 &ndash; Assegnare il profilo di configurazione tutto schermo a un gruppo
 
-Usare la **pagina Assegnazioni del** profilo di configurazione della modalità tutto schermo per impostare la posizione in cui si vuole distribuire la configurazione della modalità tutto schermo. Nel caso più semplice, si assegna il profilo di configurazione della modalità tutto schermo a un gruppo che conterrà il HoloLens quando il dispositivo viene registrato in MDM.
+Usare la **pagina Assegnazioni** del profilo di configurazione tutto schermo per impostare la posizione in cui si vuole distribuire la configurazione della modalità tutto schermo. Nel caso più semplice, si assegna il profilo di configurazione tutto schermo a un gruppo che conterrà HoloLens dispositivo quando il dispositivo si registra in MDM.
 
 ### <a name="mdm-step-5-single-app-ndash-deploy-a-single-app-kiosk"></a><a id="mdmsingledeploy"></a>MDM, passaggio 5 (app singola) &ndash; Distribuire un'app singola in modalità tutto schermo
 
-Quando si usa un sistema MDM, è possibile registrare il dispositivo in MDM durante la configurazione. Al termine della configurazione, l'accesso al dispositivo è semplice.
+Quando si usa un sistema MDM, è possibile registrare il dispositivo in MDM durante la configurazione del sistema operativo. Al termine della configurazione del sistema operativo, l'accesso al dispositivo è semplice.
 
-Durante la Configurazione dettagliata, seguire questa procedura:
+Durante la configurazione del sistema operativo, seguire questa procedura:
 
 1. Accedere usando l'account specificato nel profilo di configurazione della modalità tutto schermo.
-1. Registrare il dispositivo. Assicurarsi che il dispositivo sia aggiunto al gruppo a cui è assegnato il profilo di configurazione della modalità tutto schermo.
-1. Attendere il completamento della Procedura guidata, il download e l'installazione dell'app dello Store e l'applicazione dei criteri. Riavviare quindi il dispositivo.
+1. Registrare il dispositivo. Assicurarsi che il dispositivo sia aggiunto al gruppo a cui è assegnato il profilo di configurazione tutto schermo.
+1. Attendere il completamento della procedura guidata, il download e l'installazione dell'app dello Store e l'applicazione dei criteri. Riavviare quindi il dispositivo.
 
 Al successivo accesso al dispositivo, l'app in modalità tutto schermo verrà avviata automaticamente.
 
-Se la configurazione della modalità tutto schermo non è visualizzata a questo punto, [controllare lo stato di assegnazione](/intune/configuration/device-profile-monitor).
+Se la configurazione della modalità tutto schermo non è visualizzata a questo punto, [controllare lo stato dell'assegnazione](/intune/configuration/device-profile-monitor).
 
-### <a name="mdm-step-5-multi-app-ndash-deploy-a-multi-app-kiosk"></a><a id="mdmmultideploy"></a>MDM, passaggio 5 (più app) Distribuire &ndash; un chiosco multimediale con più app
+### <a name="mdm-step-5-multi-app-ndash-deploy-a-multi-app-kiosk"></a><a id="mdmmultideploy"></a>MDM, passaggio 5 (multi-app) Distribuire una modalità tutto schermo &ndash; multi-app
 
-Quando si usa un sistema MDM, è possibile aggiungere il dispositivo al tenant Azure AD e registrarlo in MDM durante la configurazione. Se appropriato, fornire le informazioni di registrazione agli utenti in modo che siano disponibili durante il processo di Configurazione guidata.
+Quando si usa un sistema MDM, è possibile aggiungere il dispositivo al tenant Azure AD e registrare il dispositivo in MDM durante la configurazione del sistema operativo. Se appropriato, fornire le informazioni di registrazione agli utenti in modo che siano disponibili durante il processo di Configurazione guidata.
 
 > [!NOTE]  
 > Se il profilo di configurazione della modalità tutto schermo è stato assegnato a un gruppo che contiene utenti, assicurarsi che uno di questi account utente sia il primo account ad accedere al dispositivo.
 
-Durante la Configurazione dettagliata, seguire questa procedura:
+Durante la configurazione del sistema operativo, seguire questa procedura:
 
 1. Accedere usando l'account appartenente al gruppo **Tipo di accesso** utente.
 1. Registrare il dispositivo.
-1. Attendere il download e l'installazione di tutte le app che fanno parte del profilo di configurazione della modalità tutto schermo. Attendere anche l'applicazione dei criteri.  
-1. Al termine della Configurazione guidata, è possibile installare altre app da Microsoft Store o tramite sideload. [App necessarie](/mem/intune/apps/apps-deploy#assign-an-app) per il gruppo a cui appartiene il dispositivo per l'installazione automatica.
+1. Attendere il download e l'installazione di tutte le app che fanno parte del profilo di configurazione tutto schermo. Attendere anche l'applicazione dei criteri.  
+1. Al termine della configurazione guidata, è possibile installare altre app da Microsoft Store o tramite sideload. [App necessarie](/mem/intune/apps/apps-deploy#assign-an-app) per il gruppo a cui appartiene il dispositivo per l'installazione automatica.
 1. Al termine dell'installazione, riavviare il dispositivo.
 
-Al successivo accesso al dispositivo con un account appartenente al tipo Accesso utente **,** l'app in modalità tutto schermo verrà avviata automaticamente.
+Al successivo accesso al dispositivo usando un account appartenente al tipo Di accesso **utente,** l'app in modalità tutto schermo dovrebbe essere avviata automaticamente.
 
-Se la configurazione della modalità tutto schermo non è visualizzata a questo punto, [controllare lo stato di assegnazione](/intune/configuration/device-profile-monitor).
+Se la configurazione della modalità tutto schermo non è visualizzata a questo punto, [controllare lo stato dell'assegnazione](/intune/configuration/device-profile-monitor).
 
-## <a name="use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk"></a>Usare un pacchetto di provisioning per configurare una singola app o più app in modalità tutto schermo
+## <a name="use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk"></a>Usare un pacchetto di provisioning per configurare un'app singola o multi-app in modalità tutto schermo
 
 Per configurare la modalità tutto schermo usando un pacchetto di provisioning, seguire questa procedura.
 
@@ -305,19 +305,19 @@ Per configurare la modalità tutto schermo usando un pacchetto di provisioning, 
 2. [Aggiungere il file XML a un pacchetto di provisioning.](#ppconfigadd)
 3. [Applicare il pacchetto di provisioning HoloLens.](#ppapply)
 
-### <a name="provisioning-package-step-1-ndash-create-a-kiosk-configuration-xml-file"></a><a id="ppkioskconfig"></a>Pacchetto di provisioning, passaggio 1: &ndash; Creare un file XML di configurazione della modalità tutto schermo
+### <a name="provisioning-package-step-1-ndash-create-a-kiosk-configuration-xml-file"></a><a id="ppkioskconfig"></a>Pacchetto di provisioning, passaggio 1 &ndash; Creare un file XML di configurazione tutto schermo
 
-Seguire [le istruzioni generali per creare un file XML di](/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file)configurazione della modalità tutto schermo Windows desktop , ad eccezione dei seguenti:
+Seguire le istruzioni generali per creare un file XML di configurazione tutto schermo [per Windows desktop, ad](/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file)eccezione dei seguenti:
 
 - Non includere applicazioni Windows classiche (Win32). HoloLens non supporta queste applicazioni.
-- Usare il [segnaposto Start layout XML per](#start-layout-for-hololens) HoloLens.
-- Facoltativo: aggiungere l'accesso guest alla configurazione della modalità tutto schermo
+- Usare il [segnaposto Start layout XML](#start-layout-for-hololens) per HoloLens.
+- Facoltativo: Aggiungere l'accesso guest alla configurazione della modalità tutto schermo
 
-#### <a name="optional-add-guest-access-to-the-kiosk-configuration"></a><a id="ppkioskguest"></a>Facoltativo: aggiungere l'accesso guest alla configurazione della modalità tutto schermo
+#### <a name="optional-add-guest-access-to-the-kiosk-configuration"></a><a id="ppkioskguest"></a>Facoltativo: Aggiungere l'accesso guest alla configurazione della modalità tutto schermo
 
-Nella sezione [ **Configs del** file XML](/windows/configuration/lock-down-windows-10-to-specific-apps#configs)è possibile configurare un gruppo speciale denominato **Visitor** per consentire ai guest di usare il chiosco multimediale. Quando il chiosco multimediale è configurato per supportare il gruppo speciale **Visitor,** alla pagina di accesso viene aggiunta l'opzione **"Guest".** **L'account Guest** non richiede una password e tutti i dati associati all'account vengono eliminati quando l'account si esce.
+Nella sezione [ **Configs** del file XML](/windows/configuration/lock-down-windows-10-to-specific-apps#configs)è possibile configurare un gruppo speciale denominato **Visitor** per consentire ai guest di usare il chiosco multimediale. Quando il chiosco multimediale è configurato per supportare il gruppo speciale **Visitor,** viene aggiunta un'opzione "**Guest**" alla pagina di accesso. **L'account** Guest non richiede una password e tutti i dati associati all'account vengono eliminati quando l'account si esce.
 
-Per abilitare l'account **Guest,** aggiungere il frammento di codice seguente al file XML di configurazione della modalità tutto schermo:
+Per abilitare l'account **Guest,** aggiungere il frammento di codice seguente al codice XML di configurazione della modalità tutto schermo:
 
 ```xml
 <Configs>
@@ -329,8 +329,8 @@ Per abilitare l'account **Guest,** aggiungere il frammento di codice seguente al
 ```
 #### <a name="enable-visitor-autologon"></a>Abilitare l'accesso automatico dei visitatori
 
-Nelle build Windows [Holographic, versione 21H1](hololens-release-notes.md#windows-holographic-version-21h1) e versioni successiva:
-- Le configurazioni AAD e Non-ADD supportano entrambi gli account visitatore per l'accesso automatico abilitato per le modalità tutto schermo.
+Nelle build Windows [Holographic, versione 21H1 e](hololens-release-notes.md#windows-holographic-version-21h1) versioni successiva:
+- Le configurazioni AAD e Non ADD supportano entrambi gli account visitatore abilitati per l'accesso automatico per le modalità tutto schermo.
 
 ##### <a name="non-aad-configuration"></a>Configurazione non AAD
 
@@ -342,9 +342,9 @@ Nelle build Windows [Holographic, versione 21H1](hololens-release-notes.md#windo
 
 ##### <a name="aad-configuration"></a>Configurazione di AAD
 
-I dispositivi aggiunti ad AAD configurati per la modalità tutto schermo possono accedere a un account visitatore con un solo pulsante nella schermata di accesso. Dopo l'accesso all'account visitatore, il dispositivo non richiederà di nuovo l'accesso fino a quando il visitatore non viene disconnesso in modo esplicito dal menu Start o il dispositivo non viene riavviato.
+I dispositivi aggiunti ad AAD configurati per la modalità tutto schermo possono accedere a un account Visitatore con un solo tocco pulsante dalla schermata di accesso. Dopo aver eseguito l'accesso all'account visitatore, il dispositivo non richiederà di nuovo l'accesso fino a quando il visitatore non viene disconnesso in modo esplicito dal menu Start o non viene riavviato il dispositivo.
 
-L'accesso automatico del visitatore può essere gestito [tramite criteri URI OMA personalizzati:](/mem/intune/configuration/custom-settings-windows-10)
+L'accesso automatico del visitatore può essere gestito tramite [criteri URI OMA personalizzati:](/mem/intune/configuration/custom-settings-windows-10)
 
 - Valore URI: ./Device/Vendor/MSFT/MixedReality/VisitorAutoLogon
 
@@ -353,15 +353,15 @@ L'accesso automatico del visitatore può essere gestito [tramite criteri URI OMA
 | --------------------------- | ------------- | -------------------- |
 | MixedReality/VisitorAutoLogon | Consente a un visitatore di accedere automaticamente a un chiosco multimediale. | 1 (Sì), 0 (No, impostazione predefinita). |
 
-#### <a name="placeholder-start-layout-for-hololens"></a><a id="start-layout-for-hololens"></a>Layout iniziale segnaposto per HoloLens
+#### <a name="placeholder-start-layout-for-hololens"></a><a id="start-layout-for-hololens"></a>Layout di inizio segnaposto per HoloLens
 
-Se si usa un pacchetto [di provisioning per](#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk) configurare un chiosco multimediale con più app, la procedura richiede un layout Start. La personalizzazione del layout di avvio non è supportata in Windows Holographic for Business. Sarà quindi necessario usare un layout Start segnaposto.
-
-> [!NOTE]  
-> Poiché una singola app in modalità tutto schermo avvia l'app in modalità tutto schermo quando un utente esegue l'accesso, non usa un menu Start e non deve avere un layout Start.
+Se si usa un [pacchetto di provisioning per](#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk) configurare un chiosco multimediale multi-app, la procedura richiede un layout Start. La personalizzazione del layout di avvio non è supportata in Windows Holographic for Business. Sarà quindi necessario usare un layout Start segnaposto.
 
 > [!NOTE]  
-> Se si usa [MDM per](#use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk) configurare un chiosco multimediale con più app, è possibile usare facoltativamente un layout Start. Per altre informazioni, vedere [File di layout Di avvio segnaposto per MDM (Intune e altri).](#start-layout-file-for-mdm-intune-and-others)
+> Poiché una modalità tutto schermo a app singola avvia l'app in modalità tutto schermo quando un utente esegue l'accesso, non usa un menu Start e non deve avere un layout Start.
+
+> [!NOTE]  
+> Se si usa [MDM](#use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk) per configurare un chiosco multimediale multi-app, è possibile usare facoltativamente un layout Start. Per altre informazioni, vedere [File di layout Di avvio segnaposto per MDM (Intune e altri).](#start-layout-file-for-mdm-intune-and-others)
 
 Per il layout Start, aggiungere la sezione **StartLayout** seguente al file XML di provisioning in modalità tutto schermo:
 
@@ -385,12 +385,12 @@ Per il layout Start, aggiungere la sezione **StartLayout** seguente al file XML 
             <!-- This section is required for parity with Desktop Assigned Access. It is not currently used on HoloLens -->
 ```
 
-#### <a name="placeholder-start-layout-file-for-mdm-intune-and-others"></a><a id="start-layout-file-for-mdm-intune-and-others"></a>File di layout Start segnaposto per MDM (Intune e altri)
+#### <a name="placeholder-start-layout-file-for-mdm-intune-and-others"></a><a id="start-layout-file-for-mdm-intune-and-others"></a>File di layout Di avvio segnaposto per MDM (Intune e altri)
 
-Salvare l'esempio seguente come file XML. È possibile usare questo file quando si configura la modalità tutto schermo per più app in Microsoft Intune (o in un altro servizio MDM che fornisce un profilo in modalità tutto schermo).
+Salvare l'esempio seguente come file XML. È possibile usare questo file quando si configura la modalità tutto schermo multi-app in Microsoft Intune (o in un altro servizio MDM che fornisce un profilo tutto schermo).
 
 > [!NOTE]
-> Se è necessario usare un'impostazione personalizzata e una configurazione XML completa per configurare un chiosco multimediale nel servizio MDM, usare le istruzioni per avviare il [layout per un pacchetto di provisioning.](#start-layout-for-hololens)
+> Se è necessario usare un'impostazione personalizzata e una configurazione XML completa per configurare un chiosco multimediale nel servizio MDM, usare le istruzioni [di layout Start per un pacchetto di provisioning.](#start-layout-for-hololens)
 
 ```xml
 <LayoutModificationTemplate
@@ -408,33 +408,33 @@ Salvare l'esempio seguente come file XML. È possibile usare questo file quando 
  </LayoutModificationTemplate>
 ```
 
-### <a name="prov-package-step-2-ndash-add-the-kiosk-configuration-xml-file-to-a-provisioning-package"></a><a id="ppconfigadd"></a>Prov. pacchetto, passaggio 2 Aggiungere il file XML di configurazione della modalità tutto schermo &ndash; a un pacchetto di provisioning
+### <a name="prov-package-step-2-ndash-add-the-kiosk-configuration-xml-file-to-a-provisioning-package"></a><a id="ppconfigadd"></a>Prov. pacchetto, passaggio 2 Aggiungere il file XML di &ndash; configurazione tutto schermo a un pacchetto di provisioning
 
 1. Aprire [Windows Progettazione configurazione](https://www.microsoft.com/store/apps/9nblggh4tx22).
 1. Selezionare **Provisioning avanzato,** immettere un nome per il progetto e quindi selezionare **Avanti.**
 1. Selezionare **Windows 10 Holographic** e quindi selezionare **Avanti.**
 1. Selezionare **Fine**. Si aprirà l'area di lavoro per il pacchetto.
 1. Selezionare **Impostazioni di runtime**  >  **AssignedAccess**  >  **MultiAppAssignedAccessSettings**.
-1. Nel riquadro centrale selezionare Sfoglia per individuare **e** selezionare il file XML di configurazione della modalità tutto schermo creato.
+1. Nel riquadro centrale selezionare **Sfoglia** per individuare e selezionare il file XML di configurazione tutto schermo creato.
 
    ![Screenshot del campo MultiAppAssignedAccessSettings in Progettazione Windows configurazione](./images/multiappassignedaccesssettings.png)
 
-1. **Facoltativo**. Se si vuole applicare il pacchetto di provisioning dopo la configurazione iniziale del dispositivo ed è già disponibile un utente amministratore nel dispositivo in modalità tutto schermo, ignorare questo passaggio. Selezionare **Impostazioni di runtime** &gt; **Account** &gt; **Utenti** e quindi creare un account utente. Specificare un nome utente e una password e quindi selezionare **Amministratori gruppo**  >  **utenti**.  
+1. **Facoltativo**. Se si vuole applicare il pacchetto di provisioning dopo la configurazione iniziale del dispositivo ed è già disponibile un utente amministratore nel dispositivo tutto schermo, ignorare questo passaggio. Selezionare **Impostazioni di runtime** &gt; **Account** &gt; **Utenti** e quindi creare un account utente. Specificare un nome utente e una password e quindi selezionare **UserGroup**  >  **Administrators**.  
   
      Usando questo account, è possibile visualizzare lo stato del provisioning e i log.  
-1. **Facoltativo**. Se nel dispositivo in modalità tutto schermo è già presente un account non amministratore, ignorare questo passaggio. Selezionare **Account delle impostazioni** &gt; **di** runtime &gt; **Utenti** e quindi creare un account utente locale. Assicurarsi che il nome utente sia uguale a quello dell'account specificato nel file XML di configurazione. Selezionare **UserGroup**  >  **Standard Users**.
-1. Selezionare **File**  >  **Salva**.
-1. Selezionare **Export**  >  **Provisioning package (Esporta pacchetto** di provisioning) e quindi Owner IT Admin   >  **(Amministratore IT proprietario).** In questo modo la precedenza di questo pacchetto di provisioning viene impostata su un valore superiore rispetto ai pacchetti di provisioning applicati a questo dispositivo da altre origini.
+1. **Facoltativo**. Se nel dispositivo in modalità tutto schermo è già presente un account non amministratore, ignorare questo passaggio. Selezionare **Impostazioni di runtime** &gt; **Account** &gt; **Utenti** e quindi creare un account utente locale. Assicurarsi che il nome utente sia lo stesso dell'account specificato nel codice XML di configurazione. Selezionare **UserGroup**  >  **Standard Users**.
+1. Selezionare **Salva**  >  **file**.
+1. Selezionare **Export**  >  Provisioning package (Esporta pacchetto di **provisioning)** e quindi Owner IT Admin   >  **(Amministratore IT proprietario).** In questo modo la precedenza di questo pacchetto di provisioning viene impostata su un livello superiore rispetto ai pacchetti di provisioning applicati a questo dispositivo da altre origini.
 1. Selezionare **Avanti**.
-1. Nella pagina **Sicurezza del pacchetto di provisioning** selezionare un'opzione di sicurezza.
+1. Nella pagina **Sicurezza pacchetto di provisioning** selezionare un'opzione di sicurezza.
    > [!IMPORTANT]  
-   > Se si seleziona **Abilita firma pacchetto**, è necessario selezionare anche un certificato valido da usare per la firma del pacchetto. A tale scopo, **selezionare Sfoglia** e selezionare il certificato che si vuole usare per firmare il pacchetto.
+   > Se si seleziona **Abilita firma pacchetto,** è anche necessario selezionare un certificato valido da usare per la firma del pacchetto. A tale scopo, selezionare **Sfoglia** e selezionare il certificato che si vuole usare per firmare il pacchetto.
    
    > [!CAUTION]  
-   > Non selezionare Abilita **crittografia pacchetto**. Nei HoloLens, questa impostazione causa l'esito negativo del provisioning.
+   > Non selezionare Abilita **crittografia pacchetti**. Nei HoloLens, questa impostazione causa l'esito negativo del provisioning.
 1. Selezionare **Avanti**.
-1. Specificare il percorso di output in cui si vuole inserire il pacchetto di provisioning quando viene compilato. Per impostazione predefinita, Windows Progettazione configurazione usa la cartella del progetto come percorso di output. Se si vuole modificare il percorso di output, selezionare **Sfoglia.** Al termine dell'operazione, scegliere **Avanti**.
-1. Selezionare **Compila** per iniziare a compilare il pacchetto. La compilazione del pacchetto di provisioning non richiede molto tempo. Nella pagina di compilazione vengono visualizzate le informazioni sul progetto e l'indicatore di stato indica lo stato di compilazione.
+1. Specificare il percorso di output in cui si vuole inserire il pacchetto di provisioning quando viene compilato. Per impostazione predefinita, Windows Progettazione configurazione usa la cartella del progetto come percorso di output. Per modificare il percorso di output, selezionare **Sfoglia**. Al termine dell'operazione, scegliere **Avanti**.
+1. Selezionare **Compila** per iniziare a compilare il pacchetto. La compilazione del pacchetto di provisioning non richiede molto tempo. Nella pagina di compilazione vengono visualizzate le informazioni sul progetto e l'indicatore di stato indica lo stato della compilazione.
 
 ### <a name="provisioning-package-step-3-ndash-apply-the-provisioning-package-to-hololens"></a><a id="ppapply"></a>Pacchetto di provisioning, passaggio 3 &ndash; Applicare il pacchetto di provisioning HoloLens
 
@@ -442,16 +442,16 @@ L'articolo "Configurare HoloLens usando un pacchetto di provisioning" fornisce i
 
 - È possibile applicare inizialmente [un pacchetto di provisioning a HoloLens durante l'installazione di](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup).
 
-- È anche possibile applicare [un pacchetto di provisioning a HoloLens dopo l'installazione di](hololens-provisioning.md#applyremove-a-provisioning-package-to-hololens-after-setup).
+- È anche possibile [applicare un pacchetto di provisioning a HoloLens dopo l'installazione di](hololens-provisioning.md#applyremove-a-provisioning-package-to-hololens-after-setup).
 
-## <a name="use-the-windows-device-portal-to-set-up-a-single-app-kiosk"></a>Usare il Windows Portale di dispositivi per configurare un'app singola in modalità tutto schermo
+## <a name="use-the-windows-device-portal-to-set-up-a-single-app-kiosk"></a>Usare il Windows Portale di dispositivi per configurare un chiosco multimediale a app singola
 
 Per configurare la modalità tutto schermo usando il Windows Portale di dispositivi, seguire questa procedura.
 
-1. [Configurare il dispositivo HoloLens per l'uso del Windows Portale di dispositivi](https://developer.microsoft.com/windows/mixed-reality/using_the_windows_device_portal#setting_up_hololens_to_use_windows_device_portal). Device Portal è un server Web in HoloLens a cui è possibile connettersi da un browser Web nel PC.
+1. [Configurare il dispositivo HoloLens usare il](https://developer.microsoft.com/windows/mixed-reality/using_the_windows_device_portal#setting_up_hololens_to_use_windows_device_portal)Windows Portale di dispositivi . Device Portal è un server Web in HoloLens a cui è possibile connettersi da un browser Web nel PC.
 
     > [!CAUTION]
-    > Quando si configura l HoloLens per l'Portale di dispositivi, è necessario abilitare la modalità sviluppatore nel dispositivo. Modalità sviluppatore in un dispositivo con Windows Holographic for Business consente di eseguire il side load delle app. Tuttavia, questa impostazione crea il rischio che un utente possa installare app che non sono state certificate dal Microsoft Store. Gli amministratori possono bloccare la possibilità di abilitare la modalità sviluppatore usando l'impostazione **ApplicationManagement/AllowDeveloper Unlock** nel provider di servizi di configurazione [Criteri.](/windows/client-management/mdm/policy-configuration-service-provider) [Ulteriori informazioni sulla modalità sviluppatore.](/windows/uwp/get-started/enable-your-device-for-development#developer-mode)
+    > Quando si configura HoloLens usare il Portale di dispositivi, è necessario abilitare la modalità sviluppatore nel dispositivo. La modalità sviluppatore in un dispositivo con Windows Holographic for Business consente di eseguire il side-load delle app. Tuttavia, questa impostazione crea un rischio che un utente possa installare app che non sono state certificate dal Microsoft Store. Gli amministratori possono bloccare la possibilità di abilitare la modalità sviluppatore usando l'impostazione **ApplicationManagement/AllowDeveloper Unlock** in [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider). [Ulteriori informazioni sulla modalità sviluppatore.](/windows/uwp/get-started/enable-your-device-for-development#developer-mode)
     
 1. In un computer connettersi al HoloLens tramite [Wi-Fi](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#connecting_over_wi-fi) o [USB.](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#connecting_over_usb)
 

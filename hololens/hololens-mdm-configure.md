@@ -13,12 +13,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 5485a4b2558a11a6c0545ec8b3405c120cff287c
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 0a0f26750ff6ea881babfab44af95cbbefa0574674336934ccf1443df1701a96
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640279"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115663260"
 ---
 # <a name="using-microsofts-endpoint-manager-intune-to-manage-hololens-devices"></a>Uso di Microsoft Endpoint Manager Intune per gestire HoloLens dispositivi
 
@@ -35,7 +35,7 @@ Intune include impostazioni e funzionalità che è possibile abilitare o disabil
 Nei profili è possibile usare URI OMA per personalizzare alcune impostazioni, creare restrizioni dei dispositivi e configurare una rete privata virtuale (VPN) e Wi-Fi.
 [Introduzione ai profili di configurazione e](/mem/intune/configuration/device-profiles)panoramica del [profilo](/mem/intune/configuration/device-profile-create).
 
-## <a name="examples-of-what-can-be-managed-and-configured"></a>Esempi di cosa può essere gestito e configurato
+## <a name="examples-of-what-can-be-managed-and-configured"></a>Esempi di elementi che possono essere gestiti e configurati
 
 L'uso di MDM per gestire i dispositivi offre un'ampia gamma di elementi che è possibile selezionare. 
 

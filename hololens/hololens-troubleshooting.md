@@ -13,12 +13,12 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 keywords: problemi, bug, risoluzione dei problemi, correzione, guida, supporto, HoloLens, emulatore
-ms.openlocfilehash: b07514e73e43d267aa856c0fb9a256448e565000
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 5501e036b5852833b7ff26445a98c3378ae6963c96114e26bf588eb33a56f6f0
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635450"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115662887"
 ---
 # <a name="device-troubleshooting"></a>Risoluzione dei problemi del dispositivo
 
@@ -89,12 +89,12 @@ Un HoloLens 2 può essere configurato per l'accesso automatico tramite **Imposta
 Esempio di quando ciò può verificarsi:
 
 - Aggiornamento di un dispositivo da Windows Holographic versione 2004 (build 19041.xxxx) a Windows Holographic, versione 21H1 (build 20346.xxxx)
-- Aggiornamento di un dispositivo per eseguire un aggiornamento di grandi dimensioni nella stessa build principale, ad esempio Windows Holographic, versione 2004 a Windows Holographic, versione 20H2
+- Aggiornamento di un dispositivo per eseguire un aggiornamento di grandi dimensioni nella stessa build principale, ad esempio Windows Holographic versione 2004 a Windows Holographic, versione 20H2
 - Aggiornamento di un dispositivo da un'immagine factory all'immagine più recente
 
 Questa operazione non deve verificarsi durante:
 
-- Dispositivi che ese prendono un aggiornamento di manutenzione mensile
+- Dispositivi che estraeno un aggiornamento di manutenzione mensile
 
 Aggirare i metodi:
 
@@ -225,9 +225,9 @@ Di seguito sono riportati alcuni possibili motivi per cui si è verificato un er
 - Distrarsi e non seguire le destinazioni di calibrazione
 - Visore del dispositivo dirty o scratched o visore del dispositivo non posizionato correttamente
 - Occhiali dirty o grattati
-- Alcuni tipi di lenti e occhiali da contatto (lenti a contatto colorate, lenti a contatto torici, occhiali da blocco IR, alcuni occhiali da sole, occhiali da sole o simili)
+- Alcuni tipi di lenti e occhiali da contatto (lenti a contatto colorate, lenti a contatto torici, occhiali da blocco IR, occhiali da sole, occhiali da sole o simili)
 - Forma più pronunciata e alcune estensioni della ciglia
-- Fotogrammi a forma di occhio o di spessore oculare se bloccano la visualizzazione degli occhi da parte del dispositivo
+- Fotogrammi di occhiali a forma di occhiali di spessore se bloccano la visualizzazione degli occhi da parte del dispositivo
 - Alcune fisiologia oculare, condizioni oculari o problemi oculari, ad esempio occhi ristretti, lunghe ciglia, amblyopia, nystagmus, alcuni casi di LASIK o altri interventi oculari
 
 Se la calibrazione non riesce, provare:
@@ -293,7 +293,7 @@ Se il HoloLens 2 non risponde alla voce, assicurarsi che il riconoscimento vocal
 
 ## <a name="hand-input-isnt-working"></a>L'input manuale non funziona
 
-Per assicurarsi che HoloLens possano vedere le mani, è necessario mantenerle nel fotogramma del movimento.  La home page di Realtà mista fornisce commenti e suggerimenti che ti consentono di sapere quando vengono tracciate le mani.  Il feedback è diverso nelle diverse versioni di HoloLens:
+Per assicurarsi che HoloLens possano vedere le mani, è necessario mantenerle nel fotogramma del movimento.  La home page di Realtà mista fornisce commenti e suggerimenti che consentono di sapere quando vengono tracciate le mani.  Il feedback è diverso nelle diverse versioni di HoloLens:
 - Nella HoloLens (prima generazione), il cursore sguardo fisso cambia da punto a anello
 - In HoloLens 2 viene visualizzato un cursore punta del dito quando la mano è vicina a uno slate e viene visualizzato un raggio della mano quando gli slate sono più lontani
 

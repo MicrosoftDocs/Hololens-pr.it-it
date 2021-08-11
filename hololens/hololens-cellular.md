@@ -12,12 +12,12 @@ ms.date: 02/24/2021
 manager: evmill
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 6f7da0263e8637486f0151fd2b9da55da8feccc1
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 0a31ff0af0af5b60fc0a44ef8fc5a85b5b50e766201d5441d508fd23dd0369e4
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635841"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664486"
 ---
 # <a name="connect-to-cellular-and-5g"></a>Connessione a Cellulare e 5G
 

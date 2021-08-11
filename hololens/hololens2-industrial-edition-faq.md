@@ -14,14 +14,14 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: af116578dbbeec1d364c2c04f2827a4b7df43efe
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 1363920182107137ce3441990e429e71f7533923e066cdeaa8f9c105e453c757
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636351"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115659861"
 ---
-# <a name="hololens-2---industrial-edition-faq"></a>HoloLens 2 - Domande frequenti su Industrial Edition
+# <a name="hololens-2---industrial-edition-faq"></a>HoloLens 2 - Domande frequenti sull'edizione Industriale
 
 ![Industrial Edition usata in una stanza pulita](./images/industrial-sku-with-remote-assist.png)
 
@@ -29,7 +29,7 @@ ms.locfileid: "113636351"
 
 ### <a name="what-benefits-does-hololens-2-industrial-edition-2-include"></a>Quali vantaggi include HoloLens 2 Industrial Edition 2?
 
-La HoloLens 2 Industrial Edition è progettata per risolvere le sfide per i clienti industriali in ambienti puliti e per garantire la sicurezza operativa in tali ambienti. È stato progettato e testato per la conformità delle camere pulite, le certificazioni di sicurezza intrinseche e supportato da un programma di supporto ancora più affidabile.
+La HoloLens 2 Industrial Edition è progettata per risolvere i problemi dei clienti industriali in ambienti puliti e per garantire la sicurezza operativa in tali ambienti. È stato progettato e testato per la conformità delle camere pulite, le certificazioni di sicurezza intrinseche e supportato da un programma di supporto ancora più affidabile.
 
 Usando l'HoloLens 2 Industrial Edition in questi ambienti si avrà una riduzione significativa dei viaggi in e fuori dalle aree della stanza pulita e della riduzione dei costi generali del lavoro. La possibilità di avere un footprint ridotto fisicamente all'interno della stanza pulita e di avere comunque accesso a qualsiasi documentazione e a tutti i livelli di esperienza ridurrà i costi della manodopera.
 
@@ -78,7 +78,7 @@ Il caso di trasporto è costituito da un materiale poroso e non deve essere usat
 
 ### <a name="can-i-use-the-same-cleaning-materials-for-hololens-2-industrial-edition-as-the-other-editions"></a>È possibile usare gli stessi materiali di pulizia per HoloLens 2 Industrial Edition delle altre edizioni?
 
-La HoloLens 2 Industrial Edition può essere pulita con una soluzione di 70% di alcol isopropilelo e acqua per pulire le superfici dure del dispositivo, tra cui la &quot; visiera, il rilievo della fronte e la cinghiera &quot; della testa. Per altre informazioni, vedere le domande frequenti HoloLens 2 [pulizia delle applicazioni](/hololens/hololens2-maintenance).
+La HoloLens 2 Industrial Edition può essere pulita con una soluzione di 70% di alcol &quot; isopropilelo e acqua per pulire le superfici dure del dispositivo, tra cui la visiera, il rilievo della fronte e la fascia della &quot; testa. Per altre informazioni, vedere le domande frequenti HoloLens 2 [pulizia delle applicazioni](/hololens/hololens2-maintenance).
 
 ### <a name="how-do-i-clean-hololens-2-industrial-edition"></a>Ricerca per categorie clean HoloLens 2 Industrial Edition?
 

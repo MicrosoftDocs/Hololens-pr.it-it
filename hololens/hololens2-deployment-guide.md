@@ -13,12 +13,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: acf4b5d730b9a7eee2dedfad2bb3f866931d7455
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 495be858c235931ed591b097e6b5951f7197c3f7a62bd1aaa16bea65a4e3885f
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636946"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115659874"
 ---
 # <a name="deploying-hololens-2-to-external-clients-with-remote-assist"></a>Distribuzione di HoloLens 2 in client esterni con Remote Assist
 
@@ -28,7 +28,7 @@ Questa guida consente ai professionisti IT con gli obiettivi seguenti di distrib
 1. Prestito HoloLens 2 dispositivi a client esterni per l'uso
 1. Proteggere i dispositivi in prestito
 
-Questa guida fornirà indicazioni [generali](#general-deployment-recommendations-and-instructions) HoloLens 2 sulla distribuzione, applicabili alla maggior [](#common-concerns) parte degli scenari di distribuzione HoloLens 2 e ai problemi comuni che i clienti hanno quando distribuiscono Remote Assist per l'uso esterno.
+Questa guida fornirà indicazioni generali sulla [distribuzione](#general-deployment-recommendations-and-instructions) HoloLens 2 che sono applicabili alla [](#common-concerns) maggior parte degli scenari di distribuzione HoloLens 2 e ai problemi comuni che i clienti hanno quando distribuiscono Remote Assist per l'uso esterno.
 
 ## <a name="scenario-description"></a>Descrizione dello scenario
 
@@ -52,9 +52,9 @@ Altre informazioni sulle Remote Assist [qui.](/hololens/hololens2-cloud-connecte
 - [Come gestire le password](#how-to-manage-passwords)
 - [Come assicurarsi che i client non hanno accesso alla cronologia delle chat](#how-to-ensure-that-clients-do-not-have-access-to-chat-history)
 
-### <a name="how-to-ensure-that-external-clients-do-not-have-the-ability-to-communicate-with-one-another"></a>Come assicurarsi che i client esterni non siano in grado di comunicare tra loro
+### <a name="how-to-ensure-that-external-clients-do-not-have-the-ability-to-communicate-with-one-another"></a>Come assicurarsi che i client esterni non possano comunicare tra loro
 
-Poiché Remote Assist HoloLens per HoloLens chiamate non sono supportate, i client possono cercare, ma non sono in grado di comunicare tra loro. Per limitare ulteriormente gli utenti che i client possono cercare e chiamare,  [le barriere](/microsoft-365/compliance/information-barriers) alle informazioni possono limitare gli utenti con cui un client può comunicare. Un'altra opzione da considerare è l'uso [di Ricerca directory con ambito](/MicrosoftTeams/teams-scoped-directory-search)
+Poiché Remote Assist HoloLens le HoloLens non sono supportate, i client possono cercare, ma non possono, comunicare tra loro. Per limitare ulteriormente gli utenti che i client possono cercare e chiamare,  [le barriere alle informazioni](/microsoft-365/compliance/information-barriers) possono limitare gli utenti con cui un client può comunicare. Un'altra opzione da considerare è [l'uso di Ricerca directory con ambito](/MicrosoftTeams/teams-scoped-directory-search)
 
  > [!NOTE]
 > Poiché l'accesso Single Sign-On è abilitato, è importante disabilitare il browser usando [**WDAC.**](/hololens/windows-defender-application-control-wdac) Se un client esterno apre il browser e usa la versione Web di Teams, il client avrà accesso alla cronologia chiamate/chat.
@@ -81,14 +81,14 @@ La seconda opzione è creare un tenant separato che ospita i client (vedere Imma
 
 ### <a name="how-to-manage-passwords"></a>Come gestire le password
 
-1. Rimuovere la scadenza della password. Tuttavia, ciò aumenta la probabilità che un account venga compromesso. La raccomandazione per le password NIST è modificare le password ogni 30-90 giorni.
+1. Rimuovere la scadenza della password. Tuttavia, ciò aumenta la probabilità che un account venga compromesso. La raccomandazione per la password NIST è modificare le password ogni 30-90 giorni.
 1. Estendere la scadenza della password per HoloLens 2 dispositivi per superare i 90 giorni.
 1. I dispositivi devono essere restituiti a Contoso per modificare le password. Tuttavia, ciò può causare problemi se si prevede che i dispositivi siano nello stabilimento del client per più di 90 giorni.  
 1. Per i dispositivi inviati a più client, reimpostare le password prima di inviare il dispositivo ai client.
 
 ### <a name="how-to-ensure-that-clients-do-not-have-access-to-chat-history"></a>Come assicurarsi che i client non hanno accesso alla cronologia delle chat
 
-Remote Assist cancella la cronologia chat dopo ogni sessione. Tuttavia, la cronologia della chat sarà disponibile per l'Microsoft Teams utente.
+Remote Assist cancella la cronologia chat dopo ogni sessione. Tuttavia, la cronologia delle chat sarà disponibile per l'Microsoft Teams utente.
 
 > [!NOTE]
 > Poiché l'accesso Single Sign-On è abilitato, è importante disabilitare il browser usando [**WDAC.**](/hololens/windows-defender-application-control-wdac) Se un client esterno apre il browser e usa la versione Web di Teams, il client avrà accesso alla cronologia chiamate/chat.
@@ -98,7 +98,7 @@ Remote Assist cancella la cronologia chat dopo ogni sessione. Tuttavia, la crono
 È consigliabile seguire questa procedura per HoloLens 2 di distribuzione:
 
 1. Usare la [versione HoloLens del sistema operativo più recente](https://aka.ms/hololens2download) come build di base.
-1. Assegnare licenze basate su utente o basate su dispositivo:
+1. Assegnare licenze basate su utente o su dispositivo:
     1. Entrambe le licenze basate su utenti e dispositivi seguono la procedura seguente:
         1. [Creare un gruppo in AAD e aggiungere membri per gli](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal#create-a-basic-group-and-add-members) utenti HoloLens/RA.
         1. [Assegnare licenze basate su dispositivo o basate su utente](/azure/active-directory/enterprise-users/licensing-groups-assign#:~:text=In%20this%20article%201%20Assign%20the%20required%20licenses,3%20Check%20for%20license%20problems%20and%20resolve%20them) a questo gruppo.
@@ -119,7 +119,7 @@ Remote Assist cancella la cronologia chat dopo ogni sessione. Tuttavia, la crono
 
 1. Usare [WDAC](/hololens/windows-defender-application-control-wdac) per consentire o bloccare le app nel HoloLens 2 dispositivo.
 1. Aggiornare Remote Assist alla versione più recente come parte dell'installazione. A tale scopo, sono disponibili due opzioni:
-    1. A tale scopo, andare a Windows **Microsoft Store --> Remote Assist --> e Aggiornare l'app**.
+    1. Questa operazione può essere eseguita selezionando Windows **Microsoft Store --> Remote Assist --> e Aggiorna app**.
     1. [ApplicationManagement/AllowAppStoreAutoUpdate,](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate) che consente gli aggiornamenti automatici delle app, è abilitato per impostazione predefinita. Mantenere il dispositivo collegato per ricevere gli aggiornamenti.
 1. [Disabilitare tutte le pagine delle](/hololens/settings-uri-list) impostazioni ad eccezione delle impostazioni di rete per consentire agli utenti di connettersi alle reti guest nei siti client.
 1. [Gestire HoloLens aggiornamenti](/hololens/hololens-updates)

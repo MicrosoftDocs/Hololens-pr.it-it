@@ -14,16 +14,16 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 88e7d0614cf95f32eaa0434724eddbcb5b8cf863
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 76513c2f2458119785b64d8cccac4e42c2957b5af966dfdb0c165ebeda12e069
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636980"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660058"
 ---
 # <a name="prepare---corporate-connected-guide"></a>Preparazione - Guida connessa aziendale
 ## <a name="infrastructure-essentials"></a>Informazioni di base sulle infrastrutture
-Per gli scenari di distribuzione sia personali che aziendali, un sistema di gestione dei dispositivi mobili (MDM) è l'infrastruttura essenziale necessaria per distribuire e gestire i dispositivi Windows 10, in particolare il HoloLens 2. Una [Azure AD Premium è consigliata](/azure/active-directory/fundamentals/active-directory-get-started-premium) come provider di identità ed è **necessaria** per supportare determinate funzionalità.
+Per scenari di distribuzione sia personali che aziendali, un sistema di gestione dei dispositivi mobili (MDM) è l'infrastruttura essenziale necessaria per distribuire e gestire i dispositivi Windows 10, in particolare il HoloLens 2. Una [Azure AD Premium è consigliata](/azure/active-directory/fundamentals/active-directory-get-started-premium) come provider di identità ed è **necessaria** per supportare determinate funzionalità.
 
 > [!NOTE]
 > Sebbene il HoloLens 2 sia distribuito e gestito come un dispositivo mobile, viene in genere usato come dispositivo condiviso tra molti utenti.
@@ -37,18 +37,18 @@ Azure AD è un servizio directory basato su cloud che offre funzionalità di ges
 In questa guida, [l'identità](/hololens/hololens-identity) usata sarà Azure AD account. Esistono diversi vantaggi per gli account Azure AD, ad esempio:
 
 - I dipendenti usano il proprio account Azure AD per registrare il dispositivo in Azure AD e possono registrarlo automaticamente con la soluzione MDM dell'organizzazione (Azure AD+MDM: richiede una sottoscrizione Azure AD Premium [aziendale).](/azure/active-directory/fundamentals/active-directory-get-started-premium)
-- Azure AD account hanno opzioni [di autenticazione aggiuntive](/hololens/hololens-identity) tramite Windows Hello for [Business.](/windows/security/identity-protection/hello-for-business/hello-identity-verification) Oltre all'accesso Iris, gli utenti possono accedere da un altro dispositivo o usare chiavi di sicurezza FIDO.
+- Azure AD account hanno opzioni [di autenticazione aggiuntive](/hololens/hololens-identity) tramite Windows Hello for [Business](/windows/security/identity-protection/hello-for-business/hello-identity-verification). Oltre all'accesso Iris, gli utenti possono accedere da un altro dispositivo o usare chiavi di sicurezza FIDO.
 
 > [!WARNING] 
 > I dipendenti possono usare un solo account per inizializzare un dispositivo, quindi è fondamentale che **l'organizzazione** controlli quale account è abilitato per primo. L'account scelto determinerà chi controlla il dispositivo e influirà sulle funzionalità di gestione.
 
 ## <a name="mobile-device-management"></a>Gestione dei dispositivi mobili
-Microsoft Intune, parte di Enterprise Mobility + Security, è un sistema MDM basato sul cloud che gestisce i dispositivi connessi al tenant. Come Office 365, Intune usa Azure AD per la gestione delle identità, quindi i dipendenti usano le stesse credenziali per registrare i dispositivi in Intune che usano per accedere Office 365. Intune supporta anche i dispositivi che eseguono altri sistemi operativi, ad esempio iOS e Android, per fornire una soluzione MDM completa. Ai fini di questa guida, ci si concentrerà sull'uso di Intune per abilitare una distribuzione nella rete interna con HoloLens 2.
+Microsoft Intune, parte di Enterprise Mobility + Security, è un sistema MDM basato sul cloud che gestisce i dispositivi connessi al tenant. Come Office 365, Intune usa Azure AD per la gestione delle identità, quindi i dipendenti usano le stesse credenziali per registrare i dispositivi in Intune che usano per accedere Office 365. Intune supporta anche i dispositivi che eseguono altri sistemi operativi, ad esempio iOS e Android, per fornire una soluzione MDM completa. Ai fini di questa guida, si concentrerà sull'uso di Intune per abilitare una distribuzione nella rete interna con HoloLens 2.
 > [!Important] 
 > È essenziale disporre della gestione dei dispositivi mobili. Se non è già stato configurato, seguire questa guida e Introduzione a Intune.
 
 > [!Important]
-> Per usare Guide, è necessario Azure AD account.
+> Per usare Guide, è necessario un account Azure AD locale.
 
 > [!Note] 
 > Più sistemi MDM supportano Windows 10 e la maggior parte supporta scenari di distribuzione con dispositivi personali e aziendali. I provider MDM che supportano Windows 10 Holographic includono: AirWatch, MobileIron e altri. La maggior parte dei fornitori di soluzioni MDM leader del settore supporta già l'integrazione con Azure AD. È possibile trovare l'elenco più attuale dei fornitori MDM che supportano Azure AD in [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/category/azure-active-directory-apps).
@@ -57,11 +57,11 @@ Microsoft Intune, parte di Enterprise Mobility + Security, è un sistema MDM bas
 Dynamics 365 Guides è un'applicazione basata sul cloud. Se l'amministratore di rete ha un elenco di approvazione, potrebbe essere necessario aggiungere gli indirizzi IP e/o gli endpoint necessari per connettersi ai server Dynamics 365. [Altre informazioni sullo sblocco di indirizzi IP e URL.](/power-platform/admin/online-requirements#ip-addresses-and-urls)
 
 ## <a name="certificates"></a>Certificati
-I certificati consentono di migliorare la sicurezza fornendo l'autenticazione dell'account, Wi-Fi, la crittografia VPN e la crittografia SSL del contenuto Web. Anche se gli amministratori possono gestire manualmente i certificati nei dispositivi tramite il provisioning dei pacchetti, è consigliabile usare il sistema MDM per gestire tali certificati per l'intero ciclo di vita, dalla registrazione al rinnovo e alla revoca. 
+I certificati consentono di migliorare la sicurezza fornendo l'autenticazione dell'account, Wi-Fi, la crittografia VPN e la crittografia SSL del contenuto Web. Anche se gli amministratori possono gestire i certificati nei dispositivi manualmente tramite il provisioning dei pacchetti, è consigliabile usare il sistema MDM per gestire tali certificati per l'intero ciclo di vita, dalla registrazione al rinnovo e alla revoca. 
 
 Il sistema MDM può distribuire automaticamente questi certificati agli archivi certificati dei dispositivi dopo averli registrati (purché il sistema MDM supporti **Simple Certificate Enrollment Protocol (SCEP)** o **Public Key Cryptography Standards #12 (PKCS #12)**). [Informazioni sui tipi di certificato e sui profili utilizzati con Microsoft Intune](/mem/intune/protect/certificates-configure). MDM può anche eseguire query ed eliminare i certificati client registrati o attivare una nuova richiesta di registrazione prima della scadenza del certificato corrente.
 
-Se i sistemi MDM sono già configurati per i certificati, fare riferimento a Preparare i certificati e i profili di rete [per](/hololens/hololens-certificates-network) HoloLens 2 per avviare la distribuzione di certificati e profili per i HoloLens 2 mobili.
+Se i sistemi MDM sono già configurati per i certificati, fare riferimento a Preparare i certificati e i profili di rete [per HoloLens 2](/hololens/hololens-certificates-network) per avviare la distribuzione di certificati e profili per i HoloLens 2 mobili.
 
 ## <a name="scep"></a>SCEP
 
@@ -77,7 +77,7 @@ I servizi seguenti sono necessari per la distribuzione SCEP, ad eccezione del se
 
 Se la rete non supporta già SCEP o non si è certi che la rete sia configurata correttamente per SCEP con Intune, fare riferimento a Configurare l'infrastruttura per supportare [SCEP con Intune.](/mem/intune/protect/certificates-scep-configure)
 
-Se l'infrastruttura supporta già SCEP, [](/mem/intune/protect/certificates-profile-scep) è [](/mem/configmgr/protect/deploy-use/create-certificate-profiles) necessario creare un profilo per ogni certificato SCEP che verrà HoloLens 2. Se si verificano problemi con SCEP, usare Risoluzione dei problemi relativi all'uso dei [profili certificato SCEP](/troubleshoot/mem/intune/troubleshoot-scep-certificate-profiles)per effettuare il provisioning dei certificati con Microsoft Intune .
+Se l'infrastruttura supporta già SCEP, [](/mem/intune/protect/certificates-profile-scep) è [](/mem/configmgr/protect/deploy-use/create-certificate-profiles) necessario creare un profilo per ogni certificato SCEP che verrà HoloLens 2 utilizzato dall'infrastruttura. Se si verificano problemi con SCEP, usare Risoluzione dei problemi relativi all'uso dei [profili certificato SCEP](/troubleshoot/mem/intune/troubleshoot-scep-certificate-profiles)per effettuare il provisioning dei certificati con Microsoft Intune .
 
 ## <a name="pkcs"></a>PKCS
 Intune supporta anche l'uso di certificati PKCS (Public Key Pair) e privati. Per [altre informazioni, vedere](/mem/intune/protect/certificates-pfx-configure) Usare certificati a chiave pubblica Microsoft Intune privata e pubblica.
@@ -90,7 +90,7 @@ Esistono diversi tipi di proxy e modi per configurare il proxy. Ai fini di quest
 Per altre informazioni sulle impostazioni proxy per Windows 10, vedere Creare un profilo Wi-Fi per i [dispositivi in Microsoft Intune - Azure](/mem/intune/configuration/wi-fi-settings-configure).
 
 ## <a name="line-of-business-apps"></a>App line-of-business 
-Anche se è possibile installare diverse app tramite il Microsoft Store, è probabile che si abbia una propria app personalizzata creata appositamente per l'uso in realtà mista. Queste app personalizzate distribuite in tutta l'organizzazione per l'azienda sono denominate app line-of-business (LOB).
+Anche se è possibile installare diverse app tramite il Microsoft Store, è probabile che sia disponibile un'app personalizzata creata appositamente per l'uso in realtà mista. Queste app personalizzate distribuite in tutta l'organizzazione per l'azienda sono denominate app line-of-business (LOB).
   
 Esistono diversi modi per distribuire applicazioni in HoloLens 2 dispositivi. Le app possono essere distribuite direttamente tramite MDM, Microsoft Store per le aziende(MSfB) o sideloaded tramite un pacchetto di provisioning. Ai fini di questa guida, le app verranno distribuite tramite MDM, tramite l'uso dell'installazione dell'app richiesta. In questo modo le app LOB verranno scaricate automaticamente nei dispositivi HoloLens al termine della registrazione.
 
@@ -101,7 +101,7 @@ Altri dettagli sulla distribuzione delle app sono disponibili in [Gestione app: 
 > [!NOTE]
 > HoloLens 2 supporta solo l'esecuzione di app ARM64 UWP.
 
-## <a name="guides-playbook"></a>Guide Playbook
+## <a name="guides-playbook"></a>Playbook guide
 Guides usa un ambiente Microsoft Dataverse come archivio dati per le app Guide. È importante comprendere il quadro generale dell'interazione dell'ambiente Dataverse con le app Guide e il tenant. In questa guida non verrà illustrato come gestire i dativerse, ma vedere Concetti di base per la distribuzione di Dynamics 365 Guides [- Dynamics 365 Mixed Reality](/dynamics365/mixed-reality/guides/admin-deployment-playbook).
 
 ## <a name="next-step"></a>Passaggio successivo 

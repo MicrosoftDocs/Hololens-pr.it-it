@@ -18,12 +18,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f2d9faafac2f84b727b1e10be83d4d1b53a707b4
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 63c82e5b1a953ee2f69bf4c22a8442c7bca07f073cc13f1e5e573fde0ccc1976
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640084"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115662932"
 ---
 # <a name="manage-connection-endpoints-for-hololens"></a>Gestire gli endpoint di connessione per HoloLens
 
@@ -82,7 +82,7 @@ Oltre all'elenco precedente, per sfruttare al meglio HoloLens funzionalità, nel
 |                                                     | spo-ring.msedge.net                                                 |
 | Autenticazione del dispositivo                               | login.live.com*                                                     |
 | Metadati del dispositivo                                     | dmd.metaservices.microsoft.com                                      |
-| Percorso                                            | inference.location.live.net                                         |
+| Località                                            | inference.location.live.net                                         |
 |                                                     | location-inference-westus.cloudapp.net                              |
 | Dati di diagnostica                                     | v10.events.data.microsoft.com                                       |
 |                                                     | v10.vortex-win.data.microsoft.com/collect/v1                        |
@@ -152,7 +152,7 @@ Oltre all'elenco precedente, per sfruttare al meglio HoloLens funzionalità, nel
 ## <a name="references"></a>Riferimenti
 
 > [!NOTE]
-> Se si distribuisce D365 Remote Assist, è necessario abilitare gli endpoint elencati per SharePoint Online e OneDrive for Business negli URL Office 365 e negli intervalli di indirizzi [IP.](/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams)
+> Se si distribuisce D365 Remote Assist, è necessario abilitare gli endpoint elencati per SharePoint Online e OneDrive for Business negli URL Office 365 e negli intervalli di indirizzi [IP](/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams).
 
 - [Configurare i dati di diagnostica di Windows nell'organizzazione](/windows/privacy/configure-windows-diagnostic-data-in-your-organization)
 - [Gestire gli endpoint di connessione Windows 10 Enterprise versione 1903](/windows/privacy/manage-windows-1903-endpoints)

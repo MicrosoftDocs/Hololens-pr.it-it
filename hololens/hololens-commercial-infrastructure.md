@@ -14,12 +14,12 @@ manager: bradke
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: e3f87c524ce0f8af05ec8c92877d46facd962fb4
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 3aa5ed676a9f8864904752da3d965cba5fab7ce98db51abb4ff9444f1a0a370b
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639285"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664445"
 ---
 # <a name="configure-your-network-for-hololens"></a>Configurare la rete per HoloLens
 
@@ -31,7 +31,7 @@ Questa parte del documento richiederà le persone seguenti:
 
 ## <a name="infrastructure-requirements"></a>Requisiti dell'infrastruttura
 
-HoloLens è, alla base, un dispositivo Windows dispositivo mobile integrato con Azure.  Funziona meglio negli ambienti commerciali con disponibilità di rete wireless (wi-fi) e accesso a servizi Microsoft.
+HoloLens è, alla base, un dispositivo Windows dispositivo mobile integrato con Azure.  Funziona meglio negli ambienti commerciali con disponibilità di rete wireless (wi-fi) e accesso servizi Microsoft.
 
 I servizi cloud critici includono:
 
@@ -83,7 +83,7 @@ Per [altre informazioni, HoloLens requisiti](hololens-licenses-requirements.md) 
 1. Assicurarsi che gli utenti dell'azienda siano Azure Active Directory (Azure AD).
 Vedere le istruzioni [seguenti per](/azure/active-directory/fundamentals/add-users-azure-active-directory) l'aggiunta di utenti.
 
-1. È consigliabile aggiungere utenti che necessitano di licenze simili allo stesso gruppo.
+1. È consigliabile che gli utenti che necessitano di licenze simili siano aggiunti allo stesso gruppo.
     1. [Creare un gruppo](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
     1. [Aggiungere utenti ai gruppi](/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal)
 
@@ -151,16 +151,16 @@ Altre informazioni [sull'installazione di app in HoloLens](hololens-install-apps
 
 ### <a name="certificates"></a>Certificati
 
-È possibile distribuire i certificati tramite il provider MDM. Se l'azienda richiede certificati, Intune supporta PKCS, PFX e SCEP. È importante comprendere quale certificato è più giusto per l'azienda. Visitare la documentazione [relativa alle configurazioni](/intune/protect/certificates-configure) dei certificati per determinare quale certificato è più adatto alle specifiche. Se si prevede di usare i certificati per HoloLens autenticazione, PFX o SCEP potrebbe essere la scelta giusta.
+È possibile distribuire i certificati tramite il provider MDM. Se l'azienda richiede certificati, Intune supporta PKCS, PFX e SCEP. È importante comprendere quale certificato è più giusto per l'azienda. Visitare la documentazione [relativa alle configurazioni](/intune/protect/certificates-configure) dei certificati per determinare il certificato più adatto alle specifiche. Se si prevede di usare i certificati per HoloLens autenticazione, PFX o SCEP potrebbe essere la scelta giusta.
 
-Per l'uso di [SCEP,](/intune/protect/certificates-profile-scep)vedere la procedura seguente.
+Vedere la procedura seguente per l'uso [di SCEP.](/intune/protect/certificates-profile-scep)
 
 ### <a name="how-to-upgrade-to-holographics-for-business-commercial-suite"></a>Come eseguire l'aggiornamento a Holographics for Business Commercial Suite
 
 > [!NOTE]
-> Windows Holographics for Business (suite commerciale) è destinato solo HoloLens dispositivi di prima generazione. Il profilo non verrà applicato ai HoloLens 2 mobili.
+> Windows Holographics for Business (suite commerciale) è destinato solo HoloLens dispositivi di prima generazione. Il profilo non verrà applicato ai HoloLens 2 dispositivi.
 
-Le istruzioni per l'aggiornamento alla suite commerciale sono disponibili nella documentazione [sull'aggiornamento olografico.](/intune/configuration/holographic-upgrade)
+È possibile trovare indicazioni per l'aggiornamento alla suite commerciale nella documentazione [sull'aggiornamento olografico.](/intune/configuration/holographic-upgrade)
 
 ### <a name="how-to-configure-kiosk-mode-using-microsoft-intune"></a>Come configurare la modalità tutto schermo usando Microsoft Intune
 
@@ -168,23 +168,23 @@ Le istruzioni per l'aggiornamento alla suite commerciale sono disponibili nella 
 
 1. Controllare le impostazioni dell'app
     1. Accedere all'account Microsoft Store Business
-    1. **Manage > Products and Services > Apps and Software > Selezionare l'app da sincronizzare > Private Store Availability > Select "Everyone" (Tutti) o "Gruppi specifici"**
+    1. **Manage > Products and Services > Apps and Software > Selezionare l'app da sincronizzare > Private Store Availability > Selezionare "Everyone" o "Specific Groups"**
         >[!NOTE]
-        >Se l'app desiderata non è visualizzata, sarà necessario "ottenere" l'app cercando l'app nell'archivio. Fare clic sulla barra "Cerca" nell'angolo superiore destro > digitare il nome dell'app > fare clic **sull'app > selezionare "Ottieni".**
+        >Se l'app desiderata non viene visualizzata, sarà necessario "ottenere" l'app cercando l'app nell'Archivio. Fare clic sulla barra "Cerca" nell'angolo superiore destro > digitare il nome dell'app > fare clic **sull'app > selezionare "Ottieni".**
     1. Se le app in **Intune** non vengono > app client >, potrebbe essere necessario [sincronizzare di nuovo le](/intune/apps/windows-store-for-business#synchronize-apps) app.
 
 1. [Creare un profilo di dispositivo per la modalità tutto schermo](/intune/configuration/kiosk-settings#create-the-profile)
 
 > [!NOTE]
-> È possibile configurare utenti diversi in modo da avere esperienze diverse in modalità tutto schermo usando "Azure AD" come "Tipo di accesso utente". Questa opzione è tuttavia disponibile solo in modalità tutto schermo multi-app. La modalità tutto schermo multi-app funzionerà con una sola app e con più app.
+> È possibile configurare utenti diversi per esperienze diverse in modalità tutto schermo usando "Azure AD" come "Tipo di accesso utente". Questa opzione è tuttavia disponibile solo in modalità tutto schermo multi-app. La modalità tutto schermo multi-app funziona con una sola app e con più app.
 
 ![Immagine che mostra la configurazione della modalità tutto schermo in Intune](images/aad-kioskmode.png)
 
-Per altri servizi MDM, consultare la documentazione del provider per istruzioni. Fare riferimento alle istruzioni [HoloLens chiosco](hololens-kiosk.md#use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk) multimediale se è necessario usare un'impostazione personalizzata e una configurazione XML completa per configurare un chiosco multimediale nel servizio MDM.
+Per altri servizi MDM, vedere la documentazione del provider per istruzioni. Fare riferimento alle istruzioni [HoloLens](hololens-kiosk.md#use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk) chiosco multimediale se è necessario usare un'impostazione personalizzata e una configurazione XML completa per configurare un chiosco multimediale nel servizio MDM.
 
 ## <a name="certificates-and-authentication"></a>Certificati e autenticazione
 
-I certificati possono essere distribuiti tramite MDM (vedere "certificati" nella [sezione MDM](hololens-commercial-infrastructure.md#mobile-device-manager-guidance)). I certificati possono anche essere distribuiti nell'HoloLens tramite il provisioning dei pacchetti. Per altre [informazioni, HoloLens provisioning.](hololens-provisioning.md)
+I certificati possono essere distribuiti tramite MDM (vedere "certificati" nella [sezione MDM).](hololens-commercial-infrastructure.md#mobile-device-manager-guidance) I certificati possono anche essere distribuiti nel HoloLens tramite il provisioning dei pacchetti. Per altre [informazioni, HoloLens provisioning.](hololens-provisioning.md)
 
 ### <a name="additional-intune-quick-links"></a>Collegamenti rapidi di Intune aggiuntivi
 

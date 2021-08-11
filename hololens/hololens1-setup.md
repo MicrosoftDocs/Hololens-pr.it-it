@@ -12,12 +12,12 @@ ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - Hololens (1st gen)
-ms.openlocfilehash: f5b16e579eca725158ed99ef7a912b72a7cab7ab
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 03a84f1035154660fe51ec5be07c3f32f4746564b95616ec45ef3978fb49b911
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639948"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115662170"
 ---
 # <a name="get-your-hololens-1st-gen-ready-to-use"></a>Prepararsi HoloLens (prima generazione) per l'uso
 
@@ -48,13 +48,13 @@ La velocità e la velocità di ricarica possono variare a seconda dell'ambiente 
 |2. Eseguire il push indietro del headband. Non estrarlo o manipolare la banda dietro la cerniata, perché nel tempo ciò può interrompere la banda.|![Passaggio 2, eseguire il push indietro del headband](./images/FitGuideStep2.png)|
 |3. Ruotare la ruota di regolazione per estendere la banda della testa fino all'uscita. |![Passaggio 3: usare la ruota di regolazione per estendere la fascia](./images/FitGuideStep3.png)|
 |4. Tenere il dispositivo in mano e posizionarlo sulla testa. Assicurarsi che la banda della testa sieda nella parte superiore della fronte e quindi stringere la ruota di regolazione.|![Passaggio 4, inserire il dispositivo e regolare la fascia](./images/FitGuideStep4.png)|
-|5. Far scorrere di nuovo il visore e quindi controllare l'adattamento del dispositivo. La fascia della testa deve essere posta nella parte superiore della fronte, sotto la linea dei capello, con i relatori sopra le sedie. Le lenti devono essere centrate sugli occhi.|![Passaggio 5, far scorrere di nuovo il visore e controllare l'adattamento](./images/FitGuideSetep5.png)|
+|5. Far scorrere di nuovo il visore e quindi controllare l'adattamento del dispositivo. La fascia deve essere posta nella parte superiore della fronte, appena sotto la linea dei capelloni, con gli altoparlanti sopra le sedie. Le lenti devono essere centrate sugli occhi.|![Passaggio 5, far scorrere di nuovo il visore e controllare l'adattamento](./images/FitGuideSetep5.png)|
 
 ## <a name="turn-on-your-hololens"></a>Attivare l'HoloLens
 
 Usare il pulsante di alimentazione per HoloLens attivare e disattivare la modalità standby.
 
-![Immagine che mostra il pulsante HoloLens di alimentazione](./images/hololens-power.png)
+![Immagine che mostra il pulsante HoloLens'alimentazione](./images/hololens-power.png)
 
 Se il dispositivo non risponde o non si avvia, vedere [Riavviare, reimpostare o](hololens-restart-recover.md)ripristinare HoloLens .
 
@@ -77,7 +77,7 @@ HoloLens si arresta automaticamente quando il livello della batteria scende all'
 
 ## <a name="adjust-volume-and-brightness"></a>Regolare volume e luminosità
 
-I pulsanti di luminosità e volume sono sopra il volume degli elementi del dispositivo a destra e la &mdash; luminosità verso sinistra.
+I pulsanti di luminosità e volume sono sopra il volume degli elementi del dispositivo a destra e la &mdash; luminosità a sinistra.
 
 ![Immagine che mostra i HoloLens personalizzati](./images/hololens-buttons.jpg)
 
@@ -105,7 +105,7 @@ Usare le HoloLens in uno spazio sicuro privo di ostruzione e rischi di inciampo.
 
 ### <a name="stay-comfortable"></a>Rimanere a proprio agio
 
-Mantenere le prime sessioni con HoloLens breve e assicurarsi di fare delle pause. In caso di disagi, fermarsi e attendere fino a quando non si è migliori. Ad esempio, i movimenti temporanei, le emozioni di movimento, il capogiro, l'disorientamento, la difficoltà, l'affaticamento, la pressione degli occhi o gli occhi secchi.
+Mantenere le prime sessioni con HoloLens breve e assicurarsi di fare delle pause. In caso di disagi, fermarsi e attendere fino a quando non si è migliori. Può trattarsi di temporanea malattia, mal di movimento, vertigini, disorientamento, difficoltà, affaticamento, affaticamento oculare o occhi secchi.
 
 > [!div class="nextstepaction"]
 > [Avviare e configurare il HoloLens (prima generazione)](hololens1-start.md)

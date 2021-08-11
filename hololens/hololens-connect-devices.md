@@ -13,12 +13,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 5fed56d7a0beeda0a0d96eddc63aaee872f3e52d
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 1e478e366b8ad70243f6fffc47cd62e847af837637a992ebb60fc80bf6774186
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639098"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664296"
 ---
 # <a name="connect-to-bluetooth-and-usb-c-devices"></a>Connessione dispositivi Bluetooth e USB-C
 
@@ -79,7 +79,7 @@ HoloLens 2 supporta le classi seguenti di dispositivi USB-C:
 
 
 > [!NOTE]
-> In risposta ai commenti e suggerimenti dei clienti, è stato abilitato il supporto limitato per la connettività cellulare collegata direttamente all'HoloLens tramite USB-C. Per [altre Connessione vedere Connessione a Cellulare e 5G.](hololens-cellular.md)
+> In risposta ai commenti e suggerimenti dei clienti, è stato abilitato il supporto limitato per la connettività cellulare collegata direttamente all'HoloLens tramite USB-C. Per [altre informazioni, vedere Connessione a Cellulare e 5G.](hololens-cellular.md)
 
 ### <a name="usb-c-external-microphone-support"></a>Supporto microfono esterno USB-C
 
@@ -87,7 +87,7 @@ HoloLens 2 supporta le classi seguenti di dispositivi USB-C:
 > L'inserimento di **un microfono USB non lo imposta automaticamente come dispositivo di input.** Quando si collega un set di cuffia USB-C, gli utenti osserveranno che l'audio della cuffia verrà reindirizzato automaticamente alle cuffia, ma il sistema operativo HoloLens assegna la priorità all'array microfono interno sopra qualsiasi altro dispositivo di input. **Per usare un microfono USB-C, seguire questa procedura.**
 
 > [!NOTE]
-> Non è possibile usare microfoni esterni nelle compilazioni [prima Windows Holographic, versione 21H1](hololens-release-notes.md#windows-holographic-version-21h1) e successive. 
+> I microfoni esterni non possono essere usati nelle compilazioni [prima Windows Holographic, versione 21H1](hololens-release-notes.md#windows-holographic-version-21h1) e successive. 
 
 Gli utenti possono selezionare microfoni esterni connessi USB-C usando il **pannello Impostazioni** audio. I microfoni USB-C possono essere usati per chiamare, registrare e così via.
 

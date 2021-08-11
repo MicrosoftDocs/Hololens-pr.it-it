@@ -1,89 +1,89 @@
 ---
-title: Istruzioni per il contributo
+title: Istruzioni per la collaborazione
 description: Informazioni su come contribuire alla documentazione HoloLens sulla piattaforma docs.microsoft.com usando GitHub Markdown.
 author: hferrone
 ms.author: mattwoj
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: hololens
-ms.openlocfilehash: b1efaa77a4b96ed4b55e84147448cbfbc706d677
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: cbf0b2e4b61f006d0b5d7d74d3d81a4b33cfd6d8c2e124288b17959d54a5a1ad
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659115"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665067"
 ---
-# <a name="contributing-to-the-hololens-documentation"></a>Contribuire alla documentazione HoloLens
+# <a name="contributing-to-the-hololens-documentation"></a>Contributi alla documentazione HoloLens
 
-Benvenuti nella documentazione [HoloLens!](https://github.com/MicrosoftDocs/Hololens) Tutti gli articoli creati o modificati in questo repo **saranno visibili al pubblico.** 
+Benvenuti nella documentazione [HoloLens!](https://github.com/MicrosoftDocs/Hololens) Tutti gli articoli creati o modificati in questo archivio **saranno visibili al pubblico.** 
 
-HoloLens documenti vengono visualizzati nella piattaforma docs.microsoft.com, che usa GitHub Markdown con funzionalità Markdig. Il contenuto modificato in questo repo viene formattato in pagine stilizzate che vengono mostrate in /hololens.
+HoloLens vengono visualizzati nella piattaforma docs.microsoft.com, che usa GitHub Markdown con funzionalità Markdig. Il contenuto modificato in questo repo viene formattato in pagine stilizzate che vengono mostrate in /hololens.
 
-Questa pagina illustra i passaggi di base e le linee guida per contribuire e i collegamenti alle nozioni di base di Markdown. Grazie per il tuo contributo.
+Questa pagina illustra i passaggi di base e le linee guida per contribuire e i collegamenti alle nozioni di base di Markdown. Grazie per il contributo.
 
 ## <a name="available-repos"></a>Repository disponibili
 
 | Nome del repository | URL |
 | --- | --- |
-| HoloLens | [MicrosoftDocs/HoloLens](https://github.com/MicrosoftDocs/Hololens) |
-| Realtà mista | [MicrosoftDocs/mixed-reality](/windows/mixed-reality) |
-| Guida agli appassionati di VR | [MicrosoftDocs/mixed-reality/enthusiast-guide](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide) |
+| HoloLens | [Microsoft Docs/HoloLens](https://github.com/MicrosoftDocs/Hololens) |
+| Realtà mista | [MicrosoftDocs/realtà mista](/windows/mixed-reality) |
+| Guida agli appassionati di realtà virtuale | [MicrosoftDocs/mixed-reality/enthusiast-guide](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide) |
 
 ## <a name="before-you-start"></a>Prima di iniziare
 
-Se non è già presente, è necessario creare un [account GitHub.](https://github.com/join)
+Se non è già presente, è necessario creare un [account GitHub account](https://github.com/join).
 
 >[!NOTE]
->Se si è un dipendente Microsoft, collegare l'account GitHub all'alias Microsoft nel portale [Microsoft Open Source.](https://repos.opensource.microsoft.com/) Partecipare alle **organizzazioni "Microsoft"** **e "MicrosoftDocs".**
+>I dipendenti Microsoft possono collegare l'account GitHub all'alias Microsoft nel portale [Microsoft Open Source.](https://repos.opensource.microsoft.com/) Partecipare alle **organizzazioni "Microsoft"** **e "MicrosoftDocs".**
 
 Quando si configura l'account GitHub, è consigliabile adottare anche queste precauzioni di sicurezza:
-- Creare una [password complessa per l'account GitHub .](https://github.com/settings/admin)
+- Creare una [password complessa per l'account GitHub.](https://github.com/settings/admin)
 - Abilitare [l'autenticazione a due fattori.](https://github.com/settings/two_factor_authentication/configure)
 - Salvare i [codici di ripristino](https://github.com/settings/auth/recovery-codes) in un luogo sicuro.
-- Aggiornare le [impostazioni del profilo pubblico.](https://github.com/settings/profile)
-   - Impostare il proprio nome e valutare la possibilità di impostare *l'indirizzo di posta* elettronica pubblico su *Non visualizzare l'indirizzo di posta elettronica.*
+- Aggiornare le [impostazioni del profilo pubblico](https://github.com/settings/profile).
+   - Impostare il nome e provare a impostare Indirizzo di posta *elettronica pubblico* su Non *visualizzare l'indirizzo di posta elettronica.*
    - È consigliabile caricare un'immagine del profilo perché viene visualizzata un'anteprima nelle pagine della documentazione a cui si contribuisce.
 - Se si prevede di usare la riga di comando, è consigliabile configurare [Git Gestione credenziali per Windows](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/latest). In questo modo, non sarà necessario immettere la password ogni volta che si apporta un contributo.
 
-Il sistema di pubblicazione è associato GitHub, quindi questi passaggi sono importanti. L'utente verrà elencato come autore o collaboratore a ogni articolo usando l'alias GitHub.
+Il sistema di pubblicazione è associato GitHub, quindi questi passaggi sono importanti. Si verrà elencati come autore o collaboratore per ogni articolo usando l'alias GitHub.
 
 ## <a name="editing-an-existing-article"></a>Modifica di un articolo esistente
 
-Usare il flusso di lavoro seguente per apportare aggiornamenti *a un* articolo esistente tramite GitHub in un Web browser:
+Usare il flusso di lavoro seguente per apportare *aggiornamenti a un articolo* esistente tramite GitHub in un Web browser:
 
 1. Passare all'articolo che si vuole modificare nella cartella "mixed-reality-docs".
 
-2. Selezionare il pulsante Di modifica (icona a forma di matita) in alto a destra.
+2. Selezionare il pulsante di modifica (icona a forma di matita) in alto a destra.
 
    ![Modificare un articolo.](images/editpage.png)
 
-   Verrà automaticamente creato il fork di un ramo usabile dal ramo predefinito, _master_.
+   Verrà automaticamente creato un fork di un ramo eliminabile dal ramo predefinito, _master_.
 
    > [!NOTE]
-   > Questo articolo contiene riferimenti a _master,_ un termine che Microsoft non usa più. Quando il termine verrà rimosso dal software, verrà rimosso anche dall'articolo.
+   > Questo articolo contiene riferimenti al _master_, un termine che Microsoft non usa più. Quando il termine verrà rimosso dal software, verrà rimosso anche dall'articolo.
    
 3. Modificare il contenuto dell'articolo in base alle [nozioni di base di Markdown.](#markdown-basics)
 
-4. Aggiornare i metadati nella parte superiore di ogni articolo:
+4. Aggiornare i metadati all'inizio di ogni articolo:
 
-   * **title**: titolo della pagina visualizzato nella scheda del browser quando viene visualizzato l'articolo. I titoli di pagina vengono usati per seo e indicizzazione, quindi non modificare il titolo a meno che non sia necessario (anche se questo è meno critico prima che la documentazione sia pubblica).
-   * **description**: scrivere una breve descrizione del contenuto dell'articolo, che migliora seo e individuazione.
-   * **author:** se si è il proprietario principale della pagina, aggiungere l'alias GitHub qui.
-   * **ms.author:** se si è il proprietario principale della pagina, aggiungere l'alias Microsoft qui (non è necessario , ma @microsoft.com solo l'alias).
+   * **title:** titolo della pagina visualizzato nella scheda del browser quando viene visualizzato l'articolo. I titoli di pagina vengono usati per seO e indicizzazione, quindi non modificare il titolo a meno che non sia necessario (anche se questo è meno importante prima che la documentazione venga pubblicata).
+   * **description:** scrivere una breve descrizione del contenuto dell'articolo, che migliora seO e individuazione.
+   * **author:** se si è il proprietario primario della pagina, aggiungere l'alias GitHub qui.
+   * **ms.author:** se si è il proprietario primario della pagina, aggiungere qui l'alias Microsoft (non è necessario , ma @microsoft.com solo l'alias).
    * **ms.date:** aggiornare la data se si aggiunge contenuto principale alla pagina, ma non per correzioni come chiarimenti, formattazione, grammatica o ortografia.
-   * **keywords:** le parole chiave sono di aiuto in SEO (ottimizzazione del motore di ricerca). Aggiungere parole chiave, separate da una virgola e uno spazio, specifiche per l'articolo, ma senza punteggiatura dopo l'ultima parola chiave nell'elenco. Non è necessario aggiungere parole chiave globali che si applicano a tutti gli articoli, perché vengono gestite altrove. 
+   * **keywords:** le parole chiave sono di supporto per SEO (ottimizzazione del motore di ricerca). Aggiungere parole chiave, separate da una virgola e uno spazio, specifiche dell'articolo, ma senza punteggiatura dopo l'ultima parola chiave nell'elenco. Non è necessario aggiungere parole chiave globali applicabili a tutti gli articoli, perché vengono gestite altrove. 
    
-5. Dopo aver completato le modifiche all'articolo, scorrere verso il basso e selezionare **Proponi modifica file**.
+5. Dopo aver completato le modifiche dell'articolo, scorrere verso il basso e selezionare **Propose file change (Proponi modifica file).**
 
-6. Nella pagina successiva selezionare Crea richiesta **pull per** unire il ramo creato automaticamente nel ramo _predefinito, master_.
+6. Nella pagina successiva selezionare Crea richiesta **pull per** unire il ramo creato automaticamente nel ramo _predefinito, master._
 
-7. Ripetere i passaggi precedenti per l'articolo successivo da modificare.
+7. Ripetere i passaggi precedenti per l'articolo successivo che si vuole modificare.
 
 ## <a name="renaming-or-deleting-an-existing-article"></a>Ridenominazione o eliminazione di un articolo esistente
 
-Se la modifica rinomina o elimina un articolo esistente, assicurarsi di aggiungere un reindirizzamento. In questo modo, chiunque abbia un collegamento all'articolo esistente finirà comunque nel posto giusto. I reindirizzamenti vengono gestiti dal .openpublishing.redirection.jsfile nella radice del repo.
+Se la modifica rinomina o elimina un articolo esistente, assicurarsi di aggiungere un reindirizzamento. In questo modo, chiunque abbia un collegamento all'articolo esistente finirà comunque nella posizione giusta. I reindirizzamenti vengono gestiti dal .openpublishing.redirection.jsnel file nella radice del repo.
 
-Per aggiungere un reindirizzamento .openpublishing.redirection.js, aggiungere una voce alla `redirections` matrice:
+Per aggiungere un reindirizzamento .openpublishing.redirection.jssu , aggiungere una voce alla `redirections` matrice :
 
 ```json
 {
@@ -95,9 +95,9 @@ Per aggiungere un reindirizzamento .openpublishing.redirection.js, aggiungere un
         },
 ```
 
-- è `source_path` il percorso del repository relativo all'articolo precedente che si sta rimuovendo. Assicurarsi che il percorso inizi con `mixed-reality-docs` e termini con `.md` .
+- è `source_path` il percorso relativo del repository dell'articolo precedente che si sta rimuovendo. Assicurarsi che il percorso inizi con `mixed-reality-docs` e termini con `.md` .
 
-- è `redirect_url` l'URL pubblico relativo dall'articolo precedente al nuovo articolo. Assicurarsi che questo URL non contenga o , perché fa riferimento **all'URL** pubblico `mixed-reality-docs` e non al percorso del `.md` repository. È consentito il collegamento a una sezione all'interno del nuovo articolo `#section` tramite . Se necessario, è anche possibile usare un percorso assoluto per un altro sito.
+- è `redirect_url` l'URL pubblico relativo dall'articolo precedente al nuovo articolo. Assicurarsi che questo URL **non contenga** o , perché fa riferimento `mixed-reality-docs` `.md` all'URL pubblico e non al percorso del repository. È consentito il collegamento a una sezione all'interno del nuovo articolo `#section` usando . Se necessario, è anche possibile usare un percorso assoluto a un altro sito.
 
 - `redirect_document_id` indica se si vuole mantenere l'ID documento dal file precedente. Il valore predefinito è `false`. Usare `true` se si vuole mantenere il valore `ms.documentid` dell'attributo dall'articolo reindirizzato. Se si mantiene l'ID documento, i dati, ad esempio le visualizzazioni pagina e le classificazioni, verranno trasferiti all'articolo di destinazione. Eseguire questa operazione se il reindirizzamento è principalmente una ridenominazione e non un puntatore a un articolo diverso che copre solo parte dello stesso contenuto.
 
@@ -105,23 +105,23 @@ Se si aggiunge un reindirizzamento, assicurarsi di eliminare anche il file prece
 
 ## <a name="creating-a-new-article"></a>Creazione di un nuovo articolo
 
-Usare il flusso di lavoro seguente *per creare nuovi* articoli nel repo della documentazione tramite GitHub in un Web browser:
+Usare il flusso di lavoro *seguente per creare nuovi* articoli nel repo della documentazione tramite GitHub in un Web browser:
 
-1. Creare un fork dal ramo _predefinito, master_, di MicrosoftDocs/mixed-reality usando il **pulsante Fork** in alto a destra.
+1. Creare un fork dal ramo _predefinito, master_, di MicrosoftDocs/realtà mista usando il pulsante **Fork** in alto a destra.
 
-   ![Creare il fork del ramo predefinito, attualmente denominato "master".](images/forkbranch.png)
+   ![Creare una copia con fork del ramo predefinito, attualmente denominato "master".](images/forkbranch.png)
 
    > [!NOTE]
-   > Questo articolo contiene riferimenti a _master,_ un termine che Microsoft non usa più. Quando il termine verrà rimosso dal software, verrà rimosso anche dall'articolo.
+   > Questo articolo contiene riferimenti al _master_, un termine che Microsoft non usa più. Quando il termine verrà rimosso dal software, verrà rimosso anche dall'articolo.
    
 2. Nella cartella "mixed-reality-docs" selezionare **Crea nuovo file** in alto a destra.
 
-3. Creare un nome di pagina per l'articolo (usare trattini anziché spazi e non usare punteggiatura o apostrofi) e aggiungere ".md"
+3. Creare un nome di pagina per l'articolo (usare trattini anziché spazi e non usare segni di punteggiatura o apostrofi) e aggiungere ".md"
 
    ![Assegnare un nome alla nuova pagina.](images/newpagetitle.png)
    
    >[!IMPORTANT]
-   >Assicurarsi di creare il nuovo articolo dalla cartella "mixed-reality-docs". È possibile confermarlo controllando "/mixed-reality-docs/" nella nuova riga del nome file.
+   >Assicurarsi di creare il nuovo articolo dalla cartella "mixed-reality-docs". È possibile verificarlo controllando "/mixed-reality-docs/" nella nuova riga del nome file.
 
 4. Nella parte superiore della nuova pagina aggiungere il blocco di metadati seguente:
 
@@ -145,9 +145,9 @@ Usare il flusso di lavoro seguente *per creare nuovi* articoli nel repo della do
 
 8. Al termine, selezionare **Commit new file (Esegui commit nuovo file).**
 
-9. Selezionare **Nuova richiesta pull** ed eseguire il merge del ramo _master_ del fork in MicrosoftDocs/mixed-reality _master_ (assicurarsi che la freccia punti alla destinazione corretta).
+9. Selezionare **Nuova richiesta pull e** unire il ramo _master_ del fork in MicrosoftDocs/master di realtà mista (assicurarsi che la freccia punti alla destinazione corretta). 
 
-   ![Creare una richiesta pull dal fork in MicrosoftDocs/mixed-reality](images/pr-to-master.png)
+   ![Creare una richiesta pull dal fork in MicrosoftDocs/realtà mista](images/pr-to-master.png)
 
 ## <a name="markdown-basics"></a>Nozioni di base su Markdown
 
@@ -158,7 +158,7 @@ Le risorse seguenti consentono di imparare a modificare la documentazione usando
 
 ### <a name="adding-tables"></a>Aggiunta di tabelle
 
-A causa del modo in cui docs.microsoft.com stili, non hanno bordi o stili personalizzati, anche se si prova css inline. Sembra funzionare per un breve periodo di tempo, ma alla fine la piattaforma rimuoverà lo stile dalla tabella. Pianificare in anticipo e mantenere le tabelle semplici. Ecco un sito che semplifica le tabelle Markdown: [Generatore tabelle]]( https://www.tablesgenerator.com/markdown_tables) .
+A causa del modo in cui docs.microsoft.com stili delle tabelle, non hanno bordi o stili personalizzati, anche se si prova CSS inline. Sembra funzionare per un breve periodo di tempo, ma alla fine la piattaforma rimuoverà lo stile dalla tabella. Pianificare in anticipo e mantenere le tabelle semplici. Ecco un sito che semplifica le tabelle Markdown: [Tables Generator]]( https://www.tablesgenerator.com/markdown_tables) .
 
 [L'estensione Docs Markdown per Visual Studio Code](/teamblog/docs-extension) semplifica anche la generazione di tabelle se si usa Visual Studio Code (vedere di [seguito)](#using-visual-studio-code) per modificare la documentazione.
 
@@ -199,7 +199,7 @@ Se si preferisce non gestire questi problemi, usare un client desktop come [Visu
 
 Per i motivi [elencati in](#editing-in-the-browser-vs-editing-with-a-desktop-client)precedenza, è preferibile usare un client desktop per modificare la documentazione anziché un Web browser. È consigliabile usare [Visual Studio Code](https://code.visualstudio.com/).
 
-### <a name="setup"></a>Configurazione
+### <a name="setup"></a>Eseguire la configurazione
 
 Seguire questa procedura per configurare Visual Studio Code usare questo repo:
 

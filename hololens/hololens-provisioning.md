@@ -16,12 +16,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 7f712c571df1170badf3bfc832e43881278eec90
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: d9a0901a916ec33c076eeae33b680406a45f7feefe82442da1f346e78bc9b383
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640135"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115663838"
 ---
 # <a name="configure-hololens-by-using-a-provisioning-package"></a>Configurare HoloLens usando un pacchetto di provisioning
 
@@ -66,13 +66,13 @@ I pacchetti di provisioning possono includere istruzioni e criteri di gestione, 
 2. **Opzione 2:** [da Windows Assessment and Deployment Kit (ADK) per Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit). Se si installa Windows Progettazione configurazione da Windows ADK, selezionare **Progettazione** configurazione nella finestra di dialogo Selezionare le funzionalità **da** installare. Questa opzione non include HoloLens 2 funzionalità.
 
 > [!NOTE]
-> Se si è in grado di usare un PC offline che richiede l'accesso Windows Configuration Designer, seguire le istruzioni per l'installazione dell'app offline (hololens-recovery.md#downloading-arc-without-using-the-app-store) per Advanced Recovery Companion. Selezionare Windows Progettazione configurazione. 
+> Se si è in grado di usare un PC offline che richiede l'accesso a Progettazione configurazione di Windows, seguire le istruzioni per l'installazione dell'app offline (hololens-recovery.md#downloading-arc-without-using-the-app-store) per Advanced Recovery Companion. Selezionare Windows Progettazione configurazione. 
 
 ### <a name="2-create-the-provisioning-package"></a>2. Creare il pacchetto di provisioning
 
 Usare lo Windows Progettazione configurazione per creare un pacchetto di provisioning.
 
-1. Aprire Windows Configuration Designer (per impostazione predefinita, %windir%\Programmi (x86)\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86\ICD.exe).
+1. Aprire progettazione Windows (per impostazione predefinita, %windir%\Programmi (x86)\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86\ICD.exe).
 
 2. Selezionare **Provisioning HoloLens dispositivi .**
 
@@ -144,7 +144,7 @@ Al termine, selezionare **Crea**. Sono necessari solo alcuni secondi. Quando il 
 
 14. Selezionare **Avanti**.
 
-15. Selezionare **Compila** per avviare la compilazione del pacchetto. Le informazioni del progetto vengono visualizzate nella pagina di compilazione e la barra di stato indica lo stato della compilazione.
+15. Selezionare **Compila** per iniziare a compilare il pacchetto. Le informazioni del progetto vengono visualizzate nella pagina di compilazione e la barra di stato indica lo stato della compilazione.
 
 16. Al termine della compilazione, selezionare **Fine.**
 
@@ -212,7 +212,7 @@ Combinando l'avvio automatico del provisioning dai dispositivi USB e la conferma
 
 Il dispositivo è ora configurato e verrà visualizzata la schermata Provisioning completato.
 
-## <a name="applyremove-a-provisioning-package-to-hololens-after-setup"></a>Applicare/rimuovere un pacchetto di provisioning per l'HoloLens dopo l'installazione
+## <a name="applyremove-a-provisioning-package-to-hololens-after-setup"></a>Applicare/rimuovere un pacchetto di provisioning da HoloLens dopo l'installazione
 
 > [!NOTE]
 > Questi passaggi si applicano a tutti HoloLens 2 e dispositivi HoloLens (prima generazione) in Windows Holographic, versione 1809 e successive.

@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 5aa554f9e7fdc09c3112b628e0978ac3332bc57d
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 2cb497d850ff7ba2de66f69e8ec53e6dd36b773cc13d01b038def8d539e3b0c1
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635518"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665217"
 ---
 # <a name="provisioning-package"></a>Pacchetto di provisioning
 
@@ -38,13 +38,13 @@ Per informazioni di base sulla creazione di un pacchetto di provisioning per Hol
 > [!NOTE]
 > HoloLens (prima generazione) ha un supporto limitato per l'installazione di app (**UniversalAppInstall**) usando un pacchetto di provisioning. HoloLens (prima generazione) i dispositivi supportano solo l'installazione di un'app tramite PPKG solo durante la configurazione guidata e solo con le installazioni del contesto utente.
 
-## <a name="setup"></a>Configurazione
+## <a name="setup"></a>Eseguire la configurazione
 
 In [Windows Configuration Designer](https://www.microsoft.com/store/productId/9NBLGGH4TX22) seguire questa procedura.
 
 1. Impostare ApplicationManagement/AllowAllTrustedApps su "Sì". Vedere: [ApplicationManagement/AllowAllTrustedApps](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps).
 
-2. Passare a **UniversalAppInstall**  >  **UserContextAppLicense** immettere **PackageFamilyName.** Vedere [UniversalAppInstall](/windows/configuration/wcd/wcd-universalappinstall). Vedere anche: [UserContextAppLicense](/windows/configuration/wcd/wcd-universalappinstall#usercontextapplicense).
+2. Passare a **UniversalAppInstall**  >  **UserContextAppLicense** immettere **PackageFamilyName**. Vedere [UniversalAppInstall](/windows/configuration/wcd/wcd-universalappinstall). Vedere anche: [UserContextAppLicense](/windows/configuration/wcd/wcd-universalappinstall#usercontextapplicense).
 
    È possibile usare Portale di dispositivi in un dispositivo in cui è già installata l'app. Visitare la pagina App e esaminare la riga PackageRelativeID, tutte le informazioni prima di "!" **PackageFamilyName** è .
 
@@ -52,7 +52,7 @@ In [Windows Configuration Designer](https://www.microsoft.com/store/productId/9N
 
 4. A seconda che l'app sia stata acquistata o creata una propria app LOB, sarà necessario caricare il file di licenza o il certificato di sicurezza.
 
-    - Per il file di licenza: passare a **UniversalAppInstall**  >  **UserContextAppLicence** e passare al percorso della licenza e caricarlo.
+    - Per il file di licenza: passare a **UniversalAppInstall**  >  **UserContextAppLicence** e selezionare il percorso della licenza e caricarlo.
     - Per il file di sicurezza, passare a **Certificati** e selezionare il certificato da installare insieme al bundle .appx.
 
 Assicurarsi di salvare il progetto in un percorso sicuro. Esportarlo come pacchetto **di provisioning.**   

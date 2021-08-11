@@ -13,12 +13,12 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0487ea49c706c753f4dfca7da7daa499d1715e9f
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 18c30b4edd649c088f71e479a401c8b286ddfd592f57a5659c3c15b3ec9c854f
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639795"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665370"
 ---
 # <a name="state-separation-and-isolation"></a>Separazione e isolamento dello stato
 
@@ -34,7 +34,7 @@ La separazione dello stato HoloLens 2 migliora notevolmente la sicurezza e la se
 ## <a name="state-separation-benefits"></a>Vantaggi della separazione dello stato
 
   * Sicurezza: la separazione dello stato in HoloLens 2 migliora significativamente l'integrità della piattaforma, la resistenza al malware e la protezione dei dati degli utenti. Separando la parte inalterabile del sistema operativo e rendendola di sola lettura o protetta dall'integrità, la separazione dello stato rende estremamente difficile per il malware persistere durante un riavvio a freddo. 
-  * Aggiornamenti: con HoloLens 2, quando il sistema operativo di base è immodificabile ed è stato separato in modo pulito dal resto dei dati nel dispositivo, gli aggiornamenti diventano semplici e affidabili.  Inoltre, la separazione dello stato rappresenta le basi fondamentali per gli aggiornamenti notevolmente più rapidi, che consentono di sostituire il sistema operativo in un unico passaggio (unità atomica).
+  * Aggiornamenti: con HoloLens 2, quando il sistema operativo di base è immodificabile ed è stato separato in modo pulito dal resto dei dati nel dispositivo, gli aggiornamenti diventano semplici e affidabili.  Inoltre, la separazione dello stato rappresenta la base fondamentale per gli aggiornamenti notevolmente più veloci, che consentono di sostituire il sistema operativo in un unico passaggio (unità atomica).
   * Reimpostazione del dispositivo: HoloLens 2 reimpostazione cancella i dati generati dall'utente e i dati dell'app utente nel dispositivo, incluse le posizioni di archiviazione interne ed esterne. Mantiene le app correnti del sistema operativo e le app critiche per la sicurezza e le app personalizzate Microsoft e OEM correnti (preinstallate). Queste app preinstallate possono essere riidratate nel dispositivo al termine della reimpostazione
 
 ### <a name="state-separation-states"></a>Stati di separazione dello stato
@@ -55,7 +55,7 @@ Lo stato non modificabile è contrassegnato come di sola lettura (o è altriment
   * Windows driver della posta in arrivo
   * Impostazioni Windows olografiche archiviate nell'hive del Registro Windows (HKLM)
     * Esempio: HKLM archivia le informazioni di configurazione per le app installate in un computer. Archivia anche le informazioni per rilevare l'hardware e i driver corrispondenti.
-Proteggendo questi elementi nello stato non modificabile (integrità e protezione di sola lettura), si garantisce che il sistema operativo di base si accerta sempre in uno stato attendibile. Inoltre, quando un dispositivo viene reimpostato, è possibile assicurarsi che il dispositivo si avvia solo nei componenti presenti in questa sezione non modificabile. 
+Proteggendo questi elementi nello stato non modificabile (integrità e protezione di sola lettura), si garantisce che il sistema operativo di base si accattivi sempre in uno stato attendibile. Inoltre, quando un dispositivo viene reimpostato, è possibile assicurarsi che il dispositivo si avvia solo nei componenti presenti in questa sezione non modificabile. 
 
 #### <a name="operating-system-data"></a>Dati del sistema operativo 
 
@@ -72,7 +72,7 @@ L'ultima categoria di stato rappresenta i dati utente prodotti o resi persistent
 
 ##  <a name="isolation"></a>Isolamento
 
-Per ottenere questo equilibrio, HoloLens 2 un sistema operativo di base usato per le funzioni principali, ad esempio l'avvio, il controllo hardware, l'accesso e così via. Esistono solo due set di applicazioni che vengono eseguite nel sistema operativo di base: applicazioni preinstallato e app UWP.
+Per ottenere questo equilibrio, HoloLens 2 un sistema operativo di base usato per le funzioni primarie, ad esempio l'avvio, il controllo hardware, l'accesso e così via. Esistono solo due set di applicazioni che vengono eseguite nel sistema operativo di base: applicazioni preinstallato e app UWP.
 
 ## <a name="code-signing"></a>Firma del codice
 

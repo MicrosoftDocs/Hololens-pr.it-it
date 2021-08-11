@@ -16,17 +16,17 @@ ms.localizationpriority: high
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0124453ef9e3b21722acaf2c6b438ebdfbd65043
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 7d8f2f8bf6aaaeb7f6f0ddbd339d428dad9335faeb99bfca48a19e68929921ed
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635943"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115663008"
 ---
 # <a name="restart-reset-or-recover-hololens-2"></a>Riavviare, reimpostare o ripristinare HoloLens 2
 
 >[!IMPORTANT]
-> Prima di avviare qualsiasi procedura di risoluzione dei problemi, assicurarsi che al dispositivo venga addebitato un addebito dal **20 al 40%** della capacità della batteria, se possibile. Le [luci dell'indicatore della](hololens2-setup.md#lights-that-indicate-the-battery-level) batteria che si trovano sotto il pulsante di alimentazione sono un modo rapido per verificare la capacità della batteria senza accedere al dispositivo.
+> Prima di avviare qualsiasi procedura di risoluzione dei problemi, assicurarsi che il dispositivo venga addebitato al **20-40%** della capacità della batteria, se possibile. Le [luci dell'indicatore della](hololens2-setup.md#lights-that-indicate-the-battery-level) batteria che si trovano sotto il pulsante di alimentazione sono un modo rapido per verificare la capacità della batteria senza accedere al dispositivo.
 
 Usare il [caricabatterie](https://www.microsoft.com/en-us/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5?rtc=1) e il cavo USB Type-C fornito con il HoloLens 2 perché è il modo migliore per caricare il dispositivo. Il caricabatterie fornisce 18W di alimentazione (9 V a 2A). Usando il caricabatterie a parete fornito, HoloLens 2 i dispositivi possono ricaricare la batteria in meno di 65 minuti quando il dispositivo è in standby. Se questi accessori non sono disponibili, assicurarsi che il caricabatterie disponibile supporti almeno 15W di alimentazione.
 
@@ -69,7 +69,7 @@ Se la procedura di reimpostazione standard non ha funzionato, usare la procedura
 
 1. Scollegare il cavo Type-C per scollegare il dispositivo dall'alimentatore o dal PC host.
 
-2. Tenere premuti **i pulsanti di risparmio**  +  **energia** del volume per 15 secondi. Il dispositivo verrà riavviato automaticamente.
+2. Tenere **premuti i pulsanti di** risparmio  +  **energia** del volume per 15 secondi. Il dispositivo verrà riavviato automaticamente.
 
 4. Connessione il dispositivo al PC host.
 
@@ -118,7 +118,7 @@ Se il HoloLens 2 non viene avviato correttamente o se Advanced Recovery Companio
 
 3. Mentre si preme il **pulsante di** accensione del volume, premere e **rilasciare** il pulsante di accensione per avviare il dispositivo. Attendere 15 secondi e quindi rilasciare il **pulsante volume up.** Solo il LED centrale dei cinque LED si accende.
 
-4. Connessione il dispositivo nel PC host e aprire Gestione dispositivi. Ad esempio Windows 10 premere il **Windows** e quindi **il tasto X** e quindi selezionare **Gestione dispositivi.** Assicurarsi che il dispositivo venga enumerato correttamente Microsoft HoloLens come illustrato nell'immagine seguente:
+4. Connessione il dispositivo nel PC host e aprire Gestione dispositivi. Ad esempio Windows 10 premere il **Windows** e quindi **il tasto X** e quindi selezionare **Gestione dispositivi.** Assicurarsi che il dispositivo enumi correttamente come Microsoft HoloLens come illustrato nell'immagine seguente:
 
    ![HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLensRecovery.png)
 
@@ -130,7 +130,7 @@ Se il HoloLens 2 non viene avviato correttamente o se Advanced Recovery Companio
 
 ## <a name="troubleshoot-advanced-recovery-companion"></a>Risolvere i problemi di Advanced Recovery Companion
 
-1. Assicurarsi che al dispositivo venga addebitato un addebito del 40% o superiore prima di provare a eseguire il flashing.
+1. Assicurarsi che il dispositivo venga addebitato al 40% o più prima di provare a eseguire il flash.
 
 2. Controllare che il dispositivo sia sbloccato.
 
@@ -163,7 +163,7 @@ Per abilitare il percorso di distribuzione, seguire questa procedura:
 
 1. Passare a **Cercare il gruppo e** cercare Advanced Recovery [**_Companion._**](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8)
 
-1. Impostare License **Type (Tipo di** ***licenza) su* _offline_ _ e selezionare _ Manage (Gestisci).**
+1. Impostare **License Type (Tipo di** ***licenza) su* _offline_ _ e selezionare _ Manage (Gestisci).**
 
 1. In **Scarica il pacchetto per l'uso offline** selezionare il secondo pulsante blu **Scarica.** Assicurarsi che l'estensione del file *sia appxbundle.*
 

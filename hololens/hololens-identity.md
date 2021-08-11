@@ -18,70 +18,70 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: e2c5c98eb62f9e8ec19306b2cb460004eb8ae8dd
-ms.sourcegitcommit: 44d5fbee8aa0e2404137484edbeb4653437e79dd
+ms.openlocfilehash: ceb2416ec96db1bdd363e9164ec39eed9247fe37095a52e7f02bafc74416e4f2
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "114991424"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664151"
 ---
 # <a name="manage-user-identity-and-sign-in-for-hololens"></a>Gestire l'identità utente e l'accesso per HoloLens
 
 > [!NOTE]
-> Questo articolo è un riferimento tecnico per professionisti IT e appassionati di tecnologia. Se si stanno cercando istruzioni HoloLens configurazione, leggere "[Setting up your HoloLens (1st gen)](hololens1-start.md)" (Configurazione del HoloLens ( prima generazione) ) " o " Setting up your HoloLens 2 " (Configurazione del[HoloLens 2).](hololens2-start.md)
+> Questo articolo è un riferimento tecnico per professionisti IT e appassionati di tecnologia. Se si stanno cercando istruzioni HoloLens configurazione, vedere " Configurazione del HoloLens[(prima generazione)](hololens1-start.md)" o " Configurazione del[HoloLens 2](hololens2-start.md)".
 
-Come altri Windows, HoloLens funziona sempre in un contesto utente. Esiste sempre un'identità utente. HoloLens l'identità viene trattata in modo quasi analogo ad altri Windows dispositivi. Questo articolo è un approfondimento di riferimento per l'identità in HoloLens e illustra le differenze tra HoloLens e altri Windows dispositivi.
+Come altri Windows, HoloLens funziona sempre in un contesto utente. Esiste sempre un'identità utente. HoloLens tratta l'identità in modo quasi identico a quello di Windows dispositivi. Questo articolo è un riferimento approfondito per l'identità HoloLens e illustra le differenze tra HoloLens e altri Windows dispositivi.
 
 HoloLens supporta diversi tipi di identità utente. È possibile usare uno o più account utente per accedere. Ecco una panoramica dei tipi di identità e delle opzioni di autenticazione HoloLens:
 
 | Tipo di identità | Account per dispositivo | Opzioni di autenticazione |
 | --- | --- | --- |
-| [Azure Active Directory](/azure/active-directory/)<sup>1</sup>  | 64 | <ul><li>Provider di credenziali Web di Azure</li><li>App Authenticator Azure</li><li>Dati biometrici (Iris) &ndash; HoloLens 2 solo<sup>2</sup> </li><li>Chiave di sicurezza FIDO2</li><li>PIN &ndash; facoltativo per HoloLens (prima generazione), obbligatorio per HoloLens 2</li><li>Password</li></ul> |
-| [Account Microsoft (MSA)](/windows/security/identity-protection/access-control/microsoft-accounts) | 1 | <ul><li>Solo dati biometrici (Iris) &ndash; HoloLens 2</li><li>PIN &ndash; facoltativo per HoloLens (prima generazione), obbligatorio per HoloLens 2</li><li>Password</li></ul> |
+| [Azure Active Directory](/azure/active-directory/)<sup>1</sup>  | 64 | <ul><li>Provider di credenziali Web di Azure</li><li>App Authenticator Azure</li><li>Biometria (Iris) &ndash; HoloLens 2 solo<sup>2</sup> </li><li>Chiave di sicurezza FIDO2</li><li>PIN &ndash; Facoltativo per HoloLens (prima generazione), necessario per HoloLens 2</li><li>Password</li></ul> |
+| [Account Microsoft (MSA)](/windows/security/identity-protection/access-control/microsoft-accounts) | 1 | <ul><li>Solo dati biometrici (Iris) &ndash; HoloLens 2</li><li>PIN &ndash; Facoltativo per HoloLens (prima generazione), necessario per HoloLens 2</li><li>Password</li></ul> |
 | [Account locale](/windows/security/identity-protection/access-control/local-accounts) | 1 | Password |
 
 Gli account connessi al cloud (Azure AD e MSA) offrono più funzionalità perché possono usare i servizi di Azure.  
 > [!IMPORTANT]
-> 1 : Azure AD Premium non è necessario accedere al dispositivo. Tuttavia, è necessario per altre funzionalità di una distribuzione basata sul cloud a tocco ridotto, ad esempio la registrazione automatica e Autopilot.
+> 1: Azure AD Premium necessario per accedere al dispositivo. Tuttavia, è necessario per altre funzionalità di una distribuzione basata sul cloud a basso tocco, ad esempio la registrazione automatica e Autopilot.
 
 > [!NOTE]
-> 2 - Mentre un dispositivo HoloLens 2 può supportare fino a 64 account Azure AD, solo 31 di questi account possono registrarsi nell'autenticazione Iris. Questo è allineato con altre opzioni [di autenticazione biometrica per Windows Hello for Business.](/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer)
+> 2- Mentre un dispositivo HoloLens 2 può supportare fino a 64 account Azure AD, solo 31 di questi account possono registrarsi nell'autenticazione Iris. Questo è allineato con altre opzioni [di autenticazione biometrica per Windows Hello per le aziende.](/windows/security/identity-protection/hello-for-business/hello-faq#how-many-users-can-enroll-for-windows-hello-for-business-on-a-single-windows-10-computer)
 
 ## <a name="setting-up-users"></a>Configurazione degli utenti
 
-Esistono due modi per configurare un nuovo utente nel HoloLens. Il modo più comune è durante HoloLens'esperienza di configurazione. Se si Azure Active Directory, [gli altri utenti possono accedere dopo](#setting-up-multi-user-support-azure-ad-only) la Configurazione configurazione Azure AD credenziali. HoloLens dispositivi inizialmente impostati con un account del servizio gestiti o un account locale durante la Configurazione remota non supporteranno più utenti. Vedere Configurazione del [HoloLens (prima generazione)](hololens1-start.md) o [HoloLens 2](hololens2-start.md).
+Esistono due modi per configurare un nuovo utente nel HoloLens. Il modo più comune è durante HoloLens'esperienza di configurazione. Se si Azure Active Directory, [altri utenti possono accedere dopo](#setting-up-multi-user-support-azure-ad-only) la configurazione del sistema operativo usando le Azure AD credenziali. HoloLens i dispositivi che vengono inizialmente impostati con un account msa o locale durante la configurazione non supporteranno più utenti. Vedere Configurazione del HoloLens [(prima generazione)](hololens1-start.md) [o HoloLens 2](hololens2-start.md).
 
-Se si usa un account aziendale o aziendale per accedere a HoloLens, HoloLens si iscrive all'infrastruttura IT dell'organizzazione. Questa registrazione consente all'amministratore IT di configurare gestione di dispositivi mobili (MDM) per inviare criteri di gruppo al HoloLens.
+Se si usa un account aziendale o aziendale per accedere a HoloLens, HoloLens si registra nell'infrastruttura IT dell'organizzazione. Questa registrazione consente all'amministratore IT di configurare Gestione dispositivi mobili (MDM) per inviare criteri di gruppo al HoloLens.
 
-Come Windows su altri dispositivi, l'accesso durante l'installazione crea un profilo utente nel dispositivo. Il profilo utente archivia app e dati. Lo stesso account fornisce anche l'accesso Single Sign-On per le app, ad esempio Edge o Microsoft Store, usando le API Windows Account Manager. 
+Come Windows in altri dispositivi, l'accesso durante la configurazione crea un profilo utente nel dispositivo. Il profilo utente archivia app e dati. Lo stesso account fornisce anche l'accesso Single Sign-On per le app, ad esempio Edge o Microsoft Store, usando le API Windows Account Manager. 
 
-Per impostazione predefinita, come per altri Windows 10, sarà necessario accedere di nuovo quando HoloLens riavvia o riprende dalla modalità standby. È possibile usare l Impostazioni app per modificare questo comportamento oppure il comportamento può essere controllato da Criteri di gruppo.
+Per impostazione predefinita, come per altri Windows 10, sarà necessario accedere di nuovo quando HoloLens riavvio o ripresa dalla modalità standby. È possibile usare l Impostazioni app per modificare questo comportamento oppure il comportamento può essere controllato da Criteri di gruppo.
 
 ### <a name="linked-accounts"></a>Account collegati
 
-Come nella versione desktop di Windows, è possibile collegare credenziali dell'account Web aggiuntive all'account HoloLens personale. Questo tipo di collegamento semplifica l'accesso alle risorse all'interno o all'interno delle app (ad esempio lo Store) o combina l'accesso alle risorse personali e di lavoro. Dopo aver connesso un account al dispositivo, è possibile concedere l'autorizzazione per usare il dispositivo alle app in modo che non sia necessario accedere singolarmente a ogni app.
+Come nella versione Desktop di Windows, è possibile collegare credenziali aggiuntive dell'account Web all'account HoloLens desktop. Questo tipo di collegamento semplifica l'accesso alle risorse all'interno o all'interno di app (ad esempio lo Store) o di combinare l'accesso alle risorse personali e di lavoro. Dopo aver connesso un account al dispositivo, è possibile concedere l'autorizzazione per usare il dispositivo alle app in modo che non sia necessario accedere a ogni app singolarmente.
 
-Il collegamento degli account non separa i dati utente creati nel dispositivo, ad esempio immagini o download.  
+Il collegamento di account non separa i dati utente creati nel dispositivo, ad esempio immagini o download.  
 
 ### <a name="setting-up-multi-user-support-azure-ad-only"></a>Configurazione del supporto multi-utente (solo Azure AD)
 
 HoloLens supporta più utenti dello stesso tenant Azure AD tenant. Per usare questa funzionalità, è necessario usare un account appartenente all'organizzazione per configurare il dispositivo. Successivamente, altri utenti dello stesso tenant possono accedere al dispositivo dalla schermata di accesso o toccando il riquadro utente nel pannello Start. È possibile accedere a un solo utente alla volta. Quando un utente esegue l'accesso, HoloLens l'utente precedente. 
 
 >[!IMPORTANT]
-> Il primo utente del dispositivo è considerato il proprietario del dispositivo, tranne nel caso di Azure AD, altre informazioni sui [proprietari dei dispositivi.](security-adminless-os.md#device-owner)
+> Il primo utente del dispositivo è considerato il proprietario del dispositivo, ad eccezione del caso di Azure AD join, per altre informazioni sui [proprietari del dispositivo.](security-adminless-os.md#device-owner)
 
 Tutti gli utenti possono usare le app installate nel dispositivo. Tuttavia, ogni utente ha i propri dati e preferenze dell'app. La rimozione di un'app dal dispositivo la rimuove per tutti gli utenti.  
 
-I dispositivi impostati con Azure AD non consentiranno l'accesso al dispositivo con un account Microsoft. Tutti gli account successivi usati devono Azure AD dallo stesso tenant del dispositivo. È comunque possibile [accedere con un account Microsoft](hololens-identity.md#setting-up-multi-user-support-azure-ad-only) alle app che lo supportano, ad esempio il Microsoft Store. Per passare dall'Azure AD account utente agli account Microsoft per l'accesso al dispositivo, è necessario [eseguire il reflash del dispositivo](hololens-recovery.md#clean-reflash-the-device).
+I dispositivi impostati con Azure AD non consentiranno l'accesso al dispositivo con un account Microsoft. Tutti gli account successivi usati devono Azure AD dallo stesso tenant del dispositivo. È comunque possibile [accedere con un account Microsoft](hololens-identity.md#setting-up-multi-user-support-azure-ad-only) alle app che lo supportano, ad esempio il Microsoft Store. Per passare dall'uso Azure AD account microsoft agli account Microsoft per l'accesso al dispositivo, è necessario [eseguire il reflash del dispositivo.](hololens-recovery.md#clean-reflash-the-device)
 
 > [!NOTE]
-> **HoloLens (prima generazione)** ha iniziato a supportare più utenti Azure AD nell'aggiornamento Windows 10 aprile [2018](/windows/mixed-reality/release-notes-april-2018) come parte [di Windows Holographic for Business](hololens-upgrade-enterprise.md).
+> **HoloLens (prima generazione)** ha iniziato a supportare più Azure AD utenti nell'aggiornamento di [Windows 10 aprile 2018](/windows/mixed-reality/release-notes-april-2018) come parte di [Windows Holographic for Business](hololens-upgrade-enterprise.md).
 
 ### <a name="multiple-users-listed-on-sign-in-screen"></a>Più utenti elencati nella schermata di accesso
 
-In precedenza la schermata di accesso mostrava solo l'utente che ha eseguito l'accesso più di recente, oltre a un punto di ingresso "Altro utente". Sono stati ricevuti commenti e suggerimenti dei clienti che non sono sufficienti se più utenti hanno eseguito l'accesso al dispositivo. Era comunque necessario digitare nuovamente il nome utente e così via.
+In precedenza la schermata di accesso mostrava solo l'utente connesso più di recente, nonché un punto di ingresso "Altro utente". Il feedback dei clienti non è sufficiente se più utenti hanno eseguito l'accesso al dispositivo. Era comunque necessario digitare nuovamente il nome utente e così via.
 
-Introdotto in [Windows Holographic, versione 21H1,](hololens-release-notes.md#windows-holographic-version-21h1)quando si seleziona Altro utente a destra del campo di immissione PIN, nella schermata Di accesso verranno visualizzati più utenti che hanno eseguito l'accesso al dispositivo in precedenza.  In questo modo gli utenti possono selezionare il proprio profilo utente e quindi accedere usando le Windows Hello credenziali. È anche possibile aggiungere un nuovo utente al dispositivo da questa pagina Altri utenti tramite il **pulsante Aggiungi account.**
+Introdotto [in Windows Holographic, versione 21H1,](hololens-release-notes.md#windows-holographic-version-21h1)quando si seleziona Altro utente che si trova a destra del campo di immissione PIN, nella schermata Di accesso verranno visualizzati più utenti che hanno eseguito l'accesso al dispositivo in precedenza.  In questo modo gli utenti possono selezionare il proprio profilo utente e quindi accedere usando le Windows Hello credenziali. È anche possibile aggiungere un nuovo utente al dispositivo da questa pagina Altri utenti tramite il **pulsante Aggiungi account.**
 
 Nel menu Altri utenti il pulsante Altri utenti visualizza l'ultimo utente che ha eseguito l'accesso al dispositivo. Selezionare questo pulsante per tornare alla schermata Di accesso per questo utente.
 
@@ -89,19 +89,19 @@ Nel menu Altri utenti il pulsante Altri utenti visualizza l'ultimo utente che ha
 
 <br>
 
-![Schermata di accesso per altri utenti](./images/multiusers2.jpg)
+![Schermata di accesso di altri utenti](./images/multiusers2.jpg)
 
 ## <a name="removing-users"></a>Rimozione di utenti
 
-È possibile rimuovere un utente dal dispositivo selezionando **Account** Impostazioni  >    >  **Altre persone.** Questa azione recupera anche spazio rimuovendo tutti i dati dell'app dell'utente dal dispositivo.  
+È possibile rimuovere un utente dal dispositivo selezionando **Account** Impostazioni  >    >  **Altri utenti**. Questa azione recupera anche spazio rimuovendo tutti i dati dell'app dell'utente dal dispositivo.  
 
-## <a name="using-single-sign-on-within-an-app"></a>Uso dell'accesso Single Sign-On all'interno di un'app
+## <a name="using-single-sign-on-within-an-app"></a>Uso dell'accesso Single Sign-On in un'app
 
-Gli sviluppatori di app possono sfruttare le identità collegate in HoloLens usando le API di gestione account di [Windows](/uwp/api/Windows.Security.Authentication.Web.Core), esattamente come si farebbe con altri dispositivi Windows. Alcuni esempi di codice per queste API sono disponibili in GitHub: Esempio di [gestione degli account Web.](https://go.microsoft.com/fwlink/p/?LinkId=620621)
+Gli sviluppatori di app possono sfruttare le identità collegate in HoloLens usando le API di [Windows Account Manager](/uwp/api/Windows.Security.Authentication.Web.Core), esattamente come in altri dispositivi Windows. Alcuni esempi di codice per queste API sono disponibili in GitHub: Esempio di [gestione degli account Web](https://go.microsoft.com/fwlink/p/?LinkId=620621).
 
 Qualsiasi interruzione dell'account che potrebbe verificarsi, ad esempio la richiesta del consenso dell'utente per le informazioni sull'account, l'autenticazione a due fattori e così via, deve essere gestita quando l'app richiede un token di autenticazione.
 
-Se l'app richiede un tipo di account specifico che non è stato collegato in precedenza, l'app può chiedere al sistema di richiedere all'utente di aggiungerne uno. Questa richiesta attiva il riquadro delle impostazioni dell'account per l'avvio come elemento figlio modale dell'app. Per le app 2D, il rendering di questa finestra viene eseguito direttamente al centro dell'app. Per le app Unity, questa richiesta porta brevemente l'utente fuori dall'app olografica per eseguire il rendering della finestra figlio. Per informazioni sulla personalizzazione dei comandi e delle azioni in questo riquadro, vedere [Classe WebAccountCommand.](/uwp/api/Windows.UI.ApplicationSettings.WebAccountCommand)
+Se l'app richiede un tipo di account specifico che non è stato collegato in precedenza, l'app può chiedere al sistema di richiedere all'utente di aggiungerne uno. Questa richiesta attiva il riquadro delle impostazioni dell'account per l'avvio come elemento figlio modale dell'app. Per le app 2D, il rendering di questa finestra viene eseguito direttamente al centro dell'app. Per le app Unity, questa richiesta consente all'utente di uscire dall'app olografica per eseguire il rendering della finestra figlio. Per informazioni sulla personalizzazione dei comandi e delle azioni in questo riquadro, vedere [Classe WebAccountCommand](/uwp/api/Windows.UI.ApplicationSettings.WebAccountCommand).
 
 ## <a name="enterprise-and-other-authentication"></a>Enterprise e altre autenticazioni
 
@@ -109,7 +109,7 @@ Se l'app usa altri tipi di autenticazione, ad esempio NTLM, Basic o Kerberos, è
 
 ## <a name="deprecated-apis"></a>API deprecate
 
-Uno dei modi in cui lo sviluppo per HoloLens è diverso dallo sviluppo per Desktop è che l'API [OnlineIDAuthenticator](/uwp/api/Windows.Security.Authentication.OnlineId.OnlineIdAuthenticator) non è completamente supportata. Anche se l'API restituisce un token se l'account primario è valido, interruzioni come quelle descritte in questo articolo non visualizzano alcuna interfaccia utente per l'utente e non riescono a autenticare correttamente l'account.
+Uno dei modi in cui lo sviluppo per HoloLens differisce dallo sviluppo per Desktop è che l'API [OnlineIDAuthenticator](/uwp/api/Windows.Security.Authentication.OnlineId.OnlineIdAuthenticator) non è completamente supportata. Anche se l'API restituisce un token se l'account primario è valido, interruzioni come quelle descritte in questo articolo non visualizzano alcuna interfaccia utente per l'utente e non riescono a autenticare correttamente l'account.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
@@ -118,7 +118,7 @@ Uno dei modi in cui lo sviluppo per HoloLens è diverso dallo sviluppo per Deskt
 Windows Hello for Business , che supporta l'uso di un PIN per l'accesso, è supportato per HoloLens (prima generazione). Per consentire Windows Hello'accesso al PIN di HoloLens:
 
 1. Il HoloLens dispositivo deve essere [gestito da MDM.](hololens-enroll-mdm.md)
-1. È necessario abilitare Windows Hello per le aziende per il dispositivo. ([Vedere le istruzioni per Microsoft Intune.](/intune/windows-hello))
+1. È necessario abilitare Windows Hello for Business per il dispositivo. ([Vedere le istruzioni per Microsoft Intune.](/intune/windows-hello))
 1. In HoloLens l'utente può quindi usare Impostazioni opzioni di accesso  >    >  **Aggiungi PIN** per configurare un PIN.
 
 > [!NOTE]

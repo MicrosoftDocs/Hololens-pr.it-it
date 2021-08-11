@@ -1,5 +1,5 @@
 ---
-title: Panoramica della configurazione dei CSP e della gestione dei dispositivi
+title: Configurare i CSP e la panoramica di Gestione dispositivi
 description: Informazioni su come configurare csp, criteri e gestione dei dispositivi usando la gestione dei dispositivi mobili e i pacchetti di provisioning.
 ms.prod: hololens
 ms.sitesec: library
@@ -13,19 +13,19 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: b312f9d20c9a75c5e4c1906c4ec55f42fda977f6
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: ed28033f10f7a6d0e826775e95d040d0cac7f9e9c6266acd6975d3532f6d8067
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640458"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664246"
 ---
-# <a name="configure-csps-and-device-management-overview"></a>Panoramica della configurazione dei CSP e della gestione dei dispositivi
+# <a name="configure-csps-and-device-management-overview"></a>Configurare i CSP e la panoramica di Gestione dispositivi
 
 Gli amministratori IT possono definire e implementare le impostazioni dei criteri HoloLens 2. Le impostazioni di configurazione da usare varieranno in base allo scenario di distribuzione e i dispositivi aziendali offriranno al personale IT la più ampia gamma di opzioni di controllo. In Windows 10, i provider di servizi di configurazione (CSP) sono un'interfaccia per leggere, impostare, modificare o eliminare le impostazioni di configurazione nel dispositivo. Queste impostazioni corrispondono a chiavi del Registro di sistema o file. Alcuni provider di servizi di configurazione supportano il formato WAP, altri supportano SyncML e altri supportano entrambi.
 
 Per altre informazioni sui Windows 10 Holographic di gestione dei dispositivi, vedere l'elenco completo dei CSP supportati [HoloLens dispositivi](/windows/client-management/mdm/configuration-service-provider-reference#hololens).
-Gli amministratori IT possono anche gestire Policy CSP nei dispositivi. Vedere l'elenco completo dei provider di servizi di gestione dei criteri [supportati da HoloLens 2](/windows/client-management/mdm/policy-csps-supported-by-hololens2).
+Gli amministratori IT possono anche gestire Policy CSP nei dispositivi. Vedere l'elenco completo dei provider di servizi di sicurezza dei criteri [supportati da HoloLens 2](/windows/client-management/mdm/policy-csps-supported-by-hololens2).
 
 ## <a name="configuration-methods"></a>Metodi di configurazione
 
@@ -45,7 +45,7 @@ Alcune restrizioni del dispositivo sono semplici e disabilitano una funzionalit�
 
 ### <a name="kiosk-modes"></a>Modalità tutto schermo
 
-Usare la modalità tutto schermo per controllare quali identità hanno accesso alle app per impostazione predefinita. I chioschi in modalità tutto schermo possono essere usati per una singola app o più esperienze dell'interfaccia utente dell'app. Le configurazioni della modalità tutto schermo variano da una singola app per tutti gli utenti che usano il dispositivo a diverse selezioni di app per gruppi diversi. La modalità tutto schermo non arresta l'avvio di altre app da parte delle "app consentite" e non è mai stata prevista. Per altre [informazioni, vedere Modalità tutto schermo e come usarle.](hololens-kiosk.md)
+Usare la modalità tutto schermo per controllare quali identità hanno accesso alle app per impostazione predefinita. I chioschi in modalità tutto schermo possono essere usati per una singola app o più esperienze dell'interfaccia utente dell'app. Le configurazioni in modalità tutto schermo variano da una singola app per tutti gli utenti che usano il dispositivo a diverse selezioni di app per gruppi diversi. La modalità tutto schermo non arresta l'avvio di altre app da parte delle "app consentite" e non è mai stata prevista. Per altre [informazioni, vedere Modalità tutto schermo e come usarle.](hololens-kiosk.md)
 
 ### <a name="settings-page-visibility"></a>Impostazioni Visibilità della pagina
 

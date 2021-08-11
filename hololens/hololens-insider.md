@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e8adb2f796299c99a9152a5b245e8bdd0b768f05
-ms.sourcegitcommit: 78e5f26014e55c13fee9c2b75a80810fd2e77877
+ms.openlocfilehash: de5b8f052cfdd176f5b883661b2339764fd8ec24113e06b1286d9406acf3790f
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2021
-ms.locfileid: "115009341"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664071"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Insider Preview per Microsoft HoloLens
 
@@ -91,7 +91,7 @@ URI OMA del nuovo valore string `./Device/Vendor/MSFT/Policy/Config/MixedReality
 
 - L'utente con lo stesso indirizzo di posta elettronica avrà l'accesso automatico abilitato.
 
-In un dispositivo in cui è configurato questo criterio, l'utente specificato nei criteri dovrà accedere almeno una volta. I successivi riavvii del dispositivo dopo il primo accesso avranno l'utente specificato connesso automaticamente. È supportato un solo utente di accesso automatico. Una volta abilitato, l'utente connesso automaticamente non sarà in grado di disconnettersi manualmente. Per eseguire l'accesso come utente diverso, è prima necessario che i criteri siano disabilitati.
+In un dispositivo in cui è configurato questo criterio, l'utente specificato nei criteri dovrà accedere almeno una volta. I successivi riavvii del dispositivo dopo il primo accesso avranno l'utente specificato connesso automaticamente. È supportato un solo utente di accesso automatico. Una volta abilitato, l'utente connesso automaticamente non sarà in grado di disconnettersi manualmente. Per accedere come utente diverso, è prima necessario che i criteri siano disabilitati.
 
 > [!NOTE]
 > - Alcuni eventi, ad esempio gli aggiornamenti principali del sistema operativo, potrebbero richiedere all'utente specificato di accedere di nuovo al dispositivo per riprendere il comportamento di accesso automatico. 
@@ -99,12 +99,12 @@ In un dispositivo in cui è configurato questo criterio, l'utente specificato ne
 
 ### <a name="pfx-file-support-for-certificate-manager"></a>Supporto di file PFX per Gestione certificati
 
-Introdotto in Windows Insider build 20348.1405. È stato aggiunto il supporto a [Gestione certificati per](certificate-manager.md) l'uso dei certificati con estensione pfx. Quando gli utenti passano **a Impostazioni** certificati di & di sicurezza e selezionare Installa un certificato l'interfaccia utente ora supporta il file di certificato con estensione  >    >  pfx. 
+Introdotto in Windows Insider build 20348.1405. È stato aggiunto il supporto a [Gestione certificati per](certificate-manager.md) l'uso dei certificati con estensione pfx. Quando gli utenti passano **Impostazioni** certificati di & di sicurezza e seleziona Installa un certificato l'interfaccia utente ora  >    >  supporta il file di certificato con estensione pfx. 
 Gli utenti possono importare il certificato con estensione pfx, con chiave privata, nell'archivio utenti o nell'archivio computer.
 
 ### <a name="view-advanced-diagnostic-report-in-settings-on-hololens"></a>Visualizzare il report di diagnostica avanzato in Impostazioni in HoloLens
 
-Per i dispositivi gestiti durante la risoluzione dei problemi, verificare che sia applicata una configurazione dei criteri prevista è un passaggio importante. In precedenza questa nuova funzionalità doveva essere eseguita fuori dal dispositivo tramite MDM o vicino al dispositivo dopo l'esportazione dei log di diagnostica MDM raccolti tramite gli account **Impostazioni** Accesso aziendale o dell'istituto di istruzione e selezionare Esporta i log di gestione e visualizzati in un PC nelle  ->    >  vicinanze. 
+Per i dispositivi gestiti durante la risoluzione dei problemi, verificare che sia applicata una configurazione dei criteri prevista è un passaggio importante. In precedenza questa nuova funzionalità doveva essere eseguita tramite MDM o vicino al dispositivo dopo l'esportazione dei log di diagnostica MDM raccolti tramite gli account Impostazioni Accedi **all'istituto** di istruzione o all'istituto di istruzione e seleziona Esporta i log di gestione e visualizzato in un PC nelle  ->    >  vicinanze. 
 
 È ora possibile visualizzare la diagnostica MDM nel dispositivo usando il browser Edge. Per visualizzare più facilmente il report di diagnostica MDM, passare alla pagina Accedi all'istituto di istruzione o all'istituto di istruzione e selezionare **Visualizza report di diagnostica avanzato.** Verrà generato e aperto il report in una nuova finestra di Edge.
 
@@ -151,7 +151,7 @@ Negli scenari in cui un dispositivo sembra avere spazio su disco  insufficiente 
 >
 > Si è verificato un bug nel back-end che potrebbe essere stato rilevato e ciò consente di tornare in funzione.
 
-In un dispositivo HoloLens 2 passare **a** Impostazioni  >  **Update & Security**  >  **Windows Programma Insider** e selezionare **Get started (Introduzione).** Collegare l'account usato per la registrazione come Windows Insider.
+In un dispositivo HoloLens 2 passare **a** Impostazioni  >  **aggiornamento & sicurezza**  >  **Windows Programma Insider** selezionare **Introduzione.** Collegare l'account usato per la registrazione come Windows Insider.
 
 Windows insider sta ora passando a Canali. L'anello veloce diventerà dev  **channel,** l'anello  lento diventerà l'Canale beta e l'anello di anteprima della versione diventerà il canale di anteprima della **versione.**   Ecco l'aspetto del mapping:
 
@@ -161,13 +161,13 @@ Per altre informazioni, vedere [Introducing Windows Insider Channels](https://bl
 Selezionare quindi **Sviluppo attivo di** Windows, scegliere se si desidera  ricevere dev **channel** o build Canale beta ed esaminare le condizioni del programma.
 Selezionare **Conferma > riavvia ora** per completare l'operazione. Dopo il riavvio del dispositivo, passare Impostazioni > **aggiornamento & sicurezza** > verificare la disponibilità di aggiornamenti per ottenere la build più recente.
 
-### <a name="update-error-0x80070490-work-around"></a>Risolvere i 0x80070490 di errore di aggiornamento
+### <a name="update-error-0x80070490-work-around"></a>Risolvere i 0x80070490 errore di aggiornamento
 
-Se si verifica un errore di aggiornamento 0x80070490 durante l'aggiornamento nel canale Dev o Beta, provare a risolvere il problema a breve termine seguente. Comporta lo spostamento del canale Insider, la raccolta dell'aggiornamento e quindi il ritorno del canale Insider.
+Se si verifica un errore di aggiornamento 0x80070490 durante l'aggiornamento nel canale Dev o Beta, provare a risolvere il problema a breve termine seguente. Comporta lo spostamento del canale Insider, il ritiro dell'aggiornamento e quindi il ritorno del canale Insider.
 
 #### <a name="stage-one---release-preview"></a>Fase 1 - Versione di anteprima
 
-1.  Impostazioni, Aggiornare & Security, Windows Programma Insider, selezionare **Release Preview Channel (Canale di anteprima versione).**
+1.  Impostazioni, Update & Security, Windows Programma Insider, selezionare **Release Preview Channel (Canale di anteprima versione).**
 
 2.  Impostazioni, Update & Security, Windows Update, Check **for updates**. Dopo l'aggiornamento, passare alla fase 2.
 
@@ -206,9 +206,9 @@ Si è invitati a provare a sviluppare applicazioni usando build Insider di HoloL
 Se non si vogliono più ricevere build Insider di Windows Holographic, è possibile rifiutare esplicitamente quando il [](hololens-recovery.md) HoloLens esegue una build di produzione oppure è possibile ripristinare il dispositivo usando Advanced Recovery Companion per ripristinare il dispositivo a una versione non Insider di Windows Holographic.
 
 > [!CAUTION]
-> Esiste un problema noto in cui gli utenti che annullano la registrazione dalle compilazioni Insider Preview dopo la reinstallazione manuale di una nuova build di anteprima visualizzano una schermata blu. Successivamente, devono ripristinare manualmente il dispositivo. Per informazioni dettagliate complete su se si sarebbe o meno in grado di influire, vedere altre informazioni su [questo problema noto.](hololens-troubleshooting.md#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
+> Esiste un problema noto in cui gli utenti che annullano la registrazione dalle compilazioni Insider Preview dopo la reinstallazione manuale di una nuova build di anteprima visualizzano una schermata blu. Successivamente, devono ripristinare manualmente il dispositivo. Per informazioni dettagliate complete su se si sarebbe stati o meno influenzati, vedere altre informazioni su [questo problema noto.](hololens-troubleshooting.md#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
 
-Per verificare che l'HoloLens sia in esecuzione una build di produzione:
+Per verificare che il HoloLens sia in esecuzione una build di produzione:
 
 1. Passare a **Impostazioni > sistema > Informazioni su** e trovare il numero di build.
 
@@ -216,6 +216,6 @@ Per verificare che l'HoloLens sia in esecuzione una build di produzione:
 
 Per rifiutare esplicitamente le build Insider:
 
-1. In un HoloLens esecuzione di una build di produzione, passare a Impostazioni > **Update & Security > Windows Programma Insider** e selezionare Stop Insider builds (Arresta **compilazioni Insider).**
+1. In un HoloLens esecuzione di una build di produzione passare a Impostazioni > **Update & Security > Windows Programma Insider** e selezionare Stop Insider builds (Arresta **compilazioni Insider).**
 
 1. Seguire le istruzioni per rifiutare esplicitamente il dispositivo.

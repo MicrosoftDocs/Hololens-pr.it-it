@@ -1,7 +1,7 @@
 ---
-title: HoloLens 2 Edizione di sviluppo
-description: Informazioni su HoloLens 2 Development Edition e su cosa fare dopo averrne una propria.
-keywords: HoloLens 2 opzioni di acquisto, opzioni HoloLens, Developer Edition
+title: HoloLens 2 Development Edition
+description: Informazioni su HoloLens 2 Development Edition e sulle attività da eseguire dopo averrne una propria.
+keywords: HoloLens 2 di acquisto, opzioni HoloLens, Developer Edition
 author: bgener
 ms.author: bogenera
 ms.reviewer: bogenera
@@ -14,31 +14,31 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 613f0a24d1d0d0740ebc448b2c92238a76350958
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: a4e2bc30d1141fcc1c6a648ccc7c3573f6afda2ba3f5cd413a8e9a69203ea617
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639676"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115658881"
 ---
-# <a name="hololens-2-development-edition"></a>HoloLens 2 Edizione di sviluppo
+# <a name="hololens-2-development-edition"></a>HoloLens 2 Development Edition
 
-Iniziare a creare realtà mista con questa offerta che combina HoloLens 2 con versioni di valutazione gratuite del software Unity e crediti di Azure per i servizi cloud. Informazioni su come andare oltre le nozioni di base e iniziare a sviluppare per la realtà mista.
+Inizia a creare per la realtà mista con questa offerta che combina HoloLens 2 versioni di valutazione gratuite del software Unity e i crediti Azure per i servizi cloud. Scopri come andare oltre le nozioni di base e iniziare a sviluppare per la realtà mista.
 
-## <a name="learn-about-the-development-edition"></a>Informazioni sull'edizione di sviluppo
+## <a name="learn-about-the-development-edition"></a>Informazioni su Development Edition
 
 > [!NOTE]
-> L'edizione Development Edition non può essere distribuita con una soluzione distribuita commercialmente. L'edizione Development Edition può essere distribuita per facilitare lo sviluppo e/o il test di applicazioni in un ambiente commerciale.  
+> Non è consentito distribuire Development Edition con una soluzione distribuita in commercio. L'edizione di sviluppo può essere distribuita per facilitare lo sviluppo e/o il test delle applicazioni in un ambiente commerciale.  
 
-La HoloLens 2 Development Edition include un HoloLens 2, $ 500 in crediti di Azure, una versione di valutazione di Unity Pro di 3 mesi e una versione di valutazione del plug-in PiXYZ di 3 mesi:
+La HoloLens 2 Development Edition include un HoloLens 2, $ 500 in crediti Azure, una versione di valutazione di Unity Pro di 3 mesi e una versione di valutazione del plug-in PiXYZ di 3 mesi:
 
 | Funzionalità bundle | Descrizione |
 |---|---|
 |  [Unity](https://unity.com/) | Una piattaforma di sviluppo 3D in tempo reale.   |
-|  [Plug-in Pixyz per Unity](https://www.pixyz-software.com/plugin/) | Un ponte per connettere i mondi &amp; CAD di progettazione con il mondo dello sviluppo.   |
-| [$ 500 in crediti di Azure per i servizi di Azure](https://azure.microsoft.com/resources/) | I crediti di Azure inclusi in HoloLens 2 Development Edition sono per iniziare rapidamente a creare e testare applicazioni di realtà mista in Azure. |
+|  [Plug-in Pixyz per Unity](https://www.pixyz-software.com/plugin/) | Un ponte per connettere i progetti &amp; CAD di progettazione con il mondo dello sviluppo.   |
+| [$ 500 in crediti Azure per i servizi di Azure](https://azure.microsoft.com/resources/) | I crediti Azure inclusi in HoloLens 2 Development Edition sono per iniziare rapidamente a creare e testare applicazioni di realtà mista in Azure. |
 
-![HoloLens 2 Edizione di sviluppo](./images/hololens-2-dev-ed.png)
+![HoloLens 2 Development Edition](./images/hololens-2-dev-ed.png)
 
 ## <a name="redeem-your-credits"></a>Riscattare i crediti
 
@@ -46,25 +46,25 @@ La HoloLens 2 Development Edition include un HoloLens 2, $ 500 in crediti di Azu
 Si riceverà un codice univoco. Indicazioni per riscattare unity Pro versione di valutazione:
 1. Visitare [id.unity.com](http://id.unity.com/)
 1. Accedere con l'ID Unity o crearne uno
-1. Fare **clic su Riscatta un codice prodotto**
-1. Immettere il codice prodotto e fare clic **su Riscatta un codice prodotto**
+1. Fare clic **su Riscatta un codice prodotto**
+1. Immettere il codice prodotto e fare clic su **Riscatta un codice prodotto**
 
-Altre informazioni su [come attivare una licenza unity.](https://support.unity3d.com/hc/articles/211438683-How-do-I-activate-my-license-) Per [assistenza,](https://support.unity3d.com/hc) contattare il supporto tecnico di Unity in base alle esigenze.  
+Per altre informazioni, [vedere Come attivare una licenza unity.](https://support.unity3d.com/hc/articles/211438683-How-do-I-activate-my-license-) Contattare [il supporto di Unity](https://support.unity3d.com/hc) per assistenza in base alle esigenze.  
 
 ### <a name="pixyz"></a>Pixyz
 Si riceverà un codice univoco. Indicazioni per riscattare la versione di valutazione del plug-in Pixyz:
 1. Visitare [id.unity.com](http://id.unity.com/)
-1. Fare **clic su Riscatta un codice prodotto**
-1. Immettere il codice prodotto del plug-in Pixyz e fare clic **su Riscatta un codice prodotto**
+1. Fare clic **su Riscatta un codice prodotto**
+1. Immettere il codice prodotto del plug-in Pixyz e fare clic su **Riscatta un codice prodotto**
 
-Altre informazioni su come [riscattare la licenza Pixyz.](https://www.pixyz-software.com/documentations/html/2020.1/review/TrialLicense.html) Per assistenza, contattare il supporto [di Pixyz](https://www.pixyz-software.com/support/) in base alle esigenze.
+Altre informazioni su come [riscattare la licenza Pixyz.](https://www.pixyz-software.com/documentations/html/2020.1/review/TrialLicense.html) Contattare [il supporto di Pixyz](https://www.pixyz-software.com/support/) per assistenza in base alle esigenze.
 
 ### <a name="azure"></a>Azure
-Di seguito sono riportati alcuni [prodotti Azure comuni per la realtà mista](https://azure.microsoft.com/topic/mixed-reality/) per cui è possibile riscattare il credito di Azure.
-Come riscattare i crediti di Azure: per riscattare i crediti di Azure da $ 500, riscattare il codice Azure Pass promozionale e attivare la sottoscrizione. [Altre informazioni.](hololens2-development-edition-faq.yml#how-can-i-redeem-my--500-azure-credit-)
+Ecco alcuni prodotti [di Azure comuni per la realtà mista](https://azure.microsoft.com/topic/mixed-reality/) per cui è possibile riscattare il credito Azure.
+Come riscattare i crediti Azure: per riscattare i crediti Azure di $ 500, riscattare il codice promozionale Azure Pass e attivare la sottoscrizione. [Altre informazioni.](hololens2-development-edition-faq.yml#how-can-i-redeem-my--500-azure-credit-)
 
 - [Informazioni su come Ancoraggi nello stato di Azure consente di creare app per il mapping, la condivisione e la persistenza di contenuto 3D](https://azure.microsoft.com/services/spatial-anchors/)
-- [Informazioni su Rendering remoto di Azure possibile eseguire il rendering di contenuti 3D interattivi di alta qualità e trasmettere i contenuti ai dispositivi in tempo reale](https://azure.microsoft.com/services/remote-rendering/)
+- [Informazioni su Rendering remoto di Azure possibile eseguire il rendering di contenuti 3D interattivi di alta qualità e trasmessi ai dispositivi in tempo reale](https://azure.microsoft.com/services/remote-rendering/)
 
 ## <a name="get-started-developing"></a>Introduzione allo sviluppo
 
@@ -72,25 +72,25 @@ Si tratta di scegliere il motore, scaricare gli strumenti e spolverare la tastie
 
 |     Checkpoint                              |     Risultato                                                                                                                    |
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-|     [Iniziare a progettare e creare prototipi](/windows/mixed-reality/design/design)         |     Inizia la tua esperienza nella progettazione di applicazioni di realtà mista tra concetti di base, modelli di interazione ed elementi dell'esperienza utente.     |
-|     [Iniziare a sviluppare per la realtà mista](/windows/mixed-reality/develop/development?tabs=unity)    |     Scegliere il motore, scaricare gli strumenti, aggiungere blocchi predefiniti di base e iniziare subito a creare.                                  |
-|     [Esplorare Servizi cloud di Azure](/windows/mixed-reality/develop/mixed-reality-cloud-services)            |     Creare esperienze coinvolgenti accattivanti con Rendering remoto di Azure e Ancoraggi nello spaziale di Azure.                                 |
+|     [Iniziare a progettare e creare prototipi](/windows/mixed-reality/design/design)         |     Inizia la tua esperienza nella progettazione di applicazioni di realtà mista per concetti di base, modelli di interazione ed elementi dell'esperienza utente.     |
+|     [Iniziare a sviluppare per la realtà mista](/windows/mixed-reality/develop/development?tabs=unity)    |     Scegliere il motore, scaricare gli strumenti, aggiungere i componenti di base e iniziare subito a creare.                                  |
+|     [Esplorare Servizi cloud di Azure](/windows/mixed-reality/develop/mixed-reality-cloud-services)            |     È possibile creare esperienze immersive accattivanti con Rendering remoto di Azure e Ancoraggi nello stato di Azure.                                 |
 
 ## <a name="developer-edition-additional-resources"></a>Risorse aggiuntive per Developer Edition
 
 - [HoloLens 2 Domande frequenti su Development Edition](hololens2-development-edition-faq.yml)
-- [Assicurarsi di installare gli strumenti per HoloLens sviluppo.](/windows/mixed-reality/develop/install-the-tools?tabs=unity)
+- [Assicurarsi di installare gli strumenti per lo HoloLens sviluppo.](/windows/mixed-reality/develop/install-the-tools?tabs=unity)
 - [Informazioni sullo sviluppo per HoloLens 2 con Unity.](/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2)
 - [Informazioni su come combinare MRTK con Unity.](/windows/mixed-reality/develop/unity/mrtk-getting-started)
 - [Informazioni su come distribuire le app compilate.](app-deploy-overview.md)
-- [Esplorare tutte le possibilità per la realtà mista.](/windows/mixed-reality/)
+- [Esplora tutte le possibilità per la realtà mista.](/windows/mixed-reality/)
 - [Informazioni sullo sviluppo per HoloLens 2 con Unreal.](/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=mrtk%2Casa)
-- [Contattare gli altri sviluppatori nel canale Slack di HoloDevelopers.](https://holodevelopersslack.azurewebsites.net/)
+- [È possibile contattare gli sviluppatori del canale Slack di HoloDevelopers.](https://holodevelopersslack.azurewebsites.net/)
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-1. Iniziare **subito a** interagire con la realtà mista ed esplorare Windows 10 sul HoloLens: vedere l'app Suggerimenti per esercitazioni pratica sulle interazioni con la mano. Usare il movimento start per passare a Start o pronunciare "Vai a Start" e selezionare Suggerimenti.
+1. Inizia subito a interagire con la realtà mista e Windows 10 nel tuo HoloLens: consulta l'app **Suggerimenti** per esercitazioni di base per le interazioni con la mano. Usare il movimento di avvio per passare a Start o pronunciare "Vai a Start" e selezionare Suggerimenti.
 1. Fare clic di seguito per continuare a leggere informazioni su come HoloLens 2.
 
 > [!div class="nextstepaction"]
-> [Introduzione a HoloLens 2](hololens2-basic-usage.md)
+> [Introduzione all'HoloLens 2](hololens2-basic-usage.md)

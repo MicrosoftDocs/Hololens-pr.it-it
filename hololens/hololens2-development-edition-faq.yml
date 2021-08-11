@@ -15,13 +15,13 @@ metadata:
   manager: yannisle
   appliesto:
   - HoloLens 2
-  ms.openlocfilehash: be152373fadb6f2b5778616bae0f9bff9356af3d
-  ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+  ms.openlocfilehash: 92a7afe20808afa57282a1f073c326bbf9550d6b345cd27a236c59300f7dcbf9
+  ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 07/12/2021
-  ms.locfileid: "113639693"
-title: HoloLens 2 Domande frequenti sull'edizione development
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "115659755"
+title: HoloLens 2 Domande frequenti sull'edizione di sviluppo
 summary: ''
 sections:
 - name: Domande generali
@@ -62,7 +62,7 @@ sections:
     answer: >
       Per eventuali domande relative ai diritti, contattare lo specialista di vendita al numero 866-425-4709, da lun a fri, dalle 06:00 alle 18:00, PST.
   - question: "L'azienda può acquistare più HoloLens 2 Development Edition? \n"
-    answer: "Questo dispositivo è per gli sviluppatori che compilano soluzioni di realtà mista. Viene limitato un acquisto per transazione del cliente. Se l'azienda vuole acquistare più dispositivi Development Edition, saranno necessarie transazioni separate per acquistare dispositivi HoloLens 2 Development Edition per conto dell'azienda. \n"
+    answer: "Questo dispositivo è per gli sviluppatori che compilano soluzioni di realtà mista. È previsto un limite di un acquisto per transazione del cliente. Se l'azienda vuole acquistare più dispositivi Development Edition, saranno necessarie transazioni separate per acquistare dispositivi HoloLens 2 Development Edition per conto dell'azienda. \n"
   - question: "È possibile mostrare il dispositivo HoloLens 2 Development Edition ai clienti? \n"
     answer: >
       Sì, questo dispositivo deve essere usato per la prototipazione e il test di soluzioni di realtà mista.
@@ -174,20 +174,20 @@ sections:
 - name: Azure
   questions:
   - question: >
-      Come è possibile riscattare il credito Azure da $ 500?
+      Come si riscatta il credito di Azure da $ 500?
     answer: >
-      Per riscattare i crediti Azure di $ 500, riscattare il Azure Pass promo e attivare la sottoscrizione. [Scopri di più](https://www.microsoftazurepass.com/Home/HowTo?Length=5)
+      Per riscattare i crediti di Azure da $ 500, riscattare il Azure Pass promozionale e attivare la sottoscrizione. [Scopri di più](https://www.microsoftazurepass.com/Home/HowTo?Length=5)
 
 
-      Esaminare il contratto Azure Pass [sottoscrizione e i](https://azure.microsoft.com/support/legal/subscription-agreement/?country=US) dettagli [dell'offerta.](https://azure.microsoft.com/en-us/offers/azure-pass/)
+      Esaminare il contratto Azure Pass [sottoscrizione e](https://azure.microsoft.com/support/legal/subscription-agreement/?country=US) i dettagli [dell'offerta.](https://azure.microsoft.com/en-us/offers/azure-pass/)
   - question: >
-      Quando scade il credito Azure da $ 500?
+      Quando scade il credito di Azure da $ 500?
     answer: >
-      Il credito Azure da $ 500 scadrà 90 giorni dopo l'attivazione del codice della chiave di Azure.
+      Il credito di Azure da $ 500 scadrà 90 giorni dopo l'attivazione del codice della chiave di Azure.
   - question: >
-      Cosa è possibile fare con i crediti Azure?
+      Cosa è possibile fare con i crediti di Azure?
     answer: >
-      Con i crediti Azure, è possibile iniziare a creare con Microsoft&#39;set di servizi cloud in continua espansione. I crediti Azure inclusi in HoloLens 2 Development Edition consentono ai clienti di iniziare rapidamente a creare e testare applicazioni di realtà mista in Azure. Per informazioni dettagliate sulla compilazione in Azure, vedere Risorse [di Azure](https://azure.microsoft.com/en-us/resources/)
+      Con i crediti di Azure, è possibile iniziare a creare con Microsoft&#39;un set di servizi cloud in continua espansione. I crediti di Azure inclusi in HoloLens 2 Development Edition consentono ai clienti di iniziare rapidamente a creare e testare applicazioni di realtà mista in Azure. Per informazioni dettagliate complete sulla compilazione in Azure, vedere Risorse [di Azure](https://azure.microsoft.com/en-us/resources/)
   - question: >
-      Dove è possibile ottenere altre informazioni sui servizi di realtà mista di Azure?
+      Dove è possibile trovare altre informazioni sui servizi di realtà mista di Azure?
     answer: Microsoft offre un set di servizi di realtà mista per consentire agli sviluppatori di creare e testare soluzioni di realtà mista. [Altre informazioni](/windows/mixed-reality/develop/mixed-reality-cloud-services)

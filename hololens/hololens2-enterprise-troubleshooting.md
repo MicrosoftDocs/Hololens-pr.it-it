@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.reviewer: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9f3950de51e4bfa2a76431a2a070d87aa81ed443
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: f038cbf58b6dfaef0395a1ea5b406cce23e4e3fe0464c6bfc1162518f9caf3ff
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636878"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115659779"
 ---
 # <a name="troubleshooting-implementation-and-managed-devices"></a>Risoluzione dei problemi di implementazione e dispositivi gestiti 
 
@@ -41,7 +41,7 @@ Questo articolo descrive come risolvere diversi problemi o rispondere a domande 
     - Il tipo EAP è configurato correttamente, tipi EAP comuni: EAP-TLS (13), EAP-TTLS (21) e PEAP (25).
     - Wi-Fi nome SSID è a destra e corrisponde alla stringa HEX.
     - Per EAP-TLS, TrustedRootCA contiene l'hash SHA-1 del certificato CA radice attendibile del server. Nel Windows PC "certutil.exe -dump cert_file_name" visualizza la stringa hash SHA-1 di un certificato.
-2. Raccogliere l'acquisizione di pacchetti di rete nel punto di accesso, nel controller o nei log del server AAA per individuare la posizione in cui la sessione EAP ha esito negativo.
+2. Raccogliere l'acquisizione di pacchetti di rete nel punto di accesso, nel controller o nei log del server AAA per individuare i punti in cui la sessione EAP ha esito negativo.
     - Se l'identità EAP fornita da HoloLens non è prevista, verificare se è stato eseguito correttamente il provisioning dell'identità tramite un profilo Wi-Fi o un certificato client.
     - Se il server rifiuta HoloLens certificato client, verificare se è stato effettuato il provisioning del certificato client richiesto nel dispositivo.
     - Se HoloLens rifiuta il certificato del server, verificare se è stato effettuato il provisioning del certificato CA radice del server HoloLens.
@@ -118,55 +118,55 @@ Fiddler è un proxy di debug Web e viene usato per risolvere i problemi relativi
 Nel PC Fiddler mostrerà le HoloLens 2 HTTP(S) attive del dispositivo. Il pannello Inspectors (Controlli) in Fiddler può visualizzare la richiesta/risposta HTTP(S) in visualizzazioni diverse. Ad esempio, la visualizzazione "Raw" mostra la richiesta o la risposta non elaborata in testo normale. 
 
 ### <a name="configure-wireshark-to-capture-network-traffic"></a>Configurare Wireshark per l'acquisizione del traffico di rete
-Wireshark è un analizzatore di protocolli di rete e viene usato per controllare il traffico TCP/UDP da e verso i dispositivi HoloLens 2 rete. In questo modo è facile identificare il traffico che attraversa la rete verso il HoloLens 2, la quantità, la frequenza, la latenza tra determinati hop e così via.
+Wireshark è un analizzatore di protocolli di rete e viene usato per controllare il traffico TCP/UDP da e verso i dispositivi HoloLens 2 rete. Ciò semplifica l'identificazione del traffico che attraversa la rete verso il HoloLens 2, la quantità, la frequenza, la latenza tra determinati hop e così via.
 
 #### <a name="prerequisites"></a>Prerequisiti:
 - Il PC deve avere accesso a Internet e supportare la condivisione Internet su Wi-Fi
 
 #### <a name="install-and-configure-wireshark"></a>Installare e configurare Wireshark
 1. Nel PC installare [Wireshark](https://www.wireshark.org/#download) 
-1. Nel PC abilitare Hotspot per dispositivi mobili per condividere la connessione Internet dal Wi-Fi.
+1. Nel PC abilitare Hotspot mobile per condividere la connessione Internet dal Wi-Fi.
 1. Nel PC avviare Wireshark e acquisire il traffico dall'interfaccia hotspot mobile. 
 1. Nel HoloLens 2: modificare la Wi-Fi di rete nell'hotspot Mobile del PC. HoloLens 2 Il traffico IP verrà visualizzato in Wireshark.
 
 #### <a name="analyze-wireshark-logs"></a>Analizzare i log di Wireshark
 I filtri Wireshark consentono di filtrare i pacchetti di interesse. 
 
-Vedere il [blog originale.](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/diagnose-hololens-2-network-issues-with-fiddler-and-wireshark/ba-p/2322458)
+Vedere il [blog originale](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/diagnose-hololens-2-network-issues-with-fiddler-and-wireshark/ba-p/2322458).
 
 [Torna all'elenco](#list)
 
 ## <a name="cant-sign-in-to-a-previously-setup-hololens-device"></a>Non è possibile accedere a un dispositivo di configurazione HoloLens precedente
 
-Se il dispositivo è stato configurato in precedenza per un altro utente, per un client o per un ex dipendente [](/intune/remote-actions/devices-wipe) e non si ha la password per sbloccare il dispositivo, è possibile usare Intune per cancellare in remoto il dispositivo. Il dispositivo viene quindi nuovamente lampeggiato.  
+Se il dispositivo è stato configurato in precedenza per un altro utente, per un client o per un ex dipendente [](/intune/remote-actions/devices-wipe) e non si ha la password per sbloccare il dispositivo, è possibile usare Intune per cancellare il dispositivo in remoto. Il dispositivo viene quindi nuovamente lampeggiato.  
 > [!IMPORTANT]
-> Quando si cancella il dispositivo, assicurarsi di lasciare deselezionato Mantieni lo stato **di registrazione e l'account** utente.
+> Quando si cancella il dispositivo, assicurarsi di lasciare deselezionata l'opzione Mantieni lo stato della registrazione **e l'account** utente.
 
 [Torna all'elenco](#list)
 
-## <a name="cant-login-after-updating-to-windows-holographic-21h1"></a>Non è possibile accedere dopo l'aggiornamento a Windows Holographic 21H1
+## <a name="cant-login-after-updating-to-windows-holographic-21h1"></a>Non è possibile accedere dopo l'aggiornamento Windows Holographic 21H1
 
 ### <a name="symptoms"></a>Sintomi
 - L'uso del PIN per l'accesso avrà esito negativo dopo l'immissione del PIN corretto.
-- L'uso del metodo di accesso Web avrà esito negativo dopo l'accesso nella pagina Web.
-- Il dispositivo non è elencato come "Azure AD aggiunto" [in](https://portal.azure.com/) portale di Azure -> Azure Active Directory -> Dispositivi.
+- L'uso del metodo di accesso Web avrà esito negativo dopo l'accesso alla pagina Web.
+- Il dispositivo non è elencato come "aggiunto Azure AD" in [-portale di Azure](https://portal.azure.com/) -> Azure Active Directory -> Dispositivi.
 
 ### <a name="cause"></a>Causa
-Il dispositivo in oggetto potrebbe essere stato eliminato dal tenant Azure AD destinazione. Ad esempio, ciò può verificarsi perché:
+È possibile che il dispositivo in impatto sia stato eliminato Azure AD tenant. Ad esempio, ciò può verificarsi perché:
 
-- Un amministratore o un utente ha eliminato il dispositivo nel portale di Azure o usando PowerShell.
-- Il dispositivo è stato rimosso dal tenant Azure AD a causa dell'inattività. Per un ambiente gestito in modo efficiente, è in genere consigliabile che gli amministratori IT rimuovono i dispositivi inattivi non più [Azure AD tenant](/azure/active-directory/devices/manage-stale-devices).
+- Un amministratore o un utente ha eliminato il dispositivo nel portale di Azure o tramite PowerShell.
+- Il dispositivo è stato rimosso dal tenant Azure AD a causa di inattività. Per un ambiente gestito in modo efficiente, è in genere consigliabile che gli amministratori IT rimuovono i dispositivi [inattivi](/azure/active-directory/devices/manage-stale-devices)non Azure AD tenant .
 
-Quando un dispositivo inciso tenta di contattare nuovamente il tenant Azure AD dopo l'eliminazione, non riuscirà a eseguire l'autenticazione con Azure AD. Questo effetto è spesso invisibile all'utente del dispositivo, perché l'accesso memorizzato nella cache tramite PIN continuerà a consentire all'utente di accedere.
+Quando un dispositivo in impatto tenta di contattare di nuovo il tenant Azure AD dopo l'eliminazione, l'autenticazione con Azure AD. Questo effetto è spesso invisibile all'utente del dispositivo, perché l'accesso memorizzato nella cache tramite PIN continuerà a consentire all'utente di accedere.
 
-### <a name="mitigation"></a>Mitigazione
-Attualmente non è possibile aggiungere un dispositivo HoloLens eliminato in Azure AD. I dispositivi interessati dovranno essere puliti seguendo le istruzioni per [il reflashing del dispositivo.](hololens-recovery.md#clean-reflash-the-device)
+### <a name="mitigation"></a>Strategia di riduzione del rischio
+Attualmente non è possibile aggiungere un dispositivo HoloLens eliminato in Azure AD. I dispositivi interessati dovranno essere puliti seguendo le istruzioni su [come eseguire il reflashing del dispositivo.](hololens-recovery.md#clean-reflash-the-device)
 
 [Torna all'elenco](#list)
 
 ## <a name="autopilot-troubleshooting"></a>Risoluzione dei problemi di Autopilot
 
-Gli articoli seguenti possono essere una risorsa utile per ottenere altre informazioni e risolvere i problemi di Autopilot, tuttavia tenere presente che questi articoli sono basati su Windows 10 Desktop e che non tutte le informazioni possono essere applicabili a HoloLens:
+Gli articoli seguenti possono essere una risorsa utile per ottenere altre informazioni e risolvere i problemi di Autopilot. Tenere tuttavia presente che questi articoli si basano su Windows 10 Desktop e che non tutte le informazioni possono essere applicabili a HoloLens:
 
 - [Windows Autopilot - Problemi noti](/mem/autopilot/known-issues)
 - [Risolvere i problemi di registrazione dei dispositivi Windows in Microsoft Intune](/mem/intune/enrollment/troubleshoot-windows-enrollment-errors)
@@ -178,13 +178,13 @@ Gli articoli seguenti possono essere una risorsa utile per ottenere altre inform
 
 ### <a name="can-i-use-system-center-configuration-manager-sccm-to-manage-hololens-devices"></a>È possibile usare System Center Configuration Manager (SCCM) per gestire HoloLens dispositivi?
 
-No. È necessario usare un sistema MDM per gestire i HoloLens mobili.
+No. È necessario usare un sistema MDM per gestire HoloLens dispositivi.
 
-### <a name="can-i-use-active-directory-domain-services-ad-ds-to-manage-hololens-user-accounts"></a>È possibile usare Active Directory Domain Services (Ad DS) per gestire HoloLens account utente?
+### <a name="can-i-use-active-directory-domain-services-ad-ds-to-manage-hololens-user-accounts"></a>È possibile usare Active Directory Domain Services (AD DS) per gestire HoloLens account utente?
 
 No. È necessario usare Azure Active Directory (Azure AD) per gestire gli account utente per HoloLens dispositivi.
 
-### <a name="is-hololens-capable-of-automated-data-capture-systems-adcs-auto-enrollment"></a>È HoloLens la registrazione automatica di Automated Data Capture Systems (ADCS) ?
+### <a name="is-hololens-capable-of-automated-data-capture-systems-adcs-auto-enrollment"></a>È HoloLens la registrazione automatica di AdCS (Automated Data Capture Systems)?
 
 No.
 
@@ -197,13 +197,13 @@ No.
 No. Tuttavia, è possibile risolvere questo problema usando uno degli approcci seguenti:
 
 - Creare un'app personalizzata e quindi abilitare [la modalità tutto schermo](hololens-kiosk.md). L'app personalizzata può essere personalizzata e può avviare altre app, ad esempio Remote Assist.  
-- Modificare tutte le immagini del profilo utente in Azure AD al logo aziendale. Tuttavia, potrebbe non essere consigliabile per tutti gli scenari.
+- Modificare tutte le immagini del profilo utente in Azure AD al logo aziendale. Tuttavia, questa operazione potrebbe non essere utile per tutti gli scenari.
 
-### <a name="what-logging-capabilities-does-hololens-2-offer"></a>Quali funzionalità di registrazione HoloLens 2 offerte?
+### <a name="what-logging-capabilities-does-hololens-2-offer"></a>Quali funzionalità di registrazione HoloLens 2 offre?
 
-La registrazione è limitata alle tracce che possono essere acquisite negli scenari di sviluppo o risoluzione dei problemi o ai dati di telemetria inviati dai dispositivi ai server Microsoft.
+La registrazione è limitata alle tracce che possono essere acquisite in scenari di sviluppo o risoluzione dei problemi o ai dati di telemetria che i dispositivi inviano ai server Microsoft.
 
-## <a name="questions-about-securing-hololens-devices"></a>Domande sulla protezione dei HoloLens mobili
+## <a name="questions-about-securing-hololens-devices"></a>Domande sulla protezione HoloLens dispositivi
 
 Vedere [le informazioni HoloLens 2 sicurezza.](security-overview.md)
 Per HoloLens dispositivi di prima generazione, vedere [queste domande frequenti.](hololens1-faq-security.yml)

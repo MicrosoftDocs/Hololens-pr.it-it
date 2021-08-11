@@ -16,12 +16,12 @@ ms.custom:
 - CSSTroubleshooting
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d2280a794455090c61a7bf30bc5dc5b8faf5adbe
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 99149c24922c582a66669685df20520b29f692677859d1408328fc9f2ee8ddf3
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636402"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115659803"
 ---
 # <a name="manage-custom-apps-for-hololens-2"></a>Gestire app personalizzate per HoloLens 2
 

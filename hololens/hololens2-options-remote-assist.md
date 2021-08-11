@@ -14,16 +14,16 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 540bdcaefafcc50cc38d5e9a67dea3b9cb596f05
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 24fefeb941fd75e4f6a6b18fbfd8a1c80a7bbf54dcdee233c6513338b44f9ab5
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639472"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115658802"
 ---
 # <a name="hololens-2-with-remote-assist"></a>HoloLens 2 con Remote Assist
 
-Inizia il primo giorno con HoloLens 2 e l'app di comunicazione di realtà mista finale di Microsoft, disponibile insieme. Aiutare l'intera azienda a essere più produttiva e a innovare con maggiore finalità. Sperimentare la realtà mista ora con Dynamics 365 e le soluzioni dei partner del settore.
+Inizia il primo giorno con HoloLens 2 e l'app di comunicazione di realtà mista definitiva di Microsoft, disponibile insieme. Aiutare l'intera azienda a essere più produttiva e a innovare con maggiore finalità. Sperimentare la realtà mista ora con Dynamics 365 e le soluzioni dei partner del settore.
 
 ## <a name="learn-about-hololens-2-with-remote-assist"></a>Informazioni sulle HoloLens 2 con Remote Assist
 - È possibile usare questi dispositivi in un ambiente commerciale per l'azienda. Ordinare il numero necessario.
@@ -33,7 +33,7 @@ Inizia il primo giorno con HoloLens 2 e l'app di comunicazione di realtà mista 
 
 ## <a name="heres-what-to-do-next-with-the-hololens-2-with-dynamics-365-remote-assist-edition"></a>Ecco come procedere con l'HoloLens 2 con Dynamics 365 Remote Assist edition
 
-È stata creata una guida specifica per la distribuzione di HoloLens su larga scala. La guida include la configurazione end-to-end per Azure Active Directory convalida di una Remote Assist chiamata. Per altre informazioni, vedere la Guida alla distribuzione [- Cloud connected HoloLens 2 con Remote Assist.](hololens2-cloud-connected-overview.md)
+È stata creata una guida specifica per distribuire i dispositivi HoloLens su larga scala. La guida include la configurazione end-to-end per Azure Active Directory convalida di una Remote Assist chiamata. Per altre informazioni, vedere la Guida alla distribuzione [- Cloud connected HoloLens 2 con Remote Assist.](hololens2-cloud-connected-overview.md)
 
 | Checkpoint  | Risultato                                |
 |-------------|----------------------------------------|

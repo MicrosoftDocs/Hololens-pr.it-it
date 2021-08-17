@@ -2,7 +2,7 @@
 
 # Panoramica del dispositivo
 ## [Informazioni HoloLens 2](hololens2-hardware.md)
-## [Che cosa HoloLens 2 fare per te?](hololens-commercial-features.md)
+## [Che cosa HoloLens 2 possibile fare per l'utente?](hololens-commercial-features.md)
 ## Individuare HoloLens 2 edizioni
 ### [Confrontare HoloLens 2 opzioni](hololens2-options.md)
 ### [Edizione solo dispositivo](hololens2-options-device-only.md)
@@ -35,7 +35,7 @@
 #### [Eseguire il mapping di spazi fisici con HoloLens](hololens-spaces.md)
 #### [HoloLens sull'ambiente](hololens-environment-considerations.md)
 #### [Spostamento di piattaforme](hololens2-moving-platform.md)
-### Connessione'HoloLens 2
+### Connessione il HoloLens 2
 #### [Connessione HoloLens a una rete](hololens-network.md)
 #### [Connessione dispositivi Bluetooth e USB-C](hololens-connect-devices.md)
 #### [Connessione a Cellulare e 5G](hololens-cellular.md)
@@ -90,7 +90,7 @@
 ### [Programma di installazione app](app-deploy-app-installer.md)
 ## Criteri (CSP)
 ### [Panoramica della configurazione dei CSP e della gestione dei dispositivi](hololens-csp-policy-overview.md)
-### [Configurare le HoloLens usando i pacchetti di provisioning](hololens-provisioning.md)
+### [Configurare l HoloLens usando i pacchetti di provisioning](hololens-provisioning.md)
 ### [Restrizioni comuni dei dispositivi](hololens-common-device-restrictions.md)
 ### [Configurare l'HoloLens come chiosco multimediale](hololens-kiosk.md)
 ### [Accesso assegnato a livello globale - Modalità tutto schermo](hololens-global-assigned-access-kiosk.md)
@@ -124,7 +124,7 @@
 #### [Informazioni HoloLens (prima generazione)](hololens1-hardware.md)
 #### [HoloLens (prima generazione) adatta e comfort](hololens1-fit-comfort-faq.md)
 #### [Panoramica dell'utilizzo di base](hololens1-setup.md)
-#### [Configurare l'HoloLens (prima generazione)](hololens1-start.md)
+#### [Configurare la HoloLens (prima generazione)](hololens1-start.md)
 ### Utilizzo giornaliero
 #### [Usare il HoloLens clicker di prima generazione](hololens1-clicker.md)
 #### [Usare Visualizzatore 3D in HoloLens (prima generazione)](holographic-3d-viewer-beta.md)
@@ -137,7 +137,7 @@
 #### [Domande di HoloLens di prima generazione](hololens1-faq-security.yml)
 #### [HoloLens crittografia BitLocker (prima generazione)](hololens1-encryption.md)
 ### [Problemi noti e soluzioni alternative per HoloLens (prima generazione)](hololens-known-issues.md)
-### [note sulla versione di HoloLens (prima generazione)](hololens1-release-notes.md)
+### [HoloLens sulla versione di prima generazione](hololens1-release-notes.md)
 
 # Commenti e suggerimenti
 ## [Inviare commenti e suggerimenti tramite Hub di Feedback](hololens-feedback.md)

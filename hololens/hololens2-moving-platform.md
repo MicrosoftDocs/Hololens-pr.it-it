@@ -1,5 +1,5 @@
 ---
-title: HoloLens 2 Spostamento della piattaforma
+title: HoloLens 2 Spostamento della modalità piattaforma
 description: Come usare le HoloLens su piattaforme mobili
 keywords: spostamento di piattaforme, movimento dinamico, hololens, modalità di spostamento della piattaforma
 author: evmill
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ae9090409b9c357f7d7ced8ddd477fbebea62e1e3912a9d3691d5585ad79239c
-ms.sourcegitcommit: 9615ed824bdf3f1747ec346da6136704d8eed015
+ms.openlocfilehash: 2c0e6e285b2eb86342450e8f05876e0cc3bccfe8
+ms.sourcegitcommit: 5cb3230e02e703584e50358cb0f0b5f33a51b169
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120389192"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121858647"
 ---
 # <a name="moving-platform-mode-on-low-dynamic-motion-moving-platforms"></a>Spostamento della modalità piattaforma su piattaforme a movimento dinamico basso
 

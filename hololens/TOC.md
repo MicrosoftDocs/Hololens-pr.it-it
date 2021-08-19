@@ -53,7 +53,7 @@
 #### [Configurare](hololens2-cloud-connected-configure.md)
 #### [Distribuzione](hololens2-cloud-connected-deploy.md)
 #### [Mantenere](hololens2-cloud-connected-maintain.md)
-#### [Guida alla distribuzione dell'ambiente connesso al cloud (client esterni)](hololens2-deployment-guide.md)
+#### [Client esterni](hololens2-deployment-guide.md)
 ### Guida alla distribuzione della rete aziendale
 #### [Overview](hololens2-corp-connected-overview.md)
 #### [Preparare](hololens2-corp-connected-prepare.md)
@@ -97,7 +97,7 @@
 ### [Windows Defender Controllo delle applicazioni - WDAC](windows-defender-application-control-wdac.md)
 ### [Pagina Impostazioni CSP e URI per HoloLens](settings-uri-list.md)
 ## Connettività & rete
-### [Configurare la rete per HoloLens](hololens-commercial-infrastructure.md)
+### [Configurare la rete per l'HoloLens](hololens-commercial-infrastructure.md)
 ### [Preparare i certificati e i profili di rete per HoloLens 2](hololens-certificates-network.md)
 ### [Gestire gli endpoint di connessione per HoloLens](hololens-offline.md)
 ### [Gestione certificati](certificate-manager.md)
@@ -109,7 +109,7 @@
 ## [Schermo](hololens2-display.md)
 ## [Implementazione e dispositivi gestiti](hololens2-enterprise-troubleshooting.md#)
 ## [Abilitare i log di diagnostica](hololens-diagnostic-logs.md)
-## [Reimpostare HoloLens 2](hololens-recovery.md)
+## [Reimposta HoloLens 2](hololens-recovery.md)
 
 # Risorse
 ## [Dove acquistare HoloLens 2](hololens2-purchase.md)
@@ -122,23 +122,23 @@
 ## HoloLens (prima generazione)
 ### Primo utilizzo
 #### [Informazioni HoloLens (prima generazione)](hololens1-hardware.md)
-#### [HoloLens (prima generazione) in forma e comfort](hololens1-fit-comfort-faq.md)
+#### [HoloLens (prima generazione) idonea e comfort](hololens1-fit-comfort-faq.md)
 #### [Panoramica dell'utilizzo di base](hololens1-setup.md)
-#### [Configurare il HoloLens (prima generazione)](hololens1-start.md)
+#### [Configurare l'HoloLens (prima generazione)](hololens1-start.md)
 ### Utilizzo giornaliero
 #### [Usare il HoloLens (prima generazione)](hololens1-clicker.md)
 #### [Usare Visualizzatore 3D in HoloLens (prima generazione)](holographic-3d-viewer-beta.md)
 #### [Come spostarsi HoloLens (prima generazione)](hololens1-basic-usage.md)
 #### [Gestire app personalizzate per HoloLens](holographic-custom-apps.md)
-#### [Installare la versione localizzata di HoloLens (prima generazione)](hololens1-install-localized.md)
+#### [Installare la versione localizzata HoloLens (prima generazione)](hololens1-install-localized.md)
 #### [Sbloccare Windows Holographic for Business funzionalità](hololens1-upgrade-enterprise.md)
-#### [Reimposta HoloLens (prima generazione)](hololens1-recovery.md)
-### HoloLens (prima generazione) Sicurezza
-#### [Domande di sicurezza HoloLens domande frequenti (prima generazione)](hololens1-faq-security.yml)
+#### [Reset HoloLens (prima generazione)](hololens1-recovery.md)
+### HoloLens sicurezza (prima generazione)
+#### [Domande di HoloLens di prima generazione](hololens1-faq-security.yml)
 #### [HoloLens crittografia BitLocker (prima generazione)](hololens1-encryption.md)
 ### [Problemi noti e soluzioni alternative per HoloLens (prima generazione)](hololens-known-issues.md)
-### [HoloLens (prima generazione)](hololens1-release-notes.md)
+### [note HoloLens sulla versione di HoloLens (prima generazione)](hololens1-release-notes.md)
 
 # Commenti e suggerimenti
 ## [Inviare commenti e suggerimenti tramite Hub di Feedback](hololens-feedback.md)
-## [HoloLens guida ai contributi per la documentazione](contributing.md)
+## [HoloLens ai contributi per la documentazione](contributing.md)

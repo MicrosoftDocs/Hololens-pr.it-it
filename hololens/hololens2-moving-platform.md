@@ -1,6 +1,6 @@
 ---
 title: HoloLens 2 Spostamento della modalità piattaforma
-description: Come usare le HoloLens su piattaforme mobili
+description: Come usare i HoloLens su piattaforme mobili
 keywords: spostamento di piattaforme, movimento dinamico, hololens, modalità di spostamento della piattaforma
 author: evmill
 ms.author: v-evmill
@@ -14,19 +14,19 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2c0e6e285b2eb86342450e8f05876e0cc3bccfe8
-ms.sourcegitcommit: 5cb3230e02e703584e50358cb0f0b5f33a51b169
+ms.openlocfilehash: 9c37baa6fb63e9b049378799515ef107ed0ea7a8
+ms.sourcegitcommit: 7b666c63a0367032a4a3f366b7f9029b2613e345
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "121858647"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "122401169"
 ---
 # <a name="moving-platform-mode-on-low-dynamic-motion-moving-platforms"></a>Spostamento della modalità piattaforma su piattaforme a movimento dinamico basso
 
-Nella **build Insider 20348.1411** è stato aggiunto il supporto beta per il rilevamento delle piattaforme di spostamento del movimento a bassa dinamica HoloLens 2. Dopo aver installato la compilazione e abilitato la modalità di spostamento della piattaforma, sarà possibile usare il HoloLens 2 in ambienti precedentemente inaccessibili, ad esempio le grandi navi e le grandi navi. Attualmente, la funzionalità è destinata ad abilitare solo queste piattaforme di spostamento specifiche. Anche se nulla impedisce di provare a usare la funzionalità in altri ambienti, la funzionalità è incentrata sull'aggiunta del supporto per questi ambienti.
+Nella **build Insider 20348.1411** è stato aggiunto il supporto beta per il rilevamento delle piattaforme di spostamento del movimento a bassa dinamica HoloLens 2. Dopo aver installato la build e abilitato la modalità di spostamento della piattaforma, sarà possibile usare il HoloLens 2 in ambienti inaccessibili in precedenza, ad esempio le grandi navi e le grandi navi. Attualmente, la funzionalità è destinata ad abilitare solo queste piattaforme di spostamento specifiche. Anche se nulla impedisce di provare a usare la funzionalità in altri ambienti, la funzionalità è incentrata sull'aggiunta del supporto per questi ambienti.
 
 > [!NOTE]
-> Questa funzionalità è attualmente disponibile solo tramite Windows [Insider.](hololens-insider.md)
+> Questa funzionalità è attualmente disponibile solo tramite [Windows Insider.](hololens-insider.md)
 
 Questo articolo riguarda:
 
@@ -44,7 +44,7 @@ Le informazioni provenienti da queste due origini vengono composte per tenere tr
 
 Tuttavia, questo approccio si basa su un presupposto critico. L'ambiente (monitorato dalle fotocamere) rimane stazionaria rispetto alla Terra (su cui l'IMU può effettuare misurazioni). Quando questo non è il caso, ad esempio in un'acqua, le informazioni provenienti da entrambe le fonti possono entrare in conflitto tra loro e causare la perdita del tracciatore. Questo conflitto produce informazioni sulla posizione non corrette e comporta la perdita di ologrammi o di tracciabilità.
 
-Lo spostamento della modalità piattaforma consente di risolvere questo problema. Quando si abilita la modalità di spostamento della piattaforma, questo è un suggerimento per lo tracker che non è possibile fare affidamento sugli input del sensore per concordare completamente l'uno con l'altro in qualsiasi momento. È invece necessario fare più affidamento sul rilevamento visivo e identificare rapidamente i dati di movimento inerziale incongrui e filtrarli di conseguenza prima di&#39;possibile usare di nuovo l'input IMU.
+Lo spostamento della modalità piattaforma consente di risolvere questo problema. Quando si abilita la modalità di spostamento della piattaforma, questo è un suggerimento per lo tracker che non è possibile fare affidamento sugli input del sensore per concordare completamente l'uno con l'altro in qualsiasi momento. È invece necessario fare più affidamento sul rilevamento visivo e identificare rapidamente i dati di movimento inerziale incongrui e filtrarli di conseguenza prima&#39;poter usare di nuovo l'input IMU.
 
 ## <a name="supported-environments-and-known-limitations"></a>Ambienti supportati e limitazioni note
 
@@ -71,14 +71,16 @@ Per abilitare la modalità di spostamento della piattaforma, [abilitare prima Po
 1. Selezionare la **accordion** System (Sistema) nel menu a sinistra
 2. Selezionare la **pagina Moving Platform Mode (Modalità di spostamento** della piattaforma) e selezionare la casella di controllo Moving Platform Mode **(Modalità di spostamento della** piattaforma)
 
-![Prima immagine](.\images\moving-platform-1.png) ![Seconda immagine](.\images\moving-platform-2.png)
+   ![Prima immagine](.\images\moving-platform-1x.png)
+ 
+     ![Seconda immagine](.\images\moving-platform-2x.png)
 
 3. Quando viene visualizzato un avviso, selezionare **OK**
 
-![Terza immagine](.\images\moving-platform-3.png)
+   ![Terza immagine](.\images\moving-platform-3x.png)
 
 4. Riavviare il dispositivo, che può essere eseguito tramite il **menu** Di alimentazione di Portale di dispositivi in alto a destra oppure emettendo il comando vocale seguente Riavviare il dispositivo e &quot; selezionare &quot; &quot; &quot; Sì.
 
-![Quarta immagine](.\images\moving-platform-4.png)
+   ![Quarta immagine](.\images\moving-platform-4x.png)
 
 Se non è possibile visualizzare l'opzione Moving Platform Mode (Modalità di spostamento della piattaforma) in Portale di dispositivi, è probabile che non si sia ancora nella compilazione corretta. Vedere la [sezione Prerequisiti.](#prerequisites)

@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 64aaf726fab27c997eea26208f17daae4fa3179d
-ms.sourcegitcommit: 938fa78e1b6c59626e12399c9babc277eb30c29c
+ms.openlocfilehash: 5104a489cebee56938cb1968f253e7e9447e2452
+ms.sourcegitcommit: 6b3b455f66a2b4d5b42f4674a5ff940a2a01c294
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122448694"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122610131"
 ---
 # <a name="moving-platform-mode-on-low-dynamic-motion-moving-platforms"></a>Spostamento della modalità piattaforma su piattaforme a movimento dinamico basso
 
@@ -35,7 +35,7 @@ Questo articolo riguarda:
 
 ## <a name="why-moving-platform-mode-is-necessary"></a>Perché è necessario spostare la modalità piattaforma
 
-HoloLens deve essere in grado di tenere traccia della posizione della testa con [6](https://en.wikipedia.org/wiki/Six_degrees_of_freedom) gradi di libertà (X, Y, Z, traslazione e rotazione, passo, rotazione di yaw) per mostrare ologrammi stabili. A tale scopo, HoloLens traccia di due informazioni simili da due origini separate:
+HoloLens deve essere in grado di tenere traccia della posizione della testa con [6](https://en.wikipedia.org/wiki/Six_degrees_of_freedom) gradi di libertà (X, Y, Z, traslazione e lancio, passo, rotazione di yaw) per mostrare ologrammi stabili. A tale scopo, HoloLens traccia di due informazioni simili da due origini separate:
 
 1. Fotocamere di luce visibili, che tracciano l'ambiente, ad esempio la stanza fisica in cui si sta usando il HoloLens
 1. Unità di misura inerziale (IMU), costituita da un accelerometro, un giroscopio e un magnetometro che tiene traccia del movimento e dell'orientamento della testa rispetto alla Terra
@@ -53,7 +53,7 @@ Anche se la modalità di spostamento della piattaforma è stata sviluppata per g
 ### <a name="known-limitations"></a>Limitazioni note
 
 - Gli unici ambienti supportati per la modalità MPM (Moving Platform Mode) sono grandi ambienti in cui il movimento è poco dinamico. In altre parole, molti ambienti/situazioni comuni non sono ancora supportati a causa del movimento ad alta frequenza e dei livelli elevati di accelerazione [e accelerazione.](https://en.wikipedia.org/wiki/Jerk_(physics))  Ad esempio: aerei, veicoli, automobili, biciclette, bus, piccoli passeggeri, ascensori e così via.
-- Ologrammi può traballare leggermente quando mpm è abilitato, soprattutto quando si è in acqua con acqua poco attiva.
+- Ologrammi può traballare leggermente quando mpm è abilitato, soprattutto in caso di acqua poco sicura.
 - Nulla impedisce agli utenti di provare a usare MPM in ambienti non supportati, tuttavia gli utenti potrebbero sperimentare effetti collaterali indesiderati se il dispositivo è in grado di mantenere il rilevamento nello spazio non supportato. Con MPM, ad esempio, gli utenti potrebbero trovare la possibilità di usare in un ascensore durante il cambio dei piani, mentre in precedenza era impossibile. Sfortunatamente, anche se MPM consente al dispositivo di mantenere il rilevamento, al momento non gestisce la gestione delle mappe. Gli utenti scopriranno che il cambiamento dei piani in un ascensore causerà la confusione tra i piani superiore e inferiore e influirà negativamente sulla qualità della mappa.
 
 ## <a name="prerequisites"></a>Prerequisiti
@@ -73,7 +73,7 @@ Per abilitare la modalità di spostamento della piattaforma, [abilitare prima Po
 
 1. Selezionare la **accordion** System (Sistema) nel menu a sinistra
 
-   ![Prima immagine](.\images\moving-platform-1z.png)
+   ![Prima immagine](.\images\moving-platform-1w.png)
 
 2. Selezionare la **pagina Moving Platform Mode (Modalità di spostamento** della piattaforma) e selezionare la casella di controllo Moving Platform Mode **(Modalità di spostamento della** piattaforma)
 
@@ -81,9 +81,9 @@ Per abilitare la modalità di spostamento della piattaforma, [abilitare prima Po
 
 3. Quando viene visualizzato un avviso, selezionare **OK**
 
-   ![Terza immagine](.\images\moving-platform-3z.png)
+   ![Terza immagine](.\images\moving-platform-3w.png)
 
-4. Riavviare il dispositivo, che può essere eseguito tramite il **menu** Di alimentazione Portale di dispositivi in alto a destra oppure emettendo il comando vocale seguente Riavviare il dispositivo e &quot; selezionare &quot; &quot; &quot; Sì.
+4. Riavviare il dispositivo, che può essere eseguito tramite il **menu** Di alimentazione di Portale di dispositivi in alto a destra oppure emettendo il comando vocale seguente Riavviare il dispositivo e &quot; selezionare &quot; &quot; &quot; Sì.
 
    ![Quarta immagine](.\images\moving-platform-4z.png)
 

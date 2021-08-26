@@ -40,7 +40,7 @@
 #### [Connessione dispositivi Bluetooth e USB-C](hololens-connect-devices.md)
 #### [Connessione a cellulare e 5G](hololens-cellular.md)
 ### [HoloLens 2 batteria e ricarica](hololens2-charging.md)
-### [domande HoloLens 2 su fit e comfort](hololens2-fit-comfort-faq.md)
+### [domande HoloLens 2 domande frequenti su fit e comfort](hololens2-fit-comfort-faq.md)
 ### [HoloLens 2 domande frequenti sulla pulizia](hololens2-maintenance.md)
 
 # Distribuzione di HoloLens 2
@@ -93,11 +93,11 @@
 ### [Configurare le HoloLens usando i pacchetti di provisioning](hololens-provisioning.md)
 ### [Restrizioni comuni dei dispositivi](hololens-common-device-restrictions.md)
 ### [Configurare l'HoloLens come chiosco multimediale](hololens-kiosk.md)
-### [Accesso assegnato a livello globale - Modalità tutto schermo](hololens-global-assigned-access-kiosk.md)
+### [HoloLens Informazioni di riferimento sulla modalità tutto schermo](hololens-kiosk-reference.md)
 ### [Windows Defender Controllo delle applicazioni - WDAC](windows-defender-application-control-wdac.md)
 ### [Pagina Impostazioni CSP e URI per HoloLens](settings-uri-list.md)
 ## Connettività & rete
-### [Configurare la rete per l'HoloLens](hololens-commercial-infrastructure.md)
+### [Configurare la rete per HoloLens](hololens-commercial-infrastructure.md)
 ### [Preparare i certificati e i profili di rete per HoloLens 2](hololens-certificates-network.md)
 ### [Gestire gli endpoint di connessione per HoloLens](hololens-offline.md)
 ### [Gestione certificati](certificate-manager.md)
@@ -124,7 +124,7 @@
 #### [Informazioni HoloLens (prima generazione)](hololens1-hardware.md)
 #### [HoloLens (prima generazione) idonea e comfort](hololens1-fit-comfort-faq.md)
 #### [Panoramica dell'utilizzo di base](hololens1-setup.md)
-#### [Configurare l'HoloLens (prima generazione)](hololens1-start.md)
+#### [Configurare la HoloLens (prima generazione)](hololens1-start.md)
 ### Utilizzo giornaliero
 #### [Usare il HoloLens (prima generazione)](hololens1-clicker.md)
 #### [Usare Visualizzatore 3D in HoloLens (prima generazione)](holographic-3d-viewer-beta.md)
@@ -133,7 +133,7 @@
 #### [Installare la versione localizzata HoloLens (prima generazione)](hololens1-install-localized.md)
 #### [Sbloccare Windows Holographic for Business funzionalità](hololens1-upgrade-enterprise.md)
 #### [Reset HoloLens (prima generazione)](hololens1-recovery.md)
-### HoloLens sicurezza (prima generazione)
+### HoloLens (prima generazione)
 #### [Domande di HoloLens di prima generazione](hololens1-faq-security.yml)
 #### [HoloLens crittografia BitLocker (prima generazione)](hololens1-encryption.md)
 ### [Problemi noti e soluzioni alternative per HoloLens (prima generazione)](hololens-known-issues.md)

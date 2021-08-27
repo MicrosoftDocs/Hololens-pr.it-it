@@ -1,6 +1,6 @@
 ---
-title: Configurare l'HoloLens come chiosco multimediale
-description: Informazioni su come configurare e usare una configurazione in modalità tutto schermo per bloccare le app HoloLens dispositivi.
+title: Configurare il HoloLens come tutto schermo
+description: Informazioni su come configurare e usare una configurazione tutto schermo per bloccare le app HoloLens dispositivi.
 ms.prod: hololens
 ms.sitesec: library
 author: dansimp
@@ -17,79 +17,81 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: daab30a8ea5200ca145b6b0234b8bd060b8cec5f
-ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
+ms.openlocfilehash: 28c431397385c06fb94de410a0763e24e18e4509
+ms.sourcegitcommit: 749d617f3f0ce3e6363ff6cd1a03f87b9280f418
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "122859221"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122979373"
 ---
-# <a name="set-up-hololens-as-a-kiosk"></a>Configurare l'HoloLens come chiosco multimediale
+# <a name="set-up-hololens-as-a-kiosk"></a>Configurare il HoloLens come tutto schermo
 
 ## <a name="what-is-kiosk-mode"></a>Che cos'è la modalità tutto schermo?
 
-La modalità tutto schermo è una funzionalità in cui è possibile controllare quali applicazioni vengono visualizzate nel menu Start quando un utente accede HoloLens. Esistono 2 scenari supportati:
+La modalità tutto schermo è una funzionalità in cui è possibile controllare quali applicazioni vengono visualizzate nel menu Start quando un utente accede a HoloLens. Esistono 2 scenari supportati:
 
-1. **Modalità tutto schermo per app singola:** non viene visualizzato alcun menu Start e una singola app viene avviata automaticamente quando l'utente esegue l'accesso. <br> *L'esempio* usa : un dispositivo che esegue solo Dynamics 365 Guides app.
-2. **Modalità tutto schermo per** più app: menu Start mostra solo le applicazioni specificate nella configurazione della modalità tutto schermo quando un utente esegue l'accesso. È possibile scegliere un'app per l'avvio automatico, se necessario. <br> *Esempio usa*: un dispositivo che mostra solo l'app dello Store, Hub di Feedback e Impostazioni'app nel menu Start.
+1. **Modalità tutto schermo per app singola:** non viene visualizzato alcun menu Start e una singola app viene avviata automaticamente all'accesso dell'utente. <br> *L'esempio* usa : un dispositivo che esegue solo Dynamics 365 Guides app.
+2. **Modalità tutto schermo per** più app: menu Start solo le applicazioni specificate nella configurazione della modalità tutto schermo quando un utente esegue l'accesso. Un'app può essere scelta per l'avvio automatico, se lo si desidera. <br> *Esempio usa*: un dispositivo che mostra solo l'app dello Store, Hub di Feedback e Impostazioni app nel menu Start.
 
     <img alt="Multi app kiosk example" src=".\images\multi-app-kiosk.jpg" width="411" height="500" />
 
-## <a name="description-of-kiosk-mode-experience-when-a-user-signs-in"></a>Descrizione dell'esperienza in modalità tutto schermo quando un utente esegue l'accesso
+## <a name="description-of-kiosk-mode-experience-when-a-user-signs-in"></a>Descrizione dell'esperienza in modalità tutto schermo quando un utente accede
 
-La tabella seguente elenca le funzionalità nelle diverse modalità tutto schermo.
+La tabella seguente elenca le funzionalità delle diverse modalità tutto schermo.
 
 | &nbsp; |Menu Start |Menu Azioni rapide |Fotocamera e video |Miracast |Cortana |Comandi vocali predefiniti |
 | --- | --- | --- | --- | --- | --- | --- |
-|App singola in modalità tutto schermo |Disabled |Disabled |Disabled |Disabled   |Disabled |Abilitato* |
+|Modalità tutto schermo per app singola |Disabled |Disabled |Disabled |Disabled   |Disabled |Abilitato* |
 |Più app in modalità tutto schermo |Attivato |Abilitato*  |Disponibile*  |Disponibile* |Disponibile*   |Abilitato*  |
 
-Per altre informazioni su come abilitare le funzionalità disabilitate o su come i comandi vocali interagiscono con le funzionalità disabilitate Cortana vedere HoloLens AUMIDs for apps (HoloLens [AUMID per le app).](hololens-kiosk-reference.md#hololens-application-user-model-ids-aumids)
+\*Per altre informazioni su come abilitare le funzionalità disabilitate o su come i comandi vocali interagiscono con le funzionalità disabilitate e Cortana vedere HoloLens [AUMIDs per le app](hololens-kiosk-reference.md#hololens-application-user-model-ids-aumids).
 
 ## <a name="key-general-considerations-before-configuring-kiosk-mode"></a>Considerazioni generali principali prima di configurare la modalità tutto schermo
 
-1. Determinare il tipo di account utente che accede a Hololens nell'ambiente in uso: HoloLens supporta account Azure Active Directory (AAD), account Microsoft (MSA) e account locali. Sono supportati anche gli account creati temporaneamente denominati guest/visitatori (solo per i dispositivi di aggiunta ad AAD). Per altre informazioni, [vedere Gestire l'identità utente e l'accesso HoloLens](hololens-identity.md).
-2. Determinare le destinazioni dell'esperienza in modalità tutto schermo: se si tratta di tutti, di un singolo utente, di determinati utenti o di utenti membri di gruppi di AAD e così via.
-3. Per più app in modalità tutto schermo, determinare le applicazioni da visualizzare nel menu Start. Per ogni applicazione, sarà necessario il relativo ID modello utente applicazione [(AUMID).](hololens-kiosk-reference.md#hololens-application-user-model-ids-aumids)
-4. Determinare se la modalità tutto schermo verrà applicata HoloLens tramite pacchetti di provisioning di runtime o server di gestione di dispositivi mobili (MDM).
+1. Determinare il tipo di account utente che accede HoloLens nel proprio ambiente: HoloLens supporta gli account Azure Active Directory (AAD), gli account Microsoft (MSA) e gli account locali. Inoltre, sono supportati anche gli account creati temporaneamente denominati guest/visitatori (solo per i dispositivi di aggiunta ad AAD). Per altre informazioni, [vedere Gestire l'identità utente e l'accesso per HoloLens](hololens-identity.md).
+2. Determinare le destinazioni dell'esperienza in modalità tutto schermo: che si tratta di tutti, di un singolo utente, di determinati utenti o di utenti membri di gruppi di AAD e così via.
+3. Per la modalità tutto schermo per più app, determinare le applicazioni da visualizzare nel menu Start. Per ogni applicazione, sarà necessario il relativo ID modello utente applicazione [(AUMID).](hololens-kiosk-reference.md#hololens-application-user-model-ids-aumids)
+4. Determinare se la modalità tutto schermo verrà applicata HoloLens tramite pacchetti di provisioning di runtime o server DIS (Mobile Device Management).
 
-## <a name="security-considerations"></a>Considerazioni relative alla sicurezza
+## <a name="security-considerations"></a>Considerazioni sulla sicurezza
 
-La modalità tutto schermo non deve essere considerata come un metodo di sicurezza, ma come mezzo per controllare l'esperienza di avvio all'accesso utente. È possibile combinare l'esperienza in modalità tutto schermo con le opzioni indicate di seguito in caso di esigenze specifiche relative alla sicurezza:
+La modalità tutto schermo non deve essere considerata un metodo di sicurezza, ma come mezzo per controllare l'esperienza di avvio all'accesso utente. È possibile combinare l'esperienza in modalità tutto schermo con le opzioni indicate di seguito in caso di esigenze specifiche relative alla sicurezza:
 
-- Quando Impostazioni'app è configurata per la visualizzazione in modalità tutto schermo e si vuole controllare quali pagine vengono visualizzate nell'app Impostazioni, vedere [Visibilità](settings-uri-list.md) Impostazioni pagina
-- Quando si vuole controllare l'accesso a determinate funzionalità hardware, ad esempio fotocamera, Bluetooth e così via, per determinate app e così via, vedere Criteri in Provider di servizi di configurazione dei criteri supportati da [HoloLens 2 - Windows Client Management.](/windows/client-management/mdm/policies-in-policy-csp-supported-by-hololens2) Per informazioni, vedere [Limitazioni comuni dei dispositivi.](hololens-common-device-restrictions.md)
-- La modalità tutto schermo non blocca l'avvio di altre app (configurate come parte dell'esperienza in modalità tutto schermo). Quando si vuole bloccare completamente l'avvio di determinati processi/app in HoloLens, vedere Usare il controllo delle applicazioni di Windows Defender nei dispositivi [HoloLens 2 in Microsoft Intune - Azure](/mem/intune/configuration/custom-profile-hololens)
+- Quando Impostazioni'app è configurata per la visualizzazione in modalità tutto schermo e si vuole controllare quali pagine vengono visualizzate nell'app Impostazioni, vedere Visibilità Impostazioni [pagina](settings-uri-list.md)
+- Quando si vuole controllare l'accesso a determinate funzionalità hardware, ad esempio fotocamera, Bluetooth e così via per determinate app e così via, vedere Criteri in Policy [CSP supported by HoloLens 2 - Windows Client Management](/windows/client-management/mdm/policies-in-policy-csp-supported-by-hololens2)( Criteri in Policy CSP supportati da HoloLens 2 - Windows Client Management ). Per informazioni, vedere [Le restrizioni comuni per](hololens-common-device-restrictions.md) i dispositivi.
+- La modalità tutto schermo non blocca l'avvio di altre app (configurate come parte dell'esperienza tutto schermo). Quando si vuole bloccare completamente l'avvio di determinate app/processi in HoloLens, vedere Usare il controllo delle applicazioni Windows Defender nei dispositivi HoloLens 2 [in Microsoft Intune - Azure](/mem/intune/configuration/custom-profile-hololens)
 
 ## <a name="key-technical-considerations-for-kiosk-mode-for-hololens"></a>Considerazioni tecniche chiave per la modalità tutto schermo per HoloLens
 
 Si applica solo se si prevede di usare pacchetti di provisioning di runtime o di creare manualmente configurazioni in modalità tutto schermo. La configurazione della modalità tutto schermo usa una struttura gerarchica basata su XML:
 
-- Un profilo di accesso assegnato definisce quali applicazioni vengono visualizzate nel menu Start in modalità tutto schermo. È possibile definire più profili nella stessa struttura XML, a cui è possibile fare riferimento in un secondo momento.
-- Una configurazione di accesso assegnata fa riferimento a un profilo e a uno o più utenti di destinazione di tale profilo, ad esempio un utente specifico, un gruppo o un visitatore di AAD e così via. È possibile definire più configurazioni nella stessa struttura XML a seconda della complessità degli scenari di utilizzo (vedere la sezione scenari supportati più avanti).
-- Per altre informazioni, vedere [AssignedAccess CSP (Provider di servizi di configurazione AssignedAccess).](/windows/client-management/mdm/assignedaccess-csp)
+- Un profilo di accesso assegnato definisce le applicazioni visualizzate nel menu Start in modalità tutto schermo. È possibile definire più profili nella stessa struttura XML, a cui è possibile fare riferimento in un secondo momento.
+- Una configurazione di accesso assegnata fa riferimento a un profilo e a uno o più utenti di destinazione del profilo, ad esempio un utente specifico, un gruppo o un visitatore di AAD e così via. È possibile definire più configurazioni nella stessa struttura XML a seconda della complessità degli scenari di utilizzo (vedere la sezione scenari supportati più avanti).
+- Per altre informazioni, vedere [AssignedAccess CSP](/windows/client-management/mdm/assignedaccess-csp).
 
 ## <a name="supported-scenarios-for-kiosk-mode-based-on-identity-type"></a>Scenari supportati per la modalità tutto schermo in base al tipo di identità
+
+Vedere [i collegamenti di](hololens-kiosk-reference.md#kiosk-xml-code-samples) riferimento per esempi basati sullo scenario e sull'aggiornamento in base alle esigenze prima di copiare e incollare.
 
 > [!NOTE]
 > Usare XML solo se non si usa l'interfaccia utente di Intune per creare la configurazione della modalità tutto schermo.
 
-### <a name="for-users-who-sign-in-as-either-local-account-or-msa"></a>Per gli utenti che effettuano l'accesso come account locale o account del servizio microsoft
+### <a name="for-users-who-sign-in-as-either-local-account-or-msa"></a>Per gli utenti che affezionano l'accesso come account locale o come account del servizio clienti
 
-| **Esperienza chiosco multimediale desiderata** | **Configurazione consigliata per chiosco multimediale** | **Modalità di configurazione**  | **Osservazioni:** |
+| **Esperienza di chiosco multimediale desiderata** | **Configurazione della modalità tutto schermo consigliata** | **Modalità di configurazione**  | **Osservazioni:** |
 | --- | --- | --- | --- |
-| Ogni utente che accede ottiene un'esperienza in modalità tutto schermo. | [Configurare più app con profilo di accesso assegnato globale](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile) | • [Microsoft Intune modello personalizzato](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Provisioning in fase di esecuzione - App multipla](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | L'accesso assegnato a livello globale [richiede 20H2 e build più nuove](hololens-release-notes.md#windows-holographic-version-20h2) |
-| Un utente specifico che accede ottiene l'esperienza della modalità tutto schermo.  | [Configurare un profilo di accesso assegnato a una o più app (in base alle esigenze) specificando il nome di un utente specifico.](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-a-local-account-or-aad-user-account) | [Vedere le opzioni supportate di seguito.](#steps-in-configuring-kiosk-mode-for-hololens) | Per la modalità tutto schermo per app singole, solo l'account utente locale o l'account msa è supportato in HoloLens. <br> Per la modalità tutto schermo per più app, solo l'account MSA o l'account AAD è supportato HoloLens. |
+| Ogni utente che accede ottiene l'esperienza tutto schermo. | [Configurare un profilo di accesso assegnato globale per più app](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile) | • [Microsoft Intune modello personalizzato](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Provisioning di runtime - App multipla](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | L'accesso assegnato globale [richiede 20H2 e build più nuove](hololens-release-notes.md#windows-holographic-version-20h2) |
+| L'utente specifico che accede ottiene l'esperienza tutto schermo.  | [Configurare un profilo di accesso assegnato a una o più app (in base alle esigenze) specificando il nome di un utente specifico.](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-a-local-account-or-aad-user-account) | [Vedere le opzioni supportate di seguito.](#steps-in-configuring-kiosk-mode-for-hololens) | Per la modalità tutto schermo per app singole, solo l'account utente locale o l'account MSA è supportato HoloLens. <br> Per la modalità tutto schermo per più app, solo l'account MSA o l'account AAD è supportato HoloLens. |
 
 ### <a name="for-users-who-sign-in-as-aad-account"></a>Per gli utenti che effettuano l'accesso come account AAD
 
-| **Esperienza chiosco multimediale desiderata** | **Configurazione consigliata per chiosco multimediale** | **Modalità di configurazione** | **Osservazioni:** |
+| **Esperienza di chiosco multimediale desiderata** | **Configurazione della modalità tutto schermo consigliata** | **Modalità di configurazione** | **Osservazioni:** |
 | --- | --- | --- | --- |
-| Ogni utente che accede ottiene un'esperienza in modalità tutto schermo. | [Configurare più app con profilo di accesso assegnato globale](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile) | • [Microsoft Intune modello personalizzato](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Provisioning in fase di esecuzione - App multipla](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | L'accesso assegnato a livello globale [richiede 20H2 e build più nuove](hololens-release-notes.md#windows-holographic-version-20h2) |
-| Ogni utente che accede ottiene un'esperienza in modalità tutto schermo, ad eccezione di determinati utenti. | [Configurare più profili di accesso assegnato globale dell'app escludendo determinati utenti (che devono essere proprietari del dispositivo).](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile-excluding-device-owners) | • [Microsoft Intune modello personalizzato](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Provisioning in fase di esecuzione - App multipla](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | L'accesso assegnato a livello globale [richiede 20H2 e build più nuove](hololens-release-notes.md#windows-holographic-version-20h2) |
-| Ogni utente di AAD ottiene un'esperienza in modalità tutto schermo separata specifica per tale utente. | [Configurare la configurazione dell'accesso assegnato per ogni utente che specifica il nome dell'account AAD.](hololens-kiosk-reference.md#multiple-app-assigned-access-profiles-for-two-aad-users-or-more) | • [Microsoft Intune modello personalizzato](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Provisioning in fase di esecuzione - App multipla](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | &nbsp; |
-| Gli utenti in gruppi di AAD diversi hanno una modalità tutto schermo solo per il proprio gruppo. | [Configurare la configurazione dell'accesso assegnato per ogni gruppo di AAD desiderato.](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-two-aad-groups-or-more) | • [Microsoft Intune modello personalizzato](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Provisioning in fase di esecuzione - App multipla](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | • Quando un utente accede e HoloLens è connesso a Internet, se l'utente viene trovato come membro del gruppo di AAD per cui esiste una configurazione in modalità tutto schermo, l'utente può provare la modalità tutto schermo per tale gruppo di AAD. <br> • [Se non è disponibile Internet quando l'utente esegue l'accesso,](#issue---no-apps-are-shown-in-start-menu-in-kiosk-mode) l'utente HoloLens comportamento della modalità di errore. <br> • Se la disponibilità di Internet non è garantita quando l'utente esegue l'accesso e deve essere usato il chiosco multimediale basato su gruppi di AAD, valutare l'uso di [AADGroupMembershipCacheValidityInDayspolicy.](hololens-release-notes.md#cache-azure-ad-group-membership-for-offline-kiosk) |
-| Gli utenti che devono usare i HoloLens per scopi temporanei ottengono un'esperienza in modalità tutto schermo. | [Configurare la configurazione dell'accesso assegnato per i visitatori](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-visitors) | • [Microsoft Intune modello personalizzato](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Provisioning in fase di esecuzione - App singola](hololens-kiosk.md?tabs=ppkgsak#steps-in-configuring-kiosk-mode-for-hololens) | • L'account utente temporaneo viene creato automaticamente HoloLens all'accesso e viene rimosso quando l'utente temporaneo si disconnette. <br> • Valutare la possibilità di [abilitare i criteri di accesso automatico dei visitatori.](#how-to-can-visitor-accounts-automatically-logon-into-kiosk-experience) |
+| Ogni utente che accede ottiene l'esperienza tutto schermo. | [Configurare un profilo di accesso assegnato globale per più app](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile) | • [Microsoft Intune modello personalizzato](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Provisioning di runtime - App multipla](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | L'accesso assegnato globale [richiede 20H2 e build più nuove](hololens-release-notes.md#windows-holographic-version-20h2) |
+| Ogni utente che accede ottiene l'esperienza tutto schermo ad eccezione di determinati utenti. | [Configurare più profili di accesso assegnato globale dell'app escludendo determinati utenti (che devono essere proprietari dei dispositivi).](hololens-kiosk-reference.md#multiple-app-global-assigned-access-profile-excluding-device-owners) | • [Microsoft Intune modello personalizzato](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Provisioning di runtime - App multipla](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | L'accesso assegnato globale [richiede 20H2 e build più nuove](hololens-release-notes.md#windows-holographic-version-20h2) |
+| Ogni utente di AAD ottiene un'esperienza in modalità tutto schermo separata specifica per tale utente. | [Configurare la configurazione dell'accesso assegnato per ogni utente specificando il nome dell'account AAD.](hololens-kiosk-reference.md#multiple-app-assigned-access-profiles-for-two-aad-users-or-more) | • [Microsoft Intune modello personalizzato](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Provisioning di runtime - App multipla](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | &nbsp; |
+| Gli utenti in gruppi di AAD diversi possono sperimentare la modalità tutto schermo solo per il proprio gruppo. | [Configurare la configurazione dell'accesso assegnato per ogni gruppo AAD desiderato.](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-two-aad-groups-or-more) | • [Microsoft Intune modello personalizzato](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Provisioning di runtime - App multipla](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens) | • Quando un utente esegue l'accesso e HoloLens è connesso a Internet, se tale utente viene trovato come membro del gruppo AAD per cui esiste la configurazione della modalità tutto schermo, l'utente ottiene l'esperienza di chiosco multimediale per il gruppo AAD. <br> • [Se non è disponibile Internet quando l'utente](#issue---no-apps-are-shown-in-start-menu-in-kiosk-mode) esegue l'accesso, l'utente HoloLens comportamento della modalità di errore. <br> • Se la disponibilità Internet non è garantita quando l'utente esegue l'accesso e deve essere usato il chiosco multimediale basato su gruppi AAD, è consigliabile usare [AADGroupMembershipCacheValidityInDayspolicy](hololens-release-notes.md#cache-azure-ad-group-membership-for-offline-kiosk). |
+| Gli utenti che devono usare HoloLens a scopo temporaneo ottengono un'esperienza in modalità tutto schermo. | [Configurare la configurazione dell'accesso assegnato per i visitatori](hololens-kiosk-reference.md#multiple-app-assigned-access-profile-for-visitors) | • [Microsoft Intune modello personalizzato](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) <br> • [Provisioning di runtime - App singola](hololens-kiosk.md?tabs=ppkgsak#steps-in-configuring-kiosk-mode-for-hololens) | • L'account utente temporaneo viene creato automaticamente HoloLens all'accesso e viene rimosso quando l'utente temporaneo si disconnette. <br> • Valutare la possibilità di [abilitare i criteri di accesso automatico dei visitatori.](#how-can-visitor-accounts-automatically-logon-to-kiosk-experience) |
 
 ## <a name="steps-in-configuring-kiosk-mode-for-hololens"></a>Passaggi per la configurazione della modalità tutto schermo per HoloLens
 
@@ -100,61 +102,61 @@ Le configurazioni della modalità tutto schermo possono essere create e applicat
 
 Di seguito sono riportati i modi per configurare e selezionare la scheda corrispondente al processo che si desidera usare.
 
-1. [Microsoft Intune app singola per chiosco multimediale](hololens-kiosk.md?tabs=uisak#steps-in-configuring-kiosk-mode-for-hololens)
-2. [Microsoft Intune per più app in modalità tutto schermo](hololens-kiosk.md?tabs=uimak#steps-in-configuring-kiosk-mode-for-hololens)
+1. [Microsoft Intune singolo modello di app in modalità tutto schermo](hololens-kiosk.md?tabs=uisak#steps-in-configuring-kiosk-mode-for-hololens)
+2. [Microsoft Intune modello tutto schermo per più app](hololens-kiosk.md?tabs=uimak#steps-in-configuring-kiosk-mode-for-hololens)
 1. [Microsoft Intune modello personalizzato](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens)
-1. [Provisioning in fase di esecuzione - App multipla](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens)
-1. [Provisioning in fase di esecuzione - App singola](hololens-kiosk.md?tabs=ppkgsak#steps-in-configuring-kiosk-mode-for-hololens)
+1. [Provisioning di runtime - App multipla](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens)
+1. [Provisioning di runtime - App singola](hololens-kiosk.md?tabs=ppkgsak#steps-in-configuring-kiosk-mode-for-hololens)
 
 [!INCLUDE[](includes/kiosk-configure-steps.md)]
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
-### <a name="how-to-can-visitor-accounts-automatically-logon-into-kiosk-experience"></a>Come è possibile accedere automaticamente agli account visitatore nell'esperienza in modalità tutto schermo?
+### <a name="how-can-visitor-accounts-automatically-logon-to-kiosk-experience"></a>In che modo gli account visitatore possono accedere automaticamente all'esperienza tutto schermo?
 
-Nelle build Windows [Holographic, versione 21H1](hololens-release-notes.md#windows-holographic-version-21h1) e versioni successiva:
+Nelle build Windows [Holographic, versione 21H1 e](hololens-release-notes.md#windows-holographic-version-21h1) versioni successiva:
 
-- Le configurazioni AAD e Non-ADD supportano entrambe l'abilita automatica degli account visitatore per le modalità tutto schermo.
+- Le configurazioni AAD e Non ADD supportano entrambi gli account visitatore abilitati per l'accesso automatico per le modalità tutto schermo.
 
 [!INCLUDE[](includes/kiosk-autologin.md)]
 
-### <a name="is-kiosk-experience-supported-on-hololens-1st-gen"></a>L'esperienza in modalità tutto schermo è supportata in Hololens (prima generazione)?
+### <a name="is-kiosk-experience-supported-on-hololens-1st-gen"></a>L'esperienza in modalità tutto schermo HoloLens (prima generazione)?
 
-La modalità tutto schermo è disponibile solo se il dispositivo ha Windows Holographic for Business. Tutti HoloLens 2 vengono forniti con Windows Holographic for Business e non sono presenti altre edizioni. Ogni HoloLens 2 dispositivo è in grado di eseguire la modalità tutto schermo predefinita.
+La modalità tutto schermo è disponibile solo se il dispositivo Windows Holographic for Business. Tutti HoloLens 2 vengono forniti con Windows Holographic for Business e non sono presenti altre edizioni. Ogni HoloLens 2 dispositivo è in grado di eseguire la modalità tutto schermo.
 
-HoloLens dispositivi di prima generazione devono essere aggiornati sia in termini di build del sistema operativo che di edizione del sistema operativo. Di seguito sono riportate altre informazioni sull'aggiornamento di un HoloLens (prima generazione) [alla Windows Holographic for Business](hololens1-upgrade-enterprise.md) edizione. Per aggiornare un dispositivo HoloLens (prima generazione) per l'uso della modalità tutto schermo, è prima di tutto necessario assicurarsi che il dispositivo venga eseguito Windows 10 versione 1803 o successiva. Se è stato usato lo strumento di ripristino dei dispositivi di Windows per ripristinare la build predefinita del dispositivo HoloLens (prima generazione) o se sono stati installati gli aggiornamenti più recenti, il dispositivo è pronto per la configurazione.
+HoloLens dispositivi di prima generazione devono essere aggiornati sia in termini di build del sistema operativo che di edizione del sistema operativo. Ecco altre informazioni sull'aggiornamento di un HoloLens (prima generazione) [Windows Holographic for Business](hololens1-upgrade-enterprise.md) edizione. Per aggiornare un dispositivo HoloLens (prima generazione) per l'uso della modalità tutto schermo, è innanzitutto necessario assicurarsi che il dispositivo venga eseguito Windows 10, versione 1803 o successiva. Se è stato usato lo strumento di ripristino del dispositivo Windows per ripristinare la build predefinita del dispositivo HoloLens (prima generazione) o se sono stati installati gli aggiornamenti più recenti, il dispositivo è pronto per la configurazione.
 
-### <a name="how-to-use-device-portal-to-configure-kiosk-in-non-production-environments"></a>Come usare il portale di dispositivi per configurare la modalità tutto schermo in ambienti non di produzione?
+### <a name="how-to-use-device-portal-to-configure-kiosk-in-non-production-environments"></a>Come usare il portale dei dispositivi per configurare la modalità tutto schermo in ambienti non di produzione?
 
-Configurare il dispositivo [HoloLens per l'uso del Windows Portale di dispositivi](/windows/mixed-reality/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal). Device Portal è un server Web in HoloLens a cui è possibile connettersi da un browser Web nel PC.
+Configurare il dispositivo [HoloLens usare il](/windows/mixed-reality/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal)Windows Portale di dispositivi . Device Portal è un server Web in HoloLens a cui è possibile connettersi da un browser Web nel PC.
 
  > [!CAUTION]
- > Quando si configura l HoloLens per l'Portale di dispositivi, è necessario abilitare la modalità sviluppatore nel dispositivo. Modalità sviluppatore in un dispositivo con Windows Holographic for Business consente di eseguire il side load delle app. Tuttavia, questa impostazione crea il rischio che un utente possa installare app che non sono state certificate dal Microsoft Store. Gli amministratori possono bloccare la possibilità di abilitare la modalità sviluppatore usando l'impostazione **ApplicationManagement/AllowDeveloper Unlock** nel provider di servizi di configurazione [Criteri.](/windows/client-management/mdm/policy-configuration-service-provider) [Ulteriori informazioni sulla modalità sviluppatore.](/windows/uwp/get-started/enable-your-device-for-development#developer-mode)
+ > Quando si configura HoloLens usare il Portale di dispositivi, è necessario abilitare la modalità sviluppatore nel dispositivo. La modalità sviluppatore in un dispositivo con Windows Holographic for Business consente di eseguire il side-load delle app. Tuttavia, questa impostazione crea un rischio che un utente possa installare app che non sono state certificate dal Microsoft Store. Gli amministratori possono bloccare la possibilità di abilitare la modalità sviluppatore usando l'impostazione **ApplicationManagement/AllowDeveloper Unlock** in [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider). [Ulteriori informazioni sulla modalità sviluppatore.](/windows/uwp/get-started/enable-your-device-for-development#developer-mode)
 
-La modalità tutto schermo può essere impostata tramite l'API REST di Portale di dispositivi eseguendo un'operazione POST su /api/holographic/kioskmode/settings con un parametro della stringa di query obbligatorio ("kioskModeEnabled" con valore "true" o "false") e un parametro facoltativo ("startupApp" con un valore di un nome di pacchetto). Tenere presente che Portale di dispositivi è destinato solo agli sviluppatori e non deve essere abilitato nei dispositivi non sviluppatori. L'API REST è soggetta a modifiche negli aggiornamenti o nelle versioni future.
+La modalità tutto schermo può essere impostata tramite l'API REST di Portale di dispositivi eseguendo un post su /api/holographic/kioskmode/settings con un parametro della stringa di query obbligatorio ("kioskModeEnabled" con valore "true" o "false") e un parametro facoltativo ("startupApp" con un valore di nome pacchetto). Tenere presente che Portale di dispositivi è destinato solo agli sviluppatori e non deve essere abilitato nei dispositivi non sviluppatori. L'API REST è soggetta a modifiche negli aggiornamenti/versioni future.
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
-### <a name="issue---no-apps-are-shown-in-start-menu-in-kiosk-mode"></a>Problema: nessuna app viene visualizzata nel menu Start in modalità tutto schermo?
+### <a name="issue---no-apps-are-shown-in-start-menu-in-kiosk-mode"></a>Problema: nessuna app viene visualizzata nel menu Start in modalità tutto schermo
 
 **Sintomi**
 
 Quando si verificano errori durante l'applicazione della modalità tutto schermo, viene visualizzato il comportamento seguente:
 
-- Prima di Windows Holographic, versione 20H2 - HoloLens verranno mostrate tutte le applicazioni nel menu Start.
-- Windows Holographic versione 20H2: se un dispositivo ha una configurazione in modalità tutto schermo, ovvero una combinazione di accesso assegnato a livello globale e accesso assegnato ai membri del gruppo AAD, se la determinazione dell'appartenenza al gruppo AAD non riesce, l'utente non visualizza alcun elemento nel menu Start.
+- Prima di Windows Holographic, la versione 20H2 - HoloLens mostra tutte le applicazioni nel menu Start.
+- Windows Holographic, versione 20H2: se un dispositivo ha una configurazione tutto schermo, ovvero una combinazione di accesso assegnato a livello globale e accesso assegnato ai membri del gruppo AAD, se la determinazione dell'appartenenza al gruppo AAD non riesce, l'utente visualizza il menu "Non viene visualizzato nulla nel menu Start".
 
     ![Immagine dell'aspetto della modalità tutto schermo in caso di errore.](images/hololens-kiosk-failure-behavior.png )
 
-- A partire [da Windows Holographic, versione 21H1,](hololens-release-notes.md#windows-holographic-version-21h1)la modalità tutto schermo cerca Accesso assegnato globale prima di visualizzare un menu Start vuoto. Se si verificano errori durante la modalità tutto schermo del gruppo di AAD, l'esperienza della modalità tutto schermo verrà tornati a una configurazione globale per chiosco multimediale(se presente).
+- A partire [da Windows Holographic, versione 21H1,](hololens-release-notes.md#windows-holographic-version-21h1)la modalità tutto schermo cerca Accesso assegnato globale prima di visualizzare un menu Start vuoto. Se si verificano errori durante la modalità tutto schermo del gruppo AAD, l'esperienza in modalità tutto schermo verrà tornata a una configurazione tutto schermo globale( se presente).
 
 **Passaggi per la risoluzione dei problemi**
 
-- Verificare che l'AUMID dell'app sia specificato correttamente e che non contenga versioni. Per [esempi, vedere HoloLens AUMID](hololens-kiosk-reference.md#hololens-application-user-model-ids-aumids) per le app della posta in arrivo.
+- Verificare che AUMID dell'app sia specificato correttamente e che non contenga versioni. Per [esempi, HoloLens AUMID](hololens-kiosk-reference.md#hololens-application-user-model-ids-aumids) per le app per la posta in arrivo.
 - Assicurarsi che l'applicazione sia installata nel dispositivo per tale utente.
-- Se la configurazione della modalità tutto schermo è basata su gruppi di AAD, assicurarsi che la connettività Internet sia presente quando l'utente di AAD esegue l'accesso. Se si desidera, configurare i criteri [MixedReality/AADGroupMembershipCacheValidityInDays](/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-aadgroupmembershipcachevalidityindays) in modo che funzioni anche senza Internet.
+- Se la configurazione della modalità tutto schermo è basata su gruppi di AAD, assicurarsi che la connettività Internet sia presente quando l'utente di AAD esegue l'accesso. Se si desidera configurare i criteri [MixedReality/AADGroupMembershipCacheValidityInDays](/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-aadgroupmembershipcachevalidityindays) in modo che funzioni anche senza Internet.
 
-### <a name="issue---building-a-package-with-kiosk-mode-failed"></a>Problema - La compilazione di un pacchetto con la modalità tutto schermo non è riuscita
+### <a name="issue---building-a-package-with-kiosk-mode-failed"></a>Problema- La compilazione di un pacchetto con modalità tutto schermo non è riuscita
 
 **Sintomi**
 
@@ -166,11 +168,11 @@ Viene visualizzata una finestra di dialogo simile alla seguente.
 
 **Passaggi per la risoluzione dei problemi**
 
-1. Fare clic sull'hyper link visualizzato come nella finestra di dialogo precedente.
+1. Fare clic sull'hyper-link visualizzato come nella finestra di dialogo precedente.
 1. Aprire ICD.log in un editor di testo e il relativo contenuto dovrebbe indicare l'errore.
 
 > [!NOTE]
-> Se sono stati effettuati diversi tentativi, controllare i timestamp nel log. In questo modo sarà possibile controllare solo i problemi correnti.
+> Se sono stati effettuati diversi tentativi, controllare i timestamp nel log. Ciò consente di controllare solo i problemi correnti.
 
 ### <a name="issue--provisioning-package-built-successfully-but-failed-to-apply"></a>Problema: il pacchetto di provisioning è stato compilato correttamente ma non è stato possibile applicarlo.
 
@@ -180,16 +182,16 @@ Viene visualizzato un errore durante l'applicazione del pacchetto di provisionin
 
 **Passaggi per la risoluzione dei problemi**
 
-1. Passare alla cartella in cui si trova Windows progetto di Progettazione configurazione per il pacchetto di provisioning di runtime.
-1. Aprire ICD.log e assicurarsi che non siano presenti errori nel log durante la compilazione del pacchetto di provisioning. Alcuni errori non vengono visualizzati durante la compilazione, ma vengono comunque registrati in ICD.log
+1. Passare alla cartella in cui è presente Windows progetto di Progettazione configurazione per il pacchetto di provisioning di runtime.
+1. Aprire ICD.log e assicurarsi che non siano presenti errori nel log durante la compilazione del pacchetto di provisioning. Alcuni errori non vengono visualizzati durante la compilazione, ma vengono ancora registrati in ICD.log
 
-### <a name="issue--multiple-app-assigned-access-to-aad-group-does-not-work"></a>Problema: l'accesso assegnato a più app al gruppo di AAD non funziona
+### <a name="issue--multiple-app-assigned-access-to-aad-group-does-not-work"></a>Problema: l'accesso assegnato da più app al gruppo AAD non funziona
 
 **Sintomi**
 
-All'accesso utente di AAD, il dispositivo non passa alla modalità tutto schermo
+Nell'accesso utente di AAD il dispositivo non passa alla modalità tutto schermo
 
 **Passaggi per la risoluzione dei problemi**
 
-- Verificare che in Assigned Access configuration XML (XML configurazione accesso assegnato) sia usato il GUID del gruppo AAD di cui è membro l'utente connesso e non il GUID dell'utente AAD.
+- Verificare che nel codice XML di configurazione di Accesso assegnato sia usato il GUID del gruppo AAD di cui l'utente connesso è membro e non il GUID dell'utente di AAD.
 - Verificare che nel portale di Intune l'utente di AAD sia effettivamente visualizzato come membro del gruppo AAD di destinazione.

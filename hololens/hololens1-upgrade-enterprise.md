@@ -1,6 +1,6 @@
 ---
 title: Sbloccare Windows Holographic for Business funzionalità
-description: Quando si esegue l'aggiornamento a Windows Holographic for Business, HoloLens funzionalità aggiuntive progettate per le aziende.
+description: Quando si esegue l'Windows Holographic for Business, HoloLens offre funzionalità aggiuntive progettate per le aziende.
 ms.prod: hololens
 ms.sitesec: library
 author: dansimp
@@ -12,24 +12,24 @@ ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 7cf35a10a5f18dc0ccca876230b1677c6eca54ad116f0b2045fc1b269ac6c4b0
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: c6d1225dc6da1c039a34fc2782f23330ae40f280
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115661898"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189189"
 ---
 # <a name="unlock-windows-holographic-for-business-features"></a>Sbloccare Windows Holographic for Business funzionalità
 
 > [!IMPORTANT]
 > Questa pagina si applica solo HoloLens prima generazione.
 
-Microsoft HoloLens è disponibile in *Development Edition*, che esegue Windows Holographic (un'edizione di Windows 10 progettata per HoloLens) e in [Commercial Suite](hololens-commercial-features.md), che offre funzionalità aggiuntive progettate per le aziende.
+Microsoft HoloLens è disponibile in *Development Edition,* che esegue Windows Holographic (un'edizione di Windows 10 progettata per HoloLens) e in [Commercial Suite,](hololens-commercial-features.md)che offre funzionalità aggiuntive progettate per le aziende.
 
-Quando si acquista Commercial Suite, si riceve una licenza che esegue l'aggiornamento Windows Holographic a Windows Holographic for Business. È possibile applicare questa licenza al dispositivo usando il provider di gestione dei dispositivi mobili [(MDM)](#edition-upgrade-by-using-mdm) dell'organizzazione o un pacchetto [di provisioning](#edition-upgrade-by-using-a-provisioning-package).
+Quando si acquista Commercial Suite, si riceve una licenza che aggiorna Windows Holographic a Windows Holographic for Business. È possibile applicare questa licenza al dispositivo usando il provider di gestione dei dispositivi mobili [(MDM)](#edition-upgrade-by-using-mdm) dell'organizzazione o un pacchetto [di provisioning](#edition-upgrade-by-using-a-provisioning-package).
 
 > [!TIP]
-> In Windows 10 versione 1803 è possibile verificare che il HoloLens sia stato aggiornato all'edizione business selezionando **Impostazioni**  >  **Sistema**.
+> In Windows 10 versione 1803 è possibile verificare che il HoloLens sia stato aggiornato all'edizione Business selezionando **Impostazioni**  >  **System**.
 
 ## <a name="edition-upgrade-by-using-mdm"></a>Aggiornamento dell'edizione tramite MDM
 
@@ -41,14 +41,14 @@ Per istruzioni dettagliate sull'aggiornamento di HoloLens tramite Microsoft Intu
 
 ## <a name="edition-upgrade-by-using-a-provisioning-package"></a>Aggiornamento dell'edizione tramite un pacchetto di provisioning
 
-I pacchetti di provisioning sono file creati dallo Windows di Progettazione configurazione che applicano una configurazione specificata a un dispositivo.
+I pacchetti di provisioning sono file creati dallo Windows Progettazione configurazione che applicano una configurazione specificata a un dispositivo.
 
 ### <a name="create-a-provisioning-package-that-upgrades-the-windows-holographic-edition"></a>Creare un pacchetto di provisioning che consente di aggiornare l'edizione di Windows Holographic
 
 1. [Creare un pacchetto di provisioning per HoloLens.](hololens-provisioning.md)
-1. Passare a **Impostazioni di runtime**  >  **EditionUpgrade** e selezionare **EditionUpgradeWithLicense**.
+1. Passare a **Impostazioni di runtime**  >  **EditionUpgrade e** selezionare **EditionUpgradeWithLicense**.
 
-    ![Aggiornare l'edizione con le impostazioni di licenza selezionate](images/icd1.png)
+    ![Aggiornare l'edizione con l'impostazione di licenza selezionata.](images/icd1.png)
 
 1. Trovare il file di licenza XML fornito al momento dell'acquisto di Commercial Suite.
 
@@ -57,14 +57,14 @@ I pacchetti di provisioning sono file creati dallo Windows di Progettazione conf
 
 1. Scegliere **Save** (Salva) dal menu **File**. 
 
-1. Leggere l'avviso che i file di progetto possono contenere informazioni riservate e fare clic su **OK**.
+1. Leggere l'avviso che indica che i file di progetto possono contenere informazioni riservate e fare clic su **OK.**
 
     > [!IMPORTANT]
-    > Quando si compila un pacchetto di provisioning, è possibile includere informazioni riservate nei file di progetto e nel file del pacchetto di provisioning (ppkg). Anche se hai la possibilità di crittografare il file con estensione PPKG, i file di progetto non vengono crittografati. È consigliabile archiviare i file di progetto in un percorso sicuro ed eliminare i file di progetto quando non sono più necessari.
+    > Quando si compila un pacchetto di provisioning, è possibile includere informazioni riservate nei file di progetto e nel file del pacchetto di provisioning (con estensione ppkg). Anche se hai la possibilità di crittografare il file con estensione PPKG, i file di progetto non vengono crittografati. È consigliabile archiviare i file di progetto in un percorso sicuro ed eliminare i file di progetto quando non sono più necessari.
 
 1. Scegli **Pacchetto di provisioning** dal menu **Esporta**.
 
-1. Impostare **Proprietario** su **Amministratore IT,** che imposta la precedenza di questo pacchetto di provisioning in modo che sia superiore ad altri applicati al dispositivo da origini diverse e quindi selezionare **Avanti.**
+1. Impostare **Proprietario** su **Amministratore IT,** che imposta la precedenza di questo pacchetto di provisioning su un valore superiore rispetto ad altri applicati al dispositivo da origini diverse e quindi selezionare **Avanti.**
 
 1. Imposta un valore per **Versione pacchetto**.
 
@@ -73,27 +73,27 @@ I pacchetti di provisioning sono file creati dallo Windows di Progettazione conf
 
 1. In **Selezionare i dettagli di sicurezza per il pacchetto di provisioning** selezionare **Avanti.**
 
-1. Selezionare **Avanti** per specificare il percorso di output in cui si vuole che il pacchetto di provisioning vada dopo la compilazione. Per impostazione predefinita, Progettazione immagine e configurazione di Windows usa la cartella di progetto come percorso di output.
+1. Selezionare **Avanti** per specificare il percorso di output in cui si vuole inserire il pacchetto di provisioning dopo la compilazione. Per impostazione predefinita, Progettazione immagine e configurazione di Windows usa la cartella di progetto come percorso di output.
 
     Facoltativamente, è possibile selezionare **Sfoglia per** modificare il percorso di output predefinito.
 
 1. Selezionare **Avanti**.
 
-1. Selezionare **Compila** per iniziare a compilare il pacchetto. Nella pagina di compilazione vengono visualizzate le informazioni sul progetto e l'indicatore di stato indica lo stato della compilazione.
+1. Selezionare **Compila** per avviare la compilazione del pacchetto. Nella pagina di compilazione vengono visualizzate le informazioni sul progetto e l'indicatore di stato indica lo stato di compilazione.
 
-1. Al termine della compilazione, selezionare **Fine**.
+1. Al termine della compilazione, selezionare **Fine.**
 
 ### <a name="apply-the-provisioning-package-to-hololens"></a>Applicare il pacchetto di provisioning a HoloLens
 
-1. Usando il cavo USB, collegare il dispositivo a un PC. Avviare il dispositivo, ma non continuare oltre la **pagina di** adattamento dell'esperienza di configurazione iniziale (la prima pagina con la casella blu). Nel PC, HoloLens come dispositivo in Esplora file.
+1. Usando il cavo USB, connettere il dispositivo a un PC. Avviare il dispositivo, ma non  continuare oltre la pagina adatta dell'esperienza di configurazione iniziale (la prima pagina con la casella blu). Nel PC il HoloLens visualizzato come dispositivo in Esplora file.
 
     > [!NOTE]
-    > Se il dispositivo HoloLens esegue Windows 10, versione 1607 o precedente, aprire Esplora file premendo brevemente e rilasciando  i pulsanti **Volume** Giù e Alimentazione contemporaneamente nel dispositivo.
+    > Se il dispositivo HoloLens esegue Windows 10 versione 1607 o precedente, aprire Esplora file premendo brevemente e  rilasciando i pulsanti Volume down (Volume in basso) e **Power** (Alimentazione) simultaneamente sul dispositivo.
 
 1. In Esplora File, trascinare e rilasciare il pacchetto di provisioning (.ppkg) nell'archiviazione del dispositivo.
 
-1. Mentre HoloLens è ancora nella  pagina adatta, premere brevemente e  rilasciare di nuovo i pulsanti **Volume giù** e Alimentazione contemporaneamente.
+1. Mentre HoloLens è ancora nella  pagina adatta, premere e rilasciare brevemente i pulsanti **Volume down** (Volume in basso) e **Power (Alimentazione)** contemporaneamente.
 
-1. HoloLens chiede se si considera attendibile il pacchetto e si vuole applicarlo. Confermare che consideri attendibile il pacchetto.
+1. HoloLens se si considera attendibile il pacchetto e si vuole applicarlo. Confermare che consideri attendibile il pacchetto.
 
 1. Potrai vedere se il pacchetto è stato applicato correttamente o meno. Se non è stato applicato correttamente, è possibile correggere il pacchetto e riprovare. In caso di esito positivo, procedere con la configurazione del dispositivo.

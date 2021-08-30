@@ -14,38 +14,38 @@ ms.topic: article
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 74b0c8b78bf6e310965f674098a883acda5ed6101f74619c2dea209beb27e47d
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 70ee881eb0c2ffaade173b31e5168371d042bbb2
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662819"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190073"
 ---
 # <a name="getting-around-hololens-1st-gen"></a>Come spostarsi HoloLens (prima generazione)
 
 Sei pronto a entrare nel mondo degli ologrammi? Ecco alcune informazioni per iniziare.
 
-Questa guida offre un'introduzione alla realtà mista, i movimenti per l'interazione con gli ologrammi e un'introduzione alla Windows olografica.
+Questa guida offre un'introduzione alla realtà mista, i movimenti per interagire con gli ologrammi e un'introduzione alla Windows olografica.
 
 ## <a name="discover-mixed-reality"></a>Scoprire la realtà mista
 
 In HoloLens, gli ologrammi si fondono con l'ambiente fisico per sembrare parte del mondo. Anche quando gli ologrammi sono tutti intorno a te, puoi comunque vedere l'ambiente circostante, spostarti liberamente e interagire con altri oggetti e persone. Questa esperienza viene chiamata "realtà mista".
 
-La cornice olografica posiziona gli ologrammi in cui gli occhi sono più sensibili ai dettagli e le lenti see-through lasciano la visione periferica senza problemi. Con l'audio spaziale, è possibile individuare un ologramma anche se è dietro di te. Inoltre, HoloLens apprende e comprende l'ambiente, è possibile posizionare ologrammi su e intorno a oggetti reali, così come le app e i giochi. Quindi, un carattere in un gioco potrebbe sedersi sul divano o i robot spaziali potrebbero uscire [dalle pareti.](https://www.microsoft.com/store/apps/9nblggh5fv3j)
+La cornice olografica posiziona gli ologrammi in cui gli occhi sono più sensibili ai dettagli e le lenti see-through lasciano la visione periferica senza problemi. Con l'audio spaziale, è possibile individuare un ologramma anche se è dietro di te. Inoltre, HoloLens apprende e comprende l'ambiente, è possibile posizionare ologrammi su e intorno a oggetti reali, così come le app e i giochi. Un carattere di un gioco potrebbe quindi sedersi sul divano o i robot spaziali potrebbero uscire [dalle pareti.](https://www.microsoft.com/store/apps/9nblggh5fv3j)
 
 ## <a name="use-hololens-with-your-hands"></a>Usare HoloLens con le mani
 
 Spostarsi tra HoloLens è molto simile all'uso dello smartphone. È possibile usare le mani per modificare finestre olografiche, menu e pulsanti.  Invece di puntare, fare clic o toccare, si [](hololens-cortana.md)useranno lo sguardo fisso, la voce e i movimenti per selezionare app e ologrammi e per aggirare HoloLens.
 
-Quando si conoscono queste interazioni di base, spostarsi HoloLens sarà un'introduzione.
+Quando si conoscono queste interazioni di base, HoloLens sarà un'introduzione.
 
-Le nozioni di base verranno trattate la prima volta che si usa il HoloLens. Nel menu **Start** è disponibile anche un'esercitazione sui movimenti, che consente di cercare l'app Learn Gestures ( Apprende movimenti).
+Le nozioni di base verranno trattate la prima volta che si usa il HoloLens. Nel menu **Start** è disponibile anche un'esercitazione sui movimenti. Cercare l'app Learn Gestures (Apprende movimenti).
 
 ### <a name="the-hand-tracking-frame"></a>Frame di tracciamento della mano
 
 HoloLens ha sensori in grado di vedere qualche metro su entrambi i lati. Quando si usano le mani, è necessario mantenerle all'interno del fotogramma o HoloLens non le vedono. Mentre ci si sposta, il frame si sposta con l'utente.  
 
-![Immagine che mostra il HoloLens di tracciamento della mano](./images/hololens-2-gesture-frame.png)
+![Immagine che mostra il HoloLens di tracciamento della mano.](./images/hololens-2-gesture-frame.png)
 
 ### <a name="open-the-start-menu-with-bloom"></a>Aprire il menu Start con il fiore
 
@@ -53,7 +53,7 @@ Per aprire il menu **Start:**
 
 1. Tieni la mano davanti a te in modo che sia nella cornice del movimento.
 1. Bloom: riunire tutte le dita e quindi aprire la mano.
-  ![Animazione che mostra il movimento di fiore](./images/hololens-bloom.gif)
+  ![Animazione che mostra il movimento di fiore.](./images/hololens-bloom.gif)
 
 ### <a name="select-holograms-with-gaze-and-air-tap"></a>Selezionare gli ologrammi con sguardo fisso e tocco d'aria
 
@@ -62,7 +62,7 @@ Per selezionare un'app o un altro ologramma, toccarla mentre si guarda direttame
 1. Osservare l'ologramma da selezionare.
 1. Puntare il dito indice verso l'alto verso il controsoffitto.
 1. Tocco dell'aria: abbassare il dito e quindi elevarlo rapidamente.
-   ![Animazione del movimento di tocco](./images/hololens-air-tap.gif)
+   ![Animazione del movimento di tocco.](./images/hololens-air-tap.gif)
 
 ### <a name="select-a-hologram-by-using-your-voice"></a>Selezionare un ologramma usando la voce
 
@@ -84,10 +84,10 @@ Quando si posiziona una finestra dell'app o un'icona di avvio dell'app, questa r
 
 ## <a name="move-resize-and-rotate-apps"></a>Spostare, ridimensionare e ruotare le app
 
-Lo spostamento e il ridimensionamento delle app HoloLens funziona in modo leggermente diverso rispetto a un PC. Invece di trascinare l'app, si userà lo sguardo fisso, insieme a un [movimento o](https://support.microsoft.com/help/12644/hololens-use-gestures) al [clic.](hololens1-clicker.md) È anche possibile ruotare una finestra dell'app nello spazio 3D.
+Lo spostamento e il ridimensionamento delle app HoloLens funziona in modo leggermente diverso rispetto a quello di un PC. Invece di trascinare l'app, si userà lo sguardo fisso, insieme a un [movimento o](https://support.microsoft.com/help/12644/hololens-use-gestures) al [clic.](hololens1-clicker.md) È anche possibile ruotare una finestra dell'app nello spazio 3D.
 
 > [!TIP]
-> Ridisporre le app usando la voce: osservare un'app e pronunciare "Guardami", "Più grande" o "Più piccolo". In Cortana spostare un'app: ad esempio "Hey Cortana, move \* *app name \** here".
+> Ridisporre le app usando la voce: osservare un'app e pronunciare "Guardami", "Più grande" o "Più piccolo". In caso contrario, Cortana spostare un'app: pronunciare "Hey Cortana, move \* *app name \** here".
 
 ### <a name="move-an-app"></a>Spostare un'app
 
@@ -135,9 +135,9 @@ Congratulazioni! Si è pronti per usare HoloLens (prima generazione).
 
 ### <a name="help-i-dont-see-my-holograms"></a>Come fare Gli ologrammi non vengono visualizzati
 
-Se non vengono visualizzati ologrammi posizionati durante l'uso HoloLens, ecco alcuni aspetti da provare:
+Se non vengono visualizzati ologrammi posizionati durante l'HoloLens, ecco alcuni aspetti da provare:
 
-- Assicurarsi di guardare nell'area destra. Tenere presente che gli &mdash; ologrammi rimangono nella posizione in cui sono stati lasciati.
-- Assicurarsi di essere in una stanza ben illuminata senza molta disartizione diretta.
-- Aspettare. Quando HoloLens problemi di riconoscimento dello spazio, la ricomparsa degli ologrammi posizionati in precedenza può richiedere fino a un minuto.
+- Assicurarsi di guardare nell'area giusta. Tenere presente che gli ologrammi rimangono nel punto &mdash; in cui sono stati lasciati.
+- Assicurarsi di essere in una stanza ben accesa senza molto spazio diretto.
+- Aspettare. Quando HoloLens problemi di riconoscimento dello spazio, gli ologrammi posizionati in precedenza possono richiedere fino a un minuto per riapparire.
 - Se il problema persiste, è possibile cancellare i dati di archiviazione Ologrammi **in Impostazioni** System Ologrammi , quindi inserire nuovamente gli  >    >  ologrammi ambiente iniziale.

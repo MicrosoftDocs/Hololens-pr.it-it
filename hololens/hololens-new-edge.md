@@ -9,29 +9,29 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: yannisle
-ms.openlocfilehash: 35d3b38cd442198aec8aaabf46ff7d842c1bf599dbada68718c1d0fa548b2030
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 8ef73733b9fa4f422335977be860371b9570d549
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115663188"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189699"
 ---
 # <a name="introducing-the-new-microsoft-edge"></a>Introduzione al nuovo Microsoft Edge
 
-![Animazione del logo Microsoft Edge legacy nel nuovo logo Microsoft Edge](images/new-edge.gif)
+![Animazione del logo Microsoft Edge legacy al nuovo logo Microsoft Edge precedente.](images/new-edge.gif)
 
 Il nuovo Microsoft Edge [adotta il](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) progetto Chromium open source per creare una migliore compatibilità per i clienti e una minore frammentazione del Web per gli sviluppatori Web.
 
 Con [Windows Holographic, versione 21H1,](hololens-release-notes.md#windows-holographic-version-21h1)il nuovo Microsoft Edge è disponibile per HoloLens 2 clienti per la prima volta. Condividere commenti e suggerimenti e bug con il team tramite la funzionalità Invia **commenti** e suggerimenti nel nuovo Microsoft Edge o [tramite](hololens-feedback.md)Hub di Feedback .
 
 > [!IMPORTANT]
-> Questa nuova Microsoft Edge sostituisce automaticamente i Microsoft Edge legacy, che non [sono più supportati](https://blogs.windows.com/msedgedev/2021/03/09/microsoft-edge-legacy-end-of-support/) nelle nuove versioni.
+> Questo nuovo Microsoft Edge sostituisce automaticamente i Microsoft Edge legacy, che non [sono più supportati](https://blogs.windows.com/msedgedev/2021/03/09/microsoft-edge-legacy-end-of-support/) nelle nuove versioni.
 
-![Nuovo Microsoft Edge screenshot](images/new-edge-ui.png)
+![Nuovo Microsoft Edge screenshot.](images/new-edge-ui.png)
 
 ## <a name="launching-the-new-microsoft-edge"></a>Avvio del nuovo Microsoft Edge
 
-Il nuovo Microsoft Edge ![nuova Microsoft Edge icona](images/new_edge_logo.png) (rappresentato da un'icona a scorrimento blu e verde) viene aggiunto al menu Start e verrà avviato automaticamente quando si attiva un collegamento Web.
+Il nuovo Microsoft Edge ![nuova Microsoft Edge icona.](images/new_edge_logo.png) (rappresentato da un'icona a scorrimento blu e verde) viene aggiunto al menu Start e verrà avviato automaticamente quando si attiva un collegamento Web.
 
 > [!NOTE]
 > Quando si avvia per la prima volta la nuova Microsoft Edge in HoloLens 2, le impostazioni e i dati verranno importati dai dati Microsoft Edge.
@@ -48,13 +48,13 @@ Ecco alcune risorse utili per altre informazioni sulla gestione delle impostazio
 - Documentazione [Microsoft Edge Enterprise completa](/deployedge/)
 
 > [!IMPORTANT]
-> A causa del volume di criteri del browser supportati dal nuovo Microsoft Edge, il team non è in grado di garantire che ogni nuovo criterio funzioni HoloLens 2. Tuttavia, sono stati testati e confermati rispetto al nuovo Microsoft Edge equivalente di ogni criterio Microsoft Edge legacy supportato in precedenza HoloLens 2 come previsto. Vedere [Versione legacy di Microsoft Edge per Microsoft Edge mapping](/deployedge/microsoft-edge-policy-map-legacy-to-newedge) dei criteri per trovare il nuovo Microsoft Edge equivalente di ogni criterio Microsoft Edge browser legacy in uso con HoloLens 2.
+> A causa del volume di criteri del browser supportati dal nuovo Microsoft Edge, il team non è in grado di garantire che ogni nuovo criterio funzioni HoloLens 2. Tuttavia, sono stati testati e confermati rispetto al nuovo Microsoft Edge equivalente di ogni criterio Microsoft Edge legacy supportato in precedenza HoloLens 2 funzionare come previsto. Vedere [Versione legacy di Microsoft Edge per Microsoft Edge mapping](/deployedge/microsoft-edge-policy-map-legacy-to-newedge) dei criteri per trovare il nuovo Microsoft Edge equivalente di ogni criterio Microsoft Edge browser legacy in uso con HoloLens 2.
 >
 > Esistono almeno due nuovi criteri Microsoft Edge che non *funzionano* con HoloLens 2:
 > - EnterpriseModeSiteList
 > - EnterpriseSiteListServiceURL
 
-## <a name="what-to-expect-from-the-new-microsoft-edge-on-hololens-2"></a>Cosa aspettarsi dalla nuova Microsoft Edge in HoloLens 2
+## <a name="what-to-expect-from-the-new-microsoft-edge-on-hololens-2"></a>Cosa aspettarsi dal nuovo Microsoft Edge in HoloLens 2
 
 Poiché il nuovo Microsoft Edge è un'app Win32 nativa con un nuovo livello di adattatore UWP che ne consente l'esecuzione in dispositivi solo UWP come HoloLens 2, alcune funzionalità potrebbero non essere immediatamente disponibili. Nei prossimi mesi verranno supportati nuovi scenari e funzionalità, quindi controllare questo spazio per informazioni aggiornate.
 
@@ -81,7 +81,7 @@ Poiché il nuovo Microsoft Edge è un'app Win32 nativa con un nuovo livello di a
 - L'anteprima della lente di ingrandimento nella tastiera olografica è stata disabilitata per il nuovo Microsoft Edge. Si spera di riabilitare questa funzionalità in un aggiornamento futuro, una volta che l'ingrandimento funziona correttamente.
 - L'audio può essere riprodotto dalla finestra del browser errata se è aperta e attiva un'altra finestra del browser. È possibile risolvere questo problema chiudendo l'altra finestra attiva che non dovrebbe riprodurre l'audio.
 - Quando si riproduce l'audio da una finestra del browser in modalità "Seguimi", l'audio continuerà a essere riprodotto se si disabilita la modalità "Seguimi". È possibile risolvere questo problema interrompendo la riproduzione audio prima di disabilitare la modalità "Seguimi" o chiudendo la finestra con il pulsante X.
-- L'interazione con le finestre Microsoft Edge attive può causare la inattività imprevista di altre finestre dell'app 2D. È possibile riattivare queste finestre interagendo di nuovo con esse.
+- L'interazione con le finestre Microsoft Edge attive può causare l'inattività imprevista di altre finestre dell'app 2D. È possibile riattivare queste finestre interagendo di nuovo con esse.
 
 ## <a name="microsoft-edge-insider-channels"></a>Microsoft Edge Canali insider
 
@@ -97,15 +97,15 @@ Sono disponibili due metodi per l'installazione di Microsoft Edge Insider per Ho
   1. Avviare il file msix scaricato dalla coda di download di Edge o dalla cartella "Download" del dispositivo (usando Esplora file).
   1. [Verrà avviato il programma](app-deploy-app-installer.md) di installazione dell'app.
   1. Selezionare il pulsante **Installa**.
-  1. Al termine dell'installazione, si troverà Microsoft Edge Beta, Dev o Canary  come voce separata nell'elenco Tutte le app del menu Start.
+  1. Al termine dell'installazione, si troverà Microsoft Edge Beta, Dev o Canary come  voce separata nell'elenco Tutte le app del menu Start.
 
-**Installare tramite PC con Windows Portale di dispositivi (è necessario che [la modalità](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal) sviluppatore sia abilitata HoloLens 2)**
+**Installare tramite PC con Windows Portale di dispositivi (è necessario che [la modalità sviluppatore](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal) sia abilitata HoloLens 2)**
   1. Nel PC visitare la pagina [di download di Edge Insider.](https://www.microsoftedgeinsider.com/download)
   1. Selezionare il **pulsante freccia a discesa** accanto al pulsante "Scarica per Windows 10" per il canale Edge Insider che si vuole installare.
   1. Selezionare **HoloLens 2** nel menu a discesa.
   1. Salvare il file msix nella cartella "Download" del PC (o in un'altra cartella facilmente individuabile).
   1. Usare [Windows Portale di dispositivi](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app) nel PC per installare il file msix scaricato HoloLens 2.
-  1. Al termine dell'installazione, si troverà Microsoft Edge Beta, Dev o Canary  come voce separata nell'elenco Tutte le app del menu Start.
+  1. Al termine dell'installazione, si troverà Microsoft Edge Beta, Dev o Canary come  voce separata nell'elenco Tutte le app del menu Start.
 
 ## <a name="using-wdac-to-block-new-microsoft-edge"></a>Uso di WDAC per bloccare nuovi Microsoft Edge
 
@@ -130,7 +130,7 @@ Altre informazioni sugli [endpoint](hololens-offline.md)attualmente disponibili 
 ## <a name="webxr-and-360-viewer"></a>Visualizzatore WebXR e 360
 
 
-La nuova Microsoft Edge include il supporto per WebXR, che è il nuovo standard per la creazione di esperienze Web immersive (sostituendo WebVR). Molte esperienze Web immersive sono state progettate in base alla realtà virtuale (sostituiscono il campo di visualizzazione con un ambiente virtuale), ma queste esperienze sono supportate anche da HoloLens 2. Lo standard WebXR consente anche esperienze Web immersive di realtà aumentata e mista che usano l'ambiente fisico. Poiché gli sviluppatori dedicano più tempo a WebXR, prevediamo che arriveranno nuove esperienze immersive di realtà aumentata e mista per HoloLens 2 clienti.
+La nuova Microsoft Edge include il supporto per WebXR, che è il nuovo standard per la creazione di esperienze Web immersive (sostituendo WebVR). Molte esperienze Web immersive sono state progettate in base alla realtà virtuale (sostituiscono il campo di visualizzazione con un ambiente virtuale), ma queste esperienze sono supportate anche da HoloLens 2. Lo standard WebXR consente anche esperienze Web immersive di realtà aumentata e mista che usano l'ambiente fisico. Poiché gli sviluppatori dedicano più tempo a WebXR, prevediamo che arriveranno nuove esperienze immersive di realtà aumentata e mista che i clienti HoloLens 2 provare.
 
 L'estensione 360 Viewer è compilata su WebXR e viene installata automaticamente insieme al nuovo Microsoft Edge in HoloLens 2. Questa estensione Web offre la possibilità di immersi in video a 360 gradi. YouTube offre la selezione più ampia di 360 video, quindi è necessario iniziare da qui.
 
@@ -139,7 +139,7 @@ L'estensione 360 Viewer è compilata su WebXR e viene installata automaticamente
 1. Passare a un sito Web con supporto WebXR.
 1. Selezionare il **pulsante Enter VR (Immetti VR)** nel sito Web. La posizione e la rappresentazione visiva di questo pulsante possono variare in base al sito Web, ma l'aspetto potrebbe essere simile al seguente:
 
-    ![Immettere l'esempio di pulsante VR](images/75px-enter-vr.png)
+    ![Immettere l'esempio di pulsante VR.](images/75px-enter-vr.png)
 
 1. La prima volta che si tenta di avviare un'esperienza WebXR in un dominio specifico, il browser chiederà il consenso per immettere una visualizzazione immersiva, selezionare **Consenti**.
 1. Usare [HoloLens 2 movimenti per](hololens2-basic-usage.md#the-hand-tracking-frame) modificare l'esperienza.
@@ -156,14 +156,14 @@ L'estensione 360 Viewer è compilata su WebXR e viene installata automaticamente
 1. Passare a un video a 360 gradi su YouTube.
 1. Nel fotogramma video selezionare il pulsante visore visore realtà mista:
 
-    ![Pulsante per attivare il visualizzatore 360](images/enter-360-viewer.jpg)
+    ![Pulsante per attivare il visualizzatore 360.](images/enter-360-viewer.jpg)
 
 1. La prima volta che si tenta di avviare 360 Viewer in un dominio specifico, il browser chiederà il consenso per immettere una visualizzazione immersiva. selezionare **Consenti**.
-1. [Toccare Air](hololens2-basic-usage.md#select-using-air-tap) per visualizzare i controlli di riproduzione. Usare [i raggi della](hololens2-basic-usage.md#select-using-air-tap) mano e il tocco dell'aria per riprodurre/sospendere, andare avanti/indietro, attivare/disattivare i sottotitoli o arrestare l'esperienza (che esce dalla visualizzazione immersiva). I controlli di riproduzione scompariranno dopo alcuni secondi di inattività.
+1. [Toccare air](hololens2-basic-usage.md#select-using-air-tap) per visualizzare i controlli di riproduzione. Usare [i raggi della](hololens2-basic-usage.md#select-using-air-tap) mano e il tocco dell'aria per riprodurre/sospendere, andare avanti/indietro, attivare/disattivare i sottotitoli o arrestare l'esperienza (che esce dalla visualizzazione immersiva). I controlli di riproduzione scompariranno dopo alcuni secondi di inattività.
 
 ### <a name="top-webxr-and-360-viewer-known-issues"></a>Principali problemi noti di WebXR e 360 Viewer
-- A seconda della complessità dell'esperienza WebXR, la frequenza dei fotogrammi può essere notevolmente notevolmente più complessa.
-- Il supporto per le giunzioni articolate della mano in WebXR non è abilitato per impostazione predefinita. Gli sviluppatori possono abilitare il supporto tramite edge://flags attivando "WebXR Hand Input".
+- A seconda della complessità dell'esperienza WebXR, la frequenza dei frame può essere notevolmente più complessa.
+- Il supporto per le giunzioni della mano articolate in WebXR non è abilitato per impostazione predefinita. Gli sviluppatori possono abilitare il supporto tramite edge://flags attivando "WebXR Hand Input".
 - 360 video da siti Web diversi da YouTube potrebbero non funzionare come previsto.
 
 ### <a name="providing-feedback-on-webxr-and-360-viewer"></a>Fornire commenti e suggerimenti su WebXR e 360 Viewer

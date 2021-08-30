@@ -13,20 +13,20 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 4b07bb87b34ec966472bcbde000106590570fd7e7063ab503724884fa266bb34
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: d5cf7385dd0a53c6b17f79e16364e84ab6ec867d
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662665"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189937"
 ---
 # <a name="hololens-1st-gen-bitlocker-encryption"></a>HoloLens crittografia BitLocker (prima generazione)
 
-HoloLens (prima generazione) e HoloLens 2 entrambi supportano la crittografia dei dispositivi con BitLocker, tuttavia, BitLocker è sempre abilitato in HoloLens 2.
+HoloLens (prima generazione) e HoloLens 2 supportano entrambi la crittografia dei dispositivi con BitLocker, tuttavia BitLocker è sempre abilitato in HoloLens 2.
 
-Questo articolo consente di abilitare e gestire BitLocker HoloLens (prima generazione).
+Questo articolo illustra come abilitare e gestire BitLocker HoloLens (prima generazione).
 
-Nella HoloLens (prima generazione) è possibile abilitare la crittografia dei dispositivi BitLocker manualmente o tramite la gestione di dispositivi mobili (MDM). Seguire queste istruzioni per abilitare [la crittografia del dispositivo BitLocker](/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) per proteggere i file e le informazioni archiviate nel HoloLens. La crittografia del dispositivo consente di proteggere i dati usando il metodo di crittografia AES-CBC 128, equivalente al metodo [EncryptionMethodByDriveType 3](/windows/client-management/mdm/bitlocker-csp#encryptionmethodbydrivetype) nel provider del servizio di configurazione BitLocker. Il personale che dispone della chiave di crittografia corretta, ad esempio una password, può decrittografarla o eseguire un ripristino dei dati.
+Nella HoloLens (prima generazione) è possibile abilitare la crittografia dei dispositivi BitLocker manualmente o usando la gestione di dispositivi mobili (MDM). Seguire queste istruzioni per abilitare la [crittografia del dispositivo BitLocker](/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) per proteggere i file e le informazioni archiviate nel HoloLens. La crittografia del dispositivo consente di proteggere i dati usando il metodo di crittografia AES-CBC 128, equivalente al metodo [EncryptionMethodByDriveType 3](/windows/client-management/mdm/bitlocker-csp#encryptionmethodbydrivetype) nel provider del servizio di configurazione BitLocker. Il personale che dispone della chiave di crittografia corretta, ad esempio una password, può decrittografarla o eseguire un ripristino dei dati.
 
 ## <a name="enable-device-encryption-using-mdm"></a>Abilitare la crittografia dei dispositivi tramite MDM
 
@@ -44,14 +44,14 @@ Per altri strumenti MDM, vedere la documentazione del provider MDM per istruzion
 
 ## <a name="enable-device-encryption-using-a-provisioning-package"></a>Abilitare la crittografia dei dispositivi usando un pacchetto di provisioning
 
-I pacchetti di provisioning sono file creati dallo Windows di Progettazione configurazione che applicano una configurazione specificata a un dispositivo. 
+I pacchetti di provisioning sono file creati dallo Windows Progettazione configurazione che applicano una configurazione specificata a un dispositivo. 
 
 ### <a name="create-a-provisioning-package-that-upgrades-the-windows-holographic-edition-and-enables-encryption"></a>Creare un pacchetto di provisioning che aggiorna l'edizione Windows Holographic e abilita la crittografia
 
 1. [Creare un pacchetto di provisioning per HoloLens.](hololens-provisioning.md)
 1. Passare a **Impostazioni di runtime**  >  **Criteri**  >  **Sicurezza** e selezionare **RichiediDispositivaCrittografia.**
 
-    ![Richiedi l'impostazione di crittografia del dispositivo configurata su Sì](images/device-encryption.png)
+    ![Richiedere che l'impostazione di crittografia del dispositivo sia impostata su Sì.](images/device-encryption.png)
 
 1. Trovare il file di licenza XML fornito al momento dell'acquisto di Commercial Suite.
 
@@ -67,7 +67,7 @@ I pacchetti di provisioning sono file creati dallo Windows di Progettazione conf
     > Quando si compila un pacchetto di provisioning, è possibile includere informazioni riservate nei file di progetto e nel file del pacchetto di provisioning (con estensione ppkg). Anche se hai la possibilità di crittografare il file con estensione PPKG, i file di progetto non vengono crittografati. È consigliabile archiviare i file di progetto in un percorso sicuro ed eliminare i file di progetto quando non sono più necessari.
 
 1. Fai clic su **Pacchetto di provisioning** nel menu **Esporta**.
-1. Impostare **Proprietario** su **Amministratore IT,** che imposta la precedenza di questo pacchetto di provisioning su un valore superiore rispetto al provisioning dei pacchetti applicati al dispositivo da altre origini e quindi selezionare **Avanti.**
+1. Impostare **Proprietario** su **Amministratore IT,** che imposta la precedenza di questo pacchetto di provisioning su un valore superiore a quello dei pacchetti di provisioning applicati al dispositivo da altre origini e quindi selezionare **Avanti.**
 1. Imposta un valore per **Versione pacchetto**.
 
     > [!TIP]
@@ -99,6 +99,6 @@ I pacchetti di provisioning sono file creati dallo Windows di Progettazione conf
 
 La crittografia è invisibile all'utente HoloLens. Per verificare lo stato di crittografia del dispositivo:
 
-- Nella HoloLens passare **a** Impostazioni  >  **Informazioni**  >  **sul sistema.** **BitLocker** è **abilitato** se il dispositivo è crittografato. 
+- In HoloLens passare **a** Impostazioni System About  >    >  **(Informazioni sul sistema).** **BitLocker** è **abilitato** se il dispositivo è crittografato. 
 
-    ![Schermata Informazioni su che mostra BitLocker abilitato](images/about-encryption.png)
+    ![Schermata Informazioni che mostra BitLocker abilitato.](images/about-encryption.png)

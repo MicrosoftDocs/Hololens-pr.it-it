@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7bf6896ee14b730e7c8f7f6c38e6a3c4279555429fb17f5b30a0c866123a3712
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: b6c2c6c10232fb8f1817dddabebaf207e51d35d7
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115658836"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190311"
 ---
 # <a name="trimble-xr10-with-hololens-2"></a>Trimble XR10 con HoloLens 2
 
@@ -27,15 +27,15 @@ Progettato appositamente per i lavoratori in ambienti dirty, loud e controllati 
 
 ## <a name="learn-about-trimble-xr10"></a>Informazioni su Trimble XR10
 
-Trimble XR10 con HoloLens 2 è il primo dispositivo creato con Microsoft HoloLens Customization Program. Il dispositivo integra un'HoloLens 2 in un hard hat per produrre una soluzione di realtà mista di sicurezza.
+Trimble XR10 con HoloLens 2 è il primo dispositivo creato con Microsoft HoloLens customization program. Il dispositivo integra un HoloLens 2 in un hard hat per produrre una soluzione di realtà mista di sicurezza.
 
-![Trimble SKU](./images/trimble-ed.png)
+![SKU trimble.](./images/trimble-ed.png)
 
 Vedere altre informazioni su [Trimble XR10.](https://fieldtech.trimble.com/en/product/trimble-xr10-with-hololens-2)
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-1. Iniziare subito a interagire con la realtà mista e Windows 10 nel HoloLens: vedere l'app **Suggerimenti** per esercitazioni pratica sulle interazioni con la mano. Usare il movimento start per passare a Start o pronunciare "Vai a Start" e selezionare Suggerimenti.
+1. Iniziare subito a interagire con la realtà mista e a esplorare Windows 10 nel HoloLens: vedere l'app **Suggerimenti** per esercitazioni pratica sulle interazioni con la mano. Usare il movimento di avvio per passare a Inizia o pronunciare "Vai a Start" e selezionare Suggerimenti.
 1. Fare clic di seguito per continuare a leggere informazioni su come HoloLens 2.
 
 > [!div class="nextstepaction"]

@@ -1,11 +1,11 @@
 ---
 title: Visibilità Impostazioni pagina
-description: Rimanere aggiornati con l'elenco di URI supportati per PageVisibilityList e Guida HoloLens dispositivi di realtà mista.
+description: Tenersi aggiornati con l'elenco degli URI supportati per PageVisibilityList e la Guida HoloLens dispositivi di realtà mista.
 author: evmill
 ms.author: v-evmill
 ms.date: 10/13/2020
 ms.topic: article
-keywords: hololens, hololens 2, accesso assegnato, chiosco multimediale, pagina delle impostazioni
+keywords: hololens, hololens 2, accesso assegnato, chiosco multimediale, pagina impostazioni
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
@@ -13,49 +13,49 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d2747da37ae198f7a2c051593da3ffd4cb4476dfaa7a3078a7749fa1fc912ba2
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 92040019b093c5ef63d74f095dcb3809112ae7a0
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665625"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190430"
 ---
 # <a name="page-settings-visibility"></a>Visibilità Impostazioni pagina
 
-Una delle funzionalità gestibili per i dispositivi HoloLens usa il criterio [Impostazioni/PageVisibilityList](/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) per limitare le pagine visibili all'interno dell'app Impostazioni. PageVisibilityList è un criterio che consente agli amministratori IT di impedire a pagine specifiche nell'app System Impostazioni di essere visibili o accessibili oppure di eseguire questa operazione per tutte le pagine tranne quelle specificate.
+Una delle funzionalità gestibili per i dispositivi HoloLens usa i criteri [Impostazioni/PageVisibilityList](/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) per limitare le pagine visibili all'interno dell'app Impostazioni. PageVisibilityList è un criterio che consente agli amministratori IT di impedire che pagine specifiche nell'app System Impostazioni siano visibili o accessibili oppure di eseguire questa operazione per tutte le pagine ad eccezione di quelle specificate.
 
 > [!NOTE]
-> Questa funzionalità è avalibile solo in [Windows Holographic, versione 20H2](hololens-release-notes.md#windows-holographic-version-20h2) o successiva per HoloLens 2 dispositivi. Assicurarsi che i dispositivi per cui si intende usarlo siano aggiornati.
+> Questa funzionalità è disponibile solo in [Windows Holographic, versione 20H2](hololens-release-notes.md#windows-holographic-version-20h2) o successiva per HoloLens 2 dispositivi. Assicurarsi che i dispositivi per cui si intende usarlo siano aggiornati.
 
 
-## <a name="examples"></a>Esempio
+## <a name="examples"></a>Esempi
 Le pagine sono identificate da una versione abbreviata degli URI pubblicati, ovvero l'URI meno il prefisso "ms-settings:".
 
-L'esempio seguente illustra un criterio che consente l'accesso solo alle pagine about e bluetooth, che hanno rispettivamente URI "network-wifi" e "bluetooth":
+L'esempio seguente illustra un criterio che consente l'accesso solo alle pagine About e Bluetooth, che hanno rispettivamente l'URI "network-wifi" e "bluetooth":
 - `showonly:network-wifi;network-proxy;bluetooth`
 
 L'esempio seguente illustra un criterio che nasconde la pagina Reimpostazione sistema operativo:
 - `hide:reset`
 
 
-## <a name="deploying-this-policy-via-intune"></a>Distribuzione di questo criterio tramite Intune
+## <a name="deploying-this-policy-via-intune"></a>Distribuzione di questi criteri tramite Intune
 
 Questi sono i valori di configurazione che verranno forniti a Intune:
 
 - **Nome:** Nome visualizzato preferito dall'amministratore per il profilo.
-- **URI OMA:** URI completo della pagina di impostazione, incluso il relativo [ambito.](/windows/client-management/mdm/policy-configuration-service-provider) In questo esempio in questa pagina viene utilizzato `./Device` l'ambito .
+- **URI OMA:** URI completo della pagina di impostazione, incluso il relativo [ambito](/windows/client-management/mdm/policy-configuration-service-provider). In questi esempi in questa pagina viene utilizzato `./Device` l'ambito .
 - **Valore:** Valore stringa che indica se nascondere o visualizzare *solo* le pagine specificate. I valori possibili sono `hide:<pagename>` e `showonly:<pagename>`. 
  
 È possibile specificare più pagine separandole con un punto e virgola. Di seguito è riportato un elenco di pagine comuni.
 
 1. Creare un **criterio personalizzato.**
-1. Quando si imposta **l'URI OMA,** immettere l'URI con ambito completo. Per esempio: **`./Device/Vendor/MSFT/Policy/Config/Settings/PageVisibilityList`**
-1. Quando si seleziona la selezione dei dati, scegliere: **Stringa**
+1. Quando si imposta **OMA-URI,** immettere l'URI con ambito completo. Per esempio: **`./Device/Vendor/MSFT/Policy/Config/Settings/PageVisibilityList`**
+1. Quando si seleziona la selezione dati, scegliere: **Stringa**
 1. Quando si specifica **Valore,** usare le indicazioni riportate in precedenza. Ad esempio: **`showonly:network-wifi;network-proxy;bluetooth`** o **`hide:reset`** 
 > [!IMPORTANT]
-> Assicurarsi di assegnare la configurazione del dispositivo personalizzata a un gruppo in cui il dispositivo è destinato. Se questo passaggio non viene eseguito, verrà eseguito il push dei criteri, ma non verrà applicato.
+> Assicurarsi di assegnare la configurazione del dispositivo personalizzata a un gruppo in cui deve essere presente il dispositivo. Se questo passaggio non viene eseguito, verrà eseguito il push dei criteri, ma non verrà applicato.
 
-Per altre informazioni sui gruppi di Intune e sulle configurazioni dei dispositivi, vedere HoloLens [configurazione MDM.](hololens-mdm-configure.md)
+Vedere [HoloLens MDM per](hololens-mdm-configure.md) altre informazioni sui gruppi di Intune e sulle configurazioni dei dispositivi.
 
 
 ## <a name="deploying-this-policy-via-a-provisioning-package"></a>Distribuzione di questo criterio tramite un pacchetto di provisioning
@@ -69,18 +69,18 @@ Questi sono i valori di configurazione che verranno specificati in Progettazione
 1. Immettere la stringa: **`showonly:network-wifi;network-proxy;bluetooth`**
 1. Esportare il pacchetto di provisioning.
 1. Applicare il pacchetto al dispositivo.
-Per informazioni dettagliate complete su come creare e applicare un pacchetto di provisioning, visitare la [HoloLens di provisioning.](hololens-provisioning.md)
+Per informazioni dettagliate su come creare e applicare un pacchetto di provisioning, visitare la [pagina HoloLens provisioning .](hololens-provisioning.md)
 
 
-Indipendentemente dal metodo scelto, il dispositivo dovrebbe ora ricevere le modifiche e agli utenti verrà visualizzata l'app Impostazioni seguente.
+Indipendentemente dal metodo scelto, il dispositivo dovrebbe ora ricevere le modifiche e agli utenti verrà visualizzata la seguente Impostazioni app.
 
-![Screenshot delle ore attive modificate nell'app Impostazioni lavoro](images/hololens-page-visibility-list.jpg)
+![Screenshot delle ore attive modificate nell'app Impostazioni lavoro.](images/hololens-page-visibility-list.jpg)
 
 Per configurare le Impostazioni dell'app per mostrare o nascondere la propria selezione di pagine, esaminare gli URI Impostazioni disponibili in HoloLens.
 
 ## <a name="settings-uris"></a>Impostazioni Uri
 
-HoloLens dispositivi e Windows 10 hanno una selezione diversa di pagine all'interno dell Impostazioni app. In questa pagina sono disponibili solo le impostazioni presenti HoloLens.
+HoloLens dispositivi e Windows 10 hanno una selezione diversa di pagine all'interno dell Impostazioni app. In questa pagina sono disponibili solo le impostazioni esistenti in HoloLens.
 
 ### <a name="accounts"></a>Account
 | Pagina Impostazioni           | URI                                            |
@@ -89,7 +89,7 @@ HoloLens dispositivi e Windows 10 hanno una selezione diversa di pagine all'inte
 | Registrazione Iris       | `signinoptions-launchirisenrollment` |
 | Opzioni di accesso         | ` signinoptions `                   |
 
-### <a name="apps"></a>Apps
+### <a name="apps"></a>App
 | Pagina Impostazioni | URI                          |
 |---------------|------------------------------|
 | App & funzionalità <sup>2</sup>     | `appsfeatures` <br> |
@@ -158,21 +158,21 @@ HoloLens dispositivi e Windows 10 hanno una selezione diversa di pagine all'inte
 | Esperienze condivise | `crossdevice` 
 | Suono <sup>2</sup>           | `sound`<br>|
 | Audio > volume dell'app e preferenza del dispositivo <sup>2</sup>           | `apps-volume`<br>|
-| Gestione > audio <sup>2</sup>           | `sound-devices`<br>|
+| Audio > gestire i dispositivi audio <sup>2</sup>           | `sound-devices`<br>|
 | Archiviazione            | `storagesense`           |
 | Archiviazione > configurare Archiviazione Sense <sup>2</sup>           | `storagepolicies`<br>|
 
-### <a name="time--language"></a>Lingua & ora
+### <a name="time--language"></a>Lingua & tempo
 | Pagina Impostazioni | URI                                           |
 |---------------|-----------------------------------------------|
-| Data &'ora <sup>2</sup> | `dateandtime`                  |
+| Data <sup>&'ora 2</sup> | `dateandtime`                  |
 | Tastiera <sup>2</sup> | `keyboard`                  |
 | Lingua <sup>2</sup> | `language`                  |
 | Lingua <sup>2</sup> | `regionlanguage-languageoptions`                  |
 | Linguaggio      | `regionlanguage`<br>`regionlanguage-adddisplaylanguage`<br>`regionlanguage-setdisplaylanguage` |
-| Area        | `regionformatting`                  |
+| Region        | `regionformatting`                  |
 
-### <a name="update--security"></a>Aggiornare & sicurezza
+### <a name="update--security"></a>Aggiornare la & sicurezza
 | Pagina Impostazioni                         | URI                                       |
 |---------------------------------------|-------------------------------------------|
 | Opzioni avanzate                    | `windowsupdate-options`         |
@@ -182,7 +182,7 @@ HoloLens dispositivi e Windows 10 hanno una selezione diversa di pagine all'inte
 | Windows Update - Controlla la disponibilità di aggiornamenti | `windowsupdate-action`          |
 
 
-- <sup>1-</sup> Per le versioni precedenti Windows Holographic, versione 21H1, i due URI  **seguenti** non visualizzano effettivamente le pagine Opzioni avanzate. bloccano o visualizzano solo la pagina principale Windows Aggiorna.
+- <sup>1</sup> - Per le versioni precedenti Windows Holographic, versione 21H1, i due URI  **seguenti** non visualizzano effettivamente le pagine Opzioni avanzate. bloccano o visualizzano solo la pagina principale Windows Aggiorna.
   -  windowsupdate-options
   -  windowsupdate-restartoptions
 

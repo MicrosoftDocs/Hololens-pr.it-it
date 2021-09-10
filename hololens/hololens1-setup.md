@@ -13,17 +13,17 @@ manager: jarrettr
 appliesto:
 - Hololens (1st gen)
 ms.openlocfilehash: 5918e3dcb7f2504ae6e85cb584aaf21bc87217bc
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189257"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427746"
 ---
 # <a name="get-your-hololens-1st-gen-ready-to-use"></a>Prepararsi HoloLens (prima generazione) per l'uso
 
 Seguire la procedura per configurare un HoloLens (prima generazione) per la prima volta.
 
-## <a name="charge-your-hololens-1st-gen"></a>Addebitare i HoloLens (prima generazione)
+## <a name="charge-your-hololens-1st-gen"></a>Addebito HoloLens (prima generazione)
 
 Per caricare il HoloLens, collegare l'alimentatore alla porta di ricarica usando il cavo Micro USB incluso. Collegare quindi l'alimentatore a una presa di alimentazione. Quando il dispositivo è in carica, l'indicatore della batteria si accende in base a un modello d'onda.
 
@@ -50,18 +50,18 @@ La velocità e la velocità di ricarica possono variare a seconda dell'ambiente 
 |4. Tenere il dispositivo in mano e posizionarlo sulla testa. Assicurarsi che la banda della testa sieda nella parte superiore della fronte e quindi stringere la ruota di regolazione.|![Passaggio 4, inserire il dispositivo e regolare la fascia.](./images/FitGuideStep4.png)|
 |5. Far scorrere di nuovo il visore e quindi controllare l'adattamento del dispositivo. La fascia della testa deve essere posta nella parte superiore della fronte, sotto la linea dei capello, con i relatori sopra le sedie. Le lenti devono essere centrate sugli occhi.|![Passaggio 5, far scorrere di nuovo il visore e controllare l'adattamento.](./images/FitGuideSetep5.png)|
 
-## <a name="turn-on-your-hololens"></a>Attivare l'HoloLens
+## <a name="turn-on-your-hololens"></a>Attivare la HoloLens
 
-Usare il pulsante di alimentazione per HoloLens attivare e disattivare l'alimentazione o per attivarlo in modalità standby.
+Usare il pulsante di alimentazione per HoloLens attivare e disattivare o per attivarlo in modalità standby.
 
-![Immagine che mostra l'HoloLens di alimentazione.](./images/hololens-power.png)
+![Immagine che mostra il pulsante HoloLens di alimentazione.](./images/hololens-power.png)
 
-Se il dispositivo non risponde o non si avvia, vedere [Riavviare, reimpostare o ripristinare HoloLens](hololens-restart-recover.md).
+Se il dispositivo non risponde o non si avvia, vedere [Riavviare, reimpostare o](hololens-restart-recover.md)ripristinare HoloLens .
 
 Quando la HoloLens è disattivata o in standby, attivarla premendo il pulsante di alimentazione per un secondo. Se non viene attivata, collegarla e addebitarla per almeno 30 minuti.
 
 > [!TIP]
-> Per riavviare HoloLens, pronunciare "Hey Cortana, riavviare il dispositivo".
+> Per riavviare HoloLens, pronunciare "Hey Cortana riavvia il dispositivo".
 
 ### <a name="put-hololens-in-standby"></a>Mettere HoloLens in standby
 
@@ -71,9 +71,9 @@ HoloLens passa automaticamente in standby dopo 3 minuti di inattività. Quando �
 
 ### <a name="shut-down-hololens"></a>Arrestare HoloLens
 
-Per arrestare (disattivare) HoloLens, tenere premuto il pulsante di alimentazione per quattro secondi. Gli indicatori della batteria si spegnino uno alla volta e il dispositivo si arresta.
+Per arrestare (disattivare) il HoloLens, tenere premuto il pulsante di alimentazione per quattro secondi. Gli indicatori della batteria si spegnino uno alla volta e il dispositivo si arresta.
 
-HoloLens si arresta automaticamente quando il livello della batteria scende all'1%, anche se è collegato. Dopo aver alzato la batteria al 3%, sarà possibile riattivare HoloLens'alimentazione.
+HoloLens si arresta automaticamente quando il livello della batteria scende all'1%, anche se è collegato. Dopo aver alzato la batteria al 3%, sarà possibile riattivare HoloLens batteria.
 
 ## <a name="adjust-volume-and-brightness"></a>Regolare volume e luminosità
 
@@ -91,7 +91,7 @@ Non si è certi del significato delle luci HoloLens indicatori? Ecco alcune info
 |---|---|
 |Scorrere dal centro verso l'esterno. |HoloLens è in corso l'avvio. |
 |Rimanere accesi (tutti o alcuni). |HoloLens è disponibile e pronto per l'uso. La durata della batteria viene visualizzata in incrementi del 20%. |
-|Scorrere, quindi accendere e quindi scorrere. |HoloLens è on e l'addebito. La durata della batteria viene visualizzata in incrementi del 20%. |
+|Scorrere, quindi accendere e infine scorrere. |HoloLens è on e l'addebito. La durata della batteria viene visualizzata in incrementi del 20%. |
 |Disattivare uno alla volta. |HoloLens è in fase di arresto. |
 |Disattivare tutto contemporaneamente. |HoloLens è in standby. |
 |Si accende tutto, quindi si lampeggia brevemente, quindi tutti si disattivano. |La batteria è estremamente bassa. HoloLens deve essere addebitato. |
@@ -101,11 +101,11 @@ Non si è certi del significato delle luci HoloLens indicatori? Ecco alcune info
 
 ### <a name="use-in-safe-surroundings"></a>Uso in ambienti sicuri
 
-Usare le HoloLens in uno spazio sicuro privo di ostruzione e rischi di inciampo. Non usarlo quando è necessario un campo di vista chiaro e la massima attenzione, ad esempio quando si usa un veicolo o si eservino altre attività potenzialmente pericolose.
+Usare i HoloLens in uno spazio sicuro privo di ostruzione e rischi di inciampo. Non usarlo quando è necessario un campo di vista chiaro e la massima attenzione, ad esempio quando si usa un veicolo o si eservino altre attività potenzialmente pericolose.
 
 ### <a name="stay-comfortable"></a>Rimanere a proprio agio
 
-Mantenere le prime sessioni con HoloLens breve e assicurarsi di eseguire le interruzioni. In caso di disagi, fermarsi e attendere fino a quando non si è migliori. Ad esempio, i movimenti temporanei, le emozioni di movimento, le vertigini, l'orientamento, la difficoltà, l'affaticamento, l'affaticamento oculare o gli occhi secchi.
+Mantenere brevi le prime sessioni HoloLens brevi e assicurarsi di eseguire alcune interruzioni. In caso di disagi, fermarsi e attendere fino a quando non si è migliori. Può trattarsi di temporanea malattia, mal di movimento, vertigini, disorientamento, difficoltà, affaticamento, affaticamento oculare o occhi secchi.
 
 > [!div class="nextstepaction"]
 > [Avviare e configurare il HoloLens (prima generazione)](hololens1-start.md)

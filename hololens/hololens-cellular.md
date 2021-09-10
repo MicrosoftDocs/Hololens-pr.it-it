@@ -1,5 +1,5 @@
 ---
-title: Connessione a Cellulare e 5G
+title: Connessione a cellulare e 5G
 description: Connessione alle reti cellulari dai dispositivi HoloLens di realtà mista.
 ms.assetid: f1aaadce-8762-41f8-bfeb-3b6067a2ec78
 ms.prod: hololens
@@ -12,14 +12,14 @@ ms.date: 02/24/2021
 manager: evmill
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0a31ff0af0af5b60fc0a44ef8fc5a85b5b50e766201d5441d508fd23dd0369e4
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 6f7da0263e8637486f0151fd2b9da55da8feccc1
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664486"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428528"
 ---
-# <a name="connect-to-cellular-and-5g"></a>Connessione a Cellulare e 5G
+# <a name="connect-to-cellular-and-5g"></a>Connessione a cellulare e 5G
 
 HoloLens 2 supporta due metodi per la connessione a reti cellulare e 5G:
 

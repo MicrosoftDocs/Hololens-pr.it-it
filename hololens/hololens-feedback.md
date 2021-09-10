@@ -1,6 +1,6 @@
 ---
 title: Commenti e suggerimenti
-description: Creare feedback utilizzabili per HoloLens e Windows Mixed Reality sviluppatori usando il Hub di Feedback.
+description: Creare un feedback fattibile per HoloLens e Windows Mixed Reality sviluppatori usando il Hub di Feedback.
 ms.assetid: b9b24c72-ff86-44a9-b30d-dd76c49479a9
 author: mattzmsft
 ms.author: mazeller
@@ -18,11 +18,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: 214b2b9cda33eb074b06a9157429d1f52bfe0716
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189427"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427063"
 ---
 # <a name="feedback-for-hololens"></a>Commenti e suggerimenti HoloLens
 
@@ -34,7 +34,7 @@ Hub di Feedback un modo eccellente per avvisare il team di progettazione di bug 
 >  
 > - Assicurarsi di avere la versione corrente di Hub di Feedback. A tale scopo, selezionare **Avvia**  >  **Microsoft Store** e quindi selezionare i puntini di sospensione (**...**). Selezionare quindi **Download e aggiornamenti** Ottenere gli  >  **aggiornamenti**.  
 >  
-> - Per fornire i migliori dati possibili per la correzione dei problemi, è consigliabile impostare i dati di telemetria del dispositivo su **Facoltativo.** È possibile impostare questo valore durante la configurazione predefinita o usando l'app Impostazioni predefinita. Per eseguire questa operazione usando Impostazioni, selezionare **Avvia** Impostazioni  >    >  **diagnostica**  >  **dell'app per**  >  la privacy su .
+> - Per fornire i migliori dati possibili per la correzione dei problemi, è consigliabile impostare i dati di telemetria del dispositivo su **Facoltativo.** È possibile impostare questo valore durante la configurazione predefinita o usando l'app Impostazioni predefinita. Per eseguire questa operazione usando Impostazioni, selezionare **Avvia** Impostazioni  >    >  **diagnostica**  >  **dell'app** per la privacy  >  **su**.
 
 ## <a name="use-the-feedback-hub"></a>Usare il Hub di Feedback
 
@@ -44,7 +44,7 @@ Hub di Feedback un modo eccellente per avvisare il team di progettazione di bug 
    > [!NOTE]  
    > Se non viene visualizzato **Hub di Feedback,** selezionare **Tutte** le app per visualizzare l'elenco completo delle app nel dispositivo.
 
-1. Per verificare se un altro utente ha fornito commenti e suggerimenti simili, immettere alcune parole chiave sull'argomento nella casella di ricerca **Commenti** e suggerimenti.
+1. Per verificare se un altro utente ha fornito commenti e suggerimenti simili, immettere alcune parole chiave sull'argomento nella casella di ricerca **Commenti e** suggerimenti.
 1. Se si trovano commenti simili, selezionarli, aggiungere eventuali  informazioni aggiuntive disponibili nella casella Scrivi un commento e quindi selezionare **Upvote**.
 1. Se non vengono trovati commenti e suggerimenti simili, selezionare **Aggiungi nuovo feedback.**
 

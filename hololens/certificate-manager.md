@@ -12,18 +12,18 @@ ms.date: 10/13/2020
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 438a132a6bafd8c93b148b9c2c817ec93cc3bc73651f08275acc130695fa09c1
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 8b1869e786e3f3324494cecbfd596f61811e1893
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665183"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427055"
 ---
 # <a name="certificate-manager"></a>Gestione certificati
 
 - Strumenti di controllo, diagnosi e convalida migliorati per la sicurezza e la conformità dei dispositivi tramite il nuovo gestore di certificati. Questa funzionalità consente di distribuire, risolvere i problemi e convalidare i certificati su larga scala in ambienti commerciali.
 
-In Windows Holographic, versione 20H2, viene aggiunto un gestore di certificati nell'app HoloLens 2 Impostazioni. Passare a **Impostazioni > Aggiornamento & certificati > sicurezza**. Questa funzionalità offre un modo semplice e semplice per visualizzare, installare e rimuovere i certificati nel dispositivo. Con il nuovo gestore di certificati, gli amministratori e gli utenti hanno ora migliorato gli strumenti di controllo, diagnosi e convalida per garantire che i dispositivi rimangano sicuri e conformi. 
+In Windows Holographic, versione 20H2, viene aggiunto un gestore di certificati nell'app HoloLens 2 Impostazioni. Passare a **Impostazioni > Aggiornare & certificati > sicurezza**. Questa funzionalità offre un modo semplice e semplice per visualizzare, installare e rimuovere i certificati nel dispositivo. Con il nuovo gestore di certificati, gli amministratori e gli utenti hanno ora migliorato gli strumenti di controllo, diagnosi e convalida per garantire che i dispositivi rimangano sicuri e conformi. 
 
 -   **Controllo:** Possibilità di convalidare che un certificato sia stato distribuito correttamente o di confermare che è stato rimosso in modo appropriato. 
 -   **Diagnosi:** Quando si verificano problemi, la convalida dell'esistenza dei certificati appropriati nel dispositivo consente di risparmiare tempo e facilita la risoluzione dei problemi. 

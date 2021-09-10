@@ -15,12 +15,12 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8b14ebd9639495d2b174678518b4562a2b3c85fa
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.openlocfilehash: 286e90fab7be0c4132cfab15306cc57c52607ccf
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189444"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427792"
 ---
 # <a name="hololens-2-cleaning-faq"></a>HoloLens 2 domande frequenti sulla pulizia
 
@@ -35,7 +35,7 @@ ms.locfileid: "123189444"
 
 **Per pulire il dispositivo**
 
-1. Rimuovere la descrizione usando un microfibero a tinta asciutta e privo di lint per cancellare la superficie del dispositivo.
+1. Rimuovere la descrizione usando un microfibrio a tinta asciutta e privo di lint per cancellare la superficie del dispositivo.
 
    ![Pulire mentre si tiene premuto il riempimento della fronte.](images/hl2-cleaning.png)
 
@@ -58,7 +58,7 @@ No. Le pulizie della lente possono essere abrasive per i visori. Per pulire il v
 
 ## <a name="can-i-use-disinfecting-wipes-to-clean-the-device"></a>È possibile usare le cancellazioni di disinfecting per pulire il dispositivo?
 
-Sì, se le cancellazioni non contengono bleach. È possibile usare cancellazioni disinfettanti non candeggi per cancellare i dati [HoloLens superfici](#hololens-2-use-and-care).  
+Sì, se le cancellazioni non contengono bleach. È possibile usare cancellazioni disinfettanti non candeggi per cancellare i dati [HoloLens superfici.](#hololens-2-use-and-care)  
 
 > [!CAUTION]  
 > Evitare di usare cancellazioni disinfecting che contengono candeggi per pulire HoloLens superfici. È accettabile usare le cancellazioni bleach in situazioni critiche, quando non è disponibile altro. Tuttavia, la candeggi può danneggiare HoloLens visore o altre superfici.
@@ -79,13 +79,13 @@ Per pulire il rilievo della fronte, cancellarlo usando un'acqua infioreta usando
 
 ## <a name="can-i-use-ultraviolet-uv-light-to-sanitize-the-device"></a>È possibile usare la luce uv per disinfettare il dispositivo?
 
-Il led UVC, che opera a 265 m a un livello di intensità di 0,5-0,6 mW/cm<sup>2</sup>e non emette ozono, può essere usato per disinfettare HoloLens2. Seguire le specifiche del produttore per la gestione e il tempo di esposizione.
+È possibile usare il led UVC o la luce UVC fluorescente filtrata, che opera a un livello di intensità di 0,5-0,6 mW/cm2 e non emette ozono per HoloLens 2. Seguire le specifiche del produttore per la gestione e il tempo di esposizione.
 
 > [!CAUTION]  
-> Livelli elevati di esposizione UV-A e UV-B possono ridurre la qualità di visualizzazione del dispositivo e danneggiare l'innevamento del visore. L'e eccessiva esposizione alleoni UV-A e UV-B ha gli effetti seguenti, in ordine di durata e intensità dell'esposizione:
+> Livelli elevati di esposizione UV-A e UV-B possono peggiorare la qualità di visualizzazione del dispositivo e danneggiare l'innevamento del visore. L'e eccessiva esposizione alleoni UV-A e UV-B ha gli effetti seguenti, in ordine di durata e intensità dell'esposizione:
 >  
 > 1. Le chiusure del rilievo e del dispositivo vengono discolorate.
-> 1. I difetti vengono visualizzati nella protezione antiriduttiva (AR) sulla visiera e sulle finestre dei sensori.
+> 1. I difetti vengono visualizzati nell'antiriduttore (AR) sulla visiera e sulle finestre dei sensori.
 > 1. I difetti vengono visualizzati nei materiali di base del visore e nelle finestre dei sensori.
 > 1. Le prestazioni di visualizzazione si riducono.
 

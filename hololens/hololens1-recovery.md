@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: d6eb706c50e97a81910180c70be1d9dbc52bc6603cbc77ad130c1dd3b6a9010e
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 4840535030cc81f222cb25357474f1c751426e91
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115661811"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427884"
 ---
 # <a name="restart-reset-or-recover-hololens-1st-gen"></a>Riavviare, reimpostare o ripristinare HoloLens (prima generazione)
 
@@ -30,7 +30,7 @@ Se si verificano problemi con l'HoloLens, è possibile provare a riavviare o rei
 Se si sta cercando di ripristinare un HoloLens 2, vedere Ripristino di un HoloLens 2 [,](hololens-recovery.md)in quanto il processo è diverso.
 
 > [!NOTE]
-> Questo articolo è in particolare HoloLens dispositivo e software. Se gli ologrammi non hanno **[](hololens-environment-considerations.md)** un aspetto giusto, vedere HoloLens considerazioni sull'ambiente per informazioni sui fattori che migliorano la qualità degli ologrammi.
+> Questo articolo è in HoloLens e software. Se gli ologrammi non hanno **[](hololens-environment-considerations.md)** un aspetto giusto, vedere HoloLens considerazioni sull'ambiente per informazioni sui fattori che migliorano la qualità degli ologrammi.
 
 ## <a name="restart"></a>Riavvia
 
@@ -40,8 +40,8 @@ Il modo più sicuro per riavviare il HoloLens è usare Cortana, che in genere è
 
 > [!NOTE] 
 > Cortana non è disponibile in tutti i dispositivi.
-> - Cortana disponibile in tutti i HoloLens (prima generazione). 
-> - Cortana disponibile nei dispositivi HoloLens 2 compilazioni precedenti all'aggiornamento Windows Holograpic versione 2004.
+> - Cortana è disponibile in tutti i HoloLens (prima generazione). 
+> - Cortana disponibile nei dispositivi HoloLens 2 build precedenti all'aggiornamento Windows Holograpic versione 2004.
 
 1. Attivare la HoloLens.
 1. Assicurarsi che un utente sia connesso e che il dispositivo non sia in attesa di una password per sbloccarla.
@@ -82,7 +82,7 @@ Se i metodi precedenti non hanno riavviato il HoloLens, forzare un riavvio. Ques
 
 ## <a name="go-back-to-a-previous-version---hololens-1st-gen"></a>Tornare a una versione precedente - HoloLens (prima generazione)
 
-In alcuni casi, potrebbe essere necessario tornare a una versione precedente del software HoloLens software. A tale scopo, è possibile usare lo strumento Windows ripristino del dispositivo per ripristinare HoloLens alla versione precedente.
+In alcuni casi, potrebbe essere necessario tornare a una versione precedente del software HoloLens software. È possibile eseguire questa operazione usando lo strumento Windows ripristino del dispositivo per ripristinare HoloLens alla versione precedente.
 
 > [!NOTE]
 > Tornando a una versione precedente, i file e le impostazioni personali vengono eliminati.
@@ -90,7 +90,7 @@ In alcuni casi, potrebbe essere necessario tornare a una versione precedente del
 Per tornare a una versione precedente di HoloLens 1, seguire questa procedura:
 
 1. Assicurarsi di non avere telefoni o dispositivi Windows collegati al PC.
-1. Nel PC scaricare lo strumento [di ripristino Windows dispositivo (WDRT)](https://support.microsoft.com/help/12379).
+1. Nel PC scaricare [l'Windows device recovery tool (WDRT)](https://support.microsoft.com/help/12379).
 1. Scaricare il [pacchetto HoloLens di ripristino dell'aggiornamento dell'anniversario.](https://aka.ms/hololensrecovery)
 1. Al termine dei download, aprire **Esplora file**  >  **Download**. Fare clic con il pulsante destro del mouse sulla cartella compressa appena scaricata e scegliere **Estrai** tutto  >   per decomprimerla.
 1. Connessione il HoloLens al PC usando il cavo micro USB con cui è stato fornito. Anche se si usano altri cavi per connettere il HoloLens, questo funziona meglio.
@@ -99,7 +99,7 @@ Per tornare a una versione precedente di HoloLens 1, seguire questa procedura:
 1. Selezionare **Installa software** e seguire le istruzioni.
 
 > [!NOTE]
-> Se WDRT non rileva l'HoloLens, provare a riavviare il PC. Se non funziona, selezionare **Il** dispositivo non è stato rilevato, selezionare Microsoft HoloLens **e** quindi seguire le istruzioni.
+> Se WDRT non rileva il HoloLens, provare a riavviare il PC. Se non funziona, selezionare Il dispositivo **non** è stato rilevato, **selezionare** Microsoft HoloLens e quindi seguire le istruzioni.
 
 ## <a name="reset-to-factory-settings"></a>Ripristinare le impostazioni predefinite
 
@@ -118,11 +118,11 @@ Se il HoloLens ha ancora un problema, provare a reimpostarlo sullo stato factory
 
 ## <a name="reinstall-the-operating-system"></a>Reinstallare il sistema operativo
 
-Se il dispositivo continua a verificarsi un problema dopo il riavvio e la reimpostazione, è possibile usare uno strumento di ripristino nel computer per reinstallare il HoloLens del sistema operativo e del firmware.  
+Se il dispositivo ha ancora problemi dopo il riavvio e la reimpostazione, è possibile usare uno strumento di ripristino nel computer per reinstallare il HoloLens del sistema operativo e del firmware.  
 
-I dati HoloLens necessario per la reimpostazione sono in pacchetto in un aggiornamento flash completo (FFU), simile a un file con estensione iso, wim o vhd. [Informazioni sui formati di file di immagine FFU.](/windows-hardware/manufacture/desktop/wim-vs-ffu-image-file-formats)
+I dati HoloLens necessario per la reimpostazione vengono in pacchetto in un aggiornamento flash completo (FFU), simile a un file con estensione iso, wim o vhd. [Informazioni sui formati di file di immagine FFU.](/windows-hardware/manufacture/desktop/wim-vs-ffu-image-file-formats)
 
-È possibile installare un nuovo sistema operativo nel HoloLens (prima generazione) usando l'Windows di ripristino del dispositivo. Prima di usare questo strumento, verificare se il riavvio o la reimpostazione HoloLens il problema.
+È possibile installare un nuovo sistema operativo nel HoloLens (prima generazione) usando lo strumento di ripristino Windows dispositivo. Prima di usare questo strumento, verificare se il riavvio o la reimpostazione HoloLens il problema.
 
 Il processo di ripristino può richiedere del tempo. Al termine, verrà installata la versione più recente Windows software Holographic.
 
@@ -130,7 +130,7 @@ Per usare lo strumento, è necessario un computer Windows 10 o versione successi
 
 ### <a name="recover-your-hololens"></a>Ripristinare il HoloLens
 
-1. Scaricare e installare [l'Windows di ripristino del dispositivo](https://support.microsoft.com/help/12379/windows-10-mobile-device-recovery-tool-faq) nel computer.
+1. Scaricare e installare lo [strumento Windows ripristino dispositivi](https://support.microsoft.com/help/12379/windows-10-mobile-device-recovery-tool-faq) nel computer.
 1. Connessione il HoloLens (prima generazione) al computer usando il cavo MICRO USB fornito con il HoloLens.
 1. Aprire lo strumento Windows ripristino del dispositivo e seguire le istruzioni.
 
@@ -144,6 +144,6 @@ Se il dispositivo non viene rilevato, seguire questa procedura per attivarla:
 1. Se il dispositivo è spento, tenere premuto **il** pulsante di alimentazione fino a quando non si spegne completamente.
 2. Tenere premuto **il pulsante del volume** e toccare brevemente il pulsante **di** alimentazione. Il dispositivo dovrebbe avviarsi e visualizzare solo il LED centrale.
 3. Collegare il dispositivo al PC.
-4. Aprire lo strumento Windows ripristino dispositivi.
+4. Aprire lo strumento Windows ripristino del dispositivo.
 5. Selezionare **Il dispositivo non è stato rilevato** e quindi **HoloLens**. 
 6. Seguire le istruzioni per ripristinare il dispositivo.

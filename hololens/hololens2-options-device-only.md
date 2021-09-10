@@ -1,7 +1,7 @@
 ---
 title: HoloLens 2 solo dispositivo
-description: Informazioni solo HoloLens 2 dispositivo e su cosa fare dopo averrne uno personalizzato.
-keywords: HoloLens 2 opzioni di acquisto, opzioni HoloLens, Developer Edition
+description: Informazioni su HoloLens 2 dispositivo e su cosa fare dopo aver selezionato un dispositivo personalizzato.
+keywords: HoloLens 2 di acquisto, opzioni HoloLens, Developer Edition
 author: bgener
 ms.author: bogenera
 ms.reviewer: bogenera
@@ -14,34 +14,34 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 72a0ef3fbe54a090c0cd8ea1731c920120a84cb2112bf69d4e25ccddd1326d15
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: bbb99b37ab20d6ac8c593045265de29c0481a0d5
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115658786"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428250"
 ---
 # <a name="hololens-2-device-only-edition"></a>HoloLens 2 Edizione solo dispositivo
 
-HoloLens 2 offre l'esperienza di realtà mista più comoda e immersiva disponibile, migliorata dall'affidabilità, dalla sicurezza e dalla scalabilità dei servizi cloud e di intelligenza artificiale di Microsoft.
+HoloLens 2 offre l'esperienza di realtà mista più comoda e immersiva disponibile, ottimizzata dall'affidabilità, dalla sicurezza e dalla scalabilità dei servizi cloud e di intelligenza artificiale di Microsoft.
 
 ## <a name="learn-about-hololens-2"></a>Informazioni sulle HoloLens 2
 L'uso HoloLens 2 dispositivi in un ambiente commerciale può essere uno strumento potente per l'azienda o l'organizzazione. Qualsiasi HoloLens 2 può essere usato anche da uno sviluppatore per creare app di realtà mista.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XwOnHqiNAeU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## <a name="heres-what-to-do-next-with-the-hololens-2"></a>Ecco cosa fare successivamente con l'HoloLens 2
+## <a name="heres-what-to-do-next-with-the-hololens-2"></a>Ecco cosa fare successivamente con il HoloLens 2
 
-1. Guardare questo video su [HoloLens 2 use and care](/hololens/hololens2-maintenance##HoloLens-2-Use-and-Care).
-1. [Prepara il dispositivo per l'uso](/hololens/hololens2-setup) e [quindi configura il dispositivo](/hololens/hololens2-start)
-1. [Informazioni su come aggirare HoloLens 2](/hololens/holographic-home).
-1. Quando si è a proprio agio, [è possibile scattare foto o video in realtà mista.](/hololens/holographic-photos-and-videos)
-1. Esaminare tutte le app [disponibili per HoloLens 2 in Microsoft App Store.](/hololens/holographic-store-apps)
+1. Guardare questo video su [HoloLens 2 Use and Care](/hololens/hololens2-maintenance##HoloLens-2-Use-and-Care).
+1. [Prepara il dispositivo per l'uso](/hololens/hololens2-setup) e [quindi la configurazione](/hololens/hololens2-start)
+1. [Informazioni su come spostarsi tra HoloLens 2](/hololens/holographic-home).
+1. Quando si è a proprio agio, [scattare alcune foto o video di realtà mista.](/hololens/holographic-photos-and-videos)
+1. Esaminare tutte le app [disponibili per HoloLens 2 nell'App Store Di Microsoft.](/hololens/holographic-store-apps)
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-1. Iniziare subito a interagire con la realtà mista e Windows 10 nel HoloLens: vedere l'app **Suggerimenti** per esercitazioni pratica sulle interazioni con la mano. Usare il movimento start per passare a Start o pronunciare "Vai a Start" e selezionare Suggerimenti.
+1. Inizia subito a interagire con la realtà mista e a esplorare Windows 10 sul tuo HoloLens: consulta l'app **Suggerimenti** per esercitazioni pratica per le interazioni con la mano. Usare il movimento di avvio per passare a Start o pronunciare "Vai a Start" e selezionare Suggerimenti.
 1. Fare clic di seguito per continuare a leggere informazioni su come HoloLens 2.
 
 > [!div class="nextstepaction"]
-> [Introduzione a HoloLens 2](hololens2-basic-usage.md)
+> [Introduzione all'HoloLens 2](hololens2-basic-usage.md)

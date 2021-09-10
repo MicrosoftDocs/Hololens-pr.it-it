@@ -1,6 +1,6 @@
 ---
 title: HoloLens 2 implementazione e risoluzione dei problemi dei dispositivi gestiti
-description: Risoluzione dei HoloLens 2 dispositivi in un Enterprise locale
+description: Risoluzione dei HoloLens 2 dei dispositivi in un Enterprise locale
 author: JoyJaz
 ms.author: v-jjaswinski
 ms.date: 6/22/2021
@@ -12,19 +12,19 @@ ms.localizationpriority: high
 ms.reviewer: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f038cbf58b6dfaef0395a1ea5b406cce23e4e3fe0464c6bfc1162518f9caf3ff
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 9f3950de51e4bfa2a76431a2a070d87aa81ed443
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115659779"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427459"
 ---
 # <a name="troubleshooting-implementation-and-managed-devices"></a>Risoluzione dei problemi di implementazione e dispositivi gestiti 
 
-Questo articolo descrive come risolvere diversi problemi o rispondere a domande relative all'implementazione e alla gestione HoloLens 2.
+Questo articolo descrive come risolvere diversi problemi o rispondere a domande relative all'implementazione e alla gestione dei HoloLens 2.
 
 >[!IMPORTANT]
-> Prima di iniziare qualsiasi procedura di risoluzione dei problemi, assicurarsi che il dispositivo venga addebitato al **20-40%** della capacità della batteria, se possibile. Le [luci indicatore della batteria](hololens2-setup.md#lights-that-indicate-the-battery-level) posizionate sotto il pulsante di alimentazione sono un modo rapido per verificare la capacità della batteria senza accedere al dispositivo.
+> Prima di avviare qualsiasi procedura di risoluzione dei problemi, assicurarsi che il dispositivo venga addebitato al **20-40%** della capacità della batteria, se possibile. Le [luci indicatore della batteria](hololens2-setup.md#lights-that-indicate-the-battery-level) posizionate sotto il pulsante di alimentazione sono un modo rapido per verificare la capacità della batteria senza accedere al dispositivo.
 
 
 <a id="list"></a>
@@ -43,9 +43,9 @@ Questo articolo descrive come risolvere diversi problemi o rispondere a domande 
     - Per EAP-TLS, TrustedRootCA contiene l'hash SHA-1 del certificato CA radice attendibile del server. Nel Windows PC "certutil.exe -dump cert_file_name" visualizza la stringa hash SHA-1 di un certificato.
 2. Raccogliere l'acquisizione di pacchetti di rete nel punto di accesso, nel controller o nei log del server AAA per individuare i punti in cui la sessione EAP ha esito negativo.
     - Se l'identità EAP fornita da HoloLens non è prevista, verificare se è stato eseguito correttamente il provisioning dell'identità tramite un profilo Wi-Fi o un certificato client.
-    - Se il server rifiuta HoloLens certificato client, verificare se è stato effettuato il provisioning del certificato client richiesto nel dispositivo.
+    - Se il server HoloLens certificato client, verificare se è stato effettuato il provisioning del certificato client richiesto nel dispositivo.
     - Se HoloLens rifiuta il certificato del server, verificare se è stato effettuato il provisioning del certificato CA radice del server HoloLens.
-3. Se il provisioning del profilo aziendale viene effettuato tramite Wi-Fi di provisioning, è consigliabile applicare il pacchetto di provisioning in un PC Windows 10. Se si verifica un errore anche Windows 10 PC, seguire la guida alla risoluzione dei Windows di autenticazione 802.1X del client.
+3. Se il provisioning del profilo aziendale viene effettuato tramite Wi-Fi provisioning, è consigliabile applicare il pacchetto di provisioning in un PC Windows 10. Se si verifica un errore anche Windows 10 PC, seguire la guida alla risoluzione dei Windows di autenticazione 802.1X del client.
 4. Inviare commenti e suggerimenti tramite Hub di Feedback.
 
 [Torna all'elenco](#list)
@@ -59,7 +59,7 @@ Di seguito sono riportati alcuni aspetti da provare se non è possibile connette
 3. Riavviare il router Wi-Fi, quindi riavviare HoloLens. Provare a eseguire di nuovo la connessione.
 4. Se nessuna di queste operazioni funziona, verificare che il router utilizzi il firmware più recente. Queste informazioni sono disponibili nel sito Web del produttore.
 
-Quando si accede a un account aziendale o aziendale nel dispositivo, può anche essere applicato un criterio di gestione dei dispositivi mobili (MDM), se il criterio è configurato dall'amministratore IT.
+Quando si accede a un account aziendale o aziendale nel dispositivo, può anche essere applicato il criterio gestione di dispositivi mobili (MDM), se il criterio è configurato dall'amministratore IT.
 
 [Torna all'elenco](#list)
 
@@ -67,7 +67,7 @@ Quando si accede a un account aziendale o aziendale nel dispositivo, può anche 
 Se i problemi di rete sono un ostacolo alla distribuzione e all'uso di HoloLens 2 nell'organizzazione, configurare Fiddler e/o Wireshark per acquisire e analizzare il traffico HTTP/HTTPS. 
 
 ### <a name="configure-fiddler-to-capture-http-traffic"></a>Configurare Fiddler per l'acquisizione del traffico HTTP
-Fiddler è un proxy di debug Web e viene usato per risolvere i problemi relativi a HTTP(S). Acquisisce ogni richiesta HTTP che il computer effettua e registra tutti gli elementi associati. La ricerca di problemi di autenticazione dell'utente finale per le app HTTPS migliora la produttività e l'efficienza per i casi d'uso HoloLens 2 destinazione. 
+Fiddler è un proxy di debug Web e viene usato per risolvere i problemi relativi a HTTP(S). Acquisisce ogni richiesta HTTP che il computer effettua e registra tutti gli elementi associati. Individuare i problemi di autenticazione dell'utente finale per le app HTTPS migliora la produttività e l'efficienza per i casi d'uso HoloLens 2 destinazione. 
 
 #### <a name="prerequisites"></a>Prerequisiti
  
@@ -78,7 +78,7 @@ Fiddler è un proxy di debug Web e viene usato per risolvere i problemi relativi
 
 1. Nel PC installare [e](https://docs.telerik.com/fiddler-everywhere/get-started/installation-procedure) avviare Fiddler.  
 1. Nel PC configurare Fiddler per consentire ai computer remoti di connettersi.
-    1. Passare a Fiddler Impostazioni -> Connessioni
+    1. Passare a Fiddler Impostazioni -> Connections
     1. Si noti la porta di ascolto per Fiddler (il valore predefinito è 8866)
     1. Selezionare Consenti ai computer remoti di connettersi
     1. Fare clic su Salva.
@@ -106,9 +106,9 @@ Fiddler è un proxy di debug Web e viene usato per risolvere i problemi relativi
     3. Spostare il certificato nella cartella Download nel HoloLens 2
 
 2.  Nel HoloLens 2 importare il certificato di Fiddler.
-    1. Passare a Impostazioni -> aggiornamento e sicurezza -> certificati
+    1. Passare a Impostazioni certificati -> aggiornamento e sicurezza ->
     2. Fare clic su Installa certificato, passare alla cartella Download e selezionare il certificato Fiddler
-    3. Modificare il percorso dell'archivio in Computer locale
+    3. Impostare Store Location (Percorso archivio) su Local Machine (Computer locale)
     4. Modificare l'archivio certificati nella radice
     5. Selezionare Installa
     6. Verificare che il certificato sia visualizzato nell'elenco dei certificati. In caso contrario, ripetere i passaggi precedenti
@@ -117,8 +117,8 @@ Fiddler è un proxy di debug Web e viene usato per risolvere i problemi relativi
 
 Nel PC Fiddler mostrerà le HoloLens 2 HTTP(S) attive del dispositivo. Il pannello Inspectors (Controlli) in Fiddler può visualizzare la richiesta/risposta HTTP(S) in visualizzazioni diverse. Ad esempio, la visualizzazione "Raw" mostra la richiesta o la risposta non elaborata in testo normale. 
 
-### <a name="configure-wireshark-to-capture-network-traffic"></a>Configurare Wireshark per l'acquisizione del traffico di rete
-Wireshark è un analizzatore di protocolli di rete e viene usato per controllare il traffico TCP/UDP da e verso i dispositivi HoloLens 2 rete. Ciò semplifica l'identificazione del traffico che attraversa la rete verso il HoloLens 2, la quantità, la frequenza, la latenza tra determinati hop e così via.
+### <a name="configure-wireshark-to-capture-network-traffic"></a>Configurare Wireshark per acquisire il traffico di rete
+Wireshark è un analizzatore di protocolli di rete e viene usato per controllare il traffico TCP/UDP da e verso HoloLens 2 dispositivi. Ciò semplifica l'identificazione del traffico che attraversa la rete verso il HoloLens 2, la quantità, la frequenza, la latenza tra determinati hop e così via.
 
 #### <a name="prerequisites"></a>Prerequisiti:
 - Il PC deve avere accesso a Internet e supportare la condivisione Internet su Wi-Fi
@@ -127,7 +127,7 @@ Wireshark è un analizzatore di protocolli di rete e viene usato per controllare
 1. Nel PC installare [Wireshark](https://www.wireshark.org/#download) 
 1. Nel PC abilitare Hotspot mobile per condividere la connessione Internet dal Wi-Fi.
 1. Nel PC avviare Wireshark e acquisire il traffico dall'interfaccia hotspot mobile. 
-1. Nel HoloLens 2: modificare la Wi-Fi di rete nell'hotspot Mobile del PC. HoloLens 2 Il traffico IP verrà visualizzato in Wireshark.
+1. Nel HoloLens 2: modificare la Wi-Fi rete virtuale nell'hotspot Mobile del PC. HoloLens 2 Il traffico IP verrà visualizzato in Wireshark.
 
 #### <a name="analyze-wireshark-logs"></a>Analizzare i log di Wireshark
 I filtri Wireshark consentono di filtrare i pacchetti di interesse. 
@@ -149,10 +149,10 @@ Se il dispositivo è stato configurato in precedenza per un altro utente, per un
 ### <a name="symptoms"></a>Sintomi
 - L'uso del PIN per l'accesso avrà esito negativo dopo l'immissione del PIN corretto.
 - L'uso del metodo di accesso Web avrà esito negativo dopo l'accesso alla pagina Web.
-- Il dispositivo non è elencato come "aggiunto Azure AD" in [-portale di Azure](https://portal.azure.com/) -> Azure Active Directory -> Dispositivi.
+- Il dispositivo non è elencato come "aggiunto Azure AD" in [portale di Azure](https://portal.azure.com/) -> Azure Active Directory -> Dispositivi.
 
 ### <a name="cause"></a>Causa
-È possibile che il dispositivo in impatto sia stato eliminato Azure AD tenant. Ad esempio, ciò può verificarsi perché:
+È possibile che il dispositivo in impatto sia stato eliminato dal tenant Azure AD tenant. Ad esempio, ciò può verificarsi perché:
 
 - Un amministratore o un utente ha eliminato il dispositivo nel portale di Azure o tramite PowerShell.
 - Il dispositivo è stato rimosso dal tenant Azure AD a causa di inattività. Per un ambiente gestito in modo efficiente, è in genere consigliabile che gli amministratori IT rimuovono i dispositivi [inattivi](/azure/active-directory/devices/manage-stale-devices)non Azure AD tenant .
@@ -160,7 +160,7 @@ Se il dispositivo è stato configurato in precedenza per un altro utente, per un
 Quando un dispositivo in impatto tenta di contattare di nuovo il tenant Azure AD dopo l'eliminazione, l'autenticazione con Azure AD. Questo effetto è spesso invisibile all'utente del dispositivo, perché l'accesso memorizzato nella cache tramite PIN continuerà a consentire all'utente di accedere.
 
 ### <a name="mitigation"></a>Strategia di riduzione del rischio
-Attualmente non è possibile aggiungere un dispositivo HoloLens eliminato in Azure AD. I dispositivi interessati dovranno essere puliti seguendo le istruzioni su [come eseguire il reflashing del dispositivo.](hololens-recovery.md#clean-reflash-the-device)
+Attualmente non è possibile aggiungere un dispositivo HoloLens eliminato in Azure AD. I dispositivi interessati dovranno essere puliti seguendo le istruzioni su come eseguire il [reflashing del dispositivo.](hololens-recovery.md#clean-reflash-the-device)
 
 [Torna all'elenco](#list)
 
@@ -199,13 +199,13 @@ No. Tuttavia, è possibile risolvere questo problema usando uno degli approcci s
 - Creare un'app personalizzata e quindi abilitare [la modalità tutto schermo](hololens-kiosk.md). L'app personalizzata può essere personalizzata e può avviare altre app, ad esempio Remote Assist.  
 - Modificare tutte le immagini del profilo utente in Azure AD al logo aziendale. Tuttavia, questa operazione potrebbe non essere utile per tutti gli scenari.
 
-### <a name="what-logging-capabilities-does-hololens-2-offer"></a>Quali funzionalità di registrazione HoloLens 2 offre?
+### <a name="what-logging-capabilities-does-hololens-2-offer"></a>Quali funzionalità di registrazione HoloLens 2 offerte?
 
-La registrazione è limitata alle tracce che possono essere acquisite in scenari di sviluppo o risoluzione dei problemi o ai dati di telemetria che i dispositivi inviano ai server Microsoft.
+La registrazione è limitata alle tracce che possono essere acquisite in scenari di sviluppo o risoluzione dei problemi o ai dati di telemetria inviati dai dispositivi ai server Microsoft.
 
 ## <a name="questions-about-securing-hololens-devices"></a>Domande sulla protezione HoloLens dispositivi
 
-Vedere [le informazioni HoloLens 2 sicurezza.](security-overview.md)
+Vedere [le informazioni HoloLens 2 sulla sicurezza.](security-overview.md)
 Per HoloLens dispositivi di prima generazione, vedere [queste domande frequenti.](hololens1-faq-security.yml)
 
 [Torna all'elenco](#list)

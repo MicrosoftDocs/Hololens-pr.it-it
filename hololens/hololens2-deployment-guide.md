@@ -14,28 +14,28 @@ manager: sekerawa
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: d5cd9c380e0d276f0a8aa9efac14cf44885446e5
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123190328"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428825"
 ---
 # <a name="deploy-cloud-connected-hololens-2-to-external-clients"></a>Distribuire applicazioni connesse HoloLens 2 cloud a client esterni
 
-Questa guida è un supplemento alla [Guida alla distribuzione connessa al cloud](hololens2-cloud-connected-overview.md). Viene usato in situazioni in cui l'organizzazione vuole spedire HoloLens 2 dispositivi alla struttura di un client esterno per un uso a breve o a lungo termine. Il client esterno accederà al dispositivo HoloLens 2 usando le credenziali fornite dall'organizzazione e userà Remote Assist [per](/dynamics365/mixed-reality/remote-assist/ra-overview) contattare gli esperti. Questa guida fornisce [indicazioni HoloLens 2](#general-deployment-recommendations) sulla distribuzione di applicazioni che sono [](#common-external-client-deployment-concerns) applicabili alla maggior parte degli scenari di distribuzione HoloLens 2 esterni e ai problemi comuni che i clienti hanno quando distribuiscono Remote Assist per l'uso esterno. 
+Questa guida è un supplemento alla [Guida alla distribuzione connessa al cloud](hololens2-cloud-connected-overview.md). Viene usato in situazioni in cui l'organizzazione vuole spedire HoloLens 2 dispositivi alla struttura di un client esterno per un uso a breve o a lungo termine. Il client esterno accederà al dispositivo HoloLens 2 usando le credenziali fornite dall'organizzazione e userà Remote Assist [per](/dynamics365/mixed-reality/remote-assist/ra-overview) contattare gli esperti. Questa guida fornisce [indicazioni HoloLens 2](#general-deployment-recommendations) sulla distribuzione di applicazioni che sono applicabili [](#common-external-client-deployment-concerns) alla maggior parte degli scenari di distribuzione HoloLens 2 esterni e ai problemi comuni che i clienti hanno quando distribuiscono Remote Assist per l'uso esterno. 
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-L'infrastruttura seguente deve essere presente in base alla [Guida alla](hololens2-cloud-connected-overview.md) distribuzione connessa al cloud per distribuire il HoloLens 2 esternamente.
+L'infrastruttura seguente deve essere in atto in base alla [Guida alla](hololens2-cloud-connected-overview.md) distribuzione connessa al cloud per distribuire il HoloLens 2 esternamente.
 
-- Azure AD unirsi alla registrazione automatica MDM, gestita da MDM (Intune)
+- Azure AD aggiunta alla registrazione automatica MDM- Gestita da MDM (Intune)
 - Gli utenti a cui si accede con il proprio account aziendale (Azure AD)
     - Sono supportati uno o più utenti per dispositivo.
 
 ### <a name="remote-assist-licensing-and-requirements"></a>Remote Assist licenze e requisiti
 
-- Azure AD account (obbligatorio per l'acquisto della sottoscrizione e l'assegnazione delle licenze)
-- [Remote Assist sottoscrizione](/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) (o Remote Assist [versione di valutazione](/dynamics365/mixed-reality/remote-assist/try-remote-assist))
+- Azure AD account (obbligatorio per l'acquisto della sottoscrizione e l'assegnazione di licenze)
+- [Remote Assist sottoscrizione](/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) (o Remote Assist [versione di valutazione)](/dynamics365/mixed-reality/remote-assist/try-remote-assist)
 
 Vedere [Altre informazioni su Remote Assist](/hololens/hololens2-cloud-connected-overview#learn-about-remote-assist).
 
@@ -53,13 +53,13 @@ Vedere [Altre informazioni su Remote Assist](/hololens/hololens2-cloud-connected
 
 È consigliabile seguire questa procedura per la distribuzione HoloLens 2 esterna:
 
-1. Usare la [versione HoloLens del sistema operativo come](https://aka.ms/hololens2download) build di base.
+1. Usare la [versione più HoloLens del sistema operativo come](https://aka.ms/hololens2download) build di base.
 1. Assegnare licenze basate su utente o su dispositivo seguendo questa procedura:
     1. [Creare un gruppo in AAD e aggiungere membri per gli](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal#create-a-basic-group-and-add-members) utenti HoloLens/RA.
     1. [Assegnare licenze basate su dispositivo o basate su utente](/azure/active-directory/enterprise-users/licensing-groups-assign#:~:text=In%20this%20article%201%20Assign%20the%20required%20licenses,3%20Check%20for%20license%20problems%20and%20resolve%20them) a questo gruppo.
     1. (Facoltativo) Gruppi di destinazione per i criteri di gestione dei dispositivi mobili [(MDM).](hololens-enroll-mdm.md)
 
-1. Aggiungere i dispositivi AAD al tenant, [registrare automaticamente](/hololens/hololens-enroll-mdm#auto-enrollment-in-mdm)e configurare tramite [Autopilot](/hololens/hololens2-autopilot). Per altre informazioni, vedere proprietario [del dispositivo.](/hololens/security-adminless-os#device-owner)
+1. Aggiungere i dispositivi AAD al tenant, [registrare automaticamente](/hololens/hololens-enroll-mdm#auto-enrollment-in-mdm)e configurare tramite [Autopilot](/hololens/hololens2-autopilot). Per altre informazioni, vedere proprietario [del dispositivo](/hololens/security-adminless-os#device-owner).
     1. Il primo utente del dispositivo sarà il proprietario del dispositivo.
     1. Se il dispositivo è aggiunto ad AAD, l'utente che ha eseguito l'aggiunta viene reso proprietario del dispositivo.
     
@@ -74,7 +74,7 @@ Vedere [Altre informazioni su Remote Assist](/hololens/hololens2-cloud-connected
        > [!NOTE]
         > Se non si vuole disabilitare USB ma si vuole poter applicare un pacchetto di provisioning al dispositivo tramite USB, seguire le istruzioni su come consentire [l'installazione del pacchetto di provisioning.](/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)
 
-1. Usare [Windows Defender controllo delle applicazioni (WDAC)](/hololens/windows-defender-application-control-wdac) per consentire o bloccare le app nel HoloLens 2 dispositivo.
+1. Usare [Windows Defender Application Control (WDAC)](/hololens/windows-defender-application-control-wdac) per consentire o bloccare le app nel HoloLens 2 dispositivo.
 1. Aggiornare Remote Assist alla versione più recente come parte dell'installazione. Si considerino le due opzioni seguenti:
     1. Passare a Windows **Microsoft Store --> Remote Assist --> e Aggiornare l'app**.
     1. [ApplicationManagement/AllowAppStoreAutoUpdate,](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate) che consente gli aggiornamenti automatici delle app, è abilitato per impostazione predefinita. Mantenere il dispositivo collegato per ricevere gli aggiornamenti.
@@ -95,10 +95,10 @@ I client esterni sono ora pronti per l'uso delle HoloLens 2.
 
 ### <a name="ensure-that-external-clients-cant-communicate-with-one-another"></a>Assicurarsi che i client esterni non possano comunicare tra loro
 
-Remote Assist HoloLens per HoloLens chiamate non sono supportate. I client possono cercare, ma non possono comunicare tra loro. [Le barriere alle informazioni Microsoft 365](/microsoft-365/compliance/information-barriers) possono limitare ulteriormente i clienti che possono eseguire ricerche e chiamate. Un'altra opzione è usare Microsoft Teams [di directory con ambito](/MicrosoftTeams/teams-scoped-directory-search).
+Remote Assist HoloLens per HoloLens le chiamate non sono supportate. I client possono cercare, ma non possono comunicare tra loro. [Le barriere in Microsoft 365](/microsoft-365/compliance/information-barriers) possono limitare ulteriormente i clienti che possono eseguire ricerche e chiamate. Un'altra opzione è usare Microsoft Teams [di directory con ambito](/MicrosoftTeams/teams-scoped-directory-search).
 
  > [!NOTE]
-> Poiché l'accesso Single Sign-On è abilitato, è importante disabilitare il browser [usando Windows Defender Application Control (WDAC).](/hololens/windows-defender-application-control-wdac) Se un client esterno apre il browser e usa la versione Web di Teams, il client avrà accesso alla cronologia chat.
+> Poiché l'accesso Single Sign-On è abilitato, è importante disabilitare il browser [usando Windows Defender Application Control (WDAC).](/hololens/windows-defender-application-control-wdac) Se un client esterno apre il browser e usa la versione Web di Teams, il client avrà accesso alla cronologia delle chat.
 
 ### <a name="ensure-that-clients-wont-have-access-to-company-resources"></a>Assicurarsi che i client non hanno accesso alle risorse aziendali
 
@@ -118,7 +118,7 @@ La seconda opzione è creare un tenant separato che ospita i client (vedere Imma
 
 ### <a name="hidden-or-restricted-apps"></a>App nascoste o con restrizioni
 
-[La modalità tutto](/hololens/hololens-kiosk) schermo [e/o Windows Defender application control (WDAC)](/hololens/windows-efender-application-control-wdac) sono opzioni per nascondere e/o limitare le applicazioni.
+[La modalità tutto](/hololens/hololens-kiosk) schermo [e/o Windows Defender controllo delle applicazioni (WDAC)](/hololens/windows-efender-application-control-wdac) sono opzioni per nascondere e/o limitare le applicazioni.
 
 ### <a name="password-management-for-your-clients"></a>Gestione delle password per i client
 
@@ -129,7 +129,7 @@ La seconda opzione è creare un tenant separato che ospita i client (vedere Imma
 
 ### <a name="ensure-that-clients-wont-have-access-to-chat-history"></a>Assicurarsi che i client non hanno accesso alla cronologia delle chat
 
-Remote Assist cancella la cronologia chat dopo ogni sessione. Tuttavia, la cronologia chat sarà disponibile per Microsoft Teams utenti.
+Remote Assist cancella la cronologia chat dopo ogni sessione. Tuttavia, la cronologia delle chat sarà disponibile per Microsoft Teams utenti.
 
 > [!NOTE]
 > Poiché l'accesso Single Sign-On è abilitato, è importante disabilitare il browser [usando Windows Defender Application Control (WDAC).](/hololens/windows-defender-application-control-wdac)  Se un client esterno apre il browser e usa la versione Web di Teams, il client avrà accesso alla cronologia chiamate/chat.

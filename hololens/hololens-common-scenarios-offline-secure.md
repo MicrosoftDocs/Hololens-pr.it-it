@@ -1,6 +1,6 @@
 ---
-title: Scenari comuni- Sicurezza offline HoloLens 2
-description: Informazioni su come configurare uno scenario di distribuzione sicura e di distribuzione di app offline con il provisioning HoloLens dispositivi.
+title: Scenari comuni - Sicurezza offline HoloLens 2
+description: Informazioni su come configurare uno scenario di distribuzione sicura e di distribuzione di app offline con il provisioning per HoloLens dispositivi.
 keywords: HoloLens, gestione, offline, offline sicuro
 ms.date: 9/25/2020
 manager: yannisle
@@ -15,13 +15,13 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 10d1955249630202a05fbf2057e1d175855ce0b5
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189121"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428813"
 ---
-# <a name="common-scenarios--offline-secure-hololens-2"></a>Scenari comuni- Sicurezza offline HoloLens 2
+# <a name="common-scenarios--offline-secure-hololens-2"></a>Scenari comuni - Sicurezza offline HoloLens 2
 
 ## <a name="overview"></a>Panoramica
 
@@ -40,13 +40,13 @@ Questa guida fornisce indicazioni per l'applicazione di un pacchetto di provisio
 Windows 10 Configurazione del PC
 1. [Scaricare la versione HoloLens 2 file del sistema operativo](https://aka.ms/hololens2download) direttamente in un PC. 
    1. Il supporto per questa configurazione è incluso nella build 19041.1117 e successive.
-1. Scaricare/installare lo strumento Arc (Advanced Recovery Companion) [dal Microsoft Store](https://www.microsoft.com/store/productId/9P74Z35SFRS8) nel PC
+1. Scaricare/installare lo strumento Advanced Recovery Companion (ARC) [dal Microsoft Store](https://www.microsoft.com/store/productId/9P74Z35SFRS8) al PC
 1. Scaricare/installare lo strumento [Windows Configuration Designer (WCD)](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?activetab=pivot:overviewtab) più recente dal Microsoft Store nel PC.
 1. [Scaricare la cartella OfflineSecureHL2_Sample con i file di progetto](https://aka.ms/HoloLensDocs-SecureOfflineSample) per compilare il file PPKG.
 1. Preparare [l'applicazione line-of-business](app-deploy-provisioning-package.md)offline per la distribuzione PPKG . 
 
 
-## <a name="configure"></a>Configurazione
+## <a name="configure"></a>Configurare
 
 Creare un pacchetto di provisioning della configurazione sicura
 
@@ -90,12 +90,12 @@ Creare un pacchetto di provisioning della configurazione sicura
    > [!div class="mx-imgBorder"]
    > ![Screenshot del pulsante Esporta per questo pacchetto in WCD.](images/offline-secure-sample-wcd-export.png)
 
-## <a name="deploy"></a>Distribuire
+## <a name="deploy"></a>Distribuisci
 
 1. Connessione HL2 al PC Windows 10 tramite cavo USB.
 1. Avviare lo strumento ARC e selezionare **HoloLens 2**
 
-   ![HoloLens 2 iniziale della reflash pulita.](images/ARC2.png)
+   ![HoloLens 2 schermata iniziale della reflash pulita.](images/ARC2.png)
 
 1. Nella schermata successiva selezionare **Selezione manuale del pacchetto.**
 
@@ -110,9 +110,9 @@ Creare un pacchetto di provisioning della configurazione sicura
 1. Al termine dell'installazione e dell'avvio del dispositivo, dal PC passare a Esplora file e copiare il file PPKG salvato in precedenza nella cartella del dispositivo.
 
    > [!div class="mx-imgBorder"]
-   > ![File PPKG nel PC Esplora file finestra.](images/offline-secure-file-explorer.png)
+   > ![File PPKG nel PC in Esplora file finestra.](images/offline-secure-file-explorer.png)
 
-1. Nel HoloLens 2 premere la casella combinata di pulsanti seguenti per eseguire il pacchetto di provisioning: toccare **volume** in basso e **pulsante** di alimentazione contemporaneamente.
+1. Nell'HoloLens 2 premere la casella combinata di pulsanti seguenti per eseguire il pacchetto di provisioning: toccare **volume** in basso e **pulsante** di alimentazione contemporaneamente.
 1. Verrà richiesto di applicare il pacchetto di provisioning e selezionare **Conferma**
 1. Al termine del pacchetto di provisioning, selezionare **OK.**
 1. Verrà quindi richiesto di accedere al dispositivo con l'account locale condiviso e la password.

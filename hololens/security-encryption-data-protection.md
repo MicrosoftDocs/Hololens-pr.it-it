@@ -13,12 +13,12 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: cd1d3ae238924537b1d36f4acdf239f0dc644326827d2c6041ceb94b013b3801
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: e156fc21bfd1541dd8718a7349e7ba82b45576be
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665506"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428311"
 ---
 # <a name="encryption-and-data-protection"></a>Crittografia e protezione dei dati
 
@@ -30,10 +30,10 @@ BitLocker è una funzionalità di crittografia del volume completo per la protez
 
 BDE è una funzionalità di protezione dei dati che usa la crittografia AES-XTS-256 in tutti i volumi nel layout separato dallo stato del dispositivo. BDE fornisce la crittografia a livello di dispositivo in un layout separato dallo stato. BitLocker Crittografia dispositivo viene abilitato automaticamente nel sistema operativo e nei volumi di dati fissi e non può essere disattivato, anche dagli amministratori IT, in modo che il dispositivo sia sempre protetto.
 
-Le chiavi di crittografia BDE vengono quindi usate per decrittografare in modo trasparente i file binari e i dati necessari per avviare il dispositivo. Quando il volume del sistema operativo viene sbloccato e un sistema viene avviato, gli altri volumi diventano accessibili usando una versione specifica del volume della protezione per lo sblocco automatico. Non sono disponibili altre protezione per mantenere la privacy dell'utente e l'unità può essere sbloccata solo nello stesso dispositivo. L'imposizione di sola lettura (RO) sui volumi necessari viene applicata e applicata immediatamente, a partire dal primo avvio. La chiave di ripristino di BitLocker non è necessaria nel ciclo HoloLens 2 vita.
+Le chiavi di crittografia BDE vengono quindi usate per decrittografare in modo trasparente i file binari e i dati necessari per avviare il dispositivo. Quando il volume del sistema operativo viene sbloccato e un sistema viene avviato, gli altri volumi diventano accessibili usando una versione specifica del volume della protezione per lo sblocco automatico. Non sono disponibili altre protezione per mantenere la privacy dell'utente e l'unità può essere sbloccata solo sullo stesso dispositivo. L'imposizione di sola lettura (RO) sui volumi necessari viene applicata e applicata immediatamente, a partire dal primo avvio. La chiave di ripristino di BitLocker non è necessaria nel ciclo HoloLens 2 vita.
 
 ## <a name="azure-integration"></a>Integrazione con Azure 
 
 HoloLens 2 consente ai clienti di integrare i propri dispositivi con i servizi di Azure. Le comunicazioni tra HoloLens 2 e Azure usano il protocollo TLS (Transport Layer Security) per proteggere i dati in viaggio tra se stesso e i servizi cloud che offrono autenticazione avanzata, privacy dei messaggi e integrità. Tutti i servizi di Azure supportano completamente TLS 1.2 e tutti i servizi in cui i clienti usano solo TLS 1.2 accettano solo traffico TLS 1.2. Gli standard di crittografia di Azure per i dati in transito sono dettagliati in Panoramica [della crittografia di Azure.](/azure/security/fundamentals/encryption-overview) Per altre informazioni sulle procedure consigliate per la sicurezza e la crittografia dei dati di Azure, vedere [la documentazione di Azure.](/azure/security/fundamentals/data-encryption-best-practices) 
 
-OneDrive, un esempio di integrazione cloud con HoloLens 2, include una funzionalità di caricamento automatico in cui i file e i documenti possono essere caricati automaticamente nel cloud quando si è connessi a Internet. La sospensione della sincronizzazione automatica dei file non può essere disattivata tramite criteri, ma è configurabile direttamente tramite l'esperienza utente. 
+OneDrive, un esempio di integrazione cloud con HoloLens 2, include una funzionalità di caricamento automatico in cui i file e i documenti possono essere caricati automaticamente nel cloud quando sono connessi a Internet. La sospensione della sincronizzazione automatica dei file non può essere disattivata tramite criteri, ma è configurabile direttamente tramite l'esperienza utente. 

@@ -14,11 +14,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 92040019b093c5ef63d74f095dcb3809112ae7a0
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123190430"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428713"
 ---
 # <a name="page-settings-visibility"></a>Visibilità Impostazioni pagina
 
@@ -28,7 +28,7 @@ Una delle funzionalità gestibili per i dispositivi HoloLens usa i criteri [Impo
 > Questa funzionalità è disponibile solo in [Windows Holographic, versione 20H2](hololens-release-notes.md#windows-holographic-version-20h2) o successiva per HoloLens 2 dispositivi. Assicurarsi che i dispositivi per cui si intende usarlo siano aggiornati.
 
 
-## <a name="examples"></a>Esempi
+## <a name="examples"></a>Esempio
 Le pagine sono identificate da una versione abbreviata degli URI pubblicati, ovvero l'URI meno il prefisso "ms-settings:".
 
 L'esempio seguente illustra un criterio che consente l'accesso solo alle pagine About e Bluetooth, che hanno rispettivamente l'URI "network-wifi" e "bluetooth":
@@ -95,7 +95,7 @@ HoloLens dispositivi e Windows 10 hanno una selezione diversa di pagine all'inte
 | App & funzionalità <sup>2</sup>     | `appsfeatures` <br> |
 | Funzionalità & app > Opzioni avanzate <sup>2</sup>     | `appsfeatures-app` <br> |
 | App & funzionalità > offline Mappe <sup>2</sup>     | `maps-maps` <br> |
-| App & funzionalità > offline Mappe > download mappe <sup>2</sup>     | `maps-downloadmaps` <br> |
+| App & funzionalità > offline Mappe > Download maps <sup>2</sup>     | `maps-downloadmaps` <br> |
 
 ### <a name="devices"></a>Dispositivi
 | Pagina Impostazioni | URI                          |
@@ -156,34 +156,34 @@ HoloLens dispositivi e Windows 10 hanno una selezione diversa di pagine all'inte
 | <sup>Calibrazione 2</sup> |  `calibration` |
 | Notifiche e azioni  | `notifications`          |
 | Esperienze condivise | `crossdevice` 
-| Suono <sup>2</sup>           | `sound`<br>|
+| Audio <sup>2</sup>           | `sound`<br>|
 | Audio > volume dell'app e preferenza del dispositivo <sup>2</sup>           | `apps-volume`<br>|
-| Audio > gestire i dispositivi audio <sup>2</sup>           | `sound-devices`<br>|
+| Gestione > audio <sup>2</sup>           | `sound-devices`<br>|
 | Archiviazione            | `storagesense`           |
-| Archiviazione > configurare Archiviazione Sense <sup>2</sup>           | `storagepolicies`<br>|
+| Archiviazione > Configurare Archiviazione Sense <sup>2</sup>           | `storagepolicies`<br>|
 
-### <a name="time--language"></a>Lingua & tempo
+### <a name="time--language"></a>Lingua & ora
 | Pagina Impostazioni | URI                                           |
 |---------------|-----------------------------------------------|
-| Data <sup>&'ora 2</sup> | `dateandtime`                  |
+| Data & <sup>2</sup> | `dateandtime`                  |
 | Tastiera <sup>2</sup> | `keyboard`                  |
 | Lingua <sup>2</sup> | `language`                  |
 | Lingua <sup>2</sup> | `regionlanguage-languageoptions`                  |
 | Linguaggio      | `regionlanguage`<br>`regionlanguage-adddisplaylanguage`<br>`regionlanguage-setdisplaylanguage` |
 | Region        | `regionformatting`                  |
 
-### <a name="update--security"></a>Aggiornare la & sicurezza
+### <a name="update--security"></a>Aggiornare & sicurezza
 | Pagina Impostazioni                         | URI                                       |
 |---------------------------------------|-------------------------------------------|
 | Opzioni avanzate                    | `windowsupdate-options`         |
 | Ripristino & ripristino <sup>2</sup>      | `reset`         |
 | Programma Windows Insider               | `windowsinsider` <br>`windowsinsider-optin`          |
 | Windows Update                        | `windowsupdate`<br> `windowsupdate-activehours`  <br> `windowsupdate-history` <br> `windowsupdate-optionalupdates` <br><sup>1</sup>`windowsupdate-options`<br><sup>1</sup>`windowsupdate-restartoptions` |
-| Windows Update - Controlla la disponibilità di aggiornamenti | `windowsupdate-action`          |
+| Windows Aggiornamento: verifica la disponibilità di aggiornamenti | `windowsupdate-action`          |
 
 
-- <sup>1</sup> - Per le versioni precedenti Windows Holographic, versione 21H1, i due URI  **seguenti** non visualizzano effettivamente le pagine Opzioni avanzate. bloccano o visualizzano solo la pagina principale Windows Aggiorna.
-  -  windowsupdate-options
+- <sup>1</sup> - Per le versioni precedenti Windows Holographic, versione 21H1, i due URI  seguenti non visualizzano effettivamente le pagine Opzioni **avanzate;** verranno bloccate o mostrate solo le pagine Windows pagina Aggiorna.
+  -  opzioni di windowsupdate
   -  windowsupdate-restartoptions
 
 - <sup>2</sup> - Disponibile in Windows Holographic 21H1 o versione successiva.

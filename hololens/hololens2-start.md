@@ -1,6 +1,6 @@
 ---
 title: Configurare l'HoloLens 2
-description: Informazioni su come configurare il HoloLens 2 per la prima volta in una rete Wi-Fi con un account Microsoft (MSA) o Azure Active Directory (AAD).
+description: Informazioni su come configurare il HoloLens 2 per la prima volta tramite una rete Wi-Fi con un account Microsoft (MSA) o Azure Active Directory (AAD).
 ms.assetid: 507305f4-e85a-47c5-a055-a3400ae8a10e
 ms.date: 6/09/2021
 keywords: hololens
@@ -13,17 +13,17 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 8f07ed42c873b62b3b4201c2756b55bbb29707d3
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189767"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427834"
 ---
 # <a name="set-up-your-hololens-2"></a>Configurare l'HoloLens 2
 
-La prima volta che si attiva il HoloLens, si verrà guidati nella configurazione del dispositivo, nell'accesso con un account utente e nella calibrazione del HoloLens agli occhi.  Questa sezione illustra in modo HoloLens 2 configurazione iniziale.
+La prima volta che si attiva il HoloLens, si verrà guidati nella configurazione del dispositivo, nell'accesso con un account utente e nella calibrazione del HoloLens agli occhi.  In questa sezione viene illustrata la HoloLens 2 configurazione iniziale.
 
-Nella sezione successiva si apprenderà come usare le HoloLens e interagire con gli ologrammi. Per passare direttamente a questo articolo, vedere [Getting around HoloLens 2](hololens2-basic-usage.md).
+Nella sezione successiva si apprenderà come usare le HoloLens e interagire con gli ologrammi. Per passare direttamente a questo articolo, vedere [Guida introduttiva HoloLens 2](hololens2-basic-usage.md).
 
 ## <a name="before-you-start"></a>Prima di iniziare
 
@@ -31,11 +31,11 @@ Prima di iniziare, verificare che siano disponibili gli elementi seguenti:
 
 **Una connessione di rete**. È necessario connettere il HoloLens a una rete per configurarlo. Con HoloLens 2, è possibile connettersi con Wi-Fi o tramite ethernet (è necessaria una scheda USB-C-Ethernet). La prima volta che ci si connette, è necessaria una rete aperta o protetta da password che non richiede il passaggio a un sito Web o l'uso di certificati per la connessione. [Altre informazioni sui siti Web che HoloLens usa](hololens-offline.md).
 
-**Oggetto account Microsoft**. È anche necessario accedere a HoloLens con un account Microsoft (o con l'account aziendale, se l'organizzazione è proprietaria del dispositivo). Se non si ha una account Microsoft, passare a [account.microsoft.com](https://account.microsoft.com) e configurarne una gratuitamente.
+**Oggetto account Microsoft**. È anche necessario accedere a un HoloLens con un account Microsoft (o con l'account aziendale, se l'organizzazione è proprietaria del dispositivo). Se non si ha una account Microsoft, passare a [account.microsoft.com](https://account.microsoft.com) e configurarne una gratuitamente.
 
 **Uno spazio sicuro e ben acceso senza rischi di inciampo.** [Informazioni su integrità e sicurezza](https://go.microsoft.com/fwlink/p/?LinkId=746661).
 
-**Gli accessori di comfort facoltativi** che sono stati HoloLens, per facilitare la scelta più comoda. [Altre informazioni su fit e comfort.](hololens2-setup.md#adjust-fit)
+**Gli accessori di comfort** facoltativi che sono stati HoloLens, per aiutare a ottenere la configurazione più comoda. [Altre informazioni su fit e comfort.](hololens2-setup.md#adjust-fit)
 
 ## <a name="set-up-windows"></a>Configurazione di Windows
 
@@ -70,7 +70,7 @@ Verrà visualizzato un pulsante con un logo Microsoft. Premere il pulsante per H
     
     <img src="images/06-et-corners.png" width="500px" alt="Calibration selection screen">
     
-    2. Per calibrare, si animerà un set di destinazioni (denominate gemme). È possibile lampeggiare o chiudere gli occhi durante la calibrazione, ma provare a non guardare altri oggetti nella stanza o nello spazio fisico. HoloLens usa questo processo per conoscere la posizione dell'occhio in modo che possa migliorare il rendering del mondo olografico. 
+    2. Per calibrare, si animerà un set di destinazioni (denominate gemme). È possibile lampeggiare o chiudere gli occhi durante la calibrazione, ma provare a non guardare altri oggetti nella stanza o nello spazio fisico. HoloLens usa questo processo per ottenere informazioni sulla posizione degli occhi in modo da migliorare il rendering del mondo olografico. 
 
         <img src="images/07-adjust-eyes.png" width="500px" alt="Adjust for your eyes">
 
@@ -85,22 +85,22 @@ Verrà visualizzato un pulsante con un logo Microsoft. Premere il pulsante per H
     ![Connessione alla rete Wi-Fi.](images/11-network.png)
 
     > [!NOTE] 
-    > Se si procede oltre il passaggio Wi-Fi e successivamente è necessario passare a una  rete diversa  durante la configurazione, è possibile premere i pulsanti Volume in basso e Alimentazione contemporaneamente per tornare a questo passaggio se si esegue una versione del sistema operativo da ottobre 2019 o versioni successive. Per le versioni precedenti, [](hololens-recovery.md) potrebbe essere necessario reimpostare il dispositivo o riavviarlo in una posizione in cui la rete Wi-Fi non è disponibile per impedire la connessione automatica.
+    > Se si procede oltre il passaggio Wi-Fi e successivamente è necessario passare a una  rete  diversa durante la configurazione, è possibile premere i pulsanti Volume in basso e Alimentazione contemporaneamente per tornare a questo passaggio se si esegue una versione del sistema operativo da ottobre 2019 o versioni successive. Per le versioni precedenti, [](hololens-recovery.md) potrebbe essere necessario reimpostare il dispositivo o riavviarlo in un percorso in cui la rete Wi-Fi non è disponibile per impedirne la connessione automatica.
     > 
-    > Si noti anche che durante HoloLens installazione di , si verifica un timeout delle credenziali di due minuti. Il nome utente/password deve essere immesso entro due minuti. In caso contrario, il campo del nome utente verrà cancellato automaticamente.
+    > Si noti anche che durante HoloLens di installazione, si verifica un timeout delle credenziali di due minuti. Il nome utente/password deve essere immesso entro due minuti. In caso contrario, il campo del nome utente verrà cancellato automaticamente.
 
 1. HoloLens 2 ricerca e applica un profilo Autopilot, se esistente. In questa schermata non è necessaria alcuna azione.
  
     ![Ricerca del profilo autopilot.](images/autopilot-profile-search.png) 
 
-1. Fare **clic su** Accetta nella schermata delle licenze.
+1. Fare **clic su Accetta** nella schermata delle licenze.
 
     ![Windows contratto di licenza.](images/windows-license-agreement.png)
 
 1. Accedere al proprio account utente. Si sceglierà tra My work or school owns it and I own it ( Il mio lavoro **o l'istituto di** istruzione ne è il proprietario ed è il mio **proprietario).**
 
     ![Impostare l'utente.](images/13-device-owner.png)
-    - Quando si sceglie **Appartiene all'azienda o all'istituto di istruzione**, si esegue l'accesso con un account Azure AD. Se l'organizzazione usa Azure AD Premium e ha configurato la registrazione MDM automatica, HoloLens automaticamente la registrazione in MDM. Se l'organizzazione non usa Azure AD Premium, la registrazione MDM automatica non è disponibile. In tal caso, è necessario registrare manualmente i [HoloLens nella gestione dei dispositivi.](hololens-enroll-mdm.md#different-ways-to-enroll)
+    - Quando si sceglie **Appartiene all'azienda o all'istituto di istruzione**, si esegue l'accesso con un account Azure AD. Se l'organizzazione usa Azure AD Premium e ha configurato la registrazione MDM automatica, HoloLens automaticamente la registrazione in MDM. Se l'organizzazione non usa Azure AD Premium, la registrazione MDM automatica non è disponibile. In tal caso, è necessario registrare [manualmente le HoloLens nella gestione dei dispositivi.](hololens-enroll-mdm.md#different-ways-to-enroll)
 
         1. Immettere le informazioni sull'account aziendale.
         1. Accettare l'informativa sulla privacy e il contratto di licenza con l'utente finale.
@@ -134,7 +134,7 @@ Verrà visualizzato un pulsante con un logo Microsoft. Premere il pulsante per H
 
     <img src="images/22-do-more-with-voice.png" width="500px" alt="Enable Cortana">
 
-1. Specificare se abilitare la posizione nella HoloLens 2.
+1. Selezionare se abilitare la posizione nella HoloLens 2.
     
     <img src="images/setup-location-services.png" width="500px" alt="Enable location services">
 
@@ -151,7 +151,7 @@ Verrà visualizzato un pulsante con un logo Microsoft. Premere il pulsante per H
     
     > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3Wxng]
     
-    È stata  La configurazione è stata completata e si è pronti per usare HoloLens.
+    Congratulazioni!  La configurazione è stata completata e si è pronti per usare HoloLens.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

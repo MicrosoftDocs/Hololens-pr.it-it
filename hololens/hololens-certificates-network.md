@@ -13,30 +13,30 @@ audience: ITPro
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d9b752c820af8dbceb2b6b9f3c7a7be4df910805b5a5014bb3e3650551392ce8
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 62eedd0c05bb23f11a4e17a97b4ab5441a2931cf
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664309"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428921"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-hololens-2"></a>Preparare i certificati e i profili di rete per HoloLens 2
 
-L'autenticazione basata su certificati è un requisito comune per i clienti che usano HoloLens 2. Potrebbero essere necessari certificati per accedere al Wi-Fi, per connettersi alle soluzioni VPN o per accedere alle risorse interne dell'organizzazione.
+L'autenticazione basata su certificato è un requisito comune per i clienti che usano HoloLens 2. Potrebbero essere necessari certificati per accedere al Wi-Fi, per connettersi a soluzioni VPN o per accedere alle risorse interne dell'organizzazione.
 
-Poiché i dispositivi HoloLens 2 vengono in genere aggiunti a Azure Active Directory (Azure AD) e gestiti da Intune o da un altro provider MDM, sarà necessario distribuire tali certificati usando un'infrastruttura di certificati Simple Certificate Enrollment Protocol (SCEP) o PKCS (Public Key Cryptography Standard) integrata con la soluzione MDM. 
+Poiché i dispositivi HoloLens 2 sono in genere aggiunti a Azure Active Directory (Azure AD) e gestiti da Intune o da un altro provider MDM, è necessario distribuire tali certificati usando un'infrastruttura di certificati Simple Certificate Enrollment Protocol (SCEP) o PKCS (Public Key Cryptography Standard) integrata con la soluzione MDM. 
 
 >[!NOTE]
-> Se non si dispone di un provider MDM, è comunque possibile distribuire i [](certificate-manager.md) certificati tramite un pacchetto di [provisioning](hololens-provisioning.md#steps-for-creating-provisioning-packages) in [Progettazione](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?rtc=1&activetab=pivot:regionofsystemrequirementstab) configurazione Windows o tramite Gestione certificati passando a Impostazioni > Update & Security > **Certificate Manager**.
+> Se non si dispone di un provider MDM, è comunque possibile distribuire i certificati tramite un pacchetto di [provisioning](hololens-provisioning.md#steps-for-creating-provisioning-packages) in Progettazione configurazione [Windows](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?rtc=1&activetab=pivot:regionofsystemrequirementstab) o tramite [Certificate Manager](certificate-manager.md) passando a Impostazioni > Update & Security > Certificate **Manager**.
 
 ## <a name="certificate-requirements"></a>Requisiti per i certificati
-I certificati radice sono necessari per distribuire i certificati tramite un'infrastruttura SCEP o PKCS. Altri servizi e applicazioni dell'organizzazione potrebbero richiedere la distribuzione dei certificati radice anche HoloLens 2 dispositivi. 
+I certificati radice sono necessari per distribuire i certificati tramite un'infrastruttura SCEP o PKCS. Altre applicazioni e servizi nell'organizzazione potrebbero richiedere la distribuzione di certificati radice anche HoloLens 2 dispositivi. 
 
 ## <a name="wi-fi-connectivity-requirements"></a>Wi-Fi di connettività
-Per consentire a un dispositivo di essere fornito automaticamente con la configurazione Wi-Fi per la rete aziendale, è necessario un profilo Wi-Fi configurazione. È possibile configurare Intune o un altro provider MDM per distribuire questi profili nei dispositivi. Se la sicurezza di rete richiede che i dispositivi siano parte del dominio locale, potrebbe anche essere necessario valutare l'infrastruttura di rete Wi-Fi per assicurarsi che sia compatibile con i dispositivi HoloLens 2 (i dispositivi HoloLens 2 sono aggiunti solo Azure AD).
+Per consentire a un dispositivo di essere fornito automaticamente con la configurazione Wi-Fi per la rete aziendale, è necessario un Wi-Fi di configurazione. È possibile configurare Intune o un altro provider MDM per distribuire questi profili nei dispositivi. Se la sicurezza di rete richiede che i dispositivi siano parte del dominio locale, potrebbe anche essere necessario valutare l'infrastruttura di rete Wi-Fi per assicurarsi che sia compatibile con i dispositivi HoloLens 2 (solo i dispositivi HoloLens 2 sono aggiunti Azure AD).
 
-## <a name="deploy-certificate-infrastructure"></a>Distribuire l'infrastruttura di certificazione
-Se non esiste già un'infrastruttura SCEP o PKCS, è necessario prepararne una. Per supportare l'uso di certificati SCEP o PKCS per l'autenticazione, Intune richiede l'uso di un [connettore di certificati.](/mem/intune/protect/certificate-connectors)
+## <a name="deploy-certificate-infrastructure"></a>Distribuire l'infrastruttura di certificati
+Se non esiste già un'infrastruttura SCEP o PKCS, è necessario prepararne una. Per supportare l'uso di certificati SCEP o PKCS per l'autenticazione, Intune richiede l'uso di un [connettore di certificati](/mem/intune/protect/certificate-connectors).
 
 > [!NOTE]
 > Quando si usa SCEP con una CA Microsoft, è necessario configurare anche il servizio Registrazione dispositivi di rete [(NDES)](/mem/intune/protect/certificates-scep-configure#set-up-ndes)
@@ -45,26 +45,26 @@ Per altre informazioni, vedere [Configurare un profilo certificato per i disposi
 
 ## <a name="deploy-certificates-and-wi-fivpn-profile"></a>Distribuire certificati e profilo Wi-Fi/VPN
 Per distribuire certificati e profili, seguire questa procedura:
-1.  Creare un profilo per ognuno dei certificati radice e intermedio (vedere [Creare profili certificato attendibile).](/intune/protect/certificates-configure#create-trusted-certificate-profiles) Ognuno di questi profili deve avere una descrizione che includa una data di scadenza nel formato GG/MM/AAAA. **I profili certificato senza una data di scadenza non verranno distribuiti.**
-1.  Creare un profilo per ogni certificato SCEP o PKCS (vedere Creare un profilo certificato SCEP o Creare un profilo certificato [PKCS)](/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)Ognuno di questi profili deve avere una descrizione che includa una data di scadenza nel formato GG/MM/AAAA. **I profili certificato senza una data di scadenza non verranno distribuiti.**
+1.  Creare un profilo per ognuno dei certificati radice e intermedio (vedere [Creare profili certificato attendibili).](/intune/protect/certificates-configure#create-trusted-certificate-profiles) Ognuno di questi profili deve avere una descrizione che includa una data di scadenza in formato GG/MM/AAAA. **I profili certificato senza una data di scadenza non verranno distribuiti.**
+1.  Creare un profilo per ogni certificato SCEP o PKCS (vedere Creare un profilo certificato SCEP o Creare un profilo certificato [PKCS](/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)) Ognuno di questi profili deve avere una descrizione che includa una data di scadenza in formato GG/MM/AAAA. **I profili certificato senza una data di scadenza non verranno distribuiti.**
 
     > [!NOTE]
-    > Poiché il HoloLens 2 viene considerato per molti come un dispositivo condiviso, più utenti per dispositivo, è consigliabile distribuire i certificati del dispositivo anziché i certificati utente per l'autenticazione Wi-Fi laddove possibile
+    > Poiché il HoloLens 2 è considerato per molti un dispositivo condiviso, più utenti per dispositivo, è consigliabile distribuire i certificati del dispositivo anziché i certificati utente per l'autenticazione Wi-Fi laddove possibile
 
-3.  Creare un profilo per ogni rete Wi-Fi aziendale (vedere [Impostazioni Wi-Fi](/intune/wi-fi-settings-windows)per i dispositivi Windows 10 e versioni successive). 
+3.  Creare un profilo per ogni rete Wi-Fi aziendale (vedere Impostazioni Wi-Fi per Windows 10 [e dispositivi successivi).](/intune/wi-fi-settings-windows) 
     > [!NOTE]
-    > È consigliabile assegnare il Wi-Fi a [Gruppi](/mem/intune/configuration/device-profile-assign) di dispositivi anziché a Gruppi di utenti, laddove possibile. 
+    > È consigliabile assegnare il Wi-Fi [a](/mem/intune/configuration/device-profile-assign) Gruppi di dispositivi anziché a Gruppi di utenti, laddove possibile. 
 
     > [!TIP]
     > È anche possibile esportare un profilo Wi-Fi lavoro da un PC Windows 10 nella rete aziendale. Questa esportazione crea un file XML con tutte le impostazioni correnti. Importare quindi questo file in Intune e usarlo come profilo Wi-Fi per i HoloLens 2 dispositivi. Vedere [Esportare e importare Wi-Fi impostazioni per Windows dispositivi.](/mem/intune/configuration/wi-fi-settings-import-windows-8-1)
 
-4.  Creare un profilo per ogni VPN aziendale (vedere Windows 10 e Windows impostazioni del dispositivo [Holographic](/intune/vpn-settings-windows-10)per aggiungere connessioni VPN con Intune).
+4.  Creare un profilo per ogni VPN aziendale (vedere Windows 10 e Windows impostazioni del dispositivo [Holographic per](/intune/vpn-settings-windows-10)aggiungere connessioni VPN con Intune).
 
 ## <a name="troubleshooting-certificates"></a>Risoluzione dei problemi relativi ai certificati
 
 Nel caso in cui sia necessario convalidare la corretta distribuzione di un certificato, usare [Gestione](certificate-manager.md) certificati nel dispositivo per verificare che il certificato sia presente.  
 
 >[!WARNING]
-> Sebbene sia possibile visualizzare i certificati distribuiti da MDM in Gestione certificati, non è possibile disinstallarli in Gestione certificati. È necessario disinstallarli tramite MDM.
+> Anche se è possibile visualizzare i certificati distribuiti da MDM in Gestione certificati, non è possibile disinstallarli in Gestione certificati. È necessario disinstallarli tramite MDM.
 
 

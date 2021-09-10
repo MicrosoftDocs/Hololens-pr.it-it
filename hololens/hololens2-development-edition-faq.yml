@@ -16,11 +16,11 @@ metadata:
   appliesto:
   - HoloLens 2
   ms.openlocfilehash: 85631d756285f4111016e39dc946733bb1e12d3c
-  ms.sourcegitcommit: 6b3b455f66a2b4d5b42f4674a5ff940a2a01c294
+  ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 08/20/2021
-  ms.locfileid: "122610251"
+  ms.lasthandoff: 09/10/2021
+  ms.locfileid: "124428884"
 title: HoloLens 2 Domande frequenti sull'edizione development
 summary: ''
 sections:
@@ -39,13 +39,13 @@ sections:
     answer: >
       Sì. Qualsiasi edizione di HoloLens 2 può essere usata per sviluppare app.
   - question: >
-      Come e come si riceveranno i 500 dollari in crediti Azure, la versione di valutazione di Unity Pro di 3 mesi e la versione di valutazione del plug-in Pixyz di 3 mesi?
+      Come e come si riceveranno i 500 dollari in crediti Azure, la versione di valutazione di 3 mesi di Unity Pro e la versione di valutazione del plug-in Pixyz di 3 mesi?
     answer: >
       I crediti scontati o l'accesso alla versione di valutazione verranno inclusi nell'HoloLens 2 Development Edition.
   - question: >
       È possibile "aggiornare" il dispositivo HoloLens 2 (solo dispositivo) alla HoloLens 2 Development Edition per ottenere i crediti della versione di valutazione?
     answer: >
-      No, non sono disponibili piani di trasferimento dei dispositivi. Non è possibile eseguire il trasferimento da qualsiasi edizione a qualsiasi altra edizione.
+      No, non sono disponibili piani di trasferimento dei dispositivi. Non è possibile eseguire il trasferimento da un'edizione a un'altra.
   - question: >
       Che cos'è Unity Pro?
     answer: >
@@ -60,9 +60,9 @@ sections:
   - question: >
       Who è possibile contattare per domande sui diritti HoloLens 2 Development Edition?
     answer: >
-      Per eventuali domande relative ai diritti, contattare lo specialista di vendita al numero 866-425-4709, da lun a fri, dalle 06:00 alle 18:00, PST.
-  - question: "L'azienda può acquistare più dispositivi HoloLens 2 Development Edition? \n"
-    answer: "Questo dispositivo è per gli sviluppatori che compilano soluzioni di realtà mista. Viene limitato un acquisto per transazione del cliente. Se l'azienda vuole acquistare più dispositivi Development Edition, saranno necessarie transazioni separate per acquistare dispositivi HoloLens 2 Development Edition per conto dell'azienda. \n"
+      Per eventuali domande relative ai diritti, contattare lo specialista di vendita al numero 866-425-4709, dal lunedì al venerdì, dalle 06:00 alle 18:00, PST.
+  - question: "L'azienda può acquistare più HoloLens 2 Development Edition? \n"
+    answer: "Questo dispositivo è per gli sviluppatori che compilano soluzioni di realtà mista. È previsto un limite di un acquisto per transazione del cliente. Se l'azienda vuole acquistare più dispositivi Development Edition, saranno necessarie transazioni separate per acquistare dispositivi HoloLens 2 Development Edition per conto dell'azienda. \n"
   - question: "È possibile mostrare il dispositivo HoloLens 2 Development Edition ai clienti? \n"
     answer: >
       Sì, questo dispositivo deve essere usato per la prototipazione e il test di soluzioni di realtà mista.
@@ -70,7 +70,7 @@ sections:
     answer: "HoloLens 2 Development Edition viene venduto esclusivamente in Microsoft Store.  \n"
   - question: "È possibile restituire l'HoloLens 2 Development Edition?  \n"
     answer: >
-      Tutte le vendite sono finali e non sono disponibili rimborsi in HoloLens 2 Development Edition.
+      Tutte le vendite sono definitive e non sono disponibili rimborsi in HoloLens 2 Development Edition.
   - question: >
       Developer Edition ha requisiti hardware diversi da HoloLens 2?
     answer: "No, questo dispositivo è lo stesso dal punto di vista dei requisiti hardware. L'edizione di sviluppo può essere distribuita per facilitare lo sviluppo e/o il test delle applicazioni in un ambiente commerciale. \n"
@@ -87,7 +87,7 @@ sections:
     answer: >
       Sì.
   - question: >
-      È possibile eseguire applicazioni rilasciate (sideload o archiviazione) nel dispositivo HoloLens 2 Development Edition?
+      È possibile eseguire applicazioni rilasciate (sideload o store) nel dispositivo HoloLens 2 Development Edition?
     answer: >
       Se si rispettano i termini e le condizioni di HoloLens 2 Development Edition, sì, è possibile eseguire qualsiasi applicazione rilasciata in Developer Edition. Non è previsto alcun limite per l'uso di applicazioni archiviate o con sideloaded per questo SKU.
   - question: >
@@ -111,7 +111,7 @@ sections:
   - question: >
       Che cosa è incluso nella versione di valutazione di Unity?
     answer: >
-      Una versione di valutazione di Unity Pro di tre mesi consente l'accesso alla soluzione completa di Unity&#39;che i professionisti possono creare, usare e monetizzare. La versione di valutazione Pro Unity correlata non ha scadenza per il riscatto.
+      Una versione di valutazione di Unity Pro di tre mesi consente l'accesso alla soluzione completa di Unity&#39;per consentire ai professionisti di creare, gestire e monetizzare. La versione di valutazione Pro Unity correlata non ha scadenza per il riscatto.
 
 
       Questa offerta è per i nuovi utenti e non si applica alle sottoscrizioni Pro Unity stabilite. Le Pro di valutazione di Unity possono essere soggette a condizioni aggiuntive che verranno rese disponibili al momento del riscatto. Esaminare le condizioni [applicabili &amp; e l'informativa](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0) sulla [privacy.](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0)
@@ -130,7 +130,7 @@ sections:
       4. Immettere il codice prodotto e selezionare &#39;Riscatta un codice prodotto&#39;
 
 
-      Per altre HoloLens 2, vedere [la](hololens2-options.md?tabs=device) documentazione di HoloLens 2 Development Edition
+      Per altre HoloLens 2, vedere la documentazione di HoloLens 2 Development [Edition.](hololens2-options.md?tabs=device)
   - question: >
       È possibile compilare applicazioni con versioni di Unity diverse dalla licenza PRO?
     answer: >
@@ -138,7 +138,7 @@ sections:
   - question: >
       Ricerca per categorie contattare il supporto di Unity?
     answer: >
-      Per ottenere assistenza per eventuali domande su ID Unity, account, organizzazioni e sottoscrizioni, visitare support.unity3d.com.
+      Per ottenere assistenza per eventuali domande su ID, account, organizzazioni e sottoscrizioni di Unity, visitare support.unity3d.com.
 - name: Pixyz
   questions:
   - question: >
@@ -163,7 +163,7 @@ sections:
       4. Immettere il codice prodotto e fare clic su &#39;Riscatta un codice prodotto&#39;
 
 
-      Per altre HoloLens 2, vedere [la](hololens2-options.md?tabs=device) documentazione di HoloLens 2 Development Edition
+      Per altre HoloLens 2, vedere la documentazione di HoloLens 2 Development [Edition.](hololens2-options.md?tabs=device)
   - question: >
       Ricerca per categorie contattare il supporto di Pixyz?
     answer: >
@@ -176,7 +176,7 @@ sections:
   - question: >
       Come si riscatta il credito di Azure da $ 500?
     answer: >
-      Per riscattare i crediti di Azure da $ 500, riscattare il Azure Pass promozionale e attivare la sottoscrizione. [Scopri di più](https://www.microsoftazurepass.com/Home/HowTo?Length=5)
+      Per riscattare i crediti di Azure da $ 500, riscattare il codice Azure Pass promozionale e attivare la sottoscrizione. [Scopri di più](https://www.microsoftazurepass.com/Home/HowTo?Length=5)
 
 
       Esaminare il contratto Azure Pass [sottoscrizione e](https://azure.microsoft.com/support/legal/subscription-agreement/?country=US) i dettagli [dell'offerta.](https://azure.microsoft.com/en-us/offers/azure-pass/)

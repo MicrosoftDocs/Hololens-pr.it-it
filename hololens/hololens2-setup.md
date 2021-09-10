@@ -13,11 +13,11 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 77c061c53806e7410d73ecf3aaa20d74c217ea33
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123190413"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427289"
 ---
 # <a name="get-your-hololens-2-ready-to-use"></a>Prepararsi per HoloLens 2'uso
 
@@ -25,7 +25,7 @@ Le procedure seguenti consentono di configurare un HoloLens 2 per la prima volta
 
 ## <a name="charge-your-hololens"></a>Addebitare i costi HoloLens
 
-Connessione l'alimentatore alla porta di ricarica usando il cavo USB-C (incluso). Collegare l'alimentatore a una presa di alimentazione. L'alimentatore e il cavo USB-C-to-C fornito con il dispositivo sono il modo migliore per caricare il HoloLens 2. Il caricatore fornisce 18W di potenza (9 V a 2A). Usando il caricatore a pareti fornito, HoloLens 2 dispositivi possono caricare la batteria in meno di 65 minuti quando il dispositivo è in standby.
+Connessione l'alimentatore alla porta di ricarica usando il cavo USB-C (incluso). Collegare l'alimentatore a una presa di alimentazione. L'alimentatore e il cavo USB-C-to-C forniti con il dispositivo sono il modo migliore per caricare HoloLens 2. Il caricatore fornisce 18W di potenza (9 V a 2A). Usando il caricatore a HoloLens 2, i dispositivi possono ricaricare la batteria in meno di 65 minuti quando il dispositivo è in standby.
 
 La velocità e la velocità di ricarica possono variare a seconda dell'ambiente in cui è in esecuzione il dispositivo.
 
@@ -48,7 +48,7 @@ Se necessario, estendere la fascetta ruotando la ruota di regolazione e quindi a
 
 Il sovraccarico non è necessario, ma può rendere più HoloLens 2 durante lunghi periodi di utilizzo.
 
-Per scollegare la parte anteriore del sovraccarico, distogliere l'anello e scorrerlo attraverso il ciclo ritrattibile sul riquadro della fronte. Per ricollegarlo, estrarre il ciclo e scorrere di nuovo l'anello.
+Per scollegare la parte anteriore del sovraccarico, distogliere l'anello e scorrerlo attraverso il ciclo ritrattibile sul riquadro delle brow. Per ricollegarlo, estrarre il ciclo e scorrere di nuovo l'anello.
 
 Per scollegare la parte posteriore del sovraccarico, premere il pulsante sotto ogni scheda di connessione ed eseguire il pull. Per ricollegare il collegamento, eseguire il push delle schede di connessione negli slot fino a quando non fanno clic.
 
@@ -63,7 +63,7 @@ Per attivare la HoloLens 2, premere il pulsante Di alimentazione.  I LED sotto i
 
 ### <a name="power-button-actions-for-different-power-transitions"></a>Azioni del pulsante di alimentazione per diverse transizioni di alimentazione
 
-| Per | Eseguire questa azione | Il HoloLens 2 a tale scopo |
+| Per | Eseguire questa azione | Il HoloLens 2 questa operazione |
 | - | - | - |
 | Per attivare | Pressione di un singolo pulsante. | Tutte e cinque le luci si accendono e quindi cambiano per indicare il livello della batteria. Dopo quattro secondi, viene riprodotto un suono. |
 | Dormire | Pressione di un singolo pulsante. | Tutte e cinque le luci si accendono, quindi si sfumano una alla volta. Dopo lo spegnimento delle luci, viene riprodotto un suono e sullo schermo viene visualizzato "Goodbye". |
@@ -73,13 +73,13 @@ Per attivare la HoloLens 2, premere il pulsante Di alimentazione.  I LED sotto i
 
 ## <a name="hololens-behavior-reference"></a>HoloLens sul comportamento
 
-Non si è certi del significato delle luci HoloLens dispositivo? Si vuole sapere come HoloLens comportamento durante l'addebito?  Ecco un aiuto.
+Non si è certi del significato delle luci HoloLens indicatori? Si vuole sapere come HoloLens comportamento durante l'addebito?  Ecco un aiuto.
 
 ### <a name="charging-behavior"></a>Comportamento di addebito
 
 | Stato del dispositivo | Azione | HoloLens 2 questa operazione |
 | - | - | - |
-| OFF | Collegare il cavo USB | Il dispositivo passa a ON con indicatori di illuminazione che mostrano il livello della batteria e il dispositivo inizia a ricaricarsi.
+| OFF | Collegare il cavo USB | Il dispositivo passa a ON con indicatori di illuminazione che mostrano il livello della batteria e il dispositivo inizia la ricarica.
 | ON | Rimuovere il cavo USB | Il dispositivo smette di ricaricarsi
 | ON | Collegare il cavo USB | Il dispositivo avvia l'addebito
 | DORMIRE | Collegare il cavo USB | Il dispositivo avvia l'addebito
@@ -94,7 +94,7 @@ Non si è certi del significato delle luci HoloLens dispositivo? Si vuole sapere
 | Tre luci a tinta unita, una luce in uscita e in uscita | Tra l'80% e il 61% |
 | Due luci a tinta unita, una luce in uscita e in uscita | Tra il 60% e il 41% |
 | Una luce a tinta unita, una luce in uscita e in uscita | Tra il 40% e il 21% |
-| Una luce che si dissolve in e fuori | Tra il 20% e il 5% o inferiore (batteria critica) |
+| Una luce in uscita e in uscita | Tra il 20% e il 5% o inferiore (batteria critica) |
 
 ### <a name="sleep-behavior"></a>Comportamento di sospensione
 
@@ -120,7 +120,7 @@ Usare le HoloLens in uno spazio sicuro, senza ostruzione e rischi di inciampo. N
 
 ### <a name="stay-comfortable"></a>Rimanere a proprio agio
 
-Mantenere le prime sessioni con HoloLens breve e assicurarsi di eseguire le interruzioni. In caso di disagi, fermarsi e attendere fino a quando non si è migliori. Ad esempio, i movimenti temporanei, le emozioni di movimento, le vertigini, l'orientamento, la difficoltà, l'affaticamento, l'affaticamento oculare o gli occhi secchi.
+Mantenere brevi le prime sessioni HoloLens brevi e assicurarsi di eseguire alcune interruzioni. In caso di disagi, fermarsi e attendere fino a quando non si è migliori. Può trattarsi di temporanea malattia, mal di movimento, vertigini, disorientamento, difficoltà, affaticamento, affaticamento oculare o occhi secchi.
 
 Vedere [gli avvisi sulla sicurezza del prodotto e le istruzioni](https://support.microsoft.com/help/4558037/product-safety-warnings-and-instructions).
 

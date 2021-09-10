@@ -18,12 +18,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 63c82e5b1a953ee2f69bf4c22a8442c7bca07f073cc13f1e5e573fde0ccc1976
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: f2d9faafac2f84b727b1e10be83d4d1b53a707b4
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662932"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428572"
 ---
 # <a name="manage-connection-endpoints-for-hololens"></a>Gestire gli endpoint di connessione per HoloLens
 
@@ -31,11 +31,11 @@ Alcuni HoloLens, le app e i servizi correlati trasferiscono i dati agli endpoint
 
 ## <a name="near-offline-setup"></a>Configurazione quasi offline
 
-HoloLens supporta un set limitato di esperienze offline per i clienti con restrizioni relative all'ambiente di rete. Tuttavia, HoloLens deve essere stabilita una connessione di rete per eseguire la configurazione iniziale del dispositivo e devono essere abilitati gli URL seguenti:
+HoloLens supporta un set limitato di esperienze offline per i clienti che hanno restrizioni relative all'ambiente di rete. Tuttavia, HoloLens deve essere stabilita una connessione di rete per eseguire la configurazione iniziale del dispositivo e devono essere abilitati gli URL seguenti:
 
 | Scopo | URL |
 |------|------|
-| Sfollati | https://sdx.microsoft.com/frx/idps |
+| SFOLLATI | https://sdx.microsoft.com/frx/idps |
 | [NCSI](/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services#bkmk-ncsi) |  http://www.msftconnecttest.com/connecttest.txt  |
 | AADv9 | https://login.microsoftonline.com/WebApp/CloudDomainJoin/9 |
 | AADv10 | https://login.microsoftonline.com/WebApp/CloudDomainJoin/10 |
@@ -45,7 +45,7 @@ HoloLens supporta un set limitato di esperienze offline per i clienti con restri
 
 ## <a name="endpoint-configuration"></a>Configurazione dell'endpoint
 
-Oltre all'elenco precedente, per sfruttare al meglio HoloLens funzionalità, nella configurazione di rete devono essere abilitati gli endpoint seguenti.
+Oltre all'elenco precedente, per sfruttare appieno HoloLens funzionalità, nella configurazione di rete devono essere abilitati gli endpoint seguenti.
 
 
 | Scopo | URL |
@@ -152,7 +152,7 @@ Oltre all'elenco precedente, per sfruttare al meglio HoloLens funzionalità, nel
 ## <a name="references"></a>Riferimenti
 
 > [!NOTE]
-> Se si distribuisce D365 Remote Assist, è necessario abilitare gli endpoint elencati per SharePoint Online e OneDrive for Business negli URL Office 365 e negli intervalli di indirizzi [IP](/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams).
+> Se si distribuisce D365 Remote Assist, sarà necessario abilitare gli endpoint elencati per SharePoint Online e OneDrive for Business negli URL di Office 365 e negli intervalli di indirizzi [IP](/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams).
 
 - [Configurare i dati di diagnostica di Windows nell'organizzazione](/windows/privacy/configure-windows-diagnostic-data-in-your-organization)
 - [Gestire gli endpoint di connessione Windows 10 Enterprise versione 1903](/windows/privacy/manage-windows-1903-endpoints)
@@ -166,4 +166,4 @@ Oltre all'elenco precedente, per sfruttare al meglio HoloLens funzionalità, nel
 
 ## <a name="hololens-limitations"></a>HoloLens limitazioni
 
-Dopo aver configurato il HoloLens, è possibile usarlo senza una connessione Wi-Fi, ma le app che usano connessioni Internet avranno funzionalità limitate quando si HoloLens offline.
+Dopo aver configurato HoloLens, è possibile usarlo senza una connessione Wi-Fi, ma le app che usano connessioni Internet avranno funzionalità limitate quando si usa HoloLens offline.

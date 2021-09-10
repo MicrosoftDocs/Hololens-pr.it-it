@@ -1,6 +1,6 @@
 ---
 title: HoloLens domande frequenti sull'adattamento e il comfort (prima generazione)
-description: Rimanere aggiornati con le risposte alle domande frequenti su come adattare il HoloLens di realtà mista (prima generazione).
+description: Rimanere aggiornati con le risposte alle domande frequenti su come adattare il dispositivo HoloLens di realtà mista (prima generazione).
 ms.prod: hololens
 ms.sitesec: library
 author: Teresa-Motiv
@@ -13,12 +13,12 @@ audience: ITPro
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: ae3a1fcb3c9ab2ea5a1ad6d7703903c54671a1590a5732f1fbde489362d9b63d
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: c596eac214b0134d04a5b34acded69ff973be3b4
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662629"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427093"
 ---
 # <a name="hololens-1st-gen-fit-and-comfort-frequently-asked-questions"></a>HoloLens domande frequenti sull'adattamento e il comfort (prima generazione)
 
@@ -33,7 +33,7 @@ Ecco alcuni suggerimenti su come rimanere a proprio agio e avere la migliore esp
 
 ## <a name="im-experiencing-discomfort-when-i-use-my-device-what-should-i-do"></a>Si verificano problemi quando si usa il dispositivo. Cosa devo fare?
 
-Se si verificano disagi, fare una pausa fino a quando non si è meglio. Provare a sedersi in una stanza ben illuminata e a un po' di relax. Al successivo utilizzo del HoloLens, provare a usarlo per un periodo di tempo più breve all'inizio.
+Se si verificano disagi, fare una pausa fino a quando non si è meglio. Provare a sedersi in una stanza ben illuminata e a un po' di relax. Al successivo uso del HoloLens, provare a usarlo per un periodo di tempo più breve all'inizio.
 
 Per altre informazioni, vedere [Integrità e sicurezza HoloLens](https://go.microsoft.com/fwlink/p/?LinkId=746661).
 
@@ -45,10 +45,10 @@ Per visualizzare il bordo superiore della cornice olografica, spostare il dispos
 
 Provare a regolare la posizione della visiera del dispositivo in modo che la cornice olografica corrisponda al tuo sguardo naturale. Ecco come:
 
-- **Se è necessario cercare per visualizzare gli ologrammi.** Per prima cosa, spostare la parte posteriore della fascia un po' più in alto sulla testa. Usare quindi una mano per tenere la fascia a posto e l'altra per ruotare la visiera in modo da avere una buona visualizzazione della cornice olografica.
-- **Se è necessario guardare in basso per visualizzare gli ologrammi**. Per prima cosa, spostare la parte posteriore della fascia un po' più in basso sulla testa. Posizionare quindi i pollici sotto le braccia del dispositivo e le dita dell'indice sopra la fascia e stringere leggermente con i pollici per ruotare la visiera in modo da avere una buona vista della cornice olografica.
+- **Se è necessario cercare per visualizzare gli ologrammi.** Per prima cosa, spostare la parte posteriore della fascia un po' più in alto sulla testa. Usare quindi una mano per posizionare la fascia e l'altra per ruotare la visiera in modo da avere una buona visualizzazione della cornice olografica.
+- **Se è necessario guardare in basso per visualizzare gli ologrammi**. Per prima cosa, spostare la parte posteriore della fascia un po' più in basso sulla testa. Posizionare quindi i pollici sotto le braccia del dispositivo e le dita indice sopra la fascia e stringere leggermente con i pollici per ruotare la visiera in modo da avere una buona visualizzazione della cornice olografica.
 
-## <a name="the-device-slides-down-when-im-using-it-or-i-need-to-make-the-headband-too-tight-to-keep-it-secure"></a>Il dispositivo scorre verso il basso quando lo si usa o è necessario che la fascia sia troppo stretta per mantenerla sicura
+## <a name="the-device-slides-down-when-im-using-it-or-i-need-to-make-the-headband-too-tight-to-keep-it-secure"></a>Il dispositivo scorre verso il basso quando lo si usa o è necessario rendere la fascia troppo stretta per mantenerla sicura
 
 La cinghia a testa HoloLens, in particolare se ci si sposta molto. La cinghia può anche consentire di allentare un po' la fascia. [Informazioni su come usarlo.](hololens1-setup.md#adjust-fit)
 
@@ -56,9 +56,9 @@ La cinghia a testa HoloLens, in particolare se ci si sposta molto. La cinghia pu
 
 ## <a name="my-hololens-feels-heavy-on-my-nose"></a>La HoloLens si sente pesante sul mio naso
 
-Se il HoloLens è regolato correttamente, il pad del naso dovrebbe poggiare leggermente sul naso. Se si ritiene pesante sul naso, provare a ruotare la visiera verso l'alto o a regolare l'angolo della fascia. È anche possibile far scorrere il visore del dispositivo fuori afferrare le bracci del dispositivo proprio dietro la &mdash; visiera e tirare in avanti con cautela.
+Se il HoloLens è regolato correttamente, il pad del naso dovrebbe poggiare leggermente sul naso. Se si ritiene pesante sul naso, provare a ruotare la visiera verso l'alto o a regolare l'angolo della fascia. È anche possibile far scorrere la visiera del dispositivo fuori afferrare le bracci del dispositivo proprio dietro la &mdash; visiera e tirare in avanti con cautela.
 
-## <a name="how-can-i-adjust-hololens-to-fit-with-my-glasses"></a>Come è possibile regolare HoloLens per adattarsi agli occhiali?
+## <a name="how-can-i-adjust-hololens-to-fit-with-my-glasses"></a>Come è possibile regolare HoloLens adattarlo agli occhiali?
 
 La visiera del dispositivo può scorrere in e fuori per ospitare gli occhiali. Afferrare le bracci del dispositivo appena dietro la visiera e tirare in avanti con cautela per regolarlo.
 

@@ -14,13 +14,13 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: 98ec5795974fa242225bb1048ead41892d8296e4
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189954"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427718"
 ---
-# <a name="use-the-hololens-1st-gen-clicker"></a>Usare il HoloLens (prima generazione)
+# <a name="use-the-hololens-1st-gen-clicker"></a>Usare il HoloLens clicker di prima generazione
 
 Il clicker è stato progettato specificamente per HoloLens (prima generazione) e offre un altro modo per interagire con gli ologrammi. Viene fornito con HoloLens (prima generazione), in una casella separata.
 
@@ -40,11 +40,11 @@ Ecco il significato delle luci sul clicker.
 - **Bianco lampeggiante veloce.** L'associazione è riuscita.
 - **Bianco a tinta** unita. Il clicker sta addebitando un addebito.
 - **Lampeggiante ambra**. La batteria è in esaurimento.
-- **Ambra solida**. Il clicker ha rilevato un errore ed è necessario riavviarlo. Quando si preme il pulsante di associazione, fare clic e tenere premuto per 15 secondi.
+- **Ambra solida**. Il clicker ha rilevato un errore ed è necessario riavviarlo. Mentre si preme il pulsante di associazione, fare clic e tenere premuto per 15 secondi.
 
 ### <a name="pair-the-clicker-with-your-hololens-1st-gen"></a>Associare il clicker al HoloLens (prima generazione)
 
-1. Usare il movimento di fiore per passare a **Start,** quindi **selezionare Impostazioni** Dispositivi e verificare che Bluetooth sia  >   impostata.
+1. Usare il movimento di fiore per passare a **Start,** quindi **selezionare Impostazioni** dispositivi e verificare che Bluetooth  >   sia on.
 1. Sul clicker tenere premuto il pulsante di associazione fino a quando la luce di stato non lampeggia di colore bianco.
 1. Nella schermata di associazione selezionare Clicker Pair **(Coppia clicker).**  >  
 
@@ -56,32 +56,32 @@ Quando la batteria del clicker è in esaurimento, l'indicatore della batteria la
 
 ### <a name="hold-the-clicker"></a>Tenere premuto il clicker
 
-Per inserire il clicker, far scorrere il ciclo sull'anello o sul dito intermedio in modo che la porta Micro USB si rivolgano verso il puntatore del mouse. Posizionare il cursore sul rientro.
+Per inserire il clicker, far scorrere il ciclo sull'anello o sul dito intermedio in modo che la porta Micro USB sia rivolto verso il puntatore del mouse. Posizionare il cursore sul rientro.
 
 ![Come mantenere il clicker.](images/use-hololens-clicker-2.png)
 
 ### <a name="clicker-gestures"></a>Movimenti del clicker
 
-I movimenti del clicker sono piccole rotazioni di rotazione, non i movimenti più grandi usati per HoloLens movimenti della mano. E HoloLens riconosce i movimenti e i clic anche se il clicker si trova all'esterno del frame del [movimento,](hololens1-basic-usage.md)in modo da poter tenere il clicker nella posizione più comoda.
+I movimenti del clicker sono piccole rotazioni di rotazione, non i movimenti più grandi usati per HoloLens movimenti della mano. E HoloLens riconosce i movimenti e fa clic anche se il clicker si trova all'esterno del frame del [movimento,](hololens1-basic-usage.md)in modo da poter tenere il clicker nella posizione più comoda per l'utente.
 
 - **Selezionare**. Per selezionare un ologramma, un pulsante o un altro elemento, fissarlo e quindi fare clic su .
 
 - **Fare clic e tenere premuto**. Fare clic e tenere premuto il cursore sul pulsante per eseguire alcune delle stesse operazioni che si farebbe con tocco e tenere premuto, ad esempio spostare o ridimensionare un ologramma.
 
-- **Scorrere**. Nella barra dell'app selezionare **Strumento di scorrimento.** Fare clic e tenere premuto, quindi ruotare il clicker verso l'alto, verso il basso, a sinistra o a destra. Per scorrere più velocemente, spostare la mano più lontano dal centro dello strumento di scorrimento.
+- **Scorrere**. Sulla barra dell'app selezionare **Strumento di scorrimento.** Fare clic e tenere premuto, quindi ruotare il clicker verso l'alto, verso il basso, a sinistra o a destra. Per scorrere più velocemente, spostare la mano più lontano dal centro dello strumento di scorrimento.
 
 - **Zoom**. Sulla barra dell'app selezionare **Strumento zoom.** Fare clic e tenere premuto, quindi ruotare il clicker verso l'alto per fare zoom avanti o verso il basso per fare zoom indietro.
 
 > [!TIP]
 > Per fare zoom avanti o indietro quando si usa Microsoft Edge, osservare una pagina e fare doppio clic.
 
-## <a name="im-having-problems-using-the-hololens-clicker"></a>Si verificano problemi durante l'uso HoloLens clicker
+## <a name="im-having-problems-using-the-hololens-clicker"></a>Si verificano problemi durante l'uso del HoloLens clic
 
 Usare il [clicker](hololens1-clicker.md) per selezionare, scorrere, spostare e ridimensionare gli ologrammi. Le singole app possono supportare movimenti clicker aggiuntivi.
 
 Se si verificano problemi durante l'uso del clicker, assicurarsi che sia addebitato e associato al HoloLens. Se la batteria è in esaurimento, la luce dell'indicatore lampeggia ambra. Per verificare che il clicker sia associato, passare Impostazioni dispositivi e verificare se  >   viene visualizzato qui. Per altre informazioni, vedere [Associare il clicker.](hololens1-clicker.md)
 
-Se il clicker viene addebitato e associato e si verificano ancora problemi, reimpostarlo tenendo premuto il pulsante principale e il pulsante di associazione per 15 secondi. Associare quindi il clicker al HoloLens di nuovo.
+Se il clicker viene addebitato e associato e si verificano ancora problemi, reimpostarlo tenendo premuto il pulsante principale e il pulsante di associazione per 15 secondi. Associare quindi il clicker al HoloLens nuovamente.
 
 Se la reimpostazione del clicker non è utile, vedere Riavviare o ripristinare il [HoloLens clicker.](hololens1-clicker.md#restart-or-recover-the-clicker)
 ## <a name="restart-or-recover-the-clicker"></a>Riavviare o ripristinare il clicker
@@ -100,12 +100,12 @@ Selezionare **Impostazioni**  >  **dispositivi e** selezionare il clicker. Selez
 
 ### <a name="recover-the-clicker"></a>Ripristinare il clicker
 
-Se il riavvio e la ria associazione del clicker non consentono di risolvere il problema, lo strumento di ripristino Windows dispositivo può essere utile per ripristinarlo. Il processo di ripristino può richiedere del tempo e installerà la versione più recente del software clicker. Per usare lo strumento, è necessario un computer che esegue Windows 10 o versione successiva con almeno 4 GB di spazio di archiviazione disponibile.
+Se il riavvio e la ria associazione del clicker non consentono di risolvere il problema, lo strumento Windows ripristino del dispositivo può essere utile per il ripristino. Il processo di ripristino può richiedere tempo e installerà la versione più recente del software clicker. Per usare lo strumento, è necessario un computer che esegue Windows 10 o versione successiva con almeno 4 GB di spazio di archiviazione disponibile.
 
 Per ripristinare il clicker:
 
 1. Scaricare e installare lo [Windows di ripristino dei](https://dev.azure.com/ContentIdea/ContentIdea/_queries/query/8a004dbe-73f8-4a32-94bc-368fc2f2a895/) dispositivi nel computer.
-1. Connessione il clicker al computer usando il cavo Micro USB fornito con l'HoloLens.
+1. Connessione fare clic sul computer usando il cavo Micro USB fornito con l'HoloLens.
 1. Eseguire lo Windows di ripristino dei dispositivi e seguire le istruzioni.
 
 Se il clicker non viene rilevato automaticamente, selezionare **Il** dispositivo non è stato rilevato e seguire le istruzioni per impostare la modalità di ripristino del dispositivo.

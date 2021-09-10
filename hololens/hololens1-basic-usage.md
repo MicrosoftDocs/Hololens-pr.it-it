@@ -15,23 +15,23 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: 70ee881eb0c2ffaade173b31e5168371d042bbb2
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123190073"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428515"
 ---
 # <a name="getting-around-hololens-1st-gen"></a>Come spostarsi HoloLens (prima generazione)
 
 Sei pronto a entrare nel mondo degli ologrammi? Ecco alcune informazioni per iniziare.
 
-Questa guida offre un'introduzione alla realtà mista, i movimenti per interagire con gli ologrammi e un'introduzione alla Windows olografica.
+Questa guida offre un'introduzione alla realtà mista, i movimenti per l'interazione con gli ologrammi e un'introduzione Windows olografica.
 
 ## <a name="discover-mixed-reality"></a>Scoprire la realtà mista
 
 In HoloLens, gli ologrammi si fondono con l'ambiente fisico per sembrare parte del mondo. Anche quando gli ologrammi sono tutti intorno a te, puoi comunque vedere l'ambiente circostante, spostarti liberamente e interagire con altri oggetti e persone. Questa esperienza viene chiamata "realtà mista".
 
-La cornice olografica posiziona gli ologrammi in cui gli occhi sono più sensibili ai dettagli e le lenti see-through lasciano la visione periferica senza problemi. Con l'audio spaziale, è possibile individuare un ologramma anche se è dietro di te. Inoltre, HoloLens apprende e comprende l'ambiente, è possibile posizionare ologrammi su e intorno a oggetti reali, così come le app e i giochi. Un carattere di un gioco potrebbe quindi sedersi sul divano o i robot spaziali potrebbero uscire [dalle pareti.](https://www.microsoft.com/store/apps/9nblggh5fv3j)
+La cornice olografica posiziona gli ologrammi in cui gli occhi sono più sensibili ai dettagli e le lenti see-through lasciano la visione periferica senza problemi. Con l'audio spaziale, è possibile individuare un ologramma anche se è dietro di te. Inoltre, HoloLens apprende e comprende l'ambiente, è possibile posizionare ologrammi su e intorno a oggetti reali, così come le app e i giochi. Quindi, un carattere in un gioco potrebbe sedersi sul divano o i robot spaziali potrebbero uscire [dalle pareti.](https://www.microsoft.com/store/apps/9nblggh5fv3j)
 
 ## <a name="use-hololens-with-your-hands"></a>Usare HoloLens con le mani
 
@@ -39,7 +39,7 @@ Spostarsi tra HoloLens è molto simile all'uso dello smartphone. È possibile us
 
 Quando si conoscono queste interazioni di base, HoloLens sarà un'introduzione.
 
-Le nozioni di base verranno trattate la prima volta che si usa il HoloLens. Nel menu **Start** è disponibile anche un'esercitazione sui movimenti. Cercare l'app Learn Gestures (Apprende movimenti).
+Le nozioni di base verranno trattate la prima volta che si usa il HoloLens. Nel menu **Start** è disponibile anche un'esercitazione sui movimenti, che consente di cercare l'app Learn Gestures ( Apprende movimenti).
 
 ### <a name="the-hand-tracking-frame"></a>Frame di tracciamento della mano
 
@@ -66,7 +66,7 @@ Per selezionare un'app o un altro ologramma, toccarla mentre si guarda direttame
 
 ### <a name="select-a-hologram-by-using-your-voice"></a>Selezionare un ologramma usando la voce
 
-1. Il cursore sguardo fisso è un punto che si sposta spostando la testa. È possibile usarlo per specificare come destinazione i comandi vocali con precisione.
+1. Il cursore sguardo fisso è un punto che si sposta spostando la testa. È possibile usarlo per impostare come destinazione i comandi vocali con precisione.
 1. Osservare l'ologramma che si vuole selezionare.
 1. Per selezionare l'ologramma, pronunciare "Seleziona".
 
@@ -74,7 +74,7 @@ Per selezionare un'app o un altro ologramma, toccarla mentre si guarda direttame
 
 A questo punto è possibile testare i movimenti.
 
-Le app installate sono disponibili [](holographic-home.md) nel menu Start e sono presenti più app per HoloLens (prima generazione) nel Microsoft Store.
+Le app installate sono disponibili nel [menu Start](holographic-home.md) e sono presenti più app per HoloLens (prima generazione) nel Microsoft Store.
 
 Aprire il menu **Start** e selezionare un'app.
 
@@ -84,10 +84,10 @@ Quando si posiziona una finestra dell'app o un'icona di avvio dell'app, questa r
 
 ## <a name="move-resize-and-rotate-apps"></a>Spostare, ridimensionare e ruotare le app
 
-Lo spostamento e il ridimensionamento delle app HoloLens funziona in modo leggermente diverso rispetto a quello di un PC. Invece di trascinare l'app, si userà lo sguardo fisso, insieme a un [movimento o](https://support.microsoft.com/help/12644/hololens-use-gestures) al [clic.](hololens1-clicker.md) È anche possibile ruotare una finestra dell'app nello spazio 3D.
+Lo spostamento e il ridimensionamento delle app HoloLens funziona in modo leggermente diverso rispetto a un PC. Invece di trascinare l'app, si userà lo sguardo fisso, insieme a un [movimento o](https://support.microsoft.com/help/12644/hololens-use-gestures) al [clicker.](hololens1-clicker.md) È anche possibile ruotare una finestra dell'app nello spazio 3D.
 
 > [!TIP]
-> Ridisporre le app usando la voce: osservare un'app e pronunciare "Guardami", "Più grande" o "Più piccolo". In caso contrario, Cortana spostare un'app: pronunciare "Hey Cortana, move \* *app name \** here".
+> Ridisporre le app usando la voce: osservare un'app e pronunciare "Guardami", "Più grande" o "Più piccolo". In Cortana spostare un'app: ad esempio "Hey Cortana, move \* *app name \** here".
 
 ### <a name="move-an-app"></a>Spostare un'app
 
@@ -98,7 +98,7 @@ Osservare l'app (nella barra del titolo di una finestra dell'app) e quindi esegu
 - Selezionare **Regola,** fare clic e tenere premuto il clic e spostare la mano per posizionare l'app. Rilasciare il clicker e quindi selezionare **Done (Fine).**
 
 > [!TIP]
-> Se si rilasciano le app quando le si sposta, assicurarsi di tenere la mano nella cornice del movimento seguendola con lo sguardo fisso.
+> Se si rilasciano le app quando le si sposta, assicurarsi di tenere la mano nel frame del movimento seguendola con lo sguardo fisso.
 
 ### <a name="resize-an-app"></a>Ridimensionare un'app
 
@@ -106,7 +106,7 @@ Osservare l'app e quindi eseguire una delle operazioni seguenti.
 
 - Osservare un angolo o un bordo di una finestra dell'app e toccare e tenere premuto. Al termine, sposta la mano per modificare le dimensioni dell'app e al termine alza il dito.
 - Selezionare **Regola.** Osservare uno dei quadrati blu negli angoli dell'app, toccare e tenere premuto, quindi spostare la mano per ridimensionare l'app. Alzare il dito per rilasciarlo, quindi selezionare **Fine.**
-- Selezionare **Regola.** Osservare uno dei quadrati blu negli angoli dell'app, fare clic e tenere premuto il clic e quindi spostare la mano per ridimensionare l'app. Rilasciare il clicker e quindi selezionare **Done (Fine).**
+- Selezionare **Regola.** Osservare uno dei quadrati blu negli angoli dell'app, fare clic e tenere premuto il clic, quindi spostare la mano per ridimensionare l'app. Rilasciare il clicker e quindi selezionare **Done (Fine).**
 
 > [!TIP]
 > In modalità Regola è possibile spostare o ridimensionare qualsiasi ologramma.
@@ -135,9 +135,9 @@ Congratulazioni! Si è pronti per usare HoloLens (prima generazione).
 
 ### <a name="help-i-dont-see-my-holograms"></a>Come fare Gli ologrammi non vengono visualizzati
 
-Se non vengono visualizzati ologrammi posizionati durante l'HoloLens, ecco alcuni aspetti da provare:
+Se non vengono visualizzati ologrammi posizionati durante l'uso HoloLens, ecco alcuni aspetti da provare:
 
-- Assicurarsi di guardare nell'area giusta. Tenere presente che gli ologrammi rimangono nel punto &mdash; in cui sono stati lasciati.
+- Assicurarsi di guardare nell'area destra. Tenere presente che gli &mdash; ologrammi rimangono nella posizione in cui sono stati lasciati.
 - Assicurarsi di essere in una stanza ben accesa senza molto spazio diretto.
 - Aspettare. Quando HoloLens problemi di riconoscimento dello spazio, gli ologrammi posizionati in precedenza possono richiedere fino a un minuto per riapparire.
 - Se il problema persiste, è possibile cancellare i dati di archiviazione Ologrammi **in Impostazioni** System Ologrammi , quindi inserire nuovamente gli  >    >  ologrammi ambiente iniziale.

@@ -1,5 +1,5 @@
 ---
-title: HoloLens prima versione (generazione)
+title: HoloLens note sulla versione di prima generazione
 description: Informazioni sugli aggiornamenti in ogni nuova HoloLens versione.
 author: evmill
 ms.author: v-evmill
@@ -12,14 +12,14 @@ ms.date: 10/13/2020
 audience: ITPro
 appliesto:
 - HoloLens 1
-ms.openlocfilehash: e332794baf20fbab8278a138ceeafb651c6fa2a06f3f41a66038e544f7a6e46b
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 0fb6c9ed1cd8d3ecc23975052eed54512a465bfb
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115661840"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427552"
 ---
-# <a name="hololens-1st-gen-release-notes"></a>HoloLens prima versione (generazione)
+# <a name="hololens-1st-gen-release-notes"></a>HoloLens note sulla versione di prima generazione
 
 ## <a name="hololens-1st-gen-long-term-servicing"></a>HoloLens (prima generazione) Manutenzione a lungo termine
 HoloLens (prima generazione) è stato inserito lo stato long term servicing (LTS). Gli aggiornamenti futuri saranno incentrati su problemi e correzioni di sicurezza, mantenendo la parità delle funzionalità con la versione Windows 10 Holographic, versione 1809 per HoloLens (prima generazione).
@@ -32,9 +32,9 @@ Per gli sviluppatori, ciò significa che HoloLens app di prima generazione non s
 
 | Funzionalità | Dettagli |
 |---|---|
-| **Menu Azioni rapide** | Quando si usa un'app, il movimento Bloom aprirà ora un menu Azioni rapide per accedere rapidamente alle funzionalità di sistema usate di frequente senza dover uscire dall'app. <br> Per informazioni sul menu Azioni rapide [in modalità tutto schermo,](hololens-kiosk.md) vedere Configurare HoloLens modalità tutto schermo.<br><br> |
+| **Menu Azioni rapide** | Quando si usa un'app, il movimento Bloom aprirà ora un menu Azioni rapide per accedere rapidamente alle funzionalità di sistema usate di frequente senza dover uscire dall'app. <br> Per informazioni sul menu Azioni rapide [in modalità tutto schermo, vedere](hololens-kiosk.md) Configurare HoloLens modalità tutto schermo.<br><br> |
 | **Arrestare l'acquisizione video dal menu Start o azioni rapide** | Se si avvia l'acquisizione video dal menu menu Start o azioni rapide, sarà possibile arrestare la registrazione dalla stessa posizione. Non dimenticare che è sempre possibile eseguire questa operazione anche con i comandi vocali. |
-| **Project a un dispositivo Miracast abilitato** | Project il HoloLens contenuto in un dispositivo Surface vicino o tv/monitor se si usa l'adattatore Microsoft Display.  In **Start** **selezionare** Connessione e quindi selezionare il dispositivo in cui si vuole eseguire il progetto. **Nota:** È possibile distribuire HoloLens usare la proiezione Miracast senza abilitare la modalità sviluppatore. |
+| **Project a un dispositivo Miracast abilitato** | Project il HoloLens in un dispositivo Surface vicino o tv/monitor se si usa l'adattatore Microsoft Display.  In **Start** **selezionare** Connessione e quindi selezionare il dispositivo in cui si vuole eseguire il progetto. **Nota:** È possibile distribuire HoloLens usare la proiezione Miracast senza abilitare la modalità sviluppatore. |
 | **Nuove notifiche** | Visualizzare e rispondere agli avvisi popup di notifica HoloLens, proprio come si fa in un PC. Guardare con lo sguardo per rispondere o ignorarli oppure, se si è in un'esperienza immersiva, usare il movimento bloom. |
 | **HoloLens sovrimpressione**<br>(selezione file, tastiera, dialoghe e così via) | Quando si usano app immersive, verranno ora visualizzati sovrapposizioni, ad esempio tastiera, dialoghe, selezione file e così via. |
 | **Interfaccia utente di sovrapposizione dei commenti e suggerimenti visivi per la modifica del volume** | Quando si usano i pulsanti volume su/giù nel HoloLens verrà visualizzata una visualizzazione visiva del livello del volume. |
@@ -46,14 +46,14 @@ Per gli sviluppatori, ciò significa che HoloLens app di prima generazione non s
 
 | Funzionalità | Dettagli |
 | --- | --- |
-| Compilazioni localizzate in cinese e giapponese | Usare HoloLens con l'interfaccia utente localizzata per il cinese semplificato o il giapponese, inclusi i comandi localizzati per tastiera, dettatura e voce Pinyin.<br>[Informazioni su come installare le versioni cinese e giapponese di HoloLens.](hololens1-install-localized.md) |
+| Compilazioni localizzate in cinese e giapponese | Usare HoloLens con l'interfaccia utente localizzata per il cinese semplificato o il giapponese, inclusi i comandi vocali, la dettatura e la tastiera Pinyin localizzati.<br>[Informazioni su come installare le versioni cinese e giapponese di HoloLens.](hololens1-install-localized.md) |
 | Sintesi vocale (TTS) | La funzionalità sintesi vocale supporta ora il cinese, il giapponese e l'inglese. |
 
 #### <a name="for-administrators"></a>Per amministratori
 
 | Funzionalità |  Dettagli  |
 |---|----|
-| [Abilitare il provisioning post-installazione](hololens-provisioning.md) | È ora possibile applicare un pacchetto di provisioning di runtime in qualsiasi **momento usando Impostazioni**. |
+| [Abilitare il provisioning post-installazione](hololens-provisioning.md) | È ora possibile applicare un pacchetto di provisioning di runtime in qualsiasi momento **usando Impostazioni**. |
 | Accesso assegnato con gruppi Azure AD predefiniti | È ora possibile usare i gruppi Azure AD per la configurazione Windows'accesso assegnato per configurare la configurazione in modalità tutto schermo per app singole o multiapp. |
 | Pin sign-in on profile switch from sign-in screen | L'accesso CON PIN è ora disponibile per **Altri utenti.** |
 | Accedere con l'Provider di credenziali Web usando la password | È ora possibile selezionare l'opzione di accesso Globe per avviare l'accesso Web con la password. Nella schermata di accesso selezionare **Opzioni di** accesso e selezionare l'opzione Globe per avviare l'accesso Web. Immettere il nome utente, se necessario, quindi la password. <br>**Nota:** È possibile scegliere di ignorare le opzioni PIN/Smartcard quando richiesto durante l'accesso Web. |
@@ -73,13 +73,13 @@ Windows 10, versione 1803, è il primo aggiornamento delle funzionalità Windows
 
 - Quando si crea un account locale in un pacchetto di provisioning, la password non scade più ogni 42 giorni.
 
-- È possibile configurare HoloLens come modalità tutto schermo per app [singola o multiapp.](hololens-kiosk.md) La modalità tutto schermo multi-app consente di configurare un HoloLens per eseguire solo le app specificate e impedisce agli utenti di apportare modifiche.
+- È possibile configurare HoloLens come app singola o [multi-app](hololens-kiosk.md)in modalità tutto schermo. La modalità tutto schermo multi-app consente di configurare un HoloLens per eseguire solo le app specificate e impedisce agli utenti di apportare modifiche.
 
-- Media Transfer Protocol (MTP) è abilitato in modo che sia possibile connettere il dispositivo HoloLens a un PC tramite USB e trasferire i file tra HoloLens e il PC. È anche possibile usare l'app Esplora file per spostare ed eliminare file dall'interno HoloLens.
+- Media Transfer Protocol (MTP) è abilitato in modo da poter connettere il dispositivo HoloLens a un PC tramite USB e trasferire i file tra HoloLens e il PC. È anche possibile usare l'app Esplora file per spostare ed eliminare file dall'interno HoloLens.
 
-- In precedenza, dopo aver eseguito l'accesso al dispositivo con un account Azure Active Directory (Azure AD), era necessario aggiungere l'accesso aziendale **in** **Impostazioni** per ottenere l'accesso alle risorse aziendali. A questo punto, si accede con un account Azure AD e la registrazione viene eseguita automaticamente.
+- In precedenza, dopo aver eseguito l'accesso al dispositivo con un account Azure Active Directory (Azure AD),  era necessario aggiungere l'accesso aziendale **in** Impostazioni per ottenere l'accesso alle risorse aziendali. A questo punto, si accede con un account Azure AD la registrazione avviene automaticamente.
 
-- Prima di accedere, è possibile scegliere l'icona di rete sotto il campo della password per scegliere un'Wi-Fi a cui connettersi. È anche possibile connettersi a una rete guest, ad esempio in un hotel, in un centro conferenze o in un'azienda.
+- Prima di accedere, è possibile scegliere l'icona di rete sotto il campo della password per scegliere un'altra Wi-Fi rete a cui connettersi. È anche possibile connettersi a una rete guest, ad esempio in un hotel, in un centro conferenze o in un'azienda.
 
 - È ora possibile condividere [facilmente HoloLens con più utenti](hololens-multiple-users.md) usando Azure AD account.
 
@@ -87,4 +87,4 @@ Windows 10, versione 1803, è il primo aggiornamento delle funzionalità Windows
 
 - I singoli utenti possono sincronizzare la posta elettronica aziendale senza registrare il dispositivo nella gestione dei dispositivi mobili (MDM). È possibile usare il dispositivo con un account Microsoft, scaricare e installare l'app Mail e aggiungere direttamente un account di posta elettronica.
 
-- È possibile controllare lo stato di sincronizzazione MDM per un dispositivo **in** Impostazioni  >  **account**  >  **accedono alle informazioni aziendali o**  >  **dell'istituto di istruzione.** Nella sezione **Stato sincronizzazione dispositivo** è possibile avviare una sincronizzazione, visualizzare le aree gestite da MDM e creare ed esportare un report di diagnostica avanzato.
+- È possibile controllare lo stato di sincronizzazione MDM per un dispositivo **in** Impostazioni  >    >  **account aCcedono alle informazioni aziendali o dell'istituto di**  >  **istruzione.** Nella sezione **Stato sincronizzazione dispositivo** è possibile avviare una sincronizzazione, visualizzare le aree gestite da MDM e creare ed esportare un report di diagnostica avanzato.

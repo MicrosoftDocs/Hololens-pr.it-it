@@ -13,12 +13,12 @@ ms.reviewer: ''
 manager: bradke
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: aae4e1dbbf28906c1f93ac7f29620260023f596bb96fc23a3ee78442e70585fa
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 6224cd5e07794d9fca3c0a406e787d1a3fd88b43
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115663304"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428723"
 ---
 # <a name="license-requirements"></a>Requisiti relativi alle licenze
 
@@ -34,7 +34,7 @@ Questa pagina offre una panoramica generale delle licenze e degli account necess
 | [Eseguire la distribuzione in dispositivi connessi al cloud - distribuzione di prova/pilota](hololens-requirements.md#scenario-a-deploy-to-cloud-connected-devices)  | ✔️| |
 | [Distribuire all'interno della rete dell'organizzazione: distribuzione su larga scala](hololens-requirements.md#scenario-b-deploy-inside-your-organizations-network) | ✔️| |
 | [Distribuire in un ambiente offline sicuro](hololens-requirements.md#scenario-c-deploy-in-secure-offline-environment) | | ✔️ |
-| **Licenses** | | |
+| **Licenze** | | |
 | Azure Active Directory | ✔️ | |
 | MDM (Intune<sup>1</sup> o <sup>2)</sup> | ✔️  | |
 | **Account** |  | |
@@ -44,7 +44,7 @@ Questa pagina offre una panoramica generale delle licenze e degli account necess
 | [Account locale](/windows/security/identity-protection/access-control/local-accounts)<sup>3</sup> | | ✔️ |
 - <sup>1</sup> [Registrazione automatica durante](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) la configurazione iniziale del dispositivo, che registra e Azure Active Directory e consente la gestione del dispositivo con Intune.
 - <sup>2</sup> [Windows Autopilot per HoloLens 2](hololens2-autopilot.md) semplifica l'esperienza di provisioning sia per gli amministratori IT che per gli utenti finali. Gli amministratori IT possono preconfigurare HoloLens 2 criteri e al primo avvio i dispositivi verranno distribuiti in uno stato pronto per l'azienda senza interazione dell'utente finale.
-- <sup>3</sup> Il provisioning [](hololens-provisioning.md#provisioning-package-hololens-wizard) di questo account deve essere eseguito in anticipo con Windows Configuration Designer (WCD).
+- <sup>3</sup> Il provisioning di questo account [deve](hololens-provisioning.md#provisioning-package-hololens-wizard) essere eseguito in anticipo con Windows Configuration Designer (WCD).
 
 > [!IMPORTANT]
 > Active Directory (AD) non può essere usato per gestire HoloLens dispositivi.
@@ -56,10 +56,10 @@ Questa pagina offre una panoramica generale delle licenze e degli account necess
 
 ### <a name="dynamics-365-remote-assist"></a>Dynamics 365 Remote Assist 
 
-#### <a name="admin"></a>Amministrativi
+#### <a name="admin"></a>Admin
 
 - Azure AD account (obbligatorio per l'acquisto della sottoscrizione e l'assegnazione delle licenze)
-- [Remote Assist sottoscrizione](/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) (o Remote Assist [versione di valutazione)](/dynamics365/mixed-reality/remote-assist/try-remote-assist)
+- [Remote Assist sottoscrizione](/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) (o Remote Assist [versione di valutazione](/dynamics365/mixed-reality/remote-assist/try-remote-assist))
     
 #### <a name="dynamics-365-remote-assist-user"></a>Dynamics 365 Remote Assist utente
 
@@ -84,7 +84,7 @@ Se si prevede di implementare questo [scenario tra tenant,](/dynamics365/mixed-r
 
 ### <a name="dynamics-365-guides"></a>Guide di Dynamics 365 
 
-#### <a name="admin"></a>Amministrativi
+#### <a name="admin"></a>Admin
 
 1. Azure AD account (obbligatorio per l'acquisto della sottoscrizione e l'assegnazione delle licenze)
 2. Sottoscrizione o versione di valutazione gratuita di Dynamics 365 [Guides](/dynamics365/mixed-reality/guides/setup-step-one)
@@ -94,7 +94,7 @@ Se si prevede di implementare questo [scenario tra tenant,](/dynamics365/mixed-r
 1. Account Azure AD
 1. [Dynamics 365 Guides licenza](/dynamics365/mixed-reality/guides/requirements)
 1. Dynamics 365 Guides'applicazione installata in un PC o in HoloLens
-1. [Power BI Desktop](https://powerbi.microsoft.com/desktop/) (usato per visualizzare il dashboard di Analisi)
+1. [Power BI Desktop](https://powerbi.microsoft.com/desktop/) (usato per visualizzare il dashboard di Analytics)
 1. Ruolo Autore (per la creazione di guide)
 1. Connettività di rete
 

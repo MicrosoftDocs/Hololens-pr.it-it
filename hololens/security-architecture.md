@@ -13,16 +13,16 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: fd6409f5087ef7d6e7ab90d6ef8dcb83e1c490746803ad869ef075dace24bae7
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: d8e68f73d05db397a7ee088382e82dfa762177b0
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665523"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428966"
 ---
 # <a name="security-overview-and-architecture"></a>Panoramica e architettura della sicurezza
 
-L HoloLens 2 di sicurezza è stata progettata e progettata da zero per essere libera da problemi di sicurezza legacy, durante la creazione di una superficie di attacco ridotta al minimo. Questa nuova architettura innovative offre posizioni di archiviazione sicure ed elementi di sicurezza avanzati, con meccanismi in grado di schermare i sistemi operativi da potenziali minacce e vulnerabilità.
+L HoloLens 2 di sicurezza è stata progettata e progettata da zero per evitare problemi di sicurezza legacy, creando al tempo stesso una superficie di attacco ridotta al minimo. Questa nuova architettura innovative offre posizioni di archiviazione sicure ed elementi di sicurezza avanzati, con meccanismi in grado di schermare i sistemi operativi da potenziali minacce e vulnerabilità.
 
 HoloLens 2 combina hardware, software, rete e servizi per garantire la sicurezza end-to-end, offrendo all'utente un'esperienza ottimale. Con HoloLens 2, la maggior parte delle funzionalità di sicurezza viene ora attivata automaticamente, riducendo al minimo il lavoro necessario per configurare correttamente il sistema operativo.
 
@@ -37,4 +37,4 @@ Windows HoloLens 2 e del sistema operativo offre queste funzionalità innovative
     > [!NOTE]
     > Per supportare FIDO2, il dispositivo deve essere in build 19041 o successiva. 
 
-  * **Sicurezza di rete:** HoloLens 2 all'utente maggiore sicurezza di rete tramite protocolli migliorati e impostazioni predefinite.
+  * **Sicurezza di rete:** HoloLens 2 all'utente una maggiore sicurezza di rete tramite protocolli migliorati e impostazioni predefinite.

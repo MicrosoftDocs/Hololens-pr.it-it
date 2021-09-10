@@ -13,11 +13,11 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: c6d1225dc6da1c039a34fc2782f23330ae40f280
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189189"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427656"
 ---
 # <a name="unlock-windows-holographic-for-business-features"></a>Sbloccare Windows Holographic for Business funzionalità
 
@@ -26,7 +26,7 @@ ms.locfileid: "123189189"
 
 Microsoft HoloLens è disponibile in *Development Edition,* che esegue Windows Holographic (un'edizione di Windows 10 progettata per HoloLens) e in [Commercial Suite,](hololens-commercial-features.md)che offre funzionalità aggiuntive progettate per le aziende.
 
-Quando si acquista Commercial Suite, si riceve una licenza che aggiorna Windows Holographic a Windows Holographic for Business. È possibile applicare questa licenza al dispositivo usando il provider di gestione dei dispositivi mobili [(MDM)](#edition-upgrade-by-using-mdm) dell'organizzazione o un pacchetto [di provisioning](#edition-upgrade-by-using-a-provisioning-package).
+Quando si acquista Commercial Suite, si riceve una licenza che esegue l'aggiornamento Windows Holographic a Windows Holographic for Business. È possibile applicare questa licenza al dispositivo usando il provider di gestione dei dispositivi mobili [(MDM)](#edition-upgrade-by-using-mdm) dell'organizzazione o un pacchetto [di provisioning](#edition-upgrade-by-using-a-provisioning-package).
 
 > [!TIP]
 > In Windows 10 versione 1803 è possibile verificare che il HoloLens sia stato aggiornato all'edizione Business selezionando **Impostazioni**  >  **System**.
@@ -46,7 +46,7 @@ I pacchetti di provisioning sono file creati dallo Windows Progettazione configu
 ### <a name="create-a-provisioning-package-that-upgrades-the-windows-holographic-edition"></a>Creare un pacchetto di provisioning che consente di aggiornare l'edizione di Windows Holographic
 
 1. [Creare un pacchetto di provisioning per HoloLens.](hololens-provisioning.md)
-1. Passare a **Impostazioni di runtime**  >  **EditionUpgrade e** selezionare **EditionUpgradeWithLicense**.
+1. Passare a **Impostazioni di runtime**  >  **EditionUpgrade** e selezionare **EditionUpgradeWithLicense**.
 
     ![Aggiornare l'edizione con l'impostazione di licenza selezionata.](images/icd1.png)
 
@@ -79,7 +79,7 @@ I pacchetti di provisioning sono file creati dallo Windows Progettazione configu
 
 1. Selezionare **Avanti**.
 
-1. Selezionare **Compila** per avviare la compilazione del pacchetto. Nella pagina di compilazione vengono visualizzate le informazioni sul progetto e l'indicatore di stato indica lo stato di compilazione.
+1. Selezionare **Compila** per iniziare a compilare il pacchetto. Nella pagina di compilazione vengono visualizzate le informazioni sul progetto e l'indicatore di stato indica lo stato di compilazione.
 
 1. Al termine della compilazione, selezionare **Fine.**
 
@@ -88,12 +88,12 @@ I pacchetti di provisioning sono file creati dallo Windows Progettazione configu
 1. Usando il cavo USB, connettere il dispositivo a un PC. Avviare il dispositivo, ma non  continuare oltre la pagina adatta dell'esperienza di configurazione iniziale (la prima pagina con la casella blu). Nel PC il HoloLens visualizzato come dispositivo in Esplora file.
 
     > [!NOTE]
-    > Se il dispositivo HoloLens esegue Windows 10 versione 1607 o precedente, aprire Esplora file premendo brevemente e  rilasciando i pulsanti Volume down (Volume in basso) e **Power** (Alimentazione) simultaneamente sul dispositivo.
+    > Se il dispositivo HoloLens esegue Windows 10 versione 1607 o precedente, aprire Esplora file premendo brevemente e rilasciando i pulsanti **Volume** down (Volume in basso) e **Power** (Alimentazione) simultaneamente sul dispositivo.
 
 1. In Esplora File, trascinare e rilasciare il pacchetto di provisioning (.ppkg) nell'archiviazione del dispositivo.
 
-1. Mentre HoloLens è ancora nella  pagina adatta, premere e rilasciare brevemente i pulsanti **Volume down** (Volume in basso) e **Power (Alimentazione)** contemporaneamente.
+1. Mentre HoloLens è ancora nella  pagina adatta, premere e rilasciare  brevemente i pulsanti **Volume in** basso e Alimentazione contemporaneamente.
 
 1. HoloLens se si considera attendibile il pacchetto e si vuole applicarlo. Confermare che consideri attendibile il pacchetto.
 
-1. Potrai vedere se il pacchetto è stato applicato correttamente o meno. Se non è stato applicato correttamente, è possibile correggere il pacchetto e riprovare. In caso di esito positivo, procedere con la configurazione del dispositivo.
+1. Potrai vedere se il pacchetto è stato applicato correttamente o meno. Se non è stato applicato correttamente, è possibile correggere il pacchetto e riprovare. Se l'operazione riesce, procedere con la configurazione del dispositivo.

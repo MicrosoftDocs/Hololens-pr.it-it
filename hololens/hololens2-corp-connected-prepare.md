@@ -1,6 +1,6 @@
 ---
 title: Guida alla distribuzione - Connessione aziendale HoloLens 2 con Dynamics 365 Guides - Preparazione
-description: Informazioni su come preparare la registrazione HoloLens 2 dispositivi in una rete connessa aziendale con Dynamics 365 Guides.
+description: Informazioni su come preparare la registrazione HoloLens 2 dispositivi su una rete connessa aziendale con Dynamics 365 Guides.
 keywords: HoloLens, gestione, aziendale connesso, Dynamics 365 Guides, AAD, Azure AD, MDM, gestione dei dispositivi mobili
 author: joyjaz
 ms.author: v-jjaswinski
@@ -15,11 +15,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 5d8fc2eb0a8dafaae0e1b222b7451877975cf90b
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123190209"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428128"
 ---
 # <a name="prepare---corporate-connected-guide"></a>Preparazione - Guida alla connessione aziendale
 ## <a name="infrastructure-essentials"></a>Informazioni di base dell'infrastruttura
@@ -29,9 +29,9 @@ Per gli scenari di distribuzione sia personali che aziendali, un sistema di gest
 > Anche se HoloLens 2 viene distribuito e gestito come un dispositivo mobile, viene in genere usato come dispositivo condiviso tra molti utenti.
 
 ## <a name="azure-active-directory"></a>Azure Active Directory
-Azure AD è un servizio directory basato su cloud che offre funzionalità di gestione delle identità e dell'accesso. Le organizzazioni che usano Microsoft Office 365 o Intune usano già Azure AD, che include tre edizioni: Gratuito, Premium P1 e Premium P2 (vedere Azure Active Directory [edition).](https://azure.microsoft.com/documentation/articles/active-directory-editions) Tutte le edizioni Azure AD registrazione del dispositivo, ma Premium P1 è necessaria per abilitare la registrazione automatica MDM che verrà utilizzata in questa guida più avanti.
+Azure AD è un servizio directory basato su cloud che offre funzionalità di gestione delle identità e dell'accesso. Le organizzazioni che usano Microsoft Office 365 o Intune usano già Azure AD, che include tre edizioni: Gratuito, Premium P1 e Premium P2 (vedere Azure Active Directory [edition).](https://azure.microsoft.com/documentation/articles/active-directory-editions) Tutte le edizioni Azure AD la registrazione del dispositivo, ma Premium P1 è necessaria per abilitare la registrazione automatica MDM che verrà utilizzata in questa guida più avanti.
 > [!Important]
-> È essenziale disporre di un Azure AD perché i HoloLens non supportano l'aggiunta ad AD locale. Se non è già stato configurato un Azure AD, seguire le istruzioni per iniziare [e Creare un nuovo tenant in Azure Active Directory](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).
+> È essenziale disporre di un Azure AD perché HoloLens dispositivi non supportano l'aggiunta ad AD locale. Se non è già stato configurato un Azure AD, seguire le istruzioni per iniziare [e Creare un nuovo tenant in Azure Active Directory](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).
 
 ## <a name="identity-management"></a>Identity Management
 In questa guida, [l'identità](/hololens/hololens-identity) usata sarà Azure AD account. Esistono diversi vantaggi per gli account Azure AD, ad esempio:
@@ -43,12 +43,12 @@ In questa guida, [l'identità](/hololens/hololens-identity) usata sarà Azure AD
 > I dipendenti possono usare un solo account per inizializzare un dispositivo, quindi è fondamentale che **l'organizzazione** controlli quale account è abilitato per primo. L'account scelto determinerà chi controlla il dispositivo e influirà sulle funzionalità di gestione.
 
 ## <a name="mobile-device-management"></a>Gestione dei dispositivi mobili
-Microsoft Intune, parte di Enterprise Mobility + Security, è un sistema MDM basato sul cloud che gestisce i dispositivi connessi al tenant. Come Office 365, Intune usa Azure AD per la gestione delle identità, in modo che i dipendenti usino le stesse credenziali per registrare i dispositivi in Intune che usano per accedere Office 365. Intune supporta anche i dispositivi che eseguono altri sistemi operativi, ad esempio iOS e Android, per offrire una soluzione MDM completa. Ai fini di questa guida, ci si concentrerà sull'uso di Intune per abilitare una distribuzione nella rete interna con HoloLens 2.
+Microsoft Intune, parte di Enterprise Mobility + Security, è un sistema MDM basato sul cloud che gestisce i dispositivi connessi al tenant. Come Office 365, Intune usa Azure AD per la gestione delle identità, quindi i dipendenti usano le stesse credenziali per registrare i dispositivi in Intune che usano per accedere Office 365. Intune supporta anche i dispositivi che eseguono altri sistemi operativi, ad esempio iOS e Android, per offrire una soluzione MDM completa. Ai fini di questa guida, ci si concentrerà sull'uso di Intune per abilitare una distribuzione nella rete interna con HoloLens 2.
 > [!Important] 
 > È essenziale disporre della gestione dei dispositivi mobili. Se non è già stato configurato, seguire questa guida e Introduzione a Intune.
 
 > [!Important]
-> Per usare Guide, è necessario Azure AD account utente.
+> Per usare guide, è necessario Azure AD account.
 
 > [!Note] 
 > Più sistemi MDM supportano Windows 10 e la maggior parte supporta scenari di distribuzione con dispositivi personali e aziendali. I provider MDM che supportano Windows 10 Holographic includono AirWatch, MobileIron e altri. La maggior parte dei fornitori di soluzioni MDM leader del settore supporta già l'integrazione con Azure AD. È possibile trovare l'elenco più attuale dei fornitori MDM che supportano Azure AD in [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/category/azure-active-directory-apps).
@@ -57,7 +57,7 @@ Microsoft Intune, parte di Enterprise Mobility + Security, è un sistema MDM bas
 Dynamics 365 Guides è un'applicazione basata sul cloud. Se l'amministratore di rete ha un elenco di approvazione, potrebbe essere necessario aggiungere gli indirizzi IP e/o gli endpoint necessari per connettersi ai server Dynamics 365. [Altre informazioni sullo sblocco di indirizzi IP e URL.](/power-platform/admin/online-requirements#ip-addresses-and-urls)
 
 ## <a name="certificates"></a>Certificati
-I certificati consentono di migliorare la sicurezza fornendo autenticazione dell'account, Wi-Fi autenticazione, crittografia VPN e crittografia SSL del contenuto Web. Anche se gli amministratori possono gestire manualmente i certificati nei dispositivi tramite il provisioning dei pacchetti, è consigliabile usare il sistema MDM per gestire tali certificati per l'intero ciclo di vita, dalla registrazione al rinnovo e alla revoca. 
+I certificati consentono di migliorare la sicurezza fornendo l'autenticazione dell'account, Wi-Fi, la crittografia VPN e la crittografia SSL del contenuto Web. Anche se gli amministratori possono gestire manualmente i certificati nei dispositivi tramite il provisioning dei pacchetti, è consigliabile usare il sistema MDM per gestire tali certificati per l'intero ciclo di vita, dalla registrazione al rinnovo e alla revoca. 
 
 Il sistema MDM può distribuire automaticamente questi certificati agli archivi certificati dei dispositivi dopo la registrazione(purché il sistema MDM supporti **Simple Certificate Enrollment Protocol (SCEP)** o **Public Key Cryptography Standards #12 (PKCS #12).** [Informazioni sui tipi di certificato e i profili che si usano con Microsoft Intune](/mem/intune/protect/certificates-configure). MDM può anche eseguire query ed eliminare i certificati client registrati o attivare una nuova richiesta di registrazione prima della scadenza del certificato corrente.
 
@@ -65,7 +65,7 @@ Se i sistemi MDM sono già configurati per i certificati, fare riferimento a Pre
 
 ## <a name="scep"></a>SCEP
 
-I servizi seguenti sono necessari per la distribuzione SCEP, ad eccezione di Web Application Proxy Server.
+I servizi seguenti sono necessari per la distribuzione SCEP, ad eccezione del server Web Application Proxy Server.
 
 - [Autorità di certificazione](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj125375(v=ws.11))
 - [Ruolo del server NDES](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831498(v=ws.11))
@@ -90,7 +90,7 @@ Esistono diversi tipi di proxy e modi per configurare il proxy. Ai fini di quest
 Per altre informazioni sulle impostazioni proxy per Windows 10, vedere Creare un profilo Wi-Fi per i [dispositivi in Microsoft Intune - Azure.](/mem/intune/configuration/wi-fi-settings-configure)
 
 ## <a name="line-of-business-apps"></a>App line-of-business 
-Anche se è possibile installare diverse app tramite il Microsoft Store, è probabile che si abbia un'app personalizzata creata specificamente per l'uso nella realtà mista. Queste app personalizzate distribuite in tutta l'organizzazione per l'azienda sono denominate app line-of-business (LOB).
+Anche se è possibile installare diverse app tramite il Microsoft Store, è probabile che si abbia un'app personalizzata creata appositamente per l'uso nella realtà mista. Queste app personalizzate distribuite in tutta l'organizzazione per l'azienda sono denominate app line-of-business (LOB).
   
 Esistono diversi modi per distribuire le applicazioni nei HoloLens 2 dispositivi. Le app possono essere distribuite direttamente tramite MDM, il Microsoft Store per le aziende (MSfB) o il sideloaded tramite un pacchetto di provisioning. Ai fini di questa guida, le app verranno distribuite tramite MDM, tramite l'uso dell'installazione di app richiesta. In questo modo le app LOB verranno scaricate automaticamente nei dispositivi HoloLens al termine della registrazione.
 
@@ -102,7 +102,7 @@ Per altre informazioni sulla distribuzione di app, vedere [Gestione delle app: P
 > HoloLens 2 supporta solo l'esecuzione di app ARM64 UWP.
 
 ## <a name="guides-playbook"></a>Playbook guide
-Guides usa un ambiente Microsoft Dataverse come archivio dati per le app Guides. È importante comprendere il quadro generale dell'interazione dell'ambiente Dataverse con le app Guides e il tenant. In questa guida non verrà illustrato come gestire i dati, ma vedere Concetti di base per la distribuzione di Dynamics 365 Guides [- Dynamics 365 Mixed Reality.](/dynamics365/mixed-reality/guides/admin-deployment-playbook)
+Guides usa un ambiente Microsoft Dataverse come archivio dati per le app Guides. È importante comprendere il quadro generale dell'interazione dell'ambiente Dataverse con le app Guides e il tenant. In questa guida non verrà illustrato come gestire i dativerse, ma vedere Concetti di base per la distribuzione di Dynamics 365 Guides [- Dynamics 365 Mixed Reality.](/dynamics365/mixed-reality/guides/admin-deployment-playbook)
 
 ## <a name="next-step"></a>Passaggio successivo 
 > [!div class="nextstepaction"]

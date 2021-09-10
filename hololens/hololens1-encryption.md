@@ -14,19 +14,19 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: d5cf7385dd0a53c6b17f79e16364e84ab6ec867d
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189937"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427483"
 ---
 # <a name="hololens-1st-gen-bitlocker-encryption"></a>HoloLens crittografia BitLocker (prima generazione)
 
-HoloLens (prima generazione) e HoloLens 2 supportano entrambi la crittografia dei dispositivi con BitLocker, tuttavia BitLocker è sempre abilitato in HoloLens 2.
+HoloLens (prima generazione) e HoloLens 2 entrambi supportano la crittografia dei dispositivi con BitLocker, tuttavia, BitLocker è sempre abilitato in HoloLens 2.
 
-Questo articolo illustra come abilitare e gestire BitLocker HoloLens (prima generazione).
+Questo articolo consente di abilitare e gestire BitLocker HoloLens (prima generazione).
 
-Nella HoloLens (prima generazione) è possibile abilitare la crittografia dei dispositivi BitLocker manualmente o usando la gestione di dispositivi mobili (MDM). Seguire queste istruzioni per abilitare la [crittografia del dispositivo BitLocker](/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) per proteggere i file e le informazioni archiviate nel HoloLens. La crittografia del dispositivo consente di proteggere i dati usando il metodo di crittografia AES-CBC 128, equivalente al metodo [EncryptionMethodByDriveType 3](/windows/client-management/mdm/bitlocker-csp#encryptionmethodbydrivetype) nel provider del servizio di configurazione BitLocker. Il personale che dispone della chiave di crittografia corretta, ad esempio una password, può decrittografarla o eseguire un ripristino dei dati.
+Nella HoloLens (prima generazione) è possibile abilitare la crittografia dei dispositivi BitLocker manualmente o usando la gestione dei dispositivi mobili (MDM). Seguire queste istruzioni per abilitare la [crittografia del dispositivo BitLocker](/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) per proteggere i file e le informazioni archiviate nel HoloLens. La crittografia del dispositivo consente di proteggere i dati usando il metodo di crittografia AES-CBC 128, equivalente al metodo [EncryptionMethodByDriveType 3](/windows/client-management/mdm/bitlocker-csp#encryptionmethodbydrivetype) nel provider del servizio di configurazione BitLocker. Il personale che dispone della chiave di crittografia corretta, ad esempio una password, può decrittografarla o eseguire un ripristino dei dati.
 
 ## <a name="enable-device-encryption-using-mdm"></a>Abilitare la crittografia dei dispositivi tramite MDM
 
@@ -44,7 +44,7 @@ Per altri strumenti MDM, vedere la documentazione del provider MDM per istruzion
 
 ## <a name="enable-device-encryption-using-a-provisioning-package"></a>Abilitare la crittografia dei dispositivi usando un pacchetto di provisioning
 
-I pacchetti di provisioning sono file creati dallo Windows Progettazione configurazione che applicano una configurazione specificata a un dispositivo. 
+I pacchetti di provisioning sono file creati dallo Windows Di progettazione configurazione che applicano una configurazione specificata a un dispositivo. 
 
 ### <a name="create-a-provisioning-package-that-upgrades-the-windows-holographic-edition-and-enables-encryption"></a>Creare un pacchetto di provisioning che aggiorna l'edizione Windows Holographic e abilita la crittografia
 

@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Microsoft HoloLens
-summary: Microsoft HoloLens è il primo computer olografico completamente indipendente a eseguire Windows 10. Ora, con l'introduzione di HoloLens 2, ogni dispositivo HoloLens offre funzionalità di gestione pronte per la commercializzazione migliorate dall'affidabilità, dalla sicurezza e dalla scalabilità dei servizi cloud e di intelligenza artificiale di Microsoft.
+summary: Microsoft HoloLens è il primo computer olografico completamente autonomo a eseguire Windows 10. Ora, con l'introduzione di HoloLens 2, ogni dispositivo HoloLens offre funzionalità di gestione pronte per la commercializzazione migliorate dall'affidabilità, dalla sicurezza e dalla scalabilità dei servizi cloud e di intelligenza artificiale di Microsoft.
 metadata:
   title: Microsoft HoloLens
   description: Pagina di destinazione per Microsoft HoloLens.
@@ -11,12 +11,12 @@ metadata:
   ms.author: v-jjaswinski
   ms.date: 05/24/2021
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: fb887c40771d371d90580c0bb29c08d9686dfefab5515ba1fdc768fbc01551de
-  ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+  ms.openlocfilehash: c0189c7a75ad27d6d301721e78de6391f6ac76f7
+  ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 08/05/2021
-  ms.locfileid: "115665319"
+  ms.lasthandoff: 09/10/2021
+  ms.locfileid: "124429017"
 landingContent:
 - title: Informazioni sul HoloLens 2
   linkLists:
@@ -32,7 +32,7 @@ landingContent:
     links:
     - text: Solo dispositivo
       url: hololens2-options-device-only.md
-    - text: Remote Assist edizione
+    - text: Remote Assist edition
       url: hololens2-options-remote-assist.md
     - text: Edizione industriale
       url: hololens2-options-industrial-edition.md
@@ -64,7 +64,7 @@ landingContent:
       url: hololens2-cloud-connected-overview.md
     - text: Guida alla distribuzione - Client esterni (connessi al cloud)
       url: hololens2-deployment-guide.md
-    - text: Guida alla distribuzione - Distribuzione di applicazioni HoloLens 2 con connessione aziendale con Dynamics 365 Guides
+    - text: Guida alla distribuzione - Distribuzione di HoloLens 2 aziendale con Dynamics 365 Guides
       url: hololens2-corp-connected-overview.md
     - text: Guida alla distribuzione - Protezione offline
       url: hololens-common-scenarios-offline-secure.md

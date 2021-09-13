@@ -1,6 +1,6 @@
 ---
 title: Connessione dispositivi Bluetooth e USB-C
-description: Introduzione alla connessione Bluetooth dispositivi e accessori USB-C dai dispositivi HoloLens realtà mista.
+description: Inizia a connetterti Bluetooth dispositivi e accessori USB-C dai tuoi HoloLens di realtà mista.
 ms.assetid: 01af0848-3b36-4c13-b797-f38ad3977e30
 ms.prod: hololens
 ms.sitesec: library
@@ -14,11 +14,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: d9c8b813ba54edbcfef8d1a32e641dad39a7f193
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427241"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036025"
 ---
 # <a name="connect-to-bluetooth-and-usb-c-devices"></a>Connessione dispositivi Bluetooth e USB-C
 
@@ -35,7 +35,7 @@ HoloLens 2 supporta le API Bluetooth seguenti:
 - [Server](/windows/uwp/devices-sensors/gatt-server) e [client](/windows/uwp/devices-sensors/gatt-client) GATT
 - [RFCOMM](/windows/uwp/devices-sensors/send-or-receive-files-with-rfcomm)
 >[!IMPORTANT]
-> Potrebbe essere necessario installare app complementari corrispondenti da Microsoft Store per usare effettivamente i dispositivi HID e GATT.
+> Potrebbe essere necessario installare le app complementari corrispondenti da Microsoft Store per usare effettivamente i dispositivi HID e GATT.
 
 HoloLens (prima generazione) supporta le classi di dispositivi Bluetooth seguenti:
 
@@ -44,13 +44,13 @@ HoloLens (prima generazione) supporta le classi di dispositivi Bluetooth seguent
 - [HoloLens clicker (prima generazione)](hololens1-clicker.md)
 
 > [!NOTE]
-> Altri tipi di Bluetooth, ad esempio altoparlanti, visori, smartphone e game pad, possono essere elencati come disponibili nelle impostazioni HoloLens dispositivo. Tuttavia, questi dispositivi non sono supportati in HoloLens (prima generazione). Per altre informazioni, vedere HoloLens Impostazioni i dispositivi come disponibili, ma i [dispositivi non funzionano.](hololens-troubleshooting.md#devices-listed-as-available-in-settings-dont-work)
+> Altri tipi di Bluetooth, ad esempio altoparlanti, visori VR, smartphone e game pad, possono essere elencati come disponibili nelle impostazioni HoloLens dispositivo. Tuttavia, questi dispositivi non sono supportati in HoloLens (prima generazione). Per altre informazioni, vedere HoloLens Impostazioni elenca i dispositivi come disponibili, ma i dispositivi [non funzionano.](hololens-troubleshooting.md#devices-listed-as-available-in-settings-dont-work)
 
-### <a name="pair-a-bluetooth-keyboard-or-mouse"></a>Associare una Bluetooth tastiera o mouse
+### <a name="pair-a-bluetooth-keyboard-or-mouse"></a>Associare una Bluetooth o un mouse
 
-1. Accendere la tastiera o il mouse e renderlo individuabile. Per informazioni su come rendere individuabile il dispositivo, cercare informazioni sul dispositivo (o sulla relativa documentazione) o visitare il sito Web del produttore.
+1. Accendere la tastiera o il mouse e renderla individuabile. Per informazioni su come rendere individuabile il dispositivo, cercare informazioni sul dispositivo (o sulla relativa documentazione) o visitare il sito Web del produttore.
 
-1. Usare il movimento bloom (HoloLens (prima generazione)) o il movimento start (HoloLens 2) per passare a **Start** e quindi **selezionare Impostazioni**.
+1. Usare il movimento di fiore (HoloLens (prima generazione)) o il movimento di avvio (HoloLens 2) per passare a **Start** e quindi **selezionare Impostazioni**.
 
 1. Selezionare **Dispositivi** e assicurarsi che l'Bluetooth sia selezionata.  
 
@@ -58,49 +58,49 @@ HoloLens (prima generazione) supporta le classi di dispositivi Bluetooth seguent
 
 ## <a name="disable-bluetooth"></a>Disabilitare Bluetooth
 
-Questa procedura disattiva i componenti RF della radio Bluetooth e disabilita tutte le Bluetooth funzionalità Microsoft HoloLens.
+Questa procedura disattiva i componenti RF della radio Bluetooth e disabilita tutte le funzionalità Bluetooth in Microsoft HoloLens.
 
-1. Usare il movimento bloom (HoloLens (prima generazione)) o il movimento start (HoloLens 2) per passare a **Start** e quindi selezionare Impostazioni  >  **Devices**.
+1. Usare il movimento di fiore (HoloLens (prima generazione)) o il movimento di avvio (HoloLens 2) per passare a **Start** e quindi **selezionare Impostazioni**  >  **Dispositivi**.
 
-1. Spostare l'interruttore del **dispositivo Bluetooth** nella **posizione Off.**
+1. Spostare l'interruttore del **dispositivo Bluetooth** nella **posizione Disattivato.**
 
-## <a name="hololens-2-connect-usb-c-devices"></a>HoloLens 2: Connessione dispositivi USB-C
+## <a name="hololens-2-connect-usb-c-devices"></a>HoloLens 2: Connessione USB-C
 
 HoloLens 2 supporta le classi seguenti di dispositivi USB-C:
 
-- Dispositivi di archiviazione di massa (ad esempio unità di scorrimento)
-- Schede Ethernet (inclusa ethernet e ricarica)
-- Adattatori audio digitali USB-C-to-3.5mm
-- Visori audio digitali USB-C (inclusi gli adattatori visore e la ricarica)
+- Dispositivi di archiviazione di massa (ad esempio, le unità thumb)
+- Schede Ethernet (tra cui ethernet e ricarica)
+- Adattatori audio digitali USB da C a 3,5 mm
+- Visori VR audio digitali USB-C (inclusi adattatori per visori VR e ricarica)
 - Microfoni esterni USB-C[(Windows Holographic, versione 21H1 e](hololens-release-notes.md#windows-holographic-version-21h1) successive)
 - Mouse cablato
 - Tastiera cablata
-- Hub PD combinato (ricarica USB A e PD)
+- Hub PD combinato (USB A e ricarica PD)
 
 
 > [!NOTE]
-> In risposta ai commenti e suggerimenti dei clienti, è stato abilitato il supporto limitato per la connettività cellulare collegata direttamente all'HoloLens tramite USB-C. Per [altre informazioni, Connessione a Cellulare e 5G.](hololens-cellular.md)
+> In risposta ai commenti e suggerimenti dei clienti, è stato abilitato un supporto limitato per la connettività cellulare collegata direttamente al HoloLens tramite USB-C. Per [altre informazioni, Connessione alla rete cellulare e 5G.](hololens-cellular.md)
 
 ### <a name="usb-c-external-microphone-support"></a>Supporto microfono esterno USB-C
 
 > [!IMPORTANT]
-> L'inserimento di **un microfono USB non lo imposta automaticamente come dispositivo di input.** Quando si collega un set di cuffia USB-C, gli utenti osserveranno che l'audio della cuffia verrà reindirizzato automaticamente alle cuffia, ma il sistema operativo HoloLens assegna la priorità all'array microfono interno sopra qualsiasi altro dispositivo di input. **Per usare un microfono USB-C, seguire questa procedura.**
+> L'inserimento di un microfono USB non **lo imposta automaticamente come dispositivo di input.** Quando si collega un set di cuffi USB-C, gli utenti osserveranno che l'audio della cuffia verrà reindirizzato automaticamente alle cuffie, ma il sistema operativo HoloLens assegna la priorità all'array di microfoni interni rispetto a qualsiasi altro dispositivo di input. **Per usare un microfono USB-C, seguire questa procedura.**
 
 > [!NOTE]
-> I microfoni esterni non possono essere usati nelle build [prima Windows Holographic, versione 21H1 e](hololens-release-notes.md#windows-holographic-version-21h1) successive. 
+> Non è possibile usare microfoni esterni nelle build precedenti Windows [olografica, versione 21H1 e](hololens-release-notes.md#windows-holographic-version-21h1) successive. 
 
-Gli utenti possono selezionare microfoni esterni connessi USB-C usando il **pannello Impostazioni** audio. I microfoni USB-C possono essere usati per chiamare, registrare e così via.
+Gli utenti possono selezionare microfoni esterni connessi tramite USB-C usando il **pannello Impostazioni** audio. I microfoni USB-C possono essere usati per chiamare, registrare e così via.
 
-Aprire **l'app Impostazioni** e selezionare **Suono di**  >  **sistema**.
+Aprire **l'app Impostazioni** e selezionare **Suono del**  >  **sistema.**
 
 ![Audio Impostazioni.](images/usbc-mic-1.jpg)
 
 > [!IMPORTANT]
 > Per usare microfoni esterni **con** Remote Assist , gli utenti dovranno fare clic sul collegamento ipertestuale "Gestisci dispositivi audio".
 >
-> Usare quindi l'elenco a discesa per impostare il microfono esterno come **Predefinito** o **Predefinito per le comunicazioni.** Se **si sceglie Predefinito,** il microfono esterno verrà usato ovunque.
+> Usare quindi l'elenco a discesa per impostare il microfono esterno su **Predefinito** o **Predefinito comunicazioni.** Se **si sceglie Predefinito,** il microfono esterno verrà usato ovunque.
 >
-> Se **si sceglie Comunicazioni** predefinite, il microfono esterno verrà usato in Remote Assist e in altre app per le comunicazioni, ma l'array di microfoni HoloLens può comunque essere usato per altre attività.
+> Se **si sceglie** Comunicazioni predefinite, il microfono esterno verrà usato in Remote Assist e in altre app di comunicazione, ma l'array di microfoni HoloLens può comunque essere usato per altre attività.
 
 ![Gestire i dispositivi audio.](images/usbc-mic-2.png)
 
@@ -108,18 +108,18 @@ Aprire **l'app Impostazioni** e selezionare **Suono di**  >  **sistema**.
 
 ![Impostare il microfono predefinito.](images/usbc-mic-3.jpg)
 
-#### <a name="what-about-bluetooth-microphone-support"></a>Che dire del Bluetooth microfono?
+#### <a name="what-about-bluetooth-microphone-support"></a>Che ne è del Bluetooth microfono?
 
 Sfortunatamente, Bluetooth microfoni non sono ancora supportati in HoloLens 2.
 
 ### <a name="usb-c-hubs"></a>Hub USB-C
 
-Alcuni utenti potrebbero dover connettere più dispositivi contemporaneamente. Per gli utenti che desiderano usare un [microfono USB-C](#usb-c-external-microphone-support) insieme a un altro dispositivo connesso, gli hub USB-C possono soddisfare le esigenze del cliente. Microsoft non ha testato questi dispositivi, né è possibile consigliare marchi specifici.
+Alcuni utenti potrebbero dover connettere più dispositivi contemporaneamente. Per gli utenti che desiderano usare un microfono [USB-C](#usb-c-external-microphone-support) insieme a un altro dispositivo connesso, gli hub USB-C possono soddisfare le esigenze del cliente. Microsoft non ha testato questi dispositivi, né è possibile consigliare marchi specifici.
 
 **Requisiti per l'hub USB-C e i dispositivi connessi:**
 
 - I dispositivi connessi non devono richiedere l'installazione di un driver.
-- Il risparmio energia totale di tutti i dispositivi connessi deve essere inferiore a 4,5 Watt.
+- Il consumo di energia totale di tutti i dispositivi connessi deve essere inferiore a 4,5 Punti.
 
 ## <a name="connect-to-miracast"></a>Connessione da Miracast
 
@@ -132,4 +132,4 @@ Per usare Miracast, seguire questa procedura:
 
 1. Nell'elenco dei dispositivi visualizzato selezionare un dispositivo disponibile.
 
-1. Completare l'associazione per iniziare a proiettare.
+1. Completare l'associazione per iniziare la progettazione.

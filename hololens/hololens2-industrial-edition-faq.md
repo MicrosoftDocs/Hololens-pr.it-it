@@ -15,13 +15,13 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 0ac7228e4af807d709d218942c50a9b110a419c1
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427520"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036111"
 ---
-# <a name="hololens-2---industrial-edition-faq"></a>HoloLens 2 - Domande frequenti su Industrial Edition
+# <a name="hololens-2---industrial-edition-faq"></a>HoloLens 2 - Domande frequenti sull'edizione Industriale
 
 ![Industrial Edition usata in una stanza pulita.](./images/industrial-sku-with-remote-assist.png)
 

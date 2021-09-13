@@ -16,26 +16,26 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: f6e3dd8f7dc90cea158d000251973ec75dc76a90
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427255"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036022"
 ---
 # <a name="use-your-voice-to-operate-hololens"></a>Usare la voce per operare HoloLens
 
 È possibile usare la voce per eseguire quasi tutte le HoloLens, ad esempio scattare una foto rapida o aprire un'app. Molti comandi vocali sono incorporati in HoloLens, mentre altri sono disponibili tramite Cortana.
 
-Questo articolo illustra come controllare la HoloLens e il mondo olografico con la voce e con Cortana.
+Questo articolo illustra come controllare i HoloLens e il mondo olografico con la voce e con Cortana.
 
 > [!NOTE]
-> Il riconoscimento vocale è supportato solo in [alcune lingue.](hololens2-language-support.md) La lingua di riconoscimento vocale è basata sulla lingua Windows di visualizzazione, non sulla lingua della tastiera.  
+> Il riconoscimento vocale è supportato solo in [alcune lingue.](hololens2-language-support.md) La lingua del riconoscimento vocale è basata sulla lingua Windows di visualizzazione, non sulla lingua della tastiera.  
 >  
-> È possibile verificare la lingua Windows la lingua di visualizzazione selezionando **Impostazioni**  >  **ora e lingua.**  >  
+> È possibile verificare la lingua Windows lingua di visualizzazione **selezionando** Impostazioni  >  **ora e lingua.**  >  
 
 ## <a name="built-in-voice-commands"></a>Comandi vocali predefiniti
 
-È possibile HoloLens più velocemente con questi comandi di base. Per usare questi elementi, è necessario abilitare Il riconoscimento vocale durante la prima esecuzione del dispositivo o **in** Impostazioni  >  **privacy.**  >   È sempre possibile controllare se il riconoscimento vocale è abilitato esaminando lo stato nella parte superiore della menu Start. Per ottenere risultati ottimali per il riconoscimento vocale, HoloLens 2 usa i servizi basati sul cloud Microsoft. Tuttavia, è possibile usare Impostazioni per disabilitare questa funzionalità. A tale scopo, in Impostazioni disattivare Riconoscimento **vocale online.** Dopo aver modificato questa impostazione, HoloLens 2 solo i dati vocali in locale per riconoscere i comandi e la dettatura e Cortana non saranno disponibili.
+È possibile spostarsi HoloLens più velocemente con questi comandi di base. Per usare queste funzionalità, è necessario abilitare Il riconoscimento vocale durante la prima esecuzione del dispositivo o **in** Impostazioni  >  **privacy.**  >   È sempre possibile controllare se il riconoscimento vocale è abilitato esaminando lo stato nella parte superiore del menu Start. Per ottenere risultati ottimali per il riconoscimento vocale, HoloLens 2 usa i servizi basati sul cloud Microsoft. Tuttavia, è possibile usare Impostazioni per disabilitare questa funzionalità. A tale scopo, in Impostazioni disattivare Riconoscimento **vocale online.** Dopo aver modificato questa impostazione, HoloLens 2 solo i dati vocali in locale per riconoscere i comandi e la dettatura e Cortana non saranno disponibili.
 
 ### <a name="general-speech-commands"></a>Comandi vocali generali
 
@@ -72,7 +72,7 @@ Per usare questi comandi, osservare un oggetto 3D, un ologramma o una finestra d
 
 | Pronunciare questo | Per |
 | - | - |
-| "Bigger" | Aumenta le dimensioni |
+| "Bigger" | Ingrandirlo |
 | "Smaller" | Renderlo più piccolo |
 | "Guardami" | Trasformala in viso |
 | "Sposta" | Spostarla (seguire lo sguardo) |
@@ -85,7 +85,7 @@ Molti pulsanti e altri elementi HoloLens risposta anche alla **voce,** ad  esemp
 
 ### <a name="dictation-mode"></a>Modalità dettatura
 
-La digitazione è un'insod distorsi Passare alla modalità dettatura ogni volta che la tastiera olografica è attiva. Per iniziare, selezionare il pulsante del microfono o pronunciare "Avvia dettatura". Per interrompere la dettatura, selezionare di nuovo il pulsante o pronunciare "Stop dictating" (Interrompi dettatura). Per eliminare i dati appena dettati, pronunciare "Elimina". 
+È un'affaticata di digitazione? Passare alla modalità dettatura ogni volta che la tastiera olografica è attiva. Per iniziare, selezionare il pulsante del microfono o pronunciare "Avvia dettatura". Per interrompere la dettatura, selezionare di nuovo il pulsante o pronunciare "Stop dictating" (Interrompi dettatura). Per eliminare i dati appena dettati, pronunciare "Elimina". 
 
 > [!NOTE]
 > Per usare la modalità dettatura, è necessario disporre di una connessione Internet.
@@ -105,7 +105,7 @@ In alcuni casi è utile formulare alcune informazioni, ad esempio gli indirizzi 
 
 ## <a name="do-more-with-cortana"></a>Eseguire altre Cortana
 
-Cortana può essere utile eseguire tutti i tipi di operazioni nel HoloLens, ma a seconda della versione di Windows Holographic in uso, le funzionalità potrebbero essere diverse. Per altre informazioni sulle funzionalità aggiornate della versione più recente di Cortana, vedere Cortana nella prossima versione [di Windows 10,](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/)incentrata sulla produttività con sicurezza e privacy avanzate. 
+Cortana possibile eseguire tutti i tipi di operazioni nel HoloLens, ma a seconda della versione di Windows Holographic in uso, le funzionalità potrebbero essere diverse. Per altre informazioni sulle funzionalità aggiornate della versione più recente di Cortana, vedere Cortana nella prossima versione di Windows 10, incentrata sulla produttività con sicurezza e [privacy avanzate.](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/) 
 
 ![Hey Cortana!](images/cortana-on-hololens.png)
 

@@ -14,11 +14,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 92040019b093c5ef63d74f095dcb3809112ae7a0
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428713"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036224"
 ---
 # <a name="page-settings-visibility"></a>Visibilità Impostazioni pagina
 
@@ -80,7 +80,7 @@ Per configurare le Impostazioni dell'app per mostrare o nascondere la propria se
 
 ## <a name="settings-uris"></a>Impostazioni Uri
 
-HoloLens dispositivi e Windows 10 hanno una selezione diversa di pagine all'interno dell Impostazioni app. In questa pagina sono disponibili solo le impostazioni esistenti in HoloLens.
+HoloLens e i dispositivi Windows 10 hanno una selezione diversa di pagine all'interno dell Impostazioni app. In questa pagina sono disponibili solo le impostazioni esistenti in HoloLens.
 
 ### <a name="accounts"></a>Account
 | Pagina Impostazioni           | URI                                            |
@@ -156,21 +156,21 @@ HoloLens dispositivi e Windows 10 hanno una selezione diversa di pagine all'inte
 | <sup>Calibrazione 2</sup> |  `calibration` |
 | Notifiche e azioni  | `notifications`          |
 | Esperienze condivise | `crossdevice` 
-| Audio <sup>2</sup>           | `sound`<br>|
+| Suono <sup>2</sup>           | `sound`<br>|
 | Audio > volume dell'app e preferenza del dispositivo <sup>2</sup>           | `apps-volume`<br>|
 | Gestione > audio <sup>2</sup>           | `sound-devices`<br>|
 | Archiviazione            | `storagesense`           |
-| Archiviazione > Configurare Archiviazione Sense <sup>2</sup>           | `storagepolicies`<br>|
+| Archiviazione > configurare Archiviazione Sense <sup>2</sup>           | `storagepolicies`<br>|
 
-### <a name="time--language"></a>Lingua & ora
+### <a name="time--language"></a>Lingua & tempo
 | Pagina Impostazioni | URI                                           |
 |---------------|-----------------------------------------------|
-| Data & <sup>2</sup> | `dateandtime`                  |
+| Data &'ora <sup>2</sup> | `dateandtime`                  |
 | Tastiera <sup>2</sup> | `keyboard`                  |
 | Lingua <sup>2</sup> | `language`                  |
 | Lingua <sup>2</sup> | `regionlanguage-languageoptions`                  |
 | Linguaggio      | `regionlanguage`<br>`regionlanguage-adddisplaylanguage`<br>`regionlanguage-setdisplaylanguage` |
-| Region        | `regionformatting`                  |
+| Area        | `regionformatting`                  |
 
 ### <a name="update--security"></a>Aggiornare & sicurezza
 | Pagina Impostazioni                         | URI                                       |
@@ -179,11 +179,11 @@ HoloLens dispositivi e Windows 10 hanno una selezione diversa di pagine all'inte
 | Ripristino & ripristino <sup>2</sup>      | `reset`         |
 | Programma Windows Insider               | `windowsinsider` <br>`windowsinsider-optin`          |
 | Windows Update                        | `windowsupdate`<br> `windowsupdate-activehours`  <br> `windowsupdate-history` <br> `windowsupdate-optionalupdates` <br><sup>1</sup>`windowsupdate-options`<br><sup>1</sup>`windowsupdate-restartoptions` |
-| Windows Aggiornamento: verifica la disponibilità di aggiornamenti | `windowsupdate-action`          |
+| Windows Update - Verifica la disponibilità di aggiornamenti | `windowsupdate-action`          |
 
 
-- <sup>1</sup> - Per le versioni precedenti Windows Holographic, versione 21H1, i due URI  seguenti non visualizzano effettivamente le pagine Opzioni **avanzate;** verranno bloccate o mostrate solo le pagine Windows pagina Aggiorna.
-  -  opzioni di windowsupdate
+- <sup>1</sup> - Per le versioni precedenti Windows Holographic, versione 21H1, i due URI  seguenti non visualizzano effettivamente le pagine Opzioni **avanzate.** bloccano o visualizzano solo la pagina principale Windows Aggiorna.
+  -  windowsupdate-options
   -  windowsupdate-restartoptions
 
 - <sup>2</sup> - Disponibile in Windows Holographic 21H1 o versione successiva.

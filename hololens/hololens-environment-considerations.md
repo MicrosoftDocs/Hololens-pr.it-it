@@ -11,11 +11,11 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: frame olografico, campo di visualizzazione, fov, calibrazione, spazi, ambiente, procedura, HoloLens, realtà mista, visori VR di realtà mista
 ms.openlocfilehash: 6976527d759e768fa5da72f96395a8b7b390cefd
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427847"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036082"
 ---
 # <a name="hololens-environment-considerations"></a>HoloLens sull'ambiente
 
@@ -27,7 +27,7 @@ Gli ologrammi posizionati rimarranno nella posizione in cui sono stati inseriti,
 
 HoloLens dispositivi sanno come posizionare ologrammi stabili e accurati tracciando *gli* utenti in uno spazio. Senza un monitoraggio appropriato, il dispositivo non comprende l'ambiente o l'utente al suo interno. Ologrammi può essere visualizzato in posizioni erre, non essere visualizzato ogni volta nello stesso punto o non essere visualizzato affatto. I dati usati per tenere traccia degli utenti sono rappresentati nella *mappa spaziale*.  
 
-Il monitoraggio delle prestazioni è fortemente influenzato dall'ambiente in cui si trova l'utente e l'ottimizzazione di un ambiente per indurre un rilevamento stabile e coerente è un'arte anziché una scienza. Molti fattori ambientali diversi vengono combinati per consentire il rilevamento, ma gli sviluppatori di realtà mista possono tenere presenti diversi fattori per ottimizzare uno spazio per un monitoraggio migliore.
+Il monitoraggio delle prestazioni è fortemente influenzato dall'ambiente in cui si trova l'utente e l'ottimizzazione di un ambiente per indurre un rilevamento stabile e coerente è un'arte piuttosto che una scienza. Molti fattori ambientali diversi vengono combinati per consentire il rilevamento, ma gli sviluppatori di realtà mista possono tenere presenti diversi fattori per ottimizzare uno spazio per un monitoraggio migliore.
 
 ### <a name="lighting"></a>Luce
 
@@ -43,7 +43,7 @@ Se si ha un tachimetro, un 500-1000 stabile è un buon punto di partenza.
 
 Anche diversi tipi di luce in uno spazio possono influenzare il rilevamento. Le lampadine pulsano con l'elettricità ca in esecuzione: se la frequenza CA è 50 Hz, la luce pulsa a 50 Hz. Per un essere umano, questa pulsazione non viene notata. Tuttavia, HoloLens fotocamera a 30 fps di HoloLens vede queste modifiche: alcuni fotogrammi saranno ben illuminati, altri saranno scarsamente illuminati e altri saranno sovraesposte quando la fotocamera tenta di compensare gli pulse di luce.  
 
-Negli Stati Uniti, lo standard della frequenza di elettricità è di 60 Hz, quindi gli pulse delle lampadine sono errati con la frequenza dei fotogrammi di HoloLens: gli pulse a 60 Hz sono allineati con la frequenza dei fotogrammi a 30 FPS di HoloLens. Tuttavia, molti paesi hanno uno standard di frequenza CA di 50 Hz, il che significa che alcuni fotogrammi HoloLens verranno acquisiti durante gli pulse e altri no. In particolare, è noto che l'illuminazione fluorescente in Europa causa problemi.  
+Negli Stati Uniti, lo standard della frequenza di elettricità è di 60 Hz, quindi gli pulse delle lampadine sono errati con la frequenza dei fotogrammi di HoloLens: gli pulse a 60 Hz sono allineati alla frequenza dei fotogrammi a 30 FPS di HoloLens. Tuttavia, molti paesi hanno uno standard di frequenza CA di 50 Hz, il che significa che alcuni fotogrammi HoloLens verranno acquisiti durante gli pulse e altri no. In particolare, è noto che l'illuminazione fluorescente in Europa causa problemi.  
 
 È possibile provare a risolvere alcuni problemi di sfarfallio. Temperature, bulb age, and warm-up cycles are common causes of fluorescent sfarfallio and replacing bulbs may help. Può essere utile anche stringere le lampadine e assicurarsi che le estrazioni correnti siano costanti.  
 
@@ -53,7 +53,7 @@ HoloLens usa punti di riferimento ambientali univoci, noti anche come *funzional
 
 Un dispositivo non può quasi mai tenere traccia in un'area in cui le funzionalità sono scarse, perché il dispositivo non è in grado di sapere dove si trova nello spazio. L'aggiunta di funzionalità alle pareti di uno spazio è in genere un buon modo per migliorare il rilevamento. Poster, simboli collegati a una barriera, piante, oggetti univoci o altri elementi simili sono utili. Un desk disordinato è un buon esempio di ambiente che porta a un buon monitoraggio: in un'unica area sono presenti molte funzionalità diverse.  
 
-Inoltre, usare funzionalità univoche nello stesso spazio. Lo stesso poster ripetuto più volte su una barriera, ad esempio, causerà confusione del dispositivo perché il HoloLens non saprà quale poster ripetitivo sta esaminando. Un modo comune per aggiungere caratteristiche univoche è usare linee di nastro mascheramento per creare modelli univoci, non ripetitivi lungo le pareti e il piano di uno spazio.  
+Inoltre, usare funzionalità univoche nello stesso spazio. Lo stesso poster ripetuto più volte su una barriera, ad esempio, causerà confusione del dispositivo perché il HoloLens non saprà quale poster ripetitivo sta guardando. Un modo comune per aggiungere caratteristiche univoche è usare linee di nastro mascheramento per creare modelli univoci, non ripetitivi lungo le pareti e il piano di uno spazio.  
 
 Una domanda utile da porsi è: se si vede solo una piccola quantità della scena, è possibile individuarsi nello spazio in modo univoco? In caso contrario, è probabile che anche il dispositivo abbia problemi di rilevamento.
 
@@ -69,7 +69,7 @@ Se l'ambiente è in continua evoluzione, il dispositivo non ha funzionalità sta
 
 Maggiore è il numero di oggetti in movimento che si verificano in uno spazio, incluse le persone, più facile è perdere il rilevamento. Lo spostamento di nastri trasportatori, elementi in diversi stati di costruzione e molte persone in uno spazio sono stati tutti noti per causare problemi di tracciamento.
 
-Il HoloLens può adattarsi rapidamente a queste modifiche, ma solo quando tale area è chiaramente visibile al dispositivo. Le aree che non vengono viste con frequenza possono essere in ritardo rispetto alla realtà, causando errori nella mappa spaziale. Ad esempio, un utente analizza un amico e quindi si volta mentre l'amico esce dalla stanza. Una rappresentazione "fantasma" dell'elemento Friend verrà mantenuta nei dati di mapping spaziale fino a quando l'utente non esegue di nuovo l'analisi dello spazio vuoto.
+Il HoloLens può adattarsi rapidamente a queste modifiche, ma solo quando quest'area è chiaramente visibile al dispositivo. Le aree che non vengono viste con frequenza possono essere in ritardo rispetto alla realtà, causando errori nella mappa spaziale. Ad esempio, un utente analizza un amico e quindi si volta mentre l'amico esce dalla stanza. Una rappresentazione "fantasma" dell'elemento friend verrà mantenuta nei dati di mapping spaziale fino a quando l'utente non esegue nuovamente l'analisi dello spazio vuoto.
 
 ### <a name="proximity-of-the-user-to-items-in-the-space"></a>Prossimità dell'utente agli elementi nello spazio
 
@@ -95,25 +95,25 @@ Quando si immette un nuovo spazio (o se ne carica uno esistente), viene visualiz
 
 ## <a name="environment-management"></a>Gestione dell'ambiente
 
-Sono disponibili due impostazioni che consentono agli utenti di "pulire" gli ologrammi e HoloLens di "dimenticare" uno spazio. Esistono in ambienti **Ologrammi e nell'app** impostazioni, con la seconda impostazione visualizzata anche in **Privacy** nell'app impostazioni.  
+Sono disponibili due impostazioni che consentono agli utenti di "pulire" gli ologrammi e HoloLens di "dimenticare" uno spazio. Esistono in ambienti **Ologrammi e nell'app** delle impostazioni, con la seconda impostazione visualizzata anche in **Privacy** nell'app impostazioni.  
 
 1. **Eliminare gli ologrammi vicini.** Quando si seleziona questa impostazione, HoloLens cancella tutti gli ologrammi ancorati e tutti i dati mappa archiviati per lo "spazio corrente" in cui si trova il dispositivo. Una nuova sezione della mappa verrà creata e archiviata nel database per tale posizione dopo che gli ologrammi saranno nuovamente posizionati nello stesso spazio.
 
-1. **Eliminare tutti gli ologrammi**. Selezionando questa impostazione, HoloLens cancella tutti i dati della mappa e gli ologrammi ancorati negli interi database di spazi. Non verranno individuati ologrammi e gli ologrammi dovranno essere posizionati di nuovo per archiviare nuovamente le sezioni della mappa nel database.
+1. **Eliminare tutti gli ologrammi**. Selezionando questa impostazione, HoloLens cancella tutti i dati della mappa e gli ologrammi ancorati negli interi database di spazi. Non verranno individuati ologrammi e sarà necessario inserire nuovamente eventuali ologrammi per archiviare nuovamente le sezioni della mappa nel database.
 
 ## <a name="hologram-quality"></a>Qualità ologramma
 
-Ologrammi possono essere posizionati in tutto l'ambiente, ad alto, basso e intorno all'utente, ma saranno visualizzati tramite una cornice [olografica](/windows/mixed-reality/holographic-frame) che si trova davanti agli occhi. Per ottenere la visualizzazione migliore, assicurarsi di regolare il dispositivo in modo da visualizzare l'intero fotogramma. E non esitare a esplorare l'ambiente.
+Ologrammi possono essere posizionati in tutto l'ambiente, ad alto, basso e intorno all'utente, ma verranno visualizzati tramite una cornice [olografica](/windows/mixed-reality/holographic-frame) che si trova davanti agli occhi. Per ottenere la visualizzazione migliore, assicurarsi di regolare il dispositivo in modo da visualizzare l'intero fotogramma. E non esitare a esplorare l'ambiente.
 
-Perché gli [ologrammi](/windows/mixed-reality/hologram) siano chiari, chiari e stabili, HoloLens deve essere calibrato solo per l'utente. Quando si configura il HoloLens, si verrà guidati in questo processo. In seguito, se gli ologrammi non hanno un aspetto giusto o vengono visualizzati numerosi errori, è possibile apportare modifiche.
+Per ottenere [un aspetto chiaro,](/windows/mixed-reality/hologram) chiaro e stabile degli ologrammi, HoloLens deve essere calibrato solo per l'utente. Quando si configura il HoloLens, si verrà guidati in questo processo. In seguito, se gli ologrammi non hanno un aspetto giusto o vengono visualizzati numerosi errori, è possibile apportare modifiche.
 
 Se si verificano problemi durante il mapping degli spazi, provare a eliminare gli ologrammi nelle vicinanze e a ridefinire il mapping dello spazio.
 
 ### <a name="calibration"></a>Calibrazione
 
-Se gli ologrammi sembrano instabilità o traballanti o se si verificano problemi di posizionamento degli ologrammi, la prima cosa da provare è [l'app Calibrazione](hololens-calibration.md). Questa app può essere utile anche in caso di problemi durante l'uso del HoloLens.
+Se gli ologrammi sembrano instabilità o traballanti o se si verificano problemi di posizionamento degli ologrammi, la prima cosa da provare è [l'app calibrazione](hololens-calibration.md). Questa app può essere utile anche se si verificano problemi durante l'uso del HoloLens.
 
-Per accedere all'app Calibrazione, passare a **Impostazioni**  >  **utilità di**  >  **sistema**. Selezionare **Apri calibrazione** e seguire le istruzioni.
+Per accedere all'app Calibrazione, passare a **Impostazioni**  >  **utilità di**  >  **sistema.** Selezionare **Open Calibration (Apri calibrazione)** e seguire le istruzioni.
 
 Se un altro utente sta per usare il HoloLens, deve eseguire prima l'app Calibrazione in modo che il dispositivo sia configurato correttamente.
 
@@ -121,18 +121,18 @@ Se un altro utente sta per usare il HoloLens, deve eseguire prima l'app Calibraz
 
 [HoloLens informazioni normative:](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information)include informazioni su intervallo di temperatura, eliminazione, interferenze radio e TV e altro ancora.
 
-Vedere i dettagli per "HoloLens" in [Materials and materials and materials >](https://www.microsoft.com/legal/compliance/materials-substances) REACH Article 33 Disclosure on Environmental Compliance (PDF).
+Vedere i dettagli per "HoloLens" in [Materials and >](https://www.microsoft.com/legal/compliance/materials-substances) REACH Article 33 Disclosure on Environmental Compliance (PDF).
 
 Di seguito sono riportate alcune linee guida da seguire quando si usa il dispositivo:
 
 1. Archiviare il dispositivo in un ambiente entro l'intervallo di temperatura (in standby o disattivato) per un'ora prima di usare il dispositivo.
 1. Usare il dispositivo in un ambiente compreso nell'intervallo di temperatura.
-1. Usare il dispositivo all'interno.
-1. Usare il dispositivo in ombreggiatura; anche all'interno evitare la luce solare diretta attraverso finestre o lucernari.
+1. Usare il dispositivo in interni.
+1. Usare il dispositivo in ombreggiatura; anche gli interni evitano la disassazione diretta attraverso finestre o lucerni.
 1. Se si seguono le linee guida precedenti ma si verificano problemi imprevisti di surriscaldamento, seguire questa procedura per inviare [commenti e suggerimenti.](hololens-feedback.md) 
-    1. Verificare **che la telemetria** completa **o** facoltativa sia abilitata nel dispositivo. In caso contrario, abilitarlo. 
+    1. Verificare che **la telemetria** completa **o** facoltativa sia abilitata nel dispositivo. In caso contrario, abilitarlo. 
     >[!CAUTION]
-    > I dati di telemetria non sono retroattivi per gli eventi termici: devono essere abilitati durante il surriscaldamento o i dati necessari non verranno acquisiti.
+    > La telemetria non è retroattiva per gli eventi termici: deve essere abilitata durante il surriscaldamento o i dati necessari non verranno acquisiti.
     
     2. Riprodurre il problema di riscaldamento.
     3. Includere la data e l'ora in cui si è verificato il surriscaldamento.

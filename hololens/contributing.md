@@ -7,11 +7,11 @@ ms.date: 01/04/2021
 ms.topic: article
 ms.prod: hololens
 ms.openlocfilehash: d511156d6940574deda7448a6f634c0004b8f053
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428952"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032439"
 ---
 # <a name="contributing-to-the-hololens-documentation"></a>Contribuire alla documentazione HoloLens di lavoro
 
@@ -45,11 +45,11 @@ Quando si configura l'account GitHub, è consigliabile adottare anche queste pre
    - È consigliabile caricare un'immagine del profilo perché viene visualizzata un'anteprima nelle pagine della documentazione a cui si contribuisce.
 - Se si prevede di usare la riga di comando, è consigliabile configurare [Git Gestione credenziali per Windows](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/latest). In questo modo, non sarà necessario immettere la password ogni volta che si apporta un contributo.
 
-Il sistema di pubblicazione è associato GitHub, quindi questi passaggi sono importanti. L'utente verrà elencato come autore o collaboratore a ogni articolo usando l'alias GitHub predefinito.
+Il sistema di pubblicazione è associato GitHub, quindi questi passaggi sono importanti. Si verrà elencati come autore o collaboratore a ogni articolo usando l'alias GitHub.
 
 ## <a name="editing-an-existing-article"></a>Modifica di un articolo esistente
 
-Usare il flusso di lavoro seguente per apportare aggiornamenti *a un* articolo esistente tramite GitHub in un Web browser:
+Usare il flusso di lavoro seguente per apportare aggiornamenti *a un articolo esistente* tramite GitHub in un Web browser:
 
 1. Passare all'articolo che si vuole modificare nella cartella "mixed-reality-docs".
 
@@ -67,7 +67,7 @@ Usare il flusso di lavoro seguente per apportare aggiornamenti *a un* articolo e
 4. Aggiornare i metadati nella parte superiore di ogni articolo:
 
    * **title**: titolo della pagina visualizzato nella scheda del browser quando viene visualizzato l'articolo. I titoli di pagina vengono usati per seo e indicizzazione, quindi non modificare il titolo a meno che non sia necessario (anche se questo è meno critico prima che la documentazione sia pubblica).
-   * **description**: scrivere una breve descrizione del contenuto dell'articolo, che migliora seo e individuazione.
+   * **description**: scrivere una breve descrizione del contenuto dell'articolo, che migliora seO e individuazione.
    * **author:** se si è il proprietario principale della pagina, aggiungere l'alias GitHub qui.
    * **ms.author:** se si è il proprietario principale della pagina, aggiungere l'alias Microsoft qui (non è necessario , ma @microsoft.com solo l'alias).
    * **ms.date:** aggiornare la data se si aggiunge contenuto principale alla pagina, ma non per correzioni come chiarimenti, formattazione, grammatica o ortografia.
@@ -75,15 +75,15 @@ Usare il flusso di lavoro seguente per apportare aggiornamenti *a un* articolo e
    
 5. Dopo aver completato le modifiche all'articolo, scorrere verso il basso e selezionare **Proponi modifica file**.
 
-6. Nella pagina successiva selezionare Crea richiesta **pull per** unire il ramo creato automaticamente nel ramo _predefinito, master_.
+6. Nella pagina successiva selezionare Crea **richiesta pull per** unire il ramo creato automaticamente nel ramo _predefinito, master_.
 
 7. Ripetere i passaggi precedenti per l'articolo successivo da modificare.
 
 ## <a name="renaming-or-deleting-an-existing-article"></a>Ridenominazione o eliminazione di un articolo esistente
 
-Se la modifica rinomina o elimina un articolo esistente, assicurarsi di aggiungere un reindirizzamento. In questo modo, chiunque abbia un collegamento all'articolo esistente finirà comunque nel posto giusto. I reindirizzamenti vengono gestiti dal .openpublishing.redirection.jsfile nella radice del repo.
+Se la modifica rinomina o elimina un articolo esistente, assicurarsi di aggiungere un reindirizzamento. In questo modo, chiunque abbia un collegamento all'articolo esistente finirà comunque nel posto giusto. I reindirizzamenti vengono gestiti dal file .openpublishing.redirection.json nella radice del repo.
 
-Per aggiungere un reindirizzamento a .openpublishing.redirection.js, aggiungere una voce alla `redirections` matrice:
+Per aggiungere un reindirizzamento a .openpublishing.redirection.json, aggiungere una voce alla `redirections` matrice:
 
 ```json
 {
@@ -145,7 +145,7 @@ Usare il flusso di lavoro seguente *per creare nuovi* articoli nel repo della do
 
 8. Al termine, selezionare **Commit new file (Esegui commit nuovo file).**
 
-9. Selezionare **Nuova richiesta pull** ed eseguire il merge del ramo _master_ del fork in MicrosoftDocs/mixed-reality _master_ (assicurarsi che la freccia sia rivolta alla destinazione corretta).
+9. Selezionare **Nuova richiesta pull** ed eseguire il merge del ramo _master_ del fork in MicrosoftDocs/mixed-reality _master_ (assicurarsi che la freccia punti alla destinazione corretta).
 
    ![Creare una richiesta pull dal fork in MicrosoftDocs/mixed-reality.](images/pr-to-master.png)
 
@@ -167,7 +167,7 @@ A causa del modo in cui docs.microsoft.com stili, non hanno bordi o stili person
 È necessario caricare le immagini nella cartella "mixed-reality-docs/images" nel archivio e quindi fare riferimento alle immagini in modo appropriato nell'articolo. Le immagini verranno visualizzate automaticamente a dimensione intera, il che significa che le immagini di grandi dimensioni riempiranno l'intera larghezza dell'articolo. È consigliabile pre-ridimensionare le immagini prima di caricarle. La larghezza consigliata è compresa tra 600 e 700 pixel, anche se è consigliabile ridimensionare rispettivamente se si tratta di uno screenshot denso o di una frazione di uno screenshot.
 
 >[!IMPORTANT]
->È possibile caricare immagini solo nel proprio repo con fork prima dell'unione. Pertanto, se si prevede di aggiungere immagini a un articolo, è necessario usare [Visual Studio Code](#using-visual-studio-code) per aggiungere prima le immagini alla cartella "images" del fork o assicurarsi di aver eseguito le operazioni seguenti in un Web browser:
+>È possibile caricare le immagini solo nel proprio repo con fork prima dell'unione. Pertanto, se si prevede di aggiungere immagini a un articolo, è necessario usare [Visual Studio Code](#using-visual-studio-code) per aggiungere prima le immagini alla cartella "images" del fork o assicurarsi di aver eseguito le operazioni seguenti in un Web browser:
 >
 >1. Fork del repo MicrosoftDocs/realtà mista.
 >2. L'articolo è stato modificato nel fork.
@@ -178,7 +178,7 @@ A causa del modo in cui docs.microsoft.com stili, non hanno bordi o stili person
 
 ## <a name="previewing-your-work"></a>Anteprima del lavoro
 
-Durante la modifica in GitHub tramite un Web browser, è possibile selezionare la scheda **Anteprima** nella parte superiore della pagina per visualizzare in anteprima il lavoro prima di eseguire il commit. 
+Durante la modifica in GitHub tramite un Web  browser, è possibile selezionare la scheda Anteprima nella parte superiore della pagina per visualizzare in anteprima il lavoro prima di eseguire il commit. 
 
 >[!NOTE]
 >La visualizzazione in anteprima delle modifiche review.docs.microsoft.com è disponibile solo per i dipendenti Microsoft

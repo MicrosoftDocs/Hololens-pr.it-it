@@ -1,7 +1,7 @@
 ---
 title: Gestire gli endpoint di connessione per HoloLens
-description: Informazioni su come configurare un'HoloLens in una rete Wi-Fi durante la gestione e la configurazione degli endpoint di connessione.
-keywords: hololens, offline, Configurazione offline
+description: Informazioni su come configurare un HoloLens su una rete Wi-Fi durante la gestione e la configurazione degli endpoint di connessione.
+keywords: hololens, offline, Configurazione fuori rete
 audience: ITPro
 ms.date: 07/01/2019
 ms.assetid: b86f603c-d25f-409b-b055-4bbc6edcd301
@@ -19,19 +19,19 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: f2d9faafac2f84b727b1e10be83d4d1b53a707b4
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428572"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036182"
 ---
 # <a name="manage-connection-endpoints-for-hololens"></a>Gestire gli endpoint di connessione per HoloLens
 
-Alcuni HoloLens, le app e i servizi correlati trasferiscono i dati agli endpoint di rete Microsoft. Questo articolo elenca i diversi endpoint e URL che devono essere consentiti nella configurazione di rete (ad esempio proxy o firewall) per il modo in cui tali componenti siano funzionanti.    
+Alcuni HoloLens componenti, app e servizi correlati trasferiscono i dati agli endpoint di rete Microsoft. Questo articolo elenca i diversi endpoint e URL che devono essere consentiti nella configurazione di rete (ad esempio proxy o firewall) per consentire la funzionalità di tali componenti.    
 
 ## <a name="near-offline-setup"></a>Configurazione quasi offline
 
-HoloLens supporta un set limitato di esperienze offline per i clienti che hanno restrizioni relative all'ambiente di rete. Tuttavia, HoloLens deve essere stabilita una connessione di rete per eseguire la configurazione iniziale del dispositivo e devono essere abilitati gli URL seguenti:
+HoloLens supporta un set limitato di esperienze offline per i clienti con restrizioni dell'ambiente di rete. Tuttavia, HoloLens la connessione di rete per eseguire la configurazione iniziale del dispositivo e gli URL seguenti devono essere abilitati:
 
 | Scopo | URL |
 |------|------|
@@ -39,7 +39,7 @@ HoloLens supporta un set limitato di esperienze offline per i clienti che hanno 
 | [NCSI](/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services#bkmk-ncsi) |  http://www.msftconnecttest.com/connecttest.txt  |
 | AADv9 | https://login.microsoftonline.com/WebApp/CloudDomainJoin/9 |
 | AADv10 | https://login.microsoftonline.com/WebApp/CloudDomainJoin/10 |
-| AAD Pin | https://account.live.com/aadngc?uiflavor=win10&showSuccess=1 |
+| Aggiunta di AAD | https://account.live.com/aadngc?uiflavor=win10&showSuccess=1 |
 | Account del servizio gestito | https://login.live.com/ppsecure/inlineconnect.srf?id=80600 |
 | MSA Pin | https://account.live.com/msangc?fl=enroll |
 

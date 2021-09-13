@@ -1,7 +1,7 @@
 ---
-title: Guida alla distribuzione - Connessione aziendale HoloLens 2 con Dynamics 365 Guides - Distribuzione
+title: Guida alla distribuzione - Connessione aziendale HoloLens 2 con Dynamics 365 Guides - Distribuisci
 description: Informazioni su come configurare le distribuzioni di HoloLens 2 su una rete connessa aziendale con Dynamics 365 Guides.
-keywords: HoloLens, gestione, connessa aziendale, Dynamics 365 Guides, AAD, Azure AD, MDM, gestione dei dispositivi mobili
+keywords: HoloLens, gestione, aziendale connesso, Dynamics 365 Guides, AAD, Azure AD, MDM, gestione dei dispositivi mobili
 author: joyjaz
 ms.author: v-jjaswinski
 ms.reviewer: aboeger
@@ -15,11 +15,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 7df2b00b2d87be7b9ad4a5d84c83251ec0ebec4d
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428122"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033491"
 ---
 # <a name="deploy---corporate-connected-guide"></a>Distribuire - Guida alla connessione aziendale
 
@@ -31,36 +31,36 @@ Successivamente, sarà possibile confermare che è possibile creare e usare una 
 
 ## <a name="enrollment-validation"></a>Convalida della registrazione
 
-Ora che tutti gli elementi sono configurati correttamente per Azure AD e la registrazione MDM, il resto dovrebbe essere uno snap. Sono necessari una connessione Wi-Fi e il dispositivo HoloLens e uno degli account utente Azure AD configurati in precedenza.
+Ora che tutti gli elementi sono configurati correttamente per Azure AD e la registrazione MDM, il resto dovrebbe essere uno snap. Sono necessari una connessione Wi-Fi e il dispositivo HoloLens e uno degli account utente configurati Azure AD precedenza.
 
 Se il dispositivo non si trova attualmente in uno stato delle impostazioni predefinite, è il momento giusto per eseguire il [reflash del dispositivo.](/hololens/hololens-recovery#clean-reflash-the-device)
 
-1. Una volta che il dispositivo è in configurazione operativo, è necessario iniziare a interagire e a seguire le istruzioni.
+1. Una volta che il dispositivo è in configurazione configurazione, è necessario iniziare a interagire e a seguire le istruzioni.
 
-2. Connessione a una rete Wi-Fi aperta che non richiede certificati per l'aggiunta al Wi-Fi. In questo modo il dispositivo può scaricare il certificato da usare nel dispositivo dell'Wi-Fi dopo la configurazione iniziale.
+2. Connessione a una rete Wi-Fi aperta che non richiede certificati per l'aggiunta al Wi-Fi. In questo modo il dispositivo può scaricare il certificato da usare nel dispositivo dell'Wi-Fi dopo l'installazione iniziale.
 
-3. Il prompt critico sarà quando viene chiesto se **Who è proprietario di HoloLens?** Selezionare My work or school owns it (L'account aziendale o **dell'istituto** di istruzione è proprietario) e immettere Azure AD credenziali dell'account.
+3. Il prompt critico sarà quando viene chiesto se **Who è proprietario di HoloLens?** Selezionare My work or school owns it (L'account aziendale o **dell'istituto di** istruzione è proprietario) e immettere Azure AD credenziali dell'account.
 
 4. Al termine della registrazione, verrà richiesto di configurare un PIN. Questo PIN è univoco per questo dispositivo per questo utente. Verranno anche richieste le scansioni Iris, i dati vocali e le impostazioni di telemetria e infine si sarà in grado di imparare ad aprire il menu Start e completare la Configurazione guidata.
 
-5. Quando si apre la home page di Realtà mista, apri il menu Start usando il **movimento Start** appena appreso.
+5. Quando si apre la home page della realtà mista, apri il menu Start usando il **movimento Start** appena appreso.
 
 6. Selezionare **l'app Impostazioni** e selezionare **Sistema.** La prima informazione che verrà visualizzata è il nome del dispositivo, che per il dispositivo HoloLens 2 sarà &quot; HOLOLENS, seguito da una stringa di sei &quot; caratteri.
 
 7. Prendere nota di questo nome.
 
-    ![HoloLens 2 Impostazioni schermata.](./images/hololens2-settings-about.jpg)
+    ![HoloLens 2 Impostazioni precedente.](./images/hololens2-settings-about.jpg)
 
 8. Verificare che il dispositivo sia stato aggiunto correttamente Azure AD. Esistono due modi:
 
-    1.  App Impostazioni app. In  Impostazioni **account** Accedere  ->  **all'account di lavoro o dell'istituto di istruzione.** Da questa schermata è possibile verificare che la registrazione sia stata completata correttamente. Vedere Connesso a &quot; nameofAAD&#39;'Azure AD. Connesso da *yourusername@nameofAAD.onmicrosoft.com* . In questo modo si verificherà che il dispositivo sia stato aggiunto&#39;'Azure AD.
+    1.  App Impostazioni. In  Impostazioni **account** Accedere  ->  **all'account di lavoro o dell'istituto di istruzione.** Da questa schermata è possibile verificare che la registrazione sia stata completata correttamente. Vedere Connected &quot; to nameofAAD&#39;'s Azure AD (Connesso a nameofAAD Azure AD). Connesso da *yourusername@nameofAAD.onmicrosoft.com* . In questo modo si verificherà che il dispositivo sia stato aggiunto&#39;'Azure AD.
 
-    1. Oggetto [portale di Azure](https://portal.azure.com/#home). Passare a **Azure Active Directory**  ->  **Tutti**  ->  **i dispositivi** e cercare il nome del dispositivo. In Tipo di join verrà visualizzato come "Azure AD join".
+    1. Oggetto [portale di Azure](https://portal.azure.com/#home). Passare a **Azure Active Directory**  ->  **Dispositivi Tutti** i  ->  **dispositivi** e cercare il nome del dispositivo. In Tipo di join verrà visualizzato come "Azure AD aggiunto".
         ![Verificare il tipo di join Azure AD.](./images/hololens2-devices-all-devices.png)
 
 9. Verificare che il dispositivo sia registrato con MDM. Esistono due modi:
 
-    1. Da **Impostazioni** selezionare **Account** Accedi  ->  **all'account di lavoro o dell'istituto di istruzione.** Da questa schermata è possibile verificare che la registrazione sia stata completata correttamente. Vedere Connesso a &quot; nameofAAD&#39;'Azure AD. Connesso da *yourusername@nameofAAD.onmicrosoft.com* . Da questo account di accesso aziendale o dell'istituto di istruzione selezionare Connesso &quot; a nameofAAD&#39;'Azure AD. Connesso da yourusername@nameofAAD.onmicrosoft.com &quot; e selezionare il **pulsante** Informazioni.
+    1. Da **Impostazioni** selezionare **Account** Accedi  ->  **all'account di lavoro o dell'istituto di istruzione.** Da questa schermata è possibile verificare che la registrazione sia stata completata correttamente. Vedere Connected &quot; to nameofAAD&#39;'s Azure AD (Connesso a nameofAAD Azure AD). Connesso da *yourusername@nameofAAD.onmicrosoft.com* . Da questo account di accesso aziendale o dell'istituto di istruzione selezionare Connesso &quot; a nameofAAD&#39;'Azure AD. Connesso da yourusername@nameofAAD.onmicrosoft.com &quot; e selezionare il **pulsante** Informazioni.
 
     1. [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/#home). Accedere e selezionare Dispositivi **e** quindi **Tutti i dispositivi.** Da qui è possibile cercare il nome HoloLens dispositivo&#39;nome. Dovrebbe essere possibile visualizzare i dati HoloLens elencati in Intune.
 
@@ -69,7 +69,7 @@ Se il dispositivo non si trova attualmente in uno stato delle impostazioni prede
 
 ## <a name="wi-fi-certificate-validation"></a>Wi-Fi convalida del certificato
 
-A questo punto, il dispositivo dovrebbe aver ricevuto il Wi-Fi certificato. La convalida più semplice che è possibile eseguire è tentare di connettersi alla connessione Wi-Fi per cui si&#39;ricevuto il certificato. Aprire l'app **Impostazioni,** passare a Rete **&amp; Internet**  ->  **Wi-Fi** e selezionare la connessione Wi-Fi. Una volta connessi, aprire l'app Microsoft Edge e verificare che sia possibile passare a un sito Web.
+A questo punto, il dispositivo dovrebbe aver ricevuto il Wi-Fi certificato. La convalida più semplice possibile è tentare di connettersi alla connessione Wi-Fi per cui si&#39;ricevuto il certificato. Aprire l'app **Impostazioni,** passare a Rete **&amp; Internet**  ->  **Wi-Fi** e selezionare la connessione Wi-Fi. Una volta connessi, aprire l'app Microsoft Edge e verificare che sia possibile passare a un sito Web.
 
 Per verificare di aver ricevuto il certificato nel dispositivo, è possibile usare Gestione [certificati](/hololens/certificate-manager).
 
@@ -81,7 +81,7 @@ Aprire il menu Start e selezionare **Tutte le app.** A seconda del numero di app
 
 Per convalidare l'installazione dell'app nel dispositivo, è possibile farlo tramite account **di Impostazioni** Accesso aziendale o dell'istituto di istruzione, selezionare l'account, quindi il pulsante Informazioni e scorrere verso il basso per visualizzare diverse configurazioni e app applicate al dispositivo da  ->    ->  MDM. 
 
-Per convalidare l'installazione da Intune, passare alla pagina app del portale [MEM](https://endpoint.microsoft.com/#home)-> Tutte le app  ->     -> *TheNameOfYourApp* Device install status (Stato di installazione del dispositivo App  ->   MEM).
+Per convalidare l'installazione da Intune, passare alla pagina app [->](https://endpoint.microsoft.com/#home)app del portale MEM  ->     -> *TheNameOfYourApp* Device install status (Nome Del dispositivo  ->  **app).**
 
 Vedere altre informazioni: [Distribuzione di app di Intune per HoloLens](/hololens/app-deploy-intune)
 
@@ -100,7 +100,7 @@ Non è necessario eseguire molte azioni per questa convalida rapida. È sufficie
 
 ### <a name="operating-the-guide"></a>Uso della guida
 
-Dopo aver installato gli ologrammi, è possibile testare il funzionamento della guida. 
+Dopo aver installato gli ologrammi, è possibile testare la guida. 
 - Selezionare **la modalità operatore**
 - Fare clic sui passaggi della guida.
 

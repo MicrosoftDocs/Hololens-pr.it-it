@@ -14,11 +14,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: e3acd2665e93e44bce2c5dad467c825dc768bfed
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428198"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033914"
 ---
 # <a name="share-your-hololens-with-multiple-people"></a>Condividere il HoloLens con più persone
 

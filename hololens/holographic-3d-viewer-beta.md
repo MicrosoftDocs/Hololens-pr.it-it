@@ -1,6 +1,6 @@
 ---
-title: Uso Visualizzatore 3D Beta in HoloLens (prima generazione)
-description: Descrive i tipi di file e le funzionalità supportati Visualizzatore 3D Beta in HoloLens (prima generazione) e come usare e risolvere i problemi dell'app.
+title: Uso Visualizzatore 3D Beta HoloLens (prima generazione)
+description: Descrive i tipi di file e funzionalità supportati Visualizzatore 3D Beta in HoloLens (prima generazione) e come usare e risolvere i problemi dell'app.
 ms.prod: hololens
 ms.sitesec: library
 author: Teresa-Motiv
@@ -14,31 +14,31 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: 00e99d3f67e9e4371da12612b9b01c3ce58e71bd
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428930"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036028"
 ---
-# <a name="using-3d-viewer-beta-on-hololens-1st-gen"></a>Uso Visualizzatore 3D Beta in HoloLens (prima generazione)
+# <a name="using-3d-viewer-beta-on-hololens-1st-gen"></a>Uso Visualizzatore 3D Beta HoloLens (prima generazione)
 
-Visualizzatore 3D Beta consente di visualizzare i modelli 3D HoloLens (prima generazione). È possibile aprire e visualizzare *i file* con estensione fbx supportati da Microsoft Edge, OneDrive e altre app.
+Visualizzatore 3D Beta consente di visualizzare i modelli 3D HoloLens (prima generazione). È possibile aprire e visualizzare *i file* FBX supportati da Microsoft Edge, OneDrive e altre app.
 
 >[!NOTE]
->Questo articolo si applica all'app immersive Unity **Visualizzatore 3D Beta,** che supporta i file con estensione fbx ed è disponibile solo in HoloLens (prima generazione). L'app  Visualizzatore 3D preinstallata in HoloLens 2 supporta l'apertura di modelli 3D con estensione [](/windows/mixed-reality/creating-3d-models-for-use-in-the-windows-mixed-reality-home#asset-requirements-overview) glb personalizzati nel ambiente iniziale. Per altri dettagli, vedere Panoramica dei requisiti degli asset.
+>Questo articolo si applica all'app Immersive Unity **Visualizzatore 3D Beta,** che supporta i file con estensione fbx ed è disponibile solo in HoloLens (prima generazione). L'app **Visualizzatore 3D** preinstallata in HoloLens 2 supporta l'apertura di modelli 3D con estensione [](/windows/mixed-reality/creating-3d-models-for-use-in-the-windows-mixed-reality-home#asset-requirements-overview) glb personalizzati nel ambiente iniziale (per altri dettagli, vedere Panoramica dei requisiti degli asset).
 
 >[!IMPORTANT]
->Anche Visualizzatore 3D Beta può rimanere disponibile nel Microsoft Store per HoloLens (prima generazione), non è più in fase di sviluppo attivo e non è più supportato.
+>Sebbene Visualizzatore 3D Beta rimanga disponibile nel Microsoft Store per HoloLens (prima generazione), non è più in fase di sviluppo attivo e non è più supportato.
 
-Se si verificano problemi durante l'apertura di un modello 3D in Visualizzatore 3D Beta o se alcune funzionalità del modello 3D non sono supportate, vedere Specifiche di contenuto supportate più [avanti.](#supported-content-specifications)
+Se si verificano problemi durante l'apertura di un modello 3D in Visualizzatore 3D Beta o alcune funzionalità del modello 3D non sono supportate, vedere Specifiche di contenuto [supportate](#supported-content-specifications) di seguito.
 
-Per compilare o ottimizzare modelli 3D da usare con Visualizzatore 3D Beta, vedere [Ottimizzazione dei modelli 3D per](#optimizing-3d-models-for-3d-viewer-beta) Visualizzatore 3D Beta più avanti.
+Per creare o ottimizzare modelli 3D da usare con Visualizzatore 3D Beta, vedere Ottimizzazione dei modelli [3D](#optimizing-3d-models-for-3d-viewer-beta) per Visualizzatore 3D Beta più avanti.
 
-Esistono due modi per aprire un modello 3D in HoloLens. Per altre informazioni, vedere Visualizzazione di [file FBX HoloLens](#viewing-fbx-files-on-hololens) di seguito.
+Esistono due modi per aprire un modello 3D in HoloLens. Per altre informazioni, vedere Visualizzazione di file [FBX HoloLens](#viewing-fbx-files-on-hololens) di seguito.
 
-Se si verificano problemi dopo aver letto questi argomenti, vedere Risoluzione [dei problemi di](#troubleshooting) seguito.
+Se si verificano problemi dopo la lettura di questi argomenti, vedere Risoluzione [dei problemi di](#troubleshooting) seguito.
 
-## <a name="supported-content-specifications"></a>Specifiche di contenuto supportate
+## <a name="supported-content-specifications"></a>Specifiche del contenuto supportate
 
 ### <a name="file-format"></a>Formato file
 
@@ -47,41 +47,41 @@ Se si verificano problemi dopo aver letto questi argomenti, vedere Risoluzione [
 
 ### <a name="file-size"></a>Dimensione del file
 
-- Minimo 5 KB
+- Almeno 5 KB
 - Massimo 500 MB
 
 ### <a name="geometry"></a>Geometria
 
 - Solo modelli poligonali. Nessuna superficie di suddivisione o NURB
 - Sistema di coordinate destro
-- La proiezione nelle matrici di trasformazione non è supportata
+- La trascino nelle matrici di trasformazione non è supportata
 
 ### <a name="textures"></a>Trame
 
-- Le mappe di trama devono essere incorporate nel file FBX
+- Le mappe trame devono essere incorporate nel file FBX
 - Formati di immagine supportati
   - Immagini JPEG e PNG
-  - Immagini BMP (vero colore RGB a 24 bit)
-  - Immagini TGA (RGB a 24 bit e RGBQ a 32 bit true-color)
+  - Immagini BMP (true-color RGB a 24 bit)
+  - Immagini TGA (RGB a 24 bit e RGBQ true a 32 bit)
 - Risoluzione massima della trama di 2048x2048
-- Al massimo una mappa diffusa, una mappa normale e una mappa cubo di reflection per mesh
-- Il canale alfa nelle trame diffuse causa la eliminazione dei pixel se inferiore al 50%
+- Al massimo una mappa diffusa, una mappa normale e una mappa del cubo di reflection per ogni mesh
+- Il canale alfa nelle trame diffuse causa l'eliminazione dei pixel se inferiore al 50%
 
 ### <a name="animation"></a>Animazione
 
-- Animazione di ridimensionamento,rotazione/traslazione su singoli oggetti
-- Animazione scheletrico (con interfaccia) con interfaccia
-  - Massimo 4 fattori per vertice
+- Animazione di scala/rotazione/traslazione su singoli oggetti
+- Animazione scheletrico (con interfaccia)
+  - Al massimo 4 influenze per vertice
 
 ### <a name="materials"></a>Materiali
 
-- Sono supportati i materiali Lambert e Phong, con parametri regolabili
+- Sono supportati materiali Lambert e Phong, con parametri regolabili
 - Proprietà dei materiali supportate per Lambert
-  - Trama principale (test RGB + alfa)
+  - Trama principale (test RGB + alpha)
   - Colore diffuso (RGB)
   - Colore ambiente (RGB)
 - Proprietà dei materiali supportate per Phong
-  - Trama principale (test RGB + alfa)
+  - Trama principale (test RGB + alpha)
   - Colore diffuso (RGB)
   - Colore ambiente (RGB)
   - Colore speculare (RGB)
@@ -89,49 +89,49 @@ Se si verificano problemi dopo aver letto questi argomenti, vedere Risoluzione [
   - Riflettività
 - I materiali personalizzati non sono supportati
 - Massimo un materiale per mesh
-- Massimo un livello materiale
+- Massimo un livello di materiale
 - Massimo 8 materiali per file
 
 ### <a name="file-and-model-limitations"></a>Limitazioni di file e modelli
 
-Esistono limiti rigidi per le dimensioni dei file, nonché per il numero di modelli, vertici e mesh che possono essere aperti contemporaneamente in Visualizzatore 3D Beta:
+Esistono limiti rigidi per le dimensioni dei file, nonché il numero di modelli, vertici e mesh che possono essere aperti contemporaneamente in Visualizzatore 3D Beta:
 
-- Dimensioni massime del file di 500 MB per modello
+- Dimensioni massime file di 500 MB per ogni modello
 - Vertici: 600.000 combinati in tutti i modelli aperti
-- Mesh: 1.600 combinati in tutti i modelli aperti
+- Mesh: 1.600 combinate in tutti i modelli aperti
 - Massimo 40 modelli aperti contemporaneamente
 
 ## <a name="optimizing-3d-models-for-3d-viewer-beta"></a>Ottimizzazione dei modelli 3D per Visualizzatore 3D Beta
 
 ### <a name="special-considerations"></a>Considerazioni speciali
 
-- Evitare materiali neri o aree nere nelle mappe di trama. Ologrammi sono di luce, pertanto HoloLens il nero (l'assenza di luce) come trasparente.
-- Prima di eseguire l'esportazione in FBX dallo strumento di creazione, verificare che tutta la geometria sia visibile e sbloccata e che nessun livello contenente geometria sia disattivato o su modello. La visibilità non viene rispettata.
-- Evitare offset di traslazione molto grandi tra i nodi (ad esempio, 100.000 unità). Ciò può causare l'instabilità del modello durante lo spostamento, la scala e la rotazione.
+- Evitare materiali neri o aree nere nelle mappe di trama. Ologrammi sono fatti di luce, quindi HoloLens il nero (l'assenza di luce) come trasparente.
+- Prima di eseguire l'esportazione in FBX dallo strumento di creazione, assicurarsi che tutta la geometria sia visibile e sbloccata e che nessun livello contenente geometria sia disattivato o su modello. La visibilità non viene rispettata.
+- Evitare offset di traslazione molto grandi tra i nodi (ad esempio, 100.000 unità). In questo modo il modello può instabilità durante lo spostamento/ridimensionamento/rotazione.
 
 ### <a name="performance-optimization"></a>Ottimizzazione delle prestazioni
 
-Tenere presenti le prestazioni durante la creazione di contenuto e la convalida nell'app beta Visualizzatore 3D in HoloLens durante il processo di creazione per ottenere risultati ottimali. Visualizzatore 3D Beta esegue il rendering del contenuto in tempo reale e le prestazioni sono soggette HoloLens funzionalità hardware.  
+Tenere presenti le prestazioni durante la creazione di contenuto e la convalida nell'app Visualizzatore 3D Beta HoloLens durante il processo di creazione per ottenere risultati ottimali. Visualizzatore 3D Beta esegue il rendering del contenuto in tempo reale e le prestazioni sono soggette HoloLens funzionalità hardware.  
 
-Esistono molte variabili in un modello 3D che possono influire sulle prestazioni. Visualizzatore 3D Beta visualizza un avviso al caricamento se sono presenti più di 150.000 vertici o più di 400 mesh. Le animazioni possono avere un impatto sulle prestazioni di altri modelli aperti. Esistono anche limiti rigidi per i modelli di numero totale, i vertici e le mesh che possono essere aperti contemporaneamente in Visualizzatore 3D Beta (vedere Limitazioni di file [e modelli).](#file-and-model-limitations)  
+Esistono molte variabili in un modello 3D che possono influire sulle prestazioni. Visualizzatore 3D Beta visualizza un avviso al caricamento se sono presenti più di 150.000 vertici o più di 400 mesh. Le animazioni possono influire sulle prestazioni di altri modelli aperti. Esistono anche limiti rigidi per il numero totale di modelli, vertici e mesh che possono essere aperti contemporaneamente in Visualizzatore 3D Beta (vedere Limitazioni di file [e modelli](#file-and-model-limitations)).  
 
-Se il modello 3D non viene eseguito bene a causa della complessità del modello, prendere in considerazione quanto indicato di seguito:
+Se il modello 3D non è in esecuzione a causa della complessità del modello, prendere in considerazione:
 
 - Riduzione del numero di poligoni
-- Riduzione del numero di elementi in un'animazione non ancorata
-- Evitare l'occlusione autonoma
+- Riduzione del numero di esche nell'animazione ritardata
+- Evitare l'autoocclusione
 
-Il rendering lato doppio è supportato in Visualizzatore 3D Beta, anche se è disattivato per impostazione predefinita per motivi di prestazioni. Questa opzione può essere attivata tramite **il pulsante Doppio lato** nella **pagina** Dettagli. Per ottenere prestazioni ottimali, evitare la necessità di eseguire il rendering su due lati nel contenuto.
+Il rendering lato doppio è supportato in Visualizzatore 3D Beta, anche se è disattivato per impostazione predefinita per motivi di prestazioni. Questa opzione può essere attivata tramite **il pulsante A doppio** lato nella **pagina** Dettagli. Per ottenere prestazioni ottimali, evitare la necessità di rendering su due lati nel contenuto.
 
 ### <a name="validating-your-3d-model"></a>Convalida del modello 3D
 
-Convalidare il modello aprendolo in Visualizzatore 3D Beta in HoloLens. Selezionare il **pulsante** Dettagli per visualizzare le caratteristiche e gli avvisi del modello relativi a contenuto non supportato (se presente).
+Convalidare il modello aprendolo in Visualizzatore 3D Beta HoloLens. Selezionare il **pulsante** Dettagli per visualizzare le caratteristiche e gli avvisi del modello relativi al contenuto non supportato (se presente).
 
 ### <a name="rendering-3d-models-with-true-to-life-dimensions"></a>Rendering di modelli 3D con dimensioni true-to-life
 
-Per impostazione predefinita, Visualizzatore 3D Beta visualizza i modelli 3D con dimensioni e posizione familiari rispetto all'utente. Tuttavia, se il rendering di un modello 3D con misurazioni true-to-life è importante (ad esempio, quando si valutano modelli di recupero in una stanza), l'autore del contenuto può impostare un flag all'interno dei metadati del file per impedire il ridimensionamento del modello sia da parte dell'applicazione che dell'utente.
+Per impostazione predefinita, Visualizzatore 3D Beta visualizza i modelli 3D con dimensioni e posizione confortevoli rispetto all'utente. Tuttavia, se il rendering di un modello 3D con misurazioni true-to-life è importante (ad esempio, quando si valutano modelli di mobili in una stanza), l'autore del contenuto può impostare un flag all'interno dei metadati del file per impedire il ridimensionamento del modello sia dall'applicazione che dall'utente.
 
-Per impedire il ridimensionamento del modello, aggiungere un attributo personalizzato booleano a qualsiasi oggetto nella scena denominato Microsoft_DisableScale e impostarlo su true. Visualizzatore 3D Beta rispetterà quindi le informazioni FbxSystemUnit contenute nel file FBX. La scalabilità Visualizzatore 3D Beta è di 1 metro per unità FBX.
+Per impedire il ridimensionamento del modello, aggiungere un attributo personalizzato booleano a qualsiasi oggetto nella scena denominata Microsoft_DisableScale e impostarlo su true. Visualizzatore 3D Beta rispetterà quindi le informazioni FbxSystemUnit contenute nel file FBX. La scalabilità Visualizzatore 3D Beta è di 1 metro per unità FBX.
 
 ## <a name="viewing-fbx-files-on-hololens"></a>Visualizzazione di file FBX in HoloLens
 
@@ -141,9 +141,9 @@ I file FBX possono essere aperti direttamente da un sito Web usando Microsoft Ed
 
 1. In Microsoft Edge passare alla pagina Web contenente il file FBX che si vuole visualizzare.
 1. Selezionare il file per scaricarlo.
-1. Al termine del download, selezionare il **pulsante** Apri in Microsoft Edge per aprire il file in Visualizzatore 3D Beta.
+1. Al termine del download, selezionare il **pulsante** Apri Microsoft Edge per aprire il file in Visualizzatore 3D Beta.
 
-È possibile accedere al file scaricato e riaperrlo in un secondo momento usando Download in Microsoft Edge. Per salvare un modello 3D e garantire l'accesso continuo, scaricare il file nel PC e salvarlo nell'account OneDrive personale. Il file può quindi essere aperto dall'app OneDrive in HoloLens.
+È possibile accedere al file scaricato e riaperrlo in un secondo momento usando Download in Microsoft Edge. Per salvare un modello 3D e garantire l'accesso continuo, scaricare il file nel PC e salvarlo nel OneDrive account. Il file può quindi essere aperto dall'app OneDrive in HoloLens.
 
 > [!NOTE]
 > Alcuni siti Web con modelli FBX scaricabili li forniscono in formato ZIP compresso. Visualizzatore 3D Beta non può aprire direttamente i file ZIP. Usare invece il PC per estrarre il file FBX e salvarlo nel OneDrive account. Il file può quindi essere aperto dall'app OneDrive in HoloLens.

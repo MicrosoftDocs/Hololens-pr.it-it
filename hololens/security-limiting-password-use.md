@@ -1,6 +1,6 @@
 ---
 title: Limitazione dell'uso delle password
-description: limitazione dell'uso delle password per HoloLens
+description: limitazione dell'uso della password per HoloLens
 author: evmill
 ms.author: v-evmill
 ms.reviewer: tagran
@@ -15,11 +15,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: 24cd9b81d0d99afaa0479787b846b423310c6739
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427601"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036239"
 ---
 # <a name="limiting-password-use"></a>Limitazione dell'uso delle password
 
@@ -31,7 +31,7 @@ Per migliorare la sicurezza e la protezione degli account, HoloLens 2 ha la poss
 
 HoloLens 2 offre opzioni di accesso remoto ai dispositivi per gli account aziendali Azure Active Directory durante la configurazione iniziale del dispositivo e l'accesso utente per ridurre la necessità di digitare password complesse e ridurre al minimo la necessità di password come credenziali. Gli utenti e le organizzazioni che usano le smart card per l'autenticazione hanno difficoltà a usare tali credenziali in dispositivi come HoloLens 2 e spesso le organizzazioni sviluppano sistemi complessi e processi costosi per risolvere il problema. Per risolvere questo problema, Azure AD due opzioni per l'accesso senza password HoloLens 2.
 
-Il primo metodo di autenticazione si basa sulle nuove funzionalità dell'app Microsoft Authenticator per fornire l'autenticazione basata su chiave che consente una credenziale utente associata a un dispositivo. Una volta abilitato in un tenant dall'amministratore, agli utenti verrà visualizzato un messaggio durante HoloLens configurazione del dispositivo che indica loro di toccare un numero nell'app. Devono quindi corrispondere al numero nell'app di autenticazione, scegliere Approva, fornire il PIN o un'autenticazione biometrica e completare l'HoloLens configurazione per continuare. Questa operazione è descritta in modo più dettagliato in [Accesso senza password.](/azure/active-directory/authentication/howto-authentication-passwordless-phone)
+Il primo metodo di autenticazione si basa sulle nuove funzionalità dell'app Microsoft Authenticator per fornire l'autenticazione basata su chiave che consente una credenziale utente associata a un dispositivo. Una volta abilitato in un tenant dall'amministratore, agli utenti verrà visualizzato un messaggio durante la configurazione HoloLens dispositivo che indica loro di toccare un numero nell'app. Devono quindi corrispondere al numero nell'app di autenticazione, scegliere Approva, fornire il PIN o un'autenticazione biometrica e completare l'HoloLens configurazione per continuare. Questa operazione è descritta in modo più dettagliato in [Accesso senza password.](/azure/active-directory/authentication/howto-authentication-passwordless-phone)
 
 Il secondo è un flusso di codice del dispositivo intuitivo per gli utenti e non richiede alcuna infrastruttura aggiuntiva.  Questo comportamento di accesso remoto si basa su un altro dispositivo attendibile che supporta il meccanismo di autenticazione preferito dell'organizzazione e, al termine, i token vengono rilasciati al HoloLens per completare l'accesso o la configurazione del dispositivo. I passaggi in questo flusso sono:
 
@@ -39,7 +39,7 @@ Il secondo è un flusso di codice del dispositivo intuitivo per gli utenti e non
   1. All'utente viene quindi visualizzata una pagina di polling che contiene un URI breve ( ) che punta all'endpoint di autenticazione del dispositivo Azure AD Servizio token di [https://microsoft.com/devicelogin](https://microsoft.com/devicelogin) sicurezza. All'utente viene inoltre presentato un time code che viene generato in modo sicuro nel cloud e ha una durata massima di 15 minuti. Insieme alla generazione del codice, Azure AD crea anche una sessione crittografata all'avvio della richiesta di accesso remoto nel passaggio precedente e insieme, l'URI e il codice vengono usati per approvare la richiesta di accesso remoto.
   1. L'utente passa quindi all'URI da un altro dispositivo e viene richiesto di immettere il codice visualizzato nel HoloLens 2 dispositivo.
   1. Dopo che l'utente ha immesso il codice, Azure AD STS visualizza una pagina che indica il dispositivo HoloLens 2 dell'utente che ha attivato la richiesta di accesso remoto e ha richiesto la generazione del codice. All'utente viene quindi richiesta una conferma per impedire eventuali attacchi di phishing.
-  1. Se l'utente sceglie di continuare l'accesso all'applicazione visualizzata, Azure AD sts richiede all'utente le proprie credenziali. Al completamento dell'autenticazione, Azure AD sts aggiorna la sessione remota memorizzata nella cache come "approvata" insieme a un codice di autorizzazione.
+  1. Se l'utente sceglie di continuare ad accedere all'applicazione visualizzata, Azure AD sts richiede all'utente le proprie credenziali. Al completamento dell'autenticazione, Azure AD sts aggiorna la sessione remota memorizzata nella cache come "approvata" insieme a un codice di autorizzazione.
   1. Infine, la pagina di polling nel dispositivo HoloLens 2 dell'utente riceve una risposta "Autorizzata" dal Azure AD e procede alla convalida del codice utente, del codice di autorizzazione archiviato associato e genera i token OAuth come richiesto per completare la configurazione del dispositivo. Il token di autenticazione creato è valido per 1 ora e il token di aggiornamento ha una durata di 90 giorni.
 
 Gli algoritmi di generazione del codice e di crittografia usati in questo flusso sono entrambi conformi a FIPS. HoloLens 2 i dispositivi usano il TPM per proteggere le chiavi del dispositivo e crittografare i token generati dopo l'autenticazione utente usando chiavi protette dall'hardware. Altre informazioni sulla sicurezza dei token HoloLens 2 condivisi in Che cos'è un token di aggiornamento [primario (PRT)](/azure/active-directory/devices/concept-primary-refresh-token).
@@ -64,19 +64,19 @@ L'autenticazione Iris rientra nel PIN. Per configurare un nuovo PIN (un autentic
 
 L'accesso Single Sign-On (SSO) consente agli utenti senza password di accedere al dispositivo, utilizzando l'account personale dell'utente o l'account aziendale o dell'istituto di istruzione. L'utente viene automaticamente autorizzato con l'accesso SSO in tutte le app e i servizi integrati [tramite Gestione account Web API .](/uwp/api/Windows.Security.Authentication.Web.Provider?view=winrt-19041&preserve-view=true)
 
-Dopo aver aggiunto un'identità tramite un'applicazione, può, con il consenso dell'utente, diventare disponibile per tutte le app e i servizi usando l'integrazione a livello di sistema. In questo modo si riduce notevolmente il carico di accesso dell'app e si offre agli utenti un'esperienza di gestione delle identità senza problemi.
+Dopo aver aggiunto un'identità tramite un'applicazione, può, con il consenso dell'utente, diventare disponibile per tutte le app e i servizi usando l'integrazione a livello di sistema. Questo riduce notevolmente il carico di accesso dell'app e offre agli utenti un'esperienza di gestione delle identità facile.
 
-Per altre informazioni sull'implementazione Gestione account Web API, vedere [Implementing Gestione account Web APIs](/windows/uwp/security/web-account-manager).
+Per altre informazioni sull'implementazione Gestione account Web API, vedere [Implementazione](/windows/uwp/security/web-account-manager)Gestione account Web API .
 
   ![API Sicurezza.](images/security-api-img.png)
   
-Per le suite di app con requisiti di autenticazione specializzati, il framework Gestione account Web (WAM) è estendibile ai provider di identità personalizzati. Gli utenti possono scaricare il provider di identità personalizzato, in pacchetto come app UWP (Universal Windows Platform) dal Microsoft Store, per abilitare l'accesso SSO in altre app integrate con tale provider di identità.
+Per le suite di app con requisiti di autenticazione specializzati, il framework Gestione account Web (WAM) è estensibile per i provider di identità personalizzati. Gli utenti possono scaricare il provider di identità personalizzato, in pacchetto come app UWP (Universal Windows Platform) dal Microsoft Store, per abilitare l'accesso SSO in altre app integrate con tale provider di identità.
 
 Per altre informazioni sull'implementazione di provider di identità WAM personalizzati, vedere Informazioni di riferimento sulle API del provider di identità [WAM personalizzate.](/uwp/api/Windows.Security.Authentication.Web.Provider?view=winrt-19041&preserve-view=true)
 
 ## <a name="windows-hello-and-fido2-sign-in-with-webauthn"></a>Windows Hello e l'accesso FIDO2 con WebAuthn
 
-HoloLens 2 può usare credenziali utente senza password (ad esempio chiavi di sicurezza Windows Hello o FIDO2) per accedere in modo sicuro sul Web tramite Microsoft Edge e ai siti Web che supportano WebAuthn. FIDO2 consente alle credenziali utente di sfruttare i vantaggi dei dispositivi basati su standard per l'autenticazione Servizi online.
+HoloLens 2 usare credenziali utente senza password (ad esempio chiavi di sicurezza Windows Hello o FIDO2) per accedere in modo sicuro sul Web tramite Microsoft Edge e ai siti Web che supportano WebAuthn. FIDO2 consente alle credenziali utente di sfruttare i vantaggi dei dispositivi basati su standard per l'autenticazione Servizi online.
 
 > [!Note]
 > Le [specifiche WebAuthn](https://www.w3.org/TR/webauthn/) e FIDO2 [CTAP2](https://fidoalliance.org/specs/fido-v2.0-ps-20190130/fido-client-to-authenticator-protocol-v2.0-ps-20190130.html) vengono implementate nei servizi. I metadati firmati specificati da WebAuthn e FIDO2 forniscono informazioni, ad esempio se l'utente era presente, e verificano l'autenticazione tramite il movimento locale.
@@ -85,7 +85,7 @@ Come per Windows Hello, quando l'utente crea e registra una credenziale FIDO2, i
 
 Dopo aver effettuato l'accesso con un account MSA Azure AD, il sistema invia un numero generato o una variabile di dati al dispositivo HoloLens 2 o FIDO2. Il HoloLens 2 o il dispositivo usa la chiave privata per firmare l'identificazione. L'identificazione e i metadati firmati vengono inviati al sistema account Microsoft e verificati usando la chiave pubblica.
 
-Windows Hello e FIDO2 implementano le credenziali basate sul dispositivo HoloLens, in particolare l'enclave Trusted Platform Module sicuro. L'enclave TPM archivia la chiave privata e richiede un PIN o biometrico per sbloccarla. Analogamente, una chiave di sicurezza FIDO2 è un piccolo dispositivo esterno con un enclave sicuro incorporato che archivia la chiave privata e richiede un PIN o biometrico per sbloccarla.
+Windows Hello e i dispositivi FIDO2 implementano le credenziali basate sul dispositivo HoloLens, in particolare l'enclave Trusted Platform Module sicuro. L'enclave TPM archivia la chiave privata e richiede un PIN o biometrico per sbloccarla. Analogamente, una chiave di sicurezza FIDO2 è un piccolo dispositivo esterno con un enclave sicuro incorporato che archivia la chiave privata e richiede un PIN o biometrico per sbloccarla.
 
 Entrambe le opzioni offrono l'autenticazione a due fattori in un unico passaggio, richiedendo sia un dispositivo registrato che un PIN biometrico per l'accesso. Per altre informazioni, vedere l'immagine e il processo dell'autenticazione avanzata con la chiave di sicurezza FIDO2, riportato di seguito.
 
@@ -103,7 +103,7 @@ Entrambe le opzioni offrono l'autenticazione a due fattori in un unico passaggio
 1. Azure AD verifica la chiave FIDO
 1. Azure AD restituisce PRT e TGT per abilitare l'accesso alle risorse
 
-MsA e Azure AD sono tra le prime relying party a supportare l'autenticazione senza password implementando WebAuthn.
+Msa e Azure AD sono tra le prime relying party a supportare l'autenticazione senza password implementando WebAuthn.
 
 Per altre informazioni sull'uso di WebAuthn con applicazioni e/o SDK, vedere API [WebAuthn](/windows/security/identity-protection/hello-for-business/webauthnapis)per l'autenticazione senza password in Windows 10 .
 

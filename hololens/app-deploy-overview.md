@@ -1,5 +1,5 @@
 ---
-title: Panoramica - Gestione app
+title: Panoramica - Gestione delle app
 description: Introduzione a una panoramica della gestione delle app di realtà mista con la gestione dei dispositivi mobili, Microsoft Store per le aziende e i pacchetti di provisioning.
 keywords: HoloLens, utente, account, app, gestione delle applicazioni,
 author: evmill
@@ -15,11 +15,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: ca87f34718319d489b69ba33ad24731628d87fac
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032487"
 ---
 # <a name="app-management-overview"></a>Gestione app: panoramica
 
@@ -27,7 +27,7 @@ ms.locfileid: "124427635"
 
 ## <a name="mobile-device-management-mdm"></a>Gestione di dispositivi mobili
 
-Una soluzione MDM consente ai decision maker e agli amministratori IT di installare (eseguire il push) in privato delle app line-of-business o di acquistare app tramite lo Store per un gruppo di utenti. HoloLens i dispositivi funzionano meglio con Microsoft Endpoint Manager (Intune) per la [gestione delle applicazioni.](app-deploy-intune.md) Intune offre anche agli utenti un controllo più granulare sulle app gestite dall'IT Portale aziendale'esperienza scaricabile.
+Una soluzione MDM consente ai decision maker IT e agli amministratori di installare (eseguire il push) in privato delle app line-of-business o di acquistare app tramite lo Store per un gruppo di utenti. HoloLens i dispositivi funzionano meglio con Microsoft Endpoint Manager (Intune) per la [gestione delle applicazioni.](app-deploy-intune.md) Intune offre anche agli utenti un controllo più granulare sulle app gestite dall'IT Portale aziendale'esperienza scaricabile.
 
 > [!NOTE]
 > Le istruzioni seguenti sono per gli utenti che vogliono gestire le applicazioni con Intune. Microsoft consiglia di usare Intune per la gestione di applicazioni e dispositivi.
@@ -76,7 +76,7 @@ L'installazione tramite pacchetti di provisioning è applicabile per:
 
 ## <a name="install-apps-on-hololens-2-via-app-installer"></a>Installare app in HoloLens 2 tramite Programma di installazione app
 
-L'uso Programma di installazione app utenti può avere un'esperienza semplice per l'installazione di app nei dispositivi locali o la condivisione di un'app con un altro utente che non ha familiarità con altri metodi di installazione dell'app HoloLens. [](app-deploy-app-installer.md) Questa operazione può essere eseguita senza dover abilitare la modalità sviluppatore o usare Portale di dispositivi. Si tratta di un metodo semplice per distribuire un'app completamente compilata. Indipendentemente dal fatto che si voglia semplicemente eseguire la demo dell'app a un altro utente con un HoloLens o se si vuole distribuire l'app, questo metodo funziona facilmente.
+L'uso Programma di installazione app utenti può avere un'esperienza semplice per l'installazione di app nei dispositivi locali o la condivisione di un'app con un altro utente che non ha familiarità con altri metodi di installazione delle app HoloLens. [](app-deploy-app-installer.md) Questa operazione può essere eseguita senza dover abilitare la modalità sviluppatore o usare Portale di dispositivi. Si tratta di un metodo semplice per distribuire un'app completamente compilata. Indipendentemente dal fatto che si voglia semplicemente eseguire la demo dell'app a un altro utente con un HoloLens o se si vuole distribuire l'app, questo metodo funziona facilmente.
 
 L'installazione tramite Programma di installazione app è applicabile per:
 

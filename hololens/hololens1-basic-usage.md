@@ -15,11 +15,11 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: 70ee881eb0c2ffaade173b31e5168371d042bbb2
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428515"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033797"
 ---
 # <a name="getting-around-hololens-1st-gen"></a>Come spostarsi HoloLens (prima generazione)
 
@@ -84,7 +84,7 @@ Quando si posiziona una finestra dell'app o un'icona di avvio dell'app, questa r
 
 ## <a name="move-resize-and-rotate-apps"></a>Spostare, ridimensionare e ruotare le app
 
-Lo spostamento e il ridimensionamento delle app HoloLens funziona in modo leggermente diverso rispetto a un PC. Invece di trascinare l'app, si userà lo sguardo fisso, insieme a un [movimento o](https://support.microsoft.com/help/12644/hololens-use-gestures) al [clicker.](hololens1-clicker.md) È anche possibile ruotare una finestra dell'app nello spazio 3D.
+Lo spostamento e il ridimensionamento delle app HoloLens funziona in modo leggermente diverso rispetto a un PC. Invece di trascinare l'app, si userà lo sguardo fisso, insieme a un [movimento o](https://support.microsoft.com/help/12644/hololens-use-gestures) al [clic.](hololens1-clicker.md) È anche possibile ruotare una finestra dell'app nello spazio 3D.
 
 > [!TIP]
 > Ridisporre le app usando la voce: osservare un'app e pronunciare "Guardami", "Più grande" o "Più piccolo". In Cortana spostare un'app: ad esempio "Hey Cortana, move \* *app name \** here".
@@ -98,7 +98,7 @@ Osservare l'app (nella barra del titolo di una finestra dell'app) e quindi esegu
 - Selezionare **Regola,** fare clic e tenere premuto il clic e spostare la mano per posizionare l'app. Rilasciare il clicker e quindi selezionare **Done (Fine).**
 
 > [!TIP]
-> Se si rilasciano le app quando le si sposta, assicurarsi di tenere la mano nel frame del movimento seguendola con lo sguardo fisso.
+> Se si rilasciano le app quando le si sposta, assicurarsi di tenere la mano nella cornice del movimento seguendola con lo sguardo fisso.
 
 ### <a name="resize-an-app"></a>Ridimensionare un'app
 
@@ -106,7 +106,7 @@ Osservare l'app e quindi eseguire una delle operazioni seguenti.
 
 - Osservare un angolo o un bordo di una finestra dell'app e toccare e tenere premuto. Al termine, sposta la mano per modificare le dimensioni dell'app e al termine alza il dito.
 - Selezionare **Regola.** Osservare uno dei quadrati blu negli angoli dell'app, toccare e tenere premuto, quindi spostare la mano per ridimensionare l'app. Alzare il dito per rilasciarlo, quindi selezionare **Fine.**
-- Selezionare **Regola.** Osservare uno dei quadrati blu negli angoli dell'app, fare clic e tenere premuto il clic, quindi spostare la mano per ridimensionare l'app. Rilasciare il clicker e quindi selezionare **Done (Fine).**
+- Selezionare **Regola.** Osservare uno dei quadrati blu negli angoli dell'app, fare clic e tenere premuto il clic e quindi spostare la mano per ridimensionare l'app. Rilasciare il clicker e quindi selezionare **Done (Fine).**
 
 > [!TIP]
 > In modalità Regola è possibile spostare o ridimensionare qualsiasi ologramma.
@@ -135,9 +135,9 @@ Congratulazioni! Si è pronti per usare HoloLens (prima generazione).
 
 ### <a name="help-i-dont-see-my-holograms"></a>Come fare Gli ologrammi non vengono visualizzati
 
-Se non vengono visualizzati ologrammi posizionati durante l'uso HoloLens, ecco alcuni aspetti da provare:
+Se non vengono visualizzati ologrammi posizionati durante l'HoloLens, ecco alcuni aspetti da provare:
 
-- Assicurarsi di guardare nell'area destra. Tenere presente che gli &mdash; ologrammi rimangono nella posizione in cui sono stati lasciati.
+- Assicurarsi di guardare nell'area giusta. Tenere presente che gli ologrammi rimangono nel punto &mdash; in cui sono stati lasciati.
 - Assicurarsi di essere in una stanza ben accesa senza molto spazio diretto.
-- Aspettare. Quando HoloLens problemi di riconoscimento dello spazio, gli ologrammi posizionati in precedenza possono richiedere fino a un minuto per riapparire.
+- Aspettare. Quando HoloLens problemi di riconoscimento dello spazio, gli ologrammi posizionati in precedenza possono richiedere fino a un minuto per la ricomparsa.
 - Se il problema persiste, è possibile cancellare i dati di archiviazione Ologrammi **in Impostazioni** System Ologrammi , quindi inserire nuovamente gli  >    >  ologrammi ambiente iniziale.

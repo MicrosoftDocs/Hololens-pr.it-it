@@ -14,17 +14,17 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 416a4f7b9e3cf2e52b79fb29f50424a9c573a18a
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428467"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036236"
 ---
 # <a name="network-security"></a>Sicurezza di rete
 
 ## <a name="network-protocols"></a>Protocolli di rete
 
-Il NetBIOS obsoleto (Network Basic Input/Output System) è stato ampiamente usato in passato negli scenari LAN, spesso per fornire la risoluzione dei nomi a un computer e a cartelle condivise. Ma nel corso del tempo, NetBIOS si è dimostrato vulnerabile a più attacchi e la sua pertinenza è diminuita a favore di altri protocolli più sicuri. Per rimuovere questo problema di vulnerabilità, HoloLens 2 il codice correlato a NetBIOS dal sistema operativo.
+Il NetBIOS obsoleto (Network Basic Input/Output System) è stato ampiamente usato in passato negli scenari LAN, spesso per fornire la risoluzione dei nomi a un computer e a cartelle condivise. Ma nel corso del tempo, NetBIOS si è dimostrato vulnerabile a più attacchi e la sua pertinenza è diminuita a favore di altri protocolli più sicuri. Per rimuovere questo problema di vulnerabilità, HoloLens 2 ha eliminato il codice correlato a NetBIOS dal sistema operativo.
 
 I protocolli TLS (Transport Layer Security) sono in continua evoluzione. Per tenere il passo con i vari exploit di sicurezza scoperti in questa area, il settore informatico è diventato versioni più recenti ed efficaci. A causa del tempo necessario per tutte le distribuzioni del server per adottare le nuove versioni del protocollo TLS, è possibile implementata un meccanismo di fallback che consente al client e ai server in versioni del protocollo predefinite diverse di poter comunicare ancora durante il periodo di transizione.
 

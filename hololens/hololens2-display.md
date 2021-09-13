@@ -1,11 +1,11 @@
 ---
-title: HoloLens 2 Risoluzione dei problemi relativi alla visualizzazione
-description: Aspettative per i HoloLens 2 visualizzati. Indicazioni per la configurazione dei display per la migliore qualità delle immagini.
+title: HoloLens 2 Risoluzione dei problemi di visualizzazione
+description: Vengono visualizzate le HoloLens 2 aspettative. Linee guida per la configurazione di schermi per la migliore qualità delle immagini.
 author: BrandonBray
 ms.author: branbray
 ms.date: 8/13/2020
 ms.topic: article
-keywords: visualizzazione, calibrazione, comfort, oggetti visivi, qualità, ipd
+keywords: display, calibration, comfort, visuals, quality, ipd
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
@@ -13,63 +13,63 @@ ms.reviewer: ''
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 38bab16d2d0d4ace5879f00c133d66b9974e4b2a
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427292"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036134"
 ---
-# <a name="hololens-2-display-troubleshooting"></a>HoloLens 2 Risoluzione dei problemi relativi alla visualizzazione
+# <a name="hololens-2-display-troubleshooting"></a>HoloLens 2 Risoluzione dei problemi di visualizzazione
 
 ## <a name="overview"></a>Panoramica
-Il HoloLens 2 display è una combinazione di waveguide e proiettori leggeri. Gli utenti guardano attraverso le waveguide, ovvero le lenti all'interno della visiera, quando indossano il visore. I proiettori leggeri sono all'interno dell'enclosure sopra la fronte. HoloLens 2 usa la luce laser per illuminare il display.
+Il HoloLens 2 schermo è una combinazione di waveguide e proiettori leggeri. Gli utenti guardano attraverso le onde, ovvero le lenti all'interno del visore, quando si indossano i visori VR. I proiettori leggeri si trova all'interno dello chassis sopra la fronte. HoloLens 2 usa la luce blu per illuminare lo schermo.
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
 Seguire questa procedura per garantire la massima qualità visiva degli ologrammi presentati nei display:
 
-* **Aumentare la luminosità dello schermo.** Ologrammi migliore quando lo schermo è al livello più chiaro. Quando si indossa il HoloLens, i pulsanti di luminosità si trova sul lato sinistro della visiera vicino al tempio.
-* **Avvicinare la visiera agli occhi.** Ruotare la visiera verso il basso fino alla posizione più vicina agli occhi.
-* **Maiusc visore verso il basso.** Provare a spostare il rilievo della fronte verso il basso, che comporterà il movimento della visiera verso il basso verso il basso verso il naso.
-* **[Eseguire la calibrazione oculare.](hololens-calibration.md#calibrating-your-hololens-2)** Lo schermo usa la distanza interpupillaria (IPD) e lo sguardo oculare per ottimizzare le immagini sullo schermo. Se non si esegue la calibrazione oculare, la qualità dell'immagine potrebbe peggiorare. Per eseguire la calibrazione oculare, passare **Impostazioni**  >  **calibrazione**  >    >  **oculare di System Calibration Run**.
-* **Eseguire la calibrazione del colore dello schermo.** Nella [Windows Holographic, versione 21H1](hololens-release-notes.md#windows-holographic-version-21h1) e versioni  successiva, è possibile selezionare un profilo colori alternativo per il HoloLens 2 schermo. In questo modo i colori possono risultare più accurati, in particolare ai livelli di luminosità dello schermo inferiori. La calibrazione dei colori dello schermo è disponibile nell'app **Impostazioni,** nella **pagina Calibrazione** > sistema.
+* **Aumentare la luminosità dello schermo.** Ologrammi migliore quando lo schermo è al livello più chiaro. Quando si indossa il HoloLens, i pulsanti di luminosità si trova sul lato sinistro del visore vicino al tempio.
+* **Avvicinare il visore agli occhi.** Ruotare il visore verso il basso nella posizione più vicina agli occhi.
+* **Maiusc visore verso il basso.** Provare a spostare il rilievo della fronte verso il basso, in modo da avvicinare il visore al visore.
+* **[Eseguire la calibrazione oculare.](hololens-calibration.md#calibrating-your-hololens-2)** Lo schermo usa la distanza interpuperiale (IPD) e lo sguardo fisso per ottimizzare le immagini sullo schermo. Se non si esegue la calibrazione oculare, la qualità dell'immagine potrebbe peggiorare. Per eseguire la calibrazione oculare, passare **a** Impostazioni  >    >  **Calibrazione** del sistema  >  **Eseguire la calibrazione oculare.**
+* **Eseguire la calibrazione dei colori dello schermo.** Nella [Windows olografica, versione 21H1](hololens-release-notes.md#windows-holographic-version-21h1) e versioni successiva, è possibile selezionare un profilo **colore** alternativo per la visualizzazione HoloLens 2 schermo. In questo modo i colori possono risultare più accurati, in particolare a livelli di luminosità inferiori dello schermo. La calibrazione dei colori dello schermo è disponibile nell'app **Impostazioni,** nella pagina **Calibrazione** > sistema.
 
     > [!NOTE]
-    > Poiché questa impostazione salva un nuovo profilo colori nel firmware dello schermo, si tratta di un'impostazione per dispositivo e non univoca per ogni account utente.
+    > Poiché questa impostazione salva un nuovo profilo colori nel firmware di visualizzazione, si tratta di un'impostazione per dispositivo (e non univoca per ogni account utente).
 
-### <a name="how-to-use-display-color-calibration"></a>Come usare la calibrazione dei colori dello schermo
-1. Avviare **l'app Impostazioni** e passare a **Calibrazione > sistema**.
-1. In **Calibrazione colori visualizzazione** selezionare il pulsante Esegui **calibrazione** colori visualizzazione.
-1. Verrà avviata l'esperienza di calibrazione del colore dello schermo e si consiglia di assicurarsi che la visiera sia nella posizione corretta.
-1. Dopo aver proceduto con le finestre di dialogo delle istruzioni, la luminosità dello schermo verrà automaticamente ridotta al 30%.
+### <a name="how-to-use-display-color-calibration"></a>Come usare la calibrazione dei colori di visualizzazione
+1. Avviare **l'app Impostazioni** e passare a **System > Calibration (Calibrazione del > sistema).**
+1. In **Calibrazione colori visualizzazione** selezionare il pulsante Run display color **calibration (Esegui calibrazione colori** schermo).
+1. Verrà avviata l'esperienza di calibrazione del colore dello schermo e si consiglia di assicurarsi che il visore si trova nella posizione corretta.
+1. Dopo aver seguito le finestre di dialogo delle istruzioni, la visualizzazione verrà automaticamente disattivata fino al 30% di luminosità.
     > [!TIP]
-    > Se si verificano problemi con la visualizzazione della scena in grigio nell'ambiente, è possibile regolare manualmente il livello di luminosità di HoloLens 2 usando i pulsanti di luminosità sul lato sinistro del dispositivo.
-1. Selezionare i pulsanti da 1 a 6 per provare immediatamente ogni profilo di colore e trovarne uno che sia più adatto agli occhi (questo in genere significa che il profilo che consente alla scena di apparire più neutro, con il modello in scala di grigi e i toni della pelle che sembrano come previsto).
+    > Se si verificano problemi nella visualizzazione della scena in grigio nell'ambiente in uso, è possibile regolare manualmente il livello di luminosità di HoloLens 2 usando i pulsanti di luminosità sul lato sinistro del dispositivo.
+1. Selezionare i pulsanti da 1 a 6 per provare immediatamente ogni profilo di colore e trovarne uno con l'aspetto migliore per gli occhi (questo in genere significa che il profilo che consente alla scena di apparire più neutro, con il modello in scala di grigi e i toni dell'interfaccia che sembrano come previsto).
 
     ![Visualizzare la scena di calibrazione dei colori.](images/color-cal-ui.png)
     
-6. Quando si è soddisfatti del profilo selezionato, selezionare il pulsante Salva & **Esci**
-1. Se si preferisce non apportare modifiche, selezionare il pulsante **Annulla & Esci** e le modifiche verranno ripristinate
+6. Quando si è soddisfatti del profilo selezionato, selezionare il pulsante **Save & Exit (Salva e esci)**
+1. Se si preferisce non apportare modifiche, selezionare il pulsante **Annulla & Esci** per annullare le modifiche
 
 > [!TIP]
-> Ecco alcuni suggerimenti utili da tenere presenti durante l'uso dell'impostazione di calibrazione del colore di visualizzazione:
-> - È possibile eseguire di nuovo la calibrazione dei colori Impostazioni ogni volta che si desidera
-> - Se qualcuno nel dispositivo ha usato in precedenza l'impostazione per modificare i profili colori, la data/ora della modifica più recente verrà riflessa nella pagina Impostazioni colori
-> - Quando si esegue di nuovo la calibrazione dei colori dello schermo, il profilo colori salvato in precedenza verrà evidenziato e il profilo 0 non verrà visualizzato (poiché il profilo 0 rappresenta il profilo colori originale dello schermo)
-> - Se si vuole ripristinare il profilo colori originale dello schermo, è possibile farlo dalla pagina Impostazioni (vedere come reimpostare il profilo [colori](#how-to-reset-color-profile))
+> Ecco alcuni suggerimenti utili da tenere presenti quando si usa l'impostazione di calibrazione dei colori dello schermo:
+> - È possibile eseguire di nuovo la calibrazione dei colori Impostazioni quando si desidera
+> - Se qualcuno nel dispositivo ha usato in precedenza l'impostazione per modificare i profili colori, la data/ora della modifica più recente verrà riflessa nella Impostazioni colori
+> - Quando si esegue nuovamente la calibrazione dei colori di visualizzazione, il profilo colori salvato in precedenza verrà evidenziato e il profilo 0 non verrà visualizzato (poiché il profilo 0 rappresenta il profilo colori originale dello schermo)
+> - Se si vuole ripristinare il profilo colori originale dello schermo, è possibile farlo dalla pagina Impostazioni (vedere come reimpostare il profilo [colori)](#how-to-reset-color-profile)
 
 ### <a name="how-to-reset-color-profile"></a>Come reimpostare il profilo colori
 
 Se non si è soddisfatti del profilo colori personalizzato salvato nel HoloLens 2, è possibile ripristinare il profilo colori originale del dispositivo:
-1. Avviare **l'app Impostazioni** e passare a **Calibrazione > sistema**.
-1. In **Calibrazione colori visualizzazione** selezionare il pulsante Ripristina profilo **colori** predefinito.
-1. Quando si apre la finestra di dialogo, selezionare **Riavvia** se si è pronti per riavviare il HoloLens 2 e applicare le modifiche.
+1. Avviare **l'app Impostazioni** e passare a **System > Calibration (Calibrazione del > sistema).**
+1. In **Calibrazione colori schermo** selezionare il pulsante Ripristina profilo **colori** predefinito.
+1. Quando viene visualizzata la finestra di dialogo, selezionare **Riavvia** se si è pronti per riavviare HoloLens 2 e applicare le modifiche.
 
-### <a name="top-display-color-calibration-known-issues"></a>Problemi noti relativi alla calibrazione dei colori dello schermo superiore
+### <a name="top-display-color-calibration-known-issues"></a>Problemi noti di calibrazione del colore di visualizzazione superiore
 
 - Nella pagina Impostazioni, la stringa di stato che indica quando è stata modificata l'ultima modifica del profilo colori non sarà aggiornata fino a quando non si ricarica la pagina di Impostazioni 
-    - **Soluzione** alternativa: selezionare un'Impostazioni pagina e quindi selezionare di nuovo la pagina Calibrazione.
-- Se il HoloLens 2 durante l'esecuzione della calibrazione del colore dello schermo, riprenderà in un secondo momento nel ambiente iniziale e il livello di luminosità dello schermo sarà ancora in grigio.
+    - **Soluzione** alternativa: selezionare un'Impostazioni pagina di calibrazione e quindi selezionare nuovamente la pagina Calibrazione.
+- Se il HoloLens 2 va in sospensione durante l'esecuzione della calibrazione dei colori dello schermo, riprenderà in un secondo momento nel ambiente iniziale e il livello di luminosità dello schermo sarà ancora in grigio.
 - Potrebbe essere necessario provare a premere i pulsanti di luminosità sul lato sinistro del dispositivo verso l'alto o verso il basso alcune volte prima che funzionino come previsto.
 - La localizzazione non è completa per tutti i mercati
 
@@ -77,24 +77,24 @@ Se non si è soddisfatti del profilo colori personalizzato salvato nel HoloLens 
 
 ### <a name="what-are-the-patterns-that-occasionally-flash-in-the-bottom-corners-of-the-display"></a>Quali sono i modelli che occasionalmente lampeggiano negli angoli inferiori dello schermo?
 
-In alcuni casi, il HoloLens 2 mostra modelli diversi negli angoli inferiore sinistro e destro dello schermo. Di seguito sono riportati alcuni esempi (GIF animate). Questo modello fa parte del normale funzionamento del dispositivo HoloLens 2 per calibrare lo schermo per un'esperienza ottimale.
+In alcuni casi, HoloLens 2 mostra modelli diversi negli angoli inferiore sinistro e destro dello schermo. Di seguito sono riportati alcuni esempi (GIF animate). Questo modello fa parte del normale funzionamento del dispositivo HoloLens 2 per calibrare lo schermo per un'esperienza ottimale.
 
 ![Modello bifase.](./images/DAT-Biphase-Fiducial.gif) ![Modello GEO](./images/DAT-GEO-Fiducial.gif)
 
-### <a name="why-am-i-unable-to-take-an-accurate-photograph-of-my-hololens-2-display"></a>Perché non è possibile scattare una fotografia accurata del display HoloLens 2?
+### <a name="why-am-i-unable-to-take-an-accurate-photograph-of-my-hololens-2-display"></a>Perché non è possibile scattare una fotografia accurata della HoloLens 2 schermo?
 
-Il HoloLens 2 è progettato per essere visualizzato dall'occhio umano. Il dispositivo ha un sistema di correzione del colore attivo che si adatta agli occhi di un utente. Rispetto all'occhio umano, le fotocamere vedono gli ambienti in modo diverso e di seguito sono alcuni fattori che possono influire su qualsiasi incoerenza tra ciò che una fotocamera acquisisce e ciò che un utente vede.
+Il HoloLens 2 è progettato per essere visualizzato dall'occhio umano. Il dispositivo ha un sistema di correzione del colore attivo che si adatta agli occhi dell'utente. Rispetto all'occhio umano, le fotocamere vedono gli ambienti in modo diverso e di seguito sono riportati alcuni fattori che possono influire su eventuali incoerenze tra ciò che una fotocamera acquisisce e ciò che vede un utente.
 
-* **Posizione dell'occhio.** Il HoloLens 2 è progettato in modo specifico per la posizione dell'occhio dell'utente. Il HoloLens 2 usa la tecnologia di tracciamento oculare per adattarsi alla posizione dell'occhio dell'utente. Una fotocamera non riposizionata di pochi millimetri può causare la distorsione dell'immagine. Il posizionamento accurato con una fotocamera è difficile e deve corrispondere alla posizione esatta e al rilievo oculare per cui il dispositivo sta eseguendo la correzione del colore.
-* **Movimento oculare.** Lo schermo si adatta al movimento dell'occhio dell'utente per regolare i colori. Ciò che viene visualizzato sullo schermo può variare a seconda che l'utente controlli il centro, il bordo o l'angolo dello schermo. Una singola acquisizione di immagini può nel migliore dei modi mostrare solo l'aspetto dello schermo per l'asse corrispondente alla direzione dello sguardo.
-* **Visualizzazione binocolare.** Il HoloLens 2 è progettato per essere visualizzato con entrambi gli occhi. Il cervello si adatta alla visualizzazione di due immagini e le unisce. Le immagini di una sola visualizzazione ignorano le informazioni dell'altra visualizzazione.
-* **Tempo di esposizione della fotocamera.** Il tempo di esposizione della fotocamera deve essere un multiplo esatto di 1/120 di secondo. La HoloLens frame di visualizzazione è di 120 Hz. A causa del modo in cui HoloLens 2 le immagini, l'acquisizione di un singolo frame non è sufficiente per abbinare l'esperienza visiva di un essere umano. Allo stesso tempo, se il dispositivo si sposta affatto, anche i micromovimenti, il sistema riprogetta l'immagine sullo schermo per stabilizzare gli ologrammi. L'acquisizione di più fotogrammi, mantenendo HoloLens di spostamento, richiede in genere una configurazione di laboratorio.
-* **Dimensioni dell'apertura della fotocamera.** Le dimensioni di apertura della fotocamera devono essere di almeno 3 mm per acquisire un'immagine accurata. Le fotocamere dei telefoni cellulari con piccole aperture integrano la luce di un'area più piccola rispetto all'occhio umano. Il dispositivo applica la correzione del colore per i modelli osservati da aperture più grandi. Con piccole aperture, i modelli di uniformità sono più affilati e rimangono visibili nonostante le correzioni di colore applicate dal sistema.
-* **Studente di ingresso della fotocamera.** L'icona di ingresso della fotocamera deve avere un diametro di almeno 3 mm per acquisire un'immagine accurata. In caso contrario, la fotocamera acquisisce alcuni modelli ad alta frequenza non visibili all'occhio. La posizione dell'alunno di ingresso deve essere davanti alla fotocamera e posizionata alla distanza di rilievo dell'occhio per evitare di introdurre aberrazioni e altre variazioni all'immagine acquisita.
-* **Posizione della fotocamera.** Le fotocamere che soddisfano i requisiti per visualizzare il display HoloLens 2 sono più grandi ed è difficile posizionare la fotocamera abbastanza vicina al display HoloLens 2 per osservare l'immagine corretta dal colore. Se la fotocamera si trova nella posizione errata, la correzione del colore può influire negativamente sull'acquisizione HoloLens 2 schermo.
-* **Correzione dell'immagine.** Le fotocamere digitali tipiche e le fotocamere per smartphone applicano una curva di riproduzione del tono (TRC) che aumenta il contrasto e il colore per offrire un risultato più veloce. Se applicata a un HoloLens 2, questa curva del tono amplifica le non uniformità.
+* **Posizione dell'occhio.** Il HoloLens 2 schermo è progettato in modo specifico per la posizione oculare dell'utente. Il HoloLens 2 usa la tecnologia di tracciamento oculare per adattarsi alla posizione oculare dell'utente. Una fotocamera con una disposizione errata di pochi millimetri può causare la distorsione dell'immagine. Il posizionamento accurato con una fotocamera è difficile e deve corrispondere esattamente alla posizione e al rilievo oculare per cui il dispositivo sta eseguendo la correzione del colore.
+* **Movimento oculare.** Lo schermo si adatta al movimento dell'occhio dell'utente per regolare i colori. Ciò che viene visualizzato sullo schermo può variare a seconda che l'utente cerchi il centro, il bordo o l'angolo dello schermo. Una singola acquisizione di immagini può nel migliore dei modi mostrare solo l'aspetto della visualizzazione per l'asse che corrisponde a una direzione dello sguardo fisso.
+* **Visualizzazione binocolo.** Il HoloLens 2 schermo è progettato per essere visualizzato con entrambi gli occhi. Il cervello si adatta alla visualizzazione di due immagini e le unisce insieme. Le immagini di una sola visualizzazione ignorano le informazioni dell'altra visualizzazione.
+* **Tempo di esposizione della fotocamera.** Il tempo di esposizione della fotocamera deve essere un multiplo esatto di 1/120 di secondo. La HoloLens fotogrammi dello schermo è di 120 Hz. A causa del modo in cui HoloLens 2 disegna immagini, anche l'acquisizione di un singolo frame non è sufficiente per corrispondere all'esperienza visiva di un essere umano. Allo stesso tempo, se il dispositivo si sposta affatto, anche in micromovementi, il sistema riprojecta l'immagine sullo schermo per stabilizzare gli ologrammi. L'acquisizione di più fotogrammi senza HoloLens spostamento richiede in genere una configurazione di laboratorio.
+* **Dimensioni dell'apertura della fotocamera.** Le dimensioni dell'apertura della fotocamera devono essere di almeno 3 mm per acquisire un'immagine accurata. Le fotocamere dei telefoni cellulari con piccole aperture integrano la luce di un'area più piccola rispetto all'occhio umano. Il dispositivo applica la correzione dei colori per i modelli osservati da aperture più grandi. Con piccole aperture, i modelli di uniformità sono più nitidi e rimangono visibili nonostante le correzioni dei colori applicate dal sistema.
+* **Ingresso della fotocamera.** Il diametro dell'ingresso della fotocamera deve essere di almeno 3 mm di diametro per acquisire un'immagine accurata. In caso contrario, la fotocamera acquisisce alcuni modelli ad alta frequenza non visibili all'occhio. La posizione dell'attrito dell'ingresso deve essere posizionata davanti alla fotocamera e posizionata alla distanza di rilievo oculare per evitare l'introduzione di aberrazioni e altre variazioni all'immagine acquisita.
+* **Posizione della fotocamera.** Le fotocamere che soddisfano i requisiti per visualizzare lo schermo HoloLens 2 sono più grandi ed è difficile posizionare la fotocamera abbastanza vicina al display HoloLens 2 per osservare l'immagine con correzione del colore. Se la fotocamera si trova nella posizione sbagliata, la correzione del colore può influire negativamente sull'acquisizione HoloLens 2 schermo.
+* **Correzione dell'immagine.** Le fotocamere digitali tipiche e le fotocamere per smartphone applicano una curva di riproduzione del tono (TRC) che aumenta il contrasto e il colore per fornire un risultato di snappier. Se applicata a un HoloLens 2 schermo, questa curva tono amplifica le non uniformità.
 
-Detto questo, è comunque possibile che le fotocamere industriali specializzate acquisiscono immagini rappresentative dal HoloLens 2 display. Sfortunatamente, smartphone, consumer e fotocamere professionali non acquisiscono immagini corrispondenti a ciò che un utente vede HoloLens 2.
+Detto questo, è comunque possibile che le fotocamere industriali specializzate acquisiscono immagini rappresentative dal HoloLens 2 schermo. Sfortunatamente, smartphone, consumer e fotocamere professionali non acquisiscono immagini corrispondenti a ciò che un utente vede HoloLens 2.
 
 ### <a name="what-does-eye-calibration-do-to-display-image-quality"></a>Cosa fa la calibrazione oculare per visualizzare la qualità dell'immagine?
 

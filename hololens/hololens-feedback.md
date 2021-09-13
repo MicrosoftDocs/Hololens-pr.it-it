@@ -18,13 +18,13 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: 214b2b9cda33eb074b06a9157429d1f52bfe0716
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427063"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032599"
 ---
-# <a name="feedback-for-hololens"></a>Commenti e suggerimenti HoloLens
+# <a name="feedback-for-hololens"></a>Commenti e suggerimenti per HoloLens
 
 Usare il Hub di Feedback per indicare quali funzionalità si desiderano, quali funzionalità è possibile fare a meno e come potrebbe essere meglio. Il team di progettazione usa internamente lo stesso meccanismo per tenere traccia e correggere i bug, quindi usare Hub di Feedback per segnalare eventuali bug visualizzati. Stiamo ascoltando.
 
@@ -34,7 +34,7 @@ Hub di Feedback un modo eccellente per avvisare il team di progettazione di bug 
 >  
 > - Assicurarsi di avere la versione corrente di Hub di Feedback. A tale scopo, selezionare **Avvia**  >  **Microsoft Store** e quindi selezionare i puntini di sospensione (**...**). Selezionare quindi **Download e aggiornamenti** Ottenere gli  >  **aggiornamenti**.  
 >  
-> - Per fornire i migliori dati possibili per la correzione dei problemi, è consigliabile impostare i dati di telemetria del dispositivo su **Facoltativo.** È possibile impostare questo valore durante la configurazione predefinita o usando l'app Impostazioni predefinita. Per eseguire questa operazione usando Impostazioni, selezionare **Avvia** Impostazioni  >    >  **diagnostica**  >  **dell'app** per la privacy  >  **su**.
+> - Per fornire i migliori dati possibili per la correzione dei problemi, è consigliabile impostare i dati di telemetria del dispositivo su **Facoltativo.** È possibile impostare questo valore durante la configurazione predefinita o usando l'app Impostazioni predefinita. A tale scopo, usare Impostazioni, selezionare **Avvia** Impostazioni  >    >  **Privacy**  >  **App Diagnostics**  >  **on**.
 
 ## <a name="use-the-feedback-hub"></a>Usare il Hub di Feedback
 
@@ -46,7 +46,7 @@ Hub di Feedback un modo eccellente per avvisare il team di progettazione di bug 
 
 1. Per verificare se un altro utente ha fornito commenti e suggerimenti simili, immettere alcune parole chiave sull'argomento nella casella di ricerca **Commenti e** suggerimenti.
 1. Se si trovano commenti simili, selezionarli, aggiungere eventuali  informazioni aggiuntive disponibili nella casella Scrivi un commento e quindi selezionare **Upvote**.
-1. Se non vengono trovati commenti e suggerimenti simili, selezionare **Aggiungi nuovo feedback.**
+1. Se non si trovano commenti simili, selezionare **Aggiungi nuovo feedback.**
 
    ![Aggiungere nuovi commenti e suggerimenti.](./images/hololens-feedback-1.png)
 
@@ -61,7 +61,7 @@ Hub di Feedback un modo eccellente per avvisare il team di progettazione di bug 
    | --- | --- |
    |Tracciamento oculare |Feedback sul tracciamento oculare, l'accesso a iris o la calibrazione. |
    |Accuratezza, stabilità e affidabilità degli ologrammi |Commenti e suggerimenti sull'visualizzazione degli ologrammi nello spazio. |
-   |Avvio, posizionamento, modifica e chiusura di app |Commenti e suggerimenti sull'avvio o l'arresto di app 2D o 3D. |
+   |Avvio, posizionamento, modifica e chiusura delle app |Commenti e suggerimenti sull'avvio o l'arresto di app 2D o 3D. |
    |Miracast |Commenti e suggerimenti Miracast. |
    |Spazi e persistenza |Feedback su come HoloLens gli spazi e mantiene gli ologrammi nello spazio. |
    |menu Start elenco di tutte le app |Commenti e suggerimenti sul menu **Start** e sull'elenco di tutte le app. |

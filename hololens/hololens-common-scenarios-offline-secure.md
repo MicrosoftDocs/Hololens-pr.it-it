@@ -1,6 +1,6 @@
 ---
-title: Scenari comuni - Sicurezza offline HoloLens 2
-description: Informazioni su come configurare uno scenario di distribuzione sicura e di distribuzione di app offline con il provisioning per HoloLens dispositivi.
+title: Scenari comuni- Sicurezza offline HoloLens 2
+description: Informazioni su come configurare uno scenario di distribuzione sicura e di distribuzione di app offline con il provisioning HoloLens dispositivi.
 keywords: HoloLens, gestione, offline, offline sicuro
 ms.date: 9/25/2020
 manager: yannisle
@@ -15,13 +15,13 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 10d1955249630202a05fbf2057e1d175855ce0b5
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428813"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032447"
 ---
-# <a name="common-scenarios--offline-secure-hololens-2"></a>Scenari comuni - Sicurezza offline HoloLens 2
+# <a name="common-scenarios--offline-secure-hololens-2"></a>Scenari comuni- Sicurezza offline HoloLens 2
 
 ## <a name="overview"></a>Panoramica
 
@@ -38,12 +38,12 @@ Questa guida fornisce indicazioni per l'applicazione di un pacchetto di provisio
 ## <a name="prepare"></a>Preparare
 
 Windows 10 Configurazione del PC
-1. [Scaricare la versione HoloLens 2 file del sistema operativo](https://aka.ms/hololens2download) direttamente in un PC. 
+1. [Scaricare il file HoloLens 2 del sistema operativo](https://aka.ms/hololens2download) più recente direttamente in un PC. 
    1. Il supporto per questa configurazione è incluso nella build 19041.1117 e successive.
-1. Scaricare/installare lo strumento Advanced Recovery Companion (ARC) [dal Microsoft Store](https://www.microsoft.com/store/productId/9P74Z35SFRS8) al PC
-1. Scaricare/installare lo strumento [Windows Configuration Designer (WCD)](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?activetab=pivot:overviewtab) più recente dal Microsoft Store nel PC.
-1. [Scaricare la cartella OfflineSecureHL2_Sample con i file di progetto](https://aka.ms/HoloLensDocs-SecureOfflineSample) per compilare il file PPKG.
-1. Preparare [l'applicazione line-of-business](app-deploy-provisioning-package.md)offline per la distribuzione PPKG . 
+1. Scaricare/installare lo strumento Advanced Recovery Companion (ARC) dal [Microsoft Store](https://www.microsoft.com/store/productId/9P74Z35SFRS8) al PC
+1. Scaricare/installare lo strumento [Windows Configuration Designer (WCD)](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?activetab=pivot:overviewtab) più recente dal Microsoft Store al PC.
+1. [Scaricare la OfflineSecureHL2_Sample file di progetto con i](https://aka.ms/HoloLensDocs-SecureOfflineSample) file di progetto per compilare il file PPKG.
+1. Preparare [l'applicazione Line of Business offline per la distribuzione PPKG.](app-deploy-provisioning-package.md) 
 
 
 ## <a name="configure"></a>Configurare
@@ -53,7 +53,7 @@ Creare un pacchetto di provisioning della configurazione sicura
 1. Avviare lo strumento WCD nel PC.
 1. Selezionare **File -> Apri progetto**.
   1. Passare al percorso della cartella di OfflineSecureHL2_Sample salvata in precedenza e selezionare: OfflineSecureHL2_Sample.icdproj.xml
-1. Il progetto dovrebbe essere aperto e dovrebbe essere ora disponibile un elenco di personalizzazioni disponibili:
+1. Il progetto dovrebbe essere aperto e dovrebbe ora essere disponibile un elenco di personalizzazioni disponibili:
 
    > [!div class="mx-imgBorder"]
    > ![Screenshot del pacchetto di configurazione aperto in WCD.](images/offline-secure-sample-wcd.png)
@@ -62,23 +62,23 @@ Creare un pacchetto di provisioning della configurazione sicura
    
    |     Elemento                                                |     Impostazione                       |     Descrizione                                                                                                                    |
    |---------------------------------------------------------|-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-   |     Account/Utenti                                    |     Nome utente locale & password    |     Per questi dispositivi offline, un singolo nome utente e una singola password dovranno essere impostati e condivisi da tutti gli utenti del dispositivo.          |
+   |     Account/utenti                                    |     Nome utente locale & password    |     Per questi dispositivi offline, un singolo nome utente e una singola password dovranno essere impostati e condivisi da tutti gli utenti del dispositivo.          |
    |     Prima esperienza/HoloLens/SkipCalibration       |     Vero                          |     Ignora la calibrazione solo durante la configurazione iniziale del dispositivo                                                                             |
-   |     Prima esperienza/HoloLens/SkipTraining          |     Vero                          |     Ignora il training del dispositivo durante la configurazione iniziale del dispositivo                                                                              |
-   |     Prima esperienza/HoloLens/Wi-Fi                  |     Vero                          |     Ignora la Wi-Fi durante la configurazione iniziale del dispositivo                                                                                 |
-   |     Policies/Connectivity/AllowBluetooth                |     No                            |     Disabilita Bluetooth                                                                                                             |
+   |     Prima esperienza/HoloLens/SkipTraining          |     Vero                          |     Ignora il training dei dispositivi durante la configurazione iniziale del dispositivo                                                                              |
+   |     Prima esperienza/HoloLens/Wi-Fi                  |     Vero                          |     Ignora la configurazione Wi-Fi durante la configurazione iniziale del dispositivo                                                                                 |
+   |     Criteri/Connettività/AllowBluetooth                |     No                            |     Disabilita Bluetooth                                                                                                             |
    |     Criteri/Esperienza/AllowCortana                    |     No                            |     Disabilita Cortana (per eliminare potenziali problemi perché i microfoni sono disabilitati)                                          |
-   |     Policies/MixedReality/MicrophoneDisabled            |     Sì                           |     Disabilita il microfono                                                                                                            |
-   |     Policies/Privacy/LetAppsAccessLocation              |     Forza negazione                    |     Impedisce alle app di provare ad accedere ai dati della posizione (per eliminare potenziali problemi perché il rilevamento della posizione è disabilitato)    |
-   |     Policies/Privacy/LetAppsAccessMicrophone            |     Forza negazione                    |     Impedisce alle app di provare ad accedere ai microfoni (per eliminare potenziali problemi perché i microfoni sono disabilitati)           |
-   |     Policies/Security/AllowAddProvisioningPackage       |     No                            |     Impedisce a chiunque di aggiungere pacchetti di provisioning che potrebbero tentare di eseguire l'override dei criteri bloccati.                         |
-   |     Policies/Security/AllowRemoveProvisioningPackage    |     No                            |     Impedisce a chiunque di rimuovere questo pacchetto di provisioning bloccato.                                                           |
-   |     Policies/System/AllowLocation                       |     No                            |     Impedisce al dispositivo di provare a tenere traccia dei dati sulla posizione.                                                                        |
-   |     Policies/WiFi/AllowWiFi                             |     No                            |     Disabilita Wi-Fi                                                                                                                 |
+   |     Criteri/MixedReality/MicrophoneDisabled            |     Sì                           |     Disabilita il microfono                                                                                                            |
+   |     Criteri/Privacy/LetAppsAccessLocation              |     Forza negazione                    |     Impedisce alle app di tentare di accedere ai dati sulla posizione (per eliminare potenziali problemi perché il rilevamento della posizione è disabilitato)    |
+   |     Criteri/Privacy/LetAppsAccessMicrophone            |     Forza negazione                    |     Impedisce alle app di accedere ai microfoni (per eliminare potenziali problemi perché i microfoni sono disabilitati)           |
+   |     Criteri/Sicurezza/AllowAddProvisioningPackage       |     No                            |     Impedisce a chiunque di aggiungere pacchetti di provisioning che potrebbero tentare di eseguire l'override dei criteri bloccati.                         |
+   |     Criteri/Sicurezza/AllowRemoveProvisioningPackage    |     No                            |     Impedisce a chiunque di rimuovere questo pacchetto di provisioning bloccato.                                                           |
+   |     Criteri/Sistema/AllowLocation                       |     No                            |     Impedisce al dispositivo di provare a tenere traccia dei dati sulla posizione.                                                                        |
+   |     Criteri/Wi-Fi/AllowWiFi                             |     No                            |     Disabilita Wi-Fi                                                                                                                 |
 
 1. In Runtime Impostazioni selezionare **Accounts/Users/UserName: Holo/Password**.
 
-   Prendere nota della password e reimpostarla, se necessario.
+   Prendere nota della password e reimpostare, se necessario.
 
 1. Passare a UniversalAppInstall/UserContextApp e [configurare l'app LOB](app-deploy-provisioning-package.md) che verrà distribuita in questi dispositivi.
 
@@ -95,28 +95,28 @@ Creare un pacchetto di provisioning della configurazione sicura
 1. Connessione HL2 al PC Windows 10 tramite cavo USB.
 1. Avviare lo strumento ARC e selezionare **HoloLens 2**
 
-   ![HoloLens 2 schermata iniziale della reflash pulita.](images/ARC2.png)
+   ![HoloLens 2 schermata iniziale del reflash pulito.](images/ARC2.png)
 
-1. Nella schermata successiva selezionare **Selezione manuale del pacchetto.**
+1. Nella schermata successiva selezionare **Selezione pacchetto manuale**.
 
-   ![HoloLens 2 Schermata informazioni ARC.](images/arc_device_info.png)
+   ![HoloLens 2 Schermata delle informazioni ARC.](images/arc_device_info.png)
 
-1. Passare al file con estensione ffu scaricato in precedenza e selezionare **Apri.**
-1. Nella pagina Avviso selezionare **Continua.**
+1. Passare al file con estensione ffu scaricato in precedenza e selezionare **Apri**.
+1. Nella pagina Avviso selezionare **Continua**.
 
    ![HoloLens 2 Schermata di avviso ARC.](images/arc_warning.png)
 
-1. Attendere che lo strumento ARC completi l'installazione HoloLens 2 sistema operativo.
+1. Attendere che lo strumento ARC completi l'HoloLens 2 del sistema operativo.
 1. Al termine dell'installazione e dell'avvio del dispositivo, dal PC passare a Esplora file e copiare il file PPKG salvato in precedenza nella cartella del dispositivo.
 
    > [!div class="mx-imgBorder"]
    > ![File PPKG nel PC in Esplora file finestra.](images/offline-secure-file-explorer.png)
 
-1. Nell'HoloLens 2 premere la casella combinata di pulsanti seguenti per eseguire il pacchetto di provisioning: toccare **volume** in basso e **pulsante** di alimentazione contemporaneamente.
+1. Nella HoloLens 2 premere la combinazione di pulsanti seguente per eseguire il pacchetto di provisioning: toccare **Volume** in basso e **Pulsante** di alimentazione contemporaneamente.
 1. Verrà richiesto di applicare il pacchetto di provisioning e selezionare **Conferma**
-1. Al termine del pacchetto di provisioning, selezionare **OK.**
+1. Al termine del pacchetto di provisioning selezionare **OK.**
 1. Verrà quindi richiesto di accedere al dispositivo con l'account locale condiviso e la password.
 
 ## <a name="maintain"></a>Effettuare la manutenzione
 
-Con questa configurazione, è consigliabile riavviare il processo precedente e aggiornare il dispositivo con lo strumento ARC e applicare un nuovo PPKG per apportare eventuali aggiornamenti al sistema operativo e/o alle applicazioni.
+Con questa configurazione, è consigliabile riavviare il processo precedente e ripartire il dispositivo con lo strumento ARC e applicare un nuovo PPKG per apportare eventuali aggiornamenti al sistema operativo e/o alle applicazioni.

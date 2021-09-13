@@ -16,17 +16,17 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: 3442da500e7554d7f97db2178cbaceeecad143ac
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427175"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036064"
 ---
 # <a name="find-install-and-uninstall-applications-from-the-microsoft-store"></a>Trovare, installare e disinstallare applicazioni dal Microsoft Store
 
 Il Microsoft Store è l'origine di accesso per app e giochi che funzionano con HoloLens. Quando si passa a Store nel HoloLens, tutte le app presenti verranno eseguite su di esso.
 
-Le app HoloLens la visualizzazione 2D o olografica. Le app che usano la visualizzazione 2D hanno un aspetto simile alle finestre e possono essere posizionate in tutto il mondo. Le app che usano la visualizzazione olografica circondano l'utente e diventano l'unica app visualizzata.
+Le app HoloLens la visualizzazione 2D o la visualizzazione olografica. Le app che usano la visualizzazione 2D hanno un aspetto simile alle finestre e possono essere posizionate in tutto il mondo. Le app che usano la visualizzazione olografica circondano l'utente e diventano l'unica app visualizzata.
 
 HoloLens supporta molte applicazioni esistenti dal Microsoft Store e nuove app create appositamente per HoloLens.  Questo articolo è in particolare sulle applicazioni olografiche Microsoft Store.
 
@@ -37,7 +37,7 @@ Per altre informazioni sull'installazione e l'esecuzione di app personalizzate, 
 Aprire il Microsoft Store dal menu **Start.** Cercare quindi app e giochi. È possibile usare [i comandi](hololens-cortana.md) vocali per eseguire la ricerca pronunciando "Cerca", quando si apre la finestra di ricerca pronunciare "Inizia a dettare" e quindi, quando richiesto, iniziare a pronunciare i termini di ricerca.
 
 > [!NOTE]
-> I requisiti di sistema HoloLens dispositivi sono basati sull'architettura della compilazione dell'app. Se una build di app per HoloLens (prima generazione) non è stata aggiornata con una nuova UWP nello Store per includere il pacchetto di architettura arm, non sarà disponibile per i dispositivi HoloLens 2. Analogamente, se un'app HoloLens 2 non include il pacchetto di architettura x86, non sarà disponibile per i dispositivi HoloLens (prima generazione). HoloLens architetture dei dispositivi:
+> I requisiti di sistema per HoloLens dispositivi sono basati sull'architettura della compilazione dell'app. Se una build di app per HoloLens (prima generazione) non è stata aggiornata con una nuova UWP nello Store per includere il pacchetto di architettura arm, non sarà disponibile per i dispositivi HoloLens 2. Analogamente, se un'app HoloLens 2 non include il pacchetto di architettura x86, non sarà disponibile per i dispositivi HoloLens (prima generazione). HoloLens architetture dei dispositivi:
 >
 > - x86 = HoloLens (prima generazione)
 > - ARM = HoloLens 2
@@ -52,7 +52,7 @@ Aprire il Microsoft Store dal menu **Start.** Cercare quindi app e giochi. È po
 | PowerPoint per dispositivi mobili | [https://office.live.com/start/PowerPoint.aspx](https://office.live.com/start/PowerPoint.aspx) |
 
 > [!NOTE]
-> L OneDrive app non è attualmente supportata per gli account Azure AD in HoloLens. È consigliabile scaricare l Microsoft OneDrive PWA app. [Seguire questa procedura per scaricare l'app.]
+> L OneDrive app non è attualmente supportata per gli account Azure AD in HoloLens. È consigliabile scaricare l'app Microsoft OneDrive PWA app. [Seguire questa procedura per scaricare l'app.]
 
 ## <a name="install-apps"></a>Installare app
 
@@ -62,18 +62,18 @@ Per scaricare le app, è necessario accedere con un account Microsoft. Alcune ap
 > L'account Microsoft Store non deve essere uguale all'account con cui è stato eseguito l'accesso. Se si usa un account aziendale o dell'istituto di istruzione nel HoloLens, potrebbe essere necessario accedere con il proprio account personale nell'app Dello Store per effettuare un acquisto.
 
 > [!TIP]
-> Per configurare un metodo di pagamento, passare a Account.microsoft.com [e](https://account.microsoft.com/) selezionare **Pagamento**& opzioni di  >  **pagamento**  >  **Aggiungere un'opzione di pagamento**.
+> Per configurare un metodo di pagamento, passare a Account.microsoft.com [e](https://account.microsoft.com/) selezionare **Pagamento &** opzioni di  >  **pagamento**  >  **Aggiungi un'opzione di pagamento**.
 
 1. Per aprire il menu [ **Start,**](holographic-home.md)eseguire un [movimento start o](/hololens/hololens2-basic-usage#start-gesture) [bloom](hololens1-basic-usage.md) HoloLens (prima generazione).
 
 1. Selezionare l Microsoft Store app. Dopo l'apertura dell'app Store:
    1. Usare la barra di ricerca per cercare le applicazioni.
-   1. Selezionare app essenziali o app appositamente HoloLens da una delle categorie curate.
+   1. Selezionare app o app essenziali appositamente HoloLens da una delle categorie curate.
    1. In alto a destra nell'app Store selezionare il pulsante **"..."** e quindi selezionare **Libreria** per visualizzare tutte le app acquistate in precedenza.
 
 1. Selezionare **Scarica** o **Installa** nella pagina dell'applicazione (potrebbe essere necessario un acquisto).
 
-### <a name="install-microsoft-onedrive-pwa-app"></a>Installare Microsoft OneDrive PWA app
+### <a name="install-microsoft-onedrive-pwa-app"></a>Installare l Microsoft OneDrive PWA app
 
 Prerequisiti: l'utente ha già aggiunto il dispositivo HoloLens 2 al tenant di lavoro.
 
@@ -85,7 +85,7 @@ Prerequisiti: l'utente ha già aggiunto il dispositivo HoloLens 2 al tenant di l
 
     ![Accesso al lavoro](images/office-pwa-2.jpg)
 
-1. Dopo aver eseguito l'accesso al portale OneDrive Web, attendere da 30 a 60 secondi per visualizzare PWA download
+1. Dopo aver eseguito l'accesso al portale OneDrive Web, attendere da 30 a 60 secondi per visualizzare PWA di download
 
     ![PWA pulsante Installa](images/office-pwa-3.jpg)
 
@@ -93,7 +93,7 @@ Prerequisiti: l'utente ha già aggiunto il dispositivo HoloLens 2 al tenant di l
 
     ![Richiesta di installazione](images/office-pwa-4.jpg)
 
-1. Chiudere il browser Edge e dal menu Start  selezionare il pulsante Tutte le app e avviare l'app OneDrive PWA app con etichetta **Microsoft OneDrive**
+1. Chiudere il browser Edge e dal menu Start  selezionare il pulsante Tutte le app e avviare l'app OneDrive PWA etichettata **Microsoft OneDrive**
 
     ![Tutte le app che mostrano entrambe le app.](images/office-pwa-5.jpg)
 
@@ -139,7 +139,7 @@ Per aggiornare un'app installata dal Microsoft Store, è possibile aggiornare l'
 Esistono tre modi per disinstallare le applicazioni. È possibile disinstallare le applicazioni tramite Microsoft Store, menu Start o da Impostazioni.
 
 > [!WARNING]
-> Non è possibile disinstallare un'app di sistema o Microsoft Store se stessa.
+> Non è possibile disinstallare un'app di sistema o il Microsoft Store stesso.
 
 > [!IMPORTANT]
 > Se il HoloLens 2 ha più utenti, è necessario accedere come utente che ha installato l'app per disinstallarla.

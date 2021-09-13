@@ -15,16 +15,16 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 071dfb3b211928c561fc84754dd7ed4d64886f61
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427212"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032488"
 ---
 # <a name="install-apps-on-hololens-2-via-app-installer"></a>Installare app in HoloLens 2 tramite Programma di installazione app
 
 > [!NOTE]
-> Questa funzionalità è stata resa disponibile in [Windows Holographic, versione 20H2 - Aggiornamento di dicembre 2020](hololens-release-notes.md). Assicurarsi che il dispositivo [sia aggiornato](hololens-update-hololens.md) per usare questa funzionalità.
+> Questa funzionalità è stata resa disponibile in [Windows Holographic, versione 20H2 - Aggiornamento di dicembre 2020.](hololens-release-notes.md) Assicurarsi che il dispositivo [sia aggiornato](hololens-update-hololens.md) per usare questa funzionalità.
 
 È stata aggiunta una nuova funzionalità **(Programma di installazione app)** per consentire di installare le applicazioni in modo più semplice HoloLens 2 dispositivi. La funzionalità sarà **attivata per impostazione predefinita per i dispositivi non gestiti.** Per evitare interruzioni per le aziende, il programma di installazione delle app non **sarà attualmente disponibile per** i dispositivi gestiti.  
 
@@ -34,7 +34,7 @@ Un dispositivo viene considerato "gestito" **se si** verifica una delle condizio
 - Configurato con il [pacchetto di provisioning](hololens-provisioning.md)
 - [L'identità utente](hololens-identity.md) Azure AD
 
-È ora possibile installare le app senza dover abilitare la modalità sviluppatore o usare Portale di dispositivi.  Scaricare (tramite USB o tramite Microsoft Edge) il bundle Appx nel dispositivo e passare al bundle Appx nel Esplora file per chiedere di avviare l'installazione.  In alternativa, [avviare un'installazione da una pagina Web](/windows/msix/app-installer/installing-windows10-apps-web). Proprio come le app installate dal Microsoft Store o il sideload usando la funzionalità di distribuzione di [](/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) app LOB [](/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) MDM, le app devono essere firmate digitalmente con lo strumento di firma e il certificato usato per firmare deve essere considerato attendibile dal dispositivo HoloLens prima che l'app possa essere distribuita.
+È ora possibile installare le app senza dover abilitare la modalità sviluppatore o usare Portale di dispositivi.  Scaricare (tramite USB o tramite Microsoft Edge) il bundle Appx nel dispositivo e passare al bundle Appx nel Esplora file per chiedere di avviare l'installazione.  In alternativa, [avviare un'installazione da una pagina Web](/windows/msix/app-installer/installing-windows10-apps-web). Proprio come le app installate dal Microsoft Store o il sideload usando la funzionalità di distribuzione di app [](/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) LOB [](/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) MDM, le app devono essere firmate digitalmente con lo strumento di firma e il certificato usato per firmare deve essere considerato attendibile dal dispositivo HoloLens prima che l'app possa essere distribuita.
 
 ## <a name="requirements"></a>Requisiti
 

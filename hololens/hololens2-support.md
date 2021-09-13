@@ -8,11 +8,11 @@ ms.prod: hololens
 ms.topic: article
 ms.date: 3/19/2021
 ms.openlocfilehash: 17aaf8627384098de240d2c2e79c1ed9b0d39165
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428971"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032618"
 ---
 # <a name="what-are-the-mixed-reality-support-and-help-options"></a>Quali sono le opzioni di supporto e assistenza per realtà mista?
 
@@ -135,7 +135,7 @@ Per aprire un ticket di supporto tecnico nel portale di Azure per Ancoraggi nell
     + Tipo di problema: tecnico
     + Servizio: Ancoraggi nello stato di Azure, Rendering remoto di Azure o Ancoraggi di oggetti di Azure
 
-    ![portale di Azure di ticket di supporto.](../hololens/images/azure-help-support3.png)
+    ![portale di Azure dei ticket di supporto.](../hololens/images/azure-help-support3.png)
 
     1. Fare **clic su Avanti:** Soluzioni nella parte inferiore della pagina per aggiungere altri dettagli per ottenere altre informazioni sul problema.
 

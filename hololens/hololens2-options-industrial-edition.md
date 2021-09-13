@@ -1,7 +1,7 @@
 ---
 title: HoloLens 2 Industrial Edition
 description: Informazioni su HoloLens 2 Industrial Edition e sulle attività da eseguire dopo averrne una propria.
-keywords: HoloLens 2 opzioni di acquisto, HoloLens, Industrial Edition
+keywords: HoloLens 2 di acquisto, opzioni HoloLens, Industrial Edition
 author: bgener
 ms.author: bogenera
 ms.reviewer: bogenera
@@ -15,15 +15,15 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 51306755da5500d22829f359d2bf1467980892ea
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427529"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036103"
 ---
 # <a name="hololens-2-industrial-edition"></a>HoloLens 2 Industrial Edition
 
-Progettata, compilata e testata per supportare ambienti di stanza pulita con standard che vanno dalla classe ISO 6 alla classe 8 ISO, l'edizione industriale di HoloLens 2 è di classe UL I, certificata divisione 2 ed è supportata con una garanzia di 2 anni e un programma di sostituzione rapida.
+Progettata, compilata e testata per supportare ambienti puliti con standard che vanno dalla classe ISO 6 alla classe 8 ISO, l'edizione industriale di HoloLens 2 è certificata UL Classe I, Divisione 2 ed è supportata con una garanzia di 2 anni e un programma di sostituzione rapida.
 
 ## <a name="learn-about-hololens-2-industrial-edition"></a>Informazioni su HoloLens 2 Industrial Edition
 
@@ -40,7 +40,7 @@ Vedere le domande [HoloLens 2'edizione industriale di](hololens2-industrial-edit
 
 ## <a name="cleaning-and-handling-hololens-2"></a>Pulizia e gestione dei HoloLens 2
 
-La HoloLens 2 Industrial Edition può essere pulita con una soluzione isopropyl al 70%" di bevande e acqua per pulire le superfici rigide del dispositivo, tra cui il visore, il visore, il visore e la testa. Per altre informazioni, vedere le domande [frequenti HoloLens 2 pulizia dei dati.](/hololens/hololens2-maintenance)
+La HoloLens 2 Industrial Edition può essere pulita con una soluzione di bevande isoproprieli "70%" e acqua per pulire le superfici rigide del dispositivo, tra cui il visore, il visore, il visore e il visore della testa. Per altre informazioni, vedere le domande [frequenti HoloLens 2 pulizia dei dati.](/hololens/hololens2-maintenance)
 
 ## <a name="next-steps"></a>Passaggi successivi
 

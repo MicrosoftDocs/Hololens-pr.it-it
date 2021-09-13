@@ -12,11 +12,11 @@ ms.localizationpriority: medium
 audience: HoloLens
 manager: yannisle
 ms.openlocfilehash: d7d5ad05dc675cf07afd075f4fb52d24cd4d3e15
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428471"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032479"
 ---
 # <a name="microsoft-store-for-business"></a>Microsoft Store per le aziende
 

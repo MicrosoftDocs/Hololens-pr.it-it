@@ -14,21 +14,21 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: f9a6f1692df05e5fd8faec3da07cc85f7c6a32c7
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427688"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036194"
 ---
 # <a name="use-the-start-menu-and-mixed-reality-home"></a>Usare i menu Start e Ambiente iniziale
 
-Proprio come l'esperienza Windows pc inizia con il desktop, Windows Holographic inizia con ambiente iniziale.  Usando il menu Start è possibile aprire e posizionare finestre dell'app, utilità di avvio delle app immersive e contenuto 3D in ambiente iniziale e la relativa posizione nello spazio fisico verrà memorizzata.
+Proprio come l'esperienza Windows pc inizia con il desktop, Windows Holographic inizia con ambiente iniziale.  Usando il menu Start è possibile aprire e posizionare le finestre dell'app, le utilità di avvio delle app immersive e il contenuto 3D in ambiente iniziale e la relativa posizione nello spazio fisico verrà memorizzata.
 
 ## <a name="use-the-start-menu"></a>Usare il menu Start
 
 Il menu Start di HoloLens consente di aprire le app, visualizzare informazioni importanti sullo stato e accedere a strumenti come la camera.
 
-Ovunque ci si trova in HoloLens, è sempre possibile aprire il menu Start usando **il movimento Start**.  Nella HoloLens (prima generazione) il movimento Start è [bloom](https://support.microsoft.com/help/12644/hololens-use-gestures). In HoloLens 2, il [movimento Start](hololens2-basic-usage.md#start-gesture) tocca l'icona Start visualizzata sul polso.  È anche possibile aprire il menu Start usando la voce pronunciando "Vai a Start".
+Ovunque ci si trova in HoloLens, è sempre possibile aprire il menu Start usando **il movimento Avvia**.  Nella HoloLens (prima generazione) il movimento Start è [bloom](https://support.microsoft.com/help/12644/hololens-use-gestures). In HoloLens 2, il [movimento Start tocca](hololens2-basic-usage.md#start-gesture) l'icona Start visualizzata sul polso.  È anche possibile aprire il menu Start usando la voce pronunciando "Vai a Start".
 
 > [!TIP]
 > Quando il menu Start è aperto, usare il movimento Avvia per chiuderlo o osservare il menu Start e pronunciare "Chiudi".
@@ -41,7 +41,7 @@ Il menu Start ha un **elenco di app aggiunte** e un elenco Tutte **le** app.
 
 - **L'elenco App aggiunte** mostra le app aggiunte. È possibile aggiungere e rimuovere app dall'elenco **App** aggiunte usando il menu di scelta rapida visualizzato quando si seleziona e si tiene **premuto** il riquadro di un'app.
 
-- **L'elenco** Tutte le app mostra tutte le app installate nel dispositivo.  Selezionare il **pulsante Tutte** le app sul lato destro del menu **Start** per visualizzare l'elenco.
+- **L'elenco** Tutte le app mostra tutte le app installate nel dispositivo.  Selezionare il **pulsante Tutte le** app sul lato destro del menu **Start** per accedere all'elenco.
 
 In entrambi gli elenchi  di app usare i pulsanti Pagina precedente e **Pagina successiva** sul lato destro del menu Start per scorrere tutte le app nell'elenco.  Entrambi gli elenchi di app verranno aperti automaticamente alla pagina usata per l'ultima volta durante una sessione del dispositivo.
 
@@ -58,10 +58,10 @@ Quando si apre un'app dal menu Start, si verifica una delle operazioni seguenti,
 - Viene **inserita un'icona di avvio di app 3D** per un'app immersiva. È quindi necessario selezionare **l'utilità di avvio** per aprire l'app immersiva.
 - Viene posizionata una finestra dell'app che funge da **utilità** di avvio per un'app immersiva. L'app immersiva procederà all'avvio automatico.
 
-Le finestre delle app e le utilità di avvio delle app ambiente iniziale rimangono in giro fino a quando non si decide di rimuoverle.  Offrono un comodo collegamento al mondo per usare le finestre dell'app o per avviare app immersive senza doverle aprire di nuovo dal menu Start. 
+Le finestre delle app e le utilità di avvio delle app ambiente iniziale rimangono in giro fino a quando non si decide di rimuoverle.  Offrono un comodo collegamento al mondo per usare queste finestre dell'app o per avviare app immersive senza doverle aprire di nuovo dal menu Start. 
 
 > [!NOTE]
->Come in un telefono, le risorse di sistema vengono gestite automaticamente HoloLens.  Ad esempio, quando si apre una nuova app immersiva, tutte le altre app in esecuzione diventano immediatamente inattive. Non è necessario rimuovere le finestre e le utilità di avvio delle app ambiente iniziale liberare risorse di sistema. 
+>Come per un telefono, le risorse di sistema vengono gestite automaticamente HoloLens.  Ad esempio, quando si apre una nuova app immersiva, tutte le altre app in esecuzione diventano immediatamente inattive. Non è necessario rimuovere le finestre e le utilità di avvio delle app ambiente iniziale liberare risorse di sistema. 
 
 ## <a name="using-apps-on-hololens"></a>Uso di app HoloLens
 

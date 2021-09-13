@@ -1,7 +1,7 @@
 ---
-title: Guida alla distribuzione - Connessione aziendale HoloLens 2 con Dynamics 365 Guides - Configura
+title: Guida alla distribuzione - Connessione aziendale HoloLens 2 con Dynamics 365 Guides - Configurare
 description: Informazioni su come configurare le configurazioni per distribuire HoloLens 2 dispositivi in una rete connessa aziendale con Dynamics 365 Guides.
-keywords: HoloLens, gestione, aziendale connesso, Dynamics 365 Guides, AAD, Azure AD, MDM, gestione dei dispositivi mobili
+keywords: HoloLens, gestione, connessa aziendale, Dynamics 365 Guides, AAD, Azure AD, MDM, gestione dei dispositivi mobili
 author: joyjaz
 ms.author: v-jjaswinski
 ms.reviewer: aboeger
@@ -15,13 +15,13 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 9457acd2f53d0d3127d6c68d620b660f6e09866d
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428772"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033506"
 ---
-# <a name="configure---corporate-connected-guide"></a>Configurare - Guida alla connessione aziendale
+# <a name="configure---corporate-connected-guide"></a>Configurazione - Guida alla connessione aziendale
 
 ## <a name="azure-users-and-groups"></a>Utenti e gruppi di Azure
 
@@ -34,7 +34,7 @@ Se non si&#39;avere già accesso a due account Azure AD in un gruppo di utenti, 
 - [Come creare un utente](/mem/intune/fundamentals/quickstart-create-user)
 - [Come creare un gruppo](/mem/intune/fundamentals/quickstart-create-group)
 - [Aggiungere utenti a un gruppo:](/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal) aggiungere gli utenti creati per creare un gruppo
-- [Configurare Azure AD per consentire a un gruppo](/azure/active-directory/devices/azureadjoin-plan#configure-your-device-settings) di utenti di aggiungere dispositivi: assicurarsi che il nuovo gruppo di utenti abbia l'autorizzazione per registrare i dispositivi Azure AD
+- [Configurare Azure AD per consentire a un gruppo di utenti](/azure/active-directory/devices/azureadjoin-plan#configure-your-device-settings) di aggiungere dispositivi: assicurarsi che il nuovo gruppo di utenti abbia l'autorizzazione per registrare i dispositivi Azure AD
 
 ## <a name="auto-enrollment-on-hololens-2"></a>Registrazione automatica in HoloLens 2
 
@@ -65,7 +65,7 @@ Per distribuire certificati e profili tramite Microsoft Endpoint Manager, seguir
     > [!Note]
     > Poiché il HoloLens 2 viene considerato per molti come un dispositivo condiviso, ad esempio più utenti per dispositivo, è consigliabile distribuire certificati del dispositivo anziché certificati utente per l'autenticazione Wi-Fi laddove possibile.
 
-3. Creare un profilo per la rete Wi-Fi aziendale (vedere [Impostazioni Wi-Fi](/intune/wi-fi-settings-windows)per dispositivi Windows 10 e versioni successive). All'interno Wi-Fi profilo, è possibile scegliere di usare le impostazioni proxy all'interno dell'organizzazione.
+3. Creare un profilo per la rete Wi-Fi aziendale (vedere [Impostazioni Wi-Fi](/intune/wi-fi-settings-windows)per dispositivi Windows 10 e versioni successive). Nel profilo Wi-Fi è possibile scegliere di usare le impostazioni proxy all'interno dell'organizzazione.
 
     Le opzioni disponibili sono:
     - **Nessuno**: non sono state configurate impostazioni proxy.
@@ -78,7 +78,7 @@ Per distribuire certificati e profili tramite Microsoft Endpoint Manager, seguir
     > È consigliabile assegnare il Wi-Fi a Gruppi di dispositivi anziché a Gruppi di utenti, laddove possibile.
      
     > [!Tip]
-    > È anche possibile esportare un profilo Wi-Fi lavoro da Windows 10 PC nella rete aziendale. Questa esportazione crea un file XML con tutte le impostazioni correnti. Importare quindi questo file in Intune e usarlo come profilo Wi-Fi per i HoloLens 2 dispositivi. Vedere [Esportare e importare impostazioni Wi-Fi per i dispositivi Windows](/mem/intune/configuration/wi-fi-settings-import-windows-8-1).
+    > È anche possibile esportare un profilo Wi-Fi lavoro da un PC Windows 10 nella rete aziendale. Questa esportazione crea un file XML con tutte le impostazioni correnti. Importare quindi questo file in Intune e usarlo come profilo Wi-Fi per i HoloLens 2 dispositivi. Vedere [Esportare e importare impostazioni Wi-Fi per i dispositivi Windows](/mem/intune/configuration/wi-fi-settings-import-windows-8-1).
 
 1.  [Assegnare](/mem/intune/configuration/device-profile-assign) i profili di dispositivo HoloLens gruppo di dispositivi.
 
@@ -102,7 +102,7 @@ Se si stanno ancora sviluppando le app o non se ne ha ancora una, è possibile u
 Se si preferisce usare la propria app o si è interessati allo sviluppo di app per la realtà mista, è possibile consultare la documentazione per sviluppatori [di Realtà mista.](/windows/mixed-reality/design/design)
 
 > [!NOTE]
-> I requisiti di sistema per HoloLens dispositivi sono basati sull'architettura della compilazione dell'app. HoloLens 2 dispositivi usano l'architettura ARM. Quando si compilano le app Visual Studio, assicurarsi di aver selezionato l'architettura corretta per il dispositivo e di includere le dipendenze necessarie.
+> I requisiti di sistema HoloLens dispositivi sono basati sull'architettura della compilazione dell'app. HoloLens 2 dispositivi usano l'architettura ARM. Quando si compilano le app Visual Studio, assicurarsi di aver selezionato l'architettura corretta per il dispositivo e di includere le dipendenze necessarie.
 
 > [!IMPORTANT]
 > Quando si distribuiscono app LOB, è importante caricare anche il certificato in Intune e assegnarlo allo stesso gruppo che deve usare l'app o che non verrà installato correttamente.
@@ -115,7 +115,7 @@ Se si preferisce usare la propria app o si è interessati allo sviluppo di app p
 
 3. In Altro selezionare **App line-of-business.** Fare clic **su selezionare**.
 
-4. Selezionare il file del pacchetto dell'app, si tratta del file APPXBUNDLE o, in questo caso, l'app è _MRTK Examples Hub \_ 2.4.2.0 \_ arm \_ Master.appxbundle._
+4. Selezionare il file del pacchetto dell'app, si tratta del file APPXBUNDLE oppure, in questo caso, l'app è _MRTK Examples Hub \_ 2.4.2.0 \_ arm \_ Master.appxbundle._
 
 5. Si riceverà una notifica delle dipendenze mancanti. In questo caso, è necessario caricare _Microsoft.VCLibs.ARM.14.00.appx._ Cercarlo in **Selezionare un file**.
 
@@ -131,13 +131,13 @@ Altre informazioni: [Assegnare app ai gruppi in Microsoft Intune](/mem/intune/ap
 
 ## <a name="setup-guides-application-licenses-dataverse-and-authoring"></a>Guide alla configurazione: licenze dell'applicazione, dataverse e creazione
 
-Per usare i Dynamics 365 Guides, è necessario eseguire alcune operazioni di preparazione. Ci sono tre aree in cui è necessario prepararsi: utenti, dataverse e le guide stesse.
+Per usare Dynamics 365 Guides, è necessario eseguire alcune operazioni di preparazione. Ci sono tre aree in cui è necessario prepararsi: utenti, dataverse e le guide stesse.
 
 ### <a name="users-and-application-licenses"></a>Utenti e licenze dell'applicazione
 
 Per usare guide, un utente dovrà usare un account Azure AD, configurato in precedenza in questa guida.
 
-Sarà anche necessario assegnare Dynamics 365 Guides licenza all'utente creato. Questa operazione verrà ese interfaccia di amministrazione di Microsoft 365 [.](https://admin.microsoft.com/AdminPortal/Home) Assegnare anche la licenza all'account Azure primario.
+Sarà anche necessario assegnare Dynamics 365 Guides licenza all'utente creato. Questa operazione verrà eservita [dal interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com/AdminPortal/Home). Assegnare anche la licenza all'account Azure primario.
 
 Seguire [questa breve guida con](/dynamics365/mixed-reality/guides/setup-step-one#assign-the-dynamics-365-guides-license-to-user-accounts) immagini per istruzioni dettagliate sull'applicazione delle licenze delle applicazioni.
 
@@ -152,33 +152,33 @@ In questa guida viene [illustrato come creare un ambiente Microsoft Dataverse:](
 3. È importante selezionare Crea un **database per questo ambiente?**  su **Sì.**
 4. Nella finestra  **di dialogo**  Aggiungi database impostare l'opzione Abilita app  **Dynamics 365**  su  **Sì.**
 
-È necessario aumentare le dimensioni massime del file degli elementi nel dataverse. Aumentando le dimensioni massime del file sarà possibile caricare modelli 3D di dimensioni maggiori o file video che verranno utilizzati più avanti nelle guide. Seguire una breve guida [per modificare le dimensioni massime del file di caricamento.](/dynamics365/mixed-reality/guides/setup-step-two#change-the-maximum-upload-file-size)
+È necessario aumentare le dimensioni massime dei file degli elementi nel dataverse. Aumentando le dimensioni massime del file sarà possibile caricare modelli 3D o file video di dimensioni maggiori che verranno usate più avanti nelle guide. Seguire una breve guida per [modificare le dimensioni massime del file di caricamento](/dynamics365/mixed-reality/guides/setup-step-two#change-the-maximum-upload-file-size).
 
-Infine, è necessario installare e [configurare la soluzione](/dynamics365/mixed-reality/guides/setup-step-two#install-and-configure-the-solution). Nel [interfaccia di amministrazione di Power Platform](https://admin.powerplatform.microsoft.com/environments)selezionare **Risorse** \& >  **App Dynamics 365,** **selezionare** Dynamics 365 Guides nell'elenco e quindi selezionare **Installa**.  
+Infine, è necessario installare [e configurare la soluzione](/dynamics365/mixed-reality/guides/setup-step-two#install-and-configure-the-solution). Nel [interfaccia di amministrazione di Power Platform](https://admin.powerplatform.microsoft.com/environments)selezionare Risorse  \& >  **App Dynamics 365,** selezionare **Dynamics 365 Guides** nell'elenco e quindi selezionare **Installa.**  
 
-È necessario [aggiungere un ruolo di sicurezza Guide](/dynamics365/mixed-reality/guides/assign-role) prima di poter usare le app.
+È necessario [aggiungere un ruolo di sicurezza Guides](/dynamics365/mixed-reality/guides/assign-role) prima di poter usare le app.
 
 ### <a name="create-a-test-guide-on-your-pc-via-authoring"></a>Creare una guida di test nel PC tramite creazione
 
-Quando si creano guide, si inizierà sempre dal PC. Creazione dei passaggi, selezione dei modelli e come ancorare la guida. A questo scopo, inserire il contenuto per la guida in un secondo momento in modalità di creazione nel dispositivo HoloLens dispositivo. Ai fini di questa guida, è consigliabile creare una breve guida di test con passaggi e modelli minimi.
+Quando si creano guide, si inizierà sempre dal PC. Creazione dei passaggi, selezione di modelli e come ancorare la guida. Questo verrà seguito dall'inserimento del contenuto per la guida in un secondo momento in modalità di creazione HoloLens dispositivo. Ai fini di questa guida, è consigliabile creare una breve guida di test con passaggi e modelli minimi.
 
-Se si desidera iniziare a imparare a creare guide, iniziare da qui con la [panoramica della creazione.](/dynamics365/mixed-reality/guides/authoring-overview) Oppure, per ottenere una panoramica rapida, guardare questo breve video.
+Se si desidera iniziare a imparare a creare guide, iniziare da qui con la panoramica [sulla creazione.](/dynamics365/mixed-reality/guides/authoring-overview) In caso contrario, guardare questo breve video per una panoramica rapida.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EC24dMlAy90" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## <a name="optional-kiosk-mode"></a>Facoltativo: modalità tutto schermo
 
-La modalità tutto schermo è una modalità che consente a un amministratore IT di configurare l'interfaccia utente del menu Start per visualizzare solo una singola app o la selezione di app. Un chiosco multimediale può essere applicato anche a utenti, gruppi o a livello di dispositivo specifici. e in alcuni casi escludere determinati utenti dalla modalità tutto schermo consentendo comunque l'accesso al normale menu Start.
+La modalità tutto schermo è una modalità che consente a un amministratore IT di configurare l'interfaccia utente del menu Start in modo da visualizzare solo una singola app o una selezione di app. Un chiosco multimediale può essere applicato anche a utenti, gruppi o a livello di dispositivo specifici. e in alcuni casi escludere determinati utenti dal chiosco multimediale consentendo comunque l'accesso al normale menu Start.
 
-La modalità tutto schermo include molte variabili diverse, sia nell'ambito che nelle configurazioni che possono essere impostate, nonché nei metodi di distribuzione della modalità tutto schermo nel HoloLens. A causa di tutte queste variabili, la modalità tutto schermo viene lasciata come facoltativa _per_ questa guida e non verrà rivisitata. Se si ritiene di avere un'esigenza aziendale di limitare le app disponibili agli utenti o si vuole ottenere altre informazioni, è possibile imparare a configurare HoloLens come chiosco [multimediale.](/hololens/hololens-kiosk)
+La modalità tutto schermo ha molte variabili diverse, sia nell'ambito che nelle configurazioni che possono essere impostate, nonché nei metodi di distribuzione del chiosco multimediale nel HoloLens. A causa di tutte queste variabili, la modalità tutto schermo viene lasciata come _facoltativa_ per questa guida e non verrà rivisitata. Se si ritiene di avere l'esigenza aziendale di limitare le app disponibili agli utenti o di desiderarne altre, è possibile imparare a configurare HoloLens come chiosco [multimediale.](/hololens/hololens-kiosk)
 
 ## <a name="optional-wdac"></a>Facoltativo: WDAC
 
-WDAC consente a un amministratore IT di configurare i propri dispositivi per bloccare l'avvio delle app nei dispositivi. Questo è diverso rispetto ai metodi di restrizione del dispositivo, ad esempio la modalità tutto schermo, in cui l'utente viene presentato con un'interfaccia utente che nasconde le app nel dispositivo, ma che possono comunque essere avviate. Mentre WDAC è implementato, le app sono ancora visibili nell'elenco Tutte le app, ma WDAC impedisce che tali app e processi possano essere avviati dall'utente del dispositivo.
+WDAC consente a un amministratore IT di configurare i propri dispositivi per bloccare l'avvio delle app nei dispositivi. Questo è diverso rispetto ai metodi di restrizione dei dispositivi, ad esempio la modalità tutto schermo, in cui all'utente viene presentata un'interfaccia utente che nasconde le app nel dispositivo, ma che possono comunque essere avviate. Durante l'implementazione di WDAC, le app sono ancora visibili nell'elenco Tutte le app, ma WDAC impedisce l'avvio di tali app e processi da parte dell'utente del dispositivo.
 
-Per altre informazioni, vedere [Usare WDAC e Windows PowerShell per](/mem/intune/configuration/custom-profile-hololens)consentire o bloccare le app HoloLens 2 dispositivi con Microsoft Intune .
+Per altre informazioni, vedere [Usare WDAC e Windows PowerShell](/mem/intune/configuration/custom-profile-hololens)per consentire o bloccare le app HoloLens 2 dispositivi con Microsoft Intune .
 
-[Windows Defender Controllo dell'applicazione - WDAC](/hololens/windows-defender-application-control-wdac)
+[Windows Defender Controllo delle applicazioni - WDAC](/hololens/windows-defender-application-control-wdac)
 
 ## <a name="next-step"></a>Passaggio successivo 
 > [!div class="nextstepaction"]

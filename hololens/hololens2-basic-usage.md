@@ -13,11 +13,11 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: cf3770dd55498dbe98abf88d002247646e4db9be
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428581"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036146"
 ---
 # <a name="getting-around-hololens-2"></a>Orientarsi in HoloLens 2
 
@@ -27,7 +27,7 @@ Questa guida offre un'introduzione a:
 
 - Interazione con la realtà mista
 - Uso di mani e voce per interagire con gli ologrammi HoloLens 2
-- Navigazione Windows 10 su HoloLens (Windows Holographic)
+- Navigazione Windows 10 in HoloLens (Windows Holographic)
 
 ## <a name="discover-mixed-reality"></a>Scoprire la realtà mista
 
@@ -43,7 +43,7 @@ Una volta che si conoscono queste interazioni di base, HoloLens sarà uno snap.
 > Se si ha un HoloLens nelle vicinanze, l'app **Suggerimenti** fornisce esercitazioni pratica letterali per le interazioni con la mano HoloLens.  
 > Usare il movimento start per passare a **Start** o pronunciare "Vai a Start" e selezionare **Suggerimenti**.
 
-## <a name="the-hand-tracking-frame"></a>Frame di tracciamento manuale
+## <a name="the-hand-tracking-frame"></a>Fotogramma di tracciamento manuale
 
 HoloLens ha sensori che possono vedere pochi metri da entrambi i lati. Quando si usano le mani, è necessario mantenerle all'interno del frame o HoloLens non verranno visualizzati. Tuttavia, il frame si sposta con l'utente mentre ci si sposta.  
 
@@ -55,7 +55,7 @@ Quando un ologramma è vicino, avvicinare la mano e sulla punta dell'indice dovr
 
 Per **afferrare** un ologramma vicino  a te, avvicinare il **pollice** e l'indice sull'ologramma e tenere premuto. Per lasciar andare, rilasciare le dita. Usare questo **movimento di afferramento** per spostare, ridimensionare e ruotare oggetti 3D e finestre dell'app ambiente iniziale.
 
-Per visualizzare un **menu di** scelta rapida, come quelli che si trovano nel riquadro di un'app nel **menu Start,** toccare e tenere premuto come si fa su un touch screen.
+Per visualizzare un **menu** di scelta rapida, come quelli che si trovano nel riquadro di un'app nel **menu Start,** toccare e tenere premuto come si fa su un touch screen.
 
 ## <a name="use-hand-ray-for-holograms-out-of-reach"></a>Usare il raggio della mano per gli ologrammi non raggiungibili
 
@@ -92,11 +92,11 @@ Usare **il tocco dell'aria e** tenere premuto per eseguire le azioni seguenti co
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3Wxng]
 
-Il movimento Start apre il **menu Start**.  Per eseguire il movimento Start, tenere la mano con il palmo rivolto verso l'utente. Verrà visualizzata **un'icona Start** sopra il polso interno. Toccare questa icona usando l'altra mano.  Il menu Start si **aprirà in cui si sta cercando**.
+Il movimento Start apre il **menu Start**.  Per eseguire il movimento Start, tenere la mano con il palmo rivolto verso l'utente. Verrà visualizzata **un'icona Start** sul polso interno. Toccare questa icona usando l'altra mano.  Il menu Start verrà aperto **in cui si sta cercando**.
 
 > [!TIP]
 >
-> - È possibile usare il movimento Start purché le mani siano all'interno del frame di rilevamento della mano.  Non è necessario guardare verso il basso l'icona Start. Mantenere il gomito basso e comodo e cercare nella direzione in cui si vuole che il menu Start aprire.
+> - È possibile usare il movimento Start purché le mani siano all'interno del frame di rilevamento della mano.  Non è necessario guardare verso il basso l'icona Start. Mantenere il gomito basso e comodo e cercare nella direzione in cui si vuole che menu Start aperto.
 > - Se il menu Start non si è aperto nella posizione desiderata, è sufficiente spostare la testa per riposizionarla.
 > - Se si verificano problemi durante la lettura del testo più piccolo menu Start, avvicinarsi al testo dopo l'apertura.
 > - Se la mano è leggermente a lato del frame, è comunque possibile visualizzare il menu Start toccando il polso interno, anche se non viene visualizzata l'icona.
@@ -123,13 +123,13 @@ Pronto a mettere alla prova tutte queste interazioni con la mano?
 
 Le app installate sono disponibili [](holographic-home.md) nel menu Start ed è possibile trovare altre app per HoloLens nella Microsoft Store [.](holographic-store-apps.md)
 
-Proprio come Windows PC inizia sempre la propria esperienza sul desktop, HoloLens sempre **in** ambiente iniziale quando è acceso.  Usando il menu Start, è possibile aprire e posizionare finestre dell'app, nonché utilità di avvio delle app e contenuto 3D in ambiente iniziale. I posizionamenti nello spazio fisico verranno memorizzati HoloLens.
+Proprio come Windows PC inizia sempre la propria esperienza sul desktop, HoloLens sempre **in** ambiente iniziale quando è acceso.  Usando il menu Start, è possibile aprire e posizionare finestre dell'app, nonché utilità di avvio delle app e contenuto 3D in ambiente iniziale. I loro posizionamenti nello spazio fisico verranno memorizzati HoloLens.
 
-Aprire il **menu Start** e quindi selezionare il riquadro **dell Impostazioni app.** Verrà visualizzata una finestra dell'app.
+Aprire il **menu Start** e quindi selezionare il riquadro **Impostazioni'app.** Verrà visualizzata una finestra dell'app.
 
 Impostazioni è un esempio di un'app HoloLens che usa una finestra **dell'app** 2D.  È molto simile a un'applicazione Windows su PC.
 
-È ora possibile aprire nuovamente il **menu Start** e selezionare il riquadro **Suggerimenti'app.** Verrà visualizzata **un'icona** di avvio delle app 3D per l'app. Per aprire l'app, è necessario selezionare il pulsante **di** riproduzione nell'utilità di avvio.
+È ora possibile aprire nuovamente il **menu Start** e selezionare il **riquadro** Suggerimenti'app. Verrà visualizzata **un'icona** di avvio delle app 3D per l'app. Per aprire l'app, è necessario selezionare il pulsante **di** riproduzione nell'utilità di avvio.
 
 Suggerimenti è un esempio di app **immersiva.** Un'app immersiva consente di ambiente iniziale quando viene eseguita e diventa l'unica app visualizzata.  Per uscire, è necessario visualizzare il menu Start e selezionare il pulsante ambiente iniziale **nella** parte inferiore.
 
@@ -151,11 +151,11 @@ Nuovo menu che consente all'utente di disconnettersi, arrestare e riavviare il d
 
    <img alt="User context menu" src="./images/powertransition_aad_options_cropped.png" width="586" height="330" />
 
-5. Selezionare le opzioni di menu per disconnettersi, riavviare o arrestare il HoloLens. L'opzione Disconnei potrebbe non essere disponibile se il dispositivo è configurato per un singolo [account Microsoft (MSA) o un account locale.](hololens-identity.md)
+5. Selezionare le opzioni di menu per disconnettersi, riavviare o arrestare il HoloLens. L'opzione Disconnessione potrebbe non essere disponibile se il dispositivo è configurato per un singolo [account Microsoft (MSA)](hololens-identity.md)o un account locale.
 
-6. Chiudere il menu toccando un altro punto o chiudendo il menu Start con il movimento Start.
+6. Chiudere il menu toccando un altro punto o chiudendo il menu Start con il movimento Avvia.
 
-[Fare clic qui per altre informazioni](holographic-home.md) menu Start e ambiente iniziale, incluse le informazioni su come usare e gestire le app HoloLens 2.
+[Vedere qui per altre informazioni](holographic-home.md) su menu Start e ambiente iniziale, incluse le informazioni su come usare e gestire le app HoloLens 2.
 
 ## <a name="move-resize-and-rotate-holograms"></a>Spostare, ridimensionare e ruotare gli ologrammi
 
@@ -165,66 +165,66 @@ In ambiente iniziale è possibile spostare, ridimensionare e ruotare le finestre
 
 Spostare un ologramma o un'app seguendo questa procedura:
 
-1. Afferrare l'ologramma avvicinando le dita dell'indice e il pollice sull'ologramma o puntando la mano verso il basso e quindi chiudendo l'ologramma.  Afferrare un ologramma 3D in qualsiasi punto all'interno del rettangolo di selezione blu.  Per una finestra dell'app, afferrare la relativa barra del titolo.
-1. Senza lasciar andare, spostare la mano per posizionare l'ologramma. Quando si sposta una finestra dell'app in questo modo, la finestra dell'app si trasforma automaticamente in viso mentre si sposta, semplificando l'uso nella nuova posizione.  
+1. Afferrare l'ologramma avvicinando il dito e il pollice dell'indice sull'ologramma o alzando la mano e quindi chiudendo il colpo sopra.  Afferrare un ologramma 3D in un punto qualsiasi all'interno del rettangolo di selezione blu.  Per una finestra dell'app, afferrare la relativa barra del titolo.
+1. Senza lasciarsi andare, spostare la mano per posizionare l'ologramma. Quando si sposta una finestra dell'app in questo modo, la finestra dell'app si trasforma automaticamente in viso mentre si sposta, semplificando l'uso nella nuova posizione.  
 1. Rilasciare le dita per posizionarlo.
 
 ### <a name="resizing-holograms"></a>Ridimensionamento degli ologrammi
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3ZYIb]
 
-Afferrare e usare i **quadratini di** ridimensionamento visualizzati negli angoli degli ologrammi 3D e delle finestre dell'app per ridimensionarli.
+Afferrare e usare i **quadratini di** ridimensionamento visualizzati sugli angoli degli ologrammi 3D e delle finestre dell'app per ridimensionarli.
 
-Per una finestra dell'app, quando viene ridimensionata in questo modo, le dimensioni del contenuto della finestra aumentano e diventano più facili da leggere.
+Per una finestra dell'app, quando viene ridimensionata in questo modo il contenuto della finestra aumenta in modo corrispondente e diventa più facile da leggere.
 
-Se si vuole ridimensionare una  finestra dell'app in modo che venga visualizzato più contenuto nella finestra, usare i quadratini di ridimensionamento posizionati sui lati e sui bordi inferiori della finestra dell'app.
+Se si vuole ridimensionare una  finestra dell'app in modo che nella finestra venga visualizzato più contenuto, usare i quadratini di ridimensionamento posizionati sui lati e sui bordi inferiori della finestra dell'app.
 
 Esistono due modi per ridimensionare un ologramma più lontano dall'utente. È possibile afferrare due angoli dell'ologramma o usare i controlli di ridimensionamento.
 
 ### <a name="rotating-holograms"></a>Rotazione degli ologrammi
 
-Per gli ologrammi 3D, afferrare e usare i quadratini di rotazione visualizzati sui bordi verticali del rettangolo di selezione.
+Per gli ologrammi 3D, afferrare e usare i punti di manipolazione di rotazione visualizzati sui bordi verticali del rettangolo di selezione.
 
-Per le finestre dell'app, lo spostamento di una finestra dell'app ne determina automaticamente la rotazione e il viso.
+Per le finestre dell'app, lo spostamento di una finestra dell'app causerà la rotazione automatica e il viso dell'utente.
 
-È anche possibile afferrare un ologramma 3D o una finestra dell'app con entrambe le mani **(o** il raggio della mano) contemporaneamente e quindi:
+È anche possibile afferrare un ologramma 3D o una finestra dell'app con entrambe le mani **(o** raggio della mano) contemporaneamente e quindi:
 
-- Avvicinare le mani o allontanarle ulteriormente per ridimensionare l'ologramma.
+- Avvicinare le mani o allontanarsi ulteriormente per ridimensionare l'ologramma.
 - Avvicinare e allontanare le mani dal corpo per ruotare l'ologramma.
 
-### <a name="follow-me-stop-following"></a>Seguimi, smetti di seguire
+### <a name="follow-me-stop-following"></a>Seguimi, smettila di seguire
 
-Ologrammi e le finestre dell'app rimangono nella posizione in cui sono state inserite nel mondo.  Questo non è sempre utile se è necessario spostarsi e si vuole che un'applicazione rimanga visibile. Per chiedere a un'app di avviare o smettere di seguire l'utente, selezionare **Seguimi** nell'angolo superiore destro della finestra dell'app (accanto al **pulsante** Chiudi).  Verrà anche visualizzata una finestra dell'app che segue un'app immersiva.
+Ologrammi e le finestre dell'app rimangono nella posizione in cui sono state inserite nel mondo.  Questo non è sempre utile se è necessario spostarsi e si vuole che un'applicazione rimanga visibile. Per chiedere a un'app di avviare o interrompere l'operazione, selezionare **Seguimi** nell'angolo superiore destro della finestra dell'app (accanto al **pulsante** Chiudi).  Una finestra dell'app che segue è anche un'app immersiva.
 
 ## <a name="use-hololens-with-your-voice"></a>Usare HoloLens con la voce
 
-È possibile usare la voce per eseguire la maggior parte delle operazioni con le mani HoloLens, ad esempio scattare una foto rapida o aprire un'app.
+È possibile usare la voce per eseguire la maggior parte delle stesse operazioni con le mani HoloLens, ad esempio scattare una foto rapida o aprire un'app.
 
 | Per | Pronunciare questo |
 | - | - |
 | Aprire il menu Start | "Vai a Start" |
-| Select | Pronunciare "select" per visualizzare il cursore sguardo fisso. Quindi, ruotare la testa per posizionare il cursore sull'oggetto che si vuole selezionare e pronunciare di nuovo "select". |
+| Select | Pronunciare "select" per visualizzare il cursore dello sguardo. Quindi, ruotare la testa per posizionare il cursore sull'oggetto da selezionare e pronunciare di nuovo "seleziona". |
 | Vedere i comandi vocali disponibili | "Cosa posso dire?" |
 
  [Vedere altri comandi vocali e modi per usare il riconoscimento vocale con HoloLens](hololens-cortana.md)
 
-## <a name="swipe-to-type"></a>Scorrimento rapido fino al tipo
+## <a name="swipe-to-type"></a>Scorrimento rapido verso il testo
 
-Alcuni clienti trovano più veloce "digitare" sulle tastiere virtuali scorrendo rapidamente la forma della parola che intende digitare. Ora con [Windows Holographic, versione 21H1,](hololens-release-notes.md#windows-holographic-version-21h1)è possibile scorrere rapidamente una parola alla volta passando la punta del dito attraverso il piano della tastiera olografica, scorrendo rapidamente la forma della parola e quindi ritirando la punta del dito dal piano della tastiera. È possibile scorrere rapidamente le parole di follow-up senza dover premere la barra spaziatrice rimuovendo il dito dalla tastiera tra le parole. Si saprà che la funzionalità funziona se viene visualizzata una traccia di scorrimento rapido che segue il movimento del dito sulla tastiera.
+Alcuni clienti trovano più veloce "digitare" sulle tastiere virtuali scorrendo la forma della parola che intende digitare. Ora con [Windows Holographic, versione 21H1,](hololens-release-notes.md#windows-holographic-version-21h1)è possibile scorrere una parola alla volta passando la punta del dito attraverso il piano della tastiera olografica, scorrendo la forma della parola e quindi ritirando la punta del dito dal piano della tastiera. È possibile scorrere rapidamente le parole di follow-up senza dover premere la barra spaziatrice rimuovendo il dito dalla tastiera tra le parole. Si saprà che la funzionalità funziona se viene visualizzata una traccia di scorrimento rapido che segue il movimento del dito sulla tastiera.
 
-Si noti che questa funzionalità può essere difficile da usare e master a causa della natura di una tastiera olografica in cui non si è in grado di tenere il dito a differenza del display di un telefono cellulare. Questa funzionalità verrà valutata per la versione pubblica, quindi i commenti e i suggerimenti degli utenti sono importanti. Se la funzionalità risulta utile o se si hanno [](hololens-feedback.md)commenti e suggerimenti positivi, inviare un messaggio all'Hub di Feedback .
+Si noti che questa funzionalità può essere difficile da usare e master a causa della natura di una tastiera olografica in cui non si prova resistenza contro il dito (a differenza di un display del telefono cellulare). Questa funzionalità viene valutata per la versione pubblica, quindi i commenti e suggerimenti sono importanti. indipendentemente dal fatto che la funzionalità sia utile o che si abbia un feedback costruttivo, è possibile contattarci [tramite Hub di Feedback](hololens-feedback.md).
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Congratulazioni! È ora possibile usare HoloLens 2.
+Congratulazioni! È possibile usare HoloLens 2!
 
-A questo punto è possibile configurare HoloLens 2 per soddisfare esigenze specifiche.  Altre operazioni che è possibile provare includono:
+È ora possibile configurare il HoloLens 2 in base alle esigenze specifiche.  Altri elementi che è possibile provare includono:
 
 - [Connessione di dispositivi Bluetooth come mouse e tastiera](hololens-connect-devices.md)
 - [Installazione di app dallo Store](holographic-store-apps.md)
-- [Condivisione dei HoloLens con altri utenti](hololens-multiple-users.md)
+- [Condivisione del HoloLens con altre persone](hololens-multiple-users.md)
 
 > [!TIP]
-> Provare [l'app Ologrammi](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd?rtc=1&activetab=pivot:overviewtab) progettazione.
+> Provare [l'app Progettazione Ologrammi](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd?rtc=1&activetab=pivot:overviewtab) app.
 
-Gli amministratori IT possono consultare Scenari di distribuzione [comuni](hololens-requirements.md) per informazioni sulla distribuzione HoloLens 2 all'organizzazione.
+Gli amministratori IT possono consultare [](hololens-requirements.md) scenari di distribuzione comuni per informazioni sulla distribuzione di HoloLens 2 all'organizzazione.

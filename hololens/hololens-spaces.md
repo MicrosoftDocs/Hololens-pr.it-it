@@ -17,11 +17,11 @@ appliesto:
 - HoloLens 1 (1st gen)
 - HoloLens 2
 ms.openlocfilehash: b8bda049f0ef4610dcf0ca6fe81d89dd5a316e3e
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428180"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036167"
 ---
 # <a name="map-physical-spaces-with-hololens"></a>Eseguire il mapping di spazi fisici con HoloLens
 
@@ -62,7 +62,7 @@ I movimenti uniformi consentono anche di HoloLens mappa in modo più efficiente.
 
 ### <a name="look-in-all-directions"></a>Cerca in tutte le direzioni
 
-Se ci si guarda attorno mentre si esegue il mapping dello spazio, HoloLens più dati sul punto in cui i punti sono l'uno rispetto all'altro.  
+Se si guarda intorno mentre si esegue il mapping dello spazio, HoloLens più dati sulla posizione in cui i punti sono relativi tra loro.  
 
 Se non si cerca, ad esempio, il HoloLens potrebbe non sapere dove si trova il controsoffitto in una stanza.  
 
@@ -70,13 +70,13 @@ Non dimenticare di guardare il piano mentre si esegue il mapping dello spazio.
 
 ### <a name="cover-key-areas-multiple-times"></a>Coprire più volte le aree chiave
 
-Spostarsi più volte in un'area consente di selezionare le funzionalità che potrebbero non essere state perse nella prima procedura dettagliata. Per creare una mappa ideale, provare a attraversare un'area da due a tre volte.
+Spostarsi più volte in un'area consente di selezionare le funzionalità che potrebbero non essere state perse nella prima procedura dettagliata. Per creare una mappa ideale, provare ad attraversare un'area da due a tre volte.
 
 Se possibile, durante la ripetizione di questi movimenti, dedicare tempo a spostarsi in un'area in una direzione, quindi spostarsi e tornare indietro nel modo in cui si è arrivati.
 
 ### <a name="take-your-time-mapping-the-area"></a>Eseguire il mapping dell'area nel tempo
 
-Possono essere 15-20 minuti per HoloLens mappa completa e adattarsi all'ambiente circostante. Se si dispone di uno spazio in cui si prevede di usare spesso un HoloLens, l'esecuzione del mapping dello spazio in anticipo può impedire problemi in un secondo momento.  
+La mappa completa del HoloLens può richiedere da 15 a 20 minuti e adattarsi all'ambiente circostante. Se si dispone di uno spazio in cui si prevede di usare spesso un HoloLens, il tempo necessario per eseguire il mapping dello spazio può impedire problemi in un secondo momento.  
 
 ## <a name="possible-errors-in-the-spatial-map"></a>Possibili errori nella mappa spaziale
 
@@ -84,7 +84,7 @@ Gli errori nei dati di mapping spaziale rientrano in alcune categorie:
 
 - *Fori:* le superfici reali non sono presenti nei dati di mapping spaziale.
 - *Allucinazioni:* le superfici esistono nei dati di mapping spaziale che non esistono nel mondo reale.
-- *Worm tunnel:* HoloLens 'perde' parte della mappa spaziale, pensando che si trova in una parte diversa della mappa rispetto a quella in realtà.
+- *Worm tunnel:* HoloLens 'perde' parte della mappa spaziale, pensando che si trova in una parte diversa della mappa rispetto a quella effettivamente presente.
 - *Distorsione:* le superfici nei dati di mapping spaziale sono perfettamente allineate alle superfici del mondo reale, sia all'esterno che all'esterno.
 
 Se viene visualizzato uno di questi errori, usare [FeedbackHub](hololens-feedback.md) per inviare commenti e suggerimenti.
@@ -97,7 +97,7 @@ HoloLens gli utenti non possono accedere direttamente al database delle mappe, a
 
 ### <a name="remove-map-data-and-known-spaces-from-hololens"></a>Rimuovere i dati della mappa e gli spazi noti HoloLens
 
-Sono disponibili due opzioni per l'eliminazione dei dati della **mappa in Impostazioni > system > Ologrammi**:
+Sono disponibili due opzioni per l'eliminazione dei dati della **mappa in Impostazioni > sistema > Ologrammi**:
 
 - Per eliminare gli ologrammi vicini, selezionare **Rimuovi ologrammi vicini.** Questo comando cancella i dati della mappa e gli ologrammi ancorati per lo spazio corrente. Se si continua a usare il dispositivo nello stesso spazio, viene creata e archiviata una sezione mappa completamente nuova per sostituire le informazioni eliminate.
 
@@ -113,9 +113,9 @@ Sono disponibili due opzioni per l'eliminazione dei dati della **mappa in Impost
 
 ### <a name="wi-fi-data-in-spatial-maps"></a>Wi-Fi dati nelle mappe spaziali
 
-HoloLens archivia Wi-Fi caratteristiche che consentono di correlare le posizioni degli ologrammi e le sezioni della mappa archiviate nel database HoloLens di spazi noti. Le informazioni Wi-Fi caratteristiche non sono accessibili agli utenti e non vengono inviate a Microsoft usando il cloud o i dati di telemetria.
+HoloLens archivia Wi-Fi caratteristiche che consentono di correlare le posizioni degli ologrammi e le sezioni della mappa archiviate all'interno del database HoloLens di spazi noti. Le informazioni sulle Wi-Fi non sono accessibili agli utenti e non vengono inviate a Microsoft usando il cloud o i dati di telemetria.
 
-Se l'Wi-Fi è abilitata, HoloLens correla i dati della mappa con i punti di accesso Wi-Fi vicini. Non esiste alcuna differenza nel comportamento indipendentemente dal fatto che una rete sia connessa o appena rilevata nelle vicinanze. Se Wi-Fi è disabilitato, HoloLens continua a cercare nello spazio. Tuttavia, HoloLens deve cercare più dati della mappa all'interno del database degli spazi e potrebbe essere necessario più tempo per trovare gli ologrammi. Senza le informazioni Wi-Fi, il HoloLens deve confrontare le analisi attive con tutti gli ancoraggi ologrammi e le sezioni della mappa archiviate nel dispositivo per individuare la parte corretta della mappa.
+Se l'Wi-Fi è abilitata, HoloLens correla i dati della mappa con i punti di accesso Wi-Fi vicini. Non esiste alcuna differenza nel comportamento indipendentemente dal fatto che una rete sia connessa o appena rilevata nelle vicinanze. Se Wi-Fi è disabilitata, HoloLens continua a cercare nello spazio. Tuttavia, HoloLens deve cercare più dati della mappa all'interno del database degli spazi e potrebbe essere necessario più tempo per trovare gli ologrammi. Senza le informazioni Wi-Fi, il HoloLens deve confrontare le analisi attive con tutti gli ancoraggi ologrammi e le sezioni della mappa archiviate nel dispositivo per individuare la parte corretta della mappa.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

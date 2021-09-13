@@ -1,6 +1,6 @@
 ---
 title: Problemi noti per HoloLens (prima generazione)
-description: Rimanere aggiornati con l'elenco dei problemi noti e delle soluzioni alternative che possono interessare HoloLens clienti e sviluppatori che usano Unity e il Windows Portale di dispositivi.
+description: Rimanere aggiornati con l'elenco dei problemi noti e delle soluzioni alternative che possono interessare HoloLens clienti e sviluppatori che usano Unity e Windows Portale di dispositivi.
 keywords: risoluzione dei problemi, problema noto, Guida
 author: mattzmsft
 ms.author: mazeller
@@ -15,11 +15,11 @@ ms.prod: hololens
 appliesto:
 - HoloLens (1st Gen)
 ms.openlocfilehash: 5c942bae91c7684f2c2d36aca6ace6306b5fed54
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124429004"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032496"
 ---
 # <a name="known-issues-for-hololens-1st-gen"></a>Problemi noti per HoloLens (prima generazione)
 
@@ -30,7 +30,7 @@ Di seguito è riportato l'elenco corrente dei problemi noti HoloLens dispositivi
 > - Se il problema che si verifica sta bloccando l'utente, oltre a inviare commenti e suggerimenti, [inviare una richiesta di supporto.](https://aka.ms/hlsupport)
 
 
-- [Problemi noti per tutte le HoloLens generazione](#known-issues-for-all-hololens-generations)
+- [Problemi noti per tutte le HoloLens generazioni](#known-issues-for-all-hololens-generations)
 - [Problemi noti per HoloLens (prima generazione)](#known-issues-for-hololens-1st-gen)
 
 ## <a name="known-issues-for-all-hololens-generations"></a>Problemi noti per tutte le HoloLens generazioni
@@ -46,7 +46,7 @@ Di seguito è riportato l'elenco corrente dei problemi noti HoloLens dispositivi
 
 - Nella pagina Input virtuale i controlli Movimento e Scorrimento nella sezione Movimenti virtuali non sono funzionali. L'uso di questi strumenti non avrà alcun effetto. La tastiera virtuale nella pagina di input virtuale funziona correttamente.
 
-- Dopo aver abilitato la modalità sviluppatore Impostazioni, l'abilitazione del Portale di dispositivi potrebbe richiedere alcuni secondi.
+- Dopo l'abilitazione della modalità sviluppatore Impostazioni, l'abilitazione del Portale di dispositivi potrebbe richiedere alcuni secondi.
 
 ### <a name="onedrive-camera-upload"></a>OneDrive caricamento della fotocamera
 
@@ -54,7 +54,7 @@ L'app OneDrive per HoloLens non supporta il caricamento automatico della fotocam
 
 Soluzioni alternative:
 
-- Se possibile per l'azienda, il caricamento automatico della fotocamera è supportato per gli account Microsoft consumer. È possibile accedere al proprio account Microsoft oltre all'account aziendale o dell'istituto di istruzione (l'app OneDrive supporta il doppio accesso. Dal profilo account Microsoft all'interno OneDrive è possibile abilitare il caricamento automatico del rullino della fotocamera in background.
+- Se possibile per l'azienda, il caricamento automatico della fotocamera è supportato per gli account Microsoft consumer. È possibile accedere al proprio account Microsoft oltre all'account aziendale o dell'istituto di istruzione (l'app OneDrive supporta il doppio accesso. Dal profilo account Microsoft all'interno OneDrive è possibile abilitare il caricamento automatico del rullo della fotocamera in background.
 
 - Se non è possibile usare in modo sicuro un account Microsoft consumer per caricare automaticamente le foto, è possibile caricare manualmente le foto nell'account aziendale o dell'istituto di istruzione dall'app OneDrive. A tale scopo, assicurarsi di aver eseguito l'accesso all'account aziendale o dell'istituto di istruzione nell'app OneDrive lavoro. Selezionare il **+** pulsante e scegliere **Upload**. Trovare le foto o i video da caricare passando a **Pictures (Immagini) > Camera Roll (Rullino).** Selezionare le foto o i video da caricare e quindi selezionare il **pulsante** Apri.
 
@@ -63,11 +63,11 @@ Soluzioni alternative:
 ### <a name="unable-to-connect-and-deploy-to-hololens-through-visual-studio"></a>Non è possibile connettersi e distribuirlo HoloLens tramite Visual Studio
 
 > [!NOTE]
-> Ultimo aggiornamento: 8/8 @ 17:11 - Visual Studio ha rilasciato VISUAL Studio 2019 versione 16.2 che include una correzione per questo problema. È consigliabile eseguire l'aggiornamento a questa versione più recente per evitare che si verifichi questo errore.
+> Ultimo aggiornamento: 8/8 @ 17:11 - Visual Studio ha rilasciato Visual Studio 2019 versione 16.2 che include una correzione a questo problema. È consigliabile eseguire l'aggiornamento a questa versione più recente per evitare che si verifichi questo errore.
 
-Visual Studio ha rilasciato VS 2019 versione 16.2, che include una correzione per questo problema. È consigliabile eseguire l'aggiornamento a questa versione più recente per evitare che si verifichi questo errore.
+Visual Studio ha rilasciato Visual Studio 2019 versione 16.2, che include una correzione per questo problema. È consigliabile eseguire l'aggiornamento a questa versione più recente per evitare che si verifichi questo errore.
 
-Causa radice del problema: gli utenti che hanno usato Visual Studio 2015 o versioni precedenti di Visual Studio 2017 per distribuire ed eseguire il debug di applicazioni nel proprio HoloLens e successivamente hanno usato le versioni più recenti di Visual Studio 2017 o Visual Studio 2019 con lo stesso HoloLens saranno interessati. Le versioni più recenti Visual Studio distribuire una nuova versione di un componente, ma i file della versione precedente vengono lasciati nel dispositivo, causando l'errore della versione più recente.  Viene visualizzato il messaggio di errore seguente: DEP0100: Assicurarsi che nel dispositivo di destinazione sia abilitata la modalità sviluppatore. Impossibile ottenere una licenza per sviluppatori in \<ip\> a causa di un errore 80004005.
+Causa radice del problema: gli utenti che hanno usato Visual Studio 2015 o le versioni precedenti di Visual Studio 2017 per distribuire ed eseguire il debug di applicazioni nel proprio HoloLens e successivamente hanno usato le versioni più recenti di Visual Studio 2017 o Visual Studio 2019 con lo stesso HoloLens saranno interessati. Le versioni più recenti Visual Studio distribuire una nuova versione di un componente, ma i file della versione precedente vengono lasciati nel dispositivo, causando l'errore della versione più recente.  Viene visualizzato il messaggio di errore seguente: DEP0100: Assicurarsi che nel dispositivo di destinazione sia abilitata la modalità sviluppatore. Impossibile ottenere una licenza per sviluppatori su \<ip\> a causa di un errore 80004005.
 
 #### <a name="workaround"></a>Soluzione alternativa
 
@@ -79,9 +79,9 @@ Il team sta attualmente lavorando a una correzione. Nel frattempo, è possibile 
 
 1. Selezionare **Visual C#**  >  **Windows Desktop** Console App  >  **(.NET Framework)**.
 
-1. Assegnare un nome al progetto ,ad esempio "HoloLensDeploymentFix" e assicurarsi che Framework sia impostato su almeno .NET Framework 4.5 e quindi selezionare **OK.**
+1. Assegnare un nome al progetto ,ad esempio "HoloLensDeploymentFix", assicurarsi che Framework sia impostato almeno su .NET Framework 4.5 e quindi selezionare **OK.**
 
-1. Fare clic con il pulsante **destro del** mouse sul nodo Riferimenti Esplora soluzioni e aggiungere i riferimenti seguenti (selezionare la **sezione Sfoglia** e selezionare **Sfoglia):**
+1. Fare clic con il pulsante **destro del** mouse sul nodo Riferimenti Esplora soluzioni e aggiungere i riferimenti seguenti (selezionare la **sezione** Sfoglia e selezionare **Sfoglia):**
 
     ```console
     C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86\Microsoft.Tools.Deploy.dll
@@ -94,13 +94,13 @@ Il team sta attualmente lavorando a una correzione. Nel frattempo, è possibile 
 
 1. Fare clic con il pulsante destro del mouse sul progetto Esplora soluzioni selezionare **Aggiungi**  >  **elemento esistente.**
 
-1. Passare a C:\Programmi (x86)\Windows Kits\10\bin\10.0.18362.0\x86 e modificare il filtro in Tutti i file **( \* . \* ).**
+1. Passare a C:\Programmi (x86)\Windows Kits\10\bin\10.0.18362.0\x86 e modificare il filtro in Tutti i file **( \* . \* )**.
 
 1. Selezionare sia SirepClient.dll che SshClient.dll e selezionare **Aggiungi.**
 
 1. Individuare e selezionare entrambi i file in Esplora soluzioni (dovrebbero essere nella parte inferiore dell'elenco  dei file) e modificare Copia nella directory di **output** nella finestra Proprietà in **Copia sempre**.
 
-1. All'inizio del file aggiungere quanto segue all'elenco di `using` istruzioni esistente:
+1. All'inizio del file aggiungere quanto segue all'elenco esistente `using` di istruzioni :
 
     ```console
     using Microsoft.Tools.Deploy;
@@ -123,7 +123,7 @@ Il team sta attualmente lavorando a una correzione. Nel frattempo, è possibile 
 
 1. Aprire una finestra del prompt dei comandi e accedere alla cartella che contiene il file .exe compilato, ad esempio C:\MyProjects\HoloLensDeploymentFix\bin\Debug.
 
-1. Eseguire il file eseguibile e specificare l'indirizzo IP del dispositivo come argomento della riga di comando. Se si è connessi tramite USB, è possibile usare 127.0.0.1, altrimenti usare l'indirizzo IP Wi-Fi dispositivo.  Ad esempio, "HoloLensDeploymentFix 127.0.0.1".
+1. Eseguire il file eseguibile e specificare l'indirizzo IP del dispositivo come argomento della riga di comando. Se si è connessi tramite USB, è possibile usare 127.0.0.1. In caso contrario, usare l'indirizzo IP Wi-Fi dispositivo.  Ad esempio, "HoloLensDeploymentFix 127.0.0.1".
 
 1. Dopo che lo strumento è stato chiuso senza messaggi (l'operazione dovrebbe richiedere solo pochi secondi), sarà possibile eseguire la distribuzione e il debug da Visual Studio 2017 o versione più recente.  Non è necessario continuare a usare lo strumento.
 
@@ -134,7 +134,7 @@ Verranno forniti altri aggiornamenti non appena saranno disponibili.
 > [!NOTE]
 > Ultimo aggiornamento: 4/2 alle 10:00 - Problema risolto.
 
-È possibile che si verifichino problemi durante il tentativo di avviare il Microsoft Store e le app HoloLens. È stato determinato che il problema si verifica quando gli aggiornamenti delle app in background distribuiscono una versione più recente dei pacchetti del framework in sequenze specifiche mentre una o più app dipendenti sono ancora in esecuzione. In questo caso, un aggiornamento automatico delle app ha recapitato una nuova versione di .NET Native Framework (dalla versione 10.0.25531 alla 10.0.27413) ha causato l'aggiornamento non corretto delle app in esecuzione per tutte le app in esecuzione che utilizzano la versione precedente del framework.  Il flusso per l'aggiornamento del framework è il seguente:
+È possibile che si verifichino problemi quando si tenta di avviare il Microsoft Store e le app HoloLens. È stato determinato che il problema si verifica quando gli aggiornamenti delle app in background distribuiscono una versione più recente dei pacchetti del framework in sequenze specifiche mentre una o più app dipendenti sono ancora in esecuzione. In questo caso, un aggiornamento automatico delle app ha recapitato una nuova versione di .NET Native Framework (dalla versione 10.0.25531 alla 10.0.27413) ha causato l'aggiornamento non corretto delle app in esecuzione per tutte le app in esecuzione che utilizzano la versione precedente del framework.  Il flusso per l'aggiornamento del framework è il seguente:
 
 1. Il nuovo pacchetto framework viene scaricato dallo Store e installato.
 
@@ -156,9 +156,9 @@ Per verificare se il dispositivo può eseguire l'aggiornamento:
 
 1. Dopo l'aggiornamento a questa versione del sistema operativo, le app dovrebbero funzionare come previsto.
 
-Inoltre, come per ogni versione HoloLens sistema operativo, l'immagine FFU è stata pubblicata [nell'Area download Microsoft.](https://aka.ms/hololensdownload/10.0.17763.380)
+Inoltre, come per ogni versione del HoloLens, l'immagine FFU è stata pubblicata [nell'Area download Microsoft.](https://aka.ms/hololensdownload/10.0.17763.380)
 
-Se non vuoi eseguire l'aggiornamento, abbiamo rilasciato una nuova versione dell'app UWP Microsoft Store data 29/3. Dopo aver aggiornato la versione dello Store:
+Se non si vuole eseguire l'aggiornamento, è stata rilasciata una nuova versione dell'app UWP Microsoft Store data 29/3. Dopo aver aggiornato la versione dello Store:
 
 1. Aprire lo Store e verificare che sia caricato.
 1. Usare il movimento di fiore per aprire il menu.

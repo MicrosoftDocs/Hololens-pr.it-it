@@ -17,11 +17,11 @@ manager: jarrettr
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: e9aad32891bb093cbce18671b76549788b19afcb
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427830"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036170"
 ---
 # <a name="restart-reset-or-recover-hololens-2"></a>Riavviare, reimpostare o ripristinare HoloLens 2
 
@@ -79,7 +79,7 @@ Se la procedura di reimpostazione standard non ha funzionato, usare la procedura
 
 ## <a name="clean-reflash-the-device"></a>Pulire il dispositivo
 
-In situazioni straordinarie, potrebbe essere necessario "pulire flash" il HoloLens 2. Si noti che clean-reflash non dovrebbe influire sui problemi seguenti:
+In situazioni straordinarie potrebbe essere necessario "pulire" il HoloLens 2. Si noti che clean-reflash non dovrebbe influire sui problemi seguenti:
 
 - [Uniformità dei colori di visualizzazione](hololens2-display.md)
 - Avvio con audio ma nessun output di visualizzazione
@@ -92,9 +92,9 @@ Esistono due modi per eseguire il reflash del dispositivo. Per entrambi, è prim
 >[!WARNING]
 >Se si rifiuta il dispositivo, tutti i dati personali, le app e le impostazioni verranno cancellati, incluse le informazioni di reimpostazione TPM.
 
-Per impostazione predefinita, Advanced Recovery Companion è impostato per scaricare la build di rilascio delle funzionalità più recente. Per altre informazioni sulla versione più recente delle funzionalità, vedere le [HoloLens 2 sulla versione.](hololens-release-notes.md) Per ottenere il pacchetto HoloLens 2 full flash update (FFU) più recente per il reflash del dispositivo tramite Advanced Recovery Companion, scaricare l'immagine HoloLens 2 mensile più recente: [https://aka.ms/hololens2download](https://aka.ms/hololens2download) . Questa versione è la build disponibile a livello generale più recente.
+Per impostazione predefinita, Advanced Recovery Companion è impostato per scaricare la build di rilascio delle funzionalità più recente. Per altre informazioni sulla versione più recente delle funzionalità, vedere le [HoloLens 2 sulla versione.](hololens-release-notes.md) Per ottenere la versione HoloLens 2 pacchetto FFU (Full Flash Update) più recente per il reflash del dispositivo tramite Advanced Recovery Companion, scaricare l'immagine HoloLens 2 mensile più recente: [https://aka.ms/hololens2download](https://aka.ms/hololens2download) . Questa versione è la build disponibile a livello generale più recente.
 
-Prima di avviare la procedura di reflash, assicurarsi che l'app sia installata e in esecuzione nel PC Windows 10 e pronta per rilevare il dispositivo. Assicurarsi anche che al HoloLens sia addebitato un minimo del 40%.
+Prima di avviare la procedura di reflash, assicurarsi che l'app sia installata e in esecuzione nel PC Windows 10 e pronta per rilevare il dispositivo. Assicurarsi anche che il HoloLens sia addebitato almeno il 40%.
 
 ![HoloLens 2 schermata del reflash pulito.](images/ARC1.png)
 
@@ -122,7 +122,7 @@ Potrebbe essere necessario impostare il dispositivo in modalità di ripristino s
 
 3. Mentre si preme il **pulsante di** accensione del volume, premere e **rilasciare** il pulsante di accensione per avviare il dispositivo. Attendere 15 secondi e quindi rilasciare il **pulsante volume up.** Solo il LED centrale dei cinque LED si accende.
 
-4. Connessione il dispositivo nel PC host e aprire Gestione dispositivi. Ad esempio Windows 10 premere il **Windows** e quindi **il tasto X** e quindi selezionare Gestione **dispositivi.** Assicurarsi che il dispositivo enumi correttamente come Microsoft HoloLens come illustrato nell'immagine seguente:
+4. Connessione il dispositivo nel PC host e aprire Gestione dispositivi. Ad esempio Windows 10 premere **il Windows** e quindi **il tasto X** e quindi selezionare Gestione **dispositivi.** Assicurarsi che il dispositivo enumi correttamente come Microsoft HoloLens come illustrato nell'immagine seguente:
 
    ![HoloLens 2 MicrosoftHoloLensRecovery.](images/MicrosoftHoloLensRecovery.png)
 
@@ -130,11 +130,11 @@ Potrebbe essere necessario impostare il dispositivo in modalità di ripristino s
 
    ![HoloLens 2 schermata di reflash pulita.](images/ARC2.png)
 
-6. Selezionare il dispositivo HoloLens 2 nell'interfaccia utente dell'app Advanced Recovery Companion e quindi seguire le istruzioni per completare il reflash.
+6. Selezionare il HoloLens 2 dispositivo nell'interfaccia utente dell'app Advanced Recovery Companion e quindi seguire le istruzioni per completare il reflash.
 
 ## <a name="troubleshoot-advanced-recovery-companion"></a>Risolvere i problemi di Advanced Recovery Companion
 
-1. Assicurarsi che il dispositivo venga addebitato al 40% o più prima di provare a eseguire il flash.
+1. Assicurarsi che al dispositivo venga addebitato un addebito del 40% o superiore prima di provare a eseguire il flashing.
 
 1. Controllare che il dispositivo sia sbloccato.
 
@@ -153,36 +153,36 @@ Potrebbe essere necessario impostare il dispositivo in modalità di ripristino s
 
 ## <a name="download-arc-without-using-the-app-store"></a>Scaricare ARC senza usare l'App Store
 
-Se l'ambiente IT impedisce l'uso dell'app Windows Store o limita l'accesso al punto vendita al dettaglio, l'amministratore IT può rendere disponibile l'app tramite un percorso di distribuzione "offline".
+Se l'ambiente IT impedisce l'uso dell'app Windows Store o limita l'accesso al negozio al dettaglio, l'amministratore IT può rendere disponibile l'app tramite un percorso di distribuzione "offline".
 
  >[!NOTE]
  > - Gli amministratori IT possono anche distribuire questa app tramite System Center Configuration Manager (SCCM) o Intune.
  > - Questa guida è incentrata su Advanced Recovery Companion, ma il processo può essere usato anche per altre app "offline".
 
-Per abilitare il percorso di distribuzione, seguire questa procedura:
+Seguire questa procedura per abilitare il percorso di distribuzione:
 
-1. Passare [all'Microsoft Store per le aziende](https://businessstore.microsoft.com) e accedere usando un'Azure Active Directory identità.
+1. Passare al [Microsoft Store per le aziende](https://businessstore.microsoft.com) e accedere usando un'Azure Active Directory identità.
 
-1. Passare a **Gestisci - Impostazioni**. Attivare Mostra **app offline in** Esperienza di **acquisto.**
+1. Passare a **Gestisci - Impostazioni**. Attivare Mostra **app offline in** Esperienza di **acquisto**.
 
-1. Passare a **Cercare il gruppo e** cercare Advanced Recovery [**_Companion._**](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8)
+1. Passare al **negozio per il gruppo e** cercare Advanced Recovery [**_Companion_**](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8).
 
-1. Impostare **License Type (Tipo di** ***licenza) su* _offline_ _ e selezionare _ Manage (Gestisci).**
+1. Impostare **Tipo di licenza** su **_offline_*_, quindi selezionare _* Gestisci**.
 
-1. In **Scarica il pacchetto per l'uso offline** selezionare il secondo pulsante blu **Scarica.** Assicurarsi che l'estensione del file *sia appxbundle.*
+1. In **Scarica il pacchetto per l'uso offline** selezionare il secondo pulsante blu **Scarica.** Assicurarsi che l'estensione del file *sia appxbundle*.
 
     - In questa fase, se il PC desktop ha accesso a Internet, fare doppio clic sul pacchetto per installare l'app.
 
     - Se il PC di destinazione non ha connettività Internet, seguire questa procedura:
-       1. Selezionare la licenza non codificata e quindi selezionare **Genera licenza.**
-       2. In **Framework necessari selezionare** **Scarica.**
-       3. Usare Gestione e manutenzione immagini distribuzione per applicare il pacchetto con la dipendenza e la licenza. Da un prompt dei comandi dell'amministratore eseguire il comando seguente:
+       1. Selezionare la licenza non codificata e quindi selezionare **Genera licenza**.
+       2. In **Framework necessari** selezionare **Scarica**.
+       3. Usare Gestione e manutenzione immagini distribuzione per applicare il pacchetto con la dipendenza e la licenza. Da un prompt dei comandi amministratore eseguire il comando seguente:
 
           ```console
           C:\WINDOWS\system32>dism /online /Add-ProvisionedAppxPackage /PackagePath:"C:\ARCoffline\Microsoft.AdvancedRecoveryCompanion_1.19050.1301.0_neutral_~_8wekyb3d8bbwe.appxbundle" /DependencyPackagePath:"C:\ARCoffline\Microsoft.VCLibs.140.00.UWPDesktop_14.0.27629.0_x86__8wekyb3d8bbwe.appx" /LicensePath:"C:\ARCoffline\Microsoft.AdvancedRecoveryCompanion_8wekyb3d8bbwe_f72ce112-dd2e-d771-8827-9cbcbf89f8b5.xml" /Region:all
           ```
           > [!NOTE]
-          > Il numero di versione in questo esempio di codice potrebbe non corrispondere alla versione attualmente disponibile. È anche possibile che sia stato scelto un percorso di download diverso rispetto all'esempio. Apportare eventuali modifiche al comando in base alle esigenze.
+          > Il numero di versione in questo esempio di codice potrebbe non corrispondere alla versione attualmente disponibile. È anche possibile che sia stato scelto un percorso di download diverso da quello dell'esempio. Apportare eventuali modifiche al comando in base alle esigenze.
 
 > [!TIP]
 > Quando si prevede di usare Advanced Recovery Companion per installare un FFU offline, può essere utile scaricare l'immagine flash. [**Scaricare l'immagine corrente per HoloLens 2**](https://aka.ms/hololens2download).
@@ -190,4 +190,4 @@ Per abilitare il percorso di distribuzione, seguire questa procedura:
 Altre risorse:
 
 - [Distribuire app offline](/microsoft-store/distribute-offline-apps) 
-- [Opzioni della riga di comando per la manutenzione del pacchetto dell'app Gestione e manutenzione immagini distribuzione (con estensione appx o appxbundle)](/windows-hardware/manufacture/desktop/dism-app-package--appx-or-appxbundle--servicing-command-line-options)
+- [Opzioni della riga di comando per la manutenzione del pacchetto dell'app di Gestione e manutenzione immagini distribuzione (con estensione appx o appxbundle)](/windows-hardware/manufacture/desktop/dism-app-package--appx-or-appxbundle--servicing-command-line-options)

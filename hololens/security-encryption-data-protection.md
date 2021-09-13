@@ -14,11 +14,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: e156fc21bfd1541dd8718a7349e7ba82b45576be
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428311"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036242"
 ---
 # <a name="encryption-and-data-protection"></a>Crittografia e protezione dei dati
 
@@ -36,4 +36,4 @@ Le chiavi di crittografia BDE vengono quindi usate per decrittografare in modo t
 
 HoloLens 2 consente ai clienti di integrare i propri dispositivi con i servizi di Azure. Le comunicazioni tra HoloLens 2 e Azure usano il protocollo TLS (Transport Layer Security) per proteggere i dati in viaggio tra se stesso e i servizi cloud che offrono autenticazione avanzata, privacy dei messaggi e integrità. Tutti i servizi di Azure supportano completamente TLS 1.2 e tutti i servizi in cui i clienti usano solo TLS 1.2 accettano solo traffico TLS 1.2. Gli standard di crittografia di Azure per i dati in transito sono dettagliati in Panoramica [della crittografia di Azure.](/azure/security/fundamentals/encryption-overview) Per altre informazioni sulle procedure consigliate per la sicurezza e la crittografia dei dati di Azure, vedere [la documentazione di Azure.](/azure/security/fundamentals/data-encryption-best-practices) 
 
-OneDrive, un esempio di integrazione cloud con HoloLens 2, include una funzionalità di caricamento automatico in cui i file e i documenti possono essere caricati automaticamente nel cloud quando sono connessi a Internet. La sospensione della sincronizzazione automatica dei file non può essere disattivata tramite criteri, ma è configurabile direttamente tramite l'esperienza utente. 
+OneDrive, un esempio di integrazione cloud con HoloLens 2, include una funzionalità di caricamento automatico in cui i file e i documenti possono essere caricati automaticamente nel cloud quando si è connessi a Internet. La sospensione della sincronizzazione automatica dei file non può essere disattivata tramite criteri, ma è configurabile direttamente tramite l'esperienza utente. 

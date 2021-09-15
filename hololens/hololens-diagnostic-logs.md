@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 082a263bdd7eba694c13124abf40763644c83dfa
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 2cbf3005293f4fde91b22f3ff87edc6041e53336
+ms.sourcegitcommit: 16897df83c309acecf04e2bcfea310891cb6681b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126032431"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "127817277"
 ---
 # <a name="collect-and-use-diagnostic-information-from-hololens-devices"></a>Raccogliere e usare le informazioni di diagnostica HoloLens dispositivi
 
@@ -46,7 +46,7 @@ Nella tabella seguente vengono confrontati i diversi metodi di raccolta. I nomi 
 |[CSP DiagnosticLog](#diagnosticlog-csp) |Connessione di rete<br /><br />Ambiente MDM che supporta il provider di servizi di configurazione DiagnosticLog |L'amministratore configura le posizioni di archiviazione |Nell'ambiente gestito l'utente acconsente implicitamente all'accesso come amministratore ai dati.<br /><br />L'amministratore configura le autorizzazioni e i ruoli di accesso. | I dati vengono conservati nell'archiviazione cloud e l'amministratore configura i criteri di conservazione. |
 |[Diagnostica offline](#offline-diagnostics) |Configurazione del dispositivo:<ul><li>Acceso e connesso al computer</li><li>Pulsanti di alimentazione e volume funzionanti</li></ul> |Dispositivo HoloLens<br /><br />Computer connesso |L'utente archivia i dati e solo l'utente accede ai dati ( a meno che l'utente non condiva i dati in modo specifico con un altro utente). |I dati vengono mantenuti nel dispositivo fino a quando l'utente non lo elimina. |
 
-* L'utente finale è responsabile della condivisione responsabile dei log con un altro utente. Questi file sono particolarmente utili quando si contatta il servizio clienti e il supporto tecnico.  
+* L'utente finale è responsabile della condivisione responsabile dei log con altri utenti. Questi file sono particolarmente utili quando si contatta il servizio clienti e il supporto tecnico.  
 
 ## <a name="feedback-hub"></a>Hub di Feedback
 
@@ -57,6 +57,7 @@ Un HoloLens utente può usare l'app desktop Microsoft Hub di Feedback per inviar
 
 >[!IMPORTANT]
 > Per fornire i migliori dati possibili per la risoluzione dei problemi, è consigliabile impostare i dati di telemetria del dispositivo su **Facoltativo.** È possibile impostare questo valore durante la configurazione predefinita o usando **l'app** Impostazioni predefinita. Per eseguire questa operazione usando Impostazioni, selezionare Avvia > Impostazioni > **privacy > Diagnostica app > Su**.
+
 ### <a name="prerequisites"></a>Prerequisiti
 
 - Il dispositivo è connesso a una rete.
@@ -91,6 +92,7 @@ Un utente può anche configurare il comportamento  di Diagnostica di fallback da
 ### <a name="os-update-troubleshooter"></a>Strumento di risoluzione dei problemi di aggiornamento del sistema operativo
 Nelle build Windows [Holographic, versione 21H1](hololens-release-notes.md#windows-holographic-version-21h1) e versioni successiva:
 - Oltre ai precedenti strumento di risoluzione dei problemi all'interno dell'app Impostazioni, è stato aggiunto un nuovo strumento di risoluzione dei problemi con l'aggiunta della nuova app Impostazioni per gli aggiornamenti del sistema operativo. Passare a **-Impostazioni -> Update & Security -> Troubleshoot -> Windows Update** e selezionare **Avvia.** In questo modo è possibile raccogliere tracce durante la riproduzione del problema con gli aggiornamenti del sistema operativo per facilitare la risoluzione dei problemi con l'IT o il supporto tecnico.
+
 ### <a name="prerequisites"></a>Prerequisiti
 
 - **L Impostazioni app** è installata nel dispositivo ed è disponibile per l'utente.
@@ -107,6 +109,10 @@ Le informazioni di diagnostica vengono archiviate nel dispositivo. Se il disposi
 > In questo percorso e nome di file rappresenta il nome del dispositivo HoloLens e rappresenta la data e l'ora di creazione \<*HoloLens device name*> \<*ddmmyyhhmmss*> del file.
 
 Le informazioni di diagnostica rimangono in queste posizioni fino a quando l'utente non le elimina.
+
+### <a name="view-diagnostic-report"></a>Visualizzare il report di diagnostica
+
+Per visualizzare diagnostica MDM in HoloLens 2, selezionare l'icona Wi-Fi, quindi passare Impostazioni Account Accesso aziendale o dell'istituto di istruzione e selezionare Esporta i log  ->    >   **di gestione.** HoloLens invia i file di log all'account e visualizza la relativa posizione nel PC desktop.
 
 ## <a name="diagnosticlog-csp"></a>CSP DiagnosticLog
 
@@ -125,14 +131,14 @@ Per altre informazioni, vedere:
 
 Poiché il dispositivo fa parte dell'ambiente gestito, l'utente acconsente implicitamente all'accesso amministrativo alle informazioni di diagnostica.
 
-L'amministratore IT usa il provider di servizi di configurazione DiagnosticLog per configurare i criteri di archiviazione, conservazione e accesso dei dati, inclusi i criteri che regolano quanto segue:
+L'amministratore IT usa il provider di servizi di configurazione DiagnosticLog per configurare i criteri di archiviazione, conservazione e accesso dei dati, inclusi i criteri che regolano gli elementi seguenti:
 
 - Infrastruttura cloud in cui sono archiviate le informazioni di diagnostica.
 - Periodo di conservazione per le informazioni di diagnostica.
 - Autorizzazioni che controllano l'accesso alle informazioni di diagnostica.
 
 ## <a name="offline-diagnostics"></a>Diagnostica offline
-Nelle situazioni in cui il dispositivo non è in grado di raccogliere la diagnostica tramite Hub di Feedback o lo strumento di risoluzione dei problemi Impostazioni, è possibile raccogliere la diagnostica manualmente. Uno scenario in cui ciò è necessario è quando il dispositivo non può connettersi Wi-Fi o non è possibile accedere ad altri metodi indicati in precedenza. La diagnostica raccoglie i dump e i log di arresto anomalo del sistema dal dispositivo che consentono a un tecnico del supporto Microsoft di isolare i problemi.
+In situazioni in cui il dispositivo non è in grado di raccogliere la diagnostica tramite Hub di Feedback o lo strumento Impostazioni risoluzione dei problemi, è possibile raccogliere la diagnostica manualmente. Uno scenario in cui ciò è necessario è quando il dispositivo non può connettersi Wi-Fi o non è possibile accedere ad altri metodi indicati in precedenza. La diagnostica raccoglie i dump e i log di arresto anomalo del sistema dal dispositivo che consentono a un tecnico del supporto Microsoft di isolare i problemi.
 
 Questa operazione funziona quando il dispositivo viene visualizzato Esplora file dopo la connessione a un PC tramite un cavo USB.
 
@@ -140,8 +146,8 @@ Questa operazione funziona quando il dispositivo viene visualizzato Esplora file
 > La generazione e la gestione della diagnostica offline vengono controllate in modo diverso a seconda della versione del sistema operativo. In precedenza era controllato dall'impostazione di telemetria, ma ora è controllato direttamente tramite criteri MDM. Se disabilitata tramite l'impostazione o i criteri MDM, i log di diagnostica non possono essere raccolti usando questo meccanismo.
 
 Comportamento precedente a [Windows Holographic, versione 20H2:](hololens-release-notes.md#windows-holographic-version-20h2)
- - La diagnostica offline è abilitata solo quando l'utente sta passando alla configurazione guidata o il valore dei criteri [System\AllowTelemetry](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) è impostato su Full (Basic è il valore predefinito HoloLens). 
-- Per disabilitare la diagnostica offline, passare **alla pagina Impostazioni App > Privacy** e selezionare Di **base** in Dati **di diagnostica**. Nelle compilazioni in cui la diagnostica offline dipende dall'impostazione di telemetria, influisce solo sulla raccolta o meno dei log. Non influisce sui file raccolti.
+ - La diagnostica offline è abilitata solo quando l'utente sta passando la configurazione guidata o il valore dei criteri [System\AllowTelemetry](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) è impostato su Full (Basic è il valore predefinito HoloLens). 
+- Per disabilitare la diagnostica offline, passare **alla pagina Impostazioni App > Privacy** e selezionare Di **base** in Dati **di diagnostica**. Nelle compilazioni in cui la diagnostica offline dipende dall'impostazione di telemetria, influisce solo sulla raccolta o meno di log. Non influisce sui file raccolti.
 - Se il dispositivo è bloccato, i log non verranno visualizzati.
 
 Nelle build Windows [Holographic, versione 20H2 e](hololens-release-notes.md#windows-holographic-version-20h2) versioni successiva:
@@ -153,13 +159,20 @@ Guardare questo video per saperne di più.
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Gathering-Diagnostic-Files-on-HoloLens2/player]
 
 Seguire questa procedura per raccogliere la diagnostica:
+
 1.  Connessione dispositivo con un cavo USB al PC.
-2.  Nel Esplora file nel PC passare a **"Questo PC \<hololens-device> \Internal Archiviazione"**.
+
+2.  Nel Esplora file sul PC passare a **"Questo PC \<hololens-device> \Internal Archiviazione"**.
+
 3.  Se la **cartella Internal Archiviazione** non viene visualizzato, il dispositivo è in attesa dell'accesso di un utente. Accedere o eseguire il ciclo di alimentazione del dispositivo tenendo premuto il pulsante POWER per 10 secondi.
+
 4.  Premere e rilasciare immediatamente i **pulsanti Power + Volume Down** insieme.
+
 5.  Attendere un minuto che il dispositivo prepari gli archivi ZIP. Un file temporaneo denominato HololensDiagnostics.temp può diventare visibile mentre il dispositivo genera gli archivi ZIP. Non accedere o salvare il file. Al termine del processo, verrà sostituito dagli archivi ZIP.
-6.  Aggiornare Esplora file e passare alla cartella **'\Documents'.**
+
+6.  Aggiornare Esplora file e passare alla **cartella '\Documents'.**
+
 7.  Copiare i file ZIP di diagnostica e condividerli con il team di supporto Microsoft.
 
-> [!NOTE]
-> Alcuni dei file ZIP di diagnostica possono contenere informazioni personali.
+    > [!NOTE]
+    > Alcuni dei file ZIP di diagnostica possono contenere informazioni personali.

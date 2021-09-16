@@ -2,45 +2,45 @@
 
 # Panoramica del dispositivo
 ## [Informazioni HoloLens 2](hololens2-hardware.md)
-## [Che cosa HoloLens 2 fare per te?](hololens-commercial-features.md)
+## [Che cosa HoloLens 2 fare per l'utente?](hololens-commercial-features.md)
 ## Individuare HoloLens 2 edizioni
 ### [Confrontare HoloLens 2 opzioni](hololens2-options.md)
 ### [Edizione solo dispositivo](hololens2-options-device-only.md)
 ### [Remote Assist edizione](hololens2-options-remote-assist.md)
 ### [Edizione industriale](hololens2-options-industrial-edition.md)
-#### [HoloLens 2 Domande frequenti per l'edizione industriale](hololens2-industrial-edition-faq.md)
+#### [HoloLens 2 Domande frequenti su Industrial Edition](hololens2-industrial-edition-faq.md)
 ### [Edizione di sviluppo](hololens2-options-dev-edition.md)
-#### [HoloLens 2 Domande frequenti per l'edizione di sviluppo](hololens2-development-edition-faq.yml)
+#### [HoloLens 2 Domande frequenti su Development Edition](hololens2-development-edition-faq.yml)
 ### [Trimble XR10 Edition](hololens2-options-trimble-xr10-edition.md)
 
 # Uso del HoloLens
 ## Primo utilizzo
-### [Prepararsi per HoloLens 2'uso](hololens2-setup.md)
-### [Configurare l'HoloLens 2](hololens2-start.md)
+### [Prepara il HoloLens 2'uso](hololens2-setup.md)
+### [Configurare la HoloLens 2](hololens2-start.md)
 ### [Orientarsi in HoloLens 2](hololens2-basic-usage.md)
 ### [Aggiornare HoloLens](hololens-update-hololens.md)
 ## Utilizzo giornaliero
 ### Esplorare l'Windows olografica
 #### [Usare i menu Start e Ambiente iniziale](holographic-home.md)
-#### [Usare la voce per operare HoloLens](hololens-cortana.md)
-#### [Trovare, aprire e salvare file in HoloLens](holographic-data.md)
+#### [Usare la voce per HoloLens](hololens-cortana.md)
+#### [Trovare, aprire e salvare i file HoloLens](holographic-data.md)
 #### [Creare foto e video di realtà mista](holographic-photos-and-videos.md)
-#### [Nuova app Impostazioni](hololens-new-settings.md)
+#### [Nuova Impostazioni app](hololens-new-settings.md)
 #### [Nuovo Microsoft Edge](hololens-new-edge.md)
 ### Gestire le applicazioni
 #### [Trovare, installare e disinstallare applicazioni](holographic-store-apps.md)
 #### [Gestire app personalizzate per HoloLens 2](hololens2-holographic-custom-apps.md)
-### Ologramma ottico e posizionamento nello spazio
-#### [Migliorare la qualità visiva e il comfort](hololens-calibration.md)
+### Ottica ologramma e posizionamento nello spazio
+#### [Migliorare la qualità e il comfort dell'oggetto visivo](hololens-calibration.md)
 #### [Eseguire il mapping di spazi fisici con HoloLens](hololens-spaces.md)
-#### [HoloLens sull'ambiente](hololens-environment-considerations.md)
+#### [HoloLens considerazioni sull'ambiente](hololens-environment-considerations.md)
 #### [Spostamento di piattaforme](hololens2-moving-platform.md)
 ### Connessione'HoloLens 2
 #### [Connessione HoloLens a una rete](hololens-network.md)
 #### [Connessione dispositivi Bluetooth e USB-C](hololens-connect-devices.md)
-#### [Connessione a cellulare e 5G](hololens-cellular.md)
+#### [Connessione a Cellulare e 5G](hololens-cellular.md)
 ### [HoloLens 2 batteria e ricarica](hololens2-charging.md)
-### [domande HoloLens 2 domande frequenti su fit e comfort](hololens2-fit-comfort-faq.md)
+### [domande HoloLens 2 domande frequenti su HoloLens 2 su misura e comfort](hololens2-fit-comfort-faq.md)
 ### [HoloLens 2 domande frequenti sulla pulizia](hololens2-maintenance.md)
 
 # Distribuzione di HoloLens 2
@@ -76,12 +76,10 @@
 ### [Sicurezza di rete](security-network-security.md)
 ### [Progettazione della sicurezza ](security-engineering.md)
 ### [HoloLens 2 Privacy e protezione dei dati](hololens2-privacy.md)
-## Gestione dei dispositivi
-### [Uso di MDM per gestire HoloLens dispositivi](hololens-mdm-configure.md)
 ## Registrazione del dispositivo
 ### [Registrare HoloLens in MDM](hololens-enroll-mdm.md)
 ### [Windows Autopilot per HoloLens 2](hololens2-autopilot.md) 
-### [Eseguire la registrazione in un ambiente con restrizioni Wi-Fi MAC](mac-address-options.md)
+### [Registrare nell'ambiente con restrizioni per l'Wi-Fi MAC](mac-address-options.md)
 ## Distribuzione dell'applicazione
 ### [Panoramica della gestione delle applicazioni](app-deploy-overview.md)
 ### [Intune & Portale aziendale](app-deploy-intune.md)
@@ -89,12 +87,13 @@
 ### [Pacchetto di provisioning](app-deploy-provisioning-package.md)
 ### [Programma di installazione app](app-deploy-app-installer.md)
 ## Criteri (CSP)
-### [Panoramica della configurazione dei CSP e della gestione dei dispositivi](hololens-csp-policy-overview.md)
-### [Configurare le HoloLens usando i pacchetti di provisioning](hololens-provisioning.md)
+### [Configurare i CSP e la panoramica di Gestione dispositivi](hololens-csp-policy-overview.md)
+### [Uso di MDM per gestire HoloLens dispositivi](hololens-mdm-configure.md)
+### [Configurare HoloLens pacchetti di provisioning](hololens-provisioning.md)
 ### [Restrizioni comuni dei dispositivi](hololens-common-device-restrictions.md)
-### [Configurare l'HoloLens come chiosco multimediale](hololens-kiosk.md)
+### [Configurare il HoloLens come chiosco multimediale](hololens-kiosk.md)
 ### [HoloLens Informazioni di riferimento sulla modalità tutto schermo](hololens-kiosk-reference.md)
-### [Windows Defender Controllo delle applicazioni - WDAC](windows-defender-application-control-wdac.md)
+### [Windows Defender Controllo dell'applicazione - WDAC](windows-defender-application-control-wdac.md)
 ### [Pagina Impostazioni CSP e URI per HoloLens](settings-uri-list.md)
 ## Connettività & rete
 ### [Configurare la rete per HoloLens](hololens-commercial-infrastructure.md)
@@ -126,7 +125,7 @@
 #### [Panoramica dell'utilizzo di base](hololens1-setup.md)
 #### [Configurare la HoloLens (prima generazione)](hololens1-start.md)
 ### Utilizzo giornaliero
-#### [Usare il HoloLens (prima generazione)](hololens1-clicker.md)
+#### [Usare il HoloLens clicker di prima generazione](hololens1-clicker.md)
 #### [Usare Visualizzatore 3D in HoloLens (prima generazione)](holographic-3d-viewer-beta.md)
 #### [Come spostarsi HoloLens (prima generazione)](hololens1-basic-usage.md)
 #### [Gestire app personalizzate per HoloLens](holographic-custom-apps.md)
@@ -137,7 +136,7 @@
 #### [Domande di HoloLens di prima generazione](hololens1-faq-security.yml)
 #### [HoloLens crittografia BitLocker (prima generazione)](hololens1-encryption.md)
 ### [Problemi noti e soluzioni alternative per HoloLens (prima generazione)](hololens-known-issues.md)
-### [note HoloLens sulla versione di HoloLens (prima generazione)](hololens1-release-notes.md)
+### [note sulla versione di HoloLens (prima generazione)](hololens1-release-notes.md)
 
 # Commenti e suggerimenti
 ## [Inviare commenti e suggerimenti tramite Hub di Feedback](hololens-feedback.md)

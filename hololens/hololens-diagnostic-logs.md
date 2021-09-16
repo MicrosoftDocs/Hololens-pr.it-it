@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 2cbf3005293f4fde91b22f3ff87edc6041e53336
-ms.sourcegitcommit: 16897df83c309acecf04e2bcfea310891cb6681b
+ms.openlocfilehash: e977d0d42831760749bb5c6c469d2482e2ca72e7
+ms.sourcegitcommit: 20ea1ed37772655504ccb11a7e185ed19d85f336
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "127817277"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "127833523"
 ---
 # <a name="collect-and-use-diagnostic-information-from-hololens-devices"></a>Raccogliere e usare le informazioni di diagnostica HoloLens dispositivi
 
@@ -90,6 +90,7 @@ Un utente può anche configurare il comportamento  di Diagnostica di fallback da
 > Se per il dispositivo sono configurati criteri MDM, l'utente non sarà in grado di eseguire l'override di tale comportamento.
 
 ### <a name="os-update-troubleshooter"></a>Strumento di risoluzione dei problemi di aggiornamento del sistema operativo
+
 Nelle build Windows [Holographic, versione 21H1](hololens-release-notes.md#windows-holographic-version-21h1) e versioni successiva:
 - Oltre ai precedenti strumento di risoluzione dei problemi all'interno dell'app Impostazioni, è stato aggiunto un nuovo strumento di risoluzione dei problemi con l'aggiunta della nuova app Impostazioni per gli aggiornamenti del sistema operativo. Passare a **-Impostazioni -> Update & Security -> Troubleshoot -> Windows Update** e selezionare **Avvia.** In questo modo è possibile raccogliere tracce durante la riproduzione del problema con gli aggiornamenti del sistema operativo per facilitare la risoluzione dei problemi con l'IT o il supporto tecnico.
 
@@ -112,22 +113,22 @@ Le informazioni di diagnostica rimangono in queste posizioni fino a quando l'ute
 
 ### <a name="view-diagnostic-report"></a>Visualizzare il report di diagnostica
 
-Per visualizzare diagnostica MDM in HoloLens 2, selezionare l'icona Wi-Fi, quindi passare Impostazioni Account Accesso aziendale o dell'istituto di istruzione e selezionare Esporta i log  ->    >   **di gestione.** HoloLens invia i file di log all'account e visualizza la relativa posizione nel PC desktop.
+Per visualizzare la diagnostica MDM nel HoloLens 2, selezionare l'icona Wi-Fi, quindi passare **Impostazioni** Accounts Access work or school (Accedi all'organizzazione o all'istituto di istruzione) e selezionare Export your management logs (Esporta i log  ->    >   **di gestione).** HoloLens invia i file di log all'account e visualizza il relativo percorso nel PC desktop.
 
 ## <a name="diagnosticlog-csp"></a>CSP DiagnosticLog
 
 In un ambiente di gestione di dispositivi mobili (MDM), l'amministratore IT può usare il provider di servizi di configurazione [DiagnosticLog (CSP)](/windows/client-management/mdm/diagnosticlog-csp) per configurare le impostazioni di diagnostica nei dispositivi HoloLens registrati. L'amministratore IT può configurare queste impostazioni per raccogliere i log dai dispositivi registrati.
 
-Per altre informazioni, vedere:
-- [Raccogliere la diagnostica da un Windows dispositivo](/mem/intune/remote-actions/collect-diagnostics)
-- [Anteprima pubblica di Intune - Diagnostica Windows 10 dispositivo](https://techcommunity.microsoft.com/t5/intune-customer-success/intune-public-preview-windows-10-device-diagnostics/ba-p/2179712#:~:text=This%20first%20release%20of%20device%20diagnostics%20utilizes%20the,taking%20about%205%20minutes%20from%20start%20to%20finish.)
+Altre informazioni:
+- [Raccogliere dati di diagnostica da Windows dispositivo](/mem/intune/remote-actions/collect-diagnostics)
+- [Anteprima pubblica di Intune - Diagnostica Windows 10 dispositivi](https://techcommunity.microsoft.com/t5/intune-customer-success/intune-public-preview-windows-10-device-diagnostics/ba-p/2179712#:~:text=This%20first%20release%20of%20device%20diagnostics%20utilizes%20the,taking%20about%205%20minutes%20from%20start%20to%20finish.)
 
 ### <a name="prerequisites"></a>Prerequisiti
 
 - Il dispositivo è connesso a una rete.
-- Il dispositivo viene registrato in un ambiente MDM che supporta diagnosticLog CSP.
+- Il dispositivo viene registrato in un ambiente MDM che supporta il provider di servizi di configurazione DiagnosticLog.
 
-### <a name="data-locations-access-and-retention"></a>Percorsi, accesso e conservazione dei dati
+### <a name="data-locations-access-and-retention"></a>Posizioni, accesso e conservazione dei dati
 
 Poiché il dispositivo fa parte dell'ambiente gestito, l'utente acconsente implicitamente all'accesso amministrativo alle informazioni di diagnostica.
 
@@ -138,41 +139,42 @@ L'amministratore IT usa il provider di servizi di configurazione DiagnosticLog p
 - Autorizzazioni che controllano l'accesso alle informazioni di diagnostica.
 
 ## <a name="offline-diagnostics"></a>Diagnostica offline
-In situazioni in cui il dispositivo non è in grado di raccogliere la diagnostica tramite Hub di Feedback o lo strumento Impostazioni risoluzione dei problemi, è possibile raccogliere la diagnostica manualmente. Uno scenario in cui ciò è necessario è quando il dispositivo non può connettersi Wi-Fi o non è possibile accedere ad altri metodi indicati in precedenza. La diagnostica raccoglie i dump e i log di arresto anomalo del sistema dal dispositivo che consentono a un tecnico del supporto Microsoft di isolare i problemi.
+
+Nelle situazioni in cui il dispositivo non è in grado di raccogliere dati di diagnostica tramite Hub di Feedback o lo strumento Impostazioni risoluzione dei problemi, è possibile raccogliere la diagnostica manualmente. Uno scenario in cui ciò è necessario è quando il dispositivo non può connettersi Wi-Fi o non è possibile accedere ad altri metodi indicati in precedenza. La diagnostica raccoglie i dump di arresto anomalo del sistema e i log dal dispositivo che consentono a un tecnico del supporto Microsoft di isolare i problemi.
 
 Questa operazione funziona quando il dispositivo viene visualizzato Esplora file dopo la connessione a un PC tramite un cavo USB.
 
 > [!NOTE]
-> La generazione e la gestione della diagnostica offline vengono controllate in modo diverso a seconda della versione del sistema operativo. In precedenza era controllato dall'impostazione di telemetria, ma ora è controllato direttamente tramite criteri MDM. Se disabilitata tramite l'impostazione o i criteri MDM, i log di diagnostica non possono essere raccolti usando questo meccanismo.
+> La generazione e la gestione della diagnostica offline vengono controllate in modo diverso a seconda della versione del sistema operativo. In precedenza era controllato dall'impostazione di telemetria, ma ora è controllato direttamente tramite criteri MDM. Se disabilitati tramite l'impostazione o i criteri MDM, i log di diagnostica non possono essere raccolti usando questo meccanismo.
 
 Comportamento precedente a [Windows Holographic, versione 20H2:](hololens-release-notes.md#windows-holographic-version-20h2)
- - La diagnostica offline è abilitata solo quando l'utente sta passando la configurazione guidata o il valore dei criteri [System\AllowTelemetry](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) è impostato su Full (Basic è il valore predefinito HoloLens). 
-- Per disabilitare la diagnostica offline, passare **alla pagina Impostazioni App > Privacy** e selezionare Di **base** in Dati **di diagnostica**. Nelle compilazioni in cui la diagnostica offline dipende dall'impostazione di telemetria, influisce solo sulla raccolta o meno di log. Non influisce sui file raccolti.
+ - La diagnostica offline è abilitata solo quando l'utente sta passando attraverso la Configurazione guidata o il valore del criterio [System\AllowTelemetry](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) è impostato su Completo (il valore predefinito è Basic HoloLens). 
+- Per disabilitare la diagnostica offline, passare **alla pagina Impostazioni App > Privacy** e selezionare Di **base** in Dati **di diagnostica.** Nelle compilazioni in cui la diagnostica offline dipende dall'impostazione dei dati di telemetria, influisce solo sulla raccolta o meno dei log. Non influisce sui file raccolti.
 - Se il dispositivo è bloccato, i log non verranno visualizzati.
 
 Nelle build Windows [Holographic, versione 20H2 e](hololens-release-notes.md#windows-holographic-version-20h2) versioni successiva:
-- Quando la diagnostica di fallback è abilitata, verrà controllata da criteri MDM specifici con l'impostazione [mixedReality/FallbackDiagnostics corrispondente](/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-fallbackdiagnostics)
+- Quando la diagnostica di fallback è abilitata, verrà controllata da criteri MDM specifici con [l'impostazione MixedReality/FallbackDiagnostics corrispondente](/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-fallbackdiagnostics)
 - Se il dispositivo è bloccato, i log non verranno visualizzati.
 
 Guardare questo video per saperne di più.
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Gathering-Diagnostic-Files-on-HoloLens2/player]
 
-Seguire questa procedura per raccogliere la diagnostica:
+Per raccogliere dati di diagnostica, seguire questa procedura:
 
 1.  Connessione dispositivo con un cavo USB al PC.
 
-2.  Nel Esplora file sul PC passare a **"Questo PC \<hololens-device> \Internal Archiviazione"**.
+2.  Nel Esplora file pc passare a **"This PC \<hololens-device> \Internal Archiviazione"**(Questo PC \Internal Archiviazione).
 
-3.  Se la **cartella Internal Archiviazione** non viene visualizzato, il dispositivo è in attesa dell'accesso di un utente. Accedere o eseguire il ciclo di alimentazione del dispositivo tenendo premuto il pulsante POWER per 10 secondi.
+3.  Se la **cartella Archiviazione** non viene visualizzato, il dispositivo è in attesa dell'accesso di un utente. Accedere o eseguire il ciclo di alimentazione del dispositivo tenendo premuto il pulsante DI ALIMENTAZIONE per 10 secondi.
 
 4.  Premere e rilasciare immediatamente i **pulsanti Power + Volume Down** insieme.
 
-5.  Attendere un minuto che il dispositivo prepari gli archivi ZIP. Un file temporaneo denominato HololensDiagnostics.temp può diventare visibile mentre il dispositivo genera gli archivi ZIP. Non accedere o salvare il file. Al termine del processo, verrà sostituito dagli archivi ZIP.
+5.  Attendere un minuto che il dispositivo prepari gli archivi ZIP. Un file temporaneo denominato HololensDiagnostics.temp può diventare visibile mentre il dispositivo genera gli archivi ZIP. Non accedere al file o salvarlo. Al termine del processo, verrà sostituito dagli archivi ZIP.
 
-6.  Aggiornare Esplora file e passare alla **cartella '\Documents'.**
+6.  Aggiornare Esplora file e passare alla **cartella "\Documents".**
 
 7.  Copiare i file ZIP di diagnostica e condividerli con il team di supporto Microsoft.
 
     > [!NOTE]
-    > Alcuni dei file ZIP di diagnostica possono contenere informazioni personali.
+    > Alcuni file ZIP di diagnostica possono contenere informazioni personali.

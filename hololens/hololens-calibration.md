@@ -14,12 +14,12 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 keywords: calibrazione, comfort, oggetti visivi, qualità, ipd, HoloLens, Windows Mixed Reality, visori VR
-ms.openlocfilehash: b3d917c71ac7441aeaf8dcbc25748ee07b9fbfa3
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: cdeef216cbf6d1fb165737ae194071c60b31146a
+ms.sourcegitcommit: 20ea1ed37772655504ccb11a7e185ed19d85f336
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126036040"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "127833557"
 ---
 # <a name="improve-visual-quality-and-comfort"></a>Migliorare la qualità visiva e il comfort
 
@@ -37,8 +37,7 @@ HoloLens 2 richiede all'utente di calibrare il dispositivo nelle circostanze seg
 - L'utente in precedenza rifiutava esplicitamente il processo di calibrazione
 - Il processo di calibrazione non è riuscito l'ultima volta che l'utente ha usato il dispositivo
 - L'utente ha eliminato i profili di calibrazione
-- Il dispositivo viene spento e rimette in stato di innevamento e si applica una delle circostanze precedenti 
-
+- Il dispositivo viene spento e ri spento e si applica una delle circostanze precedenti 
 
 ![Richiesta di calibrazione per la regolazione agli occhi.](./images/07-et-adjust-for-your-eyes.png)
 
@@ -87,7 +86,7 @@ Per le esperienze che richiedono dati dello sguardo fisso o un posizionamento pr
 
 #### <a name="deferred-calibration-prompt"></a>Prompt di calibrazione posticipato
 
-Con La posizione automatica degli occhi, la finestra di dialogo di richiesta di calibrazione del tracciamento oculare viene posticipata fino a quando un'applicazione non richiede i dati dello sguardo fisso. Ciò garantisce che non venga visualizzata alcuna richiesta all'utente quando l'applicazione attiva non richiede lo sguardo fisso. Se l'applicazione richiede dati di sguardo fisso e l'utente corrente non è calibrato, all'utente viene visualizzata una richiesta di calibrazione. Questo comportamento può essere usato per visualizzare la richiesta di calibrazione del tracciamento oculare in un momento appropriato per l'esperienza. Questo metodo è consigliato per i motivi seguenti
+Con La posizione automatica degli occhi, la finestra di dialogo di richiesta di calibrazione del tracciamento oculare viene posticipata fino a quando un'applicazione non richiede i dati dello sguardo fisso. Ciò garantisce che non venga visualizzata alcuna richiesta all'utente quando l'applicazione attiva non richiede lo sguardo fisso. Se l'applicazione richiede dati di sguardo fisso e l'utente corrente non è calibrato, all'utente viene visualizzata una richiesta di calibrazione. Questo comportamento può essere usato per visualizzare una richiesta di calibrazione del tracciamento oculare in un momento appropriato per l'esperienza. Questo metodo è consigliato per i motivi seguenti:
 
 1.  La finestra di dialogo Eye Tracking Calibration Prompt (Richiesta calibrazione tracciamento oculare) fornisce all'utente informazioni dettagliate sui motivi per cui è necessario il tracciamento oculare.
 2.  Presenta all'utente un modo per rifiutare di calibrare gli occhi.
@@ -96,24 +95,31 @@ Se l'utente sceglie di avviare la calibrazione del tracciamento oculare, lo stat
 
 ### <a name="calibration-data-and-security"></a>Dati di calibrazione e sicurezza
 
-Le informazioni di calibrazione vengono archiviate localmente nel dispositivo e non sono associate ad alcuna informazione sull'account. Non è presente alcun record di chi ha usato il dispositivo senza calibrazione. Questo significa che ai nuovi utenti verrà richiesto di calibrare gli oggetti visivi quando usano il dispositivo per la prima volta e agli utenti che hanno scelto esplicitamente di disattivare la calibrazione in precedenza o se la calibrazione non è riuscita.
+Le informazioni di calibrazione vengono archiviate localmente nel dispositivo e non sono associate ad alcuna informazione sull'account. Non è presente alcun record di chi ha usato il dispositivo senza calibrazione. Ciò significa che ai nuovi utenti verrà richiesto di calibrare gli oggetti visivi quando usano il dispositivo per la prima volta e agli utenti che hanno scelto esplicitamente la calibrazione in precedenza o se la calibrazione non è riuscita.
 
 Il dispositivo può archiviare in locale fino a 50 profili di calibrazione. Dopo aver raggiunto questo numero, il dispositivo elimina automaticamente il profilo inutilizzato meno recente.
 
-Le informazioni di calibrazione possono sempre essere eliminate dal dispositivo in **Impostazioni**  >  **Tracciamento**  >  **oculare sulla privacy.**  
+Le informazioni di calibrazione possono sempre essere eliminate dal dispositivo **in** Impostazioni  >  **Tracciamento**  >  **oculare sulla privacy.**  
 
 ### <a name="disable-calibration"></a>Disabilitare la calibrazione
 
-È anche possibile disabilitare la richiesta di calibrazione seguendo questa procedura:
+#### <a name="eye-calibration-behavior-on-hololens-2-builds-20h2-and-newer"></a>Comportamento di calibrazione oculare HoloLens 2 compilazioni 20H2 e più recente
+
+Con l'inizio [](hololens-release-notes.md#auto-eye-position-support) del supporto della posizione oculare automatica a Windows Holographic, versione 20H2, non è necessario disabilitare la calibrazione. La richiesta di calibrazione viene visualizzata automaticamente solo se si usa un'app abilitata per il tracciamento oculare.
+
+#### <a name="disabling-eye-calibration-on-hololens-2-older-builds"></a>Disabilitazione della calibrazione oculare HoloLens 2 build precedenti
+
+È possibile capovolgere Impostazioni del visore VR per disabilitare la calibrazione, ma lo stato dell'interruttore potrebbe non essere facile da determinare. È stato rimosso e sostituito con il supporto della posizione [automatica degli](hololens-release-notes.md#auto-eye-position-support)occhi, che rinvia la calibrazione fornendo al tempo stesso la correzione del colore e il posizionamento dell'ologramma.
+
+#### <a name="disabling-eye-calibration-on-hololens-1st-gen"></a>Disabilitazione della calibrazione oculare HoloLens (prima generazione)
+
+Per [HoloLens di calibrazione (prima generazione),](#calibrating-your-hololens-1st-gen)è possibile disabilitare la richiesta di calibrazione oculare seguendo questa procedura:
 
 1. Selezionare **Impostazioni**  >  **calibrazione**  >  **del sistema.**
 1. Disattiva Quando una nuova persona usa questa HoloLens, chiede **automaticamente di eseguire la calibrazione oculare.**
 
    > [!IMPORTANT]
    > Questa impostazione può influire negativamente sulla qualità e sul comfort del rendering dell'ologramma.  Quando si disattiva questa impostazione, le funzionalità che dipendono dal tracciamento oculare (ad esempio lo scorrimento del testo) non funzionano più nelle applicazioni immersive.
-
-> [!NOTE]
-> Il Impostazioni è stato rimosso a Windows Holographic, versione 20H2 con l'inizio del supporto della posizione [oculare automatica](hololens-release-notes.md#auto-eye-position-support). La richiesta di calibrazione verrà visualizzata automaticamente solo se un utente non bilanciato usa un'app abilitata per il tracciamento oculare.
 
 ### <a name="hololens-2-eye-tracking-technology"></a>HoloLens 2 tecnologia di tracciamento oculare
 
@@ -125,11 +131,11 @@ HoloLens applicazioni usano il tracciamento oculare per tenere traccia della pos
 
 ## <a name="calibrating-your-hololens-1st-gen"></a>Calibrazione del HoloLens (prima generazione)
 
-HoloLens (prima generazione) regola la visualizzazione dell'ologramma in base alla distanza [interpuperiale](https://en.wikipedia.org/wiki/Interpupillary_distance) (IPD). Se l'IPD non è accurato, gli ologrammi possono apparire instabili o a una distanza non corretta. È possibile migliorare la qualità degli oggetti visivi calibrando il dispositivo in base alla distanza interpuperiale (IPD).
+HoloLens (prima generazione) regola la visualizzazione dell'ologramma in base alla distanza [interpupillare](https://en.wikipedia.org/wiki/Interpupillary_distance) (IPD). Se l'IPD non è accurato, gli ologrammi possono apparire instabili o a una distanza non corretta. È possibile migliorare la qualità degli oggetti visivi calibrando il dispositivo in base alla distanza interpupillaria (IPD).
 
-Quando si configura il HoloLens di prima generazione, viene richiesto di calibrare gli oggetti visivi dopo che Cortana ha introdotto se stesso. È consigliabile completare il passaggio di calibrazione durante questa fase di installazione. Tuttavia, è possibile ignorarlo attendendo Cortana richiesta e quindi pronunciando "Ignora".
+Quando si configura il dispositivo HoloLens (prima generazione), viene richiesto di calibrare gli oggetti visivi dopo Cortana si presenta. È consigliabile completare il passaggio di calibrazione durante questa fase di installazione. Tuttavia, è possibile ignorarlo attendendo Cortana richiesta e quindi pronunciando "Ignora".
 
-Durante il processo di calibrazione, HoloLens di allineare il dito con una serie di sei destinazioni per occhio. HoloLens questo processo per impostare correttamente l'IPD per gli occhi.
+Durante il processo di calibrazione, HoloLens di allineare il dito a una serie di sei destinazioni per occhio. HoloLens questo processo per impostare correttamente l'IPD per gli occhi.
 
 ![Schermata di allineamento delle dita IPD nel secondo passaggio.](./images/ipd-finger-alignment-300px.jpg)
 
@@ -145,7 +151,7 @@ Per usare il menu **Start** per eseguire l'app Calibrazione, seguire questa proc
 
    ![Accesso all'app di calibrazione dalla shell.](./images/calibration-shell.png)
 
-   ![App di calibrazione visualizzata come cubo live dopo l'avvio.](./images/calibration-livecube-200px.png)
+   ![L'app di calibrazione visualizzata come cubo live dopo l'avvio.](./images/calibration-livecube-200px.png)
 
 Per usare l'app Impostazioni per eseguire l'app Calibrazione, seguire questa procedura:
 

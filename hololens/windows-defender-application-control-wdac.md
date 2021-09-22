@@ -7,17 +7,17 @@ author: evmill
 ms.author: v-evmill
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 9/3/2021
+ms.date: 9/21/2021
 ms.reviewer: ''
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b5c3b55273346f330580b07e5294e7e8e65ea12d
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: efdc57b5e045c1669587ffc46dbe2132b6de6600
+ms.sourcegitcommit: 52ed453cace3851fbec0cfcc228fa2a79f1a2fec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126033940"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "128075386"
 ---
 # <a name="windows-defender-application-control---wdac"></a>Windows Defender Controllo delle applicazioni - WDAC
 
@@ -28,15 +28,15 @@ WDAC consente di configurare HoloLens per bloccare l'avvio delle app. È diversa
 > [!NOTE]
 > Quando gli utenti finali tentano di avviare un'app bloccata da WDAC in HoloLens, non verranno informati di non essere in grado di avviare l'app.
 
-A un dispositivo possono essere assegnati più criteri WDAC. Se in un sistema sono impostati più criteri WDAC, vengono applicati quelli più restrittivi. 
+A un dispositivo possono essere assegnati più criteri WDAC. Se in un sistema sono impostati più criteri WDAC, vengono applicati quelli più restrittivi.
 
 Di seguito è riportata una guida per gli utenti che illustrano come usare [WDAC](/mem/intune/configuration/custom-profile-hololens)e Windows PowerShell per consentire o bloccare le app nei dispositivi HoloLens 2 con Microsoft Intune .
 
-Quando gli utenti cercano le app installate nel pc Windows 10 usando il primo passaggio di esempio, potrebbe essere necessario eseguire alcuni tentativi per restringere i risultati.
+Quando gli utenti cercano le app installate nel PC Windows 10 usando il primo passaggio di esempio, potrebbe essere necessario eseguire alcuni tentativi per restringere i risultati.
 
 ```powershell
 $package1 = Get-AppxPackage -name *<applicationname>*
-``` 
+```
 
 Se non si conosce il nome completo del pacchetto, potrebbe essere necessario eseguire 'Get-AppxPackage -name \* YourBestGuess' alcune volte per \* trovarlo. Dopo aver creato il nome, eseguire "$package 1 = Get-AppxPackage -name Actual.PackageName"
 
@@ -44,7 +44,7 @@ Ad esempio, l'esecuzione del codice seguente per Microsoft Edge restituirà più
 
 ```powershell
 Get-AppxPackage -name *edge*
-``` 
+```
 
 ## <a name="package-family-names-for-apps-on-hololens"></a>Nomi delle famiglie di pacchetti per le app HoloLens
 
@@ -54,34 +54,47 @@ Di seguito è riportato un elenco di app di uso In-Box per HoloLens 2 dispositiv
 
 | Nome dell'app                   | Nome famiglia pacchetto                                |
 |----------------------------|----------------------------------------------------|
-| Visualizzatore 3D                  | Microsoft.Microsoft3DViewer_8wekyb3d8bbwe          |
-| Programma di installazione app              | Microsoft.DesktopAppInstaller_8wekyb3d8bbwe <sup>1</sup>         |
-| Calendario                   | microsoft.windowscommunicationsapps_8wekyb3d8bbwe  |
-| Fotocamera                     | HoloCamera_cw5n1h2txyewy                           |
-| Cortana                    | Microsoft.549981C3F5F10_8wekyb3d8bbwe              |
-| Guide di Dynamics 365        | Microsoft.Dynamics365.Guides_8wekyb3d8bbwe         |
-| Dynamics 365 Remote Assist | Microsoft.MicrosoftRemoteAssist_8wekyb3d8bbwe      |
-| Hub di Feedback               | Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe         |
-| Esplora file              | c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy |
-| Posta                       | microsoft.windowscommunicationsapps_8wekyb3d8bbwe  |
-| Microsoft Store            | Microsoft.WindowsStore_8wekyb3d8bbwe               |
-| Film e TV                | Microsoft.ZuneVideo_8wekyb3d8bbwe                  |
-| OneDrive                   | microsoft.microsoftskydrive_8wekyb3d8bbwe          |
-| Foto                     | Microsoft. Windows. Photos_8wekyb3d8bbwe             |
-| Impostazioni                   | HolographicSystemSettings_cw5n1h2txyewy            |
-| Suggerimenti                       | Microsoft.HoloLensTips_8wekyb3d8bbwe               |
+| Visualizzatore 3D                  | `Microsoft.Microsoft3DViewer_8wekyb3d8bbwe`          |
+| Programma di installazione app              | `Microsoft.DesktopAppInstaller_8wekyb3d8bbwe` <sup>1</sup>         |
+| Calendario                   | `microsoft.windowscommunicationsapps_8wekyb3d8bbwe`  |
+| Fotocamera                     | `HoloCamera_cw5n1h2txyewy`                          |
+| Cortana                    | `Microsoft.549981C3F5F10_8wekyb3d8bbwe`              |
+| Guide di Dynamics 365        | `Microsoft.Dynamics365.Guides_8wekyb3d8bbwe`         |
+| Dynamics 365 Remote Assist | `Microsoft.MicrosoftRemoteAssist_8wekyb3d8bbwe`      |
+| Hub di Feedback               | `Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe`         |
+| Esplora file              | `c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy` |
+| Posta                       | `microsoft.windowscommunicationsapps_8wekyb3d8bbwe`  |
+| Microsoft Store            | `Microsoft.WindowsStore_8wekyb3d8bbwe`               |
+| Film e TV                | `Microsoft.ZuneVideo_8wekyb3d8bbwe`                  |
+| OneDrive                   | `microsoft.microsoftskydrive_8wekyb3d8bbwe`          |
+| Foto                     | `Microsoft.Windows.Photos_8wekyb3d8bbwe`             |
+| Impostazioni                   | `HolographicSystemSettings_cw5n1h2txyewy`            |
+| Suggerimenti                       | `Microsoft.HoloLensTips_8wekyb3d8bbwe`               |
 
 - 1 - Il Programma di installazione app blocca solo l'app Programma di installazione app e non le app installate da altre origini, ad esempio il Microsoft Store o dalla soluzione MDM.
+
+### <a name="using-wdac-to-block-new-microsoft-edge"></a>Uso di WDAC per bloccare nuovi Microsoft Edge
+
+Per gli amministratori IT che desiderano aggiornare i criteri [WDAC](windows-defender-application-control-wdac.md) per bloccare la nuova [app Microsoft Edge](hololens-new-edge.md), è necessario aggiungere quanto segue al criterio.
+
+```xml
+<Deny ID="ID_DENY_D_3_0" FriendlyName="C:\Data\Programs FileRule" PackageVersion="65535.65535.65535.65535" FileName="msedge.exe" />
+```
 
 ### <a name="how-to-find-a-package-family-name"></a>Come trovare un nome di famiglia di pacchetti
 
 Se un'app non è in questo elenco, un utente può usare Portale di dispositivi, connesso a un HoloLens 2 che ha installato l'app che si vuole bloccare, per determinare PackageRelativeID e da qui ottenere PackageFamilyName.
 
-1. Installare l'app nel HoloLens 2 dispositivo. 
-1. Aprire Impostazioni -> Aggiornamenti & Sicurezza -> Per gli sviluppatori, abilitare  Modalità sviluppatore e quindi **Portale di dispositivi.** 
-    1. Altre istruzioni dettagliate per altre informazioni sulla [configurazione e l'uso del portale per dispositivi sono disponibili qui.](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)
-1. Dopo Portale di dispositivi connessione, passare a **Visualizzazioni e** quindi **ad App.** 
-1. Nel pannello App installate usare l'elenco a discesa per selezionare l'app installata. 
-1. Individuare PackageRelativeID. 
-1. Copiare i caratteri dell'app `!` prima di , che sarà packageFamilyName.
+1. Installare l'app nel HoloLens 2 dispositivo.
 
+1. Aprire Impostazioni -> Aggiornamenti & Sicurezza -> Per gli sviluppatori, abilitare  modalità sviluppatore e quindi **Portale di dispositivi.**
+
+   Per altri dettagli e istruzioni, vedere configurare e usare il [portale di dispositivi qui.](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)
+
+1. Dopo Portale di dispositivi connessione, passare a **Visualizzazioni e** quindi **ad App.**
+
+1. Nel pannello App installate usare l'elenco a discesa per selezionare l'app installata.
+
+1. Individuare PackageRelativeID.
+
+1. Copiare i caratteri dell'app `!` prima di , che sarà packageFamilyName.

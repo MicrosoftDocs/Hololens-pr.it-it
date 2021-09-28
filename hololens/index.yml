@@ -11,12 +11,12 @@ metadata:
   ms.author: v-jjaswinski
   ms.date: 05/24/2021
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: c0189c7a75ad27d6d301721e78de6391f6ac76f7
-  ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+  ms.openlocfilehash: 2d0d57406c0d8b1759c53bf5847d8369f98a865e
+  ms.sourcegitcommit: 2b541bacb32279ccec0d7b7caef216626634a2ad
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 09/13/2021
-  ms.locfileid: "126033916"
+  ms.lasthandoff: 09/28/2021
+  ms.locfileid: "129145931"
 landingContent:
 - title: Informazioni sul HoloLens 2
   linkLists:
@@ -48,7 +48,7 @@ landingContent:
       url: hololens2-setup.md
     - text: Utilizzo giornaliero
       url: holographic-home.md
-- title: Pianificare la distribuzione HoloLens 2 locale
+- title: Pianificare la distribuzione HoloLens 2 distribuzione
   linkLists:
   - linkListType: architecture
     links:
@@ -68,6 +68,22 @@ landingContent:
       url: hololens2-corp-connected-overview.md
     - text: Guida alla distribuzione - Protezione offline
       url: hololens-common-scenarios-offline-secure.md
+- title: Risorse partner di realtà mista
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Risorse partner di realtà mista
+      url: https://www.microsoft.com/en-us/hololens/mixed-reality-partners
+    - text: Forum sui partner di realtà mista
+      url: https://techcommunity.microsoft.com/t5/mixed-reality-partners/bd-p/MixedRealityPartnersForum
+    - text: Blog dei partner di realtà mista
+      url: https://aka.ms/MRPartnerBlog
+    - text: Iniziare a progettare e a creare prototipi
+      url: https://docs.microsoft.com/en-us/windows/mixed-reality/design/design
+    - text: Spostamento della modalità piattaforma
+      url: /hololens/hololens2-moving-platform
+    - text: Considerazioni sull'ambiente
+      url: /hololens/hololens-environment-considerations
 - title: Risoluzione dei problemi
   linkLists:
   - linkListType: how-to-guide

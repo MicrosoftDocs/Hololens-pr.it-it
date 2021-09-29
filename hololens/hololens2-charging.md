@@ -1,6 +1,6 @@
 ---
 title: HoloLens 2 Batteria e ricarica
-description: Come caricare il dispositivo HoloLens e usare le batterie esterne.
+description: Come caricare il dispositivo HoloLens e usare i pacchetti di batteria esterni.
 ms.assetid: E0AB903E-454E-46F6-AB25-4DFA0A475B0C
 ms.prod: hololens
 ms.sitesec: library
@@ -12,12 +12,12 @@ ms.date: 05/14/2021
 manager: evmill
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b4692468942da88877370864eda2ce173cc499af
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: a0ae0ccade01d7df520cd6cb142a9b51e63a2b05
+ms.sourcegitcommit: c73cdefbdb4411f6a187cc38bb2570dadeb156bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126036147"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "129163982"
 ---
 # <a name="hololens-2-battery-and-charging"></a>HoloLens 2 Batteria e ricarica
 
@@ -25,7 +25,7 @@ Questa pagina offre informazioni dettagliate sull'addebito HoloLens 2 e sull'uso
 
 ## <a name="charging-the-device"></a>Addebito del dispositivo
 
-Usare il caricatore e il cavo [USB Type-C](https://www.microsoft.com/en-us/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5?rtc=1) fornito con il HoloLens 2, perché è il modo migliore per caricare il dispositivo. Il charger incluso in HoloLens 2 offre fino a 9 V @ 2A (18W). Insieme al caricatore a pareti fornito, i HoloLens 2 possono caricare la batteria in meno di 65 minuti quando il dispositivo è in standby. Se questi accessori non sono disponibili, assicurarsi che il caricatore disponibile sia in grado di supportare almeno 15W di potenza.
+Usare il [caricatore e il](https://www.microsoft.com/en-us/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5?rtc=1) cavo USB Di tipo C fornito con il HoloLens 2, perché è il modo migliore per caricare il dispositivo. Il charger incluso in HoloLens 2 offre fino a 9 V @ 2A (18W). Insieme al caricatore a pareti fornito, i HoloLens 2 possono ricaricare la batteria in meno di 65 minuti quando il dispositivo è in standby. Se questi accessori non sono disponibili, assicurarsi che il caricatore disponibile sia in grado di supportare almeno 15W di potenza.
 
 > [!NOTE]
 > Se possibile, evitare di usare un PC per caricare il dispositivo tramite USB, che è lento.
@@ -36,7 +36,7 @@ Se il dispositivo viene avviato correttamente e in esecuzione, esistono tre modi
 - Dal menu principale dell'interfaccia utente HoloLens dispositivo.
 - Visualizzare il LED vicino al pulsante di alimentazione (per una carica del 40%, dovrebbero essere visualizzati almeno due LED solidi).
     - Quando il dispositivo è in carica, l'indicatore della batteria si accende per indicare il livello di carica corrente.  L'ultima luce si dissolve in entrata e in uscita per indicare l'addebito attivo.
-    - Quando la HoloLens è on, l'indicatore della batteria visualizza il livello della batteria in cinque incrementi.
+    - Quando l HoloLens è on, l'indicatore della batteria visualizza il livello della batteria in cinque incrementi.
     - Quando è accese solo una delle cinque luci, il livello della batteria è inferiore al 20%.
     - Se il livello della batteria è molto basso e si tenta di accendere il dispositivo, una luce lampeggia brevemente, quindi si esce.
 - Nel PC host aprire **Esplora file** e cercare il dispositivo HoloLens 2 sul lato sinistro in Questo **PC.** Fare clic con il pulsante destro del mouse sul dispositivo e **scegliere Proprietà.** Verrà visualizzata una finestra di dialogo con il livello di carica della batteria.
@@ -45,7 +45,7 @@ Se il dispositivo viene avviato correttamente e in esecuzione, esistono tre modi
 
 ## <a name="alternative-charging-specifications"></a>Specifiche di addebito alternative
 
-HoloLens 2 possono essere addebitati da origini usb per il recapito [dell'alimentazione](https://www.usb.org/usb-charger-pd) fino a 27 punti. Se l'origine è in grado di fornire almeno 10 IoT, HoloLens tempo operativo può essere esteso (potenzialmente all'infinito per alcuni carichi di lavoro). 
+HoloLens 2 possono essere addebitati da origini usb per il recapito [dell'alimentazione](https://www.usb.org/usb-charger-pd) fino a 27 Wireless. Se l'origine è in grado di fornire almeno 10 IoT, HoloLens tempo operativo può essere esteso (potenzialmente all'infinito per alcuni carichi di lavoro). 
 
 > [!NOTE]
 > L'uso di un cavo di ricarica da USB-A a USB-C limiterà la carica a 7,5 Gb. Il tempo operativo continuerà a essere esteso, ma non fino a quando si usa USB-C per C.

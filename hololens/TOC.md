@@ -15,7 +15,7 @@
 
 # Uso del HoloLens
 ## Primo utilizzo
-### [Prepara il HoloLens 2'uso](hololens2-setup.md)
+### [Prepararsi HoloLens 2'uso](hololens2-setup.md)
 ### [Configurare la HoloLens 2](hololens2-start.md)
 ### [Orientarsi in HoloLens 2](hololens2-basic-usage.md)
 ### [Aggiornare HoloLens](hololens-update-hololens.md)
@@ -28,10 +28,10 @@
 #### [Nuova Impostazioni app](hololens-new-settings.md)
 #### [Nuovo Microsoft Edge](hololens-new-edge.md)
 ### Gestire le applicazioni
-#### [Trovare, installare e disinstallare applicazioni](holographic-store-apps.md)
+#### [Trovare, installare e disinstallare le app dello Store](holographic-store-apps.md)
 #### [Gestire app personalizzate per HoloLens 2](hololens2-holographic-custom-apps.md)
 ### Ottica ologramma e posizionamento nello spazio
-#### [Migliorare la qualità e il comfort dell'oggetto visivo](hololens-calibration.md)
+#### [Migliorare la qualità visiva e il comfort](hololens-calibration.md)
 #### [Eseguire il mapping di spazi fisici con HoloLens](hololens-spaces.md)
 #### [HoloLens considerazioni sull'ambiente](hololens-environment-considerations.md)
 #### [Spostamento di piattaforme](hololens2-moving-platform.md)
@@ -40,7 +40,7 @@
 #### [Connessione dispositivi Bluetooth e USB-C](hololens-connect-devices.md)
 #### [Connessione a Cellulare e 5G](hololens-cellular.md)
 ### [HoloLens 2 batteria e ricarica](hololens2-charging.md)
-### [domande HoloLens 2 domande frequenti su HoloLens 2 su misura e comfort](hololens2-fit-comfort-faq.md)
+### [HoloLens 2 domande frequenti su fit e comfort](hololens2-fit-comfort-faq.md)
 ### [HoloLens 2 domande frequenti sulla pulizia](hololens2-maintenance.md)
 
 # Distribuzione di HoloLens 2
@@ -79,7 +79,7 @@
 ## Registrazione del dispositivo
 ### [Registrare HoloLens in MDM](hololens-enroll-mdm.md)
 ### [Windows Autopilot per HoloLens 2](hololens2-autopilot.md) 
-### [Registrare nell'ambiente con restrizioni per l'Wi-Fi MAC](mac-address-options.md)
+### [Registrare nell'ambiente con restrizioni dell'Wi-Fi MAC](mac-address-options.md)
 ## Distribuzione dell'applicazione
 ### [Panoramica della gestione delle applicazioni](app-deploy-overview.md)
 ### [Intune & Portale aziendale](app-deploy-intune.md)
@@ -87,9 +87,9 @@
 ### [Pacchetto di provisioning](app-deploy-provisioning-package.md)
 ### [Programma di installazione app](app-deploy-app-installer.md)
 ## Criteri (CSP)
-### [Configurare i CSP e la panoramica di Gestione dispositivi](hololens-csp-policy-overview.md)
-### [Uso di MDM per gestire HoloLens dispositivi](hololens-mdm-configure.md)
-### [Configurare HoloLens pacchetti di provisioning](hololens-provisioning.md)
+### [Panoramica della configurazione dei CSP e della gestione dei dispositivi](hololens-csp-policy-overview.md)
+### [Uso di MDM per gestire i HoloLens mobili](hololens-mdm-configure.md)
+### [Configurare HoloLens usando i pacchetti di provisioning](hololens-provisioning.md)
 ### [Restrizioni comuni dei dispositivi](hololens-common-device-restrictions.md)
 ### [Configurare il HoloLens come chiosco multimediale](hololens-kiosk.md)
 ### [HoloLens Informazioni di riferimento sulla modalità tutto schermo](hololens-kiosk-reference.md)

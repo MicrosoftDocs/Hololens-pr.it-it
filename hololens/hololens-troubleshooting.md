@@ -1,9 +1,9 @@
 ---
 title: HoloLens Risoluzione dei problemi dei dispositivi
-description: Rimanere aggiornati sulle soluzioni più comuni per risolvere i problemi dei HoloLens e le tecniche di risoluzione dei problemi.
+description: Rimanere aggiornati sulle soluzioni più comuni per risolvere i problemi HoloLens dei dispositivi e le tecniche di risoluzione dei problemi.
 author: mattzmsft
 ms.author: mazeller
-ms.date: 12/02/2019
+ms.date: 9/30/2021
 ms.prod: hololens
 ms.topic: article
 audience: HoloLens
@@ -13,24 +13,25 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 keywords: problemi, bug, risoluzione dei problemi, correzione, guida, supporto, HoloLens, emulatore
-ms.openlocfilehash: 6ac86acf85e8e4fc1b97473732ea358d3d612d12
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 3c4d6e22660e365acd2c3aca3119632c73926391
+ms.sourcegitcommit: b9cd7ed5edb98249c609b547b90587863ea1cb9e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126033812"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "129364626"
 ---
 # <a name="device-troubleshooting"></a>Risoluzione dei problemi dei dispositivi
 
 Questo articolo descrive come risolvere diversi problemi di HoloLens comuni.
 
 >[!IMPORTANT]
-> Prima di avviare qualsiasi procedura di risoluzione dei problemi, assicurarsi che al dispositivo venga addebitato un addebito dal **20 al 40%** della capacità della batteria, se possibile. Le [luci dell'indicatore della](hololens2-setup.md#lights-that-indicate-the-battery-level) batteria posizionate sotto il pulsante di alimentazione sono un modo rapido per verificare la capacità della batteria senza accedere al dispositivo.
+> Prima di avviare qualsiasi procedura di risoluzione dei problemi, assicurarsi che al dispositivo venga addebitato un addebito dal **20 al 40%** della capacità della batteria, se possibile. Le [luci dell'indicatore](hololens2-setup.md#lights-that-indicate-the-battery-level) della batteria che si trovano sotto il pulsante di alimentazione sono un modo rapido per verificare la capacità della batteria senza accedere al dispositivo.
 
 <a id="list"></a>
 
 **Problemi noti**
-- [Remote Assist il video si blocca dopo 20 minuti](#remote-assist-video-freezes-after-20-minutes)
+- [Ogni volta che l'alimentazione passa al 18%, il dispositivo si arresta improvvisamente automaticamente](#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)
+- [Remote Assist video si blocca dopo 20 minuti](#remote-assist-video-freezes-after-20-minutes)
 - [L'accesso automatico richiede l'accesso](#auto-login-asks-for-log-in)
 - [Microsoft Edge l'avvio non riesce](#microsoft-edge-fails-to-launch)
 - [La tastiera non passa a caratteri speciali](#keyboard-doesnt-switch-to-special-characters)
@@ -60,6 +61,16 @@ Questo articolo descrive come risolvere diversi problemi di HoloLens comuni.
 - [Il microfono USB-C non funziona](#usb-c-microphone-isnt-working)
 - [I dispositivi elencati come disponibili Impostazioni non funzionano](#devices-listed-as-available-in-settings-dont-work)
 
+## <a name="every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically"></a>Ogni volta che l'alimentazione passa al 18%, il dispositivo si arresta improvvisamente automaticamente
+
+Esiste un problema noto per cui quando il dispositivo raggiunge il 18% della batteria, si arresta in modo imprevisto. Si tratta di un problema software, non di hardware o batteria, pertanto non scambiare i dispositivi per questo. Se non si è certi che il problema corrisponda a questo bug, eseguire le seguenti informazioni:
+
+1. Assicurarsi che la diagnostica facoltativa sia abilitata nei dispositivi
+1. Riprodurre il problema
+1. Inviare un [Hub di Feedback](hololens-feedback.md) problema
+1. Condividere l'URL del problema di feedback
+1. [Contattare il supporto](https://aka.ms/hololenssupport)
+
 ## <a name="remote-assist-video-freezes-after-20-minutes"></a>Remote Assist il video si blocca dopo 20 minuti
 
 > [!NOTE]
@@ -72,7 +83,7 @@ Nell'ultima versione di [Windows Holographic, versione 21H1,](hololens-release-n
 
 ### <a name="workarounds"></a>Soluzioni alternative
 
-Se non è possibile aggiornare Remote Assist a una build più recente, provare a eseguire le operazioni seguenti.
+Se non è possibile aggiornare Remote Assist a una build più recente, provare a risolvere il problema seguente.
 
 #### <a name="restart-in-between-calls"></a>Riavvio tra una chiamata e l'altro
 
@@ -84,7 +95,7 @@ Per riavviare rapidamente un dispositivo [Windows Holographic, versione 21H1](ho
 
 ## <a name="auto-login-asks-for-log-in"></a>L'accesso automatico richiede l'accesso
 
-Un HoloLens 2 può essere configurato per l'accesso automatico tramite opzioni di accesso degli account **Impostazioni ->** e in Obbligatorio impostare il valore  ->    ->    su **Mai**. Ad alcuni utenti potrebbe essere necessario accedere di nuovo al dispositivo quando si aggiorna un dispositivo con un aggiornamento sostanzialmente di grandi dimensioni, ad esempio un aggiornamento delle funzionalità. Si tratta di un **problema noto.**
+Un HoloLens 2 può essere configurato per l'accesso automatico tramite opzioni di accesso degli account **Impostazioni ->** e  ->    ->   in **Obbligatorio** impostare il valore su **Mai**. Ad alcuni utenti potrebbe essere necessario accedere di nuovo al dispositivo quando si aggiorna un dispositivo con un aggiornamento sostanzialmente di grandi dimensioni, ad esempio un aggiornamento delle funzionalità. Si tratta di un **problema noto.**
 
 Esempio di quando ciò potrebbe verificarsi:
 
@@ -135,74 +146,76 @@ Ciò non influisce su:
 ## <a name="downloading-locked-files-doesnt-error"></a>Il download dei file bloccati non ha un errore
 
 > [!NOTE]
-> Si tratta di **un problema** noto risolto in [Windows Holographic, versione 21H1 - Aggiornamento di luglio 2021](hololens-release-notes.md#windows-holographic-version-21h1---july-2021-update).
+> Si tratta di **un problema noto** risolto in Windows [Holographic, versione 21H1 - Aggiornamento di luglio 2021](hololens-release-notes.md#windows-holographic-version-21h1---july-2021-update).
 
-Nelle build precedenti di Windows Holographic, quando si tenta di scaricare un file bloccato, il risultato sarebbe una pagina di errore HTTP. Nell'aggiornamento Windows Holographic versione 21H1, il tentativo di scaricare un file bloccato non comporta alcuna operazione visibile: il file non viene scaricato e non si verifica alcun errore.
+Nelle build precedenti di Windows Holographic, quando si tenta di scaricare un file bloccato, il risultato sarebbe una pagina di errore HTTP. Nell'aggiornamento Windows Holographic versione 21H1, il tentativo di scaricare un file bloccato non comporta alcuna operazione visibile. Il file non viene scaricato e non si verifica alcun errore.
 
 [Torna all'elenco](#list)
 
-## <a name="device-portal-file-uploaddownload-times-out"></a>Portale di dispositivi timeout del caricamento/download di file
+## <a name="device-portal-file-uploaddownload-times-out"></a>Portale di dispositivi timeout di caricamento/download di file
 > [!NOTE]
-> Si tratta di **un problema** noto risolto in [Windows Holographic, versione 21H1 - Aggiornamento di luglio 2021](hololens-release-notes.md#windows-holographic-version-21h1---july-2021-update). Se in precedenza è stata disabilitata la connessione SSL come parte della soluzione alternativa, è consigliabile ri-abilitarla.
+> Si tratta di **un problema** noto risolto in [Windows Holographic, versione 21H1 - Aggiornamento di luglio 2021.](hololens-release-notes.md#windows-holographic-version-21h1---july-2021-update) Se in precedenza è stata disabilitata la connessione SSL come parte della soluzione alternativa, è consigliabile abilitarla nuovamente.
 
-Alcuni clienti hanno rilevato che, quando si tenta di caricare o scaricare file, l'operazione potrebbe bloccarsi e quindi verificarsi un timeout o non essere mai completata. Questo problema è separato dal problema noto["file](#downloading-locked-files-doesnt-error) bloccato", che interessa le build sul mercato di Windows Holographic, versioni 2004, 20H2 e 21H1. Il problema è stato causato da un bug nella gestione di determinate richieste di Portale di dispositivi ed è stato raggiunto in modo più coerente quando si usa https, che è l'impostazione predefinita.
+Alcuni clienti hanno rilevato che, quando tentano di caricare o scaricare file, l'operazione potrebbe sembrare bloccarsi e quindi verificarsi un timeout o non essere mai completata. Questo problema è separato dal problema noto["file](#downloading-locked-files-doesnt-error) bloccato", che interessa le build di Windows Holographic, versioni 2004, 20H2 e 21H1. Il problema è stato causato da un bug nella gestione di determinate richieste da parte di Portale di dispositivi e viene raggiunto in modo più coerente quando si usa https, che è l'impostazione predefinita.
 
 ### <a name="workaround"></a>Soluzione alternativa
 
-Questa soluzione alternativa, che si applica allo stesso modo Wi-Fi e UsbNcm, consiste nel disabilitare l'opzione "obbligatorio" in "Connessione SSL". A tale scopo, passare a Portale di dispositivi, **Sistema** e selezionare la **pagina** Preferenze. Nella sezione **Sicurezza del dispositivo** individuare Connessione **SSL** e deselezionare per disabilitare **Obbligatorio.**
+Questa soluzione alternativa, che si applica ugualmente Wi-Fi e UsbNcm, consiste nel disabilitare l'opzione "obbligatorio" in "Connessione SSL". A tale scopo, passare Portale di dispositivi, **Sistema** e selezionare la **pagina** Preferenze. Nella sezione **Sicurezza del dispositivo** individuare Connessione **SSL** e deselezionare per disabilitare **Obbligatorio.**
 
-L'utente dovrebbe quindi passare a http://, non https:// (indirizzo IP) e le funzionalità come il caricamento e il download di file funzioneranno.
+L'utente deve quindi passare a http://, non https:// (indirizzo IP) e le funzionalità come il caricamento e il download di file funzioneranno.
 
 [Torna all'elenco](#list)
 
-## <a name="blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build"></a>Schermata blu dopo la annullamento della registrazione da Insider Preview in un dispositivo flash con una build Insider
+## <a name="blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build"></a>Schermata blu dopo l'annullamento della registrazione dall'anteprima insider in un dispositivo flash con una build Insider
 
-Si tratta di un problema che interessa gli utenti che si trovavano in una build insider preview, ha ricompresso il proprio HoloLens 2 con una nuova build insider preview e quindi ne è stata annullata la registrazione dal programma Insider. Si tratta di un **problema noto.**
+Si tratta di un problema che interessa gli utenti che si trovavano in una build di anteprima Insider, hanno ricompresso il proprio HoloLens 2 con una nuova build Insider Preview e quindi hanno rimosso la registrazione dal programma Insider. Si tratta di **un problema noto.**
 
 Ciò non influisce su:
-- Utenti che non sono registrati in Windows Insider 
-- Addetti ai lavori:
-    - Se un dispositivo è stato registrato dopo le build Insider era la versione 18362.x
-    - Se hanno flashed un Insider firmato 19041.x build E rimanere registrati nel programma Insider
 
-Risolvere il problema: 
-- Evitare il problema 
+- Utenti che non sono registrati a Windows Insider
+- Addetti ai lavori:
+    - Se un dispositivo è stato registrato dopo le build Insider, la versione era 18362.x
+    - Se hanno eseguito il flash di una build 19041.x firmata da Insider e rimangono registrati al programma Insider
+
+Risolvere il problema:
+
+- Evitare il problema
     - Eseguire il flash di una build non insider. Uno degli aggiornamenti mensili regolari.
     - Rimanere in Insider Preview
 - Reflash del dispositivo
 
-    1. Impostare la [HoloLens 2 in modalità flashing](hololens-recovery.md) manualmente, attivando completamente l'alimentazione senza connettersi. Quindi, tenendo premuto Volume, toccare il pulsante Di alimentazione.
-    
+    1. Attivare manualmente [HoloLens 2 flashing](hololens-recovery.md) attivando completamente il sistema mentre non ci si connette. Quindi, tenendo premuto Volume in alto, toccare il pulsante Di alimentazione.
+
     1. Connessione al PC e aprire Advanced Recovery Companion.
-    
+
     1. Eseguire il flash HoloLens 2 alla compilazione predefinita.
 
 [Torna all'elenco](#list)
 
 ## <a name="onedrive-doesnt-automatically-upload-pictures"></a>OneDrive non carica automaticamente le immagini
 
-L OneDrive app per HoloLens non supporta il caricamento automatico della fotocamera per gli account aziendali o dell'istituto di istruzione. Si tratta di un **problema noto.**
+L'app OneDrive per HoloLens non supporta il caricamento automatico della fotocamera per gli account aziendali o dell'istituto di istruzione. Si tratta di **un problema noto.**
 
 Soluzioni alternative:
 
-- Se possibile per l'azienda, il caricamento automatico della fotocamera è supportato sugli account Microsoft consumer. È possibile accedere al proprio account Microsoft oltre all'account aziendale o dell'istituto di istruzione (l'app OneDrive supporta il doppio accesso). Dal profilo account Microsoft all'interno OneDrive è possibile abilitare il caricamento automatico del rullino della fotocamera in background.
+- Se possibile per l'azienda, il caricamento automatico della fotocamera è supportato per gli account Microsoft consumer. È possibile accedere al proprio account Microsoft oltre all'account aziendale o dell'istituto di istruzione (l'app OneDrive supporta l'accesso doppio. Dal profilo account Microsoft all'interno OneDrive è possibile abilitare il caricamento automatico del rullino della fotocamera in background.
 
-- Se non è possibile usare in modo sicuro un account Microsoft consumer per caricare automaticamente le foto, è possibile caricare manualmente le foto nell'account aziendale o dell'istituto di istruzione dall'app OneDrive aziendale. A tale scopo, assicurarsi di aver eseguito l'accesso all'account aziendale o dell'istituto di istruzione nell'app OneDrive app. Selezionare il **+** pulsante e scegliere **Upload**. Trovare le foto o i video da caricare passando a **Immagini > Rullino.** Selezionare le foto o i video da caricare e quindi fare clic **sul pulsante** Apri.
+- Se non è possibile usare in modo sicuro un account Microsoft consumer per caricare automaticamente le foto, è possibile caricare manualmente le foto nell'account aziendale o dell'istituto di istruzione dall'app OneDrive. A tale scopo, assicurarsi di aver eseguito l'accesso all'account aziendale o dell'istituto di istruzione nell'app OneDrive lavoro. Selezionare il **+** pulsante e scegliere **Upload**. Trovare le foto o i video da caricare passando a **Pictures (Immagini) > Camera Roll (Rullino foto).** Selezionare le foto o i video da caricare e quindi selezionare il **pulsante** Apri.
 
 [Torna all'elenco](#list)
 
-## <a name="hololens-is-unresponsive-or-wont-start"></a>HoloLens non risponde o non viene avviato
+## <a name="hololens-is-unresponsive-or-wont-start"></a>HoloLens non risponde o non si avvia
 
-Se il HoloLens non viene avviato:
+Se il HoloLens non si avvia:
 
-- Se i LED accanto al pulsante di accensione non si accrendono o un solo LED lampeggia brevemente, potrebbe essere necessario caricare il [HoloLens.](hololens2-charging.md#charging-the-device)
-- Se i LED si accrendono quando si preme il pulsante di accensione ma non è possibile visualizzare alcun elemento sui display, eseguire un [hard reset del dispositivo](hololens-recovery.md#hard-reset-procedure).
+- Se i LED accanto al pulsante di alimentazione non si accendere o un solo LED lampeggia brevemente, potrebbe essere necessario caricare il [HoloLens.](hololens2-charging.md#charging-the-device)
+- Se i LED si accendeno quando si preme il pulsante di alimentazione, ma non è possibile visualizzare nulla sui display, eseguire un [ripristino azzerato del dispositivo.](hololens-recovery.md#hard-reset-procedure)
 
 Se il HoloLens viene bloccato o non risponde:
 
-- Disattivare il HoloLens premendo il pulsante di alimentazione fino a quando tutti e cinque i LED non si spegnino o per 15 secondi se i LED non rispondono. Per avviare il HoloLens, premere di nuovo il pulsante di accensione.
+- Disattivare il HoloLens premendo il pulsante di alimentazione fino a quando tutti e cinque i LED non si spegnino o per 15 secondi se i LED non rispondono. Per avviare il HoloLens, premere di nuovo il pulsante di alimentazione.
 
-Se questi passaggi non funzionano, [](hololens-recovery.md) è possibile provare a ripristinare il dispositivo HoloLens 2 o HoloLens [(prima generazione).](hololens1-recovery.md)
+Se questi passaggi non funzionano, [](hololens-recovery.md) è possibile provare a ripristinare il HoloLens 2 o il HoloLens di prima [generazione.](hololens1-recovery.md)
 
 [Torna all'elenco](#list)
 
@@ -210,34 +223,34 @@ Se questi passaggi non funzionano, [](hololens-recovery.md) è possibile provare
 
 È necessario liberare spazio di archiviazione eseguendo una o più delle operazioni seguenti:
 
-- Eliminare alcuni spazi inutilizzati. Passare a **Impostazioni**  >  **Spazi di**  >  **sistema,** selezionare uno spazio non più necessario e quindi **selezionare Rimuovi**.
-- Rimuovere alcuni ologrammi inseriti.
+- Eliminare alcuni spazi inutilizzati. Passare a **Impostazioni**  >    >  **di sistema,** selezionare uno spazio non più necessario e quindi selezionare **Rimuovi.**
+- Rimuovere alcuni degli ologrammi posizionati.
 - Eliminare alcune immagini e video dall'app Foto app.
-- Disinstallare alcune app dal HoloLens. **Nell'elenco Tutte le app** toccare e tenere premuta l'app da disinstallare e quindi selezionare **Disinstalla**.
+- Disinstallare alcune app dal HoloLens. **Nell'elenco Tutte le** app toccare e tenere premuta l'app da disinstallare e quindi selezionare **Disinstalla.**
 
 [Torna all'elenco](#list)
 
 ## <a name="calibration-fails"></a>La calibrazione non riesce
 
-La calibrazione dovrebbe funzionare per la maggior parte delle persone, ma in alcuni casi la calibrazione ha esito negativo.
+La calibrazione dovrebbe funzionare per la maggior parte delle persone, ma in alcuni casi la calibrazione non riesce.
   
-Alcuni possibili motivi di errore di calibrazione includono:
+Di seguito sono riportati alcuni possibili motivi per cui si è verificato un errore di calibrazione:
 
-- Distrarsi e non seguire gli obiettivi di calibrazione
-- Visiera o visiera del dispositivo dirty o scratched non posizionata correttamente
-- Occhiali dirty o scratched
-- Alcuni tipi di lenti a contatto e occhiali (lenti a contatto colorate, alcune lenti a contatto torico, occhiali bloccante IR, alcuni occhiali da vista alti, occhiali da sole o simili)
-- Make-up più pronunciato e alcune estensioni ciglia
-- Capello o occhiali di spessore se bloccano la visualizzazione degli occhi da parte del dispositivo
-- Alcune fisiologia oculare, condizioni oculari o interventi oculari come occhi ristretti, ciglia lunghe, amblyopia, nystagmus, alcuni casi di LASIK o altri interventi oculari
+- Distrarsi e non seguire le destinazioni di calibrazione
+- Visore del dispositivo dirty o scratched o visore del dispositivo non posizionato correttamente
+- Occhiali dirty o grattati
+- Alcuni tipi di lenti e occhiali da contatto (lenti a contatto colorate, lenti a contatto torici, occhiali da blocco IR, alcuni occhiali da sole, occhiali da sole o simili)
+- Forma più pronunciata e alcune estensioni della ciglia
+- Fotogrammi di occhiali a forma di occhiali di spessore se bloccano la visualizzazione degli occhi da parte del dispositivo
+- Alcune fisiologia oculare, condizioni oculari o problemi oculari, ad esempio occhi ristretti, lunghe ciglia, amblyopia, nystagmus, alcuni casi di LASIK o altri interventi oculari
 
 Se la calibrazione non riesce, provare:
 
-- Pulizia della visiera del dispositivo
+- Pulizia del visore del dispositivo
 - Pulizia degli occhiali
 - Push del visore del dispositivo il più vicino possibile agli occhi
-- Spostare gli oggetti nella visiera fuori strada (ad esempio i peli)
-- Accendere una luce nella stanza o uscire dalla luce diretta
+- Spostamento di oggetti nel visore (ad esempio, i capello)
+- Accensione di una luce nella stanza o uscita dalla camera diretta
 
 Se sono seguite tutte le linee guida e la calibrazione ha ancora esito negativo, è possibile disabilitare la richiesta di calibrazione Impostazioni. È anche possibile inviare commenti e suggerimenti in [Hub di Feedback](hololens-feedback.md).
 
@@ -247,46 +260,46 @@ L'impostazione di IPD non è applicabile HoloLens 2, poiché le posizioni degli 
 
 [Torna all'elenco](#list)
 
-## <a name="cant-sign-in-because-my-hololens-was-previously-set-up-for-someone-else"></a>Non è possibile accedere perché il HoloLens è stato configurato in precedenza per un altro utente
+## <a name="cant-sign-in-because-my-hololens-was-previously-set-up-for-someone-else"></a>Non è possibile accedere perché la HoloLens è stata precedentemente impostata per un altro utente
 
-È possibile [impostare il dispositivo in modalità **Flashing e** usare Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device) per ripristinare il dispositivo.
+È possibile [impostare il dispositivo in modalità **flashing e** usare Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device) per ripristinare il dispositivo.
 
 [Torna all'elenco](#list)
 
 
 ## <a name="unity-isnt-working"></a>Unity non funziona
 
-- Vedere [Installare gli strumenti](/windows/mixed-reality/install-the-tools) per la versione più aggiornata di Unity consigliata per lo HoloLens sviluppo.
-- I problemi noti di Unity HoloLens Technical Preview sono documentati nei forum HoloLens [Unity](https://forum.unity3d.com/threads/known-issues.394627/).
+- Vedere [Installare gli strumenti](/windows/mixed-reality/install-the-tools) per la versione più aggiornata di Unity consigliata per HoloLens sviluppo.
+- I problemi noti di Unity HoloLens Technical Preview sono documentati [nei forum HoloLens Unity.](https://forum.unity3d.com/threads/known-issues.394627/)
 
 [Torna all'elenco](#list)
 
 ## <a name="windows-device-portal-isnt-working-correctly"></a>Windows Portale di dispositivi non funziona correttamente
 
-- La funzionalità Anteprima dinamica nell'acquisizione di realtà mista può presentare alcuni secondi di latenza.
+- La funzionalità anteprima live nell'acquisizione di realtà mista può presentare diversi secondi di latenza.
 
-- Nella pagina Input virtuale i controlli Movimento e Scorrimento nella sezione Movimenti virtuali non sono funzionali. Il loro uso non avrà alcun effetto. La tastiera virtuale nella pagina di input virtuale funziona correttamente.
+- Nella pagina Input virtuale i controlli Movimento e Scorrimento nella sezione Movimenti virtuali non sono funzionali. L'uso di questi strumenti non avrà alcun effetto. La tastiera virtuale nella pagina di input virtuale funziona correttamente.
 
-- Dopo aver abilitato la modalità sviluppatore Impostazioni, potrebbero essere trascorsi alcuni secondi prima che l'interruttore accerti Portale di dispositivi abilitato.
+- Dopo l'abilitazione della modalità sviluppatore Impostazioni, l'attivazione del Portale di dispositivi potrebbe richiedere alcuni secondi.
 
 [Torna all'elenco](#list)
 
 ## <a name="the-hololens-emulator-isnt-working"></a>Il HoloLens Emulator non funziona
 
-Le informazioni sull'HoloLens emulatore sono disponibili nella documentazione per sviluppatori.  Altre informazioni sulla [risoluzione dei problemi dell HoloLens emulatore](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator#troubleshooting).
+Le informazioni sull'emulatore HoloLens sono disponibili nella documentazione per sviluppatori.  Altre informazioni sulla risoluzione [dei problemi dell'emulatore HoloLens.](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator#troubleshooting)
 
 
-- Non tutte le app nella Microsoft Store sono compatibili con l'emulatore. Ad esempio, Young Conker e Fragments non sono riproducibili nell'emulatore.
+- Non tutte le app nel Microsoft Store sono compatibili con l'emulatore. Ad esempio, Young Conker e Fragments non sono riproducibili nell'emulatore.
 - Non è possibile usare la webcam del PC nel Emulator.
-- La funzionalità Anteprima dinamica del Windows Portale di dispositivi non funziona con l'emulatore. È comunque possibile acquisire video e immagini di realtà mista.
+- La funzionalità di anteprima live del Windows Portale di dispositivi non funziona con l'emulatore. È comunque possibile acquisire video e immagini di realtà mista.
 
 [Torna all'elenco](#list)
 
 ## <a name="voice-commands-arent-working"></a>I comandi vocali non funzionano
 
-Se Cortana non risponde ai comandi vocali, assicurarsi che l'Cortana sia attivata. Nell'elenco Tutte le app **selezionare** Cortana  >    >  **Menu Notebook**  >  **Impostazioni** apportare modifiche. Per altre informazioni su ciò che è possibile dire, vedere Usare la voce [con HoloLens](hololens-cortana.md).
+Se Cortana non risponde ai comandi vocali, assicurarsi che Cortana sia attivata. Nell'elenco Tutte le app **selezionare** Cortana  >    >  **Menu Notebook**  >  **Impostazioni** apportare modifiche. Per altre informazioni su ciò che è possibile dire, vedere Usare la voce [con HoloLens](hololens-cortana.md).
 
-Nella HoloLens (prima generazione), il riconoscimento vocale incorporato non è configurabile. È sempre attivata. In HoloLens 2, è possibile scegliere se attivare sia il riconoscimento vocale che Cortana durante la configurazione del dispositivo.
+Nella HoloLens (prima generazione), il riconoscimento vocale incorporato non è configurabile. È sempre attivata. In HoloLens 2 è possibile scegliere se attivare il riconoscimento vocale e il riconoscimento Cortana durante la configurazione del dispositivo.
 
 Se il HoloLens 2 non risponde alla voce, assicurarsi che il riconoscimento vocale sia attivato. Passare a **Start**  >  **Impostazioni**  >  **Privacy**  >  **Speech e** attivare Riconoscimento **vocale.**
 
@@ -294,15 +307,16 @@ Se il HoloLens 2 non risponde alla voce, assicurarsi che il riconoscimento vocal
 
 ## <a name="hand-input-isnt-working"></a>L'input manuale non funziona
 
-Per assicurarsi che HoloLens le mani, è necessario mantenerle nel frame del movimento.  La home page di realtà mista fornisce commenti e suggerimenti che consentono di sapere quando vengono rilevate le mani.  Il feedback è diverso nelle diverse versioni di HoloLens:
-- Al HoloLens (prima generazione), il cursore dello sguardo cambia da punto a anello
-- Al HoloLens 2, un cursore a punta del dito viene visualizzato quando la mano è vicina a un ardesia e un raggio della mano viene visualizzato quando gli ardesi sono più lontani
+Per assicurarsi che HoloLens possano vedere le mani, è necessario mantenerle nella cornice del movimento.  La home page di Realtà mista fornisce commenti e suggerimenti che consentono di sapere quando vengono tracciate le mani.  Il feedback è diverso nelle diverse versioni di HoloLens:
 
-Molte app immersive seguono modelli di input simili a Quelli della home page di realtà mista.  Altre informazioni sull'uso dell'input [manuale HoloLens (prima generazione)](hololens1-basic-usage.md#use-hololens-with-your-hands) [e HoloLens 2](hololens2-basic-usage.md#the-hand-tracking-frame).
+- Nella HoloLens (prima generazione), il cursore sguardo fisso cambia da punto a anello
+- In HoloLens 2 viene visualizzato un cursore punta del dito quando la mano è vicina a uno slate e viene visualizzato un raggio della mano quando gli slate sono più lontani
 
-Se si indossano i guanto, si noti che alcuni tipi di guanto non funzionano con il tracciamento delle mani.  Un esempio comune è i guanto di gomma nera, che tendono ad assorbire la luce a raggi infrarossi e non vengono prelevati dalla fotocamera di profondità.  Se il lavoro prevede i guanto di gomma, è consigliabile provare un colore più chiaro, ad esempio blu o grigio.  Un altro esempio sono i grossi guanto da baggy, che tendono a nascondere la forma della mano. È consigliabile usare i guanto il più possibile adattabili al modulo per ottenere risultati ottimali.
+Molte app immersive seguono modelli di input simili alla home page di Realtà mista.  Altre informazioni sull'uso dell'input [manuale HoloLens (prima generazione)](hololens1-basic-usage.md#use-hololens-with-your-hands) [e HoloLens 2](hololens2-basic-usage.md#the-hand-tracking-frame).
 
-Se la visiera ha impronte digitali o sbavature, usare il panno di pulizia microfibra fornito con la HoloLens per pulire la visiera con cautela.
+Se si è in bilito, si noti che alcuni tipi di scarpe non funzionano con il tracciamento delle mani.  Un esempio comune sono i scarpetti da forno nero, che tendono ad assalere la luce a pois e non vengono prelevati dalla fotocamera di profondità.  Se il lavoro prevede un paio di scarpe da forno, è consigliabile provare un colore più chiaro, ad esempio blu o grigio.  Un altro esempio è l'utilizzo di ampi ovaiosi, che tendono a nascondere la forma della mano. Per ottenere risultati ottimali, è consigliabile usare i modelli che si adattano il più possibile al modulo.
+
+Se il visore ha impronte digitali o sbavature, usare la pulizia del microfibero fornita con il HoloLens per pulire il visore.
 
 [Torna all'elenco](#list)
 
@@ -310,8 +324,8 @@ Se la visiera ha impronte digitali o sbavature, usare il panno di pulizia microf
 
 Di seguito sono riportati alcuni aspetti da provare se non è possibile connettere il HoloLens a una Wi-Fi rete:
 
-- Assicurarsi che la Wi-Fi sia attivata. Per controllare, usare il movimento Start e quindi selezionare **Impostazioni**  >  **Rete &amp; Internet**  >  **Wi-Fi**. Se Wi-Fi è attivata, provare a disattivarla e quindi ad attivarla di nuovo.
-- Passare più vicino al router o al punto di accesso.
+- Assicurarsi che la Wi-Fi sia attivata. Per verificare, usare il movimento Avvia, quindi **selezionare** Impostazioni  >  **Rete &amp; Internet**  >  **Wi-Fi**. Se Wi-Fi è attivata, provare a disattivarla e quindi ad attivarla di nuovo.
+- Spostarsi più vicino al router o al punto di accesso.
 - Riavviare il router Wi-Fi, quindi [riavviare HoloLens](hololens-recovery.md). Provare a eseguire di nuovo la connessione.
 - Se nessuna di queste operazioni funziona, verificare che il router utilizzi il firmware più recente. Queste informazioni sono disponibili nel sito Web del produttore.
 
@@ -321,30 +335,31 @@ Di seguito sono riportati alcuni aspetti da provare se non è possibile connette
 
 Se si verificano problemi durante [l'associazione di Bluetooth dispositivo,](hololens-connect-devices.md)provare a eseguire le operazioni seguenti:
 
-- Passare a **Impostazioni** dispositivi e assicurarsi che l'Bluetooth  >  sia attivata. In caso contrario, disattivarlo e riattivarlo.
+- Passare a **Impostazioni** dispositivi e assicurarsi che l'Bluetooth  >  sia attivata. In caso contrario, disattivarla e riattivarla.
 - Assicurarsi che il dispositivo Bluetooth sia completamente caricato o abbia batterie nuove.
 - Se non è ancora possibile connettersi, [riavviare il HoloLens](hololens-recovery.md).
 
 [Torna all'elenco](#list)
 
 ## <a name="usb-c-microphone-isnt-working"></a>Il microfono USB-C non funziona
-Tenere presente che alcuni microfoni USB-C segnalano erroneamente se stessi sia come *microfono che come* altoparlante. Si tratta di un problema con il microfono e non con HoloLens. Quando si collega uno di questi microfoni HoloLens, è possibile che l'audio venga perso. Fortunatamente è disponibile una semplice correzione.  
 
-In **Impostazioni** suono di sistema impostare in modo esplicito gli altoparlanti predefiniti (driver audio della funzionalità  ->    ->   **analoga)** come **dispositivo predefinito.** HoloLens ricordare questa impostazione anche se il microfono viene rimosso e riconnesso in un secondo momento.
+Tenere presente che alcuni microfoni USB-C segnalano erroneamente se stessi sia come microfono *che come* altoparlante. Si tratta di un problema con il microfono e non con HoloLens. Quando si collega uno di questi microfoni HoloLens, l'audio potrebbe essere perso. Fortunatamente è disponibile una correzione semplice.  
+
+In **Impostazioni** System Sound impostare in modo esplicito gli altoparlanti  ->    ->   **predefiniti (analog Feature Audio Driver)** come **dispositivo predefinito.** HoloLens necessario ricordare questa impostazione anche se il microfono viene rimosso e riconnesso in un secondo momento.
 
 ![Risoluzione dei problemi relativi ai microfoni USB-C.](images/usbc-mic-4.png)
 
 ## <a name="devices-listed-as-available-in-settings-dont-work"></a>I dispositivi elencati come disponibili Impostazioni non funzionano
 
-HoloLens (prima generazione) non supporta i Bluetooth audio. Bluetooth i dispositivi audio, ad esempio altoparlanti e visori, possono essere visualizzati come disponibili nelle impostazioni HoloLens, ma non sono supportati.
+HoloLens (prima generazione) non supporta l'Bluetooth profili audio. Bluetooth dispositivi audio, ad esempio altoparlanti e visori VR, possono essere visualizzati come disponibili nelle impostazioni HoloLens, ma non sono supportati.
 
-HoloLens 2 supporta il profilo audio Bluetooth A2DP per la riproduzione stereo. Il Bluetooth Hands Free che consente l'acquisizione del microfono da una Bluetooth periferica non è supportato in HoloLens 2.
+HoloLens 2 supporta il profilo audio Bluetooth A2DP per la riproduzione stereo. Il Bluetooth hands free che consente l'acquisizione del microfono da una periferica Bluetooth non è supportata in HoloLens 2.
 
 Se si verificano problemi durante l'uso Bluetooth dispositivo, assicurarsi che sia un dispositivo supportato. I dispositivi supportati includono:
 
-- Le tastiere QWERTY Bluetooth inglese (è possibile usarle ovunque si usi la tastiera olografica).
-- Bluetooth topi.
-- Il [HoloLens clic su](hololens1-clicker.md).
+- QWERTY in lingua Bluetooth tastiere (è possibile usarle ovunque si usi la tastiera olografica).
+- Bluetooth mouse.
+- Il [HoloLens clic su .](hololens1-clicker.md)
 
 È possibile associare Bluetooth dispositivi HID e GATT con il HoloLens. Tuttavia, potrebbe essere necessario installare le app complementari corrispondenti da Microsoft Store per usare effettivamente i dispositivi.
 

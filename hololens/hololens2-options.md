@@ -1,7 +1,7 @@
 ---
 title: HoloLens 2 edizioni
-description: Informazioni su come HoloLens 2'edizione del dispositivo è la stessa o diversa e come procedere dopo aver selezionato una delle proprie.
-keywords: HoloLens 2 opzioni di acquisto, HoloLens, Developer Edition
+description: Informazioni su come HoloLens 2'edizione del dispositivo sia la stessa o diversa e cosa fare dopo aver fatto una delle proprie.
+keywords: HoloLens 2 opzioni di acquisto, opzioni HoloLens, Developer Edition
 author: evmill
 ms.author: v-evmill
 ms.reviewer: evmill
@@ -14,18 +14,18 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2da84a11a8f9613999e2b376fefeb6cb2b83cd00
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 810bcae8b457c2f6efba55162e54bcc8956e6005
+ms.sourcegitcommit: a9a86748afd368f3d316a4d2c978063a0905ad08
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126036098"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129949021"
 ---
 # <a name="compare-hololens-2-options"></a>Confrontare HoloLens 2 opzioni
 
-HoloLens è un dispositivo di realtà mista basato su *ologrammi* e fornisce app e soluzioni che migliorano la collaborazione. Con HoloLens 2, è possibile sperimentare nuove altezze di produttività e innovazione, con finalità, per lavorare in modo più intelligente.
+HoloLens è un dispositivo di realtà mista basato su *ologrammi* e offre app e soluzioni che migliorano la collaborazione. Con HoloLens 2, è possibile sperimentare nuove altezze di produttività e innovazione, con finalità, per lavorare in modo più intelligente.
 
-Che tu sia un professionista [IT](https://www.microsoft.com/hololens/apps) alla [](https://www.microsoft.com/hololens/developers) ricerca della prossima soluzione di settore, [](https://www.microsoft.com/hololens/apps) uno sviluppatore che cerca di creare esperienze per una nuova realtà o un responsabile delle decisioni aziendali che pensi alla prossima innovazione, HoloLens 2 è la nuova realtà per il calcolo.
+Sia che si sia un professionista [IT](https://www.microsoft.com/hololens/apps) alla ricerca della prossima soluzione di [](https://www.microsoft.com/hololens/apps) settore, uno sviluppatore che cerca di creare esperienze per una nuova realtà o un responsabile delle decisioni aziendali che pensa alla prossima innovazione, HoloLens 2 è la nuova realtà per il calcolo. [](https://www.microsoft.com/hololens/developers)
 
 <br>
 
@@ -39,13 +39,14 @@ Che tu sia un professionista [IT](https://www.microsoft.com/hololens/apps) alla 
 | **Output audio di annullamento del rumore**                        |            |                               |                               |                                                  |               ✔️              |                                |
 | **Diritti per sviluppatori <sup>1</sup>**                             |            |                               |                               |                                                  |                              |                ✔️               |
 | **Programma di sostituzione rapida <sup>2</sup>**                          |            |                               |               ✔️               |                         ✔️                        |                              |                                |
+ **Classificazione protezione in ingresso (IP50, protetto da dust)**                       |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                ✔️               |
 | **Diritti di utilizzo commerciale**                                |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                                |
 | [**Garanzia**](hololens2-hardware.md#warranty-information)                                             |   1 anno   |             1 anno            |             2 anni            |                      2 anni                      |            1 anno <sup>3</sup>            |             1 anno             |
 | **Limite di acquisto del dispositivo**                                |    Nessuno    |              Nessuno             |              Nessuno             |                       Nessuno                       |             Nessuno             |       Uno per transazione      |
 
-- <sup>1:</sup> include $ 500 di credito di Azure e versioni di valutazione di 3 mesi per Unity Pro e pixyz Plugin.
+- <sup>1:</sup> include $ 500 di credito di Azure e versioni di valutazione di 3 mesi per Unity Pro plug-in Pixyz.
 - <sup>2</sup> - Ricevere un dispositivo sostitutivo durante la notte o la spedizione accelerata (più velocemente delle opzioni disponibili) prima che il dispositivo difettoso venga ricevuto da Microsoft.
-- <sup>3</sup> - Per domande su garanzia, supporto e certificazione per Trimble XR10 con HoloLens 2, contattare [Trimble](https://fieldtech.trimble.com/en/contact-support).
+- <sup>3</sup> - Per domande su garanzia, supporto e certificazione per Trimble XR10 con HoloLens 2 edizione, contattare [Trimble](https://fieldtech.trimble.com/en/contact-support).
 
 
 ## <a name="options-overview"></a>Panoramica delle opzioni
@@ -76,12 +77,12 @@ Esplorare queste soluzioni aggiuntive create per HoloLens di realtà mista.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Per gli utenti finali del dispositivo, vedere [Get your HoloLens 2 ready to use to](hololens2-setup.md) get started (Ottenere il HoloLens 2 per iniziare).
+Per gli utenti finali del dispositivo, [vedere Get your HoloLens 2 ready to use to](hololens2-setup.md) get started (Ottenere il HoloLens 2 per iniziare a usare).
 
 > [!div class="nextstepaction"]
-> [Prepara il HoloLens 2'uso](hololens2-setup.md)
+> [Prepararsi HoloLens 2'uso](hololens2-setup.md)
 
-Per gli amministratori IT, la distribuzione di dispositivi nell'organizzazione consente di sbloccare potenti esperienze di realtà mista. Per iniziare, esaminare i requisiti HoloLens 2 di distribuzione e gli scenari in un'ampia gamma di configurazioni dell'infrastruttura IT.
+Per gli amministratori IT, la distribuzione dei dispositivi nell'organizzazione sblocca potenti esperienze di realtà mista. Per iniziare, esaminare i requisiti HoloLens 2 di distribuzione e gli scenari in un'ampia gamma di configurazioni dell'infrastruttura IT.
 
 > [!div class="nextstepaction"]
 > [Distribuire HoloLens 2 in un ambiente commerciale](hololens-requirements.md)

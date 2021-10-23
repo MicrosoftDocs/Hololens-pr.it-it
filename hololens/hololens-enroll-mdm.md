@@ -14,16 +14,16 @@ manager: ranjibb
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: fa114633afe70a11a180c67fedbd40eb423ece99
-ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
+ms.openlocfilehash: 9f466abe45a1a9ad676f8dd6a94244473c084be7
+ms.sourcegitcommit: 38b5e4d92da6fc5d6a6a2ef875644d6db2cce822
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "130034179"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "130202880"
 ---
 # <a name="enroll-hololens-in-mdm"></a>Registrare HoloLens in MDM
 
-È possibile gestire più Microsoft HoloLens contemporaneamente usando soluzioni come [Microsoft Intune](/intune/windows-holographic-for-business). Sarà possibile gestire le impostazioni, selezionare le app da installare e impostare le configurazioni di sicurezza personalizzate in base alle esigenze dell'organizzazione. Vedere Gestire i dispositivi che eseguono [Windows Holographic](/intune/windows-holographic-for-business)con Microsoft Intune , i provider di servizi di configurazione [supportati in Windows Holographic](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference#hololens)e i criteri supportati da [Windows Holographic for Business](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#hololenspolicies).
+È possibile gestire più Microsoft HoloLens contemporaneamente usando soluzioni come [Microsoft Intune](/intune/windows-holographic-for-business). Sarà possibile gestire le impostazioni, selezionare le app da installare e impostare le configurazioni di sicurezza personalizzate in base alle esigenze dell'organizzazione. Vedere Gestire i dispositivi che eseguono [Windows Holographic](/intune/windows-holographic-for-business)con Microsoft Intune , i provider di servizi di configurazione [(CSP) supportati in Windows Holographic](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference#hololens)e i criteri supportati [da Windows Holographic for Business](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#hololenspolicies).
 
 > [!NOTE]
 > La gestione dei dispositivi mobili (MDM), incluse le funzionalità VPN, Bitlocker e in modalità tutto schermo, è disponibile solo quando si esegue l'aggiornamento [a Windows Holographic for Business](hololens1-upgrade-enterprise.md).
@@ -36,23 +36,23 @@ ms.locfileid: "130034179"
 
 A seconda del tipo di [identità](hololens-identity.md) scelto durante la Procedura guidata o dopo l'accesso, esistono diversi metodi di registrazione.
 
-- Se l'opzione Identità è Azure AD, durante la Impostazioni o **l'accesso all'app** Connessione aziendale  ->    ->  **o dell'istituto di** istruzione.
+- Se l'identità è Azure AD, durante la Gestione Impostazioni o **l'accesso all'app** il Connessione aziendale  ->    ->  **o dell'istituto di** istruzione.
     - Ad Azure AD, [la registrazione MDM automatica](hololens-enroll-mdm.md#auto-enrollment-in-mdm) viene eseguita solo se Azure AD è stato configurato con gli URL di registrazione.
 
 - Se l'identità è Azure AD e il dispositivo è stato preregistrato con il server MDM di Intune con un profilo di configurazione specifico assegnato, durante la configurazione guidata verrà eseguita la registrazione automatica AD-Join Azure AD-Join [MDM.](hololens-enroll-mdm.md#auto-enrollment-in-mdm)
-    - Chiamato anche [flusso di Autopilot](hololens2-autopilot.md) disponibile nelle [build 19041.1103+](hololens-release-notes.md#windows-holographic-version-2004).
+    - Chiamato anche [flusso di Autopilot](hololens2-autopilot.md) Disponibile nelle [build 19041.1103+](hololens-release-notes.md#windows-holographic-version-2004).
 
 
 - Se Identity è MSA, usare il pulsante Impostazioni App Access Work or School (Accesso **all'app** aziendale  ->    ->  **Connessione dell'istituto di** istruzione).
     - Chiamato anche flusso Add Work Account (AWA).
-- Se l'identità è Utente locale, usare il collegamento **Impostazioni'accesso all'app** Solo registrazione aziendale o dell'istituto  ->    ->  **di** istruzione nella gestione dei dispositivi.
+- Se l'identità è Utente locale, usare il collegamento Impostazioni **accesso all'app** Solo registrazione aziendale o dell'istituto di istruzione nella  ->    ->  **gestione dei** dispositivi.
     - Chiamato anche flusso di registrazione MDM puro.
 
-Dopo la registrazione del dispositivo nel server MDM, l'app Impostazioni rifletterà che il dispositivo è registrato nella gestione dei dispositivi.
+Dopo aver registrato il dispositivo con il server MDM, l'app Impostazioni rifletterà che il dispositivo è registrato nella gestione dei dispositivi.
 
 ## <a name="auto-enrollment-in-mdm"></a>Registrazione automatica in MDM
 
-Se l'organizzazione ha una sottoscrizione di [Azure Premium](https://azure.microsoft.com/overview/), usa Azure Active Directory (Azure AD) e una soluzione MDM che accetta un token Azure AD per l'autenticazione (attualmente supportata solo in Microsoft Intune e AirWatch), l'amministratore IT può configurare Azure AD consentire automaticamente la registrazione MDM dopo che l'utente accede con il Azure AD account. [Informazioni su come configurare la registrazione di Azure AD.](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)
+Se l'organizzazione ha una sottoscrizione di [Azure Premium](https://azure.microsoft.com/overview/), usa Azure Active Directory (Azure AD) e una soluzione MDM che accetta un token Azure AD per l'autenticazione (attualmente supportata solo in Microsoft Intune e AirWatch), l'amministratore IT può configurare Azure AD consentire automaticamente la registrazione MDM dopo che l'utente accede con il Azure AD account. [Informazioni su come configurare la registrazione Azure AD e](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) [l'integrazione di Azure Active Directory con MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) per informazioni dettagliate.
 
 Quando la registrazione automatica è abilitata, non è necessaria alcuna registrazione manuale aggiuntiva. Quando l'utente accede con un account Azure AD, il dispositivo viene registrato in MDM dopo aver completato l'esperienza di prima esecuzione.
 
@@ -62,11 +62,19 @@ Quando un dispositivo viene aggiunto Azure AD può influire su chi ha considerat
 
 A seconda del metodo di registrazione, l'annullamento della registrazione del dispositivo potrebbe non essere disponibile.
 
-Se il dispositivo è stato registrato con un account Azure AD o Autopilot, non è possibile annullarlo da Intune. Se si vuole annullare l'HoloLens da Azure AD o ricongiungerlo a un tenant diverso da Azure AD, è necessario [reimpostare/ripristinare](hololens-recovery.md#restart-the-device) il dispositivo.
+Se il dispositivo è stato registrato con un account Azure AD o Autopilot, non è possibile annullarlo da Intune. Se si vuole annullare l'HoloLens da Azure AD o ricongiungerlo a un tenant diverso da Azure AD, è necessario reimpostare [o](hololens-recovery.md#restart-the-device) ripristinare il dispositivo.
 
 Se il dispositivo è stato registrato da un account msa che ha aggiunto un account aziendale o da un account locale registrato solo nella gestione dei dispositivi, è possibile annullare la registrazione del dispositivo. Aprire il menu Start e quindi selezionare il Impostazioni **App**  ->  **Access Work or School**  ->  YourAccount Disconnect  ->  **(Disconnetti** account personale o dell'istituto di istruzione).
 
 ## <a name="enrollment-troubleshooting"></a>Risoluzione dei problemi di registrazione
+
+### <a name="ensure-device-is-successfully-connected-to-internet-before-attempting-enrollment-post-oobe"></a>Verificare che il dispositivo sia connesso a Internet prima di provare a eseguire la registrazione dopo la configurazione guidata
+
+Dopo che l'utente ha eseguito l'accesso, verificare la connessione Internet visitando qualsiasi sito Web con connessione Internet nel dispositivo.
+
+### <a name="ensure-that-azure-active-directory-aad-join-is-not-disabled-in-your-aad-tenant"></a>Assicurarsi che Azure Active Directory join (AAD) non sia disabilitato nel tenant AAD
+
+Fare riferimento [a Configurare le impostazioni del dispositivo](/azure/active-directory/devices/azureadjoin-plan#configure-your-device-settings) per informazioni sulle opzioni disponibili in portale di Azure.
 
 ### <a name="ensure-valid-license-is-assigned-to-the-user"></a>Assicurarsi che all'utente sia assegnata una licenza valida
 

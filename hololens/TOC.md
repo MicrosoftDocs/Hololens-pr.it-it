@@ -2,7 +2,7 @@
 
 # Panoramica del dispositivo
 ## [Informazioni HoloLens 2](hololens2-hardware.md)
-## [Che cosa HoloLens 2 fare per te?](hololens-commercial-features.md)
+## [Che cosa HoloLens 2 possibile fare per l'utente?](hololens-commercial-features.md)
 ## Individuare HoloLens 2 edizioni
 ### [Confrontare HoloLens 2 opzioni](hololens2-options.md)
 ### [Edizione solo dispositivo](hololens2-options-device-only.md)
@@ -40,12 +40,12 @@
 #### [Connessione dispositivi Bluetooth e USB-C](hololens-connect-devices.md)
 #### [Connessione a Cellulare e 5G](hololens-cellular.md)
 ### [HoloLens 2 batteria e ricarica](hololens2-charging.md)
-### [domande HoloLens 2 domande frequenti su fit e comfort](hololens2-fit-comfort-faq.md)
+### [domande HoloLens 2 su fit e comfort](hololens2-fit-comfort-faq.md)
 ### [HoloLens 2 domande frequenti sulla pulizia](hololens2-maintenance.md)
 
 # Distribuzione di HoloLens 2
 ## [Scenari comuni di distribuzione](hololens-requirements.md)
-## [Pianificazione della HoloLens 2 distribuzione](hololens-core-components.md)
+## [Pianificazione HoloLens 2 distribuzione](hololens-core-components.md)
 ## Guide alla distribuzione
 ### Guida alla distribuzione dell'ambiente connesso al cloud
 #### [Overview](hololens2-cloud-connected-overview.md)
@@ -79,7 +79,7 @@
 ## Registrazione del dispositivo
 ### [Registrare HoloLens in MDM](hololens-enroll-mdm.md)
 ### [Windows Autopilot per HoloLens 2](hololens2-autopilot.md) 
-### [Registrare in un ambiente con restrizioni per Wi-Fi MAC](mac-address-options.md)
+### [Eseguire la registrazione in un ambiente con restrizioni Wi-Fi MAC](mac-address-options.md)
 ## Distribuzione dell'applicazione
 ### [Panoramica della gestione delle applicazioni](app-deploy-overview.md)
 ### [Intune & Portale aziendale](app-deploy-intune.md)
@@ -89,7 +89,7 @@
 ## Criteri (CSP)
 ### [Panoramica della configurazione dei CSP e della gestione dei dispositivi](hololens-csp-policy-overview.md)
 ### [Uso di MDM per gestire HoloLens dispositivi](hololens-mdm-configure.md)
-### [Configurare HoloLens usando i pacchetti di provisioning](hololens-provisioning.md)
+### [Configurare le HoloLens usando i pacchetti di provisioning](hololens-provisioning.md)
 ### [Restrizioni comuni dei dispositivi](hololens-common-device-restrictions.md)
 ### [Configurare l'HoloLens come chiosco multimediale](hololens-kiosk.md)
 ### [HoloLens Informazioni di riferimento sulla modalità tutto schermo](hololens-kiosk-reference.md)
@@ -121,9 +121,9 @@
 ## HoloLens (prima generazione)
 ### Primo utilizzo
 #### [Informazioni HoloLens (prima generazione)](hololens1-hardware.md)
-#### [HoloLens (prima generazione) per l'adattamento e il comfort](hololens1-fit-comfort-faq.md)
+#### [HoloLens (prima generazione) idonea e comfort](hololens1-fit-comfort-faq.md)
 #### [Panoramica dell'utilizzo di base](hololens1-setup.md)
-#### [Configurare la HoloLens (prima generazione)](hololens1-start.md)
+#### [Configurare l'HoloLens (prima generazione)](hololens1-start.md)
 ### Utilizzo giornaliero
 #### [Usare il HoloLens clicker di prima generazione](hololens1-clicker.md)
 #### [Usare Visualizzatore 3D in HoloLens (prima generazione)](holographic-3d-viewer-beta.md)
@@ -136,8 +136,8 @@
 #### [Domande di HoloLens di prima generazione](hololens1-faq-security.yml)
 #### [HoloLens crittografia BitLocker (prima generazione)](hololens1-encryption.md)
 ### [Problemi noti e soluzioni alternative per HoloLens (prima generazione)](hololens-known-issues.md)
-### [HoloLens sulla versione di prima generazione](hololens1-release-notes.md)
+### [note sulla versione di HoloLens (prima generazione)](hololens1-release-notes.md)
 
 # Commenti e suggerimenti
 ## [Inviare commenti e suggerimenti tramite Hub di Feedback](hololens-feedback.md)
-## [HoloLens ai contributi per la documentazione](contributing.md)
+## [HoloLens per i contributi alla documentazione](contributing.md)
